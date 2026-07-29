@@ -1,0 +1,17 @@
+# SESSION13_IMPACT_GRAPH v2 — post-ruling supersession of v1 (v1 preserved)
+work_item: MAESTRO.O16.DERIVE-CURRENT-ARTIFACTS.R1
+supersedes: SESSION13_IMPACT_GRAPH.yaml
+discharged_since_v1:
+  - E-2 (K-namespace) resolved and applied
+  - E-5 (density) resolved — retired as authority (DEC-13)
+  - SEG naming resolved — Song Excellence Governance + era aliases (DEC-14)
+  - MAP/END hold REPLACED by M13 Roadmap functional migration (timing -> section headers; structure-reservation -> Performance.execution; Intro/Outro sections; fades in section instructions)
+  - DISC-12 resolved as historical dating (~2025-11 content, April recognition — DEC-09)
+current_dependents:
+  axis_registry_build:
+    status: UNBLOCKED by M13; executes inside O-16 Stage 2 (current axis set = product decision P-2)
+  o16_derivation:
+    inputs: [replay-backed snapshot, later operator deltas M12-M15/DEC-09..17, pinned infrastructure, era+namespace rulings]
+    note: cold-start files (e.g. v5-b Knowledge Spine with Road-Map axis, SEG-as-feasibility) are DERIVATION INPUTS carrying superseded formulations — migrate, do not copy
+  deferred_runtime_obligations: [D1 QAF/PD enforcement, D2 lyric-lock behavior, D3 char-cap compilation, D4 fixtures/SEG execution]
+inferred_unapplied: []

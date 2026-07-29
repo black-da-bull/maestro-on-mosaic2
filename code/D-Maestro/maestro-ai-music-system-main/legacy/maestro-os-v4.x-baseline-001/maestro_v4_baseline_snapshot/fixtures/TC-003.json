@@ -1,0 +1,18 @@
+{
+  "project_name": "TC-003 Lyrics CANON freeze",
+  "narrative_anchor": "A final vow, sealed and unedited.",
+  "lyrics": "Get away, leave today, stay away",
+  "genre_tags": [
+    "alt-country",
+    "lofi",
+    "gothic"
+  ],
+  "must_haves": [
+    "lock engaged",
+    "forbid rewrite/paraphrase"
+  ],
+  "must_nots": [
+    "modify quoted canon text"
+  ],
+  "canon": true
+}

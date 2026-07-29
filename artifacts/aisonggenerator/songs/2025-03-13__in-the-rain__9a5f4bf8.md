@@ -1,0 +1,72 @@
+# In The Rain
+
+> Song family: **In The Rain** · generation #6 in family · created 2025-03-13T15:00:11.336Z
+
+## Metadata
+
+- song_id: `9a5f4bf8-bd12-4779-9b81-a449d5b04b2b`
+- id: `514586`
+- model: `V4`
+- created_at: `2025-03-13T15:00:11.336Z`
+- updated_at: `2025-03-13T15:02:12.489Z`
+- duration: `129.88`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `ace`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/9b31ebd6-6329-4cc8-8bf7-77ee824d1287.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/160afd6d-62fc-4be1-8811-bcb7e1a17211.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://audiopipe.suno.ai/?item_id=9a5f4bf8-bd12-4779-9b81-a449d5b04b2b
+
+## Style / Prompt (tags)
+
+```
+Big Booty Clap
+Sultry RnB
+Upbeat Country
+Male vocal
+Mississippi Blues
+sparse harmonica
+acoustic guitar
+stomp
+60-80 BPM
+```
+
+## Lyrics
+
+```
+[Chorus]
+I wanna go outside in the rain
+It may sound crazy but I
+Wanna go outside in the rain
+[Verse 1]
+'Cause I, I think I'm gonna cry
+And I, I don't want you to see me cry
+[Chorus]
+I wanna go outside in the rain
+It may sound crazy but I
+Wanna go outside in the rain
+[Verse 2]
+Once the rain starts falling on my face (On my face)
+You won't see (You won't see a), a single trace (A single trace)
+Of the tears I'm crying (I'm crying), because of you, I'm crying (Because of you)
+Don't want you to see me cry (I'm crying), let me go, let me go, let me go
+(In the rain)
+[Verse 3]
+Once the sun comes out and the rain has gone away
+I know I'm gonna see a better day
+Right now, I think I'm crying, because of you, I'm crying
+Don't want you to see me cry, let me go, let me go, let me go
+Don’t Want You To See Me Cry
+[Chorus]
+I wanna go outside in the rain
+It may sound crazy but I
+Wanna go outside in the rain
+I wanna go outside, I wanna go outside, I wanna go outside
+```

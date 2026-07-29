@@ -1,0 +1,32 @@
+# SESSION13_TEST_PLAN — split per amendment 4.2 of the reconciled plan
+work_item: REPAIR.P1N.SESSION-TO-MAESTRO-BRIDGE.R1
+date: 2026-07-19
+executable_now:            # all runnable in this container / any workspace with the corpus
+  T1_anchor_verification:
+    what: "every PATCH cites source anchors; PATCH-01 payload md5 == md5 of segment W1/i=20 text; header byte re-found in raw source"
+    tool: python (scripted in bridge run)
+    result_2026_07_19: PASS (payload md5 52381c1e13a25775f5491a7090a7f06d; header @ raw byte 244776)
+  T2_totals_arithmetic:
+    what: "R-list v0.2 category sums == 96; FIRM 92 / CAND 3 / OPEN 1 present verbatim in payload"
+    result_2026_07_19: PASS (14 categories sum 96 — R2 §3)
+  T3_split_validator:
+    what: "s13_split_validate_v0_1.py PASSes both windows"
+    result_2026_07_19: PASS (36/393821 + 58/914340, censuses exact)
+  T4_zero_overwrite:
+    what: "patchset contains only new files + insert-only annotations; no deletion/edit of existing content"
+    result_2026_07_19: PASS (by construction; verify at phase-2 apply with pre/post hashes of annotated files)
+  T5_contradiction_preservation:
+    what: "9 contradictions + CR-2 tension + OPEN-Q5..Q8 remain visible in patchset (PATCH-01 carries them OPEN)"
+    result_2026_07_19: PASS
+  T6_persistence_flip_probe:
+    what: "word-boundary sweep BEFORE apply: zero genuine hits outside transcripts/_PROVENANCE (confirmed R1+R2). AFTER phase-2 apply: sweep MUST find the FIRM identifiers in the persisted patchset homes. This is the phase-2 objective PASS."
+    status: pre-state confirmed; post-state deferred to S13-APPLY.R1
+  T7_cold_regeneration:
+    what: "fresh-context agent regenerates candidate core from persisted inputs; payload md5 must match"
+    status: run this bridge — result recorded in SESSION13_BRIDGE_VERDICT.yaml
+deferred_until_runtime:    # presuppose an executable runtime; carried as explicit obligations, NOT failures
+  D1: "R-RT-QAF-01 / R-RT-PD-01 enforcement wiring + fixtures"
+  D2: "lyric-lock behavioral test against a running loop"
+  D3: "compiler character-cap tests (CAP 4960-4999) against live emission"
+  D4: "song fixtures / SEG gate execution (97.5 composite path)"
+  obligation: "each D-item enters the v0-on-Mosaic DoD checklist; a bridge PASS makes no claim about any D-item"

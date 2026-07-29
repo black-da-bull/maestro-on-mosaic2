@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Workspace JSON Schema (Universal)",
+  "type": "object",
+  "required": [
+    "metadata",
+    "sources",
+    "data",
+    "analysis",
+    "outputs",
+    "audit"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object"
+    },
+    "sources": {
+      "type": "array"
+    },
+    "data": {
+      "type": "object"
+    },
+    "analysis": {
+      "type": "object"
+    },
+    "outputs": {
+      "type": "object"
+    },
+    "audit": {
+      "type": "object"
+    }
+  }
+}

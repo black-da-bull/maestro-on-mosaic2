@@ -1,0 +1,82 @@
+{
+  "bootstrap_id": "MAESTRO_ON_MOSAIC_RUNTIME_BOOTSTRAP_v0_1",
+  "emission_date": "2026-05-27",
+  "emission_context": "Operator-directed bootstrap transition from MAESTRO.ZERO_DAY.TRANSFER.V0_1 state",
+  "status": "PROVISIONAL_BOOTSTRAP_AWAITING_OPERATOR_F",
+  "mainline_status": "PROTECTED",
+  "baseline_id": "MAESTRO_ZERO_DAY_BASELINE_2026_05_27_A",
+  "supersedes_intent": null,
+  "next_recommended_action": "operator_F_or_audit",
+  "files": [
+    {
+      "filename": "01_ADMIN_KERNEL_INSTRUCTIONS.md",
+      "sha256": "402c738cb6003d3a6a144ff2e792b7903b1cd03797898b800fef8c94662c2b7d",
+      "bytes": 3315,
+      "role": "runtime_behavior_law"
+    },
+    {
+      "filename": "02_RUNTIME_STATE.yaml",
+      "sha256": "f0c244ac1c5ee1b2c0914865e49f89b59b3230aba2b9abe3b2e5cacfef40e07a",
+      "bytes": 2687,
+      "role": "session_active_state"
+    },
+    {
+      "filename": "03_PLANE_MAP.yaml",
+      "sha256": "929c8e226f5cfc00dc10c341d403d630a19de7f7fec9d4bbabb31eb1c12be3ff",
+      "bytes": 4688,
+      "role": "four_plane_separation_contract"
+    },
+    {
+      "filename": "04_COMMAND_LAYER.md",
+      "sha256": "77dadd10afc73aa678549cc7f632a4af8bd6feca6a4a9735c7365b4d5d0c779e",
+      "bytes": 4566,
+      "role": "state_mutating_command_definitions"
+    },
+    {
+      "filename": "05_AUTHORITY_LEDGER.yaml",
+      "sha256": "482391777c3fa07d346522816e8392febdef622afbc5baacb71cf42a72cfd84c",
+      "bytes": 4032,
+      "role": "source_tiers_and_claim_authority_classes"
+    },
+    {
+      "filename": "06_MINIMAL_KNOWLEDGE.md",
+      "sha256": "ccb2f68e17d8e9dbf0ff47df412b6104da066a456ae577a8580451ab891aca05",
+      "bytes": 4798,
+      "role": "vocabulary_anchors_only"
+    },
+    {
+      "filename": "07_PRODUCT_POSITIONING.md",
+      "sha256": "cca7f46425b7fde7ca9534841190e0673b66ee55c3e263a93db8ec77c3651b84",
+      "bytes": 2921,
+      "role": "customer_facing_identity_and_contract"
+    },
+    {
+      "filename": "RESUME_PROMPT.txt",
+      "sha256": "72ba71341bc3e526491030276d165d10fce468b47203644d7a8b082482fbaa03",
+      "bytes": 1439,
+      "role": "deterministic_boot_entry_point"
+    },
+    {
+      "filename": "PEER_REVIEW.md",
+      "sha256": "8dab0224abe65c2e59cdf77b12c9b25d6fd2586d55cb681ff62d987b6c04e4e2",
+      "bytes": 3408,
+      "role": "verification_checklist"
+    }
+  ],
+  "preserved_from_source_pack": {
+    "source_pack_id": "MAESTRO.ZERO_DAY.TRANSFER.V0_1",
+    "preserved": [
+      "four_plane_separation",
+      "authority_hierarchy",
+      "anti_summarization_governance",
+      "stash_and_quarantine_state",
+      "forbidden_reconstruction_targets",
+      "operator_F_gate_on_promotion",
+      "protected_doctrine"
+    ]
+  },
+  "promotion_status": {
+    "this_bootstrap_promotes_no_claims": true,
+    "all_referenced_canon_retains_prior_authority_classification": true
+  }
+}

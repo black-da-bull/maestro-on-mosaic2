@@ -1,0 +1,56 @@
+# BRIDGE_PREFLIGHT_VERDICT
+# Work item: REPAIR.P1N.BRIDGE-INPUT-PREFLIGHT.R1 · 2026-07-19
+# Origin: operator-relayed orchestrator assessment (PARTIAL PASS on the input package); every claim
+# independently verified here before action — none promoted on trust.
+
+verdict: PASS
+
+claims_verified:
+  invalid_yaml: >-
+    CONFIRMED — P1_NARROW_PERSISTENCE_SEARCH.yaml fails to parse; defect sites found
+    (2 defective 'finding' scalars; 1 mapping key at sequence indent; plus a mid-scalar
+    comment character orphaning a continuation). Original preserved untouched; repaired_v2
+    copy parses (append-only law).
+  mutation_audit_misnomer: >-
+    CONFIRMED — file holds exactly 28 audit-CHECK records, not 61 mutations. Correction
+    carried in BRIDGE_INPUT_MANIFEST (filename preserved append-only).
+  bonus_finding: >-
+    this session's own first drafts of BRIDGE_PUBLIC_SURFACE_HOLD.yaml and of this verdict
+    file failed the same parse gate and were fixed — the gate catches real defects,
+    including the validator's own.
+
+pass_criteria:
+  all_machine_readable_files_parse: PASS (17/17 in final clean-load test; sole invalid original preserved + superseded-for-parsing by repaired copy)
+  every_derivative_has_parent_reference: PASS (BRIDGE_INPUT_MANIFEST.yaml families; legacy files covered by manifest, new files carry native headers)
+  no_report_mistaken_for_primary: PASS (manifest classes — SOURCE / DERIVED-MECHANICAL / REPLAY-BACKED / VALIDATION / PROPOSAL / CANDIDATE / PUBLIC; fold extension demoted to hypothesis+navigation aid pending CONS-01 sources)
+  61_mutation_records_locatable: PASS (authoritative — the two replay .md files; machine-readable index emitted — SESSION13_MUTATION_LEDGER_v0_1.jsonl, 61/61 records, 27+34, 0 unparsed, declared as derived child)
+  mf6_not_routed_as_automatic_supersession: PASS (BRIDGE_SCOPE_DELTA — NAMESPACE_COLLISION_CANDIDATE, patch_allowed false until E-2; PATCH-03 conforms — annotation with both value sets preserved and fallback framing)
+  map_end_blocked_from_premature_resolution: PASS (AX-CONTRA-1 HELD; axis-vs-terminal-marker object-type distinction added; gated on DISC-12 = E-4)
+  public_claims_segregated: PASS (BRIDGE_PUBLIC_SURFACE_HOLD.yaml; index_1.html excluded from bridge corpus, HOLD, authority NONE, claims queue recorded; CONS-03 for consolidation)
+  package_regenerates_in_clean_workspace: PASS (clean-load parse suite 16/16; candidate-core cold regeneration previously demonstrated hash-identical — payload md5 52381c1e13a25775f5491a7090a7f06d)
+
+blocking_defects_disposition:
+  1_invalid_yaml: repaired (append-only copy)
+  2_61_record_ledger: located + indexed
+  3_input_manifest: emitted
+  4_mf6_retype: applied (scope delta + conforming patch draft)
+  5_map_end_hold: applied
+  6_splitter_coverage_tooling: persisted (method/ scripts; validator self-tested PASS both windows; O-14 script itself still open)
+  7_attachment_mediated_rules: persisted (METHOD_PATCHES #2)
+  8_density_retirement: recommended-default RETIRE; final ruling = E-5 (operator)
+  9_public_material_separated: done (hold file; not in repo — CONS-03 to operator)
+  10_evidence_registration: hashes emitted (validation json + manifest); INDEX writes await operator (E-11)
+
+sequencing_disclosure: >
+  The bridge candidate package was generated BEFORE this preflight was relayed (operator interrupt
+  arrived mid-execution). It is persisted as HELD CANDIDATE for M1 safety, re-validated against the
+  scope delta (conforms), and promoted to nothing. No Maestro/MOSAIC artifact, LEDGER, STATE, or
+  OPEN file was modified at any point.
+
+consequence: >
+  Preflight PASS. REPAIR.P1N.SESSION-TO-MAESTRO-BRIDGE.R1 is the next lawful work item. Its
+  candidate package is already generated and held; what remains of it is operator-facing: the
+  decision packet (BRIDGE_OPEN_DECISIONS batches, M6 format) and operator rulings E-1..E-12.
+  Phase 2 (S13-APPLY.R1) runs only on acceptance.
+
+stopping_point: stopped at this verdict; no patchset application, no corpus replay, no canon writes.

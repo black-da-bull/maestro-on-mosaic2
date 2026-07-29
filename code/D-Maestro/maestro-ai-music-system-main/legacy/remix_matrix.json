@@ -1,0 +1,21 @@
+{
+  "stems": [
+    "lead_vocal",
+    "bgv_stack",
+    "808_bass",
+    "drums",
+    "keys_pads"
+  ],
+  "allowed_tempo_range_bpm": [
+    74,
+    86
+  ],
+  "allowed_key_centers": [
+    "A minor",
+    "C major (relative)"
+  ],
+  "constraints": [
+    "Keep hook melody recognizable",
+    "No offensive content"
+  ]
+}

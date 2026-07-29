@@ -1,0 +1,114 @@
+{
+  "title": "Decomposer Designer\u2019s Guide (v1.2-alpha)",
+  "purpose": "Framework and design reference for modifying Universal GPT Session Decomposer in creative/multimodal contexts.",
+  "core_philosophy": [
+    "Sessions are narrative organisms",
+    "GPT outputs reflect roles, emotions, modalities",
+    "Decode session DNA, not just extract steps"
+  ],
+  "design_rules": [
+    {
+      "principle": "Recursive Parsing",
+      "description": "Sessions loop, refract, prototype"
+    },
+    {
+      "principle": "Persona Awareness",
+      "description": "Detect persona switch-overs"
+    },
+    {
+      "principle": "Multimodal Anchoring",
+      "description": "FX/sounds as logic, not decor"
+    },
+    {
+      "principle": "Memory Seeds",
+      "description": "Design tokens to resurrect context"
+    },
+    {
+      "principle": "Creative Logic",
+      "description": "Narrative/emotional causality"
+    }
+  ],
+  "modules": [
+    {
+      "name": "Session Parser",
+      "function": "Segment chat log",
+      "dependencies": [
+        "NLP",
+        "Intent Detectors"
+      ]
+    },
+    {
+      "name": "Persona Resolver",
+      "function": "Tag AI roles",
+      "dependencies": [
+        "Lexicon",
+        "Embeddings"
+      ]
+    },
+    {
+      "name": "Task & Logic Mapper",
+      "function": "Map flows",
+      "dependencies": [
+        "Dependency graph"
+      ]
+    },
+    {
+      "name": "Emotional Mapper",
+      "function": "Tone/contrast",
+      "dependencies": [
+        "Sentiment analysis"
+      ]
+    },
+    {
+      "name": "Multimodal Extractor",
+      "function": "Extract FX cues",
+      "dependencies": [
+        "Pattern templates"
+      ]
+    },
+    {
+      "name": "Instruction Synthesizer",
+      "function": "Roles, logic, methods",
+      "dependencies": [
+        "Meta-template library"
+      ]
+    },
+    {
+      "name": "Memory Tokenizer",
+      "function": "Create tokens",
+      "dependencies": [
+        "Hashing",
+        "Metadata"
+      ]
+    },
+    {
+      "name": "Guardrail Generator",
+      "function": "Detect constraints",
+      "dependencies": [
+        "Inference"
+      ]
+    }
+  ],
+  "intelligence_types": [
+    "Narrative Intelligence",
+    "Emotive Intelligence",
+    "Procedural Intelligence",
+    "Relational Intelligence",
+    "Temporal Intelligence"
+  ],
+  "prompt_injection_examples": [
+    "Which persona is implied in this segment?",
+    "Map emotional contrast",
+    "Was this decision logic creative?",
+    "Extract modality cues",
+    "Generate memory seed"
+  ],
+  "memory_token_format": "MEM::v1.2#SessionHash@Role-Theme-Metaphor",
+  "example_token": "MEM::v1.2#5f92a2@MixGhost-JourneyCollapse-ReverbSymbol",
+  "use_cases": [
+    "Creative session decomposition",
+    "Instruction generation from creative GPTs",
+    "Persona training",
+    "Cross-session context bridging"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+ "pre": {
+  "Maestro_v5c_Canonical_Root.md": "f24ae34f6ce15d288df116acd3da0c19",
+  "Maestro_v5c_Canonical_Spine.md": "ba4a1c20fee7a7fdca6ee3a624267e96",
+  "Maestro_v5c_Conflict_and_Open_Question_Register.md": "73ed3f97f76776d286d56ee3f9b3cffd",
+  "Maestro_v5c_Lineage_and_Delta_Ledger.md": "e4d5ecaec7ae5054d9f930ec51d1f308",
+  "maestro_v0.md": "376eb64c22a766464cc651fb21e3bfd5"
+ },
+ "post": {
+  "Maestro_v5c_Canonical_Root.md": "e85dee068ca784819ebec1bd5df285f3",
+  "Maestro_v5c_Canonical_Spine.md": "96a4fd5514dcc02f5d06360d9bc894af",
+  "Maestro_v5c_Conflict_and_Open_Question_Register.md": "c7ad16bed5edadacb29498c525ebb09b",
+  "Maestro_v5c_Lineage_and_Delta_Ledger.md": "2ea7fbc7fefb853034ec18a83a7bfe93",
+  "maestro_v0.md": "278684141932339e7aa44c6c65bd77e5"
+ }
+}

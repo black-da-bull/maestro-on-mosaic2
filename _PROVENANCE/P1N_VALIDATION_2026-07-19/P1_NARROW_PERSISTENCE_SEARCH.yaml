@@ -1,0 +1,79 @@
+# P1N Persistence Search Reproduction — V1 finding audit
+# Work item: REPAIR.P1N.PANEL-VALIDATION.R1 · validated 2026-07-19
+# Reproduces the searches behind V1 ("session-13 FIRM canon never persisted") and records scope,
+# near matches, and transformed wording, distinguishing "not found in searched scope" from "not persisted anywhere".
+
+claim_under_test: >
+  R-RT-QAF-01, R-RT-PD-01, Config B FIRM canon (R-list v0.2, 96 entries / 92 FIRM), and the
+  v4.5.5-anchor ruling appear in ZERO persisted artifacts — transcripts only; canon/Maestro_v5c_*
+  never mentions v4.5.5.
+
+scope_searched:
+  included:
+    - artifacts/D-Maestro/canon/          # all 9 text-searchable files
+    - artifacts/D-Maestro/drafts/
+    - artifacts/HYDRA/
+    - system/
+    - code/D-Maestro/drafts/
+    - untracked/                          # near-match pass
+    - repo root *.md                      # near-match pass
+    - artifacts/D-Maestro/sources/ws_*.yaml (8 workspace identity specs)
+  excluded_by_design:
+    - session transcripts (sources/*.txt, sessions/, archive transcript copies) — the claim is about persistence OUTSIDE transcripts
+    - _PROVENANCE/ — postdates the finding; contains the replay files themselves
+    - node_modules/, .git/, .history/, media/
+  not_text_searchable:
+    - artifacts/D-Maestro/canon/SONG EXCELLENCE GOVERNENCE files.zip
+    - artifacts/D-Maestro/canon/who dat.pdf
+    - note: these two canon-register members were not content-searched; residual risk small but nonzero
+
+exact_term_results:
+  "R-RT-QAF-01": 0 files
+  "R-RT-PD-01": 0 files
+  "CONFIG B / Config B": 0 files
+  "R-list v0.2 / R-LIST v0.2": 0 files
+  "R-list / R-LIST (any version)": 0 files in persisted registers
+  "R-INV-07": 0 files (outside transcripts)
+  verdict: CONFIRMED — the session-13 rule identifiers and the 96-entry R-list artifact exist nowhere
+    in the searched persisted registers; within this scope, "not persisted anywhere" is the correct reading
+    for the identifiers, the R-list v0.2 artifact, Config B, and the version-trinity ruling.
+
+canon_staleness_check:
+  test: grep for "4.5.5" / "4_5_5" across artifacts/D-Maestro/canon/ (9 text files)
+  result: 0 matches in all files
+  verdict: CONFIRMED — the v5c canon register never references v4.5.5; staleness relative to the
+    session-13 anchor ruling stands.
+
+near_matches_and_transformed_wording:   # the material nuance this audit adds to V1
+  - file: artifacts/D-Maestro/drafts/cumulative_deltas_qaf.md
+    finding: Q-A-F provenance-ledger practice (April 2026 span; references session_handoff_2026-04-11)
+    relation: conceptual ANCESTOR of R-RT-QAF-01 (Q-A-F chain), pre-session-13, different wording, no rule ID
+  - file: artifacts/D-Maestro/drafts/mosaic_engine_v0.1.md
+    finding: "Detects phantom commitments at emit time, before the operator's working model is corrupted";
+      INV-04 "Q-A-F is atomic change unit; Q+A without F is open ticket"
+    relation: conceptual ANCESTOR of R-RT-PD-01 (emit-time phantom detection) under INV-04 wording
+  - file: artifacts/D-Maestro/drafts/maestro_v0.md
+    finding: "Phantom commitments blocked at emit time" checklist row; "§10 — Q-A-F Provenance" section
+    relation: same ancestry; ALSO A CONFLICT — defines K7 = Arrangement (6%) and K8 = Commercial (8%),
+      which CONTRADICTS session-13 Config B FIRM canon (K7 = External viability, K8 = Visual coherence admissibility)
+    significance: a persisted draft actively conflicts with operator-ratified FIRM canon — sharpens, not
+      weakens, the V1 staleness finding; add to the staleness map and the R-list reconstruction brief (O-13)
+  interpretation: >
+    V1's headline is upheld for everything it names. The session-13 mutations' distinctive content
+    (rule IDs, 96-entry FIRM R-list, Config B axis/criteria/governor set, version trinity) never
+    reached persistence. Concept-level ancestors of QAF/PD exist in April-era drafts under transformed
+    wording, and one draft's K7/K8 semantics were superseded-in-conversation but never patched — the
+    precise should-have-changed-but-didn't structure M1 predicts.
+
+related_verifications:
+  revised_inv18_omission:
+    source: artifacts/D-Maestro/sources/claud2.txt
+    original_inv18: byte 252444 ("Human turns have root authority" at 252472) — matches P0-b cite ~252444
+    revised_inv18: byte 255842 ("INFLUENCE ACKNOWLEDGMENT" at 255875; "influence over the operator" at 255969) — P0-b cite ~255834
+    skill_md_check: installed SKILL.md operating contract #2 carries original authority-asymmetry wording only;
+      no influence-acknowledgment clause anywhere in SKILL.md (partial echo of the re-read protocol noted)
+    verdict: CONFIRMED — Revised INV-18 never propagated to the skill artifact
+  run_it_to_me_export:
+    test: existence of projects/design-system/ in repo
+    result: projects/ does not exist
+    verdict: CONFIRMED-AS-PENDING — O-12 export not yet performed; covers still live only on the external claude.ai surface

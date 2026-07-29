@@ -1,0 +1,2 @@
+aisonggenerator audio/wav binaries land here in the Phase-3 audio pull.
+URLs are in ../../artifacts/aisonggenerator/manifest.csv (audio_url, wav_url, cover_url).

@@ -1,0 +1,33 @@
+# SESSION13_TARGET_ROUTING v2 — post-ruling supersession of v1 (v1 preserved in S13_BRIDGE/)
+# Work item: MAESTRO.O16.DERIVE-CURRENT-ARTIFACTS.R1 Stage 0 · 2026-07-19 · zero unresolved targets
+work_item: MAESTRO.O16.DERIVE-CURRENT-ARTIFACTS.R1
+supersedes: SESSION13_TARGET_ROUTING.yaml
+routing:
+  R_list_v0_2_snapshot:
+    target: RECONSTRUCTION.replay_backed_state
+    disposition: applied (reconstruction/replay-backed/session13/ + canon/history pointer, DEC-17)
+  R_RT_QAF_01:
+    target: MAESTRO.runtime_governance   # ONLY — reconstruction method excluded per DEC-10/Q2
+    disposition: applied (canon/session13_runtime_rules.md)
+  R_RT_PD_01:
+    target: MAESTRO.runtime_governance
+    disposition: applied (persisted requirement; enforcement deferred-until-runtime)
+  version_trinity_ruling:
+    target: RECONSTRUCTION.version_register
+    disposition: applied (_PROVENANCE/registers/version_trinity_v0_1.md)
+  v5c_canon_staleness:
+    target: MAESTRO.canon_register_annotation
+    disposition: applied (4 files annotated insert-only; hashes recorded)
+  k_namespace:
+    target: MAESTRO.sem_register_annotation
+    disposition: applied (maestro_v0.md annotated; prose qualification; short-code binding deferred to O-15 prefix registry, DEC-12)
+  atp_transfer_pack:
+    target: PORTABILITY.ATP_PROTOCOL   # DEC-11/Q4 — resolved
+    disposition: routed; protocol spec = portability backlog item (O-16 Stage 2 output family)
+  promotion_verb_model:
+    target: METHOD.mutation_edge_taxonomy
+    disposition: resolved per M14/Q5 — six verbs (update/upgrade/extend/enhance/exemplify/explain) classify edges; impact propagation + application re-optimization = mandatory completion obligations
+  two_window_architecture:
+    target: METHOD.session_architecture
+    disposition: recorded (replay + who_dat brief §8); persistence deferred by scope, not unresolved
+unresolved_targets: []

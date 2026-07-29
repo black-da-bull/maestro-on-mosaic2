@@ -1,0 +1,71 @@
+# maestro-on-mosaic — repo hygiene
+# Rule (DEC/2026-07-20): git holds TEXT. Media lives outside git (SharePoint/OneDrive),
+# referenced from git by a checksum manifest. GitHub blocks files >100MB (warns >50MB).
+
+# ---- audio / video (the mass; never in git) ----
+*.wav
+*.mp3
+*.flac
+*.aiff
+*.aif
+*.m4a
+*.ogg
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+
+# ---- raster art / renders (tracked via manifest, not bytes) ----
+*.webp
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.jpe
+# NOTE: *.svg is intentionally NOT ignored — diagrams are text and belong in git.
+
+# ---- archives / bundles (must be extracted + inventoried, not committed sealed) ----
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.bundle
+
+# ---- executables / installers (never) ----
+*.exe
+*.dll
+*.msi
+*.bin
+
+# ---- build / env noise ----
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.history/
+dist/
+build/out/
+
+# ---- OS / tooling junk ----
+Thumbs.db
+desktop.ini
+.DS_Store
+*:Zone.Identifier
+*Zone.Identifier
+.obsidian/
+.smart-env/
+
+# ---- sandbox: experiments are local-only evidence, not repo content ----
+_SANDBOX/
+
+# ---- explicitly KEPT (documented so future sessions don't "helpfully" ignore them) ----
+# *.md *.yaml *.yml *.json *.csv *.ps1 *.py *.txt *.svg *.docx *.pdf *.xlsx

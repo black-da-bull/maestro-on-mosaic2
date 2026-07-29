@@ -1,0 +1,28 @@
+# every non-identity address migration (all other addresses carry forward verbatim)
+source_md5: eaf18e1101c7a5814850fe0c62743b3a
+identity_addresses: 174
+migrated:
+  MAP.K1: PER.K5
+  MAP.K1.S1: PER.K5.S1
+  MAP.K1.S2: PER.K5.S2
+  MAP.K1.S3: PER.K5.S3
+  MAP.K1.S4: PER.K5.S4
+  MAP.K1.S5: PER.K5.S5
+  MAP.K2: PER.K6
+  MAP.K2.S1: PER.K6.S1
+  MAP.K2.S2: PER.K6.S2
+  MAP.K2.S3: PER.K6.S3
+  MAP.K2.S4: PER.K6.S4
+  MAP.K2.S5: PER.K6.S5
+  MAP.K3: PER.K7
+  MAP.K3.S1: PER.K7.S1
+  MAP.K3.S2: PER.K7.S2
+  MAP.K3.S3: PER.K7.S3
+  MAP.K3.S4: PER.K7.S4
+  MAP.K3.S5: PER.K7.S5
+  MAP.K4: PER.K8
+  MAP.K4.S1: PER.K8.S1
+  MAP.K4.S2: PER.K8.S2
+  MAP.K4.S3: PER.K8.S3
+  MAP.K4.S4: PER.K8.S4
+  MAP.K4.S5: PER.K8.S5

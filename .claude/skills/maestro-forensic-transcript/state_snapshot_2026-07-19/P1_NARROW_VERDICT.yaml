@@ -1,0 +1,92 @@
+# P1N Validation Verdict
+# Work item: REPAIR.P1N.PANEL-VALIDATION.R1 · 2026-07-19
+# Validator: independent Cowork session (cloud container), staged byte-verified copies of
+# D:\maestro-on-mosaic evidence; all mechanical checks scripted, no hand-walking.
+
+verdict: PASS
+
+criteria:
+  source_coverage_complete:
+    result: PASS
+    basis: >
+      Split reproduced: contiguous zero-gap segments whose concatenation equals the source exactly
+      after CRLF->LF normalization (the only transformation; W1 6,418 CR chars, W2 8,647). All 49
+      operator segments (17+32) have replay dispositions; verbatim work files contain every user
+      segment; REC-A/REC-B verified at the claimed assistant-segment tails; independent sweep of all
+      43 assistant segments found zero further embedded operator text inputs.
+  mutation_lineage_reproducible:
+    result: PASS
+    basis: >
+      61/61 mutation IDs present and contiguous (27+34); status tallies internally consistent; all 22
+      high-authority verbatim probes traced to source at the claimed char positions; R-list v0.2
+      totals block (96/92/3/1) found verbatim in source; interrupted-promotion evidence confirmed.
+  authority_classifications_materially_correct:
+    result: PASS
+    basis: >
+      Sampled classifications (operative/accepted/superseded/unresolved) match source evidence;
+      relay/quote-back/assistant-bleed regions correctly held at proposal authority; REC-B K-2
+      selection correctly flagged as weakest evidence class (assistant attribution).
+  contradictions_preserved:
+    result: PASS
+    basis: >
+      9/9 contradictions reproduced with both sides traceable to source; no silent harmonization;
+      omission sweep found no unregistered corrective operator turn; held-open items carried.
+  persistence_search_properly_scoped:
+    result: PASS
+    basis: >
+      Zero-occurrence claims reproduced for exact identifiers and the R-list v0.2 artifact across the
+      claimed registers; canon/ v4.5.5 absence reproduced (9/9 text files); scope now explicitly
+      documented, near matches recorded (April-era QAF/phantom ancestors), and one persisted-draft
+      K7/K8 conflict with FIRM canon surfaced.
+  no_structured_artifact_outweighs_source:
+    result: PASS
+    basis: >
+      Replay files carry operator verbatim with source offsets; relayed AI content consistently
+      labeled proposal-context; this validation re-derived everything from the primaries, not from
+      the replay's own summaries.
+
+minor_findings:   # none verdict-blocking; fold into method before the full P1 sweep
+  - id: MF-1
+    finding: '"byte-lossless" should be restated "character-lossless after CRLF->LF normalization" — segment offsets index normalized text (393,821 / 914,340 chars), not raw bytes (407,408 / 927,063).'
+  - id: MF-2
+    finding: 'Correction-density metric behind session-13 selection is not reproducible as stated: marker set undocumented. Rank-1 (window2 most correction-dense) reproduces under an independent marker set (0.286/KB vs claud3 0.083, eldrik 0.106); the claimed secondary ordering (claud3 > eldrik) does not. Persist the marker definition before reusing density for session ordering.'
+  - id: MF-3
+    finding: 'Unregistered operator EVENT: window2 seg16 tail carries a 4.5.5.txt file-attachment marker (2:15 PM, between U15 and U18). M8-class gap — attachment events, like mediated decisions, do not render as user turns. Extend the coverage rule to enumerate attachment events.'
+  - id: MF-4
+    finding: 'Two contradiction side-quotes flatten source line breaks / column whitespace (CR-2 "Six-verb canon (no extension) held"; C3 U56 blocker line). Content identical; note quote-normalization convention in the replay header.'
+  - id: MF-5
+    finding: 'canon/ members "SONG EXCELLENCE GOVERNENCE files.zip" and "who dat.pdf" were not content-searched (non-text). Small residual gap in the canon staleness sweep.'
+  - id: MF-6
+    finding: 'NEW repair-relevant fact: drafts/maestro_v0.md defines K7=Arrangement/K8=Commercial, conflicting with session-13 Config B (K7=External viability, K8=Visual coherence). Add to staleness map and to the O-13 R-list reconstruction brief.'
+
+sixteen_claim_scorecard:
+  c01_4305_indexed_records: CONFIRMED
+  c02_md5_integrity: CONFIRMED (47/47 verified — 6 session-13 files + deterministic 41-file sample; full-corpus pass not run)
+  c03_untracked_newest: CONFIRMED (untracked/website file is the newest touch tree-wide, ~2026-07-19)
+  c04_nine_skill_components_absent: CONFIRMED (installed skill = SKILL.md only; repo search reproduces M5 exactly)
+  c05_recovered_kernel: CONFIRMED (byte-identical to KERNEL.md inside archive/im_dead_kb.zip, zip-dated 2026-05-20; ancestor-candidate status per M5/DEC-03 — exact identity to the packaged skill file unprovable absent originals)
+  c06_revised_inv18_omitted: CONFIRMED (claud2.txt bytes 252444/255842; SKILL.md carries original only)
+  c07_t14_full_coverage: CONFIRMED-AS-RECORDED (5/5 coverage lines, 23/23 turns; originals live in Cowork history, outside repo — independent recount impossible from this corpus)
+  c08_mediated_decisions_captured: CONFIRMED (CM-5/6/7 mediated footer in 63122c11, cited via restating assistant turns, marked provisional)
+  c09_session13_highest_density: PARTIALLY CONFIRMED (rank-1 reproduced; exact numbers/secondary ordering not reproducible — see MF-2)
+  c10_split_lossless: CONFIRMED (per MF-1 restatement)
+  c11_61_mutations: CONFIRMED
+  c12_9_contradictions: CONFIRMED
+  c13_rlist_v02_counts: CONFIRMED (TOTAL 96 / FIRM 92 / CAND 3 / OPEN 1, verbatim in source)
+  c14_firm_canon_unpersisted: CONFIRMED (with near-match records — see persistence audit)
+  c15_state_pointer_rulings: CONFIRMED (LEDGER M1-M11/DEC-01..08/V1; STATE v0.1; OPEN O-01..O-14; POINTER doc all as described)
+  c16_run_it_to_me_export: CONFIRMED-AS-PENDING (projects/ absent; O-12 open)
+
+panel_adjudication:   # five bounded roles, per work item
+  forensic_provenance: PASS — hash chain intact end-to-end (device -> INDEX record -> staged copy); DEC-02 three-names-one-file equivalence verified by digest
+  maestro_architecture: PASS with note — validation touches no runtime canon; MF-6 K7/K8 conflict routed to O-13, not patched
+  context_and_authority: PASS — no structured artifact outweighed source; authority classes correctly carried through relay/bleed regions
+  falsifiability_qa: PASS — every claim either reproduced, reproduced-with-stated-scope, or explicitly downgraded (c07, c09); no claim promoted on trust
+  adversarial_simplification: PASS — validation used the primaries, not the replay's self-description; the one place reproduction failed (density metric) is reported as a failure, not smoothed
+
+consequence_per_work_item: >
+  PASS authorizes staged replay of the next small session batch (T01-T13 sweep entry) — subject to
+  operator ruling, with MF-1..MF-4 folded into the method first and splitter repair (O-14) still due.
+stopping_point: >
+  Stopped at verdict. No Maestro runtime artifact was created, modified, or patched. Outputs written
+  only to _PROVENANCE/P1N_VALIDATION_2026-07-19/.

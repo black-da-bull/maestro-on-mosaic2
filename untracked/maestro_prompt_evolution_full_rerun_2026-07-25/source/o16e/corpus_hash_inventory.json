@@ -1,0 +1,932 @@
+[
+ {
+  "path": "CLAUDE.md",
+  "bytes": 1704,
+  "sha8": "198dbac5",
+  "md5": "3a3d60477706ab0acfff739e64f53fa6"
+ },
+ {
+  "path": "Human - Maestro v5b Workspace Discussion.md",
+  "bytes": 72215,
+  "sha8": "a7a63ff1",
+  "md5": "334e6e0eb9c0a37855adaf57ca37af3f"
+ },
+ {
+  "path": "README.md",
+  "bytes": 3751,
+  "sha8": "d5b7d33a",
+  "md5": "f584e5ddddbe9247ecf73b2d3844013d"
+ },
+ {
+  "path": "_PROVENANCE/LEDGER.md",
+  "bytes": 30093,
+  "sha8": "6281b8ec",
+  "md5": "e9dd7b34c556c81e642a7143056e7a17"
+ },
+ {
+  "path": "_PROVENANCE/OPEN.md",
+  "bytes": 8157,
+  "sha8": "b2d0794b",
+  "md5": "7de77c43d290c958e0080c27cad8e686"
+ },
+ {
+  "path": "_PROVENANCE/P0_EVIDENCE_INVENTORY_v0_1.md",
+  "bytes": 12604,
+  "sha8": "5a5fc55e",
+  "md5": "71ed526718903130dcdecc488f59eef2"
+ },
+ {
+  "path": "_PROVENANCE/P1N_VALIDATION_2026-07-19/P1_NARROW_VERDICT.yaml",
+  "bytes": 7139,
+  "sha8": "7209aff4",
+  "md5": "762ad38c5a7cd8bdb438e67316fabfb2"
+ },
+ {
+  "path": "_PROVENANCE/P1_narrow/session13_window1_replay.md",
+  "bytes": 42703,
+  "sha8": "e304f655",
+  "md5": "b4678f76e65401dce48c14de29e4289f"
+ },
+ {
+  "path": "_PROVENANCE/P1_narrow/session13_window2_replay.md",
+  "bytes": 45035,
+  "sha8": "78d5b80b",
+  "md5": "4a0b2f27a81a3901f75b9ea7cc6a1dc8"
+ },
+ {
+  "path": "_PROVENANCE/POINTER_FOR_CLAUDE_PROJECTS.md",
+  "bytes": 1789,
+  "sha8": "fd30645d",
+  "md5": "dae3504807c1c45275e5633dbcec3ef3"
+ },
+ {
+  "path": "_PROVENANCE/S13_BRIDGE/APPLY/CURRENT_SESSION_DELTA_AND_CONTINUATION_2026-07-19.md",
+  "bytes": 3476,
+  "sha8": "8d7d8f20",
+  "md5": "5232eccf2716e239c16c5a975bf46586"
+ },
+ {
+  "path": "_PROVENANCE/S13_BRIDGE/SESSION13_CANDIDATE_PATCHSET/PATCH-01_R_LIST_v0_2_FIRM_CANON.md",
+  "bytes": 26552,
+  "sha8": "755e4fdf",
+  "md5": "8aa4014d659dec4415422b7a23261d29"
+ },
+ {
+  "path": "_PROVENANCE/SKILL_FILES_SEARCH_CHECKLIST.md",
+  "bytes": 2145,
+  "sha8": "7beb6fd7",
+  "md5": "97f6f3a80fc8630c93f988f6848b5e36"
+ },
+ {
+  "path": "_PROVENANCE/STATE.md",
+  "bytes": 10234,
+  "sha8": "f04fed71",
+  "md5": "ce1a205d244ea3e54066e6b991b5f031"
+ },
+ {
+  "path": "_PROVENANCE/T14_extractions/63122c11_cowork_continuation.md",
+  "bytes": 12929,
+  "sha8": "0287dfdf",
+  "md5": "3c9cead17c707457c741fa3753ffe099"
+ },
+ {
+  "path": "_PROVENANCE/T14_extractions/970d0a6b_forensic_reconstruction.md",
+  "bytes": 12708,
+  "sha8": "4bc22b99",
+  "md5": "ba4478504635a12b695e43c372c22704"
+ },
+ {
+  "path": "_PROVENANCE/T14_extractions/bda23828_build_harvest.md",
+  "bytes": 83327,
+  "sha8": "d2bfc663",
+  "md5": "2e83ebec56675458a7de5419f9e404da"
+ },
+ {
+  "path": "_PROVENANCE/T14_extractions/c6dfad39_folder_cleanup.md",
+  "bytes": 31008,
+  "sha8": "842a1c48",
+  "md5": "afefa7db4a6bf0b7ecf26da13cec8ce3"
+ },
+ {
+  "path": "_PROVENANCE/T14_extractions/fc16fb1a_mvp_buildable_substance.md",
+  "bytes": 8135,
+  "sha8": "95c0642e",
+  "md5": "fa068d7cb7c6180669751e8d5459e0de"
+ },
+ {
+  "path": "_PROVENANCE/method/METHOD_PATCHES_2026-07-19.md",
+  "bytes": 2803,
+  "sha8": "66971783",
+  "md5": "ead10d0831f9fb35e32b1107425c4006"
+ },
+ {
+  "path": "_PROVENANCE/recovered/KERNEL_from_im_dead_kb_2026-05-20.md",
+  "bytes": 3961,
+  "sha8": "b6921277",
+  "md5": "884af3ed2c602d9d7e2811aa575111a6"
+ },
+ {
+  "path": "_PROVENANCE/registers/version_trinity_v0_1.md",
+  "bytes": 1639,
+  "sha8": "865139f1",
+  "md5": "b9bc421d2a1dddb361859bbfcc0f9f63"
+ },
+ {
+  "path": "_PROVENANCE/skill_v1_1/maestro-forensic-transcript_v1.1_ATP_2026-07-19.zip",
+  "bytes": 74703,
+  "sha8": "84f24a74",
+  "md5": "d8ecffa357cad3be2773a1c800cd15fa"
+ },
+ {
+  "path": "_PROVENANCE/structural_fold/corpus_fold_extension_v0_2.md",
+  "bytes": 18593,
+  "sha8": "67563359",
+  "md5": "d3e5f94c88c60422b0362b1e2b7715ea"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/creative.ust.template.txt",
+  "bytes": 2971,
+  "sha8": "4abbb489",
+  "md5": "c4ad858bffc3ad18ceac188da0d6b6d4"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/houseinorder.txt",
+  "bytes": 528238,
+  "sha8": "213b2cdd",
+  "md5": "ddc6d3fa44339fff1bcb47ab98ab332d"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/inmyroom.tx.txt",
+  "bytes": 74626,
+  "sha8": "307aca4c",
+  "md5": "3454d0ca37406d2bc2061c63b5c77d25"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/song.excellence.matrix.iterative.design.session.txt",
+  "bytes": 392891,
+  "sha8": "c0d4923a",
+  "md5": "5b4735e5889dfcd60ea6cb18ce5ef453"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/technical.ust.template.txt",
+  "bytes": 36465,
+  "sha8": "a9a0f2df",
+  "md5": "eaf18e1101c7a5814850fe0c62743b3a"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/v5-b/corpus.manifest.yaml",
+  "bytes": 1361,
+  "sha8": "d43006f6",
+  "md5": "f090304dbbcd1df941fdc78c131da48a"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/v5-b/creative_ust_template.ai_optimized.md",
+  "bytes": 4790,
+  "sha8": "b6e9ad22",
+  "md5": "31bd6cf452088c59be1fd2b2192181c9"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/v5-b/houseinorder.ai_optimized.md",
+  "bytes": 756559,
+  "sha8": "43022a4b",
+  "md5": "31afef94161e396194cff57140b0c78b"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/v5-b/inmyroom.ai_optimized.md",
+  "bytes": 114117,
+  "sha8": "c3095443",
+  "md5": "7fc25327291d978f15d427dd8d524392"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/v5-b/staging.spine.merged.ai_optimized.md",
+  "bytes": 1489123,
+  "sha8": "16f595e6",
+  "md5": "365e977bbb148816d40dbf7056392c06"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/v5-b/technical_ust_template.ai_optimized.md",
+  "bytes": 118024,
+  "sha8": "0280fb08",
+  "md5": "39282945b58f69eeb974422e91d2f365"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/who dat.md",
+  "bytes": 301677,
+  "sha8": "d1e22078",
+  "md5": "f0be4f230ccad8191f84270354775010"
+ },
+ {
+  "path": "artifacts/D-Maestro/SONG EXCELLENCE MATRIX!!!/song_excellence_reformatted.md",
+  "bytes": 615277,
+  "sha8": "18a1e2a1",
+  "md5": "bbe6b064aa55c86c105888abc9847f89"
+ },
+ {
+  "path": "artifacts/D-Maestro/canon/Maestro_v5c_Canonical_Root.md",
+  "bytes": 10576,
+  "sha8": "9aa83124",
+  "md5": "e85dee068ca784819ebec1bd5df285f3"
+ },
+ {
+  "path": "artifacts/D-Maestro/canon/Maestro_v5c_Canonical_Spine.md",
+  "bytes": 28789,
+  "sha8": "50cdfe0c",
+  "md5": "96a4fd5514dcc02f5d06360d9bc894af"
+ },
+ {
+  "path": "artifacts/D-Maestro/canon/Maestro_v5c_Conflict_and_Open_Question_Register.md",
+  "bytes": 9600,
+  "sha8": "46d92df4",
+  "md5": "c7ad16bed5edadacb29498c525ebb09b"
+ },
+ {
+  "path": "artifacts/D-Maestro/canon/Maestro_v5c_Lineage_and_Delta_Ledger.md",
+  "bytes": 14957,
+  "sha8": "786d504e",
+  "md5": "2ea7fbc7fefb853034ec18a83a7bfe93"
+ },
+ {
+  "path": "artifacts/D-Maestro/canon/MoMoney Maestro OS v4.5.2 \u2014 MONOLITHIC PROMPT.md",
+  "bytes": 82200,
+  "sha8": "267ed37e",
+  "md5": "fdbf4fe053aef7e4d22d01a20fb38001"
+ },
+ {
+  "path": "artifacts/D-Maestro/canon/session13_runtime_rules.md",
+  "bytes": 1383,
+  "sha8": "63850f97",
+  "md5": "83c8138e410fafa4c28dd46624027f10"
+ },
+ {
+  "path": "artifacts/D-Maestro/drafts/maestro_ai_optimized.txt",
+  "bytes": 1882194,
+  "sha8": "1d64c7e4",
+  "md5": "a6575ce532a7184724a46a5ee51fdc9f"
+ },
+ {
+  "path": "artifacts/D-Maestro/drafts/v2.6_universal_maestro.md",
+  "bytes": 116952,
+  "sha8": "ed89ed03",
+  "md5": "6fb85db5c2b6599740e920db10d424a8"
+ },
+ {
+  "path": "artifacts/D-Maestro/pws - maestro v5/Branch \u00b7 Branch \u00b7 Lyric quality baseline (1).txt",
+  "bytes": 148656,
+  "sha8": "6bb82530",
+  "md5": "029bfc2947893eb8b9cb851f3bb40878"
+ },
+ {
+  "path": "artifacts/D-Maestro/pws - maestro v5/Chimera-Gulf hybrid mode (1).txt",
+  "bytes": 41531,
+  "sha8": "2ece2cdb",
+  "md5": "c002bf05828b41b0c3a8f54e66b75fec"
+ },
+ {
+  "path": "artifacts/D-Maestro/pws - maestro v5/Lyric quality baseline (1).txt",
+  "bytes": 137809,
+  "sha8": "2ba33364",
+  "md5": "00ffcc1850f50e1a668aaeb31e6c74a0"
+ },
+ {
+  "path": "artifacts/D-Maestro/pws - maestro v5/all_prompt_exchanges.md",
+  "bytes": 290347,
+  "sha8": "a515945c",
+  "md5": "4da1471b82079e409a94fedef2b06f1f"
+ },
+ {
+  "path": "artifacts/D-Maestro/pws - maestro v5/chimera-quality-dev-chat (1).txt",
+  "bytes": 119692,
+  "sha8": "d83bb14e",
+  "md5": "9932da4d7a3e1505b1a5f5e4bd6003f3"
+ },
+ {
+  "path": "artifacts/D-Maestro/pws - maestro v5/ppp.roles.md",
+  "bytes": 3203,
+  "sha8": "8e989112",
+  "md5": "4bd776c23c4b66e08fb8e29ebae1834c"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/claud2.txt",
+  "bytes": 349779,
+  "sha8": "dd5ff859",
+  "md5": "090c0eff9fea9025e6ee019dd647241a"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/claud3.txt",
+  "bytes": 407408,
+  "sha8": "ffe43b4c",
+  "md5": "faecdb760a6248fd08d9cce4e6e738ca"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/claude-session051526-window1.txt.txt",
+  "bytes": 483808,
+  "sha8": "94cd6b2d",
+  "md5": "b8680f8aaf3641619932ae9da2c38aac"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/claude-session051526.md",
+  "bytes": 477776,
+  "sha8": "80d774ff",
+  "md5": "225046c8cec477f2fa5c28e1a9e78899"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/claude-session13-window2.txt",
+  "bytes": 927063,
+  "sha8": "eb9ad9b9",
+  "md5": "94989f7f37f67e6d1a818a1b974c1efc"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/eldrik.txt.txt",
+  "bytes": 3577046,
+  "sha8": "e8b4e904",
+  "md5": "c0b13f1796b4487abfb253547e5ea04c"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/forensic_workspace_import_corpus_v_4.md",
+  "bytes": 49019,
+  "sha8": "c2b500be",
+  "md5": "03ee5e6e79bc08a06f41b0dc68c6f292"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/maestro5 report.txt",
+  "bytes": 248844,
+  "sha8": "b8721e47",
+  "md5": "db35157346072c3f877043540b5f7bab"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/maestro_os_diff_report.md",
+  "bytes": 7488,
+  "sha8": "8de0e724",
+  "md5": "97bbb1eda3fd7a742628d866fb902da0"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/maestro_version_changelog.md",
+  "bytes": 9820,
+  "sha8": "af501273",
+  "md5": "f7cec984c76b510ccdae1357965d4e73"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/maestro_version_span_tangent_report.md",
+  "bytes": 9413,
+  "sha8": "287930b5",
+  "md5": "f099d0080c2155412730baeb31e51ec0"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/v2-6-4-5-5__maestro_evolution_execution-evidence.txt",
+  "bytes": 1873425,
+  "sha8": "afdb379a",
+  "md5": "df58baf32819027ee0fbc99e9ec77d4d"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/workspace_identity-maestro_v5-c.txt",
+  "bytes": 34707,
+  "sha8": "5492c45c",
+  "md5": "1052eb090d19f63ba96c5cf390f4a1cf"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_2_maestro_v_5_b_yaml.yaml",
+  "bytes": 18343,
+  "sha8": "182a0867",
+  "md5": "387cf89b5f0b2ca2851b6edfe9a11fd9"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_chatgpt_maestro_v5c_current_project_v5-c_really_v5.yaml",
+  "bytes": 18199,
+  "sha8": "c5f8299b",
+  "md5": "49b9193db5425ec169c34e54447b06e2"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_claude-project_v5-spine-staging_2026-05-20.yaml",
+  "bytes": 23805,
+  "sha8": "74486363",
+  "md5": "7e20092fa90dac7aefdb78de2d0c5db2"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_forensic_maestro_mosaic_reconstruction_v0_1.yaml",
+  "bytes": 60319,
+  "sha8": "5d7e343a",
+  "md5": "cbb435a9d80b062dd4965543efb0adae"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_forensic_v5c_consolidation_v0.1.yaml",
+  "bytes": 28294,
+  "sha8": "f78b8c68",
+  "md5": "af044a97df67dfb24a9799505a1f50c8"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_maestro_mosaic_forensic_claude_v1.0.yaml",
+  "bytes": 35759,
+  "sha8": "fa800675",
+  "md5": "21fc3c2e3b890d113c17da19ad8b6237"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_synthesizing-claude_day-1-prep_v1.0.yaml",
+  "bytes": 34183,
+  "sha8": "5b2366f5",
+  "md5": "9219a41e1bd45a676e171b481b1111ea"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/you said sonic architect said delimiters.txt",
+  "bytes": 3786,
+  "sha8": "675ebf00",
+  "md5": "4fa08171ee33464f00e7f73ea4ef34c4"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/# David (aka Odie).txt",
+  "bytes": 9192,
+  "sha8": "38813ca2",
+  "md5": "e76838ada8a2c5a2904e14bc143826cb"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/01_kernel.md",
+  "bytes": 9762,
+  "sha8": "07097926",
+  "md5": "1f5f5a3b706e1dffd4a9a9c5df95644f"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/2025-05-16 - Suno v4.5 Taxonomy Research.md",
+  "bytes": 233336,
+  "sha8": "b40924de",
+  "md5": "be33c409e424e99e7cd20fb731e9b59d"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/Begin GPT 1.txt",
+  "bytes": 129724,
+  "sha8": "bd530718",
+  "md5": "3c2687cfe8312194d68dd40e74a53f5a"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/Chaos_Decomposer_v1_5_Monolith.md",
+  "bytes": 19207,
+  "sha8": "c7ce1393",
+  "md5": "15677bfc30f8e1f8d0cb4ee7a1b38f9b"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/ChatGPT (1).md",
+  "bytes": 261162,
+  "sha8": "477daef6",
+  "md5": "6494b89d3635282472a89dc5ab4ed2d0"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/ChatGPT (2).md",
+  "bytes": 172073,
+  "sha8": "ea2e0e47",
+  "md5": "c103b7ecae20615aca5f8a47d99341e8"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/ChatGPT (3).md",
+  "bytes": 170475,
+  "sha8": "2a9d557b",
+  "md5": "3fc5ec123868c748ab1b3697ecfc51d0"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/ChatGPT.md",
+  "bytes": 177260,
+  "sha8": "a73943da",
+  "md5": "ace8b756a3d4854e97378dc06776e7ef"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/Day 3 Dev Chat.md",
+  "bytes": 1424382,
+  "sha8": "b6e2b525",
+  "md5": "0ab517effe9613e0dea7a36f4ee296e1"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/KNOWLEDGE_SPINE.md",
+  "bytes": 7061,
+  "sha8": "4b3c4eca",
+  "md5": "d474df71ee5f7e6cbc0dd62f00b6b0d8"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/Knowledge Spine \u2014 Maestro v5-b.md",
+  "bytes": 6990,
+  "sha8": "830171f9",
+  "md5": "498c9af183c33a69291fc148d61128d6"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/MoMoeny Dev.md",
+  "bytes": 286763,
+  "sha8": "8c2383d5",
+  "md5": "bae4c1c3428d588e5f18e121c50df65b"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/USTF_Consolidated_6Page_Report.md",
+  "bytes": 24737,
+  "sha8": "9c988371",
+  "md5": "51a045fe919bea8c212d13c7bdbd6a7d"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/UniversalMaestro.v3.0g.CustomGPT.Instructions.md",
+  "bytes": 5250,
+  "sha8": "426f5cbc",
+  "md5": "50eb7cf72a1521ffbfde68cb2ffef428"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/chaos_decomposer_v1_5_monolith (1).md",
+  "bytes": 27702,
+  "sha8": "4451b0a6",
+  "md5": "7e8dac6be5cb06bf1a5013a8e2f1120f"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/chimera_indigo_correction_brief.md",
+  "bytes": 2793,
+  "sha8": "168fb867",
+  "md5": "c4e6872ca7490f1d8f6d62d4e8055a9d"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/chimera_indigo_prompt.md",
+  "bytes": 2745,
+  "sha8": "af899c0c",
+  "md5": "63e23b2d196952946cafc21bfe6c7599"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/chimera_indigo_round_robin_protocol.md",
+  "bytes": 1210,
+  "sha8": "d9150673",
+  "md5": "88856e79ee72f0b3ff9a8d1e67aa423a"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/chop and screw module dev chat.txt",
+  "bytes": 416795,
+  "sha8": "04c35db1",
+  "md5": "19812369ed1c50f26d949e82e00bbc1d"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/context.md",
+  "bytes": 60484136,
+  "sha8": "c8504cd1",
+  "md5": "1b49208f3181f78cb1396ab39910c175"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/context_anchor.chimera_ancestry.md",
+  "bytes": 7861,
+  "sha8": "517f8a95",
+  "md5": "b3c8e7c9b6d977e4e0622f9029c55554"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/dumbass session.md",
+  "bytes": 113273,
+  "sha8": "1f2f5912",
+  "md5": "e52871c1a38bd97c4c83d1b0f033c682"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/extrct-engine-dev-chat.txt",
+  "bytes": 202191,
+  "sha8": "aa0c220b",
+  "md5": "1aa1e2eaa0bd6dd21cefebb12dafe40b"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/1213.txt",
+  "bytes": 324893,
+  "sha8": "a7f1932b",
+  "md5": "7f0782bbcaccc28a9dfe0b55c5f685b9"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/maestro_v4_baseline_snapshot/CONCEPT_DOC.md",
+  "bytes": 3024,
+  "sha8": "53fcb3b2",
+  "md5": "4a69f01b5e12e003977aa46fadc4aa7a"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/maestro_v4_baseline_snapshot/SNAPSHOT_MANIFEST.json",
+  "bytes": 1869,
+  "sha8": "4e17f721",
+  "md5": "33f14f693fff99e8b6b7beeead281179"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/maestro_v4_baseline_snapshot/SYSTEM_PROMPT_BASELINE.md",
+  "bytes": 1722,
+  "sha8": "09aed441",
+  "md5": "df369bee7c85a73c2afbc824ab621ae8"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_node_edge_system_graph_v_0.md",
+  "bytes": 33242,
+  "sha8": "ad44d1b0",
+  "md5": "83d4c3e93b180669b6d1444b97507701"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/CHANGELOG.md",
+  "bytes": 545,
+  "sha8": "4a8b3bc9",
+  "md5": "b92afd01feeb333a046f8c9a495fbd36"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/MANIFEST.json",
+  "bytes": 3335,
+  "sha8": "d562f88e",
+  "md5": "219a9637c3e6ee633bfd2408117662ce"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/README.md",
+  "bytes": 1816,
+  "sha8": "678d21cc",
+  "md5": "de7da1e9156c0c9d69c2662ff7819b97"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/SYSTEM_PROMPT.md",
+  "bytes": 3929,
+  "sha8": "e987e41e",
+  "md5": "d8870654cab33de28b73ebcdd117b01f"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/COUNCIL_MATRIX.md",
+  "bytes": 2063,
+  "sha8": "e7097f6a",
+  "md5": "0853e6d4f1ebe40c0fbf8488a8c35c73"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/COUNCIL_PROTOCOL.md",
+  "bytes": 2028,
+  "sha8": "d1c889f7",
+  "md5": "4efb0005aab04a9cfd1c500dbeccf469"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/DRY_RUN_EXAMPLE.md",
+  "bytes": 793,
+  "sha8": "a4337621",
+  "md5": "54f09198340d978a2fd9ab5cf472eb28"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/EVIDENCE_CONTRACT.md",
+  "bytes": 2510,
+  "sha8": "9d57939e",
+  "md5": "ccc90058b24469c3b0645c5c579a48c7"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/LOG_TEMPLATES.md",
+  "bytes": 3309,
+  "sha8": "fdbac9b8",
+  "md5": "a1af70092e042c086d8cb2de942a9261"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/MIGRATION_LOG.md",
+  "bytes": 808,
+  "sha8": "5b7c4abe",
+  "md5": "c82bba6c946678870d3f430e8cd42c00"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/MODEL_PROFILE.md",
+  "bytes": 867,
+  "sha8": "17e42c9e",
+  "md5": "0ef7e28270b16421ffa0ced2700ce12c"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/MODULE_REGISTRY.md",
+  "bytes": 1262,
+  "sha8": "89042f13",
+  "md5": "1d223fc6db1d721efd14b774dd8a0873"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/TECHNICAL_UST_CANON.md",
+  "bytes": 6326,
+  "sha8": "bfe0b238",
+  "md5": "81162d7192d19ff3dc549ff9f0b33458"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/TECHNICAL_UST_GOVERNANCE_ADDENDUM.md",
+  "bytes": 7667,
+  "sha8": "29b0c9ff",
+  "md5": "cb98f52163a52cf49a50dca434cb0d6e"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/WORK_ITEM_SCHEMA.md",
+  "bytes": 701,
+  "sha8": "1d3f7323",
+  "md5": "633c8cd4b6ffc44907a2e89e2d47f51c"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/templates/CREATIVE_UST_TEMPLATE.txt",
+  "bytes": 3421,
+  "sha8": "e192d29d",
+  "md5": "3db2a8382a9ed218faecbbb3fb89a3e1"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/sonic_architect_ii_deep_dive.md",
+  "bytes": 38979,
+  "sha8": "006ed9e4",
+  "md5": "d95cac79b5a4425041fe4a69a4f0fff4"
+ },
+ {
+  "path": "maestro-current/00_ROOT_SPEC.md",
+  "bytes": 3630,
+  "sha8": "a48eebff",
+  "md5": "3cc5a9ba26348c46ce080903d3232bf2"
+ },
+ {
+  "path": "maestro-current/01_TECHNICAL_UST_CANON.md",
+  "bytes": 29428,
+  "sha8": "5928b91d",
+  "md5": "683fb78ec2c53a8d137b933ea9887710"
+ },
+ {
+  "path": "maestro-current/02_CREATIVE_UST_TEMPLATE.md",
+  "bytes": 8702,
+  "sha8": "0481c712",
+  "md5": "7c7f2a4a84a5b113e85bf4837582b3f0"
+ },
+ {
+  "path": "maestro-current/03_PHASE_CHAIN.md",
+  "bytes": 1945,
+  "sha8": "2be39d77",
+  "md5": "13a49f07e9cb65267a96997e93de9437"
+ },
+ {
+  "path": "maestro-current/04_COUNCIL_TOPOLOGY.md",
+  "bytes": 7208,
+  "sha8": "5d081a93",
+  "md5": "424dabbc36f085e22da0e75b9c27a8f6"
+ },
+ {
+  "path": "maestro-current/05_GOVERNANCE_SEG.md",
+  "bytes": 4852,
+  "sha8": "ec5bcbf0",
+  "md5": "3cb62cd1cd442a92bd59aec5385bae26"
+ },
+ {
+  "path": "maestro-current/06_RUNTIME_RULES.md",
+  "bytes": 2151,
+  "sha8": "20ee3484",
+  "md5": "4d649d86bac2a4759c291a31497e6279"
+ },
+ {
+  "path": "maestro-current/07_ADDRESS_REGISTRY.md",
+  "bytes": 1189,
+  "sha8": "bbf4765e",
+  "md5": "89ee2a806f174e4aac45ca92eb94f47c"
+ },
+ {
+  "path": "maestro-current/08_PORTABILITY_ATP.md",
+  "bytes": 1214,
+  "sha8": "058669ec",
+  "md5": "e53ffd00161795e827d301ba54f6c378"
+ },
+ {
+  "path": "maestro-current/09_LOGS_AND_CONTINUATION.md",
+  "bytes": 1161,
+  "sha8": "d50831cd",
+  "md5": "3763a80899aabec642409855230e0ed8"
+ },
+ {
+  "path": "maestro-current/10_TEST_PLAN.md",
+  "bytes": 1601,
+  "sha8": "e9612823",
+  "md5": "0fbc62f56ff55545753593f8677e42dc"
+ },
+ {
+  "path": "maestro-current/MANIFEST.yaml",
+  "bytes": 5450,
+  "sha8": "d72619a5",
+  "md5": "1ad9266ce5d5420c79b883b07a917ca4"
+ },
+ {
+  "path": "maestro-current/SCOPE_CORRECTION_v0_4.md",
+  "bytes": 4775,
+  "sha8": "c008c1ce",
+  "md5": "cf7d6f4de88cbd33a09442c1056192da"
+ },
+ {
+  "path": "maestro-current/STRATA_MIGRATION_MAP.md",
+  "bytes": 4486,
+  "sha8": "d522f7b3",
+  "md5": "948977a7022d17b4832860a8e1884012"
+ },
+ {
+  "path": "maestro-current/compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md",
+  "bytes": 27355,
+  "sha8": "65627c96",
+  "md5": "5d275fbfee738d475e97281b7d837bfd"
+ },
+ {
+  "path": "sessions/D-Maestro/Maestro/maestro.devsession.iterative.txt",
+  "bytes": 281799,
+  "sha8": "ee4a5a62",
+  "md5": "9a1f2c78900ff09fa04a985f2c76371c"
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system-main/legacy/conversation_os-core_2025-11-14-0539.agi.json",
+  "bytes": 109272,
+  "sha8": "4a6ee816",
+  "md5": "7245a55a890cd336eca9f14c82eab66c"
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system-main/legacy/conversation_untitled_2025-09-22-1358.agi.json",
+  "bytes": 1080017,
+  "sha8": "00399fc6",
+  "md5": "08eea75f509c54a4e09b453c821c0b37"
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/oldMaestroGeminiGemIterativeDesignViaConversationalDialogueDevelopmentSessionExport.txt",
+  "bytes": 135587,
+  "sha8": "7eb360da",
+  "md5": "fabefdb317160a400cc5ade826edaca6"
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system-main/legacy/maestro.devsession.iterative.txt",
+  "bytes": 273256,
+  "sha8": "21be394d",
+  "md5": "61ed8aaec43cf47909a93f7b847eb9a3"
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system-main/legacy/maestrov5-dev-ust and sem-sessions.txt",
+  "bytes": 704187,
+  "sha8": "65433c23",
+  "md5": "6d7ee333be49e705b8fe1fbd2630233b"
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system/dev-chats/conversation_maestro-chat---clarity_2026-04-03-1250.agi.md",
+  "bytes": 3340910,
+  "sha8": "cbf6420c",
+  "md5": "0cbfefe08b913927ffc2d7383976e2f3"
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system/source/distributed/suno_v45_config_bundle_v3/conversation_-2--song-review_2025-05-07-0505.agi.md",
+  "bytes": 33048,
+  "sha8": "f2618c0b",
+  "md5": "560340debb8e1f87b8ab89a02797bc8c"
+ },
+ {
+  "path": "sessions/D-Maestro/sources/conversation_foil-based-tiered-system_2026-04-03-1252.agi.md",
+  "bytes": 889686,
+  "sha8": "b5fb1298",
+  "md5": "860f3186ee4d8e26a1956324eb1b80b4"
+ },
+ {
+  "path": "sessions/D-Maestro/sources/conversation_maestro-chat---eldrik--_2026-03-28-2018.agi.md",
+  "bytes": 3507613,
+  "sha8": "281a26b5",
+  "md5": "7002b37e4af7d8e90b84382c4533d3f0"
+ },
+ {
+  "path": "sessions/D-Maestro/sources/conversation_maestro-chat---eldrik--_2026-03-30-1252.agi.md",
+  "bytes": 3656612,
+  "sha8": "0e9f1ab5",
+  "md5": "4a43c3841f671e5e338b0ff0431687cd"
+ },
+ {
+  "path": "sessions/D-Maestro/sources/conversation_maestro-chat---eldrik_2026-03-28-2105.agi.json",
+  "bytes": 3813793,
+  "sha8": "ab3720ae",
+  "md5": "8586b7d5d663408381cc291fd087eca6"
+ },
+ {
+  "path": "sessions/D-Maestro/sources/conversation_maestro-chat---eldrik_2026-03-28-2105.agi.md",
+  "bytes": 3548710,
+  "sha8": "514b1b44",
+  "md5": "3aeb8bb15f3ea8f76d6cff998fad733d"
+ },
+ {
+  "path": "sessions/E-scatter/maestro/conversation_os-dev_2025-09-22-1602.agi.md",
+  "bytes": 1281622,
+  "sha8": "3e14960c",
+  "md5": "70397f13d076c96fb08ea347a10c0d58"
+ },
+ {
+  "path": "sessions/OneDrive-v45/maestro_devsession.ai_optimized.md",
+  "bytes": 547980,
+  "sha8": "aefe0a12",
+  "md5": "d3bb4eacadcbd788678f8c3c25e572bf"
+ },
+ {
+  "path": "sessions/OneDrive-v45/session-ust.txt",
+  "bytes": 351988,
+  "sha8": "343c24bb",
+  "md5": "913e033a17f340852d91072cca20feb7"
+ },
+ {
+  "path": "untracked/AI Music - lyrics.md",
+  "bytes": 1388903,
+  "sha8": "c2f2d009",
+  "md5": "d6e245b9c7f907b6fd0a71a11065f572"
+ },
+ {
+  "path": "untracked/AI Music.md",
+  "bytes": 257277,
+  "sha8": "751f351c",
+  "md5": "af101854f7e267581d828d7c0a578314"
+ },
+ {
+  "path": "untracked/EXECUTIVE ARCHITECTURAL SYNTHESIS.md",
+  "bytes": 6243,
+  "sha8": "61034bda",
+  "md5": "280bbd07a3c25c875b017d17099da097"
+ },
+ {
+  "path": "untracked/Maestro - Fabric - Rebirth.md",
+  "bytes": 130606,
+  "sha8": "5d086908",
+  "md5": "7e6559367009aa345817c2bdea19a049"
+ },
+ {
+  "path": "untracked/Untitled 1.md",
+  "bytes": 686799,
+  "sha8": "98c5c13b",
+  "md5": "644ef38d53a98bf0e7b322938ca6c78a"
+ },
+ {
+  "path": "untracked/maestro architecture session.md",
+  "bytes": 335615,
+  "sha8": "26729f47",
+  "md5": "710f1cd5b28f66194a24145589f89045"
+ }
+]

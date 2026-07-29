@@ -1,0 +1,116 @@
+# Yuh Nuh Loyal
+
+> Song family: **Yuh Nuh Loyal** · generation #85 in family · created 2025-03-16T05:17:04.796Z
+
+## Metadata
+
+- song_id: `5b81e8ac-2218-4929-b854-2112355af62d`
+- id: `541349`
+- model: `V4`
+- created_at: `2025-03-16T05:17:04.796Z`
+- updated_at: `2025-03-16T05:19:13.687Z`
+- duration: `162.44`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `damo`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/fb72973c-561e-4293-aeae-102e41e43df3.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/b7245bea-9cb9-41d4-add2-d6eba08a2500.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://mfile.erweima.ai/NWI4MWU4YWMtMjIxOC00OTI5LWI4NTQtMjExMjM1NWFmNjJk
+
+## Style / Prompt (tags)
+
+```
+Stripper anthem
+club banger
+twerk/booty shaker
+dancehall/dance club heat with gospel-style harmonies blended with raw
+sultry energy
+```
+
+## Lyrics
+
+```
+[INTRO – Soft Piano, Eerie Echoes, Female Harmonies Humming]
+(Female vocals hum softly: Hmm-mmm, hmm-mmm…)
+Lead Female Vocalist (breathy):
+🎶 Oooooohhh... Yuh nuh loyal... 🎶  
+🎶 Oooooohhh... Nah stay loyal... 🎶  
+Male Vocalist 1 (deep, rough, spoken):  
+Dem tink mi blind? Mi see di signs, mi feel di change…  
+(Low bassline rumbles)  
+Mi hear di whispers… mi see di rings…  
+
+[CHORUS – Heavy Bass, Dancehall Bounce]  
+Male Vocalist 1 (gritty, intense):  
+🎶 Yuh seh mi crazy, 🎶  
+🎶 But gyal, mi done know wah yuh do. 🎶  
+🎶 An when yuh call mi baby, 🎶  
+🎶 Mi know seh mi nuh di only yute! 🎶  
+Female Vocal Group (soft response):  
+🎶 Oooooohhh... Yuh nuh loyal... 🎶  
+🎶 Nuh loyal, noooooo… 🎶  
+(Percussion hits, harmonies thicken)  
+
+[VERSE 1 – Male Vocalist 2 (smooth), Female Ad-Libs]  
+🎶 Fi months mi a watch yuh move so strange, 🎶  
+🎶 Tek man fi fool, gyal, dis a nuh game. 🎶  
+🎶 Yuh tink mi blind? Yuh tink mi lame? 🎶  
+🎶 Tell mi why mi smell a next man name? 🎶  
+Female Ad-Libs (soft, haunting):  
+(Mmmhmm… yuh wrong fi dat...)
+(Guitar flickers beneath the groove)  
+
+[CHORUS – Intensity Builds]  
+Male Vocalist 3 (commanding):  
+🎶 Yuh seh mi crazy, 🎶  
+🎶 But gyal mi done know wah yuh do. 🎶  
+🎶 An when yuh call mi baby, 🎶  
+🎶 Mi know seh mi nuh di only yute! 🎶  
+Female Vocal Group (gospel echoes):  
+🎶 Oooooohhh... Yuh nuh loyal... 🎶  
+(Drill percussion intensifies)  
+
+[VERSE 2 – Male Vocalist 1 (faster flow), Female Ad-Libs]  
+🎶 Gyal yuh outta reach, 🎶  
+🎶 Love yuh, but mi cyaan teach! 🎶  
+🎶 Heart deh pon lock, but yuh find new key, 🎶  
+🎶 Mi give yuh mi soul, now mi waan mi piece! 🎶  
+Female Ad-Libs (soft, moaning):  
+(Mmmhmm… mi know, mi know…)
+(Drill bounce builds urgency)  
+
+[BRIDGE – Beat Slows, Raw Gospel Harmonies]  
+Lead Female Vocalist (deep, sultry):  
+🎶 Mi love yuh long time, mi give yuh all… 🎶  
+🎶 But mi cyaan fight fate when di heart nah call… 🎶  
+Male Vocalist 1 (gruff, whispered):  
+Gyal, mi cyaan believe,  
+Seh yuh do mi so…  
+(Female harmonies swell: Oooooohhh... noooooo…)
+Yuh seh mi mad,  
+But mi know, mi know!  
+
+[FINAL CHORUS – Maximum Energy]  
+Male Vocalist 2 (leading with fire):  
+🎶 Yuh seh mi crazy, 🎶  
+🎶 But gyal mi done know wah yuh do. 🎶  
+🎶 An when yuh call mi baby, 🎶  
+🎶 Mi know seh mi nuh di only yute! 🎶  
+Female Vocalists (high energy):  
+🎶 Oooooohhh... Yuh nuh loyal… 🎶  
+🎶 Nuh loyal, nuh loyal… 🎶  
+(Claps and stomps erupt into dancehall bounce)  
+
+[OUTRO – Echoing Vocals, Haunting Harmonies]  
+(Piano returns faintly, eerie echoes fade)  
+🎶 Oooooohhh… yuh nuh loyal… 🎶  
+(Male vocalists hum low: Hmm-mmm…)
+(Harmonies fade, tension lingers)
+```

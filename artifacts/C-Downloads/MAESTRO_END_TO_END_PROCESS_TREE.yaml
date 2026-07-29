@@ -1,0 +1,310 @@
+artifact: MAESTRO_END_TO_END_PROCESS_TREE
+status: proposal_not_canon
+version: 0.2_forensic_reconstruction
+scope: draft_for_review_not_canonization
+core_warning:
+  - This artifact does not exist as active canon in the loaded file set.
+  - This artifact does not resolve Blueprint_JSON vs Technical_UST.
+  - Any prior AI synthesis remains proposal_only unless source_backed or operator_ratified.
+
+provenance_classes:
+  SOURCE_BACKED: directly grounded in loaded files
+  OPERATOR_STATED_HISTORY: provided by operator in current thread
+  PROPOSED_SYNTHESIS: reconstructed linkage not yet canon
+
+load_sequence:
+  - order: 1
+    artifact: mosaic_engine_v0.1.md
+    role: substrate_runtime
+    provenance: SOURCE_BACKED
+  - order: 2
+    artifact: maestro.md
+    role: mounted_maestro_kernel_application
+    provenance: SOURCE_BACKED
+  - order: 3
+    artifact: Maestro Personas aka the subagents.md
+    role: workforce_schema
+    provenance: SOURCE_BACKED
+  - order: 4
+    artifact: MoMoney Maestro OS v4.5.2 — MONOLITHIC PROMPT.md
+    role: v4_5_x_end_to_end_workflow_source
+    provenance: SOURCE_BACKED
+  - order: 5
+    artifact: MoMoney_Maestro_OS_Knowledge_Base_Heuristics.md.md
+    role: heuristics_revision_logic_source
+    provenance: SOURCE_BACKED
+  - order: 6
+    artifact: 4.5.5.txt
+    role: later_v4_5_x_process_correction_source
+    provenance: SOURCE_BACKED
+  - order: 7
+    artifact: MAESTRO_LOAD_SIDECHAIN_SLIPSTREAM_PROTOCOL_v3.md
+    role: load_sidechain_slipstream_lifecycle_protocol
+    status: provisional_complete
+    provenance: SOURCE_BACKED
+  - order: 8
+    artifact: foil_promotion_contract.yaml
+    role: FOIL_promotion_deduplication_contract
+    status: authoritative_done
+    provenance: SOURCE_BACKED
+  - order: 9
+    artifact: round_robin_notes_template.yaml
+    role: first_class_review_artifact_template
+    status: authoritative_done
+    provenance: SOURCE_BACKED
+  - order: 10
+    artifact: song_excellence_sections.json/txt/reformatted
+    role: module_registry_process_graph_SEG_GCard_KPI_governance_cards
+    provenance: SOURCE_BACKED
+  - order: 11
+    artifact: ai personas.txt
+    role: persona_behavior_context_enrichment
+    provenance: SOURCE_BACKED_WITH_SCOPE_LIMIT
+
+authority_sequence:
+  - layer: substrate
+    object: Mosaic_Engine
+    claim: substrate_runtime_hosts_domain_specific_apps
+    provenance: SOURCE_BACKED
+  - layer: application
+    object: Maestro
+    claim: mounted_composer_class_operating_system
+    provenance: SOURCE_BACKED
+  - layer: canon_conflict_zone
+    objects:
+      - Blueprint_JSON
+      - Technical_UST
+    status: unresolved
+    rule: do_not_silently_resolve
+    provenance: SOURCE_BACKED
+  - layer: workforce
+    object: axis_SMEs_personas_governance
+    claim: roles_permissions_axis_ownership_where_declared
+    provenance: SOURCE_BACKED
+  - layer: sidechains
+    object: non_canonical_pressure_edges
+    claim: may_attach_to_Technical_UST_worker_verdict_Song_Excellence_round_robin_gate_readiness_reverse_processing_surface_derivation
+    provenance: SOURCE_BACKED
+  - layer: slipstreams
+    object: provisional_active_working_currents
+    claim: may_guide_reasoning_but_may_not_overwrite_canon
+    provenance: SOURCE_BACKED
+  - layer: canon_patch
+    object: authorized_patch_only
+    requirements:
+      - explicit_user_authorization
+      - conflict_check
+      - lineage_statement
+      - affected_laws
+      - supersession_map
+      - rollback_or_fork_plan
+      - completion_proof
+    provenance: SOURCE_BACKED
+
+canon_conflict:
+  Blueprint_JSON:
+    claim: canonical_representation_of_creative_and_technical_intent_all_downstream_artifacts_derive_from_it
+    provenance: SOURCE_BACKED
+  Technical_UST:
+    claim: canonical_in_Mosaic_N4_Canon_Layer_and_in_load_protocol_canon_law
+    provenance: SOURCE_BACKED
+  operator_transition_context:
+    claim: v4_5_x_Blueprint_JSON_contained_later_Technical_UST_compiler_middleware_functions
+    provenance: OPERATOR_STATED_HISTORY
+  status: unresolved_pending_operator_ratification_or_source_backed_patch_precedence
+
+execution_sequence:
+  graph_rule:
+    claim: validation_must_be_edge_based_not_artifact_only_edges_reconstructed_before_nodes
+    provenance: SOURCE_BACKED
+
+  M0_session_init_and_state_load:
+    purpose: load_current_worklog_inputs_initialize_state_containers
+    inputs: [conversation_worklog, pasted_specs, attached_artifacts]
+    outputs: [S_raw_corpus, S_rule_registry, S_change_request_log, S_session_ledger]
+    provenance: SOURCE_BACKED
+
+  M1_change_request_handler:
+    purpose: detect_and_apply_CRs_as_governance_events_with_precedence_and_lineage
+    outputs: [S_rule_registry, S_change_request_log]
+    rules:
+      - newer_CR_can_supersede_older_rules_with_version_tags
+      - fork_conflicts_with_conflict_notes
+    provenance: SOURCE_BACKED
+
+  M2_RECA_snapshot_builder:
+    purpose: build_requirements_environment_constraints_assets_snapshot
+    outputs: [RECA_snapshot]
+    provenance: SOURCE_BACKED
+
+  M3_operating_env_snapshot_builder:
+    purpose: declare_actual_operating_state_OS_lines_agents_tools_validators_assumed_defaults
+    outputs: [S_operating_env_snapshot]
+    provenance: SOURCE_BACKED
+
+  M4_brief_and_artifact_parser:
+    purpose: parse_user_provided_UST_song_notes_into_candidate_artifacts
+    rules:
+      - tag_missing_leaves_as_OPEN_QUESTION
+      - do_not_fabricate_content
+    outputs: [A_Technical_UST, A_brief]
+    provenance: SOURCE_BACKED
+
+  M5_technical_ust_initializer:
+    purpose: normalize_or_repair_Technical_UST_fields_and_axes
+    outputs: [A_Technical_UST_normalized]
+    provenance: SOURCE_BACKED
+
+  M6_SME_round_robin_orchestrator:
+    purpose: apply_persona_SME_lenses_to_evaluate_nodes
+    review_artifact: round_robin_notes
+    must_preserve:
+      - claims
+      - objections
+      - contradiction_capture
+      - nulls_to_preserve
+      - notation_candidates
+      - promotion_candidates
+      - retained_local_unique_detail
+    controller_boundary: controller_structure_log_gate_only
+    provenance: SOURCE_BACKED
+
+  M7_SEG_and_G_card_evaluator:
+    purpose: score_excellence_and_emit_decision_artifact
+    pass_threshold: 97.5
+    outputs: [SEG_result, G_CARD]
+    provenance: SOURCE_BACKED
+
+  M8_revision_loop_orchestrator:
+    purpose: apply_targeted_remediation_when_scores_or_gates_fail
+    constraints:
+      - lyric_edits_allowed_only_where_lyric_music_creation_process_allows_or_human_approval_required
+      - preserve_lineage
+    provenance: SOURCE_BACKED
+
+  M9_format_and_policy_validator:
+    purpose: enforce_Suno_efficient_formatting_and_policy
+    validators:
+      - no_commas_outside_lyric_quotes_except_allowed_pattern
+      - fail_stage_direction_markup_inside_quoted_lines
+      - enforce_performer_token_header_alignment
+      - roadmap_order_only
+      - syllable_guideline
+    provenance: SOURCE_BACKED
+
+  M10_show_summary_generator:
+    purpose: generate_compact_professional_narrative_overview
+    output: Show_Summary
+    provenance: SOURCE_BACKED
+
+  M11_zero_touch_prompt_generator_or_technical_ust_serializer:
+    purpose: produce_reusable_zero_touch_Suno_prompt_or_serialized_prompt_surface
+    outputs:
+      - A_zero_touch_prompt_for_SUNO
+      - Final_Technical_UST_when_gates_pass
+    provenance: SOURCE_BACKED
+
+  M12_chain_report_generator:
+    purpose: produce_auditable_lineage_report
+    outputs: [A_chain_report_serialized]
+    provenance: SOURCE_BACKED
+
+  M13_context_md_generator:
+    purpose: produce_portable_context_snapshot
+    outputs: [context.md, context.json]
+    provenance: SOURCE_BACKED
+
+  M14_chaos_decomposer_core:
+    purpose: multi_pass_decomposition_and_delta_gap_emission
+    outputs: [KEY_TERM_TREE, NODE_EDGE_TAXONOMY, MODULE_SEQUENCE_ATOMIC, DELTA_AND_GAPS]
+    provenance: SOURCE_BACKED
+
+governance_edges:
+  sidechain_protocol:
+    status: provisional_complete
+    definition: non_canonical_pressure_edge
+    attaches_to:
+      - Technical_UST_address
+      - worker_verdict
+      - Song_Excellence_criterion
+      - round_robin_entry
+      - gate_readiness
+      - reverse_processing_guard
+      - surface_derivation_guard
+    cannot_replace: canon
+    completion_if_any_false: PARTIAL
+    provenance: SOURCE_BACKED
+
+  slipstream_protocol:
+    definition: provisional_active_working_current
+    lifecycle_states:
+      - proposed
+      - active_slipstream
+      - converted_to_sidechain
+      - promoted_to_canon
+      - forked
+      - superseded
+      - rejected
+    canon_overwrite_allowed: false
+    review_required_before_promotion: true
+    provenance: SOURCE_BACKED
+
+  FOIL:
+    status: authoritative_done
+    scope: promotion_and_deduplication_only
+    excludes:
+      - repeat_notation
+      - full_reverse_processing_ownership
+      - creative_authorship
+    allowed_only_if:
+      - promotion_preserves_meaning
+      - no_retained_local_unique_detail_erased
+      - upstream_classification_supports_promotion
+      - event_can_be_ledgedered
+    blocks:
+      - semantic_collapse
+      - convenience_merges
+      - destructive_deduplication
+      - unledgered_FOIL_action
+    provenance: SOURCE_BACKED
+
+  round_robin_review:
+    status: authoritative_done
+    scope: review_support_template_only
+    requirements:
+      - contradiction_capture
+      - null_retention
+      - separate_notation_promotion_retained_local_unique_detail_categories
+      - no_controller_recentralization
+    provenance: SOURCE_BACKED
+
+artifact_transitions:
+  source_backed:
+    - raw_input -> S_raw_corpus
+    - S_raw_corpus -> S_rule_registry
+    - S_raw_corpus -> RECA_snapshot
+    - S_raw_corpus -> S_operating_env_snapshot
+    - parsed_brief -> A_Technical_UST
+    - A_Technical_UST -> A_Technical_UST_normalized
+    - normalized_UST -> SME_round_robin_notes
+    - SME_round_robin_notes -> A_chain_report
+    - A_chain_report -> SEG_result_and_G_CARD
+    - validated_artifacts -> Show_Summary
+    - final_validated_state -> A_zero_touch_prompt_for_SUNO
+    - final_run -> chain_report_context_md_delta_and_gaps
+  unresolved:
+    - exact_canonical_precedence_Blueprint_JSON_vs_Technical_UST
+    - whether_Runtime_Repair_003_is_ratified_as_current_governing_patch
+  provenance: SOURCE_BACKED_WITH_UNRESOLVED_CONFLICTS
+
+completion_status:
+  label: PROVISIONAL_PASS_WITH_BACKLOG
+  scope_satisfied: true
+  missing_edges:
+    - explicit_operator_ratification_of_Blueprint_JSON_to_Technical_UST_precedence
+    - duplicate_load_protocol_file_reconciliation
+    - decision_on_bridge_packet_regime
+  unresolved_conflicts:
+    - Blueprint_JSON_vs_Technical_UST
+    - proposal_artifacts_not_canon
+  safe_to_use_downstream: true_for_review_not_for_canonization

@@ -1,0 +1,24 @@
+# BRIDGE_PUBLIC_SURFACE_HOLD — public-facing material segregated from the bridge corpus
+# Work item: REPAIR.P1N.BRIDGE-INPUT-PREFLIGHT.R1 · 2026-07-19
+index_1_html:
+  class: PUBLIC_SITE_DESIGN_PROPOSAL
+  publication_status: HOLD
+  maestro_authority: NONE
+  location: >-
+    NOT IN REPO — present only in the operator's package to the orchestrator session.
+    CONS-03 — operator to place a copy under untracked/website/ or a designated public/
+    area if it should be preserved; it must NOT enter _PROVENANCE or the bridge corpus.
+  public_claims_review_queue:   # unsettled/unsupported claims flagged by the orchestrator; verify or strip before any publication
+    - >-
+      "40,000+ renders" (operator-stated ~41k sessions is internal provenance, not a verified public metric)
+    - >-
+      "two years" · "eight axes" · "SEM / SEG governance" · "Maestro v4.5 -> v5" · "Mosaic substrate"
+    - >-
+      hosted browser version roadmap · Technical UST as locked upstream truth · concurrent triad behavior
+    - >-
+      terminology — "A/R Profile" vs established "A&R"
+  design_notes_recorded: fonts diverge from documented design-system substitutions (Big Shoulders Display / Archivo vs Cormorant Garamond / Montserrat / IBM Plex Mono) — no recorded rationale; placeholder tracks/email; disabled-looking anchors clickable
+  disclosure_boundary: unresolved — what of the internal system may be publicly described is an OPERATOR decision predating any publish
+related:
+  untracked_website_existing: ["untracked/website/Are You Proud of Me Now (standalone) (1).html — separate artifact, also outside bridge corpus"]
+rule: "public product surfaces route through their own review lane; they are never bridge inputs and never evidence of runtime behavior"

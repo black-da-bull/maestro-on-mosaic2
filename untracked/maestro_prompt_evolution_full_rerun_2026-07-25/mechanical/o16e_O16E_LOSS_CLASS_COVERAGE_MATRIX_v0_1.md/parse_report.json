@@ -1,0 +1,17 @@
+{
+ "source": "/mnt/data/maestro_prompt_evolution_run_v2/source/o16e/O16E_LOSS_CLASS_COVERAGE_MATRIX_v0_1.md",
+ "source_md5": "9d36998a10ad109a5db4fa1b3a56c10b",
+ "source_bytes": 12984,
+ "normalized_chars": 12787,
+ "normalization": "CRLF/CR->LF (0 CR chars); character-lossless, offsets index normalized text (MF-1)",
+ "census": {
+  "preamble": 1,
+  "user": 0,
+  "assistant": 0
+ },
+ "R1_tail_recovery_candidates": [],
+ "R2_attachment_events": [],
+ "R3_inner_transcript_marker_hits": 0,
+ "R3_samples": [],
+ "note": "R1/R2 require human confirmation before reclassification (never auto-promote); R3 hits inside assistant text are usually the inner transcript quoting itself."
+}

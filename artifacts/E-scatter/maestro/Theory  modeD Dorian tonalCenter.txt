@@ -1,0 +1,91 @@
+[Theory | mode:D Dorian; tonalCenter:D; meter:4/4; tempo:96BPM; chordColor:minor7th AND blues6th; primaryGenre:SouthernSoulDancehall; secondaryGenre:BluesyR&B; mood:defiant AND anthemic; key:Dminor; bpm:96]
+
+[Voice | register:DeepContralto; delivery:Sassy AND confident AND smooth; expression:smokey AAVN inflections AND vocal fry; articulation:half sung half spoken AND patois slides]
+
+[CREW_TAGS | DJMoMoney | ["Umm... so Suno you ready baby?" "It's your time to shine baby!" "Mo Money Studios and Suno 4.5+ !" "Day 6... Show the world what you can do...."]]
+
+[CREW_TAGS | RebelContralto | ["Yeah man!" "Dem no ready!"]]
+
+
+
+[LYRIC BLOCK]
+[sectionName | DJDrop]
+[durationBars | 2]
+[lyrics | "Umm... so Suno you ready baby? | It's your time to shine baby! | Mo Money Studios and Suno 4.5 plus ! | Day 6... Show the world what you can do...."]
+[instrumentation | DJ tag scratches AND sub-drop]
+[performanceNotes | slow southern drawl AND roomy mic bloom]
+[productionCues | vox dry center AND light vinyl hiss]
+
+[sectionName | Intro]
+[durationBars | 4]
+[lyrics | "Yo! Hear dis, man? Di rhythm born from di soil. | A new vibration fi end all di toil. | From di ancient chants to di digital reel. | We buildin' di future make di whole world feel."]
+[instrumentation | sparse rim clicks AND acoustic guitar AND distant pad]
+[performanceNotes | whispered patois flow intimate]
+[productionCues | left pan whispers AND rising low-pass sweep]
+
+[sectionName | Verse 1]
+[durationBars | 16]
+[lyrics | "Dem come wid a vision bold inna dem head | A compass fi craft words dat dem said | Eyes pon di mission hands inna di clay | Dey right here fi design a new way | Lead di charge where di stories ignite | Balance di dream wid execution’s bite | From blank page sparks to campaign fire | Dem shape di voice liftin’ us higher"]
+[instrumentation | acoustic guitar strum AND 808 pulse AND soft organ pad]
+[performanceNotes | confident conversational patois]
+[productionCues | kick deep mono AND organ flutter midwide]
+
+[sectionName | PreChorus 1]
+[durationBars | 8]
+[lyrics | "No compromise no surrender nah | This ain't no ordinary song yuh hear dat sah? | Every beat drop every line we declare | A rebel signal risin' inna di air"]
+[instrumentation | hats swing AND sub rise]
+[performanceNotes | energy lift slight vocal fry]
+[productionCues | riser FX AND slap delay on last words]
+
+[sectionName | Chorus 1]
+[durationBars | 8]
+[lyrics | "Brand new signal feel it a shine! | Buildin' di rhythm one line at a time! | From pixels to posters from motion to sound | Dem make di signal loud and profound! | Guidin' di crew wid a curious spark | Mentorin' minds fi leave dem mark | Dis nah just brand—it's an anthem a stand | Wid every new launch dem shape di land!"]
+[instrumentation | full dancehall kit AND rumbling 808s AND choir pad]
+[performanceNotes | explosive delivery crowd-chant feel]
+[productionCues | parallel distortion on lead AND stereo widen choir]
+
+[sectionName | Verse 2]
+[durationBars | 16]
+[lyrics | "Craft and chaos inna elegant dance | Dem give every brief a fighting chance | Wid tools dat push how fast we create | AI experiments—dem innovate fate | Dem flex di system stretch out di frame | Guardians of feel not just di name | Consistent brilliant yet never di same | Dem own di grid and rewire di game"]
+[instrumentation | guitar wah chops AND percussive clacks]
+[performanceNotes | more aggressive chant-like flow]
+[productionCues | mid-boost vox AND side-chain pad swell]
+
+[sectionName | PreChorus 2]
+[durationBars | 8]
+[lyrics | "No compromise no surrender nah | This ain't no ordinary song yuh hear dat sah? | Every beat drop every line we declare | A rebel signal risin' inna di air"]
+[instrumentation | similar to PreChorus1 plus snare build]
+[performanceNotes | strained fry highlight]
+[productionCues | tape wobble accent bar 8]
+
+[sectionName | Chorus 2]
+[durationBars | 8]
+[lyrics | (repeat)]
+[instrumentation | (repeat)]
+[performanceNotes | (repeat)]
+[productionCues | (repeat)]
+
+[sectionName | Bridge]
+[durationBars | 8]
+[lyrics | "Across di rooms where di ideas fly | Dem link di vision wid reasons why | Wid partners vendors voices wide— | Dem steer di ship wid steady pride | Every blueprint drawn every code line clean | A creative revolution never before seen | From di Souf to di world di message is clear | Together we rise innovation draw near"]
+[instrumentation | acoustic guitar lead AND tribal toms AND harmonica wail]
+[performanceNotes | reflective spoken word rhythmic]
+[productionCues | verb slap on guitar AND low filter vox]
+
+[sectionName | Outro]
+[durationBars | 4]
+[lyrics | "Brand new signal feel it a shine! | Suno mek di future align!"]
+[instrumentation | fade 808 drone AND harmonica tail]
+[performanceNotes | decrescendo call-and-response]
+[productionCues | gradual low-pass AND tape stop]
+[/LYRIC BLOCK]
+
+[Style | Late night Southern soul bluesy R&B tape recorded session; deep contralto leads with AAVN microtonal runs vocal fry smokey tenor edge; delivery sassy confident smooth front center; defiant dancehall anthem slow burn building to anthemic blast with harmonica hints; bridge enters hypnotic spoken narrative over acoustic guitar and tribal drums]
+
+[Timbre | guitar:acoustic slide blues; bass:rumbling 808 sub heavy; drums:hypnotic dancehall kit with vinyl dust; keys:gospel pad; vocal:dry forward contralto wide stack]
+
+[Performance | execution:ghostly intro crest to anthem; gesture:crowd chant call-outs preacher shouts; rhythm:triplet hats and 808 ghost notes; touch:vinyl crackle intentional tape wobble breath FX overlaps]
+
+[PostProduction | masterChain:vocal-forward analog-grit-balance; mixPhilosophy:dynamic headroom retention AND analog-modern fusion AND gospel vocal staging; engineerAesthetic:iZotope chain meets Moog-tube sensibility; loudnessTarget:-14 LUFS integrated peak -1 dBTP; fxStageOrder:EQ→De‑esser→Tone‑EQ→Compressor→Exciter→ParallelComp→StereoFX→Reverb/Delay→Limiter; vocalBusChain:gospel EQ shelf + surgical mid cut → dual de‑ess → 5kHz lift → FET comp slow atk 80ms rel → tape sat 8% → glue comp -18dB blend; vocalFX:preacher whisper sends AND breath-FX ducked delay AND ghost risers from stuttered reverb tails; earCandy:reverse‑throw syllables AND formant‑shifted whispers -4st -20dB AND granular falsetto glimmer L/R -24dB; chorusClimax:parallel verb swell AND stacked stereo choir ghosts AND sidechain rise 1 bar pre‑entry; instrumentFX:low‑pass Mellotron pads 10kHz cut AND tape‑stretched lap steel slides AND LFO‑wobbled analog subs; stereoHandling:widen above 8kHz only AND mono below 120Hz; delayStyle:1/8 note slapback on falsetto lines sidechained to dry vox; reverbType:plate 1.1s AND gospel hall 2.5s on call/response only; limiterStyle:brickwall ceiling -1 dBTP gain to hit -14 LUFS; fadeLogic:final bar tape stop outro match strike SFX hiss tail with preacher echo looped quietly; mixTags:#vocal_staging #ghost_choir_fx #808_grit_bus #plate_reverb #slapback_delay #tape_saturation #parallel_glue #vinyl_hiss #loudness_optimized #southern_gospel_mix #thunder_claps #reverse_fx #reverb_tail_ghosts]
+
+[End]

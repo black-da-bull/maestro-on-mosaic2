@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maestro — Fold &amp; Rebuild Plan v0.2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E1116; --surface:#161B22; --surface-2:#1C232C; --surface-3:#222B36;
+    --line:#2A3340; --line-soft:#222A34;
+    --flow:#E8A33D; --flow-soft:#3A2E1B; --flow-line:#5C481F;
+    --container:#4FD1C5; --container-soft:#16302E; --container-line:#23514C;
+    --gov:#9AA2F2; --gov-soft:#23264A;
+    --alert:#E5604F; --alert-soft:#3A211D;
+    --ok:#5FBF7E;
+    --text:#E6EDF3; --dim:#9DA7B3; --faint:#6B7480;
+    --display:'Space Grotesk',system-ui,sans-serif;
+    --body:'Inter',system-ui,sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,monospace;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:radial-gradient(1200px 600px at 80% -10%, #19222d 0%, transparent 55%),radial-gradient(900px 500px at -10% 10%, #15201f 0%, transparent 50%),var(--ink);color:var(--text);font-family:var(--body);line-height:1.62;font-size:16px;-webkit-font-smoothing:antialiased}
+  a{color:var(--container);text-decoration:none} a:hover{text-decoration:underline}
+  ::selection{background:var(--flow);color:#1a1304}
+  .wrap{display:grid;grid-template-columns:248px minmax(0,1fr);gap:0;max-width:1340px;margin:0 auto}
+  nav.side{position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;padding:30px 18px 60px 26px;border-right:1px solid var(--line);font-size:13.5px}
+  nav.side .brandmark{display:flex;align-items:center;gap:10px;margin-bottom:22px}
+  nav.side .stacklogo{width:26px;height:26px;flex:none}
+  nav.side .brandmark b{font-family:var(--display);font-weight:700;letter-spacing:.02em;font-size:15px}
+  nav.side .brandmark span{display:block;color:var(--faint);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase}
+  nav.side h4{font-family:var(--display);color:var(--faint);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;margin:22px 0 8px}
+  nav.side ol{list-style:none;margin:0;padding:0} nav.side li{margin:1px 0}
+  nav.side a{display:block;color:var(--dim);padding:5px 10px;border-radius:7px;border-left:2px solid transparent}
+  nav.side a:hover{color:var(--text);background:var(--surface);text-decoration:none}
+  nav.side a.active{color:var(--text);background:var(--surface-2);border-left-color:var(--flow)}
+  nav.side a .n{color:var(--faint);font-family:var(--mono);font-size:11px;margin-right:7px}
+  main{padding:0 38px 120px;min-width:0}
+  section{max-width:var(--maxw);margin:0 auto;padding:54px 0 8px;scroll-margin-top:20px}
+  section + section{border-top:1px solid var(--line-soft)}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.6vw,46px);line-height:1.06;letter-spacing:-.01em;margin:0 0 8px}
+  h2{font-family:var(--display);font-weight:600;font-size:clamp(22px,3vw,30px);letter-spacing:-.005em;margin:0 0 6px;line-height:1.12}
+  h3{font-family:var(--display);font-weight:600;font-size:18.5px;margin:30px 0 8px;letter-spacing:.005em}
+  h4{font-family:var(--display);font-weight:600;font-size:14.5px;margin:18px 0 6px;color:var(--text)}
+  p{margin:0 0 14px;color:#D4DCE5}
+  .lead{font-size:18px;color:var(--dim);max-width:780px}
+  .eyebrow{font-family:var(--display);font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint);margin:0 0 14px;display:flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--flow);display:inline-block}
+  strong{color:#fff;font-weight:600} em{color:var(--flow);font-style:normal}
+  code{font-family:var(--mono);font-size:.86em;background:var(--surface-2);padding:1px 6px;border-radius:5px;color:#cfe9e6;border:1px solid var(--line)}
+  .muted{color:var(--faint)}
+  .hero{padding-top:46px}
+  .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+  .pill{font-family:var(--mono);font-size:11.5px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);color:var(--dim);background:var(--surface)}
+  .pill.flow{border-color:var(--flow-line);color:var(--flow);background:var(--flow-soft)}
+  .pill.cont{border-color:var(--container-line);color:var(--container);background:var(--container-soft)}
+  .pill.alert{border-color:#5a2e27;color:var(--alert);background:var(--alert-soft)}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:18px 0}
+  .panel.tight{padding:16px 18px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:880px){.grid2,.grid3{grid-template-columns:1fr}}
+  .callout{border-left:3px solid var(--flow);background:linear-gradient(90deg,var(--flow-soft),transparent 70%);padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0}
+  .callout.cont{border-left-color:var(--container);background:linear-gradient(90deg,var(--container-soft),transparent 70%)}
+  .callout.alert{border-left-color:var(--alert);background:linear-gradient(90deg,var(--alert-soft),transparent 70%)}
+  .callout .k{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--flow);display:block;margin-bottom:3px}
+  .callout.cont .k{color:var(--container)} .callout.alert .k{color:var(--alert)}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--dim);margin:10px 0 0}
+  .legend span{display:inline-flex;align-items:center;gap:7px}
+  .swatch{width:13px;height:13px;border-radius:3px;display:inline-block}
+  .sw-flow{background:var(--flow)} .sw-cont{background:var(--container)} .sw-gov{background:var(--gov)} .sw-alert{background:var(--alert)}
+  .tl{position:relative;margin:26px 0 8px;padding-left:26px}
+  .tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--flow),var(--gov),var(--container))}
+  .tlrow{position:relative;margin:0 0 12px;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:11px}
+  .tlrow::before{content:"";position:absolute;left:-23px;top:18px;width:11px;height:11px;border-radius:50%;background:var(--ink);border:2px solid var(--gov)}
+  .tlrow.a::before{border-color:var(--flow)} .tlrow.b::before{border-color:var(--gov)} .tlrow.c::before{border-color:var(--container)}
+  .tlrow .meta{font-family:var(--mono);font-size:11px;color:var(--faint);display:flex;gap:12px;flex-wrap:wrap;margin-bottom:3px}
+  .tlrow .meta .tag{padding:1px 7px;border-radius:5px;border:1px solid var(--line)}
+  .tlrow .meta .tag.a{color:var(--flow);border-color:var(--flow-line)} .tlrow .meta .tag.b{color:var(--gov);border-color:#3a3e6e} .tlrow .meta .tag.c{color:var(--container);border-color:var(--container-line)}
+  .tlrow b.t{font-family:var(--display);font-size:15px}
+  details.sess{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin:12px 0;overflow:hidden}
+  details.sess[open]{border-color:var(--flow-line)}
+  details.sess.b[open]{border-color:#3a3e6e} details.sess.c[open]{border-color:var(--container-line)}
+  details.sess summary{list-style:none;cursor:pointer;padding:15px 18px;display:flex;align-items:flex-start;gap:14px}
+  details.sess summary::-webkit-details-marker{display:none}
+  .sid{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--ink);background:var(--flow);border-radius:6px;padding:3px 8px;flex:none;margin-top:2px}
+  details.sess.b .sid{background:var(--gov)} details.sess.c .sid{background:var(--container)}
+  .stitle{font-family:var(--display);font-weight:600;font-size:16px;margin:0}
+  .ssub{font-size:12.5px;color:var(--faint);font-family:var(--mono)}
+  .schevron{margin-left:auto;color:var(--faint);transition:transform .2s;flex:none;margin-top:3px}
+  details.sess[open] .schevron{transform:rotate(90deg)}
+  .sbody{padding:2px 18px 18px 50px;border-top:1px solid var(--line-soft)}
+  .sbody dl{display:grid;grid-template-columns:140px 1fr;gap:6px 16px;margin:12px 0 0;font-size:14.5px}
+  .sbody dt{font-family:var(--display);font-weight:600;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);padding-top:2px}
+  .sbody dd{margin:0;color:#D4DCE5}
+  .sbody dd.lost{color:#e7b3ab} .sbody dd.kept{color:#bfe6cb}
+  .statusrow{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+  .st{font-family:var(--mono);font-size:11px;padding:3px 9px;border-radius:6px;border:1px solid var(--line);color:var(--dim)}
+  .st.lossy{color:var(--alert);border-color:#5a2e27;background:var(--alert-soft)}
+  .st.primary{color:var(--flow);border-color:var(--flow-line);background:var(--flow-soft)}
+  .st.open{color:var(--gov);border-color:#3a3e6e;background:var(--gov-soft)}
+  .st.ok{color:var(--ok);border-color:#2c5238;background:#13241a}
+  figure{margin:20px 0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 18px 14px}
+  figure svg{display:block;width:100%;height:auto}
+  figcaption{font-size:13px;color:var(--faint);margin-top:10px;text-align:center;font-family:var(--mono)}
+  .dlabel{font-family:var(--display);font-weight:600;font-size:13px;fill:var(--text)}
+  .dsub{font-family:var(--mono);font-size:10.5px;fill:var(--dim)}
+  .dnote{font-family:var(--mono);font-size:9.5px;fill:var(--faint)}
+  .mock{border:1px solid var(--line);border-radius:13px;overflow:hidden;margin:18px 0;background:var(--surface-2)}
+  .mockbar{display:flex;align-items:center;gap:8px;padding:9px 14px;background:#10151b;border-bottom:1px solid var(--line)}
+  .mockbar .dot{width:10px;height:10px;border-radius:50%;background:#33404e}
+  .mockbar .mt{font-family:var(--mono);font-size:11.5px;color:var(--dim);margin-left:8px}
+  .mockbody{padding:18px}
+  .lam{display:flex;flex-direction:column;gap:0}
+  .lam .layer{position:relative;border:1px solid var(--line);border-bottom:none;padding:11px 14px;background:var(--surface);display:flex;align-items:center;gap:12px}
+  .lam .layer:last-child{border-bottom:1px solid var(--line);border-radius:0 0 9px 9px}
+  .lam .layer:first-child{border-radius:9px 9px 0 0}
+  .lam .layer .lvl{font-family:var(--mono);font-size:10.5px;color:var(--ink);border-radius:5px;padding:2px 7px;font-weight:700;flex:none}
+  .lam .layer .lname{font-family:var(--display);font-weight:600;font-size:13.5px}
+  .lam .layer .lprov{margin-left:auto;font-family:var(--mono);font-size:10.5px;color:var(--faint)}
+  .badge-ok{font-family:var(--mono);font-size:11px;color:var(--ok);border:1px solid #2c5238;background:#13241a;padding:3px 9px;border-radius:6px}
+  .badge-block{font-family:var(--mono);font-size:11px;color:var(--alert);border:1px solid #5a2e27;background:var(--alert-soft);padding:3px 9px;border-radius:6px}
+  .gate q{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:8px;margin:7px 0;font-size:13.5px;color:#D4DCE5;display:flex;gap:10px;align-items:center}
+  .gate q .qn{font-family:var(--mono);font-size:11px;color:var(--faint);flex:none}
+  .gate q .qstat{margin-left:auto;font-family:var(--mono);font-size:11px}
+  .gate q .pass{color:var(--ok)} .gate q .wait{color:var(--faint)}
+  .verdict{margin-top:12px;padding:12px 14px;border-radius:9px;font-family:var(--display);font-weight:600;text-align:center;letter-spacing:.08em}
+  .verdict.fail{background:var(--alert-soft);border:1px solid #5a2e27;color:var(--alert)}
+  .gr{font-family:var(--mono);font-size:12.5px}
+  .gr .line{display:flex;gap:12px;padding:5px 10px;border-radius:6px}
+  .gr .line.del{background:var(--alert-soft);color:#f1b5ad} .gr .line.add{background:#13241a;color:#bfe6cb} .gr .line.ctx{color:var(--dim)}
+  .gr .sym{flex:none;width:14px;text-align:center;color:var(--faint)}
+  .codewrap{margin:16px 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0c1117}
+  .codehdr{display:flex;align-items:center;gap:9px;padding:9px 14px;background:#10151b;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--dim)}
+  .codehdr .fn{color:var(--container)}
+  .codehdr .lang{margin-left:auto;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+  pre{margin:0;padding:16px 18px;overflow-x:auto;font-family:var(--mono);font-size:12.6px;line-height:1.6;color:#cdd6e0;tab-size:2}
+  pre .c{color:#5d6b7a;font-style:italic} pre .k{color:#E8A33D} pre .s{color:#7fd6c9} pre .f{color:#9AA2F2} pre .n{color:#d9a8ff} pre .o{color:#9DA7B3}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.8px}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  th{font-family:var(--display);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);font-weight:600}
+  tbody tr:hover{background:var(--surface)}
+  td .w{font-family:var(--mono);font-size:11.5px;padding:1px 7px;border-radius:5px;border:1px solid var(--line);color:var(--dim)}
+  td .w.P{color:var(--flow);border-color:var(--flow-line)} td .w.B{color:var(--gov);border-color:#3a3e6e} td .w.L{color:var(--alert);border-color:#5a2e27} td .w.R{color:var(--faint)} td .w.K{color:var(--ok);border-color:#2c5238}
+  ul.clean{margin:8px 0 16px;padding-left:0;list-style:none}
+  ul.clean li{position:relative;padding:4px 0 4px 22px;color:#D4DCE5}
+  ul.clean li::before{content:"\25B9";position:absolute;left:2px;color:var(--flow);font-size:12px;top:6px}
+  ol.steps{counter-reset:s;list-style:none;margin:8px 0;padding:0}
+  ol.steps li{counter-increment:s;position:relative;padding:12px 16px 12px 56px;background:var(--surface);border:1px solid var(--line);border-radius:11px;margin:9px 0}
+  ol.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:16px;top:12px;font-family:var(--mono);font-weight:700;color:var(--flow);font-size:15px}
+  ol.steps li b{font-family:var(--display)}
+  footer{max-width:var(--maxw);margin:40px auto 0;padding-top:22px;border-top:1px solid var(--line);color:var(--faint);font-size:13px}
+  @media(max-width:980px){
+    .wrap{grid-template-columns:1fr}
+    nav.side{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line);display:flex;gap:18px;overflow-x:auto;padding:14px}
+    nav.side .brandmark{margin:0} nav.side h4{display:none} nav.side ol{display:flex;gap:4px} nav.side li{margin:0}
+    main{padding:0 18px 80px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="side">
+  <div class="brandmark">
+    <svg class="stacklogo" viewBox="0 0 40 40" aria-hidden="true">
+      <rect x="6" y="24" width="28" height="6" rx="2" fill="#4FD1C5"/>
+      <rect x="9" y="16" width="24" height="6" rx="2" fill="#9AA2F2"/>
+      <rect x="12" y="8" width="20" height="6" rx="2" fill="#E8A33D"/>
+      <path d="M20 5 L20 31" stroke="#2A3340" stroke-width="1" stroke-dasharray="2 2"/>
+    </svg>
+    <div><b>Maestro</b><span>Fold &amp; Rebuild v0.2</span></div>
+  </div>
+  <h4>Plan</h4>
+  <ol>
+    <li><a href="#contract"><span class="n">00</span>Contract</a></li>
+    <li><a href="#timeline"><span class="n">01</span>Timeline</a></li>
+    <li><a href="#sessions"><span class="n">02</span>Sessions</a></li>
+    <li><a href="#cumulative"><span class="n">03</span>Cumulative</a></li>
+    <li><a href="#oneapp"><span class="n">04</span>One app</a></li>
+    <li><a href="#loop"><span class="n">05</span>The runtime loop</a></li>
+    <li><a href="#foil"><span class="n">06</span>FOIL</a></li>
+    <li><a href="#flows"><span class="n">07</span>Data flow</a></li>
+    <li><a href="#mockups"><span class="n">08</span>Mockups</a></li>
+    <li><a href="#code"><span class="n">09</span>Code</a></li>
+    <li><a href="#claudemd"><span class="n">10</span>CLAUDE.md</a></li>
+    <li><a href="#hindsight"><span class="n">11</span>Hindsight</a></li>
+    <li><a href="#nulls"><span class="n">12</span>Open NULLs</a></li>
+  </ol>
+</nav>
+
+<main>
+
+<section id="hero" class="hero">
+  <p class="eyebrow">Workspace synthesis &middot; v0.2 &middot; refined against the runtime</p>
+  <h1>Maestro runs. It's a compiler &mdash;<br>so rebuild it, don't document it.</h1>
+  <p class="lead">Maestro turns a creative seed into release-grade music through Suno by compiling it: <em>seed &rarr; Technical UST (the addressable intermediate representation) &rarr; Suno (the target)</em>, on the Mosaic substrate. This plan reads every session in the workspace as one continuous reconstruction, folds the folds with provenance, and lays out how to rebuild the runtime without flattening it again.</p>
+
+  <figure style="border:none;background:none;padding:0">
+    <svg viewBox="0 0 1000 120" role="img" aria-label="Maestro as a compiler: seed to intermediate representation to target">
+      <rect x="20" y="40" width="220" height="46" rx="9" fill="#1c2331" stroke="#2A3340"/>
+      <text x="130" y="62" text-anchor="middle" class="dsub" fill="#E6EDF3">creative seed (SOURCE)</text>
+      <text x="130" y="78" text-anchor="middle" class="dnote">loose, under-specified intent</text>
+      <path d="M240 63 L300 63" stroke="#E8A33D" stroke-width="1.6" marker-end="url(#h)"/>
+      <rect x="300" y="30" width="300" height="66" rx="9" fill="#3A2E1B" stroke="#5C481F"/>
+      <text x="450" y="54" text-anchor="middle" class="dsub" fill="#E8A33D">Technical UST (IR)</text>
+      <text x="450" y="72" text-anchor="middle" class="dnote">addressable, canonical, null-filled, locked</text>
+      <text x="450" y="86" text-anchor="middle" class="dnote">axis.key.subkey.variable+1</text>
+      <path d="M600 63 L660 63" stroke="#4FD1C5" stroke-width="1.6" marker-end="url(#h2)"/>
+      <rect x="660" y="40" width="320" height="46" rx="9" fill="#16302E" stroke="#23514C"/>
+      <text x="820" y="62" text-anchor="middle" class="dsub" fill="#4FD1C5">Suno (TARGET) &mdash; the world's best DAW</text>
+      <text x="820" y="78" text-anchor="middle" class="dnote">any song into any genre</text>
+      <text x="20" y="22" class="dnote" fill="#6B7480">MOSAIC = the substrate: an empirical model of the target machines, derived from ~41k sessions</text>
+      <defs>
+        <marker id="h" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#E8A33D"/></marker>
+        <marker id="h2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#4FD1C5"/></marker>
+      </defs>
+    </svg>
+  </figure>
+
+  <div class="pillrow">
+    <span class="pill flow">Maestro = compiler &middot; runs</span>
+    <span class="pill cont">Mosaic = substrate (~41k sessions)</span>
+    <span class="pill">one app + its expansion &mdash; not four planes</span>
+    <span class="pill">FOIL recovered in full</span>
+    <span class="pill">v4.5 proven &middot; v5 diagnostic &middot; v0 specified</span>
+    <span class="pill alert">v5 loss: distributed-file-system split</span>
+  </div>
+</section>
+
+<section id="contract">
+  <p class="eyebrow">00 &middot; Reconstruction contract</p>
+  <h2>State, restated before synthesis</h2>
+  <p>The canon-state is declared up front as a contract, not a vibe-check. v0.2 supersedes v0.1 on one structural point: there are <strong>not</strong> four co-equal planes. There is <strong>one app</strong> &mdash; Maestro, a compiler &mdash; and its expansion onto Mosaic; the dev environments are the <em>ground</em> where it ran, and the recovery work is <em>tooling</em>. (§04.)</p>
+
+  <div class="grid2">
+    <div class="panel tight">
+      <h4 style="color:var(--flow)">The corrected first law</h4>
+      <p style="font-size:14.5px">Each session folds its activity into a structured fold. <strong>Fold the folds</strong> &mdash; laminate each onto the prior, every under-layer preserved with provenance, so the structure grows in height through compression. A fold may never flatten away what it folded, nor stand alone in place of the folds before it. <em>Contract to grow.</em></p>
+    </div>
+    <div class="panel tight">
+      <h4 style="color:var(--container)">The load-bearing boundary</h4>
+      <p style="font-size:14.5px"><strong>Container = formalizable</strong> &rarr; becomes code, model-independent. <strong>Flow = not formalizable</strong> &rarr; lives in the GPT's conditioning + the accumulated chain. The memo states the same split: <em>soft controls</em> (prompts) vs <em>hard controls</em> (schemas, validators, deterministic code). Reliability comes from the hard ones.</p>
+    </div>
+  </div>
+
+  <h3>Evidence hierarchy (what wins on conflict)</h3>
+  <table>
+    <thead><tr><th>Source class</th><th>Examples</th><th>Weight</th></tr></thead>
+    <tbody>
+      <tr><td>Runtime &mdash; behavioral ground truth</td><td><code>who_dat.pdf</code> (v4.5.5), v5-b runtime session</td><td><span class="w P">PRIMARY</span></td></tr>
+      <tr><td>Operator synthesis &amp; genesis transcripts</td><td>the Mosaic memo; the FOIL genesis; SE/v5 UST&times;SEM genesis; the v.0 diagram</td><td><span class="w P">PRIMARY</span></td></tr>
+      <tr><td>Operational / design baselines</td><td>momoney OS v4.1/4.5; Chimera "Growth to V5"; the version chain</td><td><span class="w B">BASELINE</span></td></tr>
+      <tr><td>Structured captures / contracts</td><td>Day 2 contracts, <code>song.excellence.yaml</code>, <code>foil_promotion_contract.yaml</code>, the GitHub archive</td><td><span class="w L">LAGGING</span></td></tr>
+      <tr><td>Disavowed prior-AI doctrine</td><td><code>KERNEL.md</code> / <code>01_BOOT</code></td><td><span class="w R">REFERENCE</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout cont"><span class="k">Proven vs specified (the memo's discipline, adopted)</span><strong>Proven:</strong> Maestro through v4.5 is a working system &mdash; released songs through Suno, a version-controlled archive. <strong>Diagnostic:</strong> v5 is a known-flawed branch, not canon. <strong>Specified, not built:</strong> Maestro v0 on Mosaic (the rebirth) is a 7-document spec with a Definition of Done whose items are all currently unchecked. This plan claims the first and treats the third as design entering validation.</div>
+</section>
+
+<section id="timeline">
+  <p class="eyebrow">01 &middot; One continuous session, three lines</p>
+  <h2>What we did, in order</h2>
+  <p><span style="color:var(--flow)">Line A</span> is the captured Maestro dev work (the subject). <span style="color:var(--gov)">Line B</span> is the day-structured v5-c migration (which produced the now-known-lossy contracts). <span style="color:var(--container)">Line C</span> is the forensic reconstruction that reframed the effort and, across this conversation, recovered the runtime.</p>
+  <div class="legend">
+    <span><i class="swatch sw-flow"></i> A &mdash; Maestro dev evidence</span>
+    <span><i class="swatch sw-gov"></i> B &mdash; v5-c day migration</span>
+    <span><i class="swatch sw-cont"></i> C &mdash; forensic reconstruction</span>
+  </div>
+  <div class="tl">
+    <div class="tlrow a"><div class="meta"><span class="tag a">LINE A</span><span>captured dev sessions</span></div><b class="t">Lyric-quality baseline &middot; Stuck &middot; Convoluted &middot; Personas &middot; v5-c worklog &middot; FOIL genesis</b><br><span class="muted" style="font-size:13.5px">Establish a flow standard, organize to single-source-of-truth, fix the brand line, assess personas, freeze the v5-c canon, and design FOIL as a compiler cascade. Captured as transcripts + the 12,409-event chronology + the version chain.</span></div>
+    <div class="tlrow b"><div class="meta"><span class="tag b">LINE B</span><span>Day 1 &rarr; 2 &rarr; 3</span></div><b class="t">Semantic corrections &rarr; authoritative bundle &rarr; persona&rarr;subagent migration</b><br><span class="muted" style="font-size:13.5px">Day 2 froze 7 contracts and an 8-phase order &mdash; the order turns out to be the runtime loop's shape. What it lost was FOIL's elaboration, flattened to the promotion contract.</span></div>
+    <div class="tlrow c"><div class="meta"><span class="tag c">LINE C &middot; Jun 14&ndash;15</span><span>reframe</span></div><b class="t">GitHub archive reassessed &rarr; the fold reframe &rarr; lamination &rarr; v.0-on-Mosaic destination</b><br><span class="muted" style="font-size:13.5px">The archive is a lossy app-spec projection. "Fold the folds" replaced "anti-reduction." The 5-layer laminate; 9 staged folds; and the rebirth target named.</span></div>
+    <div class="tlrow c"><div class="meta"><span class="tag c">LINE C &middot; Jun 16</span><span>runtime recovered</span></div><b class="t">Runtime accepted &middot; one-app ontology corrected &middot; FOIL + memo + version chain folded</b><br><span class="muted" style="font-size:13.5px">Maestro accepted as an executing compiler; the four-planes framing retracted; the runtime loop reconstructed; FOIL recovered in full; the v5 distributed-file-system loss named; <code>blueprint.json</code>&rarr;Technical UST; several NULLs resolved. This document is the fold of all of it.</span></div>
+  </div>
+</section>
+
+<section id="sessions">
+  <p class="eyebrow">02 &middot; Sessions, independently</p>
+  <h2>Each session, what it did &mdash; and what survived</h2>
+  <p>Each card folds one session: what it produced, what carried forward into current canon, and what was later superseded or lost. The cards are read through the corrected lens &mdash; the Line A and Line B framings predate the June 16 runtime recovery, so several of their "outputs" are now known to be projections of a system that actually <em>executes</em>.</p>
+  <div class="callout"><span class="k">Read order</span>These summaries are evidence, not authority. Where a session's tidy artifact conflicts with the runtime (<code>who_dat</code>) or your own corrections, the runtime and the corrections win &mdash; that is the whole finding of Line C.</div>
+
+  <h3 style="color:var(--flow)">Line A &mdash; captured Maestro development</h3>
+
+  <details class="sess"><summary><span class="sid">A1</span><div><p class="stitle">Lyric-quality baseline</p><span class="ssub">Branch · Lyric quality baseline</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Set a standard for lyric/flow quality &mdash; where a breath belongs, when an adlib serves vs clutters.</dd>
+      <dt>Survived</dt><dd class="kept">The flow standard, now SEM criterion L1 input and the canonical example of the <em>unformalizable flow</em> that cannot become code.</dd>
+      <dt>Superseded</dt><dd>Nothing &mdash; this is foundational; it sharpened into the flow/container boundary.</dd>
+    </dl><div class="statusrow"><span class="st primary">feeds SEM L1</span><span class="st">flow boundary</span></div></div>
+  </details>
+
+  <details class="sess"><summary><span class="sid">A2</span><div><p class="stitle">Stuck &mdash; knowledge single-source-of-truth</p><span class="ssub">Stuck · TIDD-EC</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Worked through organizing the knowledge into a single source of truth; surfaced the TIDD-EC discipline.</dd>
+      <dt>Survived</dt><dd class="kept">The SSOT instinct &mdash; which the v5 distributed-file-system split later violated, causing the loss (§04, §06).</dd>
+      <dt>Superseded</dt><dd>Specific organization attempts, overtaken by the runtime-primary frame.</dd>
+    </dl><div class="statusrow"><span class="st">knowledge SSOT</span></div></div>
+  </details>
+
+  <details class="sess"><summary><span class="sid">A3</span><div><p class="stitle">Convoluted &mdash; the brand line</p><span class="ssub">Convoluted</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Resolved the brand/creed to <em>"Your vision. Our mission."</em></dd>
+      <dt>Survived</dt><dd class="kept">The creed, extended on the v.0 diagram to <strong>"Your vision. Our mission. Yesterday's world-class is today's baseline."</strong> &mdash; the SEG ratchet stated as a slogan.</dd>
+      <dt>Superseded</dt><dd>&mdash;</dd>
+    </dl><div class="statusrow"><span class="st ok">in v.0 canon</span></div></div>
+  </details>
+
+  <details class="sess"><summary><span class="sid">A4</span><div><p class="stitle">Personas</p><span class="ssub">Yesterday</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Assessed the persona set &mdash; the simulated specialists.</dd>
+      <dt>Survived</dt><dd class="kept">The staffed-runtime concept: the 17 roles of the v.0 diagram and the employees of the runtime loop (§05) &mdash; fallible by design, to spur unorthodox output and train Suno.</dd>
+      <dt>Superseded</dt><dd>Flat persona lists, by the persona&rarr;subagent migration (B2) and the bounded-controller model.</dd>
+    </dl><div class="statusrow"><span class="st primary">&rarr; 17 roles</span><span class="st">staffed runtime</span></div></div>
+  </details>
+
+  <details class="sess"><summary><span class="sid">A5</span><div><p class="stitle">v5-c canon freeze</p><span class="ssub">Yesterday-3 · dev_chat_worklog</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Froze the v5-c canon: the state machine <code>NULL&rarr;PROPOSED&rarr;PRESSURED&rarr;RESOLVED&rarr;LOCKED</code> and the named "Address Law."</dd>
+      <dt>Survived</dt><dd class="kept">The state machine and Address Law &mdash; carried onto the v.0 diagram.</dd>
+      <dt>Dating</dt><dd>These are <em>later</em> formalizations layered on the UST genesis &mdash; not origin. Recorded as later, not retrofitted into the genesis.</dd>
+    </dl><div class="statusrow"><span class="st open">later overlay</span><span class="st ok">in v.0 canon</span></div></div>
+  </details>
+
+  <details class="sess c"><summary><span class="sid">A6</span><div><p class="stitle">FOIL genesis &mdash; the compiler cascade</p><span class="ssub">conversation_foil-based-tiered-system (876 KB)</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Designed FOIL: a 4-tier cascade (MACRO/MICRO/TACTICAL/VARIABLE+1), the <code>&oplus;</code> merge math, duplicate-promotion up-shift, a sheet-music repeat grammar with a compiler-expansion pass, and the dual-notation bridge.</dd>
+      <dt>Survived</dt><dd class="kept">All of it &mdash; recovered in full this session as <code>foil_reconstruction_v0_1.md</code> (§06).</dd>
+      <dt>Lost (then)</dt><dd class="lost">Flattened to <code>foil_promotion_contract.yaml</code>, which kept only the up-shift idea and dropped the cascade, the math, the repeat grammar, the compiler pass, and the addressing role.</dd>
+    </dl><div class="statusrow"><span class="st primary">PRIMARY genesis</span><span class="st ok">recovered</span></div></div>
+  </details>
+
+  <h3 style="color:var(--gov)">Line B &mdash; the v5-c day migration</h3>
+
+  <details class="sess b"><summary><span class="sid">B1</span><div><p class="stitle">Day 2 closeout &mdash; 7 frozen contracts</p><span class="ssub">DAY2_CLOSEOUT_REPORT</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Froze 7 contracts (controller, phase, artifact, <code>foil_promotion</code>, <code>creative_ust_canonical_shell</code>, +2), an 8-phase order, and 11 laws.</dd>
+      <dt>Survived</dt><dd class="kept">The <strong>8-phase order is the runtime loop's shape</strong> (§05): sequential fill &rarr; draft freeze &rarr; round-robin &rarr; lock &rarr; reverse/dedup &rarr; concurrent surfaces &rarr; freeze &rarr; package. The laws (Technical-UST-canonical, lyric-lock, sequential, round-robin-mandatory) hold.</dd>
+      <dt>Lost</dt><dd class="lost">FOIL's elaboration (&rarr; promotion contract); and the axis names were <strong>truncated for character economy</strong>, which breaks Technical&harr;Creative linkage (§06 fix).</dd>
+    </dl><div class="statusrow"><span class="st lossy">contracts = LAGGING</span><span class="st ok">order = loop shape</span></div></div>
+  </details>
+
+  <details class="sess b"><summary><span class="sid">B2</span><div><p class="stitle">Day 3 &mdash; persona &rarr; subagent migration</p><span class="ssub">maestro_day3_work_window_script</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Migrated the personas toward subagents with bounded jurisdiction.</dd>
+      <dt>Survived</dt><dd class="kept">The bounded-controller model: workers act in lane; the orchestrator routes and gates, never authors (memo §4 optimizer).</dd>
+      <dt>Superseded</dt><dd>&mdash;</dd>
+    </dl><div class="statusrow"><span class="st">&rarr; bounded controller</span></div></div>
+  </details>
+
+  <details class="sess b"><summary><span class="sid">B3</span><div><p class="stitle">Day 2 snapshot &amp; simulated stashes</p><span class="ssub">day_2_snapshot_and_simulated_stashes</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Captured a snapshot and simulated git-style stashes of the day's state.</dd>
+      <dt>Survived</dt><dd class="kept">The snapshot/stash instinct &mdash; a precursor to ATP continuity packs.</dd>
+      <dt>Superseded</dt><dd>Simulated stashes, by the real ATP/sha256 preservation primitive.</dd>
+    </dl><div class="statusrow"><span class="st">&rarr; ATP packs</span></div></div>
+  </details>
+
+  <h3 style="color:var(--container)">Line C &mdash; forensic reconstruction</h3>
+
+  <details class="sess c"><summary><span class="sid">C1</span><div><p class="stitle">Forensic tooling + chronology</p><span class="ssub">parse / classify / pass1 chronology</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Built the parse/classify/chronology passes: 12,409 events across 15 sources (artifact_emission 405, correction 330, failure 260, validation 221, reversal 21).</dd>
+      <dt>Survived</dt><dd class="kept">The event-chronology method &mdash; this is <em>tooling</em>, a dev feature set, not Maestro runtime (§04).</dd>
+      <dt>Note</dt><dd>Several chronology sources are pruned from the current project subset; the version chain (691 segments) restores part of that lineage.</dd>
+    </dl><div class="statusrow"><span class="st">recovery tool</span></div></div>
+  </details>
+
+  <details class="sess c"><summary><span class="sid">C2</span><div><p class="stitle">The six v0.1 folds (the baseline)</p><span class="ssub">who_dat · SEG · v5 UST&times;SEM · lineage · loss · month-synthesis</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Produced the reconstruction baseline: <code>who_dat</code> (v4.5.5 runtime = PRIMARY), SEG (5-layer stack, 97.5 floor), v5 UST&times;SEM (8-axis, interwoven, G-Card), the lineage register (CFT-BL-1..5, two-tracks), the loss demo (v3.0g hollowing; 97.5&rarr;70 revert), and the month synthesis (Layer 0&ndash;4; <em>rebuild, not document</em>).</dd>
+      <dt>Survived</dt><dd class="kept">All six &mdash; the standing baseline this plan builds on.</dd>
+      <dt>Refined</dt><dd>Their Layer-0&ndash;4 view is reconciled into the one-app/compiler frame (§04); several of their parked NULLs are now resolved (§12).</dd>
+    </dl><div class="statusrow"><span class="st primary">BASELINE</span><span class="st ok">established</span></div></div>
+  </details>
+
+  <details class="sess c"><summary><span class="sid">C3</span><div><p class="stitle">June 14&ndash;15 &mdash; the fold reframe</p><span class="ssub">GitHub archive · laminate · rebirth target</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Reassessed the <code>maestro-on-mosaic</code> GitHub repo as a lossy app-spec archive; replaced "anti-reduction" with <strong>fold-the-folds</strong>; built the 5-layer laminate; staged 9 unique folds; named v.0-on-Mosaic as the rebirth destination.</dd>
+      <dt>Survived</dt><dd class="kept">The fold/laminate discipline and the rebirth target &mdash; both central here.</dd>
+      <dt>Open</dt><dd>The 10-phase GitHub upload left supersede-vs-merge unresolved (§12).</dd>
+    </dl><div class="statusrow"><span class="st">fold-the-folds</span><span class="st open">supersede-vs-merge open</span></div></div>
+  </details>
+
+  <details class="sess c"><summary><span class="sid">C4</span><div><p class="stitle">June 16 &mdash; the runtime recovered</p><span class="ssub">this conversation</span></div><span class="schevron">&#9656;</span></summary>
+    <div class="sbody"><dl>
+      <dt>Did</dt><dd>Accepted Maestro as an executing compiler; retracted the four-planes framing; reconstructed the runtime loop (§05); recovered FOIL in full (§06); folded the Mosaic memo (compiler / proven-vs-specified / the PoC) and the version chain; established <code>blueprint.json</code>&rarr;Technical UST; named the v5 distributed-file-system loss; resolved several NULLs.</dd>
+      <dt>Survived</dt><dd class="kept">This document is the fold of all of it &mdash; v0.2.</dd>
+      <dt>Open</dt><dd>The admissibility sub-questions the memo itself names (§12).</dd>
+    </dl><div class="statusrow"><span class="st primary">current canon</span><span class="st ok">runtime accepted</span></div></div>
+  </details>
+</section>
+
+<section id="cumulative">
+  <p class="eyebrow">03 &middot; Cumulatively</p>
+  <h2>The whole, as one effort</h2>
+  <p>The assessment equation is <em>(end state) &minus; (root input) = work</em>. Root input: a pile of nonlinear dev sessions, day-migration contracts, and clean artifacts that <em>looked</em> complete. End state: the recognition that the accumulated runtime &mdash; not any spec &mdash; is the asset, a compiler that executes, with its loss mechanism named and its missing middle (FOIL) recovered. The work is the delta between them.</p>
+
+  <div class="grid3">
+    <div class="panel tight"><h4 style="color:var(--ok)">What survived</h4><ul class="clean" style="font-size:13.8px">
+      <li>The runtime itself &mdash; v4.5.x as behavioral ground truth</li>
+      <li>The 8-phase order, now read as the runtime loop</li>
+      <li>SEG (5-layer) + the 97.5 floor + interwoven quality</li>
+      <li>The 8/9-axis Technical UST + Creative UST (meso)</li>
+      <li>FOIL, recovered in full from genesis</li>
+      <li>The creed and the flow standard</li>
+    </ul></div>
+    <div class="panel tight"><h4 style="color:var(--alert)">What was lost</h4><ul class="clean" style="font-size:13.8px">
+      <li>v3.0g hollowed to 301 bytes of placeholders (vs ~21,500 rebuilt by hand)</li>
+      <li><code>song.excellence.yaml</code> reverted 97.5&rarr;70</li>
+      <li>FOIL flattened to the promotion contract</li>
+      <li>Axis names truncated &rarr; Technical&harr;Creative linkage errors</li>
+      <li><strong>The monolith's coherence</strong>, when v5 was rendered as a distributed file system (§04)</li>
+    </ul></div>
+    <div class="panel tight"><h4 style="color:var(--gov)">What's unresolved</h4><ul class="clean" style="font-size:13.8px">
+      <li>Admissibility sub-questions (~6, memo-named)</li>
+      <li>Whether a referenced sub-rubric was ever built</li>
+      <li>SEM 12-vs-13 (Memory Activation)</li>
+      <li>Sub-gate thresholds (70 vs 75)</li>
+      <li>10-phase supersede-vs-merge</li>
+      <li>Patent-filing status (~22 novelty claims)</li>
+    </ul></div>
+  </div>
+
+  <div class="callout cont"><span class="k">The convergence that matters</span>Asked for advice, the runtime prescribed &mdash; unprompted &mdash; the exact discipline this work landed on: don't save everything at once; build a 5-question resurrection test; separate artifacts by function; ask models to <em>perform</em> recovery, not "understand"; build the compiler around mutations, not turns; preserve the ugly parts; <strong>rebuild Maestro, not document Maestro.</strong> The path was not imposed on Maestro from outside &mdash; it is the one Maestro points to.</div>
+</section>
+
+<section id="oneapp">
+  <p class="eyebrow">04 &middot; The correction</p>
+  <h2>One app and its expansion &mdash; not four planes</h2>
+  <p>v0.1 drew four co-equal planes &mdash; Maestro, Mosaic, the dev environment, and the forensics. That was a category error, and it is retracted here. Those four things do not sit at the same level.</p>
+
+  <div class="grid2">
+    <div class="panel tight"><h4 style="color:var(--alert)">Retracted (v0.1)</h4><p style="font-size:14px">Four peers: <code>Maestro</code> &middot; <code>Mosaic</code> &middot; <code>Dev_Environment</code> &middot; <code>Forensics</code> &mdash; as if each were an equal region of one system.</p></div>
+    <div class="panel tight"><h4 style="color:var(--ok)">Corrected (v0.2)</h4><p style="font-size:14px">There is <strong>one app</strong>: Maestro, a compiler. <strong>Mosaic is its substrate</strong> &mdash; the expansion it mounts onto. The <strong>dev environments are the ground</strong> it ran on (source &amp; evidence). The <strong>recovery work is tooling</strong> &mdash; a dev feature set, not part of the runtime.</p></div>
+  </div>
+
+  <h3>Maestro is a compiler &mdash; three stages</h3>
+  <p>Source language, intermediate representation, target. The same shape as a software compiler, with music as the problem domain.</p>
+  <div class="grid3">
+    <div class="panel tight"><h4 style="color:var(--flow)">Front end</h4><p style="font-size:13.8px">Decompose the creative seed &mdash; <em>expanded, not summarized</em> &mdash; into granular fields across the constrained axes. Every field is <code>address + value + condition</code>: a rule, not a datum. A null must be lawfully filled or explicitly defended. Nothing silently dropped or invented.</p></div>
+    <div class="panel tight"><h4 style="color:var(--gov)">Optimizer</h4><p style="font-size:13.8px">Simulated specialist workers &mdash; fallible by design &mdash; apply adversarial pressure. A bounded controller checks each field against admissibility and routes (back on fail, forward on pass); it never authors. Deliberation ends on convergence, with a halt for circular argument. The survivor is locked.</p></div>
+    <div class="panel tight"><h4 style="color:var(--container)">Back end</h4><p style="font-size:13.8px">Factor the locked representation: hoist recurring terms to the smallest covering scope, and emit three artifacts mapping to Suno's three inputs. <em>The factoring rule is the routing rule.</em> The lyrics-prompt artifact is itself a structured container executing inside Suno's prompt field. This is FOIL (§06).</p></div>
+  </div>
+
+  <h3>The real four planes: the v.0 diagram's internal architecture</h3>
+  <p>"Four planes" is correct &mdash; but they are the internal architecture of the one app, as drawn on the <em>Maestro v.0 featuring the new Mosaic Engine</em> diagram (the formalized rebirth destination, specified-not-built).</p>
+
+  <figure>
+    <svg viewBox="0 0 1000 470" role="img" aria-label="Maestro the app, its four internal planes, mounted on the Mosaic substrate, over the dev ground">
+      <!-- ground -->
+      <rect x="20" y="406" width="960" height="48" rx="9" fill="#11161d" stroke="#222A34"/>
+      <text x="40" y="427" class="dsub" fill="#6B7480">THE GROUND &mdash; dev environments where it ran (Custom GPT, ChatGPT, transcripts)</text>
+      <text x="40" y="443" class="dnote">source &amp; evidence &middot; not a peer of the app</text>
+      <text x="720" y="435" class="dnote" fill="#6B7480">RECOVERY = tooling (parse / classify / folds) &mdash; a dev feature set</text>
+      <!-- substrate -->
+      <rect x="20" y="338" width="960" height="56" rx="10" fill="#16302E" stroke="#23514C"/>
+      <text x="40" y="362" class="dlabel" fill="#4FD1C5">MOSAIC &mdash; the substrate</text>
+      <text x="40" y="380" class="dnote" fill="#9DA7B3">empirical model of the target machines (LM + Suno parser), derived from ~41k sessions &middot; domain-neutral &middot; where the discovered rules become enforced invariants</text>
+      <!-- app container -->
+      <rect x="20" y="24" width="960" height="300" rx="14" fill="none" stroke="#5C481F" stroke-width="1.5"/>
+      <text x="40" y="50" class="dlabel" fill="#E8A33D">MAESTRO &mdash; the app (a compiler)</text>
+      <text x="300" y="50" class="dnote" fill="#6B7480">v.0 = nine axes (adds VIS) &middot; 17 roles &middot; K1&ndash;K8 admissibility &middot; specified, not built</text>
+      <!-- plane 1 -->
+      <rect x="42" y="64" width="916" height="58" rx="9" fill="#1c2331" stroke="#2A3340"/>
+      <text x="60" y="86" class="dsub" fill="#E6EDF3">Plane 1 &mdash; Staffed Semantic Runtime</text>
+      <text x="60" y="103" class="dnote">17 roles + bounded controller + deliberation/pressure engine &mdash; runs the forward fill &amp; round-robin (§05)</text>
+      <text x="940" y="97" text-anchor="end" class="dnote" fill="#E8A33D">OPTIMIZER</text>
+      <!-- plane 2 -->
+      <rect x="42" y="128" width="916" height="58" rx="9" fill="#211c14" stroke="#3A2E1B"/>
+      <text x="60" y="150" class="dsub" fill="#E8A33D">Plane 2 &mdash; Canonical Creative Superspace</text>
+      <text x="60" y="167" class="dnote">the Technical UST: the addressable null structure being filled &mdash; 9 axes &times; 5 keys &times; 5 subkeys, the truth object</text>
+      <text x="940" y="161" text-anchor="end" class="dnote" fill="#E8A33D">IR</text>
+      <!-- plane 3 -->
+      <rect x="42" y="192" width="916" height="58" rx="9" fill="#1d1f3a" stroke="#23264A"/>
+      <text x="60" y="214" class="dsub" fill="#9AA2F2">Plane 3 &mdash; Interwoven SEM-Admissibility</text>
+      <text x="60" y="231" class="dnote">K1&ndash;K8 admissibility + SEM scoring, sidechained into the UST &mdash; quality pressures during creation, gating modes Observe/Warn/Challenge/Block</text>
+      <text x="940" y="225" text-anchor="end" class="dnote" fill="#9AA2F2">GOVERNANCE</text>
+      <!-- plane 4 -->
+      <rect x="42" y="256" width="916" height="58" rx="9" fill="#16302E" stroke="#23514C"/>
+      <text x="60" y="278" class="dsub" fill="#4FD1C5">Plane 4 &mdash; Derivative Distribution Surface</text>
+      <text x="60" y="295" class="dnote">the three reverse-pass surfaces (Creative UST / Show Summary / A&amp;R) + visual variants &mdash; Suno-facing, FOIL-factored</text>
+      <text x="940" y="289" text-anchor="end" class="dnote" fill="#4FD1C5">BACK END</text>
+    </svg>
+    <figcaption>One app, four internal planes, on the Mosaic substrate, over the dev ground. Dev and recovery are context, not peers.</figcaption>
+  </figure>
+
+  <div class="callout alert"><span class="k">The v5 loss, at the structural level</span>v4.5x executed because the <strong>monolithic prompt + knowledge files + <code>blueprint.json</code></strong> operated as one integrated thing. ChatGPT <strong>rendered v5 as a distributed file system</strong> &mdash; splitting that whole into separate files &mdash; and the split severed the connective tissue, dropping the importance and detail of the components and, inside them, SEG and FOIL. This is the <code>song.excellence.yaml</code> / v3.0g hollowing one level up: not file-contents emptied, but <em>the linkages between files cut</em>. Hence the shipping law: <strong>distribute into files only if every linkage is preserved and provenance-bound</strong> (<code>blueprint</code>&rarr;UST, Technical&harr;Creative axis identity, SEG/FOIL internal structure).</div>
+</section>
+
+<section id="loop">
+  <p class="eyebrow">05 &middot; The runtime loop</p>
+  <h2>How Maestro actually runs</h2>
+  <p>Maestro is a loop that simulates a record label: it fills a constrained null-structure through staffed deliberation, pressure-tests it to congruency, locks it, then reverse-compiles it into maximal-density Suno prompts. The eight steps below are the loop; they are also the Day 2 eight-phase order, read as execution rather than as a static contract.</p>
+
+  <figure>
+    <svg viewBox="0 0 1000 340" role="img" aria-label="The Maestro runtime loop: forward fill to lock, then reverse pass to Suno">
+      <defs>
+        <marker id="a1" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#9DA7B3"/></marker>
+        <marker id="aF" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#E8A33D"/></marker>
+        <marker id="aC" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#4FD1C5"/></marker>
+        <marker id="aR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#E5604F"/></marker>
+      </defs>
+      <!-- forward row -->
+      <g>
+        <rect x="16" y="40" width="138" height="52" rx="8" fill="#211c14" stroke="#3A2E1B"/><text x="85" y="62" text-anchor="middle" class="dsub" fill="#E8A33D">1 · Pre-load UST</text><text x="85" y="78" text-anchor="middle" class="dnote">null skeleton</text>
+        <rect x="170" y="40" width="138" height="52" rx="8" fill="#1c2331" stroke="#2A3340"/><text x="239" y="62" text-anchor="middle" class="dsub" fill="#E6EDF3">2 · Blow-up intake</text><text x="239" y="78" text-anchor="middle" class="dnote">seed &rarr; note-fields</text>
+        <rect x="324" y="40" width="138" height="52" rx="8" fill="#1c2331" stroke="#2A3340"/><text x="393" y="59" text-anchor="middle" class="dsub" fill="#E6EDF3">3 · Sequential fill</text><text x="393" y="74" text-anchor="middle" class="dnote">employees fill nulls</text><text x="393" y="87" text-anchor="middle" class="dnote">gold-ref + SEG base</text>
+        <rect x="478" y="40" width="138" height="52" rx="8" fill="#1d1f3a" stroke="#23264A"/><text x="547" y="59" text-anchor="middle" class="dsub" fill="#9AA2F2">4 · Round-robin</text><text x="547" y="74" text-anchor="middle" class="dnote">congruency, not turns</text><text x="547" y="87" text-anchor="middle" class="dnote">defend / outvote</text>
+        <rect x="632" y="40" width="138" height="52" rx="8" fill="#1d1f3a" stroke="#23264A"/><text x="701" y="59" text-anchor="middle" class="dsub" fill="#9AA2F2">5 · Exec committee</text><text x="701" y="74" text-anchor="middle" class="dnote">market + historical</text><text x="701" y="87" text-anchor="middle" class="dnote">"red-pen"</text>
+        <path d="M820 66 L884 66" fill="none" stroke="#9DA7B3" stroke-width="1.4"/>
+        <polygon points="884,46 924,66 884,86 844,66" fill="#11161d" stroke="#3A2E1B"/><text x="884" y="63" text-anchor="middle" class="dnote" fill="#E8A33D">6</text><text x="884" y="74" text-anchor="middle" class="dnote">pass?</text>
+        <path d="M154 66 L168 66" stroke="#9DA7B3" stroke-width="1.4" marker-end="url(#a1)"/>
+        <path d="M308 66 L322 66" stroke="#9DA7B3" stroke-width="1.4" marker-end="url(#a1)"/>
+        <path d="M462 66 L476 66" stroke="#E8A33D" stroke-width="1.4" marker-end="url(#aF)"/>
+        <path d="M616 66 L630 66" stroke="#9DA7B3" stroke-width="1.4" marker-end="url(#a1)"/>
+      </g>
+      <!-- loopback fail -->
+      <path d="M884 88 L884 120 L393 120 L393 94" fill="none" stroke="#E5604F" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#aR)"/>
+      <text x="640" y="135" text-anchor="middle" class="dnote" fill="#E5604F">fail &rarr; back to the employees, re-run until it passes</text>
+      <!-- pass down to lock -->
+      <path d="M905 86 L905 175 L156 175 L156 196" fill="none" stroke="#4FD1C5" stroke-width="1.4" marker-end="url(#aC)"/>
+      <text x="912" y="150" class="dnote" fill="#4FD1C5">pass</text>
+      <!-- reverse row -->
+      <g>
+        <rect x="16" y="198" width="280" height="50" rx="8" fill="#16302E" stroke="#23514C"/><text x="156" y="219" text-anchor="middle" class="dsub" fill="#4FD1C5">locked.technical.ust</text><text x="156" y="235" text-anchor="middle" class="dnote">the upstream truth object</text>
+        <rect x="324" y="198" width="170" height="50" rx="8" fill="#211c14" stroke="#3A2E1B"/><text x="409" y="219" text-anchor="middle" class="dsub" fill="#E8A33D">7 · Reverse + FOIL</text><text x="409" y="235" text-anchor="middle" class="dnote">factor from the edges</text>
+        <rect x="520" y="190" width="220" height="66" rx="8" fill="#1c2331" stroke="#2A3340"/><text x="630" y="210" text-anchor="middle" class="dsub" fill="#E6EDF3">three intertwined surfaces</text><text x="630" y="225" text-anchor="middle" class="dnote">Creative UST · Show Summary · A&amp;R</text><text x="630" y="239" text-anchor="middle" class="dnote">maximize all three char budgets</text>
+        <rect x="764" y="198" width="220" height="50" rx="8" fill="#16302E" stroke="#23514C"/><text x="874" y="219" text-anchor="middle" class="dsub" fill="#4FD1C5">8 · Suno = the DAW</text><text x="874" y="235" text-anchor="middle" class="dnote">any song into any genre</text>
+        <path d="M296 223 L322 223" stroke="#4FD1C5" stroke-width="1.4" marker-end="url(#aC)"/>
+        <path d="M494 223 L518 223" stroke="#E8A33D" stroke-width="1.4" marker-end="url(#aF)"/>
+        <path d="M740 223 L762 223" stroke="#4FD1C5" stroke-width="1.4" marker-end="url(#aC)"/>
+      </g>
+      <text x="16" y="290" class="dnote" fill="#6B7480">FORWARD = the optimizer loop (fill &amp; pressure to congruency)</text>
+      <text x="16" y="306" class="dnote" fill="#6B7480">REVERSE = the back end (FOIL factoring routes recurrence to the three surfaces)</text>
+    </svg>
+    <figcaption>The loop. Fail re-runs the employees; pass locks; the reverse pass factors the locked UST into Suno's three inputs.</figcaption>
+  </figure>
+
+  <ol class="steps">
+    <li><b>Pre-load the Technical UST.</b> A skeleton of pre-existing nulls &mdash; 9 axes &times; 5 keys &times; 5 subkeys. A null is a reserved address waiting to be filled, not an absence.</li>
+    <li><b>Blow up the intake.</b> The creative seed is exploded into note-fields placed in the right axes &mdash; lossless, nothing the user said is dropped. Lyrics drop into LYR and lock; the lock doesn't limit, because the creative room lives in every other axis.</li>
+    <li><b>Fill forward, sequentially.</b> Employee bots work each axis in order &mdash; arrangement (music + vocals) &rarr; style + instrumentation &rarr; performance + post-production &mdash; replacing nulls with <code>{"gold reference"}</code> exemplars and Song Excellence as <code>{"baselines"}</code>. The UST gives them <em>constraint-based unlimited creativity</em>. The employees are deliberately flawed individuals, to push unorthodox choices and train Suno; each shows its reasoning and carries it forward. &rarr; a complete <code>draft.technical.ust</code>.</li>
+    <li><b>Round-robin staff meeting.</b> Not turns &mdash; the target is congruency. The owner of each choice defends it with evidence. High-tier choices cascade down (swap VOC baritone&rarr;soprano and the whole sonic wall moves), but affected employees push back and outvote &mdash; "call bullshit" &mdash; so every aspect is pressure-tested, not dictated.</li>
+    <li><b>Executive committee.</b> Once the staff reach congruency, market and historical pressure refine the draft against the "red-pen" guidelines and guardrails.</li>
+    <li><b>Loop until pass.</b> A fail goes back to the employees and re-runs. A pass is a <code>locked.technical.ust</code> &mdash; the upstream truth object.</li>
+    <li><b>Reverse pass + FOIL.</b> Reverse back out through the employees, turning the filled UST into prose across three concurrently-developed, intertwined surfaces, maximizing all three of Suno's input character budgets. FOIL works from the edges &mdash; granular control plus dedup, promoting recurrence up so each surface carries maximal unique content (§06).</li>
+    <li><b>Generate.</b> Suno as the world's best DAW: any song into any genre. The Creative UST is the <em>meso</em> container &mdash; granular control over the generative creation.</li>
+  </ol>
+</section>
+
+<section id="foil">
+  <p class="eyebrow">06 &middot; FOIL &mdash; the recovered middle</p>
+  <h2>The compiler cascade, restored</h2>
+  <p>FOIL is a compiler-grade tiered cascade for the song representation &mdash; word-level granular control without prompt bloat, plus deterministic dedup by upward promotion. The promotion contract kept one of its three mechanisms; the full structure is recovered in <code>foil_reconstruction_v0_1.md</code> and summarized here.</p>
+
+  <h3>The four-tier cascade (configuration inheritance, with upward dedupe)</h3>
+  <table>
+    <thead><tr><th>Tier</th><th>What it controls</th><th>Where it lives</th><th>Notation</th></tr></thead>
+    <tbody>
+      <tr><td><strong style="color:var(--flow)">MACRO</strong></td><td>Globals / defaults &mdash; true 80&ndash;100% of the song</td><td>the <strong>STYLE PROMPT</strong> (canonical MACRO container)</td><td>&mdash;</td></tr>
+      <tr><td><strong style="color:var(--gov)">MICRO</strong></td><td>Per-axis module settings &mdash; how the song behaves in general</td><td>the UST axis containers (Theory&hellip;Post)</td><td><code>macro.key.subkey.variable+1</code></td></tr>
+      <tr><td><strong style="color:var(--container)">TACTICAL</strong></td><td>Section staging &mdash; "what changes when"; structure + override calls</td><td>section headers, sFX blocks, roadmap, repeats</td><td><code>stanza.section&nbsp;header</code></td></tr>
+      <tr><td><strong>VARIABLE+1</strong></td><td>Line- and word-level switches (FX, pitch, performer tokens, adlibs)</td><td>lyric lines, word triggers, per-line macros</td><td><code>line.word</code></td></tr>
+    </tbody>
+  </table>
+  <p>The <code>+1</code> is the extra control knob bound to a value &mdash; priority, trigger, constraint, exception, "only on hook." So <code>Voice.register.lead = male low tenor</code>, and <code>Voice.register.lead +1 = mono_center_priority</code>.</p>
+
+  <div class="grid2">
+    <div class="panel tight"><h4 style="color:var(--flow)">The "math" &mdash; a merge stack</h4>
+      <p style="font-size:14px">Effective instruction at render-time:</p>
+      <p style="font-family:var(--mono);font-size:12.5px;color:#cfe9e6;background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;line-height:1.7">MACRO defaults<br>&oplus; MICRO axis settings<br>&oplus; TACTICAL section overrides<br>&oplus; VARIABLE+1 atomic triggers</p>
+      <p style="font-size:13.5px"><code>&oplus;</code> = merge; later tiers override earlier ones <em>only where specified</em>. This determinism is what makes promotion well-defined.</p>
+    </div>
+    <div class="panel tight"><h4 style="color:var(--container)">Duplicate-promotion up-shift</h4>
+      <ul class="clean" style="font-size:13.8px">
+        <li>A word-trigger repeating across many lines in one section &rarr; promote to the <strong>TACTICAL</strong> header.</li>
+        <li>A tactical rule repeating across sections &rarr; promote to <strong>MICRO</strong> (axis level).</li>
+        <li>A micro rule repeating across most songs &rarr; promote to <strong>MACRO</strong> (style-prompt global).</li>
+      </ul>
+      <p style="font-size:13.5px">Recurrence climbs to the smallest scope that covers it &mdash; the memo's "hoist to smallest covering scope." It works <em>from the edges</em> inward.</p>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="panel tight"><h4>Sheet-music repeat grammar (compiler-facing)</h4>
+      <p style="font-size:13.8px">Internal primitives the compiler understands &mdash; <code>RPT</code>, <code>TAG</code>, <code>VAMP</code>, <code>ENDING</code>, <code>DS_AL_CODA</code> &mdash; so the chorus isn't retyped four times. Suno renders best with <em>explicit</em> lyrics, so a <strong>serializer pass expands the repeats into full section blocks before render</strong>: token efficiency in authoring, reliability at render.</p>
+    </div>
+    <div class="panel tight"><h4>Runs at both ends of the loop</h4>
+      <p style="font-size:13.8px"><strong>Forward:</strong> <code>macro.key.subkey.variable+1</code> is how the nulls are addressed during the fill &mdash; FOIL is the addressing grammar. <strong>Reverse:</strong> after lock, FOIL factors the representation and the scope of a term's recurrence decides which of the three surfaces it lands in. <em>The factoring rule is the routing rule.</em></p>
+    </div>
+  </div>
+
+  <div class="callout"><span class="k">The fix the truncation forces</span>The axis codes (THY/VOC/STY/TIM/PER/POST/MAP/LYR/VIS) are truncations made for character economy &mdash; and they break the Technical&harr;Creative link (Technical <code>VOC</code> vs Creative <code>[Voices]</code>; <code>MAP</code> vs a removed roadmap block; <code>LYR</code> vs <code>&#9656;LYRICS BLOCK</code>). The fix is a <strong>canonical axis registry</strong> binding <em>full name &harr; short code &harr; Creative-UST container label</em>, with codes demoted to aliases over one stable identity. THY=Theory, VOC=Voice, STY=Style, TIM=Timbre, PER=Performance, POST=Post-production, MAP=Roadmap, LYR=Lyrics, VIS=Visual Identity.</div>
+</section>
+
+<section id="flows">
+  <p class="eyebrow">07 &middot; Data flow</p>
+  <h2>How evidence becomes canon</h2>
+  <p>The reconstruction is a pipeline, and it is <em>tooling</em> &mdash; not Maestro runtime. Raw sources are parsed and classified into an event chronology, folded into proposal-class folds, then laminated into canon that derived views (this document, the CLAUDE.md additions) point back to. The runtime data flow itself is the loop in §05.</p>
+
+  <figure>
+    <svg viewBox="0 0 1000 220" role="img" aria-label="Forensic pipeline from raw sources to laminated canon to derived views">
+      <defs><marker id="p1" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#9DA7B3"/></marker></defs>
+      <rect x="14" y="70" width="150" height="74" rx="9" fill="#1c2331" stroke="#2A3340"/>
+      <text x="89" y="96" text-anchor="middle" class="dsub" fill="#E6EDF3">raw sources</text>
+      <text x="89" y="113" text-anchor="middle" class="dnote">transcripts · who_dat</text>
+      <text x="89" y="127" text-anchor="middle" class="dnote">contracts · version chain</text>
+      <rect x="190" y="78" width="120" height="58" rx="9" fill="#1c2331" stroke="#2A3340"/><text x="250" y="103" text-anchor="middle" class="dsub" fill="#E6EDF3">parse</text><text x="250" y="119" text-anchor="middle" class="dnote">segment turns</text>
+      <rect x="336" y="78" width="120" height="58" rx="9" fill="#1c2331" stroke="#2A3340"/><text x="396" y="103" text-anchor="middle" class="dsub" fill="#E6EDF3">classify</text><text x="396" y="119" text-anchor="middle" class="dnote">tag events</text>
+      <rect x="482" y="70" width="150" height="74" rx="9" fill="#1d1f3a" stroke="#23264A"/><text x="557" y="96" text-anchor="middle" class="dsub" fill="#9AA2F2">chronology</text><text x="557" y="113" text-anchor="middle" class="dnote">12,409 events</text><text x="557" y="127" text-anchor="middle" class="dnote">15 sources, append-only</text>
+      <rect x="658" y="70" width="150" height="74" rx="9" fill="#211c14" stroke="#3A2E1B"/><text x="733" y="92" text-anchor="middle" class="dsub" fill="#E8A33D">folds</text><text x="733" y="109" text-anchor="middle" class="dnote">proposal-class</text><text x="733" y="123" text-anchor="middle" class="dnote">S#### anchors</text>
+      <rect x="834" y="70" width="152" height="74" rx="9" fill="#16302E" stroke="#23514C"/><text x="910" y="92" text-anchor="middle" class="dsub" fill="#4FD1C5">laminate &rarr; canon</text><text x="910" y="109" text-anchor="middle" class="dnote">derived views:</text><text x="910" y="123" text-anchor="middle" class="dnote">this doc · CLAUDE.md</text>
+      <path d="M164 107 L188 107" stroke="#9DA7B3" stroke-width="1.4" marker-end="url(#p1)"/>
+      <path d="M310 107 L334 107" stroke="#9DA7B3" stroke-width="1.4" marker-end="url(#p1)"/>
+      <path d="M456 107 L480 107" stroke="#9DA7B3" stroke-width="1.4" marker-end="url(#p1)"/>
+      <path d="M632 107 L656 107" stroke="#9DA7B3" stroke-width="1.4" marker-end="url(#p1)"/>
+      <path d="M808 107 L832 107" stroke="#9DA7B3" stroke-width="1.4" marker-end="url(#p1)"/>
+      <text x="14" y="180" class="dnote" fill="#6B7480">Human turns = ROOT (authority). AI turns = PROPOSAL. Mid-stream assessment is provisional. Corrections apply retroactively, with provenance.</text>
+      <text x="14" y="198" class="dnote" fill="#6B7480">Canon at version N = the fold of all events up to N. The past is never rewritten &mdash; superseded layers are kept as evidence.</text>
+    </svg>
+    <figcaption>The reconstruction pipeline &mdash; a dev feature set, not the runtime.</figcaption>
+  </figure>
+
+  <h3>The five-layer laminate &mdash; the data model for every fold</h3>
+  <p>Every fold is a laminate: a clean view sits on top, but each layer beneath is preserved and addressable, so nothing is flattened away. This is the structural answer to the loss.</p>
+  <table>
+    <thead><tr><th>Layer</th><th>Holds</th><th>Rule</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Meta</strong></td><td>Provenance, supersession log, dating</td><td>every change is logged, never silent</td></tr>
+      <tr><td><strong>Replay</strong></td><td>Operator corrections, in order</td><td>applied retroactively with causality</td></tr>
+      <tr><td><strong>Canonical</strong></td><td>Current accepted canon</td><td>derived, points back &mdash; not standalone</td></tr>
+      <tr><td><strong>Interpretation</strong></td><td>Proposals &amp; inferences (AI = proposal-class)</td><td>marked distinct from accepted</td></tr>
+      <tr><td><strong>Raw</strong></td><td>Source evidence (transcripts, who_dat)</td><td>primary; wins on conflict; never edited</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="mockups">
+  <p class="eyebrow">08 &middot; Mockups</p>
+  <h2>What the rebuild looks like in use</h2>
+  <p>Four interface sketches for the pieces that carry the most weight: the laminate viewer, the fail-closed boot gate, the no-drop/no-revert guardrail, and the axis registry that fixes the truncation.</p>
+
+  <h3>Laminate viewer</h3>
+  <p>The clean canon on top; every under-layer one click away. The proof that a fold grew rather than flattened.</p>
+  <div class="mock">
+    <div class="mockbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="mt">maestro://fold/foil_reconstruction_v0_1 &mdash; laminate</span></div>
+    <div class="mockbody"><div class="lam">
+      <div class="layer"><span class="lvl" style="background:#9AA2F2">META</span><span class="lname">supersession log</span><span class="lprov">FOIL-OQ-1 RESOLVED &middot; blueprint&rarr;UST recorded</span></div>
+      <div class="layer"><span class="lvl" style="background:#E8A33D">REPLAY</span><span class="lname">operator corrections (in order)</span><span class="lprov">axis truncation &middot; distributed-fs loss</span></div>
+      <div class="layer"><span class="lvl" style="background:#4FD1C5">CANON</span><span class="lname">FOIL = 4-tier compiler cascade</span><span class="lprov">derived view &middot; points back &darr;</span></div>
+      <div class="layer"><span class="lvl" style="background:#6B7480">INTERP</span><span class="lname">proposal: tier names stable across v5-c?</span><span class="lprov">FOIL-OQ-2 (open)</span></div>
+      <div class="layer"><span class="lvl" style="background:#33404e">RAW</span><span class="lname">conversation_foil-based-tiered-system.md</span><span class="lprov">876 KB &middot; PRIMARY</span></div>
+    </div></div>
+  </div>
+
+  <h3>Resurrection boot gate (fail-closed)</h3>
+  <p>The runtime's own prescription: a fresh session must <em>perform</em> these five behaviors before any more is loaded. Fail &rarr; fix boot, do not load more.</p>
+  <div class="mock">
+    <div class="mockbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="mt">maestro-boot --resurrection-test</span></div>
+    <div class="mockbody"><div class="gate">
+      <q><span class="qn">Q1</span> Distinguish Creative UST from Technical UST <span class="qstat pass">&#10003; PASS</span></q>
+      <q><span class="qn">Q2</span> Explain why dev sessions are evolutionary substrate <span class="qstat pass">&#10003; PASS</span></q>
+      <q><span class="qn">Q3</span> Generate one valid Creative UST from a seed <span class="qstat pass">&#10003; PASS</span></q>
+      <q><span class="qn">Q4</span> Identify one null and defend why it stays empty <span class="qstat wait">&#9711; running&hellip;</span></q>
+      <q><span class="qn">Q5</span> Explain "Your Vision. Our Mission." with Lyrics Lock <span class="qstat wait">&#9711; queued</span></q>
+      <div class="verdict fail">BOOT HELD &mdash; behavioral pass required before load</div>
+    </div></div>
+  </div>
+
+  <h3>No-drop / no-revert guardrail</h3>
+  <p>A derived artifact may not drop a source element or revert a locked operator value without a logged supersession. The single check that would have caught both documented losses before they shipped.</p>
+  <div class="mock">
+    <div class="mockbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="mt">guardrail --check song.excellence.derived.yaml</span></div>
+    <div class="mockbody"><div class="gr">
+      <div class="line ctx"><span class="sym">&middot;</span> comparing derived view against accumulated source&hellip;</div>
+      <div class="line del"><span class="sym">&minus;</span> release_threshold: 70 &nbsp;&nbsp;&larr; reverts locked operator value (97.5)</div>
+      <div class="line add"><span class="sym">+</span> release_threshold: 97.5 &nbsp;&nbsp;(locked &middot; CR-009 &middot; no supersession logged)</div>
+      <div class="line del"><span class="sym">&minus;</span> axes: 8 of 9 present &nbsp;&nbsp;&larr; VIS dropped, source has it</div>
+    </div>
+    <div style="margin-top:12px;display:flex;gap:10px;align-items:center"><span class="badge-block">BLOCKED &times;2</span><span class="muted" style="font-size:13px">reverts a locked value; drops a source element. Not an optimization &mdash; a regression.</span></div>
+    </div>
+  </div>
+
+  <h3>Axis registry (fixes the truncation)</h3>
+  <p>One stable identity per axis; the short code is an alias; the Creative-UST container label is bound &mdash; so the back-end routes without linkage errors.</p>
+  <div class="mock">
+    <div class="mockbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="mt">maestro://registry/axes</span></div>
+    <div class="mockbody"><table style="margin:0">
+      <thead><tr><th>Canonical</th><th>Code (alias)</th><th>Creative-UST label</th><th>Link</th></tr></thead>
+      <tbody>
+        <tr><td>Voice</td><td><code>VOC</code></td><td><code>[Voices]</code></td><td><span class="badge-ok">bound</span></td></tr>
+        <tr><td>Roadmap</td><td><code>MAP</code></td><td><em>(was removed)</em> &rarr; restored</td><td><span class="badge-ok">bound</span></td></tr>
+        <tr><td>Lyrics</td><td><code>LYR</code></td><td><code>&#9656;LYRICS BLOCK</code></td><td><span class="badge-ok">bound</span></td></tr>
+        <tr><td>Post-production</td><td><code>POST</code></td><td><code>[Post-Production]</code></td><td><span class="badge-ok">bound</span></td></tr>
+        <tr><td>Visual Identity</td><td><code>VIS</code></td><td><em>(9th &mdash; audio-visual)</em></td><td><span class="badge-ok">bound</span></td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section id="code">
+  <p class="eyebrow">09 &middot; Code to review</p>
+  <h2>The hard controls, as code</h2>
+  <p>These are the formalizable pieces &mdash; deterministic checks and structures, model-independent. The flow never moves in here. <code>guardrail.py</code> is the load-bearing one: the memo's PoC requires exactly one hard control implemented as code, and this is it. The two new files encode this session's recoveries.</p>
+
+  <div class="codewrap"><div class="codehdr"><span class="fn">guardrail.py</span><span class="lang">python &middot; the PoC hard control</span></div>
+<pre><span class="c"># A derived artifact may not drop a source element or revert a</span>
+<span class="c"># locked operator value without a logged supersession.</span>
+<span class="c"># A code check, not a prompt. Fail-closed. Would have caught both losses.</span>
+
+LOCKED = {"release_threshold": 97.5}   <span class="c"># operator-locked (CR-009)</span>
+
+def check_derived(source: dict, derived: dict, supersessions: set) -> list:
+    violations = []
+    <span class="c"># (a) no dropped elements</span>
+    for key in source:
+        if key not in derived and key not in supersessions:
+            violations.append(f"DROPPED: {key} in source, absent in derived")
+    <span class="c"># (b) no reverted locked values</span>
+    for key, locked_val in LOCKED.items():
+        if key in derived and derived[key] != locked_val \
+           and key not in supersessions:
+            violations.append(
+                f"REVERTED: {key}={derived[key]!r} overrides {locked_val!r}")
+    return violations   <span class="c"># empty == PASS</span>
+</pre></div>
+
+  <div class="codewrap"><div class="codehdr"><span class="fn">foil_merge.py</span><span class="lang">python &middot; recovered FOIL math</span></div>
+<pre><span class="c"># effective = MACRO &oplus; MICRO &oplus; TACTICAL &oplus; VARIABLE+1</span>
+<span class="c"># later tiers override earlier ones ONLY where specified.</span>
+TIERS = ["macro", "micro", "tactical", "variable_plus_1"]
+
+def resolve(field_addr: str, layers: dict) -> dict:
+    <span class="c"># merge the four tiers for one address; later wins where present</span>
+    effective = {}
+    for tier in TIERS:                       <span class="c"># MACRO first, VARIABLE+1 last</span>
+        spec = layers.get(tier, {}).get(field_addr)
+        if spec is not None:
+            effective.update(spec)           <span class="c"># override only specified keys</span>
+    return effective
+
+def upshift(rec: dict) -> dict:
+    <span class="c"># promote a recurring term to the smallest scope that covers it</span>
+    if rec["songs_spanned"] &gt; 1:    return {"promote_to": "macro"}     <span class="c"># across songs</span>
+    if rec["sections_spanned"] &gt; 1: return {"promote_to": "micro"}     <span class="c"># across sections</span>
+    return {"promote_to": "tactical"}                                  <span class="c"># within one section</span>
+</pre></div>
+
+  <div class="codewrap"><div class="codehdr"><span class="fn">axis_registry.py</span><span class="lang">python &middot; fixes the truncation</span></div>
+<pre><span class="c"># one stable identity per axis; code is an alias; creative label bound.</span>
+REGISTRY = {
+  "Theory":          {"code": "THY",  "creative": "[Theory]"},
+  "Voice":           {"code": "VOC",  "creative": "[Voices]"},
+  "Style":           {"code": "STY",  "creative": "[Style]"},
+  "Timbre":          {"code": "TIM",  "creative": "[Timbre]"},
+  "Performance":     {"code": "PER",  "creative": "[Performance]"},
+  "Post-production": {"code": "POST", "creative": "[Post-Production]"},
+  "Roadmap":         {"code": "MAP",  "creative": "[Roadmap]"},   <span class="c"># restored</span>
+  "Lyrics":          {"code": "LYR",  "creative": "LYRICS BLOCK"},
+  "Visual Identity": {"code": "VIS",  "creative": "[Visual]"},    <span class="c"># 9th axis</span>
+}
+_BY_CODE = {v["code"]: k for k, v in REGISTRY.items()}
+
+def link(code_or_name: str) -> dict:
+    <span class="c"># resolve any code OR name to the one canonical identity + labels</span>
+    name = code_or_name if code_or_name in REGISTRY else _BY_CODE.get(code_or_name)
+    if name is None:
+        raise KeyError(f"unknown axis: {code_or_name!r}")   <span class="c"># fail-closed</span>
+    return {"canonical": name, **REGISTRY[name]}
+</pre></div>
+
+  <div class="codewrap"><div class="codehdr"><span class="fn">mutation.py</span><span class="lang">python &middot; mutations, not turns</span></div>
+<pre><span class="c"># each turn becomes an addressable state-transition with provenance.</span>
+from dataclasses import dataclass, field
+
+@dataclass
+class Mutation:
+    input_claim: str                 <span class="c"># what the turn asserted</span>
+    prior_state_changed: str         <span class="c"># what it altered</span>
+    contradiction_resolved: str      <span class="c"># which conflict it closed</span>
+    new_nodes: list = field(default_factory=list)
+    new_edges: list = field(default_factory=list)
+    authority: str = "PROPOSAL"      <span class="c"># ROOT (human) | PROPOSAL (ai)</span>
+    downstream_effect: str = ""
+    source: str = ""                 <span class="c"># provenance anchor</span>
+
+def fold(state: dict, m: Mutation) -> dict:
+    <span class="c"># append-only: corrections win retroactively; never rewrite the past</span>
+    if m.authority == "ROOT":
+        state = apply_root(state, m)
+    state.setdefault("ledger", []).append(m)   <span class="c"># keep the ugly parts</span>
+    return state
+</pre></div>
+  <p class="muted" style="font-size:13.5px">Also in the kit, unchanged from v0.1: <code>laminate.py</code> (the five-layer fold structure) and <code>atp_pack.py</code> (sha256 continuity packs &mdash; the existing preservation primitive, with empty ATP&rarr;CINR slots already in the v5-b boot).</p>
+</section>
+
+<section id="claudemd">
+  <p class="eyebrow">10 &middot; CLAUDE.md</p>
+  <h2>What to add to project memory</h2>
+  <p>Paste-ready, grouped. These encode the corrected ontology, the runtime loop, the shipping laws, and the resolved NULLs &mdash; so a fresh session starts from current canon, not from the lossy contracts.</p>
+
+  <div class="panel">
+    <h4 style="color:var(--flow)">Ontology</h4>
+    <ul class="clean" style="font-size:14px">
+      <li>Maestro is a <strong>compiler</strong>: creative seed (source) &rarr; Technical UST (intermediate representation) &rarr; Suno (target). Not a metaphor &mdash; the shape the problem has.</li>
+      <li><strong>Mosaic is the substrate</strong> &mdash; the empirical model of the target machines, derived from ~41k sessions. Domain-neutral. One app (Maestro) + its expansion (Mosaic); dev environments are the ground; recovery is tooling. <em>There are not four co-equal planes.</em></li>
+      <li>The four planes are the v.0 <em>internal</em> architecture: Staffed Runtime / Canonical Creative Superspace / Interwoven SEM-Admissibility / Derivative Distribution Surface.</li>
+      <li><code>blueprint.json</code> is the predecessor of the Technical UST.</li>
+    </ul>
+    <h4 style="color:var(--gov)">Runtime + laws</h4>
+    <ul class="clean" style="font-size:14px">
+      <li>The runtime is the <strong>loop</strong> (§05): pre-load nulls &rarr; blow-up intake &rarr; sequential staffed fill &rarr; congruency round-robin &rarr; executive red-pen &rarr; loop-until-pass &rarr; lock &rarr; FOIL reverse-pass into three surfaces &rarr; Suno.</li>
+      <li>Technical UST is the sole canonical truth object; Creative UST is the derived meso surface. <strong>Lyric lock.</strong> Sequential zero-skip fill. Round-robin = <em>congruency, not turns.</em> Definitive lock before reverse compilation. FOIL: <em>the factoring rule is the routing rule.</em> Surface-freeze before packaging.</li>
+      <li><strong>No distribution without linkage.</strong> Distribute into files only if every linkage is preserved and provenance-bound (blueprint&rarr;UST, Technical&harr;Creative axis identity, SEG/FOIL internal structure). The v5 loss was distribution that severed linkage.</li>
+      <li><strong>No silent fill, no truncation, no revert.</strong> Nulls fill-or-defend; axis names are stable (use the registry, codes as aliases); locked operator values (97.5) hold unless a supersession is logged.</li>
+    </ul>
+    <h4 style="color:var(--container)">Discipline + resolved facts</h4>
+    <ul class="clean" style="font-size:14px">
+      <li>Evidence hierarchy: runtime (who_dat) + operator synthesis (the memo) = PRIMARY; baselines next; contracts/yaml/GitHub = LAGGING; KERNEL = REFERENCE.</li>
+      <li>Proven vs specified: <strong>v4.5 proven</strong> (released songs, version-controlled archive); <strong>v5 diagnostic</strong> (known-flawed branch); <strong>v0-on-Mosaic specified, not built</strong> (7-doc spec, DoD unchecked).</li>
+      <li>Resolved: PER (not PERF); SEM &sub; SEG; SEG is interwoven + a preload ratchet; the release gate is generational (97.5 composite &rarr; G-Card decision surface &rarr; K1&ndash;K8 admissibility); two tracks converged at v4.5.5.</li>
+      <li>Method: fold-the-folds; append-only; ROOT (human) outranks PROPOSAL (AI); a 5-question resurrection boot gate, fail-closed; build around mutations, not turns; preserve the ugly parts; <strong>rebuild Maestro, don't document it</strong>. The flow/container boundary holds: container &rarr; code; flow &rarr; conditioning + chain.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="hindsight">
+  <p class="eyebrow">11 &middot; How to proceed</p>
+  <h2>In hindsight, the sequence</h2>
+  <p>The order is dependency-driven: the asset's survival is the precondition; everything else rebuilds from it and cannot be rebuilt from artifacts. The plan and your memo's proof-of-concept turn out to be the same plan.</p>
+
+  <div class="callout cont"><span class="k">The convergence to act on</span>Your memo's acceptance test &mdash; take one v4.5 song through the v0 loop, measure correction burden / truncation / quality against the recorded v4.5 baseline, and demonstrate <em>one hard control as code</em> &mdash; is exactly steps 3 and 4 below. That means <code>guardrail.py</code> is not a sketch; it is the load-bearing evidence the PoC needs. Build that one control, run the A/B, and the riskiest claim is retired cheaply.</div>
+
+  <ol class="steps">
+    <li><b>Preserve the asset first.</b> Snapshot the running v4.5.x GPT (monolith + <code>knowledge.md</code> + heuristics + <code>blueprint.json</code>) and ATP-package the accumulated chain, full fidelity, ugly-parts-preserved. Survival is the precondition.</li>
+    <li><b>Stand up the resurrection boot gate.</b> The 5 behavioral questions, fail-closed. A fresh session must perform them before anything more loads.</li>
+    <li><b>Run the PoC A/B.</b> One known v4.5 song through the v0 loop; measure correction burden, truncation, quality vs the recorded baseline. Same input, prior path vs new path, measured delta. This closes the loss case and characterizes the flow boundary.</li>
+    <li><b>Build the one hard control.</b> The no-drop/no-revert guardrail (<code>guardrail.py</code>) plus the container validators; run against a real render for evidence. This is the PoC's load-bearing requirement.</li>
+    <li><b>Build the axis registry.</b> Small, high-value: bind full name &harr; code &harr; Creative-UST label so the back-end routes without the truncation linkage errors.</li>
+    <li><b>Build the mutation compiler.</b> Over the dev transcripts, ugly-parts-preserved; emit architecture / graph / runtime-state as derived views that point back &mdash; never as standalone replacements.</li>
+    <li><b>Resolve the externals.</b> Patent-filing status before any public release (~22 novelty claims); the admissibility sub-questions; the 10-phase supersede-vs-merge.</li>
+    <li><b>Keep the GPT running throughout.</b> Every emitted artifact is a derived view that defers to the runtime + chain. Distribute into files only with linkage preserved. Rebuild Maestro &mdash; don't document it.</li>
+  </ol>
+</section>
+
+<section id="nulls">
+  <p class="eyebrow">12 &middot; Open NULLs</p>
+  <h2>What's resolved, what's still open</h2>
+  <p>Nulls are signal. These were carried unresolved through the baseline; the recent evidence closed several. The rest stay open &mdash; many are named open by the memo itself &mdash; and must not be false-resolved.</p>
+
+  <div class="grid2">
+    <div class="panel"><h4 style="color:var(--ok)">Resolved (with evidence)</h4>
+      <ul class="clean" style="font-size:14px">
+        <li><strong>Maestro vs Mosaic</strong> &mdash; compiler vs substrate (memo).</li>
+        <li><strong>Version status</strong> &mdash; v4.5 proven / v5 diagnostic / v0 specified-not-built (memo).</li>
+        <li><strong>Axis truncation (FOIL-OQ-1)</strong> &mdash; truncated for character economy; causes Technical&harr;Creative linkage errors; fix = registry.</li>
+        <li><strong>blueprint.json</strong> &mdash; predecessor of the Technical UST.</li>
+        <li><strong>v5 loss mechanism</strong> &mdash; rendered as a distributed file system, severing linkages.</li>
+        <li><strong>CFT-BL-1 release gate</strong> &mdash; generational, not rival: 97.5 composite &rarr; G-Card decision surface &rarr; K1&ndash;K8 admissibility.</li>
+        <li><strong>SEM/SEG</strong> &mdash; SEM &sub; SEG; SEG interwoven + preload ratchet.</li>
+        <li><strong>PER</strong> not PERF; <strong>two tracks</strong> converged at v4.5.5; <strong>momoney</strong> = v4 (CFT-BL-5 closed).</li>
+      </ul>
+    </div>
+    <div class="panel"><h4 style="color:var(--gov)">Still open (do not false-resolve)</h4>
+      <ul class="clean" style="font-size:14px">
+        <li><strong>Admissibility sub-questions</strong> &mdash; ~6, named open by the memo.</li>
+        <li><strong>A referenced sub-rubric</strong> &mdash; was it ever actually implemented? (same family as 12-vs-13.)</li>
+        <li><strong>SEM criterion count</strong> &mdash; 12 vs 13 (Memory Activation, a later Boy Icarus addition).</li>
+        <li><strong>Sub-gate thresholds</strong> &mdash; 70 vs 75 (buy-in / sub-card), distinct from the 97.5 composite.</li>
+        <li><strong>FOIL-OQ-2</strong> &mdash; which repeat primitives (VAMP/ENDING/DS_AL_CODA) are live vs aspirational.</li>
+        <li><strong>FOIL-OQ-3</strong> &mdash; reconcile the genesis 8 axes with the v.0 9th (VIS) in the rebirth.</li>
+        <li><strong>10-phase upload</strong> &mdash; supersede vs merge for the GitHub archive.</li>
+        <li><strong>Patent-filing status</strong> &mdash; ~22 novelty claims; external clock; gates any public release.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong style="color:var(--text)">This document is a derived view &mdash; proposal-class (INV-18).</strong> It folds the workspace and this conversation's ROOT corrections onto the six-fold baseline; it points back to the runtime and the genesis transcripts, which remain primary. It does not capture Maestro &mdash; the flow lives in the GPT's conditioning and the accumulated chain, and the goal is to rebuild Maestro, not document it. Nulls are preserved, not false-resolved. <code>/mnt/project</code> is read-only; this is emitted for you to place, version, and accept, correct, or force-close.</p>
+  <p class="muted">Maestro &mdash; Fold &amp; Rebuild Plan v0.2 &middot; supersedes v0.1 on the one-app correction &middot; companion: <code>foil_reconstruction_v0_1.md</code></p>
+</footer>
+
+</main>
+</div>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('nav.side a'));
+  var map = {};
+  links.forEach(function(a){ var id=a.getAttribute('href').slice(1); var el=document.getElementById(id); if(el) map[id]=a; });
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(l){ l.classList.remove('active'); });
+        var a = map[e.target.id]; if(a){ a.classList.add('active'); }
+      }
+    });
+  }, { rootMargin: '-15% 0px -78% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ obs.observe(document.getElementById(id)); });
+})();
+</script>
+</body>
+</html>

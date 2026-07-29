@@ -1,0 +1,1412 @@
+[
+  {
+    "from_event": "PER2-00006",
+    "to_prior_event": "PER2-00005",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00009",
+    "to_prior_event": "PER2-00008",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00014",
+    "to_prior_event": "PER2-00013",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00015",
+    "to_prior_event": "PER2-00014",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00016",
+    "to_prior_event": "PER2-00015",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00017",
+    "to_prior_event": "PER2-00016",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00018",
+    "to_prior_event": "PER2-00017",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00019",
+    "to_prior_event": "PER2-00018",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00020",
+    "to_prior_event": "PER2-00019",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00024",
+    "to_prior_event": "PER2-00023",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00025",
+    "to_prior_event": "PER2-00024",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00026",
+    "to_prior_event": "PER2-00025",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00027",
+    "to_prior_event": "PER2-00026",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00028",
+    "to_prior_event": "PER2-00027",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00029",
+    "to_prior_event": "PER2-00028",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00030",
+    "to_prior_event": "PER2-00029",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00031",
+    "to_prior_event": "PER2-00030",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00032",
+    "to_prior_event": "PER2-00031",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00033",
+    "to_prior_event": "PER2-00032",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00035",
+    "to_prior_event": "PER2-00034",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00036",
+    "to_prior_event": "PER2-00035",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00038",
+    "to_prior_event": "PER2-00037",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00040",
+    "to_prior_event": "PER2-00039",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00042",
+    "to_prior_event": "PER2-00041",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00044",
+    "to_prior_event": "PER2-00043",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00045",
+    "to_prior_event": "PER2-00044",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00046",
+    "to_prior_event": "PER2-00045",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00048",
+    "to_prior_event": "PER2-00047",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00049",
+    "to_prior_event": "PER2-00048",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00052",
+    "to_prior_event": "PER2-00051",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00054",
+    "to_prior_event": "PER2-00053",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00055",
+    "to_prior_event": "PER2-00054",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00056",
+    "to_prior_event": "PER2-00055",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00057",
+    "to_prior_event": "PER2-00056",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00058",
+    "to_prior_event": "PER2-00057",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00059",
+    "to_prior_event": "PER2-00058",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00060",
+    "to_prior_event": "PER2-00059",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00061",
+    "to_prior_event": "PER2-00060",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00073",
+    "to_prior_event": "PER2-00072",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00074",
+    "to_prior_event": "PER2-00073",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00079",
+    "to_prior_event": "PER2-00078",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00081",
+    "to_prior_event": "PER2-00080",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00082",
+    "to_prior_event": "PER2-00081",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00083",
+    "to_prior_event": "PER2-00082",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00084",
+    "to_prior_event": "PER2-00083",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00085",
+    "to_prior_event": "PER2-00084",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00086",
+    "to_prior_event": "PER2-00085",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00087",
+    "to_prior_event": "PER2-00086",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00088",
+    "to_prior_event": "PER2-00087",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00089",
+    "to_prior_event": "PER2-00088",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00094",
+    "to_prior_event": "PER2-00093",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00100",
+    "to_prior_event": "PER2-00099",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00102",
+    "to_prior_event": "PER2-00101",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00106",
+    "to_prior_event": "PER2-00105",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00108",
+    "to_prior_event": "PER2-00107",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00109",
+    "to_prior_event": "PER2-00108",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00110",
+    "to_prior_event": "PER2-00109",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00112",
+    "to_prior_event": "PER2-00111",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00116",
+    "to_prior_event": "PER2-00115",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00121",
+    "to_prior_event": "PER2-00120",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00122",
+    "to_prior_event": "PER2-00121",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00123",
+    "to_prior_event": "PER2-00122",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00124",
+    "to_prior_event": "PER2-00123",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00125",
+    "to_prior_event": "PER2-00124",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00126",
+    "to_prior_event": "PER2-00125",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00127",
+    "to_prior_event": "PER2-00126",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00129",
+    "to_prior_event": "PER2-00128",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00130",
+    "to_prior_event": "PER2-00129",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00135",
+    "to_prior_event": "PER2-00134",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00136",
+    "to_prior_event": "PER2-00135",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00141",
+    "to_prior_event": "PER2-00140",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00143",
+    "to_prior_event": "PER2-00142",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00149",
+    "to_prior_event": "PER2-00148",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00150",
+    "to_prior_event": "PER2-00149",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00152",
+    "to_prior_event": "PER2-00151",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00153",
+    "to_prior_event": "PER2-00152",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00159",
+    "to_prior_event": "PER2-00158",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00165",
+    "to_prior_event": "PER2-00164",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00166",
+    "to_prior_event": "PER2-00165",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00167",
+    "to_prior_event": "PER2-00166",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00168",
+    "to_prior_event": "PER2-00167",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00169",
+    "to_prior_event": "PER2-00168",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00170",
+    "to_prior_event": "PER2-00169",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00171",
+    "to_prior_event": "PER2-00170",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00186",
+    "to_prior_event": "PER2-00185",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00187",
+    "to_prior_event": "PER2-00186",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00188",
+    "to_prior_event": "PER2-00187",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00190",
+    "to_prior_event": "PER2-00189",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00192",
+    "to_prior_event": "PER2-00191",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00193",
+    "to_prior_event": "PER2-00192",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00195",
+    "to_prior_event": "PER2-00194",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00199",
+    "to_prior_event": "PER2-00198",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00200",
+    "to_prior_event": "PER2-00199",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00205",
+    "to_prior_event": "PER2-00204",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00206",
+    "to_prior_event": "PER2-00205",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00208",
+    "to_prior_event": "PER2-00207",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00210",
+    "to_prior_event": "PER2-00209",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00211",
+    "to_prior_event": "PER2-00210",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00212",
+    "to_prior_event": "PER2-00211",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00214",
+    "to_prior_event": "PER2-00213",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00215",
+    "to_prior_event": "PER2-00214",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00216",
+    "to_prior_event": "PER2-00215",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00217",
+    "to_prior_event": "PER2-00216",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00221",
+    "to_prior_event": "PER2-00220",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00226",
+    "to_prior_event": "PER2-00225",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00227",
+    "to_prior_event": "PER2-00226",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00228",
+    "to_prior_event": "PER2-00227",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00229",
+    "to_prior_event": "PER2-00228",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00245",
+    "to_prior_event": "PER2-00244",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00251",
+    "to_prior_event": "PER2-00250",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00303",
+    "to_prior_event": "PER2-00302",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00307",
+    "to_prior_event": "PER2-00306",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00308",
+    "to_prior_event": "PER2-00307",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00313",
+    "to_prior_event": "PER2-00312",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00314",
+    "to_prior_event": "PER2-00313",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00315",
+    "to_prior_event": "PER2-00314",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00317",
+    "to_prior_event": "PER2-00316",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00319",
+    "to_prior_event": "PER2-00318",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00320",
+    "to_prior_event": "PER2-00319",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00322",
+    "to_prior_event": "PER2-00321",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00326",
+    "to_prior_event": "PER2-00325",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00327",
+    "to_prior_event": "PER2-00326",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00332",
+    "to_prior_event": "PER2-00331",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00333",
+    "to_prior_event": "PER2-00332",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00335",
+    "to_prior_event": "PER2-00334",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00337",
+    "to_prior_event": "PER2-00336",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00338",
+    "to_prior_event": "PER2-00337",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00339",
+    "to_prior_event": "PER2-00338",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00341",
+    "to_prior_event": "PER2-00340",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00342",
+    "to_prior_event": "PER2-00341",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00343",
+    "to_prior_event": "PER2-00342",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00344",
+    "to_prior_event": "PER2-00343",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00348",
+    "to_prior_event": "PER2-00347",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00353",
+    "to_prior_event": "PER2-00352",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00354",
+    "to_prior_event": "PER2-00353",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00355",
+    "to_prior_event": "PER2-00354",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00356",
+    "to_prior_event": "PER2-00355",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00366",
+    "to_prior_event": "PER2-00365",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00367",
+    "to_prior_event": "PER2-00366",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00368",
+    "to_prior_event": "PER2-00367",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00370",
+    "to_prior_event": "PER2-00369",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00372",
+    "to_prior_event": "PER2-00371",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00373",
+    "to_prior_event": "PER2-00372",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00375",
+    "to_prior_event": "PER2-00374",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00379",
+    "to_prior_event": "PER2-00378",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00380",
+    "to_prior_event": "PER2-00379",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00385",
+    "to_prior_event": "PER2-00384",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00386",
+    "to_prior_event": "PER2-00385",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00388",
+    "to_prior_event": "PER2-00387",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00390",
+    "to_prior_event": "PER2-00389",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00391",
+    "to_prior_event": "PER2-00390",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00392",
+    "to_prior_event": "PER2-00391",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00394",
+    "to_prior_event": "PER2-00393",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00395",
+    "to_prior_event": "PER2-00394",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00396",
+    "to_prior_event": "PER2-00395",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00397",
+    "to_prior_event": "PER2-00396",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00401",
+    "to_prior_event": "PER2-00400",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00406",
+    "to_prior_event": "PER2-00405",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00407",
+    "to_prior_event": "PER2-00406",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00408",
+    "to_prior_event": "PER2-00407",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00409",
+    "to_prior_event": "PER2-00408",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00422",
+    "to_prior_event": "PER2-00421",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00423",
+    "to_prior_event": "PER2-00422",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00424",
+    "to_prior_event": "PER2-00423",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00425",
+    "to_prior_event": "PER2-00424",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00428",
+    "to_prior_event": "PER2-00427",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00429",
+    "to_prior_event": "PER2-00428",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00435",
+    "to_prior_event": "PER2-00434",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00436",
+    "to_prior_event": "PER2-00435",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00437",
+    "to_prior_event": "PER2-00436",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00438",
+    "to_prior_event": "PER2-00437",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00442",
+    "to_prior_event": "PER2-00441",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00444",
+    "to_prior_event": "PER2-00443",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00447",
+    "to_prior_event": "PER2-00446",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00456",
+    "to_prior_event": "PER2-00455",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00464",
+    "to_prior_event": "PER2-00463",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00478",
+    "to_prior_event": "PER2-00477",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00479",
+    "to_prior_event": "PER2-00478",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00497",
+    "to_prior_event": "PER2-00496",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00520",
+    "to_prior_event": "PER2-00519",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00528",
+    "to_prior_event": "PER2-00527",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00535",
+    "to_prior_event": "PER2-00534",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00539",
+    "to_prior_event": "PER2-00538",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00547",
+    "to_prior_event": "PER2-00546",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00555",
+    "to_prior_event": "PER2-00554",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00569",
+    "to_prior_event": "PER2-00568",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00570",
+    "to_prior_event": "PER2-00569",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00572",
+    "to_prior_event": "PER2-00571",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00573",
+    "to_prior_event": "PER2-00572",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00575",
+    "to_prior_event": "PER2-00574",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00576",
+    "to_prior_event": "PER2-00575",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00577",
+    "to_prior_event": "PER2-00576",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00581",
+    "to_prior_event": "PER2-00580",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00582",
+    "to_prior_event": "PER2-00581",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00583",
+    "to_prior_event": "PER2-00582",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00584",
+    "to_prior_event": "PER2-00583",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00585",
+    "to_prior_event": "PER2-00584",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00587",
+    "to_prior_event": "PER2-00586",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00589",
+    "to_prior_event": "PER2-00588",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00591",
+    "to_prior_event": "PER2-00590",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00592",
+    "to_prior_event": "PER2-00591",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00593",
+    "to_prior_event": "PER2-00592",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00594",
+    "to_prior_event": "PER2-00593",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00595",
+    "to_prior_event": "PER2-00594",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00596",
+    "to_prior_event": "PER2-00595",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00597",
+    "to_prior_event": "PER2-00596",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00598",
+    "to_prior_event": "PER2-00597",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00599",
+    "to_prior_event": "PER2-00598",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00600",
+    "to_prior_event": "PER2-00599",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00601",
+    "to_prior_event": "PER2-00600",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00602",
+    "to_prior_event": "PER2-00601",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00603",
+    "to_prior_event": "PER2-00602",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00604",
+    "to_prior_event": "PER2-00603",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00605",
+    "to_prior_event": "PER2-00604",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00606",
+    "to_prior_event": "PER2-00605",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00607",
+    "to_prior_event": "PER2-00606",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00608",
+    "to_prior_event": "PER2-00607",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00609",
+    "to_prior_event": "PER2-00608",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00610",
+    "to_prior_event": "PER2-00609",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00626",
+    "to_prior_event": "PER2-00625",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00642",
+    "to_prior_event": "PER2-00641",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00648",
+    "to_prior_event": "PER2-00647",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00649",
+    "to_prior_event": "PER2-00648",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00651",
+    "to_prior_event": "PER2-00650",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00652",
+    "to_prior_event": "PER2-00651",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00658",
+    "to_prior_event": "PER2-00657",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00669",
+    "to_prior_event": "PER2-00668",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00674",
+    "to_prior_event": "PER2-00673",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00677",
+    "to_prior_event": "PER2-00676",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00680",
+    "to_prior_event": "PER2-00679",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00684",
+    "to_prior_event": "PER2-00683",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00690",
+    "to_prior_event": "PER2-00689",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00693",
+    "to_prior_event": "PER2-00692",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00708",
+    "to_prior_event": "PER2-00707",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  },
+  {
+    "from_event": "PER2-00711",
+    "to_prior_event": "PER2-00710",
+    "relation": "corrects_or_supersedes",
+    "status": "candidate pointer; semantic review required"
+  }
+]

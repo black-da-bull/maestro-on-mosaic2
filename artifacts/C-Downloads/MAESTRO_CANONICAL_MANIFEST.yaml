@@ -1,0 +1,232 @@
+artifact: MAESTRO_CANONICAL_MANIFEST
+status: proposal_not_canon
+version: 0.2_forensic_reconstruction
+scope: draft_for_review_not_canonization
+core_warning:
+  - This manifest does not exist as active canon in the loaded file set.
+  - This manifest does not create or activate a bridge-packet regime.
+  - This manifest preserves unresolved canon conflicts.
+
+provenance_classes:
+  SOURCE_BACKED: directly grounded in loaded files
+  OPERATOR_STATED_HISTORY: provided by operator in current thread
+  PROPOSED_SYNTHESIS: reconstructed linkage not yet canon
+
+source_backed_current_artifacts:
+  - file: mosaic_engine_v0.1.md
+    role: substrate_runtime_spec
+    status: loaded_required
+    authority_claims:
+      - substrate_runtime
+      - Mosaic_spec_as_substrate_canon
+      - mounted_application_spec_as_application_canon
+      - Technical_UST_canonical_in_N4_Canon_Layer
+    provenance: SOURCE_BACKED
+
+  - file: maestro.md
+    role: mounted_maestro_kernel_application_context
+    status: loaded_required
+    authority_claims:
+      - maestro_constitution
+      - Blueprint_JSON_canonical_representation_of_creative_and_technical_intent
+      - chain_N0_to_N9
+      - checkpoints_CP1_to_CP4
+      - negative_costs_NC01_to_NC04
+    provenance: SOURCE_BACKED
+
+  - file: Maestro Personas aka the subagents.md
+    role: workforce_schema
+    status: loaded_required
+    authority_claims:
+      - axis_roles_permissions_delta_logs_status_maps_SEM_SEG_G_CARD
+    scope_limit: does_not_by_itself_define_full_runtime_choreography
+    provenance: SOURCE_BACKED
+
+  - file: MoMoney Maestro OS v4.5.2 — MONOLITHIC PROMPT.md
+    role: v4_5_x_monolithic_process_source
+    status: loaded_required
+    authority_claims:
+      - exact_sequence_workflow
+      - Blueprint_JSON_single_source_claim
+      - Suno_strict_container_final_translation
+      - Phase_0_to_Phase_9_process
+    provenance: SOURCE_BACKED
+
+  - file: MoMoney_Maestro_OS_Knowledge_Base_Heuristics.md.md
+    role: v4_5_x_heuristics_revision_logic
+    status: loaded_required
+    authority_claims:
+      - VIRAL_5
+      - decision_tree_revision_logic
+      - HSI_truth_fragments
+    provenance: SOURCE_BACKED
+
+  - file: 4.5.5.txt
+    role: v4_5_x_later_correction_and_SOP_source
+    status: loaded_required
+    authority_claims:
+      - no_step_loss_pressure
+      - Sonic_Orchestrator_Workflow_Framework
+      - self_correction_protocol
+    provenance: SOURCE_BACKED
+
+  - file: MAESTRO_LOAD_SIDECHAIN_SLIPSTREAM_PROTOCOL_v3.md
+    role: load_sidechain_slipstream_protocol
+    status: provisional_complete
+    duplicates_detected: true
+    authority_claims:
+      - Maestro_not_document_stack
+      - load_completion_packet
+      - sidechain_non_canonical_pressure_edge
+      - slipstream_provisional_active_current
+      - canon_patch_requires_authorization_conflict_check_lineage_supersession_rollback_completion
+      - edge_based_validation
+    provenance: SOURCE_BACKED
+
+  - file: foil_promotion_contract.yaml
+    role: FOIL_promotion_deduplication_contract
+    status: authoritative_done
+    mode: exact_canon
+    authority_claims:
+      - FOIL_governs_promotion_and_deduplication_only
+      - FOIL_not_repeat_notation
+      - retain_local_unique_detail
+      - block_semantic_collapse_convenience_merges_destructive_deduplication
+    provenance: SOURCE_BACKED
+
+  - file: round_robin_notes_template.yaml
+    role: review_support_template
+    status: authoritative_done
+    mode: exact_canon
+    scope: review_template_only
+    authority_claims:
+      - review_notes_first_class_artifacts
+      - preserve_contradictions
+      - preserve_nulls
+      - keep_notation_promotion_retained_local_unique_detail_distinct
+      - controller_structure_log_gate_only
+    provenance: SOURCE_BACKED
+
+  - file: song_excellence_sections.json
+    role: structured_song_excellence_process_graph
+    status: loaded_optional
+    authority_claims:
+      - RAW_and_NORMALIZED_layers
+      - KEY_TERM_TREE_NODE_EDGE_MODULE_SEQUENCE_DELTA_AND_GAPS
+      - M0_to_M14_module_sequence
+      - SEG_G_CARD_PASS_THRESHOLD_97_5
+    provenance: SOURCE_BACKED
+
+  - file: song_excellence_sections.txt
+    role: plain_text_song_excellence_cards_registry
+    status: loaded_optional
+    authority_claims:
+      - module_registry
+      - active_validator_workflow_KPI_governance_cards
+      - non_destructive_integration_principle
+      - onboarding_terms_for_new_sessions
+    provenance: SOURCE_BACKED
+
+  - file: song_excellence_reformatted.md
+    role: reformatted_song_excellence_module_taxonomy
+    status: loaded_optional
+    authority_claims:
+      - M0_to_M14_module_purpose_map
+      - chain_report_context_md_and_zero_touch_prompt_purpose
+      - troubleshooting_ladder_and_module_SOP_guidance
+    provenance: SOURCE_BACKED
+
+  - file: ai personas.txt
+    role: persona_behavior_context_library
+    status: loaded_optional
+    authority_claims:
+      - Mo_persona_preserves_voice_continuity_standard_process
+      - Canon_Axis_Orchestrator_axis_role_permissions_delta_log_model
+      - additional_producer_vocal_arranger_persona_contexts
+    scope_limit: persona_context_enrichment_not_kernel_canon_by_itself
+    provenance: SOURCE_BACKED
+
+unresolved_canon_conflicts:
+  - id: Blueprint_JSON_vs_Technical_UST
+    status: unresolved
+    source_backed_claims:
+      Blueprint_JSON:
+        source: maestro.md
+        claim: canonical_representation_of_creative_and_technical_intent_all_downstream_artifacts_derive_from_it
+      Technical_UST:
+        sources:
+          - mosaic_engine_v0.1.md
+          - MAESTRO_LOAD_SIDECHAIN_SLIPSTREAM_PROTOCOL_v3.md
+        claim: canonical_in_N4_Canon_Layer_and_load_protocol_canon_law
+    operator_stated_history:
+      claim: v4_5_x_Blueprint_JSON_contained_later_Technical_UST_compiler_middleware_functions
+      provenance: OPERATOR_STATED_HISTORY
+    resolution_status: not_resolved_by_this_manifest
+    required_for_resolution:
+      - explicit_operator_ratification
+      - or source_backed_patch_precedence_accepted_as_current_authority
+
+  - id: duplicate_load_protocol_files
+    status: unresolved
+    files:
+      - MAESTRO_LOAD_SIDECHAIN_SLIPSTREAM_PROTOCOL_v3.md created_2026_06_04
+      - MAESTRO_LOAD_SIDECHAIN_SLIPSTREAM_PROTOCOL_v3.md created_2026_06_06
+    proposed_handling: treat_newer_as_candidate_current_copy_but_do_not_silently_discard_older
+    provenance: PROPOSED_SYNTHESIS
+
+  - id: bridge_packet_regime
+    status: absent_from_loaded_files
+    note: bridge_packet_remains_ai_proposal_only_unless_operator_ratifies
+    provenance: SOURCE_BACKED_ABSENCE_PLUS_PROPOSED_SYNTHESIS
+
+absent_but_referenced_artifacts:
+  - file: MAESTRO_END_TO_END_PROCESS_TREE.yaml
+    status: absent_as_active_canon
+    proposed_here: true
+  - file: MAESTRO_CANONICAL_MANIFEST.yaml
+    status: absent_as_active_canon
+    proposed_here: true
+  - file: OPERATOR_BRIDGE_PACKET.yaml
+    status: absent
+    proposed_elsewhere_only: true
+  - file: controller_contract.yaml
+    status: referenced_by_FOIL_and_round_robin_but_not_loaded_as_actual_file
+  - file: phase_contract.yaml
+    status: referenced_by_FOIL_and_round_robin_but_not_loaded_as_actual_file
+  - file: artifact_contract.yaml
+    status: referenced_by_FOIL_and_round_robin_but_not_loaded_as_actual_file
+  - file: artifact_taxonomy.md
+    status: referenced_by_FOIL_and_round_robin_but_not_loaded_as_actual_file
+
+proposed_future_artifacts:
+  - artifact: MAESTRO_AUTHORITY_AND_LIFECYCLE_GRAPH.yaml
+    status: proposal_not_canon
+    purpose: map_authority_lifecycle_governance_review_promotion_canon_surface_edges
+    reason: edge_based_validation_requires_wiring_not_artifact_only
+    provenance: PROPOSED_SYNTHESIS
+
+  - artifact: OPERATOR_BRIDGE_PACKET.yaml
+    status: proposal_not_canon
+    purpose: possible_human_continuity_oracle_when_lineage_incomplete
+    warning: not_source_backed_as_existing_regime
+    provenance: PROPOSED_SYNTHESIS
+
+manifest_governance_rules_if_ratified:
+  - every_entry_must_carry_provenance_label
+  - no_AI_proposal_promotes_without_operator_F_or_source_support
+  - unresolved_conflicts_must_be_preserved_not_flattened
+  - sidechains_and_slipstreams_must_not_replace_canon
+  - canon_patches_require_authorization_conflict_check_lineage_supersession_map_rollback_completion
+  - authoritative_done_exact_canon_contracts_must_be_respected_with_scope_limits
+  - provisional_complete_protocols_may_guide_but_require_status_awareness
+  - duplicate_files_require_reconciliation_not_silent_drop
+
+completion_status:
+  label: PROVISIONAL_PASS_WITH_BACKLOG
+  scope_satisfied: true
+  unresolved_conflicts:
+    - Blueprint_JSON_vs_Technical_UST
+    - duplicate_load_protocol_versions
+    - bridge_packet_absent
+    - referenced_parent_contracts_not_loaded
+  safe_to_use_downstream: true_for_review_not_for_canonization

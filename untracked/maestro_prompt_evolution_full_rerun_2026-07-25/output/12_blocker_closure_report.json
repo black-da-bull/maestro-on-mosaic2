@@ -1,0 +1,27 @@
+{
+  "prior_blockers": {
+    "missing_local_session_export": {
+      "status": "closed",
+      "evidence": "source/direct/local_session_export.txt"
+    },
+    "missing_who_dat_pdf": {
+      "status": "closed",
+      "evidence": "source/direct/who_dat.pdf + extracted derivative"
+    },
+    "missing_sample_archive": {
+      "status": "closed",
+      "evidence": "source/o16e with 46 archive members"
+    },
+    "intent_compiler_unavailable": {
+      "status": "still_open_runtime_discovery",
+      "evidence": "skills://intent-compiler discovery failed and no local skill directory found",
+      "fallback": "operator-supplied visible-reframe contract executed"
+    },
+    "global_chronology": {
+      "status": "partial",
+      "reason": "sample distillates and composite sources do not prove complete cross-corpus chronology"
+    }
+  },
+  "chimera_status": "additional precursor/alternate implementation evidence; not automatic Maestro canon",
+  "o16e_status": "sample archive and validation controls; not complete-corpus substitute"
+}

@@ -1,0 +1,336 @@
+# KNOWLEDGE_SPINE.md
+
+## 1. System Overview
+
+**System Name:** Session-Aware Wisdom Agent (SAWA)  
+**Type:** POC Discourse Tracker  
+**Primary Mission:** Maintain a multi-agent internal architecture that recognizes evolving proof-of-concept (POC) goals across sessions, refines prompt structures, orchestrates validation agents, and builds a reusable library of meta-patterns.
+
+SAWA operates as a session-aware, dialogue-native layer that:
+
+- Tracks evolving goals across multiple interactions.
+- Interprets recursive and nonlinear dialogue structures.
+- Detects task-switches and “soft pivots” in user intent.
+- Scores and clusters ideas, surfacing stable patterns.
+- Refactors prompts into reusable templates.
+- Integrates with external systems:
+  - Fabric-compatible template layer.
+  - LUMEN knowledge graph for storing refined prompts and meta-patterns.
+
+
+## 2. Atomic Instruction Cards
+
+Each card is normalized with:
+
+- **ID** – Stable identifier.
+- **Type** – SYSTEM | ROLE | FUNCTION | INTEGRATION | LIBRARY.
+- **Imperative Rule** – “Do X” phrasing.
+- **Scope** – Where this rule applies.
+- **Origin** – Source document / description.
+- **Lifecycle** – State of the rule.
+
+### 2.1 Card Table
+
+| ID                     | Type       | Imperative Rule                                                                                                  | Scope                            | Origin                                             | Lifecycle  |
+|------------------------|-----------|------------------------------------------------------------------------------------------------------------------|----------------------------------|----------------------------------------------------|-----------|
+| SAWA-CORE-001          | SYSTEM    | Maintain a multi-agent internal architecture that tracks evolving POC goals across sessions.                    | System-wide                      | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-CORE-002          | SYSTEM    | Operate as a POC discourse tracker focused on session-aware understanding of user goals.                        | System-wide                      | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-ROLE-ORCH-001     | ROLE      | Provide an Orchestrator role that coordinates all internal agents and workflows related to discourse tracking.  | Agent orchestration              | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-ROLE-VAL-001      | ROLE      | Provide a Validator role that checks outputs and decisions against constraints and intended POC goals.          | Quality and constraints          | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-ROLE-INSIGHT-001  | ROLE      | Provide an Insight Synthesizer role that clusters ideas and surfaces patterns across sessions.                  | Insight and pattern discovery    | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-ROLE-PROMPT-001   | ROLE      | Provide a Prompt Refactorer role that rewrites prompts into higher-quality, reusable structures.                | Prompt engineering               | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-FUNC-DIALOG-001   | FUNCTION  | Parse recursive and nonlinear dialogue structures into a tractable internal representation.                     | Dialogue parsing                 | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-FUNC-TASK-001     | FUNCTION  | Detect task-switches and soft pivots within ongoing sessions.                                                   | Intent tracking                  | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-FUNC-CLUSTER-001  | FUNCTION  | Score idea clusters and surface the most structurally and semantically meaningful ones.                         | Idea clustering                  | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-FUNC-METAPAT-001  | FUNCTION  | Suggest meta-pattern upgrades or rewrites when more robust patterns are detected.                               | Pattern evolution                | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-FUNC-FABRIC-001   | FUNCTION  | Map session dialogue into Fabric-compatible templates.                                                           | Integration: Fabric templating   | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-FUNC-LUMEN-001    | FUNCTION  | Push prompt revisions and meta-pattern updates into the LUMEN knowledge graph.                                  | Integration: LUMEN graph         | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-LIB-METAPAT-001   | LIBRARY   | Maintain a library of meta-patterns for adaptive reuse across sessions and POCs.                                | Pattern library                  | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+| SAWA-FUNC-SCORING-001  | FUNCTION  | Score and rank prompt candidates before committing them to templates or the LUMEN knowledge graph.              | Prompt evaluation                | Session-Aware Wisdom Agent spec (2025-12-16)       | active/v1 |
+
+
+## 3. Structural Relationships (Conceptual)
+
+- **SAWA-CORE-001 / SAWA-CORE-002** anchor the system as a multi-agent, session-aware discourse tracker.
+- **Role cards** (ORCH, VAL, INSIGHT, PROMPT) define the internal responsibilities that implement the core behavior.
+- **Function cards** (DIALOG, TASK, CLUSTER, METAPAT, FABRIC, LUMEN, SCORING) define the operational capabilities required by those roles.
+- **Library card** (METAPAT library) defines the persistent knowledge asset used for adaptive reuse and evolution.
+
+These cards form the canonical spine for all future extensions of the Session-Aware Wisdom Agent.
+# MODULE_REGISTRY.md
+
+## 1. Overview
+
+Modules cluster atomic instruction cards into coherent functional units with explicit purpose, inputs, outputs, and dependencies.
+
+Each module entry includes:
+
+- **Module ID**
+- **Name**
+- **Purpose**
+- **Primary Inputs**
+- **Primary Outputs**
+- **Internal Dependencies (Cards)**
+- **External Dependencies (Modules / Systems)**
+
+
+## 2. Modules
+
+---
+
+### 2.1 Module: SAWA.Core
+
+- **Module ID:** MOD-SAWA-CORE
+- **Name:** Session-Aware Core
+- **Purpose:** Provide the foundational multi-agent, session-aware architecture for POC discourse tracking.
+- **Primary Inputs:**
+  - Session transcripts
+  - Current POC goal summary (if available)
+- **Primary Outputs:**
+  - Updated internal session state
+  - Active agent/role configuration
+- **Internal Dependencies (Cards):**
+  - SAWA-CORE-001
+  - SAWA-CORE-002
+  - SAWA-LIB-METAPAT-001
+- **External Dependencies:**
+  - MOD-SAWA-DialogueEngine (for parsing and task detection)
+  - MOD-SAWA-PatternEngine (for clustering and meta-patterns)
+
+---
+
+### 2.2 Module: SAWA.DialogueEngine
+
+- **Module ID:** MOD-SAWA-DIALOG
+- **Name:** Dialogue Engine
+- **Purpose:** Parse recursive, nonlinear dialogue and expose structured events for higher-level reasoning.
+- **Primary Inputs:**
+  - Raw conversation logs
+  - Streaming user/agent turns
+- **Primary Outputs:**
+  - Parsed dialogue graph / representation
+  - Detected task-switch and pivot events
+- **Internal Dependencies (Cards):**
+  - SAWA-FUNC-DIALOG-001
+  - SAWA-FUNC-TASK-001
+- **External Dependencies:**
+  - MOD-SAWA-CORE (provides session context)
+  - MOD-SAWA-PatternEngine (for interpretation of shifts and clusters)
+
+---
+
+### 2.3 Module: SAWA.PatternEngine
+
+- **Module ID:** MOD-SAWA-PATTERN
+- **Name:** Pattern & Meta-Pattern Engine
+- **Purpose:** Cluster ideas, score significance, and evolve meta-patterns for reuse.
+- **Primary Inputs:**
+  - Structured dialogue events from MOD-SAWA-DIALOG
+  - Existing meta-pattern library snapshots
+- **Primary Outputs:**
+  - Ranked idea clusters
+  - Meta-pattern upgrade suggestions
+  - Updated meta-pattern library entries
+- **Internal Dependencies (Cards):**
+  - SAWA-FUNC-CLUSTER-001
+  - SAWA-FUNC-METAPAT-001
+  - SAWA-LIB-METAPAT-001
+  - SAWA-FUNC-SCORING-001
+- **External Dependencies:**
+  - MOD-SAWA-CORE (overall goals and constraints)
+  - MOD-SAWA-PromptPipeline (consumes upgraded patterns)
+
+---
+
+### 2.4 Module: SAWA.PromptPipeline
+
+- **Module ID:** MOD-SAWA-PROMPT
+- **Name:** Prompt Refactoring & Template Pipeline
+- **Purpose:** Transform raw user prompts and discovered patterns into higher-quality, reusable prompt templates.
+- **Primary Inputs:**
+  - Candidate prompts from active sessions
+  - Meta-pattern recommendations from MOD-SAWA-PATTERN
+- **Primary Outputs:**
+  - Refactored prompts
+  - Template-ready prompt variants
+- **Internal Dependencies (Cards):**
+  - SAWA-ROLE-PROMPT-001
+  - SAWA-FUNC-METAPAT-001
+  - SAWA-FUNC-SCORING-001
+- **External Dependencies:**
+  - MOD-SAWA-Integration-Fabric (template mapping)
+  - MOD-SAWA-Integration-LUMEN (graph updates)
+
+---
+
+### 2.5 Module: SAWA.Integration.Fabric
+
+- **Module ID:** MOD-SAWA-INTEG-FABRIC
+- **Name:** Fabric Template Integration
+- **Purpose:** Project refactored prompts and patterns into Fabric-compatible templates.
+- **Primary Inputs:**
+  - Refactored prompts from MOD-SAWA-PROMPT
+  - Pattern and metadata from MOD-SAWA-PATTERN
+- **Primary Outputs:**
+  - Fabric-compatible templates
+  - Template registration events
+- **Internal Dependencies (Cards):**
+  - SAWA-FUNC-FABRIC-001
+- **External Dependencies:**
+  - MOD-SAWA-PROMPT
+  - External Fabric template system
+
+---
+
+### 2.6 Module: SAWA.Integration.LUMEN
+
+- **Module ID:** MOD-SAWA-INTEG-LUMEN
+- **Name:** LUMEN Knowledge Graph Integration
+- **Purpose:** Persist refined prompts and meta-patterns into the LUMEN knowledge graph.
+- **Primary Inputs:**
+  - Finalized prompt revisions from MOD-SAWA-PROMPT
+  - Meta-pattern updates from MOD-SAWA-PATTERN
+- **Primary Outputs:**
+  - LUMEN graph write operations
+  - Acknowledgements / IDs of stored entities
+- **Internal Dependencies (Cards):**
+  - SAWA-FUNC-LUMEN-001
+- **External Dependencies:**
+  - MOD-SAWA-PROMPT
+  - MOD-SAWA-PATTERN
+  - External LUMEN knowledge graph
+
+---
+
+### 2.7 Module: SAWA.Roles
+
+- **Module ID:** MOD-SAWA-ROLES
+- **Name:** Role Definitions & Governance
+- **Purpose:** Provide explicit agent role definitions and governance rules.
+- **Primary Inputs:**
+  - System configuration
+  - Session objectives and constraints
+- **Primary Outputs:**
+  - Active role assignments
+  - Role-specific policies
+- **Internal Dependencies (Cards):**
+  - SAWA-ROLE-ORCH-001
+  - SAWA-ROLE-VAL-001
+  - SAWA-ROLE-INSIGHT-001
+  - SAWA-ROLE-PROMPT-001
+- **External Dependencies:**
+  - MOD-SAWA-CORE (agent lifecycle)
+  - All other SAWA modules (role-based execution)
+# MIGRATION_LOG.md
+
+## 1. Metadata
+
+- **Migration Label:** SAWA_TODAY_WORK_MIGRATION
+- **Date:** 2025-12-16
+- **Mode:** Non-Destructive
+- **Source Workspace Artifacts:**
+  - “Session-Aware Wisdom Agent” spec
+    - type: "POC Discourse Tracker"
+    - roles: Orchestrator, Validator, Insight Synthesizer, Prompt Refactorer
+    - functions: dialogue parsing, task-switch detection, clustering, meta-pattern upgrades, Fabric mapping, LUMEN integration
+
+
+## 2. Phase 1 — Forensic Ingestion
+
+- Parsed the “Session-Aware Wisdom Agent” description line by line.
+- Identified candidate elements as:
+  - System-level purpose and architecture.
+  - Role definitions (Orchestrator, Validator, Insight Synthesizer, Prompt Refactorer).
+  - Functional capabilities (parse recursive dialogue, detect task-switches, cluster ideas, suggest meta-pattern upgrades, map to Fabric templates, push to LUMEN).
+  - Implicit requirement for a meta-pattern library and scoring layer.
+
+No deletions or transformations were applied to the semantics; all extractions were additive and normalizing.
+
+
+## 3. Phase 2 — Evolution Tracking
+
+- No explicit prior versions of the “Session-Aware Wisdom Agent” spec were referenced in today’s work.
+- Current spec recorded as:
+  - **Version Tag:** SAWA/v1.0 (inferred)
+  - **State:** Initial structured definition for roles and functions.
+- Evolution chain:
+  - Previous migration work exists in the broader workspace, but was not referenced in “today’s work”; no cross-version merges were performed for SAWA.
+  - SAWA is treated as a new lineage, ready for future extensions or forks.
+
+
+## 4. Phase 3 — Normalization (Atomic Instruction Cards)
+
+Actions:
+
+- Converted system-level description into SYSTEM-type cards:
+  - SAWA-CORE-001, SAWA-CORE-002.
+- Converted role descriptions into ROLE-type cards:
+  - SAWA-ROLE-ORCH-001, SAWA-ROLE-VAL-001, SAWA-ROLE-INSIGHT-001, SAWA-ROLE-PROMPT-001.
+- Converted each functional behavior into FUNCTION-type cards:
+  - SAWA-FUNC-DIALOG-001, SAWA-FUNC-TASK-001, SAWA-FUNC-CLUSTER-001, SAWA-FUNC-METAPAT-001, SAWA-FUNC-FABRIC-001, SAWA-FUNC-LUMEN-001, SAWA-FUNC-SCORING-001.
+- Added LIBRARY-type card for the persistent meta-pattern store:
+  - SAWA-LIB-METAPAT-001.
+- Assigned:
+  - **Scope:** Mapped according to where the rule operates (system-wide, parsing, pattern engine, integrations).
+  - **Origin:** All cards tied back to “Session-Aware Wisdom Agent spec (2025-12-16)”.
+  - **Lifecycle:** Initialized as `active/v1`.
+
+No conflicting rules were identified inside the SAWA description itself; no forks were required at the card level.
+
+
+## 5. Phase 4 — Module Discovery
+
+Clustering decisions:
+
+- **MOD-SAWA-CORE**
+  - Clustered around SYSTEM cards and the meta-pattern library as the foundational runtime.
+- **MOD-SAWA-DIALOG**
+  - Clustered dialogue parsing and task-switch detection into a Dialogue Engine.
+- **MOD-SAWA-PATTERN**
+  - Clustered idea clustering, meta-pattern upgrades, scoring, and library use into a Pattern Engine.
+- **MOD-SAWA-PROMPT**
+  - Clustered prompt refactoring and pattern-powered prompt evolution into a Prompt Pipeline.
+- **MOD-SAWA-INTEG-FABRIC**
+  - Isolated mapping to Fabric templates as a distinct integration bridge.
+- **MOD-SAWA-INTEG-LUMEN**
+  - Isolated pushing updated prompts and patterns into LUMEN as a separate integration module.
+- **MOD-SAWA-ROLES**
+  - Centralized role definitions and governance into a shared module.
+
+Each module was given explicit inputs, outputs, and dependencies to support future automation or implementation work.
+
+
+## 6. Phase 5 — Non-Destructive Integration
+
+- **Destination Workspace Context:**
+  - Existing migration infrastructure and other systems (e.g., LUMEN, Fabric, UST-related frameworks) were acknowledged but not modified in this migration pass.
+- **Merge Strategy:**
+  - SAWA introduced as a new, independent system spine.
+  - No overlapping IDs with prior systems were reused; SAWA-specific ID namespace (`SAWA-*`) was used.
+- **Conflicts:**
+  - None detected within the content of today’s work.
+  - Potential conceptual overlap with existing pattern or prompt systems is noted for future reconciliation, but no automatic merge or overwrite was performed.
+
+Result: SAWA modules and cards are integrated as a new, versioned lineage, ready to be linked to existing frameworks in later migrations.
+
+
+## 7. Phase 6 — Output Summary
+
+Artifacts generated (this run):
+
+1. **KNOWLEDGE_SPINE.md**
+   - Canonical description of Session-Aware Wisdom Agent.
+   - Atomic instruction card registry for SAWA (SYSTEM, ROLE, FUNCTION, LIBRARY).
+
+2. **MODULE_REGISTRY.md**
+   - Module clustering for SAWA:
+     - MOD-SAWA-CORE
+     - MOD-SAWA-DIALOG
+     - MOD-SAWA-PATTERN
+     - MOD-SAWA-PROMPT
+     - MOD-SAWA-INTEG-FABRIC
+     - MOD-SAWA-INTEG-LUMEN
+     - MOD-SAWA-ROLES
+
+3. **MIGRATION_LOG.md**
+   - This document, recording how today’s work was ingested, normalized, and integrated non-destructively.

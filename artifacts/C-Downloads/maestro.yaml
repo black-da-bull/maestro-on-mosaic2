@@ -1,0 +1,47 @@
+meta:
+  artifact: maestro.orchestrator
+  version: 5.0.2-dedup-kernel
+  generated_utc: '2025-12-25T04:24:43Z'
+kernel:
+  single_orchestrator: true
+  comprehensive_submodules: true
+  migration_contract:
+    mode: non_destructive
+    trigger_phrase: RUN MIGRATION
+    phases:
+    - forensic_ingestion
+    - evolution_tracking
+    - normalization
+    - module_discovery
+    - non_destructive_integration
+    - output_only
+    output_only:
+    - KNOWLEDGE_SPINE.md
+    - MODULE_REGISTRY.md
+    - MIGRATION_LOG.md
+submodules:
+  template_technical_ust: template.technical.ust.yaml
+  template_creative_ust: template.creative.ust.yaml
+  song_excellence: song.excellence.yaml
+  houseinorder: houseinorder.yaml
+  inmyroom: inmyroom.yaml
+suno_efficiency_validators:
+  blocked_term_policy:
+    action: flag_and_suggest_safe_synonym
+    non_destructive: true
+  comma_policy: commas only inside lyric quotes or between quote and adlib
+  container_order:
+  - Theory
+  - Voices
+  - Style
+  - Structure
+  - Performance
+  - Timbre
+  - FX
+  - Post
+  - Operators
+  - Validators
+node_to_edge_model:
+  node: module_or_field
+  edge: audit_check_or_transform
+  leaf: atomic_instruction_card

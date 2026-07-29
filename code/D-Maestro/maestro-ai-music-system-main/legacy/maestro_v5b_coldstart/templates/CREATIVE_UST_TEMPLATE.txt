@@ -1,0 +1,91 @@
+[Formatting Rules]
+- Speaker tags MUST be outside lyric quotes: [lead] "lyric line" (adlib) ** sFX: ... **
+- Keep sFX cues wrapped as ** sFX: ... ** and never inside lyric quotes
+- Avoid commas outside lyric quotes; use line breaks / semicolons in meta
+- Do not include singer names inside lyric quotes
+
+[Theory]
+[mode | INSERT MODE]
+[tonal_center | INSERT ROOT NOTE]
+[meter | INSERT METER WITH groove modifiers]
+[tempo | INSERT TEMPO WITH transitions if applicable]
+[chord_color | DESCRIBE chord usage eg gospel sus9 AND add11 WITH modal tension]
+
+[Voice]
+[register | DESCRIBE LEAD VOICE AND RANGE WITH supporting textures]
+[delivery | INSERT cadence type eg Southern sermon cadence WITH blues phrasing]
+[expression | WHISPER-TO-BELT arcs OR falsetto confession arcs]
+[layering | CHOIR STACKS; chipmunk FX; stereo breath echoes; etc]
+[articulation | INSERT features like AAVE vowel slides OR gospel melisma]
+
+[Style]
+[genre | Country Trap Gospel Revival OR Southern Gothic Soul × Americana]
+[intent | WHAT STORY THIS TRACK TELLS eg grief; survival; baptism]
+[texture | lap steel swells; lo-fi vinyl hiss; ambient gospel pads; etc]
+[aesthetic | cinematic OR torchlight revival vibe OR radio prayer booth style]
+
+[Timbre]
+[drum tone | DESCRIBE eg lo-fi stomp loops WITH trap swing]
+[bass tone | INSERT eg Moog subbass OR upright bowed bass]
+[keyboard tone | muted Rhodes OR gospel Hammond pad swirl]
+[guitar tone | slide OR lap steel WITH delay OR reverb tail]
+[fx palette | tape hiss; thunder crack; preacher echoes; crowd murmur; reverse decays]
+[vocal tone | smoky baritone; layered falsetto; whispery lead WITH choir wash]
+
+[Performance]
+[execution | LIST STRUCTURE eg Verse 1 -> Chorus -> Verse 2 -> Bridge -> Final Chorus -> Outro]
+[gesture | stomp-claps; breath gaps; preacher yell-ins; choir bounce]
+[rhythm_handling | triplet drag groove WITH half-time chorus shift OR pocket-tight push flow]
+[adlibs | "Lawd" "mmm-hmm" "say that" "revived" etc]
+
+[Road Map]
+[sections | INSERT SECTION ORDER]
+[bars_per_section | INSERT BARS PER SECTION]
+[pickups_and_turnarounds | INSERT pickup rules; turnarounds; drop rules]
+[energy_flow | INSERT build points; drops; resets; final lift]
+[section_thesis | INSERT thesis of movement across sections]
+
+
+[Post Production]
+[mix | mono verse; stereo choir; analog plate OR cassette compression]
+[mastering | glue comp; reverb swells; airband tilt EQ; gospel wideners]
+[transition | vinyl hiss tails; tape stops; crowd bleed; risers]
+
+▸ LYRICS BLOCK
+
+[Intro | X bars | lead type; vocal FX | instrumentation | FX notes]
+"INSERT LINES"
+(adlib | INSERT IF NEEDED)
+(fx | INSERT FX CUES IF NEEDED)
+
+[Verse 1 | X bars | tone description | instrumentation | swing feel]
+"INSERT 6-10 SYLLABLE LINE"
+"INSERT NEXT LINE"
+(fx | OPTIONAL)
+(adlib | OPTIONAL)
+
+[Chorus | X bars | harmonized OR solo OR chipmunk lead]
+"INSERT HOOK LINE"
+"REPEAT WITH VARIATION"
+(choir | CALL-AND-RESPONSE)
+(fx | REVERB SWELL OR SUB DROP)
+
+[Bridge | X bars | tone shift | dynamic arc]
+"INSERT REFLECTIVE OR PEAK LINE"
+"INSERT RESPONSE"
+(fx | THUNDER OR REVERSE ECHO)
+
+[Verse 2 | X bars | continuation OR new character POV]
+"INSERT STORY EXPANSION LINE"
+"INSERT VISUAL PHRASE OR METAPHOR"
+
+[Final Chorus | X bars | FULL LIFT]
+"REPRISE HOOK"
+"CALLBACK TO EARLY LINE"
+"INSERT CLOSURE LINE"
+(choir | "Hallelujah" OR gospel belt)
+
+[Outro | X bars | fade FX; spoken word; vinyl drag]
+"INSERT FADEOUT LINE OR ADLIB"
+
+[End]

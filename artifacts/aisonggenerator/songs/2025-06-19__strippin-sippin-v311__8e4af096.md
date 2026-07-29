@@ -1,0 +1,107 @@
+# Strippin @ Sippin v3.11
+
+> Song family: **Strippin @ Sippin v3.** · generation #9 in family · created 2025-06-19T04:11:13.565Z
+
+## Metadata
+
+- song_id: `8e4af096-2101-4540-9ab1-5f1060eac8d0`
+- id: `1737383`
+- model: `V4.5`
+- created_at: `2025-06-19T04:11:13.565Z`
+- updated_at: `2025-06-19T04:13:28.060Z`
+- duration: `194.72`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `damo`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/39f43dc4-b698-4fae-ba67-c7521aac14ef.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/479347d8-77bf-4c6f-9dee-68fa2480fcd7.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://mfile.erweima.ai/OGU0YWYwOTYtMjEwMS00NTQwLTlhYjEtNWYxMDYwZWFjOGQw
+
+## Style / Prompt (tags)
+
+```
+Kicks off with whispery
+lo-fi vinyl crackle and subtle glass shatter
+deep 808 glides
+and chopped gospel choir at half-speed
+Banjo and lap-steel interlock
+ducked to a snappy kick and trap hats
+while a Hammond organ and harmonica loop widen the groove
+In the breakdown
+filtered banjo and rim-claps frame crowd ad-libs
+with a bold chest-voice contralto lead and soaring soprano call-backs panned wide
+Power stanza lands after a stark half-beat silence
+with all instrumentation swelling
+then tape-warmed outro fading to ghostly layered whispers
+```
+
+## Lyrics
+
+```
+[Intro 0:00 – Whisper, Vinyl Crackle, DJ Countdown, FX:GlassShatter tail]
+  "Hush… spotlight’s ours."
+  "Five—four—three—two—one—GO!"
+
+[Verse 1 0:08 – Loose Banjo, Slide Swells, Sparse Hats]
+  "Strippin’ in shadow—my body the light"
+  "Sippin’ for courage, thicker than wine"
+  "This pole, this prayer—same gospel to me"
+  "Rhythm in flesh while the spirit runs free"
+
+[Testimony I 0:30 – Melodic Rap Drawl, 808 Bounce, Organ Stabs]
+  "Mama taught pain in hush-hush hymns—bone-deep gospel hum"
+  "Glitter hides bruises, mirror won’t play dumb"
+  "Every dollar a blessing—yet they spit on my name"
+  "Mirror cracked but I sparkle; can’t smother this flame"
+  "Carved out holy from the Devil’s own frame"
+
+> Crowd Ad-libs (L/R wide): “Preach!”  “Mmm-hmm!”
+
+[Power Stanza 1:00 – *[Silence ½]* → Beat Drop, Melody Bend]
+  *[Silence ½]*
+  "I twist like scripture—cyclone in my hips"
+  "Tongue spits psalms they once stitched at my lips"
+  "I’m the stain they exile, the ghost they fear"
+  "Still I rise in stilettos—mirror-shard tears"
+
+  Soprano Echo (+7 cents): “Rise… tears and all…”
+
+[Bridge 1:28 – Chopped-&-Screwed Choir, Hammond Swell, VinylStop]
+  Lead:  "Call me fallen?—nah, baby, I’m flyin’!"
+  Choir (slowed): "Can’t shame—what won’t stop try-in’…"
+  Lead:  "Pole ain’t sin—this is resurrection in motion!"
+  Soprano Echo (call): "Fly------in’…"
+  Choir (answer): "Ser-mon drenched in di-vine e-mo-tion!"
+
+[Breakdown 1:56 – Spoken Word, Lo-Fi Banjo, Harmonica Loop, No Beat]
+  "They judge my rhythm, never my reason"
+  "Weigh my worth on their thirty-second season"
+  "But I am more—mother, storm, a name my own"
+  "Echo that lingers when the circus moves on"
+
+[Final Chorus 2:20 – Dual Harmony, Trill-Bounce Groove]
+  "Strippin’ & Sippin’—I rise from the ash"
+  "Heels strike thunder, but I never crash"
+  "Strippin’ & Sippin’—they scream, they stare"
+  "I bless the beat—meet every glare"
+
+> Contralto Octave-Down Double (-6 dB) + Crowd Ad-libs: “Ooo-wee!”  “Let it burn!”  “Yesss chile!”
+
+[Outro 2:48 – Whisper Falsetto, Reverse Pedal Steel, Vinyl Fade]
+  "Still sippin’ in silence—yet the voice is mine"
+  "Still strippin’—now crowned divine"
+  "In the dark I lit my shrine"
+  "Not shame—sacred design"
+
+[Studio Tail-Out 3:08 – Friends Cheer, DJ Laugh, Tape Click]
+  DJ: “Aaalll-reeaddyyy!  That’s a wrap, queen—you glo’d up!”
+
+#AuthTag: Created in hybrid workflow – human lyricist x Suno v4.5 engine.
+```

@@ -1,0 +1,74 @@
+# P1N Contradiction Audit — Session 13 (windows 1+2)
+# Work item: REPAIR.P1N.PANEL-VALIDATION.R1 · validated 2026-07-19
+# Method: every registered contradiction traced to source text in the DEC-02 primaries
+# (claud3.txt md5 faecdb760a6248fd08d9cce4e6e738ca; claude-session13-window2.txt md5 94989f7f37f67e6d1a818a1b974c1efc).
+# Verdict values: REPRODUCED (both sides found in source) · REPRODUCED-WS (found; replay quote flattens line breaks / column whitespace, content identical).
+
+claimed_count: 9
+reproduced_count: 9
+silently_harmonized_found: 0
+omitted_contradictions_found: 0
+
+window1:
+  CR-1:
+    topic: v5/Mosaic chronology — operator statement vs userMemories artifact
+    operator_side: 'version 5 is pre-mosaic, that is why we are doing a "rebirth" based on v0 of all items.'
+    artifact_side: "userMemories: v5-b, v5-c, v5.5 progression, v5.5 = v5-c rebadged with Mosaic engine"
+    source_check: operator side found at claud3 char 363803 (in U32 range); artifact side found ("v5.5 being v5-c rebadged") in seg33 preview
+    both_sides_preserved: true
+    verdict: REPRODUCED
+  CR-2:
+    topic: 8-verb promotion path vs 6-verb canon
+    earlier_side: "U14 'promote these and any other open items that have evidential support' (found, char 158847)"
+    later_side: "'Six-verb canon (no extension) held' — found in claud3 with column whitespace; replay flattens spacing"
+    tension_preserved: "yes — replay states promotion order never rescinded"
+    verdict: REPRODUCED-WS
+  CR-3:
+    topic: PVP-1.6 register migration (active canon question -> historical artifact)
+    earlier_side: "'Keep as explicit branch/conflict until PVP-1.6 is found/defined' (found)"
+    later_side: "U28 'once again are historical artifacts' (found, char 323761)"
+    verdict: REPRODUCED
+  CR-4:
+    topic: replay program value superseded by direct v4.5.5 access
+    earlier_side: "U10 'that is the session i created to do the work' (found, char 109713)"
+    later_side: "U34 'then i realized with v4.5.5.txt this is what we had previously being attempted to recreate via replays' (found)"
+    verdict: REPRODUCED
+
+window2:
+  C1:
+    topic: parse/chunk prohibition vs version-line splitting (operator vs operator, operator-resolved at U41)
+    side_a: "U13 no-parse flagship (found, char 106222; raw byte 107525 vs P0-b cite ~107529)"
+    side_b: "U18 'can't you identify turns and judgeversions then split along version lines' (found)"
+    resolution_pointer: "U41 'DO NOT segment the file by version markers' (found, char 338080)"
+    verdict: REPRODUCED
+  C2:
+    topic: four parallel worksurfaces vs three-position triangulation
+    side_a: "U7 'i have vv5b v5c forensic and maestro workspaces to audit' (found)"
+    side_b: "U57 'versioon 4.5.5 is the last working version' (found, char 887739)"
+    verdict: REPRODUCED
+  C3:
+    topic: W-axis OPERATOR BLOCKER vs not-a-blocker (AI claim overridden by operator F)
+    side_a: "'NO ARTIFACTS <- OPERATOR BLOCKER' rows (found, 12 occurrences)"
+    side_b: "U56 'Do not treat v5b/forensic/maestro NO ARTIFACTS as a blocker' — found with internal line breaks; replay flattens them"
+    verdict: REPRODUCED-WS
+  C4:
+    topic: vig/vis expansion drift (AI-derived vs canon)
+    side_a: "'visual generation / visual integration' (found, 6 occurrences)"
+    side_b: "U51 'are you asking about vis.vig its in the maestro report you created' (found)"
+    verdict: REPRODUCED
+  C5:
+    topic: substrate-archaeology vs proven working anchor
+    side_a: "substrate-archaeology framing (found)"
+    side_b: "U57 anchor ruling + AI correction 'NOT substrate-archaeology' (found)"
+    verdict: REPRODUCED
+
+held_open_items_check:
+  registered: [CB-02, CB-04, CB-06, OPEN-Q5, OPEN-Q6, OPEN-Q7, OPEN-Q8]
+  status: preserved as held-open in replay footers, not harmonized — consistent with source
+
+omission_sweep:
+  method: regex sweep of all 49 operator segments for correction markers (stop/pause/wrong/stuck/reread/once again/can't/failing/not what/remember)
+  result: every marker-bearing operator turn has a replay disposition; no unregistered corrective turn found
+
+fidelity_notes:
+  - Two contradiction side-quotes (CR-2 later side, C3 side_b) normalize line breaks / column whitespace relative to source. Content is identical; flag is quote-fidelity, not harmonization.

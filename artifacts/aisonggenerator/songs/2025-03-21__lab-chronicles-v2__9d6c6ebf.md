@@ -1,0 +1,104 @@
+# Lab Chronicles v2
+
+> Song family: **Lab Chronicles v** · generation #2 in family · created 2025-03-21T04:38:46.476Z
+
+## Metadata
+
+- song_id: `9d6c6ebf-e6b0-46bd-a94e-4baffb5b66fd`
+- id: `593336`
+- model: `V4`
+- created_at: `2025-03-21T04:38:46.476Z`
+- updated_at: `2025-03-21T04:41:21.848Z`
+- duration: `196.80`
+- is_delete: `True`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `ace`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/6ed760e5-cbab-4436-b1ae-3eed7e930cf5.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/2719300c-387f-40fb-90f2-797a90632da2.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://audiopipe.suno.ai/?item_id=9d6c6ebf-e6b0-46bd-a94e-4baffb5b66fd
+
+## Style / Prompt (tags)
+
+```
+Live
+raw studio session
+shifting beats every 4 bars
+sloppy 808s
+minimalist synth layers
+intoxicated freestyle
+slurred hooks
+live adlibs
+chaotic energy
+```
+
+## Lyrics
+
+```
+[Intro, Atmospheric Build-Up - Minimalist Synths, Sloppy 808s, DJ Hype]
+(DJ Hype Voice)
+Yo, welcome to the lab tonight!
+Beat’s shifting, hearts are lifting!
+Sloppy 808s, minimal synth vibes—
+Raw, real, and live. Let’s ride!
+[Verse 1, Smooth Flow, First Beat Shift]
+(Rapper 1 - Laid-back, melodic flow)
+Man, I’m lost in this liquid haze
+Words slur like smoke in a daze
+Fourth-bar flip—new sound, new phase
+I ride each shift while the lab explodes in waves
+Glass in my left, mic in my right
+808s stumble but they still hit tight
+Lo-fi vibes with a high-top fade
+Lab so deep, we could swim for days
+[Freestyle Exchange, Back-and-Forth Verses]
+(Rapper 2 & Rapper 3 - Spontaneous exchange)
+Rapper 2: Yo, feel the pulse on every beat—can you ride it?
+Rapper 3: Ride it like a wave, shifting while we slide, man!
+Rapper 2: Let the lab speak—each verse builds off the other!
+Rapper 3: Raw and unrefined, we ain't got no buffer!
+(Adlibs & Live Energy in Background: "Ayy!" "Bring it back!" "One take!")
+[Verse 2, Grittier Flow, Second Beat Shift]
+(Rapper 2 - Hard-hitting flow, assertive delivery)
+I float through these beats in a dazed trance
+Mixing wordplay with a hazy, stumbling dance
+Each bar a shift—a lab-induced chance
+To flip raw emotion like a drunken advance
+Bassline dirty, it don’t walk straight
+Rhythm got gaps but it still don’t wait
+Spit off tempo, yeah, that’s the style
+Might trip on the mic, but I land in a pile
+[Bridge, Slowed-Down Breakdown - Minimalist Synths, Slurred Hooks]
+(Slurred Hook, Chopped & Screwed Style)
+Oooh… shift—listen... echoes of the lab, our souls in sync...
+Every pause tells a story—we let it all spill...
+Oooh... switch-up... this groove’s too deep...
+808’s sloppy but it rock me to sleep...
+[Verse 3, Final Rapper, High Energy, Third Beat Shift]
+(Rapper 3 - Chaotic, erratic flow)
+Step up—I'm the spark when the room goes dim
+My words drip slow, erratic yet grim
+Lab on fire, fumes thick in the air
+Uncut takes, we ain't playing fair
+We’re riding these shifts like chaos on a limb
+Throw me any beat, I just sink or swim
+Whole room tiltin’, mic leanin’ left
+808s slurring, we ain't got no rest
+[Final Hook & Outro, Layered Vocals, Live Adlibs]
+(All Three Rappers, Collective Chant)
+Bounce it, shift it—raw from the core
+808s sloppin’, we crave nothing more
+Live, unscripted—our night’s untamed lore
+In this lab, our freestyle forever roars
+(Adlibs & Outro)
+"Yo, run that back!"
+"Man, we off but we on!"
+"Leave it in—no cuts, no clean-up!"
+"Lab life, y’all—this that unfiltered heat!"
+```

@@ -1,0 +1,290 @@
+[
+ {
+  "thread": "TH-01_begin_gpt",
+  "family": "said",
+  "segments": 20,
+  "operator_turns": 10,
+  "kb": 128,
+  "coverage": "PASS",
+  "src": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/Begin GPT 1.txt"
+ },
+ {
+  "thread": "TH-02a_chatgpt",
+  "family": "said",
+  "segments": 3,
+  "operator_turns": 3,
+  "kb": 175,
+  "coverage": "PASS",
+  "src": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/ChatGPT.md"
+ },
+ {
+  "thread": "TH-02b_chatgpt1",
+  "family": "said",
+  "segments": 3,
+  "operator_turns": 3,
+  "kb": 258,
+  "coverage": "PASS",
+  "src": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/ChatGPT (1).md"
+ },
+ {
+  "thread": "TH-02c_chatgpt2",
+  "family": "hash5",
+  "segments": 0,
+  "operator_turns": 0,
+  "kb": 170,
+  "coverage": "REVISED",
+  "src": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/ChatGPT (2).md"
+ },
+ {
+  "thread": "TH-02d_chatgpt3",
+  "family": "hash5",
+  "segments": 0,
+  "operator_turns": 0,
+  "kb": 168,
+  "coverage": "REVISED",
+  "src": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/ChatGPT (3).md"
+ },
+ {
+  "thread": "TH-03_momoney_dev",
+  "family": "hash5",
+  "segments": 38,
+  "operator_turns": 19,
+  "kb": 282,
+  "coverage": "REVISED",
+  "src": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/MoMoeny Dev.md"
+ },
+ {
+  "thread": "TH-04_dumbass",
+  "family": null,
+  "segments": 0,
+  "operator_turns": 0,
+  "kb": 111,
+  "coverage": "PARTIAL",
+  "src": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/dumbass session.md"
+ },
+ {
+  "thread": "TH-05a_gemini_gem",
+  "family": "nexus",
+  "segments": 4,
+  "operator_turns": 1,
+  "kb": 134,
+  "coverage": "PASS",
+  "src": "corpus/sessions/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/oldMaestroGeminiGemIterativeDesignViaConversationalDialogueDevelopmentSessionExport.txt"
+ },
+ {
+  "thread": "TH-05b_1213",
+  "family": "said",
+  "segments": 30,
+  "operator_turns": 16,
+  "kb": 320,
+  "coverage": "PASS",
+  "src": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/1213.txt"
+ },
+ {
+  "thread": "TH-06_song_review_T01",
+  "family": "agi",
+  "segments": 10,
+  "operator_turns": 5,
+  "kb": 32,
+  "coverage": "PASS",
+  "src": "corpus/sessions/D-Maestro/maestro-ai-music-system/source/distributed/suno_v45_config_bundle_v3/conversation_-2--song-review_2025-05-07-0505.agi.md"
+ },
+ {
+  "thread": "TH-07_taxonomy",
+  "family": "nexus",
+  "segments": 49,
+  "operator_turns": 19,
+  "kb": 228,
+  "coverage": "PASS",
+  "src": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/2025-05-16 - Suno v4.5 Taxonomy Research.md"
+ },
+ {
+  "thread": "TH-08_houseinorder",
+  "family": "said",
+  "segments": 36,
+  "operator_turns": 36,
+  "kb": 514,
+  "coverage": "PASS",
+  "src": "corpus/artifacts/D-Maestro/Maestro/houseinorder.txt"
+ },
+ {
+  "thread": "TH-09_inmyroom",
+  "family": "said",
+  "segments": 8,
+  "operator_turns": 8,
+  "kb": 71,
+  "coverage": "PASS",
+  "src": "corpus/artifacts/D-Maestro/Maestro/inmyroom.tx.txt"
+ },
+ {
+  "thread": "TH-10_sem_matrix_design",
+  "family": "said",
+  "segments": 40,
+  "operator_turns": 20,
+  "kb": 380,
+  "coverage": "PASS",
+  "src": "corpus/artifacts/D-Maestro/Maestro/song.excellence.matrix.iterative.design.session.txt"
+ },
+ {
+  "thread": "TH-11_os_dev",
+  "family": "said",
+  "segments": 17,
+  "operator_turns": 13,
+  "kb": 1267,
+  "coverage": "PASS",
+  "src": "corpus/sessions/E-scatter/maestro/conversation_os-dev_2025-09-22-1602.agi.md"
+ },
+ {
+  "thread": "TH-13_chimera_devsession",
+  "family": null,
+  "segments": 0,
+  "operator_turns": 0,
+  "kb": 540,
+  "coverage": "PARTIAL",
+  "src": "corpus/sessions/OneDrive-v45/maestro_devsession.ai_optimized.md"
+ },
+ {
+  "thread": "TH-14_session_ust",
+  "family": "said",
+  "segments": 22,
+  "operator_turns": 11,
+  "kb": 346,
+  "coverage": "PASS",
+  "src": "corpus/sessions/OneDrive-v45/session-ust.txt"
+ },
+ {
+  "thread": "TH-15_chop_screw",
+  "family": "said",
+  "segments": 38,
+  "operator_turns": 19,
+  "kb": 413,
+  "coverage": "PASS",
+  "src": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/chop and screw module dev chat.txt"
+ },
+ {
+  "thread": "TH-16_extrct_engine",
+  "family": "said",
+  "segments": 37,
+  "operator_turns": 20,
+  "kb": 199,
+  "coverage": "PASS",
+  "src": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/extrct-engine-dev-chat.txt"
+ },
+ {
+  "thread": "TH-17_v5_ust_sem",
+  "family": "said",
+  "segments": 43,
+  "operator_turns": 21,
+  "kb": 692,
+  "coverage": "PASS",
+  "src": "corpus/sessions/D-Maestro/maestro-ai-music-system-main/legacy/maestrov5-dev-ust and sem-sessions.txt"
+ },
+ {
+  "thread": "TH-18_devsession_iter",
+  "family": "said",
+  "segments": 35,
+  "operator_turns": 35,
+  "kb": 270,
+  "coverage": "PASS",
+  "src": "corpus/sessions/D-Maestro/Maestro/maestro.devsession.iterative.txt"
+ },
+ {
+  "thread": "TH-20a_chimera_gulf",
+  "family": "said",
+  "segments": 5,
+  "operator_turns": 3,
+  "kb": 40,
+  "coverage": "PASS",
+  "src": "corpus/artifacts/D-Maestro/pws - maestro v5/Chimera-Gulf hybrid mode (1).txt"
+ },
+ {
+  "thread": "TH-20b_chimera_quality",
+  "family": "said",
+  "segments": 61,
+  "operator_turns": 61,
+  "kb": 116,
+  "coverage": "PASS",
+  "src": "corpus/artifacts/D-Maestro/pws - maestro v5/chimera-quality-dev-chat (1).txt"
+ },
+ {
+  "thread": "TH-20c_lyric_baseline",
+  "family": "said",
+  "segments": 52,
+  "operator_turns": 27,
+  "kb": 131,
+  "coverage": "PASS",
+  "src": "corpus/artifacts/D-Maestro/pws - maestro v5/Lyric quality baseline (1).txt"
+ },
+ {
+  "thread": "TH-20d_branch_lyric",
+  "family": "said",
+  "segments": 64,
+  "operator_turns": 33,
+  "kb": 141,
+  "coverage": "PASS",
+  "src": "corpus/artifacts/D-Maestro/pws - maestro v5/Branch \u00b7 Branch \u00b7 Lyric quality baseline (1).txt"
+ },
+ {
+  "thread": "TH-22_foil_tiered",
+  "family": "agi",
+  "segments": 6,
+  "operator_turns": 3,
+  "kb": 876,
+  "coverage": "PASS",
+  "src": "corpus/sessions/D-Maestro/sources/conversation_foil-based-tiered-system_2026-04-03-1252.agi.md"
+ },
+ {
+  "thread": "TH-23_eldrik",
+  "family": "said",
+  "segments": 70,
+  "operator_turns": 50,
+  "kb": 3572,
+  "coverage": "PASS",
+  "src": "corpus/sessions/D-Maestro/sources/conversation_maestro-chat---eldrik--_2026-03-30-1252.agi.md"
+ },
+ {
+  "thread": "TH-24_day3",
+  "family": "agi",
+  "segments": 4,
+  "operator_turns": 2,
+  "kb": 1416,
+  "coverage": "PASS",
+  "src": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/Day 3 Dev Chat.md"
+ },
+ {
+  "thread": "TH-25_claud2",
+  "family": null,
+  "segments": 0,
+  "operator_turns": 0,
+  "kb": 346,
+  "coverage": "PARTIAL",
+  "src": "corpus/artifacts/D-Maestro/sources/claud2.txt"
+ },
+ {
+  "thread": "TH-27_051526",
+  "family": "inline_said",
+  "segments": 22,
+  "operator_turns": 22,
+  "kb": 473,
+  "coverage": "REVISED",
+  "src": "corpus/artifacts/D-Maestro/sources/claude-session051526.md"
+ },
+ {
+  "thread": "TH-28_maestro5_report",
+  "family": null,
+  "segments": 0,
+  "operator_turns": 0,
+  "kb": 243,
+  "coverage": "PARTIAL",
+  "src": "corpus/artifacts/D-Maestro/sources/maestro5 report.txt"
+ },
+ {
+  "thread": "TH-31_v455_evidence",
+  "family": "inline_said",
+  "segments": 17,
+  "operator_turns": 17,
+  "kb": 1849,
+  "coverage": "REVISED",
+  "src": "corpus/artifacts/D-Maestro/sources/v2-6-4-5-5__maestro_evolution_execution-evidence.txt"
+ }
+]

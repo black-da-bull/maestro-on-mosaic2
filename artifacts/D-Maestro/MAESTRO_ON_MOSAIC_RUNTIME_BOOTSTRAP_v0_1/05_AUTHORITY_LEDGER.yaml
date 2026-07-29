@@ -1,0 +1,100 @@
+# Authority structures. Operator F gates every promotion.
+
+source_tiers:
+  T1:
+    description: primary authority
+    weight: highest
+    includes:
+      - operator_direct_statements
+      - operator_controlled_artifacts
+      - v4_5_5_staging_direct_emissions
+      - dev_session_transcripts
+  T2:
+    description: derived forensic authority
+    weight: middle
+    includes:
+      - RTFA    # Reasoning Trace Forensic Audit
+      - SEC     # Substrate Edge Confirmation
+      - SDG     # Substrate Dependency Graph
+      - SLR     # System Lineage Resolution
+      - MMR     # Morris Matrix Resolution
+      - forensic_diagnostics
+      - system_evolution_lineage_ledger
+  T3:
+    description: RAG-mediated source authority
+    weight: lowest
+    includes:
+      - workspace_outputs_from_retrieval_over_primary_files
+      - lineage_yamls_from_recovery_spaces_read_through_chunks
+      - AI_session_emissions_consuming_primary_sources_via_RAG_rather_than_sequential_walk
+
+resolution_rules:
+  operator_direct_statement: wins_over_all
+  T1_vs_T2: T1_wins
+  T2_vs_T3: T2_wins
+  uncertain_origin: mark_candidate_pending_operator_F
+
+claim_authority_classes:    # 9-class scheme per substrate_integration_review_brief v0.3.1
+  ACCEPTED_CANON:
+    definition: force_closed_by_operator_AND_file_verified
+    promotion_requirement: operator_F_plus_file_evidence
+  FILE_VERIFIED_v5b:
+    definition: verified_in_v5b_canonical_pack
+    promotion_requirement: presence_in_v5b_pack
+  BRIDGE_LAW:
+    definition: preserved_from_Day_2_or_v4_5x_but_not_destination_canon
+    promotion_requirement: explicit_transition_decision
+  CANDIDATE_SPEC:
+    definition: formal_authored_proposal_pending_operator_F
+    promotion_requirement: operator_F
+    examples:
+      - Mosaic_Engine_v0_1
+      - Maestro_v0
+  FORENSIC_CONTROL:
+    definition: controls_interpretation_does_not_auto_promote
+    promotion_requirement: explicit_promotion_plus_operator_F
+  OPERATOR_ASSERTED:
+    definition: direct_operator_claim_not_yet_converted_to_artifact_evidence
+    promotion_requirement: artifact_conversion_plus_operator_F
+  INFERRED:
+    definition: analytic_conclusion_high_confidence_not_canon
+    promotion_requirement: explicit_gate_plus_operator_F
+  PROVISIONAL:
+    definition: plausible_unresolved_weak_evidence_do_not_promote
+    promotion_requirement: typically_requires_demotion_or_strengthening_first
+  UNVERIFIED_PENDING_SOURCE:
+    definition: likely_true_in_broader_corpus_not_file_verified_in_current_set
+    promotion_requirement: source_attachment_plus_file_verification
+
+qualifier_vocabulary:    # descriptive metadata, NOT authority labels
+  support: [forensic_supported, operator_reported, file_verified, lineage_supported, principle_canon_supported]
+  status: [pending_formalization, patched_candidate_for_review, operating_stance, open, blocked, unresolved_workforce_topology, future_vector, research_ready, active_operating_stance]
+  promotion: [promoted, candidate, deferred, rejected, do_not_promote]
+  scope: [run_canonical, bridge_law, strategic_speculation, conversion_evaluation]
+
+operator_F_mechanic:
+  definition: explicit_operator_force_closure_on_a_specific_claim_or_artifact
+  required_form: operator_explicitly_states_promotion_or_closure
+  forbidden_inferences:
+    - silence_is_not_F
+    - acknowledgment_is_not_F
+    - "looks_right_is_not_F"
+    - prior_acceptance_of_related_claim_is_not_F_for_current_claim
+    - apparent_consensus_is_not_F
+    - tool_output_alignment_is_not_F
+  effects:
+    - moves_claim_to_ACCEPTED_CANON_or_higher_class_as_appropriate
+    - logs_to_session_operator_F_history
+    - persists_across_snapshots
+
+phantom_commitment_discipline:    # INV-04: Q+A without F is open ticket
+  detection_phrases:
+    - "I have updated"
+    - "going forward I will"
+    - "the rule is now"
+    - "from now on"
+    - "I now treat"
+    - "this is now the way"
+    - "let's say from here"
+  handling: relabel_as_PROVISIONAL_with_F_required_suffix_no_state_change
+  origin: INV_04_Q_plus_A_without_F_is_open_ticket

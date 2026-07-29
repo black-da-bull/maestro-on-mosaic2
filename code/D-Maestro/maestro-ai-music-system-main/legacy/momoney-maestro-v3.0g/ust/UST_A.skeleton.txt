@@ -1,0 +1,28 @@
+[Summary]
+TBD
+
+[Theory]
+TBD
+
+[Voice]
+TBD
+
+[Crew_Tags]
+TBD
+
+[Road-Map]
+INTRO | VERSE | DROP
+
+[Lyrics]
+(Line 1)
+(Line 2)
+(HOOK)
+
+[Style]
+TBD
+
+[Timbre]
+TBD
+
+[Performance]
+FX: TBD

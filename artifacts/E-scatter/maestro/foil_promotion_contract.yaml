@@ -1,0 +1,131 @@
+meta:
+  artifact_name: foil_promotion_contract.yaml
+  artifact_type: governing_contract
+  version: v5_c.day2_authoritative
+  status: authoritative_done
+  mode: exact_canon
+  purpose: define the exact operational contract for FOIL-controlled promotion and deduplication behavior only
+
+governing_parent:
+  controller_contract.yaml: preserves controller boundary and prohibits controller semantic compression
+  phase_contract.yaml: preserves procedural distinction among notation candidates, promotion candidates, and retained local unique detail
+  artifact_contract.yaml: governs artifact-layer handling distinctions and conditional annotations
+  artifact_taxonomy.md: stabilizes FOIL-relevant vocabulary
+
+artifact_role:
+  in_scope:
+    - formal FOIL definition
+    - promotion eligibility rules
+    - deduplication eligibility rules
+    - canonical owner selection rules
+    - semantic preservation rules
+    - FOIL-specific ledger requirements
+    - FOIL-specific defect categories
+    - FOIL-specific block conditions
+  out_of_scope:
+    - repeat notation
+    - full reverse-processing ownership
+    - full controller authority restatement
+    - full phase-machine restatement
+    - full artifact ontology restatement
+    - shell design
+    - downstream routing heuristics
+
+inherited_canon:
+  - FOIL governs promotion and deduplication only.
+  - FOIL is not repeat notation.
+  - FOIL is not the whole of reverse processing.
+  - Retained local unique detail must be preserved.
+  - Controller may not re-centralize semantic judgment.
+
+foil_definition:
+  purpose: govern lawful promotion and deduplication of recurring material without semantic collapse
+  constrained_to:
+    - promotion
+    - deduplication
+  excludes:
+    - repetition classification
+    - exact-repeat notation emission
+    - creative authorship
+
+promotion_eligibility:
+  allowed_only_if:
+    - candidate has lawful recurring significance
+    - promotion preserves meaning rather than flattening meaning
+    - promotion does not erase retained local unique detail
+    - upstream classification supports promotion
+    - promotion event can be ledgered
+  blocked_if:
+    - promotion candidate is actually only a notation candidate
+    - promotion would genericize section-local uniqueness
+    - promotion would merge distinct semantics for convenience
+
+deduplication_eligibility:
+  allowed_only_if:
+    - duplicate material is truly duplicative in semantic function
+    - deduplication does not erase meaningful local variance
+    - deduplication event can be ledgered
+  blocked_if:
+    - deduplication would collapse retained local unique detail
+    - deduplication is being used as hidden compression
+    - deduplication substitutes for notation handling
+
+canonical_owner_selection:
+  owner_must_be:
+    - the highest lawful level that preserves meaning without erasing distinct semantics
+  blocked_if:
+    - owner selection is made for convenience only
+    - owner selection hides unresolved classification work
+    - owner selection erases local unique detail
+
+semantic_preservation:
+  required:
+    - preserve distinctions among notation candidates, promotion candidates, and retained local unique detail
+    - preserve distinct semantics across repeated material
+    - preserve worker-owned reverse processing by reference
+  forbidden:
+    - absorb repeat notation into FOIL
+    - redefine reverse processing as controller-owned
+    - reintroduce blanket notation or local-detail annotation requirements
+    - destructive deduplication
+    - convenience merges
+
+ledger_requirements:
+  must_record:
+    - FOIL promotion events
+    - FOIL deduplication events
+    - chosen canonical owner when promotion occurs
+    - preserved local unique detail when FOIL action would otherwise threaten collapse
+  must_not_require:
+    - blanket notation-handling ledger entries
+    - blanket local-detail-retention ledger entries outside conditional artifact-governance need
+
+foil_defect_taxonomy:
+  - FOIL_scope_overreach
+  - promotion_notation_conflation
+  - semantic_collapse_disguised_as_deduplication
+  - destructive_deduplication
+  - owner_selection_overreach
+  - convenience_merge_behavior
+  - loss_of_retained_local_unique_detail
+  - unledgered_FOIL_action
+
+foil_block_conditions:
+  blocked_if:
+    - FOIL is treated as repeat notation
+    - FOIL is treated as the whole of reverse processing
+    - retained local unique detail would be lost
+    - a FOIL action would be unledgered
+    - downstream routing heuristics are promoted into canon
+    - nonexistent or drifted artifacts are referenced
+
+compliance_test:
+  foil_contract_is_compliant_only_if:
+    - it remains strictly scoped to promotion and deduplication only
+    - it explicitly states that promotion is not repeat notation
+    - it explicitly states that FOIL is not the whole of reverse processing
+    - it preserves retained local unique detail
+    - it blocks convenience merges and semantic collapse
+    - it avoids reintroducing blanket annotation requirements
+    - it references only the approved upstream stack
+    - no FOIL-layer blocking defect remains

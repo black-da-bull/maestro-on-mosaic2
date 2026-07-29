@@ -1,0 +1,219 @@
+{
+ "work_item": "REPAIR.P1N.PANEL-VALIDATION.R1",
+ "run": "R2_SECOND_WITNESS",
+ "validated": "2026-07-19",
+ "validator": "independent Cowork cloud session #2 (separate context from both the replay session and the R1 validation session); all mechanical checks scripted",
+ "hashes": {
+  "primary_W1_claud3.txt": {
+   "md5": "faecdb760a6248fd08d9cce4e6e738ca",
+   "bytes": 407408
+  },
+  "primary_W2_claude-session13-window2.txt": {
+   "md5": "94989f7f37f67e6d1a818a1b974c1efc",
+   "bytes": 927063
+  },
+  "claud2.txt": {
+   "md5": "090c0eff9fea9025e6ee019dd647241a",
+   "bytes": 349779
+  },
+  "dec02_equivalence": "claud3.txt ≡ claud3-window1.txt ≡ claude-session13-window1.txt ≡ archive claud3.txt (4 copies, one digest); W2 archive ≡ primary",
+  "kernel": "KERNEL.md inside archive/im_dead_kb.zip md5 884af3ed2c602d9d7e2811aa575111a6 == recovered/KERNEL_from_im_dead_kb_2026-05-20.md (byte-identical, zip-dated 2026-05-20)",
+  "index_records": 4305,
+  "index_sample": "independent deterministic sample stride 89 start 3 → 49/49 files match recorded MD5 (disjoint from R1's stride-107 41-file sample; combined distinct records verified across R1+R2 ≈ 90 + session-13 set)"
+ },
+ "coverage": {
+  "W1": {
+   "bytes": 407408,
+   "chars_raw": 400239,
+   "cr_removed": 6418,
+   "chars_norm": 393821,
+   "segments": 36,
+   "user": 17,
+   "contiguous_zero_gap": true,
+   "slice_text_match": true,
+   "concat_equals_normalized_source": true,
+   "user_indices": [
+    1,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    15,
+    17,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34
+   ]
+  },
+  "W2": {
+   "bytes": 927063,
+   "chars_raw": 922987,
+   "cr_removed": 8647,
+   "chars_norm": 914340,
+   "segments": 58,
+   "user": 32,
+   "contiguous_zero_gap": true,
+   "slice_text_match": true,
+   "concat_equals_normalized_source": true,
+   "user_indices": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    14,
+    15,
+    18,
+    20,
+    22,
+    24,
+    25,
+    27,
+    29,
+    31,
+    33,
+    35,
+    37,
+    39,
+    41,
+    43,
+    45,
+    47,
+    49,
+    51,
+    52,
+    53,
+    55,
+    56,
+    57
+   ]
+  },
+  "verbatim_files": "every user segment's head+tail present in operator_verbatim files, both windows; 0 missing",
+  "REC_A": "'GENERATE STATE CAPSULE AND THEN A.' verified at W1 assistant seg2 tail (byte 19654 in raw source)",
+  "REC_B": "R-LIST v0.1 paste verified at W1 assistant seg18 tail (byte 216190); K-2 attribution in seg19",
+  "assistant_sweep": "43 assistant segments swept; 55 embedded 'You said:' occurrences, all quotations of the inner 4_5_5.txt transcript (line-numbered grep output / parser code / thinking) — 0 further session-level operator inputs",
+  "MF3_attachment_event": "W2 seg16 tail '4.5.5.txt / txt / 2:15 PM' attachment chrome confirmed"
+ },
+ "mutations": {
+  "ids": "27 W1 + 34 W2, unique and contiguous (01..27 / 01..34)",
+  "tallies": {
+   "W1": "operative 24 · operative→superseded 1 (16[rec]) · accepted-unresolved 2 (11, 26)",
+   "W2": "operative 23 · accepted 6 · clarified 2 · superseded 3"
+  },
+  "probes_all_found": [
+   [
+    "U13 flagship no-parse",
+    "W2 byte 107525 (exact)"
+   ],
+   [
+    "U18 split question",
+    "W2 byte 150378"
+   ],
+   [
+    "U41 MODE canon 'DO NOT segment the file by version markers'",
+    "W2 x2 from byte 245563"
+   ],
+   [
+    "U39 rebirth 'rebirth not a rebuild'",
+    "W2 x4 from byte 333653; also W1 REC-B context"
+   ],
+   [
+    "U51 vis.vig",
+    "W2 byte 719192"
+   ],
+   [
+    "U56 'Authority placed per R-RT-QAF-01'",
+    "W2 byte 883423"
+   ],
+   [
+    "U57 'versioon 4.5.5 is the last working version'",
+    "W2 byte 899848"
+   ],
+   [
+    "R-RT-QAF-01",
+    "W2 x10"
+   ],
+   [
+    "R-RT-PD-01",
+    "W2 x7"
+   ],
+   [
+    "CONFIG B FIRM CANON",
+    "W2 x1"
+   ],
+   [
+    "REC-A directive",
+    "W1 byte 19654"
+   ],
+   [
+    "R-LIST v0.1 header",
+    "W1 byte 216190"
+   ],
+   [
+    "U32 'version 5 is pre-mosaic'",
+    "W1 x3 from byte 376732"
+   ],
+   [
+    "'Claude's response was interrupted.'",
+    "W1 x2 (169800, U14/seg16 region)"
+   ],
+   [
+    "U14 promote order",
+    "W1 x2 from byte 166107"
+   ],
+   [
+    "R-list v0.2 totals block",
+    "W1+W2, column-formatted: 14 categories sum=96, FIRM 92, CAND 3, OPEN 1 (whitespace-insensitive match — MF-4 confirmed)"
+   ],
+   [
+    "'Six-verb canon (no extension) held'",
+    "W1+W2, column-formatted (MF-4)"
+   ]
+  ]
+ },
+ "contradictions": {
+  "count": "9/9 (W1 CR-1..4, W2 C1..5) — both sides traced to source text",
+  "held_open": "CB-02/CB-04/CB-06 + OPEN-Q5..Q8 carried, not closed",
+  "omission_sweep": "correction-marker sweep over all operator segments: every marker-bearing turn (W2 U1,U11,U13,U15,U20,U41,U55) covered in replay; no unregistered corrective turn"
+ },
+ "persistence": {
+  "scope_searched": [
+   "artifacts/D-Maestro/canon",
+   "artifacts/D-Maestro/drafts",
+   "HYDRA",
+   "system",
+   "untracked",
+   "styles",
+   "root *.md/*.txt/*.json/*.yaml",
+   "sources/ws_*.yaml",
+   "code (full tree, text extensions)"
+  ],
+  "identifiers": [
+   "R-RT-QAF-01",
+   "R-RT-PD-01",
+   "Config B/CONFIG B",
+   "R-list/R-LIST"
+  ],
+  "result": "ZERO genuine occurrences outside session-13 transcripts and _PROVENANCE",
+  "false_positive_caught": "code/D-Maestro/maestro-ai-music-system-main/legacy/context.md line 545373 'Mini-Config Block' — substring match on 'Config B'; inspected, not a genuine reference (R2 finding: use word-boundary patterns in future sweeps)",
+  "v455_in_canon": "zero hits for v4.5.5/4.5.5 across canon/ text files — staleness ruling stands (zip + pdf still unsearchable, MF-5 stands)",
+  "MF6_K7K8": "drafts/maestro_v0.md lines 184-185: '| K7 | Arrangement | 6% |' / '| K8 | Commercial | 8% |' — conflict with session-13 Config B (K7=External viability, K8=Visual coherence) CONFIRMED",
+  "inv18": "claud2.txt: original INV-18 at byte 252444, Revised INV-18 at byte 255842 (both verbatim); installed skill maestro-forensic-transcript = SKILL.md only (single file), carries original-authority framing only — Revised INV-18 absent; provenance line 92 still says 'April 2026 session' (O-01 annotation pending)",
+  "projects_dir": "absent — Run It To Me export (O-12) still pending",
+  "untracked_newest": "untracked/website/'Are You Proud of Me Now (standalone) (1).html' 2026-07-19 01:53 — newest content touch tree-wide"
+ },
+ "not_reproduced_or_out_of_scope": [
+  "MF-2 stands: correction-density marker set still unpersisted; R2 did not re-derive density",
+  "c07 T14 recount impossible from corpus (originals in Cowork history) — as-recorded only",
+  "splitter script still absent from _PROVENANCE (O-14 stands); split validated by outputs, not re-run"
+ ]
+}

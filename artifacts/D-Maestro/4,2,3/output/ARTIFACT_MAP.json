@@ -1,0 +1,24 @@
+{
+  "generated": "2025-10-15 23:11:54",
+  "artifacts": {
+    "state": [
+      "versions.log",
+      "ust_prompt.valid.txt",
+      "verification_log.json",
+      "persona_usage.log",
+      "revenue_split.json",
+      "rights_package.json",
+      "remix_matrix.json",
+      "remix_pack/*",
+      "hpa_feedback.json",
+      "hpa_score.log",
+      "dsp_specs.json",
+      "dsp_outputs/*",
+      "metrics.hpa.v4.2.3.yaml",
+      "benchmark.audio_models.v4.2.3.md",
+      "E2E_TestPlan_v4.2.3.md",
+      "E2E_Result_Ingest_Template.md",
+      "Validation_Report_Template.md"
+    ]
+  }
+}

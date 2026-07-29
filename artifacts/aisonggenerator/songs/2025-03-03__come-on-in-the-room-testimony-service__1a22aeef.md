@@ -1,0 +1,67 @@
+# Come On In The Room (Testimony Service)
+
+> Song family: **Come On In The Room (Testimony Service)** · generation #1 in family · created 2025-03-03T19:38:32.967Z
+
+## Metadata
+
+- song_id: `1a22aeef-606f-4203-a7d0-ab060cd6cb1a`
+- id: `421079`
+- model: `V4`
+- created_at: `2025-03-03T19:38:32.967Z`
+- updated_at: `2025-03-03T19:41:43.559Z`
+- duration: `187.72`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `damo`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/bb2a7297-7d7c-4887-9c5b-4502979a3cf7.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/51590372-bb1b-4b5e-89d5-858d7759c3d2.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://mfile.erweima.ai/MWEyMmFlZWYtNjA2Zi00MjAzLWE3ZDAtYWIwNjBjZDZjYjFh
+
+## Style / Prompt (tags)
+
+```
+Traditional Gospel | Quartet Harmonies | Deep Soulful Vocals | Handclaps & Foot-Stomps | Preacher’s Interlude | Church Organ | Spiritual Build-Up
+```
+
+## Lyrics
+
+```
+[Intro – Church Organ & Deep Hums]  
+🎶 *Mmmmm, ohhh Lord…*  
+🎶 *Mmmm-mmm, come on… come on…*  
+
+[Verse 1 – Quartet Leads, Call & Response]  
+🎶 **(Lead Vocal)** *Come on... in the room… ohhhhhh*  
+🎶 **(Quartet Response - Low & Strong)** *Come on... in the room… mmmhmm*  
+🎶 **(Lead Vocal)** *Jesus is my doctor… writes out all my prescriptions…*  
+🎶 **(Quartet)** *He gives me all my medicine… in the room…*  
+
+[Preacher’s Testimony – Spoken Word]  
+*(Organ swells underneath, slow tambourine shakes.)*  
+*"Somebody out there knows… when the world couldn't help… when the doctors couldn't heal… when the weight got too heavy…"*  
+
+🎶 **(Lead Vocal Ad-lib)** *Ohhh, He will… He will…*  
+🎶 **(Quartet Response - Rising)** *Yes, He will… Yes, He will…*  
+
+[Verse 2 – Building Energy, Handclaps Start]  
+🎶 **(Lead Vocal)** *Tell my doctor I said come on in the room…*  
+🎶 **(Quartet)** *Come on in the room… mmmhmm*  
+🎶 **(Lead Vocal)** *Jesus is my doctor, He writes out all my prescriptions…*  
+🎶 **(Quartet)** *Gives me all my medicine in the room…*  
+
+(🎤 *Preacher: "If you know what I’m talkin’ about, let me hear you say YES Lord!"*)  
+
+[Bridge – Music Drops to Just Voices & Claps]  
+*(The room is electric, the spirit is moving!)*  
+🎶 *Mmmm, ohhhh… Come on…*  
+🎶 *Somebody say JESUS!*  
+
+👉🏾 **Part 1 Ends Here – Fades into the start of Part 2… 🎶🔥**
+```

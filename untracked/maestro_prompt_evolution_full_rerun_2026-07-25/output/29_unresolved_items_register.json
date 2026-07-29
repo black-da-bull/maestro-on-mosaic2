@@ -1,0 +1,17 @@
+[
+  {
+    "id": "OPEN-001",
+    "item": "Global cross-file chronology",
+    "reason": "The source set does not prove one exact total order across all files."
+  },
+  {
+    "id": "OPEN-002",
+    "item": "Corpus completeness",
+    "reason": "The O16E bundle is a sampled archive and cannot prove coverage of every historical workspace."
+  },
+  {
+    "id": "OPEN-003",
+    "item": "Semantic promotion",
+    "reason": "This run classifies and proposes; operator acceptance remains human-only."
+  }
+]

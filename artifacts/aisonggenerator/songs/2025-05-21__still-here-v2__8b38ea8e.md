@@ -1,0 +1,108 @@
+# Still Here v2
+
+> Song family: **Still Here v** · generation #1 in family · created 2025-05-21T08:36:38.393Z
+
+## Metadata
+
+- song_id: `8b38ea8e-06ba-44ff-9f27-981bb1e90d4a`
+- id: `1227457`
+- model: `V4.5`
+- created_at: `2025-05-21T08:36:38.393Z`
+- updated_at: `2025-05-21T08:38:30.027Z`
+- duration: `197.84`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `damo`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/374e1aea-aa99-44a9-9ae9-4ebfae3bf6c8.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/86212431-697b-4032-9182-07ee93e81081.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://mfile.erweima.ai/OGIzOGVhOGUtMDZiYS00NGZmLTlmMjctOTgxYmIxZTkwZDRh
+
+## Style / Prompt (tags)
+
+```
+Theme: Southern rainstorms
+broken devotion  
+Style: Trap Gospel
+Southern Gothic ballad  
+Mood: Melancholic and testimonial  
+Vocals: Preacher baritone
+ghost falsetto
+whisper harmony  
+FX: Rain loop
+vinyl crackle
+drag slowdown  
+Energy: Sermonic pacing
+builds to emotional climax
+```
+
+## Lyrics
+
+```
+Style: Gospel track in Houston Trill style: drastically slowed tempo, deep pitched-down vocals, dense gospel harmonies as lush
+Lyrics:
+[Intro, Whispered over Sparse 808 & Clean Guitar]
+(I’ve walked cracked highways — moonlight in my veins)
+(Found salvation in six-string refrains)
+(This gravel tongue — it burns like frost on pine)
+(Still here… unbroken… can you feel my spine?)
+
+[Verse 1, Minimalist Dre Pocket + Subtle Organ Pads]
+Raised on sawdust floors, where hymns lay cold
+Smoke and sweat baptize the worn and old
+Papa’s promise: stay rooted in clay
+But I heard heaven call in a four-string sway
+
+[Guitar Lick Echo – Ebmaj9 → Bb13]
+
+[Pre-Chorus 1, Off-Kilter Snare & Syncopated Vocal Chop]
+I straddled faith and fire — nights in two-step coils
+Beats in my blood, burning through my toils
+Loop this prayer, let the groove extol
+Ashes to anthem — I reclaim my soul
+
+(whisper chop: “reclaim my soul” — beats 2.2, 3.4, 4.1, 4.3)
+
+[Chorus 1, Gospel Choir Lift + Prince-Style Modulation]
+Still here — still breathin’, though roots run wide
+Still here — wild soul — I’ll never hide
+Every sub-kick thuds — a gospel heartbeat
+Every choir hum swears my purpose is complete
+(Hmmm) (Hallelu) (Jah)
+
+[Verse 2, Half-Time “Ghostly” Feel + Chord Leap]
+Brothers clashed like thunder in the pines
+One chased fortune, one wore the vine
+Walls grew high where hollers once sighed
+But my shadow sings — won’t be denied
+
+[Abrupt Leap: Ebmaj9 → Abmaj7]
+
+[Pre-Chorus 2, Double-Time Cadence Snap-Back]
+Daddy lit the fuse, earth forged my fight
+Drums in my chest — I rise from night
+Loops resurrect, I stand unbowed
+My grit and grace — my battle-cry loud
+
+(Snap to double-time on “I stand unbowed”)
+
+[Chorus 2, Hook Twist + Call-and-Response]
+Still here — still roarin’ in scar-etched skin
+Still here — wild spirit won’t rescind
+(Call:) (You hear it?) (Response:) Still here — soul scalded but grinnin’
+Each 808 thump baptizes the past
+Each gospel shout proclaims I’ll outlast
+(Amen) (Ghost choir echo)
+
+[Outro, Sparse Guitar + Whisper Fade]
+Roots in blood — flame in bone
+Still here — this story’s my own
+(whisper: Amen)
+(Tape wobble swell → silence)
+```

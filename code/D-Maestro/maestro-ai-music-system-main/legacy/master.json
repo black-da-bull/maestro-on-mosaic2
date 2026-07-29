@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "project_id": "momoney_os_v4_2_3",
+    "semver": "4.2.3",
+    "schema_version": "1.0",
+    "created_at": "2025-09-19T21:47:56.642611+00:00",
+    "run_id": "d2558aa4-24f7-4a74-84cf-ba2d40a5daee",
+    "source_mode": "unset",
+    "description": "Master manifest for Maestro OS runs. Tracks graph, artifacts, SMEs, V&V, HPA, DSP, and versions."
+  },
+  "graph": {
+    "nodes": {
+      "N7.x": {
+        "label": "Intake+SWOT",
+        "status": "pending"
+      },
+      "N8.x": {
+        "label": "ToT(3) Drafts",
+        "status": "pending"
+      },
+      "N12.x": {
+        "label": "UST Build",
+        "status": "pending"
+      },
+      "N13.x": {
+        "label": "Validators",
+        "status": "pending"
+      },
+      "N14.x": {
+        "label": "Rights & Remix Prep",
+        "status": "pending"
+      },
+      "N15.x": {
+        "label": "HPA + Round-Trip",
+        "status": "pending"
+      },
+      "N16.x": {
+        "label": "DSP Packaging",
+        "status": "pending"
+      },
+      "N10.x": {
+        "label": "Archive & Telemetry",
+        "status": "pending"
+      }
+    },
+    "edges": [
+      [
+        "N7.x",
+        "N8.x"
+      ],
+      [
+        "N8.x",
+        "N12.x"
+      ],
+      [
+        "N12.x",
+        "N13.x"
+      ],
+      [
+        "N13.x",
+        "N14.x"
+      ],
+      [
+        "N14.x",
+        "N15.x"
+      ],
+      [
+        "N15.x",
+        "N16.x"
+      ],
+      [
+        "N16.x",
+        "N10.x"
+      ]
+    ]
+  },
+  "song": {
+    "title": "",
+    "version": "v0",
+    "tags": [],
+    "summary_chars_limit": 1000,
+    "macro_chars_limit": 4800
+  },
+  "smes": {
+    "roster": [
+      "Critic",
+      "Stylist",
+      "Engineer",
+      "DevilsAdvocate",
+      "Therapist",
+      "PluginArchitect",
+      "RightsAgent",
+      "ModelBenchmarkAuditor"
+    ],
+    "policy": {
+      "round_robin": true,
+      "two_strikes_eject": true,
+      "consensus_required": true
+    },
+    "debate_log": []
+  },
+  "prompts": {
+    "ust_skeleton_ref": "os.maestro.momoney.knowledgeSpine.v4.2.3.md#USTF",
+    "show_summary": "",
+    "macro_lyrics_prompt": "",
+    "postprocess_notes": []
+  },
+  "validators": {
+    "macro": {
+      "checks": [
+        "structure_order",
+        "policy_compliance",
+        "length_bounds"
+      ],
+      "status": "pending",
+      "findings": []
+    },
+    "micro": {
+      "checks": [
+        "grammar",
+        "prosody",
+        "clarity",
+        "dedupe"
+      ],
+      "status": "pending",
+      "findings": []
+    },
+    "tactical": {
+      "checks": [
+        "USTF_order",
+        "phone_scene_bp_200_5k",
+        "exit_stanza",
+        "mono_sub_kick",
+        "hook_plate_reverb"
+      ],
+      "status": "pending",
+      "findings": []
+    },
+    "log_path": "verification_log.json"
+  },
+  "rights_and_remix": {
+    "rights_package_path": "rights_package.json",
+    "revenue_split_path": "revenue_split.json",
+    "remix_matrix_path": "remix_matrix.json",
+    "remix_pack_dir": "remix_pack/",
+    "notes": []
+  },
+  "hpa": {
+    "targets": [
+      "CLAP",
+      "FAD",
+      "MFCC",
+      "Motif",
+      "DFA",
+      "MOS"
+    ],
+    "metrics_file": "metrics.hpa.v4.2.3.yaml",
+    "hpa_feedback_file": "hpa_feedback.json",
+    "hpa_score_log": "hpa_score.log",
+    "status": "pending"
+  },
+  "dsp": {
+    "specs_file": "dsp_specs.json",
+    "outputs_dir": "dsp_outputs/",
+    "status": "pending"
+  },
+  "e2e": {
+    "testplan_file": "E2E_TestPlan_v4.2.3.md",
+    "result_ingest_template": "E2E_Result_Ingest_Template.md",
+    "validation_report_template": "Validation_Report_Template.md",
+    "status": "pending"
+  },
+  "artifacts": {
+    "state": [
+      "versions.log",
+      "ust_prompt.valid.txt",
+      "verification_log.json",
+      "persona_usage.log",
+      "revenue_split.json",
+      "rights_package.json",
+      "remix_matrix.json",
+      "remix_pack/*",
+      "hpa_feedback.json",
+      "hpa_score.log",
+      "dsp_specs.json",
+      "dsp_outputs/*",
+      "metrics.hpa.v4.2.3.yaml",
+      "benchmark.audio_models.v4.2.3.md",
+      "E2E_TestPlan_v4.2.3.md",
+      "E2E_Result_Ingest_Template.md",
+      "Validation_Report_Template.md"
+    ]
+  },
+  "telemetry": {
+    "manifest": [],
+    "last_telemetry_line": ""
+  }
+}

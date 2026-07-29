@@ -1,0 +1,110 @@
+{
+  "package": "maestro_v5b_coldstart",
+  "version": "v5-b.coldstart.1",
+  "generated_date": "2026-01-23",
+  "model_baseline": "GPT-5.2 Thinking",
+  "pinset": [
+    "MIGRATE.V5B.PIPELINE.PROMOTION.V1",
+    "PIN.V5B.COUNCIL.MATRIX.V1",
+    "PIN.V5B.EVIDENCE.CONTRACT.V1",
+    "PATCH.CREATIVE.UST.MAP.V1",
+    "WI.V5B.SCHEMA.V1"
+  ],
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "4a8b3bc9581859c7cf4f6dda21bb079bbb7e40fcaafc31089b0cb6559e876cd1",
+      "bytes": 545
+    },
+    {
+      "path": "README.md",
+      "sha256": "678d21cc73826221a22fb56ff0d840025337c919cc7dae849733af8a418bd967",
+      "bytes": 1816
+    },
+    {
+      "path": "SYSTEM_PROMPT.md",
+      "sha256": "e987e41e4837e5196379aed8204a7f63af79ca97419f79e6928a610d09c23e5f",
+      "bytes": 3929
+    },
+    {
+      "path": "docs/COUNCIL_MATRIX.md",
+      "sha256": "e7097f6ad02a43bcace2a27ebaf21d36350611cc0ea37e26bff134ce099a1765",
+      "bytes": 2063
+    },
+    {
+      "path": "docs/COUNCIL_PROTOCOL.md",
+      "sha256": "d1c889f7d4734eeedd1409ec826b82b460d7fe9fa9bc48ef2502f9cc138ecc9d",
+      "bytes": 2028
+    },
+    {
+      "path": "docs/DRY_RUN_EXAMPLE.md",
+      "sha256": "a433762115a5e33c372bfdf9abe57cb6d4d30903d0c4aa07756a23a26a2e810b",
+      "bytes": 793
+    },
+    {
+      "path": "docs/EVIDENCE_CONTRACT.md",
+      "sha256": "9d57939ea53f0b04001fa415c4a6181763a6362c99b7e685ce213f10c304ce31",
+      "bytes": 2510
+    },
+    {
+      "path": "docs/EXECUTABLE_CHAIN.md",
+      "sha256": "2ef939040f6a2d5d71233df6ca00ac8de83e0db3228d4b6b0f0de8ff86182aee",
+      "bytes": 2621
+    },
+    {
+      "path": "docs/KNOWLEDGE_SPINE.md",
+      "sha256": "4b3c4eca6482baa7397b84eeb8e97cb0d99315f059c32b15f0811f9b1ce76b9f",
+      "bytes": 7061
+    },
+    {
+      "path": "docs/LOG_TEMPLATES.md",
+      "sha256": "fdbac9b827977d0943e2f5e10436fd78553286e867fbd212c14353c2f3110a48",
+      "bytes": 3309
+    },
+    {
+      "path": "docs/MIGRATION_LOG.md",
+      "sha256": "5b7c4abe0e2136928087cdcc4be4f50c9b4c77d11ad7e67d77bdd35569ffd9ed",
+      "bytes": 808
+    },
+    {
+      "path": "docs/MODEL_PROFILE.md",
+      "sha256": "17e42c9e805c1797e64e83c1055375aad40ccedf3620d2cfa2daf6071912a874",
+      "bytes": 867
+    },
+    {
+      "path": "docs/MODULE_REGISTRY.md",
+      "sha256": "89042f1370331039ddb8a7dd7ac64d4f47cb38fb5d93c48903a7143fc60ec562",
+      "bytes": 1262
+    },
+    {
+      "path": "docs/TECHNICAL_UST_CANON.md",
+      "sha256": "bfe0b238a08edcd317b80ac0bf9be3a124029995770d91d83f8358ec5a441b5b",
+      "bytes": 6326
+    },
+    {
+      "path": "docs/TECHNICAL_UST_GOVERNANCE_ADDENDUM.md",
+      "sha256": "29b0c9ff38a0cf4ecdfe1f1325a16837f6e75da4574814b19fa01cc1c97099fb",
+      "bytes": 7667
+    },
+    {
+      "path": "docs/WORK_ITEM_SCHEMA.md",
+      "sha256": "1d3f73236a71058025651bcb7989dedb51fab32cf02f1fd089d620ea701a36bf",
+      "bytes": 701
+    },
+    {
+      "path": "runtime/context.md",
+      "sha256": "633f7ef3f26b40787a2fd1729d3129e8be71cd559079a35529c8dbbe5699b6b9",
+      "bytes": 802
+    },
+    {
+      "path": "runtime/solution.md",
+      "sha256": "a4dae1d28758a4452e8bef5278f51098938d6fd0076c186570d1dd6fdc7e61ef",
+      "bytes": 867
+    },
+    {
+      "path": "templates/CREATIVE_UST_TEMPLATE.txt",
+      "sha256": "e192d29da2a1b63173e7897355bf8ffcad001963fdf049ab4eb7854ca77701d3",
+      "bytes": 3421
+    }
+  ]
+}

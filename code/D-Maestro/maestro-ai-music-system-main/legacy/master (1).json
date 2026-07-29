@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "project_id": "momoney_os_v4_2_3",
+    "semver": "4.2.3",
+    "schema_version": "1.0",
+    "created_at": "2025-09-19T23:01:02.470203+00:00",
+    "run_id": "73644213-a664-4641-bb51-706ce17663be",
+    "source_mode": "B_fresh",
+    "description": "Master manifest for Maestro OS runs."
+  },
+  "graph": {
+    "nodes": {
+      "N7.x": {
+        "label": "Intake+SWOT",
+        "status": "done"
+      },
+      "N8.x": {
+        "label": "ToT(3) Drafts",
+        "status": "done"
+      },
+      "N12.x": {
+        "label": "UST Build",
+        "status": "done"
+      },
+      "N13.x": {
+        "label": "Validators",
+        "status": "done"
+      },
+      "N14.x": {
+        "label": "Rights & Remix Prep",
+        "status": "done"
+      },
+      "N15.x": {
+        "label": "HPA + Round-Trip",
+        "status": "done-pending-audio"
+      },
+      "N16.x": {
+        "label": "DSP Packaging",
+        "status": "done"
+      },
+      "N10.x": {
+        "label": "Archive & Telemetry",
+        "status": "done"
+      }
+    },
+    "edges": [
+      [
+        "N7.x",
+        "N8.x"
+      ],
+      [
+        "N8.x",
+        "N12.x"
+      ],
+      [
+        "N12.x",
+        "N13.x"
+      ],
+      [
+        "N13.x",
+        "N14.x"
+      ],
+      [
+        "N14.x",
+        "N15.x"
+      ],
+      [
+        "N15.x",
+        "N16.x"
+      ],
+      [
+        "N16.x",
+        "N10.x"
+      ]
+    ]
+  },
+  "song": {
+    "title": "Boy Icarus",
+    "version": "v1",
+    "tags": [
+      "alt-R&B",
+      "melancholic",
+      "auto-tune",
+      "minimalist",
+      "808",
+      "mythic"
+    ],
+    "summary_chars_limit": 1000,
+    "macro_chars_limit": 4800
+  },
+  "smes": {
+    "roster": [
+      "Critic",
+      "Stylist",
+      "Engineer",
+      "DevilsAdvocate",
+      "Therapist",
+      "PluginArchitect",
+      "RightsAgent",
+      "ModelBenchmarkAuditor"
+    ],
+    "policy": {
+      "round_robin": true,
+      "two_strikes_eject": true,
+      "consensus_required": true
+    },
+    "debate_log": [
+      {
+        "timestamp": "2025-09-19T23:01:02.471685+00:00",
+        "topic": "Initial metric inference (reconstructed)",
+        "axis_summary": {
+          "Flow density & breath count": 3.25,
+          "Rhyme symmetry across verses": 3.01,
+          "Pacing entropy vs internal consistency": 3.71,
+          "Line length variance vs impact retention": 2.9,
+          "Emotional polarity per stanza": 3.55,
+          "Visualizability of lines": 3.31,
+          "Beat adaptability & melodic scalability": 2.88,
+          "Imagery uniqueness": 3.51,
+          "Audience empathy activation": 2.85,
+          "Semantic overlap with archetypes": 3.41,
+          "Performative contrast potential": 2.9,
+          "Repeatability index (hook & chorus)": 2.93,
+          "Socio-political subtext density": 3.39,
+          "Flow-mode shift frequency": 3.96,
+          "Recursiveness of metaphors": 2.97,
+          "Narrative vs poetic ratio": 3.11,
+          "Call-and-response compatibility": 3.68,
+          "Memory activation likelihood": 4.13,
+          "Energy return curve": 3.61,
+          "Voice character assignability": 3.36
+        }
+      }
+    ]
+  },
+  "prompts": {
+    "ust_skeleton_ref": "os.maestro.momoney.knowledgeSpine.v4.2.3.md#USTF",
+    "show_summary": "A melancholic alt‑R&B story of ambition and collapse; auto‑tuned falsetto over sparse 808s, with concrete images (heat shimmer, ash, flare). A tight phone‑scene bridge contrasts the hook; exit collapses to a whisper.",
+    "macro_lyrics_prompt": "",
+    "postprocess_notes": []
+  },
+  "validators": {
+    "macro": {
+      "checks": [],
+      "status": "pending",
+      "findings": []
+    },
+    "micro": {
+      "checks": [],
+      "status": "pending",
+      "findings": []
+    },
+    "tactical": {
+      "checks": [],
+      "status": "pending",
+      "findings": []
+    },
+    "log_path": "verification_log.json"
+  },
+  "rights_and_remix": {
+    "rights_package_path": "rights_package.json",
+    "revenue_split_path": "revenue_split.json",
+    "remix_matrix_path": "remix_matrix.json",
+    "remix_pack_dir": "remix_pack/",
+    "notes": []
+  },
+  "hpa": {
+    "targets": [
+      "CLAP",
+      "FAD",
+      "MFCC",
+      "Motif",
+      "DFA",
+      "MOS"
+    ],
+    "metrics_file": "metrics.hpa.v4.2.3.yaml",
+    "hpa_feedback_file": "hpa_feedback.json",
+    "hpa_score_log": "hpa_score.log",
+    "status": "pending"
+  },
+  "dsp": {
+    "specs_file": "dsp_specs.json",
+    "outputs_dir": "dsp_outputs/",
+    "status": "pending"
+  },
+  "e2e": {
+    "testplan_file": "E2E_TestPlan_v4.2.3.md",
+    "result_ingest_template": "E2E_Result_Ingest_Template.md",
+    "validation_report_template": "Validation_Report_Template.md",
+    "status": "done-initial"
+  },
+  "artifacts": {
+    "state": [
+      "versions.log",
+      "ust_prompt.valid.txt",
+      "verification_log.json",
+      "persona_usage.log",
+      "revenue_split.json",
+      "rights_package.json",
+      "remix_matrix.json",
+      "remix_pack/*",
+      "hpa_feedback.json",
+      "hpa_score.log",
+      "dsp_specs.json",
+      "dsp_outputs/*",
+      "metrics.hpa.v4.2.3.yaml",
+      "benchmark.audio_models.v4.2.3.md",
+      "E2E_TestPlan_v4.2.3.md",
+      "E2E_Result_Ingest_Template.md",
+      "Validation_Report_Template.md"
+    ]
+  },
+  "telemetry": {
+    "manifest": [],
+    "last_telemetry_line": "Boy Icarus | v1 | summary:216 | macro:2101 | validators:PASS"
+  }
+}

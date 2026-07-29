@@ -1,0 +1,42 @@
+{
+  "verdict": "PARTIAL-PASS-IMPROVED",
+  "coverage": {
+    "source_members": 53,
+    "operator_events": 712,
+    "assistant_events": 518,
+    "material_prompt_events": 669,
+    "mechanical_parse_reports": 37
+  },
+  "closed_blockers": [
+    "local session export",
+    "who dat PDF",
+    "O16E sampled archive",
+    "Chimera direct evidence"
+  ],
+  "open_blockers": [
+    "global chronology remains partial",
+    "sample archive is not complete corpus"
+  ],
+  "false_pass_control": "No canon or runtime promotion performed.",
+  "intent_compiler": "operator-supplied skill loaded and applied",
+  "full_rerun": true,
+  "prior_generated_outputs_used_as_source_evidence": false,
+  "false_pass_blocks": [
+    {
+      "id": "OPEN-001",
+      "item": "Global cross-file chronology",
+      "reason": "The source set does not prove one exact total order across all files."
+    },
+    {
+      "id": "OPEN-002",
+      "item": "Corpus completeness",
+      "reason": "The O16E bundle is a sampled archive and cannot prove coverage of every historical workspace."
+    },
+    {
+      "id": "OPEN-003",
+      "item": "Semantic promotion",
+      "reason": "This run classifies and proposes; operator acceptance remains human-only."
+    }
+  ],
+  "reason": "Mechanical replay and event-level outputs completed for the frozen 53-member source set. Full-corpus PASS remains blocked by unresolved global chronology and inability to prove that the sampled archive is the entire historical corpus."
+}

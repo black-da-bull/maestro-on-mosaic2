@@ -1,0 +1,41 @@
+# SESSION13_EXPERT_ADJUDICATION — five bounded roles, convened for this gate only
+work_item: REPAIR.P1N.SESSION-TO-MAESTRO-BRIDGE.R1
+date: 2026-07-19
+roles:
+  forensic_provenance:
+    verdict: PASS
+    basis: >
+      Every patch carries source anchors re-verified this run. PATCH-01 payload is hash-bound
+      (md5 52381c1e13a25775f5491a7090a7f06d, 24223 chars, segment W1/i=20, raw header byte 244776);
+      W2 ratification anchors 883360/883423/884652 verified; cold-context regeneration returned the
+      IDENTICAL payload hash and identical anchors from persisted inputs alone.
+  maestro_architecture:
+    verdict: PASS_WITH_NOTES
+    basis: >
+      Target routing declares a system per mutation; unknowns stay UNRESOLVED (ATP pack, 8-verb
+      mandate). R-MS rows route to Maestro's destination spec BY REFERENCE without promoting
+      Mosaic-global law (corpus-division v0_3 no_global_promotion honored). The axis-set hold
+      (MAP vs END, DISC-12) is respected: no patch asserts an axis registry.
+    notes: ["PATCH-01 destination home (canon/ vs candidate subfolder) is operator's call — E-12."]
+  context_and_authority:
+    verdict: PASS
+    basis: >
+      All five patches are CANDIDATE/proposed rung; nothing claims acceptance. PATCH-01 preserves
+      quote-back/relay authority classes and export chrome flagged-not-removed. Judgment calls
+      (K-namespace, DISC-09 statement, density) are elicitation items with alternatives preserved,
+      not auto-applied. Structured outputs cite sources; no derived file outranks the transcripts.
+  falsifiability_qa:
+    verdict: PASS
+    basis: >
+      Test plan split per amendment 4.2: T1-T5 executed and PASS this run; T7 cold regeneration
+      executed and PASS (hash-identical); T6 defines the phase-2 objective gate (persistence-sweep
+      flip); D1-D4 carried as explicit runtime obligations, not failures. Split validator persisted
+      and self-tested against both windows with exact known censuses.
+  adversarial_simplification:
+    verdict: PASS_WITH_WARNING
+    basis: >
+      The patchset is five files, two of which are insert-only annotations; the payload is verbatim
+      source, not a rewritten synthesis — the doctrine-creep surface is minimal. The bridge produced
+      13 files total; that is the acceptable cost of the gate, but phase 2 must not add analysis
+      documents — it applies, verifies, and updates the three state files, nothing else.
+    warning: "If the decision packet grows follow-up essays instead of rulings, stop and prune."

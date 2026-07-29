@@ -1,0 +1,25 @@
+{
+ "work_item": "MAESTRO.O16.DERIVE-CURRENT-ARTIFACTS.R1 Stage 0",
+ "date": "2026-07-19",
+ "applied_artifacts": {
+  "reconstruction/replay-backed/session13/R_LIST_v0_2.md": "replay-backed historical snapshot (payload md5 52381c1e13a25775f5491a7090a7f06d)",
+  "artifacts/D-Maestro/canon/history/session13/README_POINTER.md": "pointer stub",
+  "artifacts/D-Maestro/canon/session13_runtime_rules.md": "QAF/PD rule cards (runtime scope)",
+  "_PROVENANCE/registers/version_trinity_v0_1.md": "trinity register",
+  "annotated_insert_only": [
+   "canon/Maestro_v5c_Canonical_Root.md",
+   "canon/Maestro_v5c_Canonical_Spine.md",
+   "canon/Maestro_v5c_Conflict_and_Open_Question_Register.md",
+   "canon/Maestro_v5c_Lineage_and_Delta_Ledger.md",
+   "drafts/maestro_v0.md"
+  ],
+  "registers_updated": [
+   "_PROVENANCE/LEDGER.md (M12-M15, DEC-09..17, V1-REPAIR)",
+   "_PROVENANCE/OPEN.md (O-13 closed; O-15/16/17 opened)",
+   "_PROVENANCE/STATE.md (v0.2)",
+   "_PROVENANCE/INDEX.json (4305->4319)"
+  ]
+ },
+ "hashes": "pre/post for annotated files in APPLY/annotation_hashes.json; new-file md5s in INDEX records",
+ "diff_class": "insert-only (verified programmatically at build; T8 re-verifies on-device)"
+}

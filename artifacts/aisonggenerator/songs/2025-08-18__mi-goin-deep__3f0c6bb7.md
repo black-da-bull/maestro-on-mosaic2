@@ -1,0 +1,162 @@
+# mi goin deep
+
+> Song family: **mi goin deep** · generation #3 in family · created 2025-08-18T17:23:46.066Z
+
+## Metadata
+
+- song_id: `3f0c6bb7-1c4e-40f0-ae25-5613d83df51c`
+- id: `2697979`
+- model: `V4.5`
+- created_at: `2025-08-18T17:23:46.066Z`
+- updated_at: `2025-08-18T17:25:26.372Z`
+- duration: `153.04`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `damo`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/d5c2fbe7-b2ef-45ba-83fd-23d86b84baf1.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/793c3b66-54f1-4908-a70f-ec5e07fc140f.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://mfile.erweima.ai/M2YwYzZiYjctMWM0ZS00MGYwLWFlMjUtNTYxM2Q4M2RmNTFj
+
+## Style / Prompt (tags)
+
+```
+his track is a narrative dialogue rooted in the swagger of Dancehall and the emotional depth of Southern Soul. It portrays a verbal confrontation between two personas
+a boastful male (Rude-Bwoy Flex) and a sharp
+dismissive female (Queen Rebuttal). The lyrical progression moves from external posturing to a final
+vulnerable act of internal resolution. The overall aesthetic is a fusion of analog grit with modern club production. The sound is anchored by a lo-fi
+tape-recorded acoustic session that seamlessly transitions into a polished
+high-energy Dancehall Trap mix.
+```
+
+## Lyrics
+
+```
+[Theory]
+[mode | phrygian dominant with blues scale overlays]
+[tonal center | A minor]
+[harmonic behavior | chromatic passing, gospel 7ths, dub space-echo, modal shifts]
+[meter | 4/4 with syncopated Dancehall riddim]
+[tempo | 110 BPM, disco groove with trap swing]
+[chord color | rich, analog gospel pads, vintage tape warmth]
+
+[Voice]
+[register | Gritty male vocalist (Rude-Bwoy) & Deep Contralto (Queen)]
+[delivery | Confident, aggressive Patois flow (male), emotionally intelligent and dismissive (female)]
+[expression | Sassy, assertive, with moments of vulnerable exhaustion]
+[articulation | AAVN, microtonal riffs, vocal fry, call-and-response shouts]
+
+[Style]
+[genre | Southern Soul, Dancehall Trap, Hip Hop, Afrobeat, Gospel]
+[intent | A battle of wits and emotional maturity between two former lovers]
+[texture | Lo-fi tape acoustic session meets wide, punchy club mix]
+[aesthetic | Raw emotion, dramatic tension, high-contrast urban landscape]
+[focus | Lyrical storytelling, dynamic vocal interplay, layered production]
+
+[Timbre]
+[drum tone | Lo-fi brushed drums, crisp trap hi-hats, deep 808s, wide tribal congas]
+[bass tone | Warm, resonant upright bass with a subtle slapline, tight in the center]
+[keyboard tone | Vintage Rhodes piano, soaring gospel pads, dubbed organ swell]
+[guitar tone | Lo-fi acoustic blues guitar with tape wobble FX]
+[fx palette | Dub echo trails, soft tape hiss, vinyl scratches, stereo shimmer pad, reverse snare]
+[vocal tone | Compressed, with doubling, reverb-drenched chop loops, and clean, prominent main vocals]
+
+[Performance]
+[execution | Duet battle, call-and-response, narrative arc from confrontation to resolution]
+[gesture | DJ drops, whispered intros, crowd noises, tape-stop FX]
+[rhythm handling | Polyrhythmic trap rolls + syncopated Dancehall riddim + disco swing backbeat]
+[touch | Gated reverb on snares, ping-pong delay on vocal phrases, filter sweeps on beat changes]
+
+[Post Production]
+[producer | DJ MoMoney x Suno v4.5 Fusion Mode (Southern Dancehall Trap Soul)]
+[vocal coach | Persona modulation for gospel-rap hybrid clarity, vocal fry for emotional grit]
+[recording setup | Vocal stems panned for stereo separation, reverb-drenched chop loops]
+[mixing | Wide, punchy mix. High-contrast vocals, sidechained bass, clean audio]
+[mastering | Target -11 LUFS, dynamic contrasts, lush chord progressions]
+
+[Intro – Club Ambience + Whisper Layer]
+
+(tribal congas wide-panned, dub swirl FX, soft tape wobble)
+
+"Yuh waan know how deep...?" (whispered tease)
+
+"MoMoney Studios... yuh done know!" (DJ drop)
+
+[Verse 1 – Rude-Bwoy Flex | disco-trap kit + tribal toms + slap bassline tight in center]
+
+"Mi nuh need fi talk, di gyal dem chat"
+"Seh mi deep like trench, an’ mi game real fat"
+"Gyal eye lock when mi step inna place"
+"Dem seh mi bring heat, mi nuh need no chase"
+"Mi roll like lion, mi pounce pon beat"
+"Di gyal waan test if di heart still beat"
+"Every likkle word come slick like oil"
+"Seh mi tek time, but mi mash up soil"
+"Wine pon mi name, dem a whisper low"
+"Seh mi touch reach parts weh man nuh know"
+"Mi style a danger, mi walk wid poise"
+"Gyal seh mi vibe like thunder noise"
+"Mi nuh boast—but mi nuh shy"
+"Mi ask dem gyal straight, ‘How deep mi lie?’"
+(DJ MoMoney pon di riddim!)
+(dub echo trail)
+
+[Verse 2 – Queen Rebuttal | filtered chop loop + airy dub stabs + stereo shimmer pad]
+
+"Mi hear dem tale—same old chat"
+"Big bwoy flex but mi done smell rat"
+"Di last one seh him a lion too"
+"Till mi find out seh him move like screw"
+"Yuh have di talk, an’ yuh flash di smile"
+"But mi know yuh type from mile to mile"
+"Di tongue sweet, but yuh soul feel cold"
+"Yuh nuh deh pon love, yuh just deh fi hold"
+"Mi nuh easily swayed by ring or chain"
+"A real queen nah fall fi gain"
+"So watch yuh step wid yuh brawlin' tone"
+"Cuz mi hear yuh verse—but mi walk alone"
+
+[Verse 3 – Call & Response | full riddim drop + stereo ping-pong delay]
+
+"Mi waan fi know—"
+"Why yuh chat so loud?"
+"Mi nuh lie…"
+"Mi read bwoy like cloud"
+"Mi real, mi true—"
+"Mi hear ‘bout yuh crew"
+"So how deep yuh go?"
+(808 cut to silence)
+"Mi bring storm, yuh feel di wave"
+"Mi too wise fi di slave behave"
+"Mi heart talk, mi vibe cyan fake"
+"Words nice, but mi nah tek bait"
+"Tell di truth now, or let it pass—"
+"Coulda been magic, but yuh move too fast"
+(DJ MoMoney pon di mixdown!)
+(reverse snare hit)
+
+[Verse 4 – Emotional Exit | dubbed organ swell + lo-fi strip down + stereo whisper FX]
+
+"Mi too drunk, mi head a spin"
+"Mi foot dem hurt, an’ mi heart nah win"
+"Mi too tired fi dis back-an-forth"
+"Mi worth more dan yuh sweet talk oath"
+"Last year? Maybe mi woulda stay"
+"But tonight mi walk away"
+"Di dance nice, di riddim clean"
+"But mi nah go fake what mi nah mean"
+"Don’t ask mi how deep mi go—"
+"Cuz mi gone long time, yuh jus’ slow"
+
+[Outro – Whisper Layer + Brand Drop | vinyl hiss + dub delay + crowd noise fx]
+
+"Big up DJ MoMoney... this one too deep"
+(slow tape winddown)
+(fade to silence)
+```

@@ -1,0 +1,70 @@
+{
+ "work_item": "REPAIR.P1N.BRIDGE-INPUT-PREFLIGHT.R1",
+ "date": "2026-07-19",
+ "schema": "v0.1",
+ "parse_results": {
+  "BRIDGE_INPUT_MANIFEST.yaml": "PASS",
+  "BRIDGE_OPEN_DECISIONS.yaml": "PASS",
+  "BRIDGE_PUBLIC_SURFACE_HOLD.yaml": "PASS",
+  "BRIDGE_SCOPE_DELTA.yaml": "PASS",
+  "P1_NARROW_PERSISTENCE_SEARCH.repaired_v2.yaml": "PASS",
+  "SESSION13_MUTATION_LEDGER_v0_1.jsonl": "PASS",
+  "SESSION13_EXPERT_ADJUDICATION.yaml": "PASS",
+  "SESSION13_IMPACT_GRAPH.yaml": "PASS",
+  "SESSION13_STALENESS_MAP.yaml": "PASS",
+  "SESSION13_TARGET_ROUTING.yaml": "PASS",
+  "SESSION13_TEST_PLAN.yaml": "PASS",
+  "P1_NARROW_COVERAGE.json": "PASS",
+  "P1_NARROW_MUTATION_AUDIT.jsonl": "PASS",
+  "P1_NARROW_CONTRADICTION_AUDIT.yaml": "PASS",
+  "P1_NARROW_VERDICT.yaml": "PASS",
+  "parse_results.json": "PASS",
+  "BRIDGE_PREFLIGHT_VERDICT.yaml": "PASS"
+ },
+ "record_counts": {
+  "SESSION13_MUTATION_LEDGER_v0_1.jsonl": 62,
+  "P1_NARROW_MUTATION_AUDIT.jsonl": 28
+ },
+ "hashes": {
+  "BRIDGE_INPUT_MANIFEST.yaml": "651ccb2ac3d31456b8424911b474a573",
+  "BRIDGE_OPEN_DECISIONS.yaml": "3f88e5a8c502cd79f01458204f907e5e",
+  "BRIDGE_PUBLIC_SURFACE_HOLD.yaml": "029661642b4732faa00b58edfa0f3a65",
+  "BRIDGE_SCOPE_DELTA.yaml": "46aa15a329bc85f22139f3b94ced3a2d",
+  "P1_NARROW_PERSISTENCE_SEARCH.repaired_v2.yaml": "d8701da7b7a4d90b37006e93f91e529c",
+  "SESSION13_MUTATION_LEDGER_v0_1.jsonl": "a0fd6316f76571b3fa66eb0213c84d63",
+  "SESSION13_EXPERT_ADJUDICATION.yaml": "32fffecbc9863f9138410ac593419535",
+  "SESSION13_IMPACT_GRAPH.yaml": "d824bbe59cf86d58a67d8d0b56f8473b",
+  "SESSION13_STALENESS_MAP.yaml": "157ee55fce629b6c60f3079e8dc55046",
+  "SESSION13_TARGET_ROUTING.yaml": "6e6a71becde3502fa9a071d17e7c2615",
+  "SESSION13_TEST_PLAN.yaml": "206072888afddc6ea2522c9af45ed6c1",
+  "P1_NARROW_COVERAGE.json": "741b3d2b1813082e9e0edb1e47fe8076",
+  "P1_NARROW_MUTATION_AUDIT.jsonl": "22c44141ac72ba75e374d12351efbde5",
+  "P1_NARROW_CONTRADICTION_AUDIT.yaml": "d3db28f0a1856ff9098adb93715371db",
+  "P1_NARROW_VERDICT.yaml": "762ad38c5a7cd8bdb438e67316fabfb2",
+  "parse_results.json": "308190015de91d8432fdd9fa7996d876",
+  "BRIDGE_PREFLIGHT_VERDICT.yaml": "8bc2a1f4ee146efe5fe0f17c27cfb6a7"
+ },
+ "known_invalid_original_excluded": {
+  "P1_NARROW_PERSISTENCE_SEARCH.yaml": "preserved untouched; parse from repaired_v2 copy (PASS)"
+ },
+ "repairs": [
+  "repaired_v2: 2 finding scalars folded; interpretation key promoted; skill_md_check folded",
+  "BRIDGE_PUBLIC_SURFACE_HOLD.yaml: 5 scalars folded (colon/quote-in-plain-scalar defects caught by this gate \u2014 same defect class as R1's file)",
+  "BRIDGE_PREFLIGHT_VERDICT.yaml: claims_verified scalars folded (same defect class, caught by own gate)"
+ ],
+ "mutation_ledger": {
+  "records": 61,
+  "W1": 27,
+  "W2": 34,
+  "unparsed_status": 0,
+  "note": "raw inline status strings verbatim; replay footers authoritative for status taxonomy"
+ },
+ "mutation_audit_checks": {
+  "P1_NARROW_MUTATION_AUDIT.jsonl": "28 audit-CHECK records, not the 61 mutations; manifest carries the correction"
+ },
+ "clean_load_test": {
+  "parsed_ok": 17,
+  "failed": 0,
+  "verdict": "PASS"
+ }
+}

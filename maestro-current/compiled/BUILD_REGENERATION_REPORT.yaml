@@ -1,0 +1,27 @@
+work_item: REPAIR.O16D.VV.R1 (supersedes the O16C-era record in place; content preserved below)
+o16c_record:
+  work_item: MAESTRO.O16C.MATERIALIZE-INHERITED-CANON.R1
+  A9a_packaging: PASS (byte-identical bundle from clean dir, run 2026-07-19)
+  A9b_derivation: >-
+    PASS for the materialized topology — compile_current.py takes the hash-verified predecessor
+    input, applies the deterministic MAP-to-PER transform, and emits byte-stable output;
+    fails closed on unmapped address.
+  scope_note: >-
+    A9b covers the compiled topology artifacts; prose files remain template-packaged and are
+    declared as such (their derivation is the recorded ruling chain, not a text transform).
+repair_note: >-
+  This file was BLOCK-01 of REVIEW.O16D.VV.R1 — the original emission placed an unquoted colon
+  inside a plain scalar and did not parse. Repaired with folded scalars, content unchanged.
+  The parse gate that missed it (validate_bundle.py) was expanded to recursively parse every
+  structured file in the bundle (BLOCK-02 companion fix); this file is now inside that gate.
+v0_5_regeneration:
+  work_item: REPAIR.O16D.VV.R1
+  A9a_packaging: >-
+    verified by procedure, not by stored timestamp (keeps the bundle deterministic): run
+    build/build_maestro_current.py into a clean directory; the v2 builder self-checks — exit 0
+    attests every regenerated member (all inventory classes + MANIFEST.yaml) is byte-identical
+    to the source bundle; exit 3 prints a drift report and the bundle is NOT regenerable.
+  coverage: >-
+    v2 regenerates the FULL member set (13 runtime docs from templates + build/, compiled/,
+    fixture/ trees + deterministic MANIFEST from build/manifest_meta.yaml), closing the v1 gap
+    of 11-docs-only at version v0.2.

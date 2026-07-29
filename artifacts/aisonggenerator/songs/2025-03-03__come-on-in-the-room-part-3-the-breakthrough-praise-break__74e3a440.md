@@ -1,0 +1,77 @@
+# Come On In The Room (Part 3: The Breakthrough & Praise Break)
+
+> Song family: **Come On In The Room (Part 3: The Breakthrough & Praise Break)** · generation #4 in family · created 2025-03-03T20:22:02.872Z
+
+## Metadata
+
+- song_id: `74e3a440-0bc0-4365-afbd-aa9cf35355d5`
+- id: `421384`
+- model: `V4`
+- created_at: `2025-03-03T20:22:02.872Z`
+- updated_at: `2025-03-03T20:23:51.876Z`
+- duration: `117.00`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `damo`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/e26bb2d1-e847-48a2-9774-b3cfb874d886.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/1e503680-fa1f-4870-840c-32a0e009bbe2.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://mfile.erweima.ai/NzRlM2E0NDAtMGJjMC00MzY1LWFmYmQtYWE5Y2YzNTM1NWQ1
+
+## Style / Prompt (tags)
+
+```
+High-Energy Gospel Fusion | Blues Stomp | UK Drill Percussion | G-Funk Synths | Trap/Houston 808s | Full Choir Shout | Praise Break Celebration
+```
+
+## Lyrics
+
+```
+[Intro – Silence, Then a Knock at the Door]  
+🎤 *(Knock. Knock. Knock.)*  
+🎤 **(Narrator – Whispering, Intense)**  
+*"There came a knock at the door…"*  
+
+🎤 **(Daughter’s Voice – Breathless, Overwhelmed)**  
+*"Who is it?!"*  
+
+🎤 **(Deep, Calm Voice from Outside)**  
+*"Little girl… I’m the doctor."*  
+
+🎶 *(Organ explodes! Choir gasps! Blues stomp kicks in!)*  
+
+🎤 **(Preacher’s Voice – Triumphant, Full of Power)**  
+*"Somebody shout HALLELUJAH!"*  
+
+[Chorus – Full Choir Explosion, Stomp-Clap Gospel Bounce]  
+🎶 *Come on in the room!* *(Come on in the room!)* *(808 slides hit, hi-hats roll!)*  
+🎶 *Jesus is my doctor!* *(Writes out all my prescriptions!)*  
+🎶 *He gives me all my medicine… in the room!* *(Claps hit heavy!)*  
+
+[Verse – Call & Response, Energy Rising]  
+🎶 *Ohhh, there’s joy in the room!* *(JOY!)*  
+🎶 *Ohhh, there’s healing in the room!* *(HEALING!)*  
+🎶 *Ohhh, there’s power in the room!* *(POWER!)*  
+
+🎶 *(Trap claps + foot-stomping blues rhythm, bass slides underneath!)*  
+
+[Bridge – Preacher’s Shout, Music Drops, Choir Keeps Praising]  
+🎤 *"Somebody out there knows—when you call on JESUS, He’ll SHOW UP!"*  
+
+🎶 *(Choir hums, tambourine shakes, deep bass holds the moment.)*  
+*(UK drill-style snare rolls build tension... then BOOM! Full beat drop!🔥)*  
+
+[Final Explosion – Full Band, Full Choir, High-Energy Fusion!]  
+🎶 **(Lead Vocal - Testifying, Big Trap Drop!🔥)** *Come on in the room!*  
+🎶 **(Choir, Heavy UK Drill Bounce, Hi-Hats Rolling!🔥🔥)** *Come on in the room!*  
+🎶 **(Lead Vocal, 808s Shaking the Floor!🔥🔥🔥)** *Jesus is my doctor, writes out all my prescriptions…*  
+🎶 **(Choir, West Coast Synths Holding It Down!🔥🔥🔥🔥)** *Gives me all my medicine in the room!*  
+
+🔥🔥🔥 **(Final note holds, choir fades into humming, organ swells… foot-stomps & hi-hats echo out like church doors closing.)**
+```

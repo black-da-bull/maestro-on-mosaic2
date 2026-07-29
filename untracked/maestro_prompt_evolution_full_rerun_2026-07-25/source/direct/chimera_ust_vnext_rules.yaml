@@ -1,0 +1,70 @@
+version: 1.0
+engine: chimera-indigo
+mode: conversation
+batching:
+  max_files_per_batch: 3
+  continue_token: "c"
+  streaming: false
+
+formats:
+  container:
+    allowed: ["[Key | Value]", "[Section | {bars} | {perf} | {fx}]"]
+    stray_prose: forbid
+  commas_outside_quotes: forbid
+
+ust_vnext:
+  roadmap:
+    content: "Intro --> Verse One --> Pre Chorus --> Chorus --> Verse Two --> Bridge --> Outro Part One --> Outro Part Two --> Climax --> Breakdown --> Final Rhodes Fade"
+    descriptors: forbid
+  lyrics_block:
+    headers_require:
+      - bars
+      - performance_notes
+      - fx_notes
+    tactical_scope:
+      - performance_cues
+      - production_notes
+      - fx
+      - timing
+      - staging
+      - atomic_controls
+  lyrics_lock:
+    mutate_inside_quotes: forbid
+    allow_flags: true
+
+performance_casting:
+  female_only: true
+  narrator_voice: "same performer via formant/pitch"
+  chorus_quartet: "self-stacked"
+
+character_bands:
+  ust: {min: 4950, max: 4995}
+  show_summary: {min: 950, max: 995}
+  persona_bio: {min: 1950, max: 1995}
+
+sme_round_robin:
+  matrix: "Morris Q1..Q16, scale 0.0..5.0"
+  output:
+    - "scores_table"
+    - "constructive_actions_per_domain"
+  domains:
+    - performance
+    - production
+    - post_production
+    - arrangement
+    - mix
+    - delivery
+    - safety_frame
+  lyric_policy:
+    rewrite: forbid
+    critique: allow
+  aggregation: "run only after all individual passes"
+
+acceptance_checks:
+  - "bracket_syntax_valid"
+  - "roadmap_is_timeline_only"
+  - "tactical_in_section_headers"
+  - "character_band_respected"
+  - "lyrics_locked_intact"
+  - "female_only_cast_enforced"
+  - "sme_outputs_constructive_and_scored"

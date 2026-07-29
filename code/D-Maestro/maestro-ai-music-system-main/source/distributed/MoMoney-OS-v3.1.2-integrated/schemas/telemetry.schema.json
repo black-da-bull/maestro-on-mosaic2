@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "telemetry.json",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "macro_chars": {
+      "type": "integer"
+    },
+    "summary_chars": {
+      "type": "integer"
+    },
+    "validator_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail"
+      ]
+    },
+    "key_fixes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mix_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "timings_ms": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "title",
+    "version",
+    "macro_chars",
+    "summary_chars",
+    "validator_status"
+  ]
+}

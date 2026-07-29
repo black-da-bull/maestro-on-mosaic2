@@ -1,0 +1,62 @@
+{
+  "snapshot_version": "maestro-os-v4.x-baseline-001",
+  "created_at_local": "2025-12-13 22:16:58 -0600",
+  "root": "/mnt/data/maestro_v4_baseline_snapshot",
+  "files": [
+    {
+      "path": "BOOTSTRAP_USER_PROMPT.md",
+      "bytes": 484,
+      "sha256": "e7d26a5036bf5b353663a76c6e01f03dfb3964d89a118a6aa90768a8993a8938"
+    },
+    {
+      "path": "CONCEPT_DOC.md",
+      "bytes": 3024,
+      "sha256": "53fcb3b23eca0bf32ca465aaa9f9ca31c09ba681ce8152b29cccf158cb690eb3"
+    },
+    {
+      "path": "PERSONA_PACK.md",
+      "bytes": 710,
+      "sha256": "5c9aee45e5f8c6e8846e727704d874f09ccdb0bc93da899ebd4819b864775b86"
+    },
+    {
+      "path": "SONG_INTAKE_USER_PROMPT.md",
+      "bytes": 547,
+      "sha256": "376295ad388e36126028ea6eb7596a1431cb1e6fc27d0925651f04f5f887b628"
+    },
+    {
+      "path": "SYSTEM_PROMPT_BASELINE.md",
+      "bytes": 1722,
+      "sha256": "09aed441113f22f63dc5f11a7ad9906665aadfae5e6a7354bf4c966d437e2215"
+    },
+    {
+      "path": "TEST_PLAN.md",
+      "bytes": 3863,
+      "sha256": "7911d199a948829e69faa256de450af52dd9af4561682fb5fae5e5f040e72cd1"
+    },
+    {
+      "path": "fixtures/TC-001.json",
+      "bytes": 440,
+      "sha256": "b1b6d63618d5cb6b48696d6db7449ec5d2e3d8a9ad47c5353f7d846ae5c28715"
+    },
+    {
+      "path": "fixtures/TC-002.json",
+      "bytes": 435,
+      "sha256": "d1f981f9a73da52abcef726419e61a6d63fe3481b5cbd9ec4fb5a901ba5469e0"
+    },
+    {
+      "path": "fixtures/TC-003.json",
+      "bytes": 369,
+      "sha256": "05f9a50a4ddbdf5c12fcb749658f709ef98e53900cdd6c717c3a18f1f41ed1f2"
+    },
+    {
+      "path": "fixtures/TC-004.json",
+      "bytes": 350,
+      "sha256": "71b48d4f794a8d8af8f9dd8e3126b983be8478dabcce68244aeb53a6c6819e3e"
+    },
+    {
+      "path": "fixtures/TC-005.json",
+      "bytes": 411,
+      "sha256": "ddd576bccc563163f53a619cd4c06e5c5ba7426adbded220441a99034a5cc847"
+    }
+  ]
+}

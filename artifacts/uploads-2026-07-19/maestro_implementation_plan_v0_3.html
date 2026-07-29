@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maestro on Mosaic — Implementation Plan v0.3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#100F14; --bg2:#16151D; --bg3:#1E1C27; --ink:#ECE6DC; --dim:#A49DA9; --faint:#79727F;
+    --line:#2A2834; --line2:#393647;
+    --gold:#E0A33E; --gold-s:#F0C97A;        /* soul / Maestro / creative */
+    --steel:#8190E6; --steel-s:#AEB7F0;       /* compiler / Technical UST */
+    --violet:#AC8AD8;                          /* Mosaic substrate */
+    --green:#6FB58C;                           /* proven / pass */
+    --rose:#D98A86;                            /* phantom / loss / parked */
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{animation:none!important;transition:none!important}}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;
+    font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:var(--steel-s);text-decoration:none;border-bottom:1px solid var(--line2)}
+  a:hover{color:var(--gold-s)}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:600;line-height:1.12;letter-spacing:-.01em}
+  .mono{font-family:'JetBrains Mono',monospace}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint)}
+  code{font-family:'JetBrains Mono',monospace;font-size:.86em;background:var(--bg3);color:var(--gold-s);padding:1px 5px;border-radius:4px;border:1px solid var(--line)}
+  pre{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--steel);border-radius:8px;
+    padding:16px 18px;overflow:auto;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.55;color:#D7D2DD}
+  pre .c{color:var(--faint)}        /* comment */
+  pre .k{color:var(--steel-s)}      /* keyword */
+  pre .s{color:var(--green)}        /* string */
+  pre .n{color:var(--gold-s)}       /* number/name */
+
+  /* hero */
+  .hero{border-bottom:1px solid var(--line);padding:74px 0 54px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(900px 380px at 78% -8%, rgba(129,144,230,.10), transparent 60%),
+    radial-gradient(820px 420px at 8% 8%, rgba(224,163,62,.085), transparent 62%);pointer-events:none}
+  .hero .wrap{position:relative}
+  .kicker{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:26px}
+  .pill{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;border:1px solid var(--line2);
+    border-radius:999px;padding:4px 11px;color:var(--dim)}
+  .pill.v{color:var(--gold-s);border-color:rgba(224,163,62,.4)}
+  h1.title{font-size:clamp(40px,7vw,78px);font-weight:900;margin:0 0 8px;letter-spacing:-.02em}
+  h1.title .on{font-weight:400;font-style:italic;color:var(--dim)}
+  .creeds{display:flex;flex-wrap:wrap;gap:10px 26px;margin:22px 0 10px}
+  .creed{font-family:'Fraunces',serif;font-style:italic;font-size:19px;color:var(--gold-s)}
+  .creed::before{content:"“"}
+  .creed::after{content:"”"}
+  .northstar{max-width:780px;color:var(--dim);font-size:17px;margin-top:14px}
+  .northstar b{color:var(--ink);font-weight:600}
+  .lam{margin-top:30px;font-size:13.5px;color:var(--faint);border-top:1px dashed var(--line2);padding-top:18px}
+  .lam b{color:var(--steel-s);font-weight:500}
+
+  /* toc */
+  .toc{border-bottom:1px solid var(--line);background:var(--bg2)}
+  .toc .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2px 26px;padding:22px 26px}
+  .toc a{border:0;color:var(--dim);font-size:14px;display:flex;gap:10px;padding:5px 0}
+  .toc a:hover{color:var(--gold-s)}
+  .toc a .num{font-family:'JetBrains Mono',monospace;color:var(--faint);font-size:12px}
+
+  section{padding:54px 0;border-bottom:1px solid var(--line)}
+  .sechead{display:flex;align-items:baseline;gap:16px;margin-bottom:8px}
+  .sechead .num{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--gold);padding-top:6px}
+  h2{font-size:clamp(26px,3.6vw,38px);font-weight:600;margin:0}
+  .lede{color:var(--dim);font-size:17px;max-width:820px;margin:10px 0 26px}
+  h3{font-size:21px;margin:30px 0 10px;color:var(--ink)}
+  h4{font-size:15px;margin:20px 0 6px;font-weight:600;color:var(--steel-s);font-family:'Inter',sans-serif;letter-spacing:0}
+  p{margin:0 0 14px}
+  .muted{color:var(--dim)}
+
+  ul.clean{list-style:none;padding:0;margin:0 0 14px}
+  ul.clean>li{padding:8px 0 8px 22px;position:relative;border-bottom:1px solid var(--line)}
+  ul.clean>li::before{content:"▸";position:absolute;left:0;color:var(--steel);font-size:13px;top:9px}
+  ul.clean>li:last-child{border-bottom:0}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:760px){.grid2,.grid3{grid-template-columns:1fr}}
+
+  .card{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card .t{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+  .card h4{margin-top:0}
+
+  .tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.06em;
+    border-radius:5px;padding:2px 7px;margin:2px 4px 2px 0;border:1px solid var(--line2);color:var(--dim);white-space:nowrap}
+  .tag.proven{color:var(--green);border-color:rgba(111,181,140,.4)}
+  .tag.diag{color:var(--rose);border-color:rgba(217,138,134,.4)}
+  .tag.spec{color:var(--steel-s);border-color:rgba(129,144,230,.4)}
+  .tag.root{color:var(--gold-s);border-color:rgba(224,163,62,.45)}
+  .tag.phantom{color:var(--rose);border-color:rgba(217,138,134,.4)}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);font-weight:500}
+  td.mono,th.mono{font-family:'JetBrains Mono',monospace;font-size:12.5px}
+  tr:hover td{background:rgba(255,255,255,.012)}
+
+  .callout{border:1px solid var(--line2);border-left:3px solid var(--gold);background:linear-gradient(90deg,rgba(224,163,62,.05),transparent 70%);
+    border-radius:8px;padding:16px 18px;margin:18px 0}
+  .callout.steel{border-left-color:var(--steel);background:linear-gradient(90deg,rgba(129,144,230,.05),transparent 70%)}
+  .callout.rose{border-left-color:var(--rose);background:linear-gradient(90deg,rgba(217,138,134,.05),transparent 70%)}
+  .callout .lbl{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:6px}
+
+  figure{margin:22px 0}
+  figcaption{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--faint);margin-top:8px;letter-spacing:.04em}
+  .fig{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:20px}
+  svg{display:block;width:100%;height:auto}
+  .sv-l{font-family:'JetBrains Mono',monospace;font-size:11px;fill:var(--dim)}
+  .sv-t{font-family:'Inter',sans-serif;font-size:12.5px;fill:var(--ink)}
+  .sv-tb{font-family:'Fraunces',serif;font-size:14px;fill:var(--ink);font-weight:600}
+
+  footer{padding:46px 0 80px}
+  .foot-note{color:var(--faint);font-size:13px;max-width:760px}
+  .seam{height:1px;background:var(--line);margin:0}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">
+      <span class="pill v">v0.3 — grounded</span>
+      <span class="pill">laminated onto v0.2 · v0.2 preserved</span>
+      <span class="pill mono">reconstruction contract</span>
+    </div>
+    <h1 class="title">Maestro <span class="on">on</span> Mosaic</h1>
+    <div class="eyebrow">Implementation plan &amp; cumulative reconstruction · audio-visual canon · audio-only build scope</div>
+    <div class="creeds">
+      <span class="creed">Your vision. Our mission.</span>
+      <span class="creed">Yesterday's world-class is today's baseline.</span>
+    </div>
+    <p class="northstar">Maestro exists to <b>teach an AI soul</b> — specifically the Black-Southern-gospel soul that <b>causes emotion</b>, that testifies — so the music lives up to the legacy it carries rather than cheapening it. Everything below is scaffolding. The soul is the reason the scaffolding exists.</p>
+    <div class="lam">
+      <b>What this is.</b> A single current view of the whole workspace, folded from the dev-session record and the recovered source artifacts. It supersedes the v0.2 plan without replacing it — v0.2 is preserved beneath this layer. Every claim is marked <span class="tag proven">PROVEN</span> <span class="tag spec">SPECIFIED</span> <span class="tag diag">DIAGNOSTIC</span> <span class="tag root">ROOT</span> or <span class="tag phantom">PHANTOM</span>. All AI proposals here are PROPOSAL-class, awaiting your accept / correct / force-close.
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="#journey"><span class="num">01</span> Reconstruction journey</a>
+    <a href="#canon"><span class="num">02</span> The canon</a>
+    <a href="#arch"><span class="num">03</span> Architecture</a>
+    <a href="#mosaic"><span class="num">04</span> Mosaic substrate</a>
+    <a href="#gov"><span class="num">05</span> Governance &amp; soul</a>
+    <a href="#runtime"><span class="num">06</span> Runtime</a>
+    <a href="#strat"><span class="num">07</span> Version stratigraphy</a>
+    <a href="#code"><span class="num">08</span> Code to review</a>
+    <a href="#claudemd"><span class="num">09</span> CLAUDE.md additions</a>
+    <a href="#proceed"><span class="num">10</span> How to proceed</a>
+    <a href="#nulls"><span class="num">11</span> Parked nulls</a>
+  </div>
+</nav>
+
+<!-- ============ 01 JOURNEY ============ -->
+<section id="journey">
+  <div class="wrap">
+    <div class="sechead"><span class="num">01</span><h2>The reconstruction journey</h2></div>
+    <p class="lede">Treated as one continuous workspace, not isolated chats. Below: each epoch on its own, then the cumulative arc — <span class="mono">(end&nbsp;state) − (root&nbsp;input) = work</span>.</p>
+
+    <h3>Per-epoch summary</h3>
+    <table>
+      <thead><tr><th style="width:20%">Epoch</th><th>What happened</th><th class="mono" style="width:16%">Yield</th></tr></thead>
+      <tbody>
+        <tr><td><b>Ontology &amp; ground-truth</b></td><td>Read the diagrams + substrate files as authoritative intent. Established Maestro = compiler that <em>runs</em>; Mosaic = the cognitive substrate beneath it. Retired the four-co-equal-planes frame (those are the v.0 <em>internal</em> architecture, not the system shape).</td><td class="mono">ontology fixed</td></tr>
+        <tr><td><b>Creeds &amp; north-star</b></td><td>Recovered the two creeds from the v.0 diagram and the purpose: teach AI gospel-soul that causes emotion. Architecture re-read as scaffolding for soul.</td><td class="mono">purpose = ROOT</td></tr>
+        <tr><td><b>Fold-and-laminate</b></td><td>Applied stratigraphic overlay across the version spine. Surfaced <b>F1</b>: no stratum ever deprecated the v4.5.5 execution culture; the v0 rebirth implicitly dropped it; by no-implicit-deprecation it is still canon.</td><td class="mono">F1 recovered</td></tr>
+        <tr><td><b>Substrate &amp; v5 loss</b></td><td>Named the v5 loss precisely — <em>phantom-LOCKED</em>: the multi-file split lost track of which addresses were in which state. Derived the shipping law: no distribution without linkage.</td><td class="mono">loss named</td></tr>
+        <tr><td><b>Governance recovery</b></td><td>Recovered the real Song Excellence Matrix from <em>source</em> (not the generated pack): 12 weighted criteria, composite ≥70 origin → ≥97.5 (CR-009). Separated it from the 20-metric Boy Icarus council and the v5-c/v0 K1–K8 admissibility.</td><td class="mono">3 systems split</td></tr>
+        <tr><td><b>Q1–Q16 + lineage</b></td><td>Chased Q1–Q16 across four sources; resolved it as a <b>phantom</b> (a Chaos-Decomposer scan-target pointing at an artifact that does not exist in the corpus). Recovered the v3.0g Creative OS and the Chaos-Decomposer v1.6 methodology ancestry along the way.</td><td class="mono">phantom + ancestry</td></tr>
+        <tr><td><b>v4.5.5 verbatim</b></td><td>Obtained the actual 4.5.5 monolith (previously only the 4.5.2 file + the label). Folded its production-specialist roster, the new KB sections, and a real "Stay Away" execution trace.</td><td class="mono">proven line grounded</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Cumulative arc</h3>
+    <p>The work moved from <em>what is this system</em> → <em>why does it exist</em> → <em>how do its layers stack</em> → <em>what did it lose and how</em> → <em>what are its real laws</em>. The throughline: separate the <b>asset</b> (live dev transcripts, verbatim sources) from the <b>projection</b> (generated contracts, YAMLs, the GitHub archive), and never let a polished projection overwrite the moving frontier beneath it. The deliverables you hold now are the current laminate; the strata beneath remain readable.</p>
+  </div>
+</section>
+
+<!-- ============ 02 CANON ============ -->
+<section id="canon">
+  <div class="wrap">
+    <div class="sechead"><span class="num">02</span><h2>The canon</h2></div>
+    <p class="lede">Stated as a contract, not a vibe check. This is the agreed state going into the build.</p>
+
+    <h3>Ontology — one app on a substrate</h3>
+    <figure><div class="fig">
+      <svg viewBox="0 0 900 230" role="img" aria-label="Layered ontology: Maestro app on Mosaic substrate on dev ground, with forensic tooling alongside">
+        <rect x="120" y="16" width="660" height="44" rx="8" fill="rgba(224,163,62,.12)" stroke="var(--gold)"/>
+        <text x="450" y="38" text-anchor="middle" class="sv-tb" fill="var(--gold-s)">Maestro — the application (the creative mission)</text>
+        <text x="450" y="52" text-anchor="middle" class="sv-l">compiler: creative seed → Technical UST → surfaces → Suno</text>
+        <rect x="60" y="78" width="780" height="58" rx="8" fill="rgba(172,138,216,.10)" stroke="var(--violet)"/>
+        <text x="450" y="100" text-anchor="middle" class="sv-tb" fill="#C7AEE6">Mosaic — the cognitive substrate (the how)</text>
+        <text x="450" y="116" text-anchor="middle" class="sv-l">8 layers · cognitive operators · scars-as-anti-patterns · domain-neutral</text>
+        <rect x="60" y="154" width="560" height="44" rx="8" fill="rgba(129,144,230,.08)" stroke="var(--line2)"/>
+        <text x="340" y="180" text-anchor="middle" class="sv-t">Dev environments — the ground</text>
+        <rect x="636" y="154" width="204" height="44" rx="8" fill="rgba(217,138,134,.07)" stroke="var(--line2)"/>
+        <text x="738" y="180" text-anchor="middle" class="sv-t">Forensic tooling — recovery</text>
+      </svg>
+    </div><figcaption>One app, one substrate, the ground, and the recovery tooling — not four co-equal planes.</figcaption></figure>
+
+    <div class="grid2">
+      <div class="card"><div class="t">Maestro · gold</div><h4>The creative mission</h4><p class="muted">Serves the two creeds. The music, the standard, the "what." A compiler that turns a creative seed into a locked Technical UST and three Suno-facing surfaces.</p></div>
+      <div class="card"><div class="t">Mosaic · violet</div><h4>The cognitive substrate</h4><p class="muted">The "how." The scars — lessons learned as <em>agnostic anti-patterns</em> (negative knowledge) plus depth-accumulation: investments appreciate, defenses degrade. The forensic-transcript method is itself a piece of Mosaic, not a music feature.</p></div>
+    </div>
+
+    <div class="callout"><span class="lbl">Litmus — how to sort any corpus item</span>Does it serve the creative mission (→ <b>Maestro</b>) or enable human↔AI collaboration (→ <b>Mosaic</b>)? The edges between sessions — the relationships formed over time — are the real Mosaic asset, not the nodes.</div>
+  </div>
+</section>
+
+<!-- ============ 03 ARCHITECTURE ============ -->
+<section id="arch">
+  <div class="wrap">
+    <div class="sechead"><span class="num">03</span><h2>Architecture</h2></div>
+    <p class="lede">The full audio-visual architecture is canon. The audio-only build is the current scope — fenced explicitly below.</p>
+
+    <h3>The compiler pipeline</h3>
+    <figure><div class="fig">
+      <svg viewBox="0 0 920 150" role="img" aria-label="Compiler pipeline from creative seed through Technical UST to three surfaces to Suno">
+        <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="var(--steel)"/></marker></defs>
+        <rect x="8" y="50" width="150" height="50" rx="8" fill="var(--bg3)" stroke="var(--gold)"/>
+        <text x="83" y="72" text-anchor="middle" class="sv-t">Creative seed</text><text x="83" y="88" text-anchor="middle" class="sv-l">source</text>
+        <line x1="160" y1="75" x2="226" y2="75" stroke="var(--steel)" stroke-width="1.5" marker-end="url(#ar)"/>
+        <rect x="230" y="42" width="180" height="66" rx="8" fill="rgba(129,144,230,.12)" stroke="var(--steel)"/>
+        <text x="320" y="66" text-anchor="middle" class="sv-tb" fill="var(--steel-s)">Technical UST</text>
+        <text x="320" y="82" text-anchor="middle" class="sv-l">sole truth object</text><text x="320" y="96" text-anchor="middle" class="sv-l">addressable · locked</text>
+        <line x1="410" y1="75" x2="476" y2="75" stroke="var(--steel)" stroke-width="1.5" marker-end="url(#ar)"/>
+        <rect x="480" y="20" width="190" height="34" rx="7" fill="var(--bg3)" stroke="var(--line2)"/><text x="575" y="41" text-anchor="middle" class="sv-t">Show Summary ≤1000</text>
+        <rect x="480" y="58" width="190" height="34" rx="7" fill="var(--bg3)" stroke="var(--line2)"/><text x="575" y="79" text-anchor="middle" class="sv-t">Creative UST ≤5000</text>
+        <rect x="480" y="96" width="190" height="34" rx="7" fill="var(--bg3)" stroke="var(--line2)"/><text x="575" y="117" text-anchor="middle" class="sv-t">A&amp;R Persona</text>
+        <line x1="670" y1="75" x2="736" y2="75" stroke="var(--steel)" stroke-width="1.5" marker-end="url(#ar)"/>
+        <rect x="740" y="50" width="172" height="50" rx="8" fill="var(--bg3)" stroke="var(--gold)"/>
+        <text x="826" y="72" text-anchor="middle" class="sv-t">Suno</text><text x="826" y="88" text-anchor="middle" class="sv-l">target machine</text>
+      </svg>
+    </div><figcaption>Three surfaces are derived from the locked Technical UST — concurrent and intertwined, never sequential patches. Technical UST is never an output; it is the upstream truth.</figcaption></figure>
+
+    <h3>The nine axes</h3>
+    <p>Audio build uses eight; the ninth (Visual) is audio-visual only. Canonical name ↔ code alias ↔ Creative label — aliases must never become separate identities.</p>
+    <table>
+      <thead><tr><th class="mono">Code</th><th>Canonical axis</th><th class="mono">Code</th><th>Canonical axis</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">THY</td><td>Theory</td><td class="mono">POST</td><td>Post-production</td></tr>
+        <tr><td class="mono">VOC</td><td>Voice</td><td class="mono">MAP</td><td>Roadmap</td></tr>
+        <tr><td class="mono">STY</td><td>Style</td><td class="mono">LYR</td><td>Lyrics</td></tr>
+        <tr><td class="mono">TIM</td><td>Timbre</td><td class="mono">VIS</td><td>Visual <span class="tag spec">A/V only</span></td></tr>
+        <tr><td class="mono">PER</td><td>Performance <span class="muted">(not PERF)</span></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <h3>Roles — two rosters, two epochs</h3>
+    <div class="callout steel"><span class="lbl">Discovery footprint — preserve, do not merge</span>The proven production line and the rebirth line use <b>different casts</b>. Both stay in the stratigraphy.</div>
+    <div class="grid2">
+      <div class="card"><div class="t">v4.5.5 production roster <span style="color:var(--green)">· proven</span></div>
+        <p class="muted" style="margin-bottom:8px">Chief System Architect · DJ Mo Money · The Reformed Architect (GTR creative director) · Visionary Chronicler · LyricForgeGPT · AI_Arranger.vx4 · MixMaster_Ghost · Sonic_Architect · Lyrical_Therapist · VocalMapper · Historian_Producer · AudioStyleCopilot · Metadata_Stitcher · Strategist · RapCouncil (Lyrical Professor / Battle Technician / Cultural Critic) · SongCouncil (legacy) · governance utilities (VAL, Format/Char Guard, Compression Engine, Telemetry Logger…).</p>
+      </div>
+      <div class="card"><div class="t">v5-c / v0 rebirth roster <span style="color:var(--steel-s)">· 17</span></div>
+        <p class="muted" style="margin-bottom:8px"><b>13 audio:</b> Mo · Canon · Metro · Megazord · Sibling (Isla+Huan) · Sage · Vanessa · Alan · Dave · Eldrik · Anva · Melody Scout · Analog Confessor. <b>4 visual:</b> Visual Director · Identity Keeper · Motion Editor · Distribution Strategist.</p>
+        <p class="muted">Each = mission + single decision lens + do/don't + synergy hooks. Anva: "would I replay this tomorrow." Dave: "can the artist catch this pocket instantly." Vanessa: "does the delivery make the listener believe it." Analog Confessor grounds the gospel/G-Funk/Southern-rap soul.</p>
+      </div>
+    </div>
+
+    <h3>Admissibility &amp; the release gate stack</h3>
+    <figure><div class="fig">
+      <svg viewBox="0 0 920 120" role="img" aria-label="Generational release gate stack: SEG to G-Card to SE20 to CAP to LOCK">
+        <defs><marker id="ar2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="var(--gold)"/></marker></defs>
+        <g>
+          <rect x="8"  y="40" width="150" height="44" rx="8" fill="var(--bg3)" stroke="var(--steel)"/><text x="83"  y="60" text-anchor="middle" class="sv-t">SEG</text><text x="83"  y="76" text-anchor="middle" class="sv-l">composite ≥97.5</text>
+          <rect x="198" y="40" width="150" height="44" rx="8" fill="var(--bg3)" stroke="var(--steel)"/><text x="273" y="60" text-anchor="middle" class="sv-t">G-Card</text><text x="273" y="76" text-anchor="middle" class="sv-l">decision surface</text>
+          <rect x="388" y="40" width="150" height="44" rx="8" fill="var(--bg3)" stroke="var(--gold)"/><text x="463" y="60" text-anchor="middle" class="sv-t">SE20</text><text x="463" y="76" text-anchor="middle" class="sv-l">soul / authenticity</text>
+          <rect x="578" y="40" width="150" height="44" rx="8" fill="var(--bg3)" stroke="var(--steel)"/><text x="653" y="60" text-anchor="middle" class="sv-t">CAP</text><text x="653" y="76" text-anchor="middle" class="sv-l">K1–K8 admissibility</text>
+          <rect x="768" y="40" width="144" height="44" rx="8" fill="rgba(111,181,140,.14)" stroke="var(--green)"/><text x="840" y="64" text-anchor="middle" class="sv-tb" fill="var(--green)">LOCK</text>
+          <line x1="158" y1="62" x2="194" y2="62" stroke="var(--gold)" stroke-width="1.5" marker-end="url(#ar2)"/>
+          <line x1="348" y1="62" x2="384" y2="62" stroke="var(--gold)" stroke-width="1.5" marker-end="url(#ar2)"/>
+          <line x1="538" y1="62" x2="574" y2="62" stroke="var(--gold)" stroke-width="1.5" marker-end="url(#ar2)"/>
+          <line x1="728" y1="62" x2="764" y2="62" stroke="var(--gold)" stroke-width="1.5" marker-end="url(#ar2)"/>
+        </g>
+      </svg>
+    </div><figcaption>Generational gate: composite floor → decision surface → soul gate → K1–K8 admissibility → lock. K8 (Visual coherence) is A/V-only.</figcaption></figure>
+
+    <div class="callout"><span class="lbl">Build scope — current</span><b>Audio-only.</b> 8 axes (no VIS), the 13-audio roster, K1–K7 admissibility (K8 visual deferred), no VIG (Visual Identity Generation) and no SEL (visual-variants export). The v2.3 closed-loop WAV+MIDI recompilation is <span class="tag spec">SPECIFIED</span> — the PoC ran the forward path only.</div>
+  </div>
+</section>
+
+<!-- ============ 04 MOSAIC ============ -->
+<section id="mosaic">
+  <div class="wrap">
+    <div class="sechead"><span class="num">04</span><h2>Mosaic substrate</h2></div>
+    <p class="lede">Rendered properly for the first time: eight layers of scar tissue that appreciates, with a documented methodology ancestor.</p>
+
+    <figure><div class="fig">
+      <svg viewBox="0 0 920 250" role="img" aria-label="Mosaic eight-layer substrate stack">
+        <g>
+          <rect x="60" y="8"   width="800" height="26" rx="5" fill="rgba(172,138,216,.16)" stroke="var(--violet)"/><text x="70" y="26" class="sv-t">Output  ·  three surfaces + feedback</text>
+          <rect x="60" y="38"  width="800" height="26" rx="5" fill="rgba(172,138,216,.14)" stroke="var(--violet)"/><text x="70" y="56" class="sv-t">Governance  ·  SEG · G-Card · SE20 · gates</text>
+          <rect x="60" y="68"  width="800" height="26" rx="5" fill="rgba(172,138,216,.12)" stroke="var(--violet)"/><text x="70" y="86" class="sv-t">Admissibility  ·  K1–K8 · interwoven preload ratchet</text>
+          <rect x="60" y="98"  width="800" height="26" rx="5" fill="rgba(172,138,216,.10)" stroke="var(--violet)"/><text x="70" y="116" class="sv-t">Canon  ·  Technical UST · Address Law · Null Protocol</text>
+          <rect x="60" y="128" width="800" height="26" rx="5" fill="rgba(172,138,216,.09)" stroke="var(--violet)"/><text x="70" y="146" class="sv-t">Execution  ·  staffed congruency loop · red-pen · lock</text>
+          <rect x="60" y="158" width="800" height="26" rx="5" fill="rgba(172,138,216,.08)" stroke="var(--violet)"/><text x="70" y="176" class="sv-t">Workforce  ·  flawed SMEs · 9-element worker schema</text>
+          <rect x="60" y="188" width="800" height="26" rx="5" fill="rgba(172,138,216,.07)" stroke="var(--violet)"/><text x="70" y="206" class="sv-t">Conversation / Cadence  ·  Chimera-Indigo sourced</text>
+          <rect x="60" y="218" width="800" height="26" rx="5" fill="rgba(172,138,216,.06)" stroke="var(--violet)"/><text x="70" y="236" class="sv-t">Cognitive  ·  Sense-Think-Act ⟂ Tri-Attention · DSRP · orchestrator</text>
+        </g>
+      </svg>
+    </div><figcaption>Eight layers (plus the feedback path). Strongest confirmed edge: Address Law → Null Protocol.</figcaption></figure>
+
+    <div class="grid2">
+      <div class="card"><div class="t">Cognitive operators · Layer 0</div><p class="muted">Sense-Think-Act ⟂ Tri-Attention (parallel, not directed) · DSRP · five implicit structuring tools (Fishbone, SWOT, Decision Trees, Virtual Whiteboards, Word Clusters) · 10-strategy Framework Orchestrator · four operating modes · Mode A/B detection · <code>/prefs</code> 90-day TTL.</p></div>
+      <div class="card"><div class="t">Methodology ancestry</div><p class="muted"><b>Chaos-Decomposer v1.6</b> is the documented ancestor: its <b>RAW / NORMALIZED</b> layers are the asset-vs-projection discipline in engine form; <b>Fractal Recursion + Duplicate Promotion</b> is FOIL's direct parent; <b>Tri-Attention + Fishbone</b> seed the cognitive operators. The whole reconstruction runs on its output contract: KEY_TERM_TREE / NODE_EDGE_TAXONOMY / MODULE_SEQUENCE_ATOMIC / DELTA_AND_GAPS.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 GOVERNANCE ============ -->
+<section id="gov">
+  <div class="wrap">
+    <div class="sechead"><span class="num">05</span><h2>Governance &amp; the soul</h2></div>
+    <p class="lede">Three distinct scoring systems, never merged — plus the gate where soul is actually measured.</p>
+
+    <h3>Three scoring systems</h3>
+    <div class="grid3">
+      <div class="card"><div class="t" style="color:var(--steel-s)">SEM · release rubric</div><h4>12 weighted criteria</h4><p class="muted">0–5 each. Composite = Σ((score/5)×weight). Release <b>≥70 origin → ≥97.5</b> (CR-009). The release decision.</p></div>
+      <div class="card"><div class="t" style="color:var(--gold-s)">Boy Icarus · council</div><h4>20 metrics</h4><p class="muted">1–10, by persona group (Lyrical Professor / Battle Technician / Cultural Critic / MixMaster_Ghost). RapCouncil scoring at Phase 2.1.</p></div>
+      <div class="card"><div class="t" style="color:var(--violet)">Mosaic · admissibility</div><h4>K1–K8</h4><p class="muted">Structural viability · cross-axis coherence · creative strength · performance truth · sonic identity · compression survivability · external viability · visual coherence (A/V).</p></div>
+    </div>
+
+    <h3>Song Excellence Matrix — the recovered rubric <span class="tag proven">source</span></h3>
+    <table>
+      <thead><tr><th class="mono">#</th><th>Criterion</th><th class="mono">Wt</th><th class="mono">Min</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">1</td><td>Hook Strength</td><td class="mono">18%</td><td class="mono">≥4</td></tr>
+        <tr><td class="mono">2</td><td>Lyric Integrity &amp; Emotional Clarity</td><td class="mono">12%</td><td class="mono">≥3</td></tr>
+        <tr><td class="mono">3</td><td>Vocal Delivery &amp; Character</td><td class="mono">10%</td><td class="mono">≥3</td></tr>
+        <tr><td class="mono">4</td><td>Melody &amp; Topline Craft</td><td class="mono">10%</td><td class="mono">≥3</td></tr>
+        <tr><td class="mono">5</td><td>Structure &amp; Pacing</td><td class="mono">8%</td><td class="mono">≥3</td></tr>
+        <tr><td class="mono">6</td><td>Production Quality</td><td class="mono">12%</td><td class="mono">≥3</td></tr>
+        <tr><td class="mono">7</td><td>Arrangement Interest &amp; Contrast</td><td class="mono">6%</td><td class="mono">≥2</td></tr>
+        <tr><td class="mono">8</td><td>Commercial Viability &amp; Market Fit</td><td class="mono">8%</td><td class="mono">≥3</td></tr>
+        <tr><td class="mono">9</td><td>Originality / Distinctive Element</td><td class="mono">6%</td><td class="mono">≥2</td></tr>
+        <tr><td class="mono">10</td><td>Metadata &amp; Governance</td><td class="mono">4%</td><td class="mono">≥3</td></tr>
+        <tr><td class="mono">11</td><td>Lyric Syllable Integrity</td><td class="mono">4%</td><td class="mono">≥4</td></tr>
+        <tr><td class="mono">12</td><td>Pre-release QA Checks</td><td class="mono">2%</td><td class="mono">≥2</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">Hard gates: <code>metadata</code> · <code>lyric_syllable</code> (6–10; a REPAIR note quotes 6–11 — open) · <code>hook ≥4</code> · <code>production</code> · <b>Lyric Change Compliance</b> (unauthorized edits auto-fail the Production Gate regardless of composite). SEG architecture = 16 modules (15 M + 1 G); M7 scores → G-Card; M8 is the revision loop.</p>
+
+    <div class="callout rose"><span class="lbl">Phantom — recorded, not fabricated</span><b>Q1–Q16</b> is a <span class="tag phantom">PHANTOM</span>: a Chaos-Decomposer ingestion scan-target ("recursively scan for… Q1–Q16 scoring systems") pointing at <code>Agent Council scoring master.json</code> — an artifact four sources reference and none enumerate, and that the operator's file-search cannot locate. Most likely abandoned as artifact, absorbed as function into the SEM + Boy Icarus council. Its runtime slot is known: the chain report (agent evaluations) inside the FINAL_OUTPUT_SCHEMA.</div>
+
+    <h3>Where soul is measured</h3>
+    <p>The north-star is enforced by two gates, not by technical-correctness checks:</p>
+    <ul class="clean">
+      <li><b>SE20</b> — promotes the Cultural Critic's <em>Cultural Authenticity &amp; Fusion</em> and <em>Ethos Adherence (Gospel Trap Revival)</em> metrics into a first-class gate. This is the soul, measured.</li>
+      <li><b>Sacred Imperfection</b> — emotional truth exceeding sterile compliance. The "Stay Away" trace proves it operationally: lyric lines flagged at 12–19 syllables are <em>accepted</em> under Mo's mandate, because the rhythm and the testimony outrank the rule. Intentional flaws (grit, vinyl hiss, tape wobble) are "proof of life."</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 06 RUNTIME ============ -->
+<section id="runtime">
+  <div class="wrap">
+    <div class="sechead"><span class="num">06</span><h2>Runtime</h2></div>
+    <p class="lede">The loop is the product. Congruency, not turns. Definitive lock before reverse compilation.</p>
+
+    <figure><div class="fig">
+      <svg viewBox="0 0 920 300" role="img" aria-label="Runtime loop from preload through staffed fill, congruency, red-pen, lock, reverse-pass, surfaces, Suno">
+        <defs><marker id="ar3" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="var(--steel)"/></marker></defs>
+        <g class="sv-t">
+          <rect x="20" y="20" width="190" height="40" rx="7" fill="var(--bg3)" stroke="var(--line2)"/><text x="115" y="44" text-anchor="middle">1 · preload null skeleton</text>
+          <rect x="250" y="20" width="190" height="40" rx="7" fill="var(--bg3)" stroke="var(--line2)"/><text x="345" y="40" text-anchor="middle">2 · blow-up intake</text><text x="345" y="54" text-anchor="middle" class="sv-l">lyric lock</text>
+          <rect x="480" y="20" width="190" height="40" rx="7" fill="var(--bg3)" stroke="var(--line2)"/><text x="575" y="40" text-anchor="middle">3 · sequential staffed fill</text><text x="575" y="54" text-anchor="middle" class="sv-l">flawed SMEs · zero-skip</text>
+          <rect x="710" y="20" width="190" height="40" rx="7" fill="var(--bg3)" stroke="var(--line2)"/><text x="805" y="40" text-anchor="middle">4 · congruency round-robin</text><text x="805" y="54" text-anchor="middle" class="sv-l">defend-with-evidence</text>
+          <rect x="710" y="120" width="190" height="40" rx="7" fill="var(--bg3)" stroke="var(--line2)"/><text x="805" y="140" text-anchor="middle">5 · executive red-pen</text><text x="805" y="154" text-anchor="middle" class="sv-l">market · historical</text>
+          <rect x="480" y="120" width="190" height="40" rx="7" fill="rgba(111,181,140,.12)" stroke="var(--green)"/><text x="575" y="140" text-anchor="middle">6 · definitive LOCK</text><text x="575" y="154" text-anchor="middle" class="sv-l">loop-until-pass</text>
+          <rect x="250" y="120" width="190" height="40" rx="7" fill="rgba(224,163,62,.10)" stroke="var(--gold)"/><text x="345" y="140" text-anchor="middle">7 · reverse-pass + FOIL</text><text x="345" y="154" text-anchor="middle" class="sv-l">factoring = routing</text>
+          <rect x="20" y="120" width="190" height="40" rx="7" fill="var(--bg3)" stroke="var(--line2)"/><text x="115" y="140" text-anchor="middle">8 · three surfaces</text><text x="115" y="154" text-anchor="middle" class="sv-l">concurrent</text>
+          <rect x="20" y="220" width="190" height="40" rx="7" fill="var(--bg3)" stroke="var(--gold)"/><text x="115" y="244" text-anchor="middle">→ Suno</text>
+          <rect x="250" y="220" width="420" height="40" rx="7" fill="var(--bg3)" stroke="var(--line2)" stroke-dasharray="4 3"/><text x="460" y="240" text-anchor="middle">v2.3 · closed-loop WAV+MIDI recompilation</text><text x="460" y="254" text-anchor="middle" class="sv-l">SPECIFIED — forward path proven only</text>
+        </g>
+        <line x1="210" y1="40" x2="246" y2="40" stroke="var(--steel)" stroke-width="1.4" marker-end="url(#ar3)"/>
+        <line x1="440" y1="40" x2="476" y2="40" stroke="var(--steel)" stroke-width="1.4" marker-end="url(#ar3)"/>
+        <line x1="670" y1="40" x2="706" y2="40" stroke="var(--steel)" stroke-width="1.4" marker-end="url(#ar3)"/>
+        <line x1="805" y1="60" x2="805" y2="116" stroke="var(--steel)" stroke-width="1.4" marker-end="url(#ar3)"/>
+        <line x1="710" y1="140" x2="674" y2="140" stroke="var(--steel)" stroke-width="1.4" marker-end="url(#ar3)"/>
+        <line x1="480" y1="140" x2="444" y2="140" stroke="var(--steel)" stroke-width="1.4" marker-end="url(#ar3)"/>
+        <line x1="250" y1="140" x2="214" y2="140" stroke="var(--steel)" stroke-width="1.4" marker-end="url(#ar3)"/>
+        <line x1="115" y1="160" x2="115" y2="216" stroke="var(--steel)" stroke-width="1.4" marker-end="url(#ar3)"/>
+        <path d="M575,160 C575,195 460,195 460,216" fill="none" stroke="var(--gold)" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#ar3)"/>
+      </svg>
+    </div><figcaption>The staffed congruency loop. Round-robin is congruency, not turns. The factoring rule is the routing rule.</figcaption></figure>
+
+    <p>The proven production line runs this as the deterministic <b>zero-touch M0→M14 monolith</b>: one UST in → the <b>FINAL_OUTPUT_SCHEMA</b> out (finalized Technical UST + strict Show Summary + SEG score/gates + G-Card decision + chain report + <code>context.md</code> + delta/gaps), all machine-readable. The UST advances through a strict state machine — see <a href="#code">§08</a>.</p>
+  </div>
+</section>
+
+<!-- ============ 07 STRATIGRAPHY ============ -->
+<section id="strat">
+  <div class="wrap">
+    <div class="sechead"><span class="num">07</span><h2>Version stratigraphy</h2></div>
+    <p class="lede">Fold-and-laminate, never flatten-and-replace. Each stratum modifies the one beneath; all strata stay readable; nothing is deprecated unless explicitly.</p>
+
+    <figure><div class="fig">
+      <svg viewBox="0 0 920 300" role="img" aria-label="Version strata laminated from v3.0g at the base to v0-on-Mosaic at the top">
+        <g>
+          <rect x="120" y="240" width="680" height="40" rx="6" fill="rgba(129,144,230,.07)" stroke="var(--line2)"/><text x="140" y="265" class="sv-t">v3.0g Creative OS</text><text x="780" y="265" text-anchor="end" class="sv-l">Decomposer · InsightSynthesizer · councils</text>
+          <rect x="120" y="196" width="680" height="40" rx="6" fill="rgba(111,181,140,.08)" stroke="var(--green)"/><text x="140" y="221" class="sv-t">v4.5.2 → v4.5.5</text><text x="780" y="221" text-anchor="end" class="sv-l" fill="var(--green)">PROVEN · HPA/VAL/QUINN · released songs</text>
+          <rect x="120" y="152" width="680" height="40" rx="6" fill="rgba(217,138,134,.07)" stroke="var(--rose)"/><text x="140" y="177" class="sv-t">v5 → v5-b</text><text x="780" y="177" text-anchor="end" class="sv-l" fill="var(--rose)">DIAGNOSTIC · phantom-LOCKED loss</text>
+          <rect x="120" y="108" width="680" height="40" rx="6" fill="rgba(172,138,216,.10)" stroke="var(--violet)"/><text x="140" y="133" class="sv-t">v5-c on Mosaic</text><text x="780" y="133" text-anchor="end" class="sv-l">Maestro + Mosaic · 8-axis audio</text>
+          <rect x="120" y="64"  width="680" height="40" rx="6" fill="rgba(224,163,62,.10)" stroke="var(--gold)"/><text x="140" y="89"  class="sv-t">v0 on Mosaic</text><text x="780" y="89"  text-anchor="end" class="sv-l" fill="var(--gold-s)">SPECIFIED · audio-visual · 9 axes · 17 roles</text>
+          <text x="450" y="36" text-anchor="middle" class="sv-tb" fill="var(--gold-s)">one spine — continuation, not parallel lines</text>
+        </g>
+      </svg>
+    </div><figcaption>Two tracks (production + rebirth) converged at v4.5.5. The v0 rebirth must carry the v4.5.5 execution culture (F1) — never explicitly deprecated, therefore still canon.</figcaption></figure>
+
+    <div class="grid3">
+      <div class="card"><div class="t">Container vs flow</div><p class="muted">The graph/structure (formalizable → code) is the container. The execution culture — the production reflexes, the congruency instinct — is the flow. Flow is conditioning sourced from traces; it stays out of code.</p></div>
+      <div class="card"><div class="t">Proven / diagnostic / specified</div><p class="muted"><span class="tag proven">v4.5.5</span> proven. <span class="tag diag">v5</span> known-flawed branch. <span class="tag spec">v0-on-Mosaic</span> specified, not built — 7-doc spec, DoD unchecked.</p></div>
+      <div class="card"><div class="t">Evidence hierarchy</div><p class="muted">Runtime (who_dat) + operator synthesis (the memo) = PRIMARY · baselines next · contracts/YAML/GitHub = LAGGING · KERNEL = REFERENCE.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 CODE ============ -->
+<section id="code">
+  <div class="wrap">
+    <div class="sechead"><span class="num">08</span><h2>Code to review</h2></div>
+    <p class="lede">The structures worth a second look. All stdlib-only and model-independent by design; the flow stays out.</p>
+
+    <h4>Blueprint (JSON) — the predecessor of the Technical UST</h4>
+    <pre><span class="c"># single source of truth for a track's creative + technical intent (v4.5.5 §6.2)</span>
+{
+  <span class="k">"id"</span>: <span class="s">"project_id_timestamp"</span>, <span class="k">"version"</span>: <span class="s">"v1.0"</span>,
+  <span class="k">"platform_targets"</span>: [<span class="s">"Suno_v4.5"</span>, <span class="s">"Streaming_Optimized"</span>, <span class="s">"Extended_Play"</span>],
+  <span class="k">"title"</span>: <span class="s">"…"</span>, <span class="k">"emotional_theme"</span>: <span class="s">"…"</span>, <span class="k">"payoff"</span>: <span class="s">"…"</span>,
+  <span class="k">"sections"</span>: [
+    { <span class="k">"name"</span>:<span class="s">"Intro"</span>, <span class="k">"bars"</span>:<span class="n">4</span>, <span class="k">"narrative_purpose"</span>:<span class="s">"…"</span>,
+      <span class="k">"lyrics"</span>: [ { <span class="k">"line"</span>:<span class="s">"…"</span>, <span class="k">"syllables"</span>:<span class="n">10</span>, <span class="k">"adlib"</span>:<span class="s">""</span>, <span class="k">"sfx"</span>:<span class="s">"VINYL CRACKLE"</span> } ] }
+  ],
+  <span class="k">"metacontainers"</span>: { <span class="k">"Theory"</span>:{}, <span class="k">"VocalPersona"</span>:{}, <span class="k">"AestheticIntent"</span>:{}, <span class="k">"Timbre"</span>:{}, <span class="k">"Performance"</span>:{} },
+  <span class="k">"roadmap_events"</span>: [ { <span class="k">"event"</span>:<span class="s">"start"</span>, <span class="k">"section"</span>:<span class="s">"intro"</span> } ]
+}</pre>
+
+    <h4>SEM composite + release gate (Python)</h4>
+    <pre><span class="c"># Song Excellence Matrix — source S0816 / CR-009 @ S2117</span>
+<span class="k">def</span> seg_composite(scores, weights):           <span class="c"># scores 0–5, weights sum to 100</span>
+    pct = sum((scores[k]/<span class="n">5</span>)*weights[k] <span class="k">for</span> k <span class="k">in</span> weights) / sum(weights.values())
+    <span class="k">return</span> round(pct*<span class="n">100</span>, <span class="n">1</span>)
+
+RELEASE_FLOOR = <span class="n">97.5</span>     <span class="c"># CR-009 supersedes legacy ≥70 (origin)</span>
+MINIMA = {<span class="s">"hook_strength"</span>:<span class="n">4</span>, <span class="s">"lyric_integrity"</span>:<span class="n">3</span>, <span class="s">"lyric_syllable_integrity"</span>:<span class="n">4</span>, ...}
+
+<span class="k">def</span> gate(scores, weights):
+    <span class="k">if</span> any(scores[k] &lt; m <span class="k">for</span> k,m <span class="k">in</span> MINIMA.items()): <span class="k">return</span> <span class="s">"HOLD"</span>
+    c = seg_composite(scores, weights)
+    <span class="k">return</span> <span class="s">"RELEASE"</span> <span class="k">if</span> c &gt;= RELEASE_FLOOR <span class="k">else</span> (<span class="s">"REVISE"</span> <span class="k">if</span> c &gt;= <span class="n">60</span> <span class="k">else</span> <span class="s">"REWORK"</span>)</pre>
+
+    <h4>UST state machine + lock invariants</h4>
+    <pre><span class="c"># addressable cells advance monotonically; no silent fill, no revert</span>
+STATES = [<span class="s">"NULL"</span>, <span class="s">"PROPOSED"</span>, <span class="s">"PRESSURED"</span>, <span class="s">"RESOLVED"</span>, <span class="s">"LOCKED"</span>]
+
+INVARIANTS = {
+  <span class="s">"no_drop"</span>:            <span class="s">"a populated address never returns to NULL"</span>,
+  <span class="s">"no_revert"</span>:          <span class="s">"composite floor 97.5 holds unless a supersession is logged"</span>,
+  <span class="s">"no_silent_fill"</span>:     <span class="s">"NULL must fill-or-defend; phantoms are recorded, never invented"</span>,
+  <span class="s">"lyric_lock"</span>:         <span class="s">"quoted lyrics immutable after blow-up intake"</span>,
+  <span class="s">"axis_name_stability"</span>:<span class="s">"registry names canonical; codes are aliases only"</span>,
+}
+<span class="c"># INV-18: only ROOT (human) supersession can clear a guard;</span>
+<span class="c"># AI PROPOSALs record but never clear.</span></pre>
+
+    <h4>Axis registry (canonical ↔ alias)</h4>
+    <pre>AXES = {
+  <span class="s">"Theory"</span>:<span class="s">"THY"</span>, <span class="s">"Voice"</span>:<span class="s">"VOC"</span>, <span class="s">"Style"</span>:<span class="s">"STY"</span>, <span class="s">"Timbre"</span>:<span class="s">"TIM"</span>,
+  <span class="s">"Performance"</span>:<span class="s">"PER"</span>,   <span class="c"># PER, not PERF</span>
+  <span class="s">"Post-production"</span>:<span class="s">"POST"</span>, <span class="s">"Roadmap"</span>:<span class="s">"MAP"</span>, <span class="s">"Lyrics"</span>:<span class="s">"LYR"</span>,
+  <span class="s">"Visual"</span>:<span class="s">"VIS"</span>,        <span class="c"># 9th — audio-visual builds only</span>
+}
+<span class="k">def</span> resolve(token):  <span class="c"># aliases never become separate identities</span>
+    <span class="k">for</span> name,code <span class="k">in</span> AXES.items():
+        <span class="k">if</span> token <span class="k">in</span> (name, code): <span class="k">return</span> name
+    <span class="k">raise</span> KeyError(token)</pre>
+  </div>
+</section>
+
+<!-- ============ 09 CLAUDE.md ============ -->
+<section id="claudemd">
+  <div class="wrap">
+    <div class="sechead"><span class="num">09</span><h2>CLAUDE.md additions</h2></div>
+    <p class="lede">Proposed for the project's working memory — the load-bearing rules a fresh session must not relearn. PROPOSAL-class.</p>
+    <pre><span class="c">## Maestro on Mosaic — load-bearing canon</span>
+
+<span class="k">ONTOLOGY</span>     one app (Maestro) on one cognitive substrate (Mosaic); dev = ground;
+            forensics = recovery. NOT four co-equal planes (those are v.0 internal).
+<span class="k">COMPILER</span>    creative seed → Technical UST (sole truth, addressable) → 3 surfaces → Suno.
+            Technical UST is never an output. Surfaces are concurrent + intertwined.
+<span class="k">NORTH-STAR</span>  teach AI Black-Southern-gospel soul that causes emotion. Scaffolding ≠ soul.
+            Enforced by SE20 (cultural authenticity) + Sacred Imperfection — not by
+            technical-correctness checks.
+<span class="k">METHOD</span>      fold-and-laminate, never flatten-and-replace. No implicit deprecation.
+            Asset (live transcripts, verbatim sources) > projection (contracts, YAML,
+            GitHub archive). Preserve discovery footprints. ROOT (human) > PROPOSAL (AI).
+<span class="k">GOVERNANCE</span>  THREE scoring systems, never merged:
+              SEM = 12 weighted criteria, composite ≥70 origin → ≥97.5 (CR-009);
+              Boy Icarus council = 20 metrics (1–10);
+              Mosaic admissibility = K1–K8. (SEM K1–K12 ≠ admissibility K1–K8.)
+<span class="k">GATES</span>       metadata · lyric_syllable (6–10; 6–11 open) · hook≥4 · production ·
+            Lyric Change Compliance (unauthorized edits auto-fail).
+<span class="k">PHANTOM</span>     Q1–Q16 = Chaos-Decomposer scan-target → Agent Council scoring master.json;
+            artifact absent from corpus. Recorded as phantom; never fabricate the 16.
+<span class="k">ROSTERS</span>     v4.5.5 production cast ≠ v5-c/v0 rebirth cast (Canon/Metro/Megazord…). Keep both.
+<span class="k">SCOPE</span>       full A/V is canon; current build = audio-only (8 axes, 13 roles, no VIG/SEL).
+<span class="k">STYLE</span>       terse ~4:1; mark confirmed/inferred/parked; restate canon before synthesis;
+            no skeleton files; the middle is the work.</pre>
+  </div>
+</section>
+
+<!-- ============ 10 PROCEED ============ -->
+<section id="proceed">
+  <div class="wrap">
+    <div class="sechead"><span class="num">10</span><h2>How to proceed — in hindsight</h2></div>
+    <p class="lede">What the journey says to do next, ordered.</p>
+    <table>
+      <thead><tr><th class="mono" style="width:6%">#</th><th>Next action</th><th style="width:30%">Why now</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">1</td><td><b>Axis registry build</b></td><td>Natural next code artifact after the guardrail; locks the canonical↔alias mapping so truncation can't reintroduce the v5 linkage errors.</td></tr>
+        <tr><td class="mono">2</td><td><b>Boot gate</b> (5-question, fail-closed)</td><td>Your stated precondition: snapshot access verified before execution. Ships with the transfer pack.</td></tr>
+        <tr><td class="mono">3</td><td><b>PoC A/B harness</b></td><td>Queued after the boot gate; the v4.5.5-flow-placement question is still un-tested.</td></tr>
+        <tr><td class="mono">4</td><td><b>Recover <code>Agent Council scoring master.json</code></b></td><td>The only artifact that would resolve Q1–Q16 from phantom to defined; one-shot fold when/if it surfaces.</td></tr>
+        <tr><td class="mono">5</td><td><b>"Fold the folds" prompt restructure</b></td><td>Open fork: restructure the full prompt architecture around recursive folding, or confirm the correction alone suffices.</td></tr>
+        <tr><td class="mono">6</td><td><b>Close the audio loop</b></td><td>Prove the v2.3 closed-loop WAV+MIDI recompilation (forward path only so far) before promoting it from SPECIFIED.</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><span class="lbl">The meta-lesson</span>Rebuild Maestro, don't document it. The dev-session transcripts are the asset; the structured files are lagging projections. Grow by contraction with provenance intact — fold, don't flatten.</div>
+  </div>
+</section>
+
+<!-- ============ 11 NULLS ============ -->
+<section id="nulls">
+  <div class="wrap">
+    <div class="sechead"><span class="num">11</span><h2>Parked nulls</h2></div>
+    <p class="lede">Preserved unknowns are signal, not gaps. No-silent-fill: named, classified, awaiting your force-close.</p>
+    <table>
+      <thead><tr><th style="width:30%">Null</th><th>State</th></tr></thead>
+      <tbody>
+        <tr><td><b>Syllable range</b> 6–10 vs 6–11</td><td>Source rubric says 6–10; v4.5.x REPAIR note + monolith say 6–11. Operator reconcile.</td></tr>
+        <tr><td><b>G-Card sub-gate thresholds</b></td><td>70 vs 75 — human to specify.</td></tr>
+        <tr><td><b>Q1–Q16</b></td><td><span class="tag phantom">PHANTOM</span> abandoned-or-absorbed; runtime slot known (chain report). Resolvable only by the missing scoring-master.json.</td></tr>
+        <tr><td><b>Closed-loop recompilation</b></td><td><span class="tag spec">SPECIFIED</span> (v2.3); PoC ran forward path only.</td></tr>
+        <tr><td><b>SDG edges</b></td><td>6 confirmed; remainder CANDIDATE pending operator confirmation. Date-monotonic ≠ supersession.</td></tr>
+        <tr><td><b>SE20 ↔ gate sequence</b></td><td>Exact composition of SE20 within SEG→G-Card→CAP→97.5→HPA not fully pinned.</td></tr>
+        <tr><td><b>FOIL repeat primitives</b></td><td>Live vs aspirational — unverified.</td></tr>
+        <tr><td><b>Chimera ↔ SEG/governance lineage</b></td><td>Open.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:12px">Provenance</p>
+    <p class="foot-note">Folded from the dev-session record and the recovered source artifacts: the v4.5.5 monolith (verbatim), the song-excellence design session (S-anchored source), the Chaos-Decomposer v1.6 engine, the v3.0g non-linear version chain, the diagrams, and the substrate files. Generated SEG packs and YAMLs were treated as lagging projections, not authority. This plan is <b>v0.3</b>, laminated onto v0.2 (preserved). Every artifact here is PROPOSAL-class, awaiting operator accept / correct / force-close. The pairing transfer pack carries the canon, the fold lineage, the evidence manifest with hashes, and the 5-question boot gate.</p>
+  </div>
+</footer>
+
+</body>
+</html>

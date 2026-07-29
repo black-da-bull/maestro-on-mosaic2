@@ -1,0 +1,89 @@
+# Tune In to Ten
+
+> Song family: **Tune In to Ten** · generation #4 in family · created 2025-04-20T03:05:19.234Z
+
+## Metadata
+
+- song_id: `55476ade-d1f0-437a-8256-836ae503dda5`
+- id: `875386`
+- model: `V4`
+- created_at: `2025-04-20T03:05:19.234Z`
+- updated_at: `2025-04-20T03:07:58.692Z`
+- duration: `193.64`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `ace`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/1eb74ec7-8525-4537-ae29-7d2f817c81ca.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/8ef35baa-df5f-45a6-b303-4a3c19039fbb.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://audiopipe.suno.ai/?item_id=55476ade-d1f0-437a-8256-836ae503dda5
+
+## Style / Prompt (tags)
+
+```
+Slow-jam trap blues. Deep Black baritone male lead
+gospel organ & acoustic over 808s. Innuendo-heavy
+BDE energy
+no rush delivery. Mastered to -9 LUFS
+D minor
+stream-ready.
+```
+
+## Lyrics
+
+```
+# --- VOCAL + MIX SETTINGS (DO NOT SING) ---
+[Lead Vocal: Black male voice, deep baritone with Southern drawl. Confident, flirtatious, and slow-smooth delivery. Bluesy cadence with spoken-sung flow.]
+[Vocal Tone: BDE energy with charm. Soulful, grounded, breath-led. Soft rasp, slight vocal fry, chest-driven resonance.]
+[Vocal Style: Slow-jam soul trap. Mix of croon, talk-sing, and innuendo.]
+[Arrangement: Trap-blues blend with 808s, moody Rhodes, gospel organ stabs, acoustic guitar textures.]
+[Key: D minor. Tempo: 72BPM slow grind.]
+[Mixing: Warm saturation, dry lead vocal, analog reverb on hook. Mastered at -9 LUFS, stream-ready.]
+# --- LYRICS ---
+[Intro]
+(She said all she gotta do... is tune in to ten...)
+(Yeah... you know what that mean.)
+[Verse 1]
+You lookin’ for somethin’ grown? Baby, I’m a full course.
+You want consistency? I deliver with no remorse.
+Not just inches, girl, it’s how I **move** with the weight
+Ten commandments in the sheets, plus a sermon in my gait
+[Verse 2]
+She say, “Boy, you always talk like you baptize thighs”
+I say, “Only thing deeper than my stroke is my mind.”
+I ain’t rushin’, baby — this is vintage wine
+You tune into ten? You feel me, every time
+[Chorus]
+Tune in to ten, girl, I’m comin’ on live
+Deep like the Delta, smooth when I slide
+Ain’t gotta say much — I just lean and arrive
+All she gotta do is press play... and survive
+(BBC on blast — that's Black Baritone Control)
+[Verse 3]
+I ain’t talkin’ numbers — this that depth of soul
+My slow grind like a sermon, like I’m savin’ ya whole
+She say, “You really different,” I say, “Naw, I’m just grown”
+Gave her ten inches of vibe — now she won’t leave me alone
+[Bridge]
+Midnight mood, I’m tuned in clear
+Whispers low like I’m preachin’ in her ear
+HD love, 4K finesse
+She tune in once and ain’t settle for less
+[Chorus 2]
+Tune in to ten, girl, I’m on that frequency
+No commercials, no skips, just legacy
+Ten inches of real, ten miles an hour
+She say, “Boy, you got a voice that devour”
+[Outro – whispered ad-lib]
+(You tuned in now... stay locked in.)
+(BDE FM... powered by me.)
+(Tune in to ten, baby...)
+(You already know...)
+#End
+```

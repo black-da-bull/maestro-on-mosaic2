@@ -1,0 +1,586 @@
+# Hierarchical Outline — Node → Edge → Task Chain
+
+## Phases
+
+- **PHASE 0: SYSTEM KNOWLEDGE INGESTION & SELF-IMPROVEMENT *(Completed for this session's re-baselining)***
+- **PHASE 0: SYSTEM KNOWLEDGE INGESTION & SELF-IMPROVEMENT**
+- **Phase 0**
+  - → Phase 0 (sequence)
+  - → Step 0.1 (sequence)
+  - → Step 0.1 (sequence)
+  - → Phase 0 (sequence)
+  - → Step 0.1 (sequence)
+  - → Step 0.1 (sequence)
+  - → Phase 1 (sequence)
+- **Phase 0.1**
+  - → Phase 0.2 (sequence)
+  - → Phase 0.2 (sequence)
+  - → Phase 0.2 (sequence)
+- **Phase 0.2**
+  - → Phase 3.1 (sequence)
+  - → Phase 3.1 (sequence)
+  - → Phase 3.1 (sequence)
+- **Phase 1**
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 1 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Step 1.1 (sequence)
+- **PHASE 1: BLUEPRINTING & NARRATIVE DESIGN (VIRAL-5: FIT)**
+- **Phase 1.1**
+  - → Phase 1.1 (sequence)
+  - → Phase 1.1 (sequence)
+  - → Phase 1.3 (sequence)
+  - → Phase 1.1 (sequence)
+  - → Phase 1.1 (sequence)
+  - → Phase 1.3 (sequence)
+- **Phase 1.2**
+  - → Phase 3.1 (sequence)
+  - → Phase 3.1 (sequence)
+  - → Phase 1.4 (sequence)
+  - → Phase 3.1 (sequence)
+  - → Phase 3.1 (sequence)
+  - → Phase 1.4 (sequence)
+  - → Phase 3.1 (sequence)
+- **Phase 1.3**
+  - → Phase 2.1 (sequence)
+  - → Step 8.2 (sequence)
+  - → Phase 2.1 (sequence)
+  - → Phase 1.3 (sequence)
+  - → Step 1.3 (sequence)
+- **Phase 1.4**
+  - → Phase 3.1 (sequence)
+  - → Phase 3.1 (sequence)
+- **Phase 2**
+  - → Phase 3 (sequence)
+  - → Phase 3 (sequence)
+  - → Phase 1 (sequence)
+  - → Step 3.1 (sequence)
+  - → Phase 1 (sequence)
+  - → Phase 1 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 1 (sequence)
+  - → Step 3.1 (sequence)
+- **PHASE 2: ANALYSIS & MULTI-AGENT VALIDATION (Consensus Sprint)**
+- **Phase 2.1**
+  - → Phase 2.2 (sequence)
+  - → Phase 3.1 (sequence)
+  - → Step 2.2 (sequence)
+  - → Phase 2.2 (sequence)
+  - → Phase 3.1 (sequence)
+  - → Step 2.2 (sequence)
+  - → Phase 2.2 (sequence)
+- **Phase 2.2**
+  - → Phase 4.2 (sequence)
+  - → Step 8.2 (sequence)
+  - → Phase 4.2 (sequence)
+  - → Phase 4.2 (sequence)
+  - → Phase 7.5 (sequence)
+  - → Phase 4.2 (sequence)
+  - → Phase 4.2 (sequence)
+  - → Phase 1.3 (sequence)
+- **Phase 3**
+  - → Phase 4 (sequence)
+  - → Phase 4 (sequence)
+  - → Step 3.1 (sequence)
+  - → Phase 4 (sequence)
+  - → Step 3.1 (sequence)
+  - → Step 3.1 (sequence)
+  - → Phase 9.1 (sequence)
+  - → Phase 4 (sequence)
+  - → Phase 4 (sequence)
+  - → Phase 4 (sequence)
+- **PHASE 3: REVISION, ASSEMBLY & PRODUCTION EMBEDDING (VIRAL-5: HOOK)**
+- **Phase 3.1**
+  - → Phase 2.1 (sequence)
+  - → Phase 6 (sequence)
+  - → Phase 2.2 (sequence)
+  - → Phase 6 (sequence)
+  - → Phase 3.2 (sequence)
+  - → Phase 3.3 (sequence)
+  - → Phase 2.1 (sequence)
+  - → Phase 6 (sequence)
+  - → Phase 2.2 (sequence)
+  - → Phase 6 (sequence)
+- **Phase 3.2**
+  - → Phase 3.3 (sequence)
+  - → Phase 3.3 (sequence)
+- **Phase 3.3**
+  - → Phase 2.2 (sequence)
+  - → Phase 9 (sequence)
+  - → Phase 2.2 (sequence)
+  - → Phase 9 (sequence)
+- **Phase 4**
+  - → Phase 5 (sequence)
+  - → Phase 5 (sequence)
+  - → Phase 5 (sequence)
+  - → Phase 7.5 (sequence)
+  - → Step 4.1 (sequence)
+  - → Step 4.1 (sequence)
+  - → Phase 7.5 (sequence)
+  - → Phase 5 (sequence)
+  - → Phase 5 (sequence)
+  - → Step 4.1 (sequence)
+- **PHASE 4: GENERATION & FEEDBACK (VIRAL-5: PROOF)**
+- **Phase 4.2**
+  - → Phase 7.5 (sequence)
+  - → Phase 8 (sequence)
+  - → Phase 7.5 (sequence)
+  - → Phase 8 (sequence)
+  - → Phase 7.5 (sequence)
+- **Phase 5**
+  - → Phase 1 (sequence)
+  - → Phase 4 (sequence)
+  - → Phase 1 (sequence)
+  - → Phase 6 (sequence)
+  - → Phase 6 (sequence)
+  - → Phase 6 (sequence)
+  - → Phase 3 (sequence)
+- **Phase 6**
+  - → Phase 3.1 (sequence)
+  - → Phase 3 (sequence)
+  - → Step 7.5 (sequence)
+  - → Phase 3.1 (sequence)
+  - → Phase 7 (sequence)
+  - → Phase 7 (sequence)
+  - → Phase 3 (sequence)
+  - → Step 7.5 (sequence)
+  - → Phase 3.1 (sequence)
+  - → Phase 7 (sequence)
+- **Phase 7**
+  - → Phase 1 (sequence)
+  - → Phase 1.3 (sequence)
+  - → Phase 8 (sequence)
+  - → Phase 8 (sequence)
+- **Phase 7.5**
+  - → Phase 8 (sequence)
+  - → Phase 1.2 (sequence)
+  - → Phase 7.5 (sequence)
+  - → Step 8.2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Step 2.2 (sequence)
+  - → Step 7.5 (sequence)
+  - → Step 7.5 (sequence)
+- **PHASE 7.5: Cross-Domain Iteration & Re-Blueprint (Consensus Review)**
+- **PHASE 7.5: CROSS-DOMAIN ITERATION & RE-BLUEPRINT (Consensus Review)**
+- **PHASE 8: ARCHIVAL & RIGHTS MANAGEMENT (LIFT)**
+- **Phase 8**
+  - → Phase 9 (sequence)
+  - → Step 8.1 (sequence)
+  - → Step 8.1 (sequence)
+  - → Phase 1.2 (sequence)
+  - → Phase 1 (sequence)
+  - → Phase 9 (sequence)
+  - → Step 8.1 (sequence)
+  - → Step 8.1 (sequence)
+  - → Phase 1.2 (sequence)
+  - → Phase 1 (sequence)
+- **PHASE 9: STRATEGIC ROLLOUT (COMPOUND)**
+- **Phase 9**
+  - → Phase 0.1 (sequence)
+  - → Step 9.1 (sequence)
+  - → Step 9.1 (sequence)
+  - → Phase 1 (sequence)
+  - → Phase 0.1 (sequence)
+  - → Step 9.1 (sequence)
+  - → Step 9.1 (sequence)
+  - → Phase 1 (sequence)
+  - → Phase 0.1 (sequence)
+  - → Phase 1 (sequence)
+- **Phase 9.1**
+  - → Step 7.5 (sequence)
+  - → Step 7.5 (sequence)
+
+## Steps
+
+- **Step 0.1**
+  - → Step 0.2 (sequence)
+  - → Step 0.2 (sequence)
+  - → Step 0.3 (sequence)
+  - → Step 0.2 (sequence)
+  - → Step 0.2 (sequence)
+  - → Step 0.3 (sequence)
+- **Step 0.2**
+  - → Step 0.3 (sequence)
+  - → Step 0.1 (sequence)
+  - → Step 0.3 (sequence)
+  - → Step 0.1 (sequence)
+- **Step 0.3**
+  - → Phase 1 (sequence)
+  - → Phase 1 (sequence)
+  - → Phase 1 (sequence)
+  - → Phase 1 (sequence)
+- **Step 1**
+  - → Phase 1 (sequence)
+- **Step 1.1**
+  - → Step 1.2 (sequence)
+  - → Phase 0 (sequence)
+  - → Step 1.2 (sequence)
+  - → Step 1.2 (sequence)
+  - → Phase 0 (sequence)
+  - → Step 1.2 (sequence)
+  - → Step 1.2 (sequence)
+- **Step 1.2**
+  - → Phase 3 (sequence)
+  - → Step 1.3 (sequence)
+  - → Step 1.3 (sequence)
+  - → Step 1.3 (sequence)
+  - → Step 1.3 (sequence)
+- **Step 1.3**
+  - → Step 1.3 (sequence)
+  - → Step 3.2 (sequence)
+  - → Step 1.4 (sequence)
+  - → Step 1.4 (sequence)
+  - → Step 1.3 (sequence)
+  - → Step 3.2 (sequence)
+  - → Step 1.4 (sequence)
+  - → Step 1.4 (sequence)
+  - → Step 1.4 (sequence)
+- **Step 1.4**
+  - → Step 1.5 (sequence)
+  - → Step 1.5 (sequence)
+  - → Step 1.5 (sequence)
+  - → Step 1.5 (sequence)
+  - → Step 1.5 (sequence)
+- **Step 1.5**
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 1 (sequence)
+- **Step 2**
+  - → Step 1 (sequence)
+- **Step 2.1**
+  - → Step 2.2 (sequence)
+  - → Step 2.2 (sequence)
+  - → Step 2.2 (sequence)
+  - → Step 2.2 (sequence)
+- **Step 2.2**
+  - → Step 1.1 (sequence)
+  - → Phase 3 (sequence)
+  - → Phase 3 (sequence)
+  - → Phase 8 (sequence)
+  - → Step 1.1 (sequence)
+  - → Phase 3 (sequence)
+  - → Phase 3 (sequence)
+  - → Phase 8 (sequence)
+  - → Phase 2 (sequence)
+- **Step 3**
+  - → Phase 1 (sequence)
+- **Step 3.1**
+  - → Step 3.2 (sequence)
+  - → Step 3.1 (sequence)
+  - → Phase 1 (sequence)
+  - → Phase 7.5 (sequence)
+  - → Step 3.2 (sequence)
+  - → Phase 2 (sequence)
+  - → Step 3.2 (sequence)
+  - → Phase 2 (sequence)
+  - → Step 3.2 (sequence)
+- **Step 3.2**
+  - → Step 3.3 (sequence)
+  - → Phase 2 (sequence)
+  - → Step 3.3 (sequence)
+  - → Step 3.3 (sequence)
+  - → Phase 2 (sequence)
+  - → Step 3.3 (sequence)
+  - → Step 3.3 (sequence)
+  - → Step 3.3 (sequence)
+- **Step 3.3**
+  - → Step 3.4 (sequence)
+  - → Phase 4 (sequence)
+  - → Step 3.3 (sequence)
+  - → Phase 4 (sequence)
+  - → Phase 4 (sequence)
+  - → Step 3.3 (sequence)
+  - → Phase 4 (sequence)
+  - → Step 3.3 (sequence)
+  - → Phase 3 (sequence)
+- **Step 3.4**
+  - → Step 3.5 (sequence)
+- **Step 3.5**
+  - → Phase 1 (sequence)
+- **Step 4.1**
+  - → Step 4.2 (sequence)
+  - → Step 4.2 (sequence)
+  - → Step 4.2 (sequence)
+  - → Step 4.2 (sequence)
+- **Step 4.2**
+  - → Step 4.3 (sequence)
+  - → Step 4.3 (sequence)
+  - → Step 4.3 (sequence)
+  - → Step 4.3 (sequence)
+- **Step 4.3**
+  - → Phase 7.5 (sequence)
+  - → Phase 7.5 (sequence)
+  - → Phase 7.5 (sequence)
+  - → Phase 7.5 (sequence)
+- **Step 7.5**
+  - → Step 7.5 (sequence)
+  - → Step 7.5 (sequence)
+  - → Step 7.5 (sequence)
+  - → Step 7.5 (sequence)
+  - → Phase 8 (sequence)
+  - → Step 7.5 (sequence)
+  - → Phase 6 (sequence)
+  - → Step 7.5 (sequence)
+  - → Phase 1.2 (sequence)
+  - → Phase 8 (sequence)
+- **Step 8.1**
+  - → Step 8.2 (sequence)
+  - → Step 8.2 (sequence)
+  - → Step 8.2 (sequence)
+  - → Step 8.2 (sequence)
+- **Step 8.2**
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 9 (sequence)
+  - → Phase 9 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 2 (sequence)
+  - → Phase 9 (sequence)
+  - → Phase 9 (sequence)
+- **Step 9.1**
+  - → Step 9.2 (sequence)
+  - → Step 9.2 (sequence)
+  - → Step 9.2 (sequence)
+  - → Step 9.2 (sequence)
+- **Step 9.2**
+  - → Phase 0 (sequence)
+  - → Phase 1.1 (sequence)
+  - → Phase 0 (sequence)
+  - → Phase 1.1 (sequence)
+
+## Metacontainers
+
+- **aesthetic** — example: [aesthetic | … ]
+  - contains: `aesthetic.GospelNoirColdSteelThroughNeonHeat`
+  - contains: `aesthetic.Houston_Cine_Porch_Symphony`
+  - contains: `aesthetic.grand_cine_porch_symphony`
+- **AestheticIntent** — example: [AestheticIntent | … ]
+- **articulation** — example: [articulation | … ]
+  - contains: `articulation.clear_diction_rhythm_c`
+- **bass** — example: [bass | … ]
+  - contains: `bass.MonoSubFloor`
+  - contains: `bass.cellos_basses_dbl_808`
+  - contains: `bass.heavy_808_cellos_dbl`
+  - contains: `bass.synth_round_steady`
+  - contains: `bass.tight_sidechained`
+  - contains: `bass.upright_round`
+  - contains: `bass.warm_round_focused`
+- **bass tone** — example: [bass tone | … ]
+- **bass/808** — example: [bass/808 | … ]
+- **Bridge** — example: [Bridge | … ]
+  - contains: `Bridge.audio`
+- **Bridge (optional falsetto-to-spoken crossover)** — example: [Bridge (optional falsetto-to-spoken crossover) | … ]
+- **chord color** — example: [chord color | … ]
+- **Chorus** — example: [Chorus | … ]
+- **Chorus - Backing Vocal Overdub** — example: [Chorus - Backing Vocal Overdub | … ]
+- **Chorus 1 (drill groove: SC 808s, octave guitars, synth stabs)** — example: [Chorus 1 (drill groove: SC 808s, octave guitars, synth stabs) | … ]
+- **Chorus 2** — example: [Chorus 2 | … ]
+- **Chorus 2 (toms + gospel harmonies + tritone hits + xylophone + Afro-perc)** — example: [Chorus 2 (toms + gospel harmonies + tritone hits + xylophone + Afro-perc) | … ]
+- **Chorus Reprise** — example: [Chorus Reprise | … ]
+- **cover** — example: [cover | … ]
+- **CREW_TAGS** — example: [CREW_TAGS | … ]
+- **delivery** — example: [delivery | … ]
+  - contains: `delivery.WhisperToBeltGradient`
+  - contains: `delivery.anthem_chant_C`
+  - contains: `delivery.conv_conf_story_V`
+  - contains: `delivery.hushed_to_insistent`
+  - contains: `delivery.lullaby_sway`
+  - contains: `delivery.urgent_modern_alt_pop`
+  - contains: `delivery.verses_intimate_choruses_urgent`
+- **depth=narrow** — example: [depth=narrow | … ]
+- **DJ Drop** — example: [DJ Drop | … ]
+- **drum tone** — example: [drum tone | … ]
+- **drum/percussion** — example: [drum/percussion | … ]
+- **drums** — example: [drums | … ]
+  - contains: `drums.brushes_soft_mallets`
+  - contains: `drums.dry_kick_snare_airy_overheads`
+  - contains: `drums.dry_punchy_kick_tight_snare_closed_hats`
+  - contains: `drums.hiHat.brokenDrill`
+  - contains: `drums.soft_kick_tight_snare_brushed_hats`
+  - contains: `drums.trap.hollow808`
+- **durationBars** — example: [durationBars | … ]
+- **dynamic** — example: [dynamic | … ]
+- **dynamics** — example: [dynamics | … ]
+- **environmental fx** — example: [environmental fx | … ]
+- **era** — example: [era | … ]
+  - contains: `era.2026_Sound_Director`
+  - contains: `era.ModernLiveToTapeGrit`
+  - contains: `era.Timeless_2025_Cine`
+- **execution** — example: [execution | … ]
+  - contains: `execution.IntroVerse1HookVerse2HookBridgeOutro`
+- **exit** — example: [exit | … ]
+- **expression** — example: [expression | … ]
+  - contains: `expression.SacredBetrayalConviction`
+  - contains: `expression.grit_spirit_defiance`
+- **fade type** — example: [fade type | … ]
+- **Final Chorus** — example: [Final Chorus | … ]
+- **focus** — example: [focus | … ]
+  - contains: `focus.Cipher_drives_Orchestra_magnifies_cohesion_clear_lead_vocal_on_top`
+  - contains: `focus.HookClarity`
+  - contains: `focus.lead_vox_Orch_dyn_swell_fusion_coh`
+  - contains: `focus.visual_memory_loss`
+- **fx palette** — example: [fx palette | … ]
+- **genre** — example: [genre | … ]
+  - contains: `genre.Gosp_Trap_Orch_Funk_Class_Fus`
+  - contains: `genre.Hardcore_Trap_Orch_Fusion`
+  - contains: `genre.SouthernAmericanaGospelSoulXCountryTrap`
+- **gesture** — example: [gesture | … ]
+  - contains: `gesture.LIFT_on_chorus_widen_BGVs_plate_reverb_wider`
+  - contains: `gesture.TightenIt`
+- **guitar tone** — example: [guitar tone | … ]
+- **guitar/keys tone** — example: [guitar/keys tone | … ]
+- **guitars** — example: [guitars | … ]
+  - contains: `guitars.chorus_shimmer`
+  - contains: `guitars.clean_chorus_shimmer`
+  - contains: `guitars.shimmer_chorus`
+- **harmonic behavior** — example: [harmonic behavior | … ]
+- **hi-hat tone** — example: [hi-hat tone | … ]
+- **Hook** — example: [Hook | … ]
+- **inherit** — example: [inherit | … ]
+- **instrumentation** — example: [instrumentation | … ]
+- **intent** — example: [intent | … ]
+  - contains: `intent.BetrayalToSelfReturnWithPhoneCallReveal`
+  - contains: `intent.genetic_tree_sermon_authenticity_extended_play`
+  - contains: `intent.sermon_auth_craft_transcend`
+- **Intro** — example: [Intro | … ]
+- **Intro (Blast-beat + pedal D + risers)** — example: [Intro (Blast-beat + pedal D + risers) | … ]
+- **Intro-1** — example: [Intro-1 | … ]
+- **Intro/DJ Drop** — example: [Intro/DJ Drop | … ]
+- **key** — example: [key | … ]
+  - contains: `key.A_minor`
+  - contains: `key.C_minor`
+  - contains: `key.G_minor`
+  - contains: `key.value`
+  - contains: `key.variableX`
+  - contains: `key.variablex`
+  - contains: `keys.RhodesLeftPad`
+- **keyboard tone** — example: [keyboard tone | … ]
+- **keys** — example: [keys | … ]
+  - contains: `keys.RhodesLeftPad`
+  - contains: `keys.warm_Hammond_B3`
+- **keys/pads** — example: [keys/pads | … ]
+- **lyrics** — example: [lyrics | … ]
+- **mastering** — example: [mastering | … ]
+- **Metacontainer** — example: [Metacontainer | … ]
+- **meter** — example: [meter | … ]
+  - contains: `meter.4`
+  - contains: `meter.4_4`
+  - contains: `meter.6_8`
+- **mix** — example: [mix | … ]
+- **mix notes** — example: [mix notes | … ]
+- **mix philosophy** — example: [mix philosophy | … ]
+- **mixing** — example: [mixing | … ]
+- **mode** — example: [mode | … ]
+  - contains: `mode.Aeolian`
+  - contains: `mode.D_minor_Beeth_ext`
+  - contains: `mode.D_minor_trap_gosp_jazz`
+  - contains: `mode.Dorian`
+  - contains: `mode.GAeolian`
+  - contains: `modelslab.com`
+- **Outro** — example: [Outro | … ]
+- **outro** — example: [outro | … ]
+  - contains: `outro.4_bars`
+  - contains: `outro.6_bars`
+  - contains: `outro.8_bars`
+- **Outro (keys/pads, delay trails)** — example: [Outro (keys/pads, delay trails) | … ]
+- **outro vocal style** — example: [outro vocal style | … ]
+- **percussion** — example: [percussion | … ]
+- **Performance** — example: [Performance | … ]
+- **performanceNotes** — example: [performanceNotes | … ]
+- **post-production** — example: [post-production | … ]
+- **Pre-chorus** — example: [Pre-chorus | … ]
+- **Pre-Chorus** — example: [Pre-Chorus | … ]
+- **Pre-chorus 2** — example: [Pre-chorus 2 | … ]
+- **Pre-Chorus 2** — example: [Pre-Chorus 2 | … ]
+- **producer** — example: [producer | … ]
+- **productionCues** — example: [productionCues | … ]
+- **protection** — example: [protection | … ]
+- **recording setup** — example: [recording setup | … ]
+- **register** — example: [register | … ]
+  - contains: `register.Gosp_Choir`
+  - contains: `register.Lead1MaggieFemaleContralto`
+  - contains: `register.Lead1_main`
+  - contains: `register.Lead2_shadow_pitch_filter`
+- **rhythm** — example: [rhythm | … ]
+  - contains: `rhythm.MoSU_funk_sync_Beeth_grandeur`
+  - contains: `rhythm.evolving_sparse_to_dense`
+  - contains: `rhythm.hypnotic_pulse_evolving_texture`
+- **rhythm handling** — example: [rhythm handling | … ]
+- **Road-Map** — example: [Road-Map | … ]
+- **Section** — example: [Section | … ]
+- **sectionName** — example: [sectionName | … ]
+- **Style** — example: [Style | … ]
+- **style** — example: [style | … ]
+- **style name** — example: [style name | … ]
+- **synth lead** — example: [synth lead | … ]
+- **tempo** — example: [tempo | … ]
+  - contains: `tempo.84BPMTrapSwing`
+  - contains: `tempo.bpm_100`
+  - contains: `tempo.bpm_72_OrchTrap_swing`
+  - contains: `tempo.bpm_74_Hardcore_Trap_Cipher_Swung`
+  - contains: `tempo.bpm_76`
+  - contains: `tempo.bpm_84`
+  - contains: `tempo.bpm_92`
+- **texture** — example: [texture | … ]
+  - contains: `texture.MonoCoreVerses`
+  - contains: `texture.clean_low_mids_avoid_boxiness`
+- **theory** — example: [theory | … ]
+- **Theory** — example: [Theory | … ]
+- **Timbre** — example: [Timbre | … ]
+- **timbre note** — example: [timbre note | … ]
+- **title** — example: [title | … ]
+- **tonal center** — example: [tonal center | … ]
+- **touch** — example: [touch | … ]
+  - contains: `touch.LeadUpPlusFiveDBInHooks`
+  - contains: `touch.adlibs_crowd_feel`
+  - contains: `touch.breath_lines`
+  - contains: `touch.c`
+  - contains: `touch.c_r_adlibs`
+  - contains: `touch.fragmented_recall_effort`
+  - contains: `touch.phone_filter_out`
+- **Verse** — example: [Verse | … ]
+- **Verse 1** — example: [Verse 1 | … ]
+- **Verse 2** — example: [Verse 2 | … ]
+- **Verse 3** — example: [Verse 3 | … ]
+- **Verse 4** — example: [Verse 4 | … ]
+- **Verse A (stripped: rimshots/808 drone/muted tremolo)** — example: [Verse A (stripped: rimshots/808 drone/muted tremolo) | … ]
+- **Verse B (upshift: triplet hats, ghost snares, slide 808, choir, C-and-R)** — example: [Verse B (upshift: triplet hats, ghost snares, slide 808, choir, C-and-R) | … ]
+- **vocal coach** — example: [vocal coach | … ]
+- **vocal effects** — example: [vocal effects | … ]
+- **vocal tone** — example: [vocal tone | … ]
+- **VocalPersona** — example: [VocalPersona | … ]
+- **Voice** — example: [Voice | … ]
+- **voice** — example: [voice | … ]
+- **vox** — example: [vox | … ]
+- **width** — example: [width | … ]
+  - contains: `width.chorus_2_to_1_mid_side`
+
+## Personas Detected
+
+- AI_Arranger
+- AI_Arranger.vx4
+- AudioStyleCopilot
+- DJ Mo Money
+- Historian_Producer
+- LyricForgeGPT
+- Lyrical_Therapist
+- Metadata_Stitcher
+- MixMaster_Ghost
+- QUINN
+- RapCouncil
+- Sonic_Architect
+- Strategist
+- The Reformed Architect
+- VAL
+- VocalMapper

@@ -1,0 +1,65 @@
+{
+  "project_id": "momoney_os_v4_2_3",
+  "semver": "4.2.3",
+  "nodes": {
+    "N12.x": {},
+    "N13.x": {},
+    "N14.x": {},
+    "N15.x": {},
+    "N16.x": {},
+    "N7.x": {},
+    "N8.x": {},
+    "N10.x": {}
+  },
+  "edges": [
+    [
+      "N7.x",
+      "N8.x"
+    ],
+    [
+      "N8.x",
+      "N12.x"
+    ],
+    [
+      "N12.x",
+      "N13.x"
+    ],
+    [
+      "N13.x",
+      "N14.x"
+    ],
+    [
+      "N14.x",
+      "N15.x"
+    ],
+    [
+      "N15.x",
+      "N16.x"
+    ],
+    [
+      "N16.x",
+      "N10.x"
+    ]
+  ],
+  "artifacts": {
+    "state": [
+      "versions.log",
+      "ust_prompt.valid.txt",
+      "verification_log.json",
+      "persona_usage.log",
+      "revenue_split.json",
+      "rights_package.json",
+      "remix_matrix.json",
+      "remix_pack/*",
+      "hpa_feedback.json",
+      "hpa_score.log",
+      "dsp_specs.json",
+      "dsp_outputs/*",
+      "metrics.hpa.v4.2.3.yaml",
+      "benchmark.audio_models.v4.2.3.md",
+      "E2E_TestPlan_v4.2.3.md",
+      "E2E_Result_Ingest_Template.md",
+      "Validation_Report_Template.md"
+    ]
+  }
+}

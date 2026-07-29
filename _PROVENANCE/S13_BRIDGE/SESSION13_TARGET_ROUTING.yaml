@@ -1,0 +1,44 @@
+# SESSION13_TARGET_ROUTING — bridge scope only (the FIRM cluster + directly connected items)
+# Rule: every mutation declares its target system; unknown stays UNRESOLVED, never a generic bucket.
+work_item: REPAIR.P1N.SESSION-TO-MAESTRO-BRIDGE.R1
+date: 2026-07-19
+routing:
+  R_list_v0_2_config_b:
+    mutations: [SM13-W1-18/U20, SM13-W2-30/U53]
+    target: MAESTRO.destination_spec            # destination requirements for Maestro-on-Mosaic (incl. R-MS Mosaic rows BY REFERENCE)
+    note: "R-MS rows describe the Mosaic mount from Maestro's side; routing the artifact to Maestro does not promote Mosaic-global law (corpus-division v0_3 no_global_promotion honored)."
+    patch: PATCH-01
+  R_RT_QAF_01:
+    mutations: [SM13-W2-33/U56]
+    target: [MAESTRO.runtime_governance, METHOD.authority_model]   # dual: runtime rule + method-register consistency (M4 lineage)
+    patch: PATCH-04
+  R_RT_PD_01:
+    mutations: [SM13-W2-33/U56]
+    target: MAESTRO.runtime_governance
+    patch: PATCH-04
+  version_trinity_ruling:
+    mutations: [SM13-W2-34/U57, SM13-W1-27/U34, SM13-W1-25ff/U32]
+    target: RECONSTRUCTION.version_register
+    patch: PATCH-05
+  v5c_canon_staleness:
+    mutations: [derived: V1]
+    target: MAESTRO.canon_register_annotation
+    patch: PATCH-02
+  k_namespace_disambiguation:
+    mutations: [derived: MF-6 + AUX-3 §2]
+    target: MAESTRO.sem_register_annotation
+    patch: PATCH-03
+    status: RESOLVE-CANDIDATE (elicitation E-2; alternative framing preserved in patch)
+  two_window_architecture:
+    mutations: [SM13-W2-33/U56]
+    target: METHOD.session_architecture
+    patch: none_this_bridge   # recorded in replay + who_dat brief §8; persistence deferred (not in FIRM-cluster scope)
+    status: DEFERRED
+  atp_transfer_pack_order:
+    mutations: [SM13-W1-26, SM13-W2-34]
+    target: UNRESOLVED            # ordered, scaffold only, never delivered; discharge decision is operator's
+    status: UNRESOLVED (carried from impact map §3)
+  promotion_mandate_8_verb:
+    mutations: [SM13-W1-11/U14]
+    target: UNRESOLVED            # interrupted, never discharged; conflicts with six-verb canon (CR-2)
+    status: UNRESOLVED (elicitation E-8)

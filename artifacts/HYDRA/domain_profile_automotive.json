@@ -1,0 +1,54 @@
+{
+  "domain_profile": "automotive.diagnostics",
+  "domain_buckets_template": {
+    "air_in": {
+      "summary": null,
+      "evidence": [],
+      "tests_to_run": [],
+      "assessment": null
+    },
+    "air_out_exhaust": {
+      "summary": null,
+      "evidence": [],
+      "tests_to_run": [],
+      "assessment": null
+    },
+    "fuel": {
+      "summary": null,
+      "evidence": [],
+      "tests_to_run": [],
+      "assessment": null
+    },
+    "spark_ignition": {
+      "summary": null,
+      "evidence": [],
+      "tests_to_run": [],
+      "assessment": null
+    },
+    "electric_power_network": {
+      "summary": null,
+      "evidence": [],
+      "tests_to_run": [],
+      "assessment": null
+    }
+  },
+  "freeze_frame_template": {
+    "engine_rpm": null,
+    "vehicle_speed_mph": null,
+    "coolant_temp_C": null,
+    "iat_C": null,
+    "maf_gps": null,
+    "throttle_pos_pct": null,
+    "calc_load_pct": null,
+    "stft_b1_pct": null,
+    "ltft_b1_pct": null,
+    "stft_b2_pct": null,
+    "ltft_b2_pct": null,
+    "battery_voltage_V": null,
+    "gear": null,
+    "map_kpa": null,
+    "ambient_C": null,
+    "fuel_pressure_kpa": null,
+    "time_since_start_s": null
+  }
+}

@@ -1,0 +1,1528 @@
+[
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/context.md",
+  "kb": 59971,
+  "agi_user": 9168,
+  "agi_assistant": 11876,
+  "sig": {
+   "SEM": 3,
+   "FOIL": 51,
+   "act_as": 1329,
+   "excellence": 140,
+   "storyline": 44
+  },
+  "dates": "2025-01-02..2025-06-16 (109u)"
+ },
+ {
+  "path": "sessions/D-Maestro/sources/conversation_maestro-chat---eldrik_2026-03-28-2105.agi.json",
+  "kb": 3772,
+  "sig": {
+   "SEM": 110,
+   "FOIL": 90,
+   "act_as": 16,
+   "excellence": 492,
+   "UST": 1406,
+   "SEG": 344,
+   "ninety75": 156,
+   "storyline": 6
+  },
+  "dates": "2025-03-20..2026-03-05 (8u)"
+ },
+ {
+  "path": "sessions/D-Maestro/sources/conversation_maestro-chat---eldrik--_2026-03-30-1252.agi.md",
+  "kb": 3572,
+  "you_said": 52,
+  "chatgpt_said": 20,
+  "agi_user": 1,
+  "agi_assistant": 11,
+  "sig": {
+   "SEM": 112,
+   "FOIL": 103,
+   "act_as": 16,
+   "excellence": 480,
+   "UST": 1453,
+   "SEG": 360,
+   "ninety75": 156,
+   "storyline": 9
+  },
+  "dates": "2025-03-20..2026-03-02 (6u)"
+ },
+ {
+  "path": "sessions/D-Maestro/sources/conversation_maestro-chat---eldrik_2026-03-28-2105.agi.md",
+  "kb": 3465,
+  "you_said": 52,
+  "chatgpt_said": 20,
+  "agi_user": 1,
+  "agi_assistant": 11,
+  "sig": {
+   "SEM": 112,
+   "FOIL": 101,
+   "act_as": 16,
+   "excellence": 480,
+   "UST": 1444,
+   "SEG": 360,
+   "ninety75": 156,
+   "storyline": 6
+  },
+  "dates": "2025-03-20..2026-03-02 (6u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/eldrik.txt.txt",
+  "kb": 3465,
+  "you_said": 52,
+  "chatgpt_said": 20,
+  "agi_user": 1,
+  "agi_assistant": 11,
+  "sig": {
+   "SEM": 112,
+   "FOIL": 101,
+   "act_as": 16,
+   "excellence": 480,
+   "UST": 1444,
+   "SEG": 360,
+   "ninety75": 156,
+   "storyline": 6
+  },
+  "dates": "2025-03-20..2026-03-02 (6u)"
+ },
+ {
+  "path": "sessions/D-Maestro/sources/conversation_maestro-chat---eldrik--_2026-03-28-2018.agi.md",
+  "kb": 3424,
+  "you_said": 52,
+  "chatgpt_said": 20,
+  "agi_user": 1,
+  "agi_assistant": 11,
+  "sig": {
+   "SEM": 112,
+   "FOIL": 101,
+   "act_as": 16,
+   "excellence": 477,
+   "UST": 1400,
+   "SEG": 353,
+   "ninety75": 156,
+   "storyline": 6
+  },
+  "dates": "2025-03-20..2026-03-02 (6u)"
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system/dev-chats/conversation_maestro-chat---clarity_2026-04-03-1250.agi.md",
+  "kb": 3258,
+  "you_said": 50,
+  "chatgpt_said": 20,
+  "agi_assistant": 11,
+  "sig": {
+   "SEM": 112,
+   "FOIL": 92,
+   "act_as": 16,
+   "excellence": 467,
+   "UST": 1359,
+   "SEG": 353,
+   "ninety75": 156,
+   "storyline": 6
+  },
+  "dates": "2025-03-20..2026-03-02 (6u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/drafts/maestro_ai_optimized.txt",
+  "kb": 1858,
+  "you_said": 17,
+  "sig": {
+   "FOIL": 3,
+   "act_as": 3,
+   "excellence": 1,
+   "UST": 96,
+   "ninety75": 4,
+   "storyline": 27
+  },
+  "dates": "2025-10-29..2025-10-29 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/v2-6-4-5-5__maestro_evolution_execution-evidence.txt",
+  "kb": 1849,
+  "you_said": 17,
+  "sig": {
+   "FOIL": 3,
+   "act_as": 3,
+   "excellence": 1,
+   "UST": 96,
+   "ninety75": 4,
+   "storyline": 27
+  },
+  "dates": "2025-10-29..2025-10-29 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/v5-b/staging.spine.merged.ai_optimized.md",
+  "kb": 1473,
+  "sig": {
+   "SEM": 1,
+   "FOIL": 18,
+   "act_as": 3,
+   "excellence": 160,
+   "UST": 728,
+   "SEG": 312,
+   "ninety75": 50
+  },
+  "dates": "2025-06-02..2025-12-24 (12u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/Day 3 Dev Chat.md",
+  "kb": 1416,
+  "agi_assistant": 1,
+  "sig": {
+   "SEM": 6,
+   "FOIL": 85,
+   "act_as": 6,
+   "excellence": 395,
+   "UST": 603,
+   "SEG": 2
+  },
+  "dates": "2025-11-13..2025-11-13 (1u)"
+ },
+ {
+  "path": "untracked/AI Music - lyrics.md",
+  "kb": 1358,
+  "sig": {
+   "FOIL": 1
+  },
+  "dates": "2026-07-13..2026-07-13 (1u)"
+ },
+ {
+  "path": "sessions/E-scatter/maestro/conversation_os-dev_2025-09-22-1602.agi.md",
+  "kb": 1267,
+  "you_said": 13,
+  "chatgpt_said": 4,
+  "sig": {
+   "act_as": 11,
+   "excellence": 1,
+   "UST": 223,
+   "storyline": 1
+  },
+  "dates": "2025-07-28..2025-09-09 (3u)"
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system-main/legacy/conversation_untitled_2025-09-22-1358.agi.json",
+  "kb": 1067,
+  "sig": {
+   "act_as": 7,
+   "UST": 223,
+   "storyline": 1
+  },
+  "dates": "2025-09-08..2025-09-09 (2u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/claude-session13-window2.txt",
+  "kb": 914,
+  "you_said": 32,
+  "human_colon": 1,
+  "sig": {
+   "SEM": 41,
+   "FOIL": 4,
+   "act_as": 1,
+   "excellence": 13,
+   "UST": 270,
+   "SEG": 3,
+   "ninety75": 33,
+   "storyline": 2
+  },
+  "dates": "2026-05-15..2026-05-15 (1u)"
+ },
+ {
+  "path": "sessions/D-Maestro/sources/conversation_foil-based-tiered-system_2026-04-03-1252.agi.md",
+  "kb": 876,
+  "agi_user": 1,
+  "sig": {
+   "SEM": 24,
+   "FOIL": 22,
+   "act_as": 6,
+   "excellence": 159,
+   "UST": 302,
+   "SEG": 97,
+   "ninety75": 55
+  },
+  "dates": "2025-11-13..2026-03-04 (6u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/v5-b/houseinorder.ai_optimized.md",
+  "kb": 748,
+  "sig": {
+   "act_as": 1,
+   "excellence": 40,
+   "UST": 372,
+   "SEG": 184
+  },
+  "dates": "2025-12-15..2025-12-24 (2u)"
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system-main/legacy/maestrov5-dev-ust and sem-sessions.txt",
+  "kb": 692,
+  "you_said": 21,
+  "chatgpt_said": 22,
+  "sig": {
+   "SEM": 22,
+   "act_as": 2,
+   "excellence": 28,
+   "UST": 390,
+   "SEG": 124
+  },
+  "dates": "2025-09-09..2026-01-05 (4u)"
+ },
+ {
+  "path": "untracked/Untitled 1.md",
+  "kb": 685,
+  "sig": {
+   "FOIL": 315,
+   "act_as": 2,
+   "excellence": 6,
+   "UST": 318,
+   "SEG": 15
+  },
+  "dates": "2025-12-25..2025-12-25 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/SONG EXCELLENCE MATRIX!!!/song_excellence_reformatted.md",
+  "kb": 606,
+  "sig": {
+   "act_as": 2,
+   "excellence": 136,
+   "UST": 264,
+   "SEG": 83,
+   "ninety75": 53
+  },
+  "dates": "2025-12-07..2025-12-24 (2u)"
+ },
+ {
+  "path": "sessions/OneDrive-v45/maestro_devsession.ai_optimized.md",
+  "kb": 540,
+  "sig": {
+   "SEM": 2,
+   "FOIL": 29,
+   "act_as": 2,
+   "excellence": 57,
+   "UST": 270,
+   "SEG": 170,
+   "ninety75": 10
+  },
+  "dates": "2025-09-23..2025-12-24 (5u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/houseinorder.txt",
+  "kb": 514,
+  "you_said": 36,
+  "sig": {
+   "act_as": 1,
+   "excellence": 26,
+   "UST": 263,
+   "SEG": 124
+  },
+  "dates": "2025-12-15..2025-12-15 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/claude-session051526-window1.txt.txt",
+  "kb": 473,
+  "you_said": 22,
+  "sig": {
+   "SEM": 56,
+   "FOIL": 227,
+   "act_as": 1,
+   "excellence": 94,
+   "UST": 152,
+   "SEG": 24,
+   "ninety75": 74
+  },
+  "dates": "2025-12-07..2026-05-15 (8u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/claude-session051526.md",
+  "kb": 473,
+  "you_said": 22,
+  "sig": {
+   "SEM": 56,
+   "FOIL": 227,
+   "act_as": 1,
+   "excellence": 94,
+   "UST": 152,
+   "SEG": 24,
+   "ninety75": 74
+  },
+  "dates": "2025-12-07..2026-05-15 (8u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/chop and screw module dev chat.txt",
+  "kb": 413,
+  "you_said": 19,
+  "chatgpt_said": 19,
+  "sig": {
+   "SEM": 3,
+   "act_as": 1,
+   "excellence": 7,
+   "UST": 342,
+   "SEG": 97,
+   "ninety75": 6
+  },
+  "dates": "2026-01-23..2026-01-23 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/claud3.txt",
+  "kb": 394,
+  "you_said": 17,
+  "sig": {
+   "SEM": 25,
+   "FOIL": 18,
+   "act_as": 1,
+   "excellence": 2,
+   "UST": 75,
+   "ninety75": 10
+  },
+  "dates": "2026-04-03..2026-05-14 (4u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/song.excellence.matrix.iterative.design.session.txt",
+  "kb": 380,
+  "you_said": 20,
+  "chatgpt_said": 20,
+  "sig": {
+   "act_as": 1,
+   "excellence": 89,
+   "UST": 203,
+   "SEG": 58,
+   "ninety75": 43
+  },
+  "dates": "2025-12-07..2025-12-07 (1u)"
+ },
+ {
+  "path": "sessions/OneDrive-v45/session-ust.txt",
+  "kb": 346,
+  "you_said": 11,
+  "chatgpt_said": 11,
+  "sig": {
+   "SEM": 11,
+   "act_as": 1,
+   "excellence": 14,
+   "UST": 195,
+   "SEG": 62
+  },
+  "dates": "2025-09-09..2026-01-05 (4u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/claud2.txt",
+  "kb": 346,
+  "sig": {
+   "SEM": 37,
+   "FOIL": 1,
+   "act_as": 4,
+   "excellence": 13,
+   "UST": 38,
+   "SEG": 3,
+   "ninety75": 18
+  },
+  "dates": "2026-04-03..2026-04-12 (3u)"
+ },
+ {
+  "path": "untracked/maestro architecture session.md",
+  "kb": 332,
+  "sig": {
+   "SEM": 107,
+   "FOIL": 210,
+   "act_as": 1,
+   "excellence": 52,
+   "UST": 280,
+   "SEG": 32
+  },
+  "dates": "2026-04-03..2026-06-25 (2u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/1213.txt",
+  "kb": 320,
+  "you_said": 16,
+  "chatgpt_said": 14,
+  "sig": {
+   "act_as": 2,
+   "excellence": 27,
+   "UST": 256,
+   "SEG": 235
+  },
+  "dates": "2025-09-21..2025-09-21 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/who dat.md",
+  "kb": 300,
+  "sig": {
+   "SEM": 29,
+   "FOIL": 7,
+   "excellence": 27,
+   "UST": 84,
+   "SEG": 8,
+   "ninety75": 4
+  },
+  "dates": "2026-05-20..2026-05-27 (2u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/pws - maestro v5/all_prompt_exchanges.md",
+  "kb": 286,
+  "sig": {
+   "act_as": 4,
+   "UST": 66
+  },
+  "dates": "2025-09-08..2025-09-09 (2u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/MoMoeny Dev.md",
+  "kb": 282,
+  "sig": {
+   "act_as": 3,
+   "UST": 67
+  },
+  "dates": "2025-09-08..2025-09-08 (1u)"
+ },
+ {
+  "path": "sessions/D-Maestro/Maestro/maestro.devsession.iterative.txt",
+  "kb": 270,
+  "you_said": 35,
+  "sig": {
+   "SEM": 1,
+   "FOIL": 18,
+   "act_as": 1,
+   "excellence": 36,
+   "UST": 165,
+   "SEG": 110,
+   "ninety75": 7
+  },
+  "dates": "2025-09-23..2025-12-17 (4u)"
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system-main/legacy/maestro.devsession.iterative.txt",
+  "kb": 270,
+  "you_said": 35,
+  "sig": {
+   "SEM": 1,
+   "FOIL": 18,
+   "act_as": 1,
+   "excellence": 36,
+   "UST": 165,
+   "SEG": 110,
+   "ninety75": 7
+  },
+  "dates": "2025-09-23..2025-12-17 (4u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/ChatGPT (1).md",
+  "kb": 258,
+  "you_said": 3,
+  "sig": {
+   "act_as": 1,
+   "UST": 28,
+   "storyline": 1
+  },
+  "dates": "2025-09-09..2025-09-09 (1u)"
+ },
+ {
+  "path": "untracked/AI Music.md",
+  "kb": 255,
+  "sig": {
+   "excellence": 2
+  },
+  "dates": "2026-07-13..2026-07-13 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/maestro5 report.txt",
+  "kb": 243,
+  "sig": {
+   "FOIL": 19,
+   "act_as": 1,
+   "excellence": 23,
+   "UST": 147,
+   "SEG": 1,
+   "storyline": 3
+  },
+  "dates": "2025-12-24..2025-12-25 (2u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/2025-05-16 - Suno v4.5 Taxonomy Research.md",
+  "kb": 228,
+  "agi_user": 19,
+  "agi_assistant": 30,
+  "sig": {
+   "act_as": 3
+  },
+  "dates": "2025-05-16..2025-05-16 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/extrct-engine-dev-chat.txt",
+  "kb": 199,
+  "you_said": 31,
+  "chatgpt_said": 27,
+  "sig": {
+   "SEM": 46,
+   "excellence": 22,
+   "UST": 226,
+   "SEG": 105
+  },
+  "dates": "2026-01-08..2026-01-08 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/ChatGPT.md",
+  "kb": 175,
+  "you_said": 3,
+  "sig": {
+   "UST": 26,
+   "storyline": 1
+  },
+  "dates": "2025-09-09..2025-09-09 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/ChatGPT (2).md",
+  "kb": 170,
+  "sig": {
+   "UST": 136
+  },
+  "dates": "2025-09-17..2025-09-17 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/ChatGPT (3).md",
+  "kb": 168,
+  "sig": {
+   "UST": 136
+  },
+  "dates": "2025-09-17..2025-09-17 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/pws - maestro v5/Branch \u00b7 Branch \u00b7 Lyric quality baseline (1).txt",
+  "kb": 141,
+  "you_said": 33,
+  "chatgpt_said": 31,
+  "sig": {
+   "excellence": 9,
+   "UST": 66
+  }
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/oldMaestroGeminiGemIterativeDesignViaConversationalDialogueDevelopmentSessionExport.txt",
+  "kb": 134,
+  "agi_user": 1,
+  "agi_assistant": 3,
+  "sig": {
+   "FOIL": 3
+  }
+ },
+ {
+  "path": "artifacts/D-Maestro/pws - maestro v5/Lyric quality baseline (1).txt",
+  "kb": 131,
+  "you_said": 28,
+  "chatgpt_said": 25,
+  "sig": {
+   "act_as": 1,
+   "excellence": 14,
+   "UST": 102
+  }
+ },
+ {
+  "path": "untracked/Maestro - Fabric - Rebirth.md",
+  "kb": 129,
+  "sig": {
+   "SEM": 77,
+   "FOIL": 125,
+   "act_as": 1,
+   "excellence": 6,
+   "UST": 182,
+   "SEG": 17
+  },
+  "dates": "2026-04-03..2026-04-03 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/Begin GPT 1.txt",
+  "kb": 128,
+  "you_said": 10,
+  "chatgpt_said": 10,
+  "sig": {
+   "SEM": 3,
+   "UST": 37,
+   "SEG": 10,
+   "ninety75": 10
+  },
+  "dates": "2025-12-07..2025-12-07 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/v5-b/technical_ust_template.ai_optimized.md",
+  "kb": 117,
+  "sig": {
+   "excellence": 4,
+   "UST": 46,
+   "SEG": 18
+  },
+  "dates": "2025-12-24..2025-12-24 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/pws - maestro v5/chimera-quality-dev-chat (1).txt",
+  "kb": 116,
+  "you_said": 61,
+  "sig": {
+   "act_as": 1,
+   "excellence": 3
+  }
+ },
+ {
+  "path": "artifacts/D-Maestro/drafts/v2.6_universal_maestro.md",
+  "kb": 113,
+  "you_said": 1,
+  "sig": {
+   "UST": 9
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/dumbass session.md",
+  "kb": 111,
+  "sig": {},
+  "dates": "2025-08-16..2025-08-16 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/v5-b/inmyroom.ai_optimized.md",
+  "kb": 111,
+  "sig": {
+   "excellence": 4,
+   "UST": 126,
+   "SEG": 19
+  },
+  "dates": "2025-06-02..2025-12-24 (7u)"
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system-main/legacy/conversation_os-core_2025-11-14-0539.agi.json",
+  "kb": 109,
+  "sig": {
+   "UST": 5,
+   "storyline": 3
+  }
+ },
+ {
+  "path": "_PROVENANCE/T14_extractions/bda23828_build_harvest.md",
+  "kb": 83,
+  "agi_user": 4,
+  "sig": {
+   "SEM": 23,
+   "FOIL": 20,
+   "excellence": 5,
+   "UST": 58,
+   "SEG": 24,
+   "ninety75": 8
+  },
+  "dates": "2026-07-16..2026-07-16 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/canon/MoMoney Maestro OS v4.5.2 \u2014 MONOLITHIC PROMPT.md",
+  "kb": 82,
+  "sig": {
+   "UST": 5,
+   "storyline": 3
+  }
+ },
+ {
+  "path": "Human - Maestro v5b Workspace Discussion.md",
+  "kb": 72,
+  "sig": {
+   "SEM": 11,
+   "FOIL": 11,
+   "UST": 10,
+   "SEG": 9
+  },
+  "dates": "2026-07-19..2026-07-19 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/inmyroom.tx.txt",
+  "kb": 71,
+  "you_said": 8,
+  "agi_assistant": 1,
+  "sig": {
+   "excellence": 2,
+   "UST": 74,
+   "SEG": 11
+  },
+  "dates": "2025-06-02..2025-12-10 (6u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_forensic_maestro_mosaic_reconstruction_v0_1.yaml",
+  "kb": 60,
+  "sig": {
+   "SEM": 41,
+   "excellence": 3,
+   "UST": 58,
+   "ninety75": 2
+  },
+  "dates": "2026-03-28..2026-05-20 (4u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/forensic_workspace_import_corpus_v_4.md",
+  "kb": 49,
+  "sig": {
+   "act_as": 4
+  }
+ },
+ {
+  "path": "_PROVENANCE/P1_narrow/session13_window2_replay.md",
+  "kb": 44,
+  "sig": {
+   "SEM": 3,
+   "FOIL": 1,
+   "UST": 14,
+   "ninety75": 1
+  },
+  "dates": "2026-05-14..2026-05-14 (1u)"
+ },
+ {
+  "path": "_PROVENANCE/P1_narrow/session13_window1_replay.md",
+  "kb": 42,
+  "sig": {
+   "SEM": 3,
+   "UST": 3,
+   "ninety75": 1
+  },
+  "dates": "2026-05-11..2026-05-11 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/pws - maestro v5/Chimera-Gulf hybrid mode (1).txt",
+  "kb": 40,
+  "you_said": 3,
+  "chatgpt_said": 2,
+  "sig": {
+   "excellence": 32,
+   "UST": 38
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/sonic_architect_ii_deep_dive.md",
+  "kb": 38,
+  "sig": {
+   "storyline": 1
+  }
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/technical.ust.template.txt",
+  "kb": 36,
+  "sig": {
+   "excellence": 2,
+   "UST": 23,
+   "SEG": 9
+  }
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_maestro_mosaic_forensic_claude_v1.0.yaml",
+  "kb": 36,
+  "sig": {
+   "SEM": 6,
+   "FOIL": 5,
+   "UST": 9
+  },
+  "dates": "2026-04-03..2026-05-20 (7u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_synthesizing-claude_day-1-prep_v1.0.yaml",
+  "kb": 34,
+  "sig": {
+   "SEM": 1,
+   "excellence": 1,
+   "UST": 9,
+   "SEG": 1
+  },
+  "dates": "2026-04-11..2026-05-20 (5u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/workspace_identity-maestro_v5-c.txt",
+  "kb": 34,
+  "sig": {
+   "FOIL": 2,
+   "excellence": 14,
+   "UST": 41
+  },
+  "dates": "2026-03-14..2026-05-20 (3u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_node_edge_system_graph_v_0.md",
+  "kb": 33,
+  "sig": {
+   "FOIL": 2,
+   "excellence": 6,
+   "UST": 10
+  }
+ },
+ {
+  "path": "sessions/D-Maestro/maestro-ai-music-system/source/distributed/suno_v45_config_bundle_v3/conversation_-2--song-review_2025-05-07-0505.agi.md",
+  "kb": 32,
+  "sig": {
+   "act_as": 3
+  },
+  "dates": "2025-03-20..2025-03-20 (1u)"
+ },
+ {
+  "path": "_PROVENANCE/T14_extractions/c6dfad39_folder_cleanup.md",
+  "kb": 31,
+  "sig": {
+   "FOIL": 4,
+   "excellence": 4
+  },
+  "dates": "2026-07-16..2026-07-16 (1u)"
+ },
+ {
+  "path": "_PROVENANCE/LEDGER.md",
+  "kb": 30,
+  "sig": {
+   "SEM": 8,
+   "FOIL": 6,
+   "act_as": 2,
+   "excellence": 7,
+   "UST": 10,
+   "SEG": 9,
+   "ninety75": 3,
+   "storyline": 2
+  },
+  "dates": "2026-01-23..2026-07-20 (5u)"
+ },
+ {
+  "path": "maestro-current/01_TECHNICAL_UST_CANON.md",
+  "kb": 29,
+  "sig": {
+   "UST": 6,
+   "ninety75": 1
+  },
+  "dates": "2026-07-19..2026-07-19 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_forensic_v5c_consolidation_v0.1.yaml",
+  "kb": 28,
+  "sig": {
+   "SEM": 7,
+   "FOIL": 8,
+   "excellence": 1,
+   "UST": 16,
+   "ninety75": 4
+  },
+  "dates": "2026-03-17..2026-05-20 (4u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/canon/Maestro_v5c_Canonical_Spine.md",
+  "kb": 28,
+  "sig": {
+   "FOIL": 15,
+   "excellence": 5,
+   "UST": 17
+  },
+  "dates": "2026-07-19..2026-07-19 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/chaos_decomposer_v1_5_monolith (1).md",
+  "kb": 27,
+  "sig": {
+   "excellence": 1,
+   "UST": 19,
+   "SEG": 6
+  }
+ },
+ {
+  "path": "maestro-current/compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md",
+  "kb": 27,
+  "sig": {
+   "UST": 4
+  }
+ },
+ {
+  "path": "_PROVENANCE/S13_BRIDGE/SESSION13_CANDIDATE_PATCHSET/PATCH-01_R_LIST_v0_2_FIRM_CANON.md",
+  "kb": 26,
+  "you_said": 1,
+  "sig": {
+   "SEM": 8,
+   "FOIL": 2,
+   "excellence": 1,
+   "UST": 26,
+   "ninety75": 1
+  },
+  "dates": "2026-07-19..2026-07-19 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/USTF_Consolidated_6Page_Report.md",
+  "kb": 24,
+  "sig": {
+   "UST": 1
+  }
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_claude-project_v5-spine-staging_2026-05-20.yaml",
+  "kb": 24,
+  "sig": {
+   "UST": 6,
+   "SEG": 4
+  },
+  "dates": "2026-05-17..2026-05-20 (2u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/Chaos_Decomposer_v1_5_Monolith.md",
+  "kb": 19,
+  "sig": {
+   "excellence": 1,
+   "UST": 4,
+   "SEG": 3
+  }
+ },
+ {
+  "path": "_PROVENANCE/structural_fold/corpus_fold_extension_v0_2.md",
+  "kb": 18,
+  "sig": {
+   "FOIL": 2,
+   "excellence": 2,
+   "UST": 8,
+   "SEG": 9
+  },
+  "dates": "2026-04-11..2026-04-28 (4u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_chatgpt_maestro_v5c_current_project_v5-c_really_v5.yaml",
+  "kb": 18,
+  "sig": {
+   "FOIL": 6,
+   "excellence": 2,
+   "UST": 20
+  },
+  "dates": "2025-12-24..2026-05-20 (2u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/ws_2_maestro_v_5_b_yaml.yaml",
+  "kb": 18,
+  "sig": {
+   "UST": 22,
+   "SEG": 6
+  },
+  "dates": "2026-04-13..2026-05-20 (2u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/canon/Maestro_v5c_Lineage_and_Delta_Ledger.md",
+  "kb": 15,
+  "sig": {
+   "FOIL": 2,
+   "excellence": 5,
+   "UST": 16,
+   "SEG": 1
+  },
+  "dates": "2026-07-19..2026-07-19 (1u)"
+ },
+ {
+  "path": "_PROVENANCE/T14_extractions/63122c11_cowork_continuation.md",
+  "kb": 13,
+  "sig": {},
+  "dates": "2026-05-17..2026-07-16 (2u)"
+ },
+ {
+  "path": "_PROVENANCE/T14_extractions/970d0a6b_forensic_reconstruction.md",
+  "kb": 13,
+  "sig": {},
+  "dates": "2026-07-16..2026-07-16 (1u)"
+ },
+ {
+  "path": "_PROVENANCE/P0_EVIDENCE_INVENTORY_v0_1.md",
+  "kb": 12,
+  "sig": {
+   "SEM": 4,
+   "FOIL": 2,
+   "excellence": 1,
+   "UST": 2
+  },
+  "dates": "2025-05-07..2026-07-16 (14u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/canon/Maestro_v5c_Canonical_Root.md",
+  "kb": 11,
+  "sig": {
+   "FOIL": 2,
+   "excellence": 2,
+   "UST": 12
+  },
+  "dates": "2026-07-19..2026-07-19 (1u)"
+ },
+ {
+  "path": "_PROVENANCE/STATE.md",
+  "kb": 10,
+  "sig": {
+   "SEM": 3,
+   "FOIL": 3,
+   "act_as": 2,
+   "excellence": 2,
+   "UST": 3,
+   "SEG": 3,
+   "storyline": 2
+  },
+  "dates": "2025-05-07..2026-07-20 (6u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/01_kernel.md",
+  "kb": 10,
+  "sig": {}
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/maestro_version_changelog.md",
+  "kb": 10,
+  "sig": {
+   "UST": 2
+  }
+ },
+ {
+  "path": "artifacts/D-Maestro/canon/Maestro_v5c_Conflict_and_Open_Question_Register.md",
+  "kb": 10,
+  "sig": {
+   "UST": 4
+  },
+  "dates": "2026-07-19..2026-07-19 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/# David (aka Odie).txt",
+  "kb": 9,
+  "sig": {
+   "act_as": 2
+  }
+ },
+ {
+  "path": "maestro-current/02_CREATIVE_UST_TEMPLATE.md",
+  "kb": 9,
+  "sig": {
+   "FOIL": 1,
+   "UST": 5
+  },
+  "dates": "2026-01-23..2026-01-23 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/maestro_version_span_tangent_report.md",
+  "kb": 9,
+  "sig": {
+   "SEM": 2,
+   "UST": 2
+  }
+ },
+ {
+  "path": "_PROVENANCE/OPEN.md",
+  "kb": 8,
+  "sig": {
+   "SEM": 2,
+   "FOIL": 1,
+   "act_as": 1,
+   "excellence": 1,
+   "UST": 2,
+   "ninety75": 1,
+   "storyline": 1
+  },
+  "dates": "2026-05-20..2026-07-20 (4u)"
+ },
+ {
+  "path": "_PROVENANCE/T14_extractions/fc16fb1a_mvp_buildable_substance.md",
+  "kb": 8,
+  "agi_assistant": 1,
+  "sig": {
+   "SEM": 4,
+   "UST": 1,
+   "ninety75": 2
+  },
+  "dates": "2026-07-16..2026-07-16 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/context_anchor.chimera_ancestry.md",
+  "kb": 8,
+  "sig": {}
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/TECHNICAL_UST_GOVERNANCE_ADDENDUM.md",
+  "kb": 8,
+  "sig": {
+   "excellence": 3,
+   "UST": 4,
+   "SEG": 33
+  }
+ },
+ {
+  "path": "_PROVENANCE/P1N_VALIDATION_2026-07-19/P1_NARROW_VERDICT.yaml",
+  "kb": 7,
+  "sig": {
+   "excellence": 1
+  },
+  "dates": "2026-05-20..2026-07-19 (2u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/KNOWLEDGE_SPINE.md",
+  "kb": 7,
+  "sig": {
+   "UST": 5,
+   "SEG": 2
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/Knowledge Spine \u2014 Maestro v5-b.md",
+  "kb": 7,
+  "sig": {
+   "UST": 5,
+   "SEG": 2
+  }
+ },
+ {
+  "path": "maestro-current/04_COUNCIL_TOPOLOGY.md",
+  "kb": 7,
+  "sig": {
+   "SEM": 2,
+   "excellence": 1,
+   "UST": 2,
+   "SEG": 3
+  },
+  "dates": "2026-01-23..2026-01-23 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/maestro_os_diff_report.md",
+  "kb": 7,
+  "sig": {}
+ },
+ {
+  "path": "untracked/EXECUTIVE ARCHITECTURAL SYNTHESIS.md",
+  "kb": 6,
+  "sig": {
+   "SEM": 1,
+   "FOIL": 9,
+   "excellence": 1,
+   "UST": 9,
+   "SEG": 1
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/TECHNICAL_UST_CANON.md",
+  "kb": 6,
+  "sig": {
+   "excellence": 1,
+   "UST": 2,
+   "SEG": 2
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/UniversalMaestro.v3.0g.CustomGPT.Instructions.md",
+  "kb": 5,
+  "sig": {
+   "UST": 5
+  }
+ },
+ {
+  "path": "maestro-current/05_GOVERNANCE_SEG.md",
+  "kb": 5,
+  "sig": {
+   "SEM": 7,
+   "excellence": 5,
+   "UST": 6,
+   "SEG": 11,
+   "ninety75": 3
+  },
+  "dates": "2026-01-23..2026-01-23 (1u)"
+ },
+ {
+  "path": "maestro-current/MANIFEST.yaml",
+  "kb": 5,
+  "sig": {
+   "UST": 2
+  },
+  "dates": "2026-01-23..2026-07-19 (2u)"
+ },
+ {
+  "path": "maestro-current/SCOPE_CORRECTION_v0_4.md",
+  "kb": 5,
+  "sig": {
+   "UST": 1,
+   "SEG": 1
+  },
+  "dates": "2026-01-23..2026-07-19 (2u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/v5-b/creative_ust_template.ai_optimized.md",
+  "kb": 5,
+  "sig": {},
+  "dates": "2025-12-24..2025-12-24 (1u)"
+ },
+ {
+  "path": "README.md",
+  "kb": 4,
+  "sig": {},
+  "dates": "2026-05-17..2026-07-01 (3u)"
+ },
+ {
+  "path": "_PROVENANCE/recovered/KERNEL_from_im_dead_kb_2026-05-20.md",
+  "kb": 4,
+  "sig": {}
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/SYSTEM_PROMPT.md",
+  "kb": 4,
+  "sig": {
+   "UST": 6,
+   "SEG": 1
+  }
+ },
+ {
+  "path": "maestro-current/STRATA_MIGRATION_MAP.md",
+  "kb": 4,
+  "sig": {
+   "SEM": 1,
+   "excellence": 2,
+   "UST": 4,
+   "SEG": 1,
+   "ninety75": 1
+  },
+  "dates": "2026-01-23..2026-01-23 (1u)"
+ },
+ {
+  "path": "maestro-current/00_ROOT_SPEC.md",
+  "kb": 4,
+  "sig": {
+   "FOIL": 1,
+   "UST": 2
+  },
+  "dates": "2026-07-19..2026-07-19 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/sources/you said sonic architect said delimiters.txt",
+  "kb": 4,
+  "sig": {}
+ },
+ {
+  "path": "_PROVENANCE/method/METHOD_PATCHES_2026-07-19.md",
+  "kb": 3,
+  "sig": {},
+  "dates": "2026-07-19..2026-07-19 (1u)"
+ },
+ {
+  "path": "_PROVENANCE/S13_BRIDGE/APPLY/CURRENT_SESSION_DELTA_AND_CONTINUATION_2026-07-19.md",
+  "kb": 3,
+  "sig": {},
+  "dates": "2026-07-19..2026-07-19 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/chimera_indigo_correction_brief.md",
+  "kb": 3,
+  "sig": {
+   "UST": 2
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/chimera_indigo_prompt.md",
+  "kb": 3,
+  "sig": {}
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/maestro_v4_baseline_snapshot/CONCEPT_DOC.md",
+  "kb": 3,
+  "sig": {
+   "excellence": 3,
+   "UST": 7,
+   "SEG": 4
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/MANIFEST.json",
+  "kb": 3,
+  "sig": {
+   "UST": 1
+  },
+  "dates": "2026-01-23..2026-01-23 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/templates/CREATIVE_UST_TEMPLATE.txt",
+  "kb": 3,
+  "sig": {}
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/LOG_TEMPLATES.md",
+  "kb": 3,
+  "sig": {
+   "SEG": 1
+  }
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/creative.ust.template.txt",
+  "kb": 3,
+  "sig": {}
+ },
+ {
+  "path": "artifacts/D-Maestro/pws - maestro v5/ppp.roles.md",
+  "kb": 3,
+  "sig": {}
+ },
+ {
+  "path": "CLAUDE.md",
+  "kb": 2,
+  "sig": {
+   "SEM": 1,
+   "FOIL": 1,
+   "UST": 1,
+   "SEG": 1
+  }
+ },
+ {
+  "path": "_PROVENANCE/SKILL_FILES_SEARCH_CHECKLIST.md",
+  "kb": 2,
+  "sig": {},
+  "dates": "2026-05-20..2026-06-18 (2u)"
+ },
+ {
+  "path": "_PROVENANCE/POINTER_FOR_CLAUDE_PROJECTS.md",
+  "kb": 2,
+  "sig": {},
+  "dates": "2026-07-16..2026-07-16 (1u)"
+ },
+ {
+  "path": "_PROVENANCE/registers/version_trinity_v0_1.md",
+  "kb": 2,
+  "sig": {},
+  "dates": "2026-07-19..2026-07-19 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/maestro_v4_baseline_snapshot/SNAPSHOT_MANIFEST.json",
+  "kb": 2,
+  "sig": {},
+  "dates": "2025-12-13..2025-12-13 (1u)"
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/maestro_v4_baseline_snapshot/SYSTEM_PROMPT_BASELINE.md",
+  "kb": 2,
+  "sig": {
+   "UST": 3,
+   "SEG": 1
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/README.md",
+  "kb": 2,
+  "sig": {
+   "UST": 4
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/EVIDENCE_CONTRACT.md",
+  "kb": 2,
+  "sig": {
+   "UST": 2,
+   "SEG": 2
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/COUNCIL_MATRIX.md",
+  "kb": 2,
+  "sig": {
+   "SEG": 2
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/COUNCIL_PROTOCOL.md",
+  "kb": 2,
+  "sig": {
+   "SEG": 2
+  }
+ },
+ {
+  "path": "maestro-current/06_RUNTIME_RULES.md",
+  "kb": 2,
+  "sig": {
+   "SEM": 1,
+   "FOIL": 1,
+   "UST": 2,
+   "SEG": 1,
+   "ninety75": 1
+  }
+ },
+ {
+  "path": "maestro-current/10_TEST_PLAN.md",
+  "kb": 2,
+  "sig": {
+   "SEM": 1,
+   "UST": 1,
+   "SEG": 1,
+   "ninety75": 1
+  }
+ },
+ {
+  "path": "maestro-current/03_PHASE_CHAIN.md",
+  "kb": 2,
+  "sig": {
+   "FOIL": 1,
+   "UST": 1
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/chimera_indigo_round_robin_protocol.md",
+  "kb": 1,
+  "sig": {}
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/CHANGELOG.md",
+  "kb": 1,
+  "sig": {
+   "UST": 1
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/DRY_RUN_EXAMPLE.md",
+  "kb": 1,
+  "sig": {
+   "UST": 2
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/MODEL_PROFILE.md",
+  "kb": 1,
+  "sig": {}
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/MIGRATION_LOG.md",
+  "kb": 1,
+  "sig": {
+   "UST": 1
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/WORK_ITEM_SCHEMA.md",
+  "kb": 1,
+  "sig": {
+   "UST": 1
+  }
+ },
+ {
+  "path": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/MODULE_REGISTRY.md",
+  "kb": 1,
+  "sig": {
+   "UST": 2,
+   "SEG": 1
+  }
+ },
+ {
+  "path": "maestro-current/07_ADDRESS_REGISTRY.md",
+  "kb": 1,
+  "sig": {
+   "SEM": 3,
+   "excellence": 1,
+   "SEG": 1
+  }
+ },
+ {
+  "path": "maestro-current/09_LOGS_AND_CONTINUATION.md",
+  "kb": 1,
+  "sig": {
+   "UST": 1
+  }
+ },
+ {
+  "path": "maestro-current/08_PORTABILITY_ATP.md",
+  "kb": 1,
+  "sig": {
+   "SEM": 2,
+   "UST": 1,
+   "SEG": 1
+  }
+ },
+ {
+  "path": "artifacts/D-Maestro/Maestro/v5-b/corpus.manifest.yaml",
+  "kb": 1,
+  "sig": {
+   "excellence": 4
+  },
+  "dates": "2025-12-24..2025-12-24 (1u)"
+ },
+ {
+  "path": "artifacts/D-Maestro/canon/session13_runtime_rules.md",
+  "kb": 1,
+  "sig": {},
+  "dates": "2026-07-19..2026-07-19 (1u)"
+ }
+]

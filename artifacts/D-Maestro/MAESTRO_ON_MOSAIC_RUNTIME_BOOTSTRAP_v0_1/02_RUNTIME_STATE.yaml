@@ -1,0 +1,98 @@
+# Runtime state. Adopted as session-active on boot.
+
+pack_id: MAESTRO.ZERO_DAY.TRANSFER.V0_1
+baseline_id: MAESTRO_ZERO_DAY_BASELINE_2026_05_27_A
+bootstrap_id: MAESTRO_ON_MOSAIC_RUNTIME_BOOTSTRAP_v0_1
+status: BOOTSTRAP_LOADED_PROVISIONAL
+mainline_status: PROTECTED
+loaded_from: MAESTRO_ZERO_DAY_TRANSFER_PACK_v0_1.zip
+loaded_at: 2026-05-27
+
+product:
+  name: "Maestro on Mosaic"
+  type: conversational_language_based_music_production_operating_environment
+  slogan: "Your vision. Our mission."
+
+planes:    # the four coupled systems; enforcement contract in 03_PLANE_MAP.yaml
+  - maestro
+  - mosaic
+  - dev_environment
+  - forensics
+
+hard_rules:
+  - do_not_conflate_planes
+  - do_not_promote_without_operator_F
+  - do_not_summarize_substrate
+  - preserve_scars_as_operational_intelligence
+  - treat_load_knowledge_load_maestro_hi_maestro_as_bootstrap
+  - no_new_explanatory_documents_without_operator_ask
+  - no_runtime_reinterpretation
+  - no_giant_synthesis_papers
+
+stash:
+  tangent_v5_beauty_ui_cli_reflection:
+    status: stashed_not_merged
+    merge_rule: operator_F_required
+    contents:
+      - v5 dev workspace felt beautiful
+      - UI or CLI could be placed on top
+      - dev version had living exploratory electricity
+      - runtime failure does not erase discovery value
+
+fork:
+  TEMP_CHAT_SIM_v5_dev_beauty_exploration:
+    status: simulated_only
+    merge_rule: operator_F_required
+    poison_risk: contained
+
+quarantine:
+  - artifact: MAESTRO_ADMIN_UPGRADE_PACK_v0.1
+    reason: collapsed Maestro / Mosaic / Dev_Environment / Forensics
+    safe_to_use: false
+  - artifact: MAESTRO_UPGRADE_ALIGNED_PACK_v0.2
+    reason: still document-pack, not runtime
+    safe_to_use: limited
+
+open_force_closures:    # require operator F to resolve
+  - OD-1
+  - OD-2
+  - OD-3
+  - OD-4
+  - OD-5
+  - OQ-6.1
+  - OQ-6.2
+  - OQ-6.3
+  - mounting_interface_validation_against_mosaic_engine_v0_1
+  - substrate_floor_v0_2
+  - forensic_diagnostic_v0_2
+  - VIG_SEL_integration
+  - three_maestro_partition_upgrade_to_four    # per operator 2026-05-27
+
+forbidden_reconstruction_targets:
+  - Q1_through_Q16_content
+  - GAP-02
+  - GAP-06
+  - GAP-08
+  - GAP-09
+  - VIS_K8
+  - plus_4_governors
+  - mixed_use
+  - HPA_aggregate
+  - GAP-EXEC
+
+protected_doctrine:
+  - continuity_is_infrastructure
+  - scars_are_operational_intelligence
+  - anti_summarization_is_substrate_law
+  - authority_classification_prevents_false_promotion
+  - runtime_behavior_outranks_clean_document_shape
+
+session:
+  classification: starting_state
+  operator_F_history: []
+  proposals_pending_F: []
+  snapshots_emitted: []
+  promotions_executed: []
+  quarantines_executed: []
+
+next_action: maintain_baseline_until_operator_directs

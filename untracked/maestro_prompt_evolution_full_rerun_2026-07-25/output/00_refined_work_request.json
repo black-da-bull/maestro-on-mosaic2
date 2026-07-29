@@ -1,0 +1,25 @@
+{
+  "request_id": "WR-MAESTRO-PROMPT-EVOLUTION-FULL-20260725",
+  "original_input": "Use @intent-compiler, @maestro-forensic-transcript, and @fabric-studio-orchestrator on the supplied files and conversation exports. Execute the full forensic prompt-evolution and automation-discovery run. Do not append to prior incomplete runs.",
+  "reconstructed_request": "Execute a clean standalone replay of the frozen 53-member corpus as an append-only operator-root development record. Apply the operator-supplied Intent Compiler, Maestro Forensic Transcript W0-W9, and Fabric Studio replay_build logic; preserve every original prompt; produce hindsight-optimized executable prompts, causal teaching commentary, authority and mutation registers, automation opportunities, impact analysis, integrity review, false-PASS controls, and an air-gap-tolerant continuation packet without using prior generated conclusions as source evidence.",
+  "source_scope": "53 frozen source members under source/",
+  "authority_order": [
+    "operator messages and operator-supplied artifacts",
+    "later operator corrections and explicit acceptances",
+    "demonstrated runtime or generated artifacts",
+    "accepted or carried-forward assistant material",
+    "unaccepted assistant proposals",
+    "model inference"
+  ],
+  "execution_mode": "single-model emulation + deterministic mechanical tooling",
+  "constraints": [
+    "clean standalone rerun",
+    "append-only historical record",
+    "no silent merge",
+    "no invented requirements",
+    "existence is not acceptance",
+    "no product-runtime promotion",
+    "operator retains acceptance and canon promotion"
+  ],
+  "definition_of_done": "All mechanically recoverable operator events represented or excluded; traceable prompt pairs and causal explanations emitted; every automation links to source events; coverage, contradiction, source-fidelity, and false-PASS checks recorded; unresolved chronology remains visible."
+}

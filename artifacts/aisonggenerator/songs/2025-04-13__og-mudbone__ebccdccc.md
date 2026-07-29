@@ -1,0 +1,110 @@
+# O.G. Mudbone
+
+> Song family: **O.G. Mudbone** · generation #2 in family · created 2025-04-13T01:45:45.272Z
+
+## Metadata
+
+- song_id: `ebccdccc-6162-4293-8192-e2b43139b985`
+- id: `807730`
+- model: `V4`
+- created_at: `2025-04-13T01:45:45.272Z`
+- updated_at: `2025-04-13T01:48:14.172Z`
+- duration: `184.88`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `ace`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/4f4898ab-9e66-48d9-a60b-3b8aac2de1b7.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/98a9ab31-c764-4bff-a7ec-230db0a1591a.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://audiopipe.suno.ai/?item_id=ebccdccc-6162-4293-8192-e2b43139b985
+
+## Style / Prompt (tags)
+
+```
+Trap Dirge
+Southern Gothic Blues
+Spoken-Word Gospel Flow
+Male Preacher Voice + Whisper Falsetto + Deep Rasp
+```
+
+## Lyrics
+
+```
+[Intro, Vinyl Dust, Thunder Cracks]
+Take your time, son...
+It’s easy to get in — damn near impossible to get out.
+They called me O.G. like it was a badge,
+But that name?
+That name was a funeral song in disguise.
+You ain’t never met the devil
+‘til he gave you money *and* a reason not to go home.
+[Verse 1, Preacher Flow, Organ Pads]
+They say I ruined every Christmas.
+Twenty-two times I shoulda stayed gone.
+But they called me.
+And I came.
+Was any of it real?
+Or was I just useful
+When things got ugly and girls went missin’?
+There’s only two sides in the game:
+Pimps and dealers.
+And I was both.
+Until I chose out.
+Walked away —
+‘Cause I got daughters now.
+And every woman?
+She somebody’s baby girl.
+Somebody’s momma.
+[Verse 2, Whisper Falsetto, Trap Kick Creeps In]
+Got a call from my wife’s best friend.
+Said her goddaughter got caught in the Texas flood.
+Ain’t seen her in six years —
+Last time I did, her folks took me in like kin.
+Fed me. Housed me.
+Called me ‘son’ when I had none of my own.
+But my wife?
+She told me “That girl chose that life.”
+Still — her momma called me direct.
+And when a mother calls?
+You answer.
+[Bridge, Dragged Vocals, Thunder Rolls]
+So I strap up...
+Slide them colors back on.
+Knowing I just reopened Pandora’s Box.
+A billion-dollar beast I tried to bury.
+I stop at the same gas station from back in ’99.
+And a woman behind me says a name I ain’t heard
+Since I was sixteen
+And too dumb to run.
+[Breakdown, Minimal Beat, Ghost Choir]
+That name...
+And now I gotta choose.
+Because stepping in?
+That means I adopt her.
+AND her momma.
+Ain’t no halfway protection.
+You don’t dabble in resurrection.
+You baptize or you burn.
+[Outro, Organ Swell, Vinyl Crackle]
+I remember when I got her and her brother that old Dell computer.
+They cried.
+Said I gave them hope.
+And now she standin’ here...
+Beautiful. Unguarded. But not yet spoiled.
+And I know —
+If I step in?
+I’m not just protecting her from the streets.
+I’m protecting *me*
+From the man I used to be.
+But I already opened the door.
+Already saw her eyes.
+And damn…
+I think I already did it.
+Again.
+```

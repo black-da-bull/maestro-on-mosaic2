@@ -1,0 +1,160 @@
+# The Switch-Up
+
+> Song family: **The Switch-Up** · generation #49 in family · created 2025-05-02T04:02:53.142Z
+
+## Metadata
+
+- song_id: `baa6e694-b16b-4ce3-8e0b-2b678578ae4b`
+- id: `986502`
+- model: `V4`
+- created_at: `2025-05-02T04:02:53.142Z`
+- updated_at: `2025-05-02T04:05:26.012Z`
+- duration: `191.48`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `damo`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/037bf590-9cf4-4ed5-aa0e-1f88c650a4f3.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/98dd45e4-2b05-4efd-a40e-4678b276e1ac.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://mfile.erweima.ai/YmFhNmU2OTQtYjE2Yi00Y2UzLThlMGItMmI2Nzg1NzhhZTRi
+
+## Style / Prompt (tags)
+
+```
+Boom Bap x 808 Heavy
+Gritty Female Flow
+Dynamic Tempo Shifts
+Tribal Percussion
+Chopped & Screwed Effects
+```
+
+## Lyrics
+
+```
+[Intro, Chopped & Screwed, Eerie Synths, Sub-Bass]
+Yeah... slow-rollin’
+Like syrup in the cup...
+Smoke hangs thick
+Blue light, real stuck...
+Wait...
+Watch the tempo shift up—
+Don’t blink
+Might miss the lift-up
+Bassline stalkin’
+Heartbeat sinkin’
+Chopped voice slither
+Whole club’s thinkin’
+
+[Verse 1, Laid-Back Groove, Lowrider Bounce - 95 BPM]
+Step in the room
+Bassline thumpin’
+Heads all turn
+Crowd straight jumpin’
+Backlight glow
+Hips move like waves
+Tattoo flashin’
+Eyes locked, brave
+Heels click slow
+Gold hoops swing
+Talk with my walk
+I don’t say a thing
+Air gets thick
+Pulse in flight
+Walk in bold—
+This vibe’s my right
+
+[Chorus, Catchy Hook, Twerk Anthem - 95 BPM]
+Drop it low
+Let the bassline ride
+Twerk it out
+Let the whiskey decide
+Bounce it back
+Make the floorboards quake
+Hands on knees
+Now watch it shake
+Drop it low
+Let the tempo ride
+Switch it up
+No fear, no guide
+Twerk it wild
+Let the body scream
+We run heat
+We run the scene
+
+[Verse 2, Hard-Hitting Flow - 95 BPM]
+Eyes on me
+Got the room on lock
+Boots hit ground
+Hear the speakers knock
+Beat’s a blade
+I cut through the doubt
+Lines hit cold
+Make the silence shout
+I don’t chase
+I own the pace
+No fake flex
+Just raw grace
+Power’s here
+In the way I step
+Mood shifts fast
+Better watch your rep
+
+[Bridge, Tempo Drop to 70 BPM, Tribal Percussion, Chopped & Screwed]
+Slow down, now
+Hips roll vivid
+Bass hits deep
+This groove—explicit
+Smoke in the light
+Fire in my stance
+Tribal drums
+Put me in that trance
+Watch me twist
+Switch positions
+Low control
+No inhibitions
+Voice drops slow
+Screwed and hazy
+This the switch
+They call me crazy
+
+[Extended Chorus, 95 BPM, Add Vocal Layers & Ad-Libs]
+Drop it low
+Let the bassline ride (ride it)
+Twerk it out
+Let the whiskey decide (uh-huh)
+Bounce it back
+Make the floorboards quake (bounce)
+Hands on knees
+Now let it shake (go crazy)
+Drop it low
+Let the bassline ride
+Switch it up
+Ain’t no place to hide
+Twerk it wild
+Like the night’s on fire
+Run the show
+I’m your desire
+
+[Outro, Chopped & Screwed, Gospel Harmonies, Vinyl Crackle]
+(Drop it low...)
+(Echo: drop... drop...)
+Pull up slow
+I change the flow
+Vinyl crackle
+Gospel glow
+808 thunder
+I move like smoke
+Switch it up
+Then ghost—no joke
+Whispers deep
+Like a Southern bell
+I don’t just move
+I cast a spell...
+(Switch... switch... switch...)
+```

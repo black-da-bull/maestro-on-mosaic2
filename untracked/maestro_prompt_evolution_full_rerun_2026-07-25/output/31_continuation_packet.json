@@ -1,0 +1,36 @@
+{
+  "packet_id": "ATP-MAESTRO-PROMPT-EVOLUTION-20260725",
+  "run_id": "MAESTRO.PROMPT_EVOLUTION.FULL.RERUN.2026-07-25",
+  "accepted_state": [
+    "User-approved authority precedence from prior closed session",
+    "append-only record law",
+    "source classes remain separate",
+    "original and optimized prompts remain separate",
+    "automation cannot accept or promote canon"
+  ],
+  "proposed_state": [
+    "event-linked prompt evolution analyzer",
+    "deterministic source/coverage parser",
+    "manager-style replay agent after deterministic intake"
+  ],
+  "operative_state": [
+    "mechanical extraction and standalone rerun over frozen source set"
+  ],
+  "persisted_state": [
+    "all outputs and manifest in this archive"
+  ],
+  "runtime_enforced_state": [],
+  "unresolved": [
+    "OPEN-001",
+    "OPEN-002",
+    "OPEN-003"
+  ],
+  "next_lawful_action": "Run source-family semantic reconciliation and operator review of P0 automation candidates before implementation.",
+  "narrowest_executable_sequence": [
+    "verify archive manifest",
+    "review high-impact contradiction and phantom candidates",
+    "approve or reject P0 deterministic tooling",
+    "repair chronology metadata",
+    "targeted rerun only for affected source families"
+  ]
+}

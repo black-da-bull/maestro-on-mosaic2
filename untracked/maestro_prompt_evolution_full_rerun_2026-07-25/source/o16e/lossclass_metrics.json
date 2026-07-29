@@ -1,0 +1,1872 @@
+{
+ "S0/council_2025-05-20": {
+  "bytes": 643137,
+  "SEM": {
+   "weak": 70,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 3,
+   "strong": 3,
+   "density": 0.05,
+   "first_off": 24295
+  },
+  "AGENTS": {
+   "weak": 512,
+   "strong": 24,
+   "density": 0.37,
+   "first_off": 5101
+  },
+  "EXCELLENCE": {
+   "weak": 24,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 1982,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "path": "work/O16E/threads/TH-00_prehistory/2025-05-20_-_Council-Driven_AI_Workflow.md"
+ },
+ "S0/fractal_2025-05-29": {
+  "bytes": 1153779,
+  "SEM": {
+   "weak": 231,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 83,
+   "strong": 81,
+   "density": 0.7,
+   "first_off": 577662
+  },
+  "AGENTS": {
+   "weak": 79,
+   "strong": 2,
+   "density": 0.02,
+   "first_off": 38764
+  },
+  "EXCELLENCE": {
+   "weak": 9,
+   "strong": 6,
+   "density": 0.05,
+   "first_off": 51945
+  },
+  "UST": {
+   "weak": 2164,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "path": "work/O16E/threads/TH-00_prehistory/2025-05-29_-_Fractal_Music_GPT_Prototype.md"
+ },
+ "S0/odie_2025-03-30": {
+  "bytes": 333163,
+  "SEM": {
+   "weak": 40,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 227,
+   "strong": 4,
+   "density": 0.12,
+   "first_off": 17865
+  },
+  "EXCELLENCE": {
+   "weak": 3,
+   "strong": 3,
+   "density": 0.09,
+   "first_off": 27678
+  },
+  "UST": {
+   "weak": 267,
+   "strong": 1,
+   "density": 0.03,
+   "first_off": 309694
+  },
+  "path": "work/O16E/threads/TH-00_prehistory/2025-03-30_-_ODIE_Modular_Design_Review.md"
+ },
+ "S0/lyrical_warfare_2025-03-31": {
+  "bytes": 250492,
+  "SEM": {
+   "weak": 103,
+   "strong": 10,
+   "density": 0.4,
+   "first_off": 113701
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 118,
+   "strong": 5,
+   "density": 0.2,
+   "first_off": 30852
+  },
+  "EXCELLENCE": {
+   "weak": 3,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 852,
+   "strong": 1,
+   "density": 0.04,
+   "first_off": 65168
+  },
+  "path": "work/O16E/threads/TH-00_prehistory/2025-03-31_-_Lyrical_Warfare_Superteam.md"
+ },
+ "S0/gold_standard_2025-05-02": {
+  "bytes": 362002,
+  "SEM": {
+   "weak": 46,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 32,
+   "strong": 32,
+   "density": 0.88,
+   "first_off": 35672
+  },
+  "AGENTS": {
+   "weak": 75,
+   "strong": 3,
+   "density": 0.08,
+   "first_off": 97094
+  },
+  "EXCELLENCE": {
+   "weak": 23,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 766,
+   "strong": 1,
+   "density": 0.03,
+   "first_off": 292082
+  },
+  "path": "work/O16E/threads/TH-00_prehistory/2025-05-02_-_Gold_Standard_Prompt_Breakdown.md"
+ },
+ "S0/defsol_2023-11-10": {
+  "bytes": 564296,
+  "SEM": {
+   "weak": 24,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 2,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 79,
+   "strong": 19,
+   "density": 0.34,
+   "first_off": 18877
+  },
+  "EXCELLENCE": {
+   "weak": 14,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 525,
+   "strong": 1,
+   "density": 0.02,
+   "first_off": 405996
+  },
+  "path": "work/O16E/threads/TH-00_prehistory/2023-11-10_-_Extracted_Definitive_Solution_Text.md"
+ },
+ "S1/begin_gpt": {
+  "bytes": 127648,
+  "SEM": {
+   "weak": 50,
+   "strong": 10,
+   "density": 0.78,
+   "first_off": 57579
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 53,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "EXCELLENCE": {
+   "weak": 25,
+   "strong": 4,
+   "density": 0.31,
+   "first_off": 51827
+  },
+  "UST": {
+   "weak": 379,
+   "strong": 2,
+   "density": 0.16,
+   "first_off": 843
+  },
+  "path": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/Begin GPT 1.txt"
+ },
+ "S1/momoney_dev": {
+  "bytes": 281513,
+  "SEM": {
+   "weak": 46,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 255,
+   "strong": 41,
+   "density": 1.46,
+   "first_off": 97201
+  },
+  "EXCELLENCE": {
+   "weak": 36,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 690,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "path": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/MoMoeny Dev.md"
+ },
+ "S1/dumbass_blueprint": {
+  "bytes": 110782,
+  "SEM": {
+   "weak": 96,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 9,
+   "strong": 1,
+   "density": 0.09,
+   "first_off": 11580
+  },
+  "EXCELLENCE": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 376,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "path": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/dumbass session.md"
+ },
+ "S1/gemini_gem_v4x": {
+  "bytes": 134295,
+  "SEM": {
+   "weak": 11,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 3,
+   "strong": 3,
+   "density": 0.22,
+   "first_off": 37921
+  },
+  "AGENTS": {
+   "weak": 18,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "EXCELLENCE": {
+   "weak": 4,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 374,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "path": "corpus/sessions/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/oldMaestroGeminiGemIterativeDesignViaConversationalDialogueDevelopmentSessionExport.txt"
+ },
+ "S1/universalmaestro_v3g": {
+  "bytes": 5123,
+  "SEM": {
+   "weak": 1,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 15,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "EXCELLENCE": {
+   "weak": 4,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 22,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "path": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/UniversalMaestro.v3.0g.CustomGPT.Instructions.md"
+ },
+ "S2/1213_v4x": {
+  "bytes": 320021,
+  "SEM": {
+   "weak": 178,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 309,
+   "strong": 43,
+   "density": 1.34,
+   "first_off": 675
+  },
+  "EXCELLENCE": {
+   "weak": 199,
+   "strong": 150,
+   "density": 4.69,
+   "first_off": 284
+  },
+  "UST": {
+   "weak": 1939,
+   "strong": 91,
+   "density": 2.84,
+   "first_off": 945
+  },
+  "path": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/maestro-os-v4.x-baseline-001/1213.txt"
+ },
+ "S2/song_review_T01": {
+  "bytes": 32461,
+  "SEM": {
+   "weak": 1,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 13,
+   "strong": 3,
+   "density": 0.92,
+   "first_off": 99
+  },
+  "EXCELLENCE": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 81,
+   "strong": 1,
+   "density": 0.31,
+   "first_off": 18477
+  },
+  "path": "corpus/sessions/D-Maestro/maestro-ai-music-system/source/distributed/suno_v45_config_bundle_v3/conversation_-2--song-review_2025-05-07-0505.agi.md"
+ },
+ "S3/taxonomy_v45": {
+  "bytes": 228355,
+  "SEM": {
+   "weak": 27,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 10,
+   "strong": 3,
+   "density": 0.13,
+   "first_off": 47885
+  },
+  "EXCELLENCE": {
+   "weak": 1,
+   "strong": 1,
+   "density": 0.04,
+   "first_off": 195774
+  },
+  "UST": {
+   "weak": 775,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "path": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/2025-05-16 - Suno v4.5 Taxonomy Research.md"
+ },
+ "S3/houseinorder": {
+  "bytes": 514362,
+  "SEM": {
+   "weak": 327,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 5,
+   "strong": 3,
+   "density": 0.06,
+   "first_off": 491182
+  },
+  "AGENTS": {
+   "weak": 404,
+   "strong": 25,
+   "density": 0.49,
+   "first_off": 4380
+  },
+  "EXCELLENCE": {
+   "weak": 260,
+   "strong": 182,
+   "density": 3.54,
+   "first_off": 35428
+  },
+  "UST": {
+   "weak": 2232,
+   "strong": 257,
+   "density": 5.0,
+   "first_off": 42312
+  },
+  "path": "corpus/artifacts/D-Maestro/Maestro/houseinorder.txt"
+ },
+ "S3/inmyroom": {
+  "bytes": 70888,
+  "SEM": {
+   "weak": 21,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 50,
+   "strong": 1,
+   "density": 0.14,
+   "first_off": 51552
+  },
+  "EXCELLENCE": {
+   "weak": 15,
+   "strong": 12,
+   "density": 1.69,
+   "first_off": 21902
+  },
+  "UST": {
+   "weak": 488,
+   "strong": 7,
+   "density": 0.99,
+   "first_off": 18287
+  },
+  "path": "corpus/artifacts/D-Maestro/Maestro/inmyroom.tx.txt"
+ },
+ "S3/SEM_matrix_design": {
+  "bytes": 380116,
+  "SEM": {
+   "weak": 350,
+   "strong": 44,
+   "density": 1.16,
+   "first_off": 65128
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 173,
+   "strong": 8,
+   "density": 0.21,
+   "first_off": 6342
+  },
+  "EXCELLENCE": {
+   "weak": 305,
+   "strong": 101,
+   "density": 2.66,
+   "first_off": 730
+  },
+  "UST": {
+   "weak": 1430,
+   "strong": 25,
+   "density": 0.66,
+   "first_off": 120287
+  },
+  "path": "corpus/artifacts/D-Maestro/Maestro/song.excellence.matrix.iterative.design.session.txt"
+ },
+ "S3/SEM_reformatted_ARTIFACT": {
+  "bytes": 605610,
+  "SEM": {
+   "weak": 466,
+   "strong": 54,
+   "density": 0.89,
+   "first_off": 83346
+  },
+  "FOIL": {
+   "weak": 3,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 272,
+   "strong": 14,
+   "density": 0.23,
+   "first_off": 20284
+  },
+  "EXCELLENCE": {
+   "weak": 445,
+   "strong": 141,
+   "density": 2.33,
+   "first_off": 589
+  },
+  "UST": {
+   "weak": 1808,
+   "strong": 30,
+   "density": 0.5,
+   "first_off": 91190
+  },
+  "path": "corpus/artifacts/D-Maestro/SONG EXCELLENCE MATRIX!!!/song_excellence_reformatted.md"
+ },
+ "S3/os_dev_T02": {
+  "bytes": 1266912,
+  "SEM": {
+   "weak": 126,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 9,
+   "strong": 8,
+   "density": 0.06,
+   "first_off": 1243651
+  },
+  "AGENTS": {
+   "weak": 1304,
+   "strong": 142,
+   "density": 1.12,
+   "first_off": 105251
+  },
+  "EXCELLENCE": {
+   "weak": 210,
+   "strong": 73,
+   "density": 0.58,
+   "first_off": 317804
+  },
+  "UST": {
+   "weak": 2780,
+   "strong": 1,
+   "density": 0.01,
+   "first_off": 817201
+  },
+  "path": "corpus/sessions/E-scatter/maestro/conversation_os-dev_2025-09-22-1602.agi.md"
+ },
+ "S3/chop_screw": {
+  "bytes": 412830,
+  "SEM": {
+   "weak": 597,
+   "strong": 6,
+   "density": 0.15,
+   "first_off": 169970
+  },
+  "FOIL": {
+   "weak": 10,
+   "strong": 5,
+   "density": 0.12,
+   "first_off": 191437
+  },
+  "AGENTS": {
+   "weak": 382,
+   "strong": 18,
+   "density": 0.44,
+   "first_off": 92611
+  },
+  "EXCELLENCE": {
+   "weak": 254,
+   "strong": 192,
+   "density": 4.65,
+   "first_off": 7616
+  },
+  "UST": {
+   "weak": 2362,
+   "strong": 420,
+   "density": 10.17,
+   "first_off": 136662
+  },
+  "path": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/chop and screw module dev chat.txt"
+ },
+ "S3/extrct_engine": {
+  "bytes": 198906,
+  "SEM": {
+   "weak": 466,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 6,
+   "strong": 5,
+   "density": 0.25,
+   "first_off": 141972
+  },
+  "AGENTS": {
+   "weak": 120,
+   "strong": 6,
+   "density": 0.3,
+   "first_off": 69138
+  },
+  "EXCELLENCE": {
+   "weak": 192,
+   "strong": 133,
+   "density": 6.69,
+   "first_off": 17433
+  },
+  "UST": {
+   "weak": 1027,
+   "strong": 69,
+   "density": 3.47,
+   "first_off": 16825
+  },
+  "path": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/extrct-engine-dev-chat.txt"
+ },
+ "S3/session_ust_T05": {
+  "bytes": 345876,
+  "SEM": {
+   "weak": 153,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 3,
+   "strong": 1,
+   "density": 0.03,
+   "first_off": 165740
+  },
+  "AGENTS": {
+   "weak": 301,
+   "strong": 24,
+   "density": 0.69,
+   "first_off": 8092
+  },
+  "EXCELLENCE": {
+   "weak": 188,
+   "strong": 133,
+   "density": 3.85,
+   "first_off": 8787
+  },
+  "UST": {
+   "weak": 1299,
+   "strong": 140,
+   "density": 4.05,
+   "first_off": 42705
+  },
+  "path": "corpus/sessions/OneDrive-v45/session-ust.txt"
+ },
+ "S3/devsession_iter": {
+  "bytes": 269531,
+  "SEM": {
+   "weak": 514,
+   "strong": 7,
+   "density": 0.26,
+   "first_off": 25394
+  },
+  "FOIL": {
+   "weak": 21,
+   "strong": 19,
+   "density": 0.7,
+   "first_off": 45832
+  },
+  "AGENTS": {
+   "weak": 163,
+   "strong": 19,
+   "density": 0.7,
+   "first_off": 33962
+  },
+  "EXCELLENCE": {
+   "weak": 234,
+   "strong": 178,
+   "density": 6.6,
+   "first_off": 22829
+  },
+  "UST": {
+   "weak": 1640,
+   "strong": 190,
+   "density": 7.05,
+   "first_off": 22633
+  },
+  "path": "corpus/sessions/D-Maestro/Maestro/maestro.devsession.iterative.txt"
+ },
+ "S4/v455_evidence": {
+  "bytes": 1849109,
+  "SEM": {
+   "weak": 400,
+   "strong": 4,
+   "density": 0.02,
+   "first_off": 218741
+  },
+  "FOIL": {
+   "weak": 5,
+   "strong": 3,
+   "density": 0.02,
+   "first_off": 215898
+  },
+  "AGENTS": {
+   "weak": 1381,
+   "strong": 231,
+   "density": 1.25,
+   "first_off": 24380
+  },
+  "EXCELLENCE": {
+   "weak": 1052,
+   "strong": 488,
+   "density": 2.64,
+   "first_off": 168650
+  },
+  "UST": {
+   "weak": 5483,
+   "strong": 2,
+   "density": 0.01,
+   "first_off": 92280
+  },
+  "path": "corpus/artifacts/D-Maestro/sources/v2-6-4-5-5__maestro_evolution_execution-evidence.txt"
+ },
+ "S4/v452_monolith": {
+  "bytes": 82056,
+  "SEM": {
+   "weak": 12,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 63,
+   "strong": 15,
+   "density": 1.83,
+   "first_off": 1291
+  },
+  "EXCELLENCE": {
+   "weak": 63,
+   "strong": 29,
+   "density": 3.53,
+   "first_off": 1957
+  },
+  "UST": {
+   "weak": 246,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "path": "corpus/artifacts/D-Maestro/canon/MoMoney Maestro OS v4.5.2 \u2014 MONOLITHIC PROMPT.md"
+ },
+ "S4/chimera_devsession_T04": {
+  "bytes": 540085,
+  "SEM": {
+   "weak": 743,
+   "strong": 10,
+   "density": 0.19,
+   "first_off": 24234
+  },
+  "FOIL": {
+   "weak": 35,
+   "strong": 31,
+   "density": 0.57,
+   "first_off": 28177
+  },
+  "AGENTS": {
+   "weak": 266,
+   "strong": 33,
+   "density": 0.61,
+   "first_off": 21750
+  },
+  "EXCELLENCE": {
+   "weak": 363,
+   "strong": 268,
+   "density": 4.96,
+   "first_off": 13024
+  },
+  "UST": {
+   "weak": 2610,
+   "strong": 296,
+   "density": 5.48,
+   "first_off": 12804
+  },
+  "path": "corpus/sessions/OneDrive-v45/maestro_devsession.ai_optimized.md"
+ },
+ "S5/eldrik_PRIMARY": {
+  "bytes": 3464525,
+  "SEM": {
+   "weak": 2623,
+   "strong": 195,
+   "density": 0.56,
+   "first_off": 58439
+  },
+  "FOIL": {
+   "weak": 156,
+   "strong": 153,
+   "density": 0.44,
+   "first_off": 36334
+  },
+  "AGENTS": {
+   "weak": 1852,
+   "strong": 188,
+   "density": 0.54,
+   "first_off": 106
+  },
+  "EXCELLENCE": {
+   "weak": 1842,
+   "strong": 671,
+   "density": 1.94,
+   "first_off": 55776
+  },
+  "UST": {
+   "weak": 12806,
+   "strong": 609,
+   "density": 1.76,
+   "first_off": 49333
+  },
+  "path": "corpus/artifacts/D-Maestro/sources/eldrik.txt.txt"
+ },
+ "S5/clarity": {
+  "bytes": 3258314,
+  "SEM": {
+   "weak": 2585,
+   "strong": 195,
+   "density": 0.6,
+   "first_off": 58440
+  },
+  "FOIL": {
+   "weak": 142,
+   "strong": 140,
+   "density": 0.43,
+   "first_off": 36335
+  },
+  "AGENTS": {
+   "weak": 1775,
+   "strong": 175,
+   "density": 0.54,
+   "first_off": 107
+  },
+  "EXCELLENCE": {
+   "weak": 1785,
+   "strong": 635,
+   "density": 1.95,
+   "first_off": 55777
+  },
+  "UST": {
+   "weak": 12403,
+   "strong": 561,
+   "density": 1.72,
+   "first_off": 49334
+  },
+  "path": "corpus/sessions/D-Maestro/maestro-ai-music-system/dev-chats/conversation_maestro-chat---clarity_2026-04-03-1250.agi.md"
+ },
+ "S5/foil_tiered": {
+  "bytes": 875711,
+  "SEM": {
+   "weak": 649,
+   "strong": 56,
+   "density": 0.64,
+   "first_off": 111272
+  },
+  "FOIL": {
+   "weak": 29,
+   "strong": 28,
+   "density": 0.32,
+   "first_off": 2
+  },
+  "AGENTS": {
+   "weak": 418,
+   "strong": 28,
+   "density": 0.32,
+   "first_off": 6862
+  },
+  "EXCELLENCE": {
+   "weak": 536,
+   "strong": 163,
+   "density": 1.86,
+   "first_off": 5746
+  },
+  "UST": {
+   "weak": 2785,
+   "strong": 100,
+   "density": 1.14,
+   "first_off": 18025
+  },
+  "path": "corpus/sessions/D-Maestro/sources/conversation_foil-based-tiered-system_2026-04-03-1252.agi.md"
+ },
+ "S5/v5_ust_sem": {
+  "bytes": 691963,
+  "SEM": {
+   "weak": 306,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 6,
+   "strong": 2,
+   "density": 0.03,
+   "first_off": 165879
+  },
+  "AGENTS": {
+   "weak": 602,
+   "strong": 48,
+   "density": 0.69,
+   "first_off": 8231
+  },
+  "EXCELLENCE": {
+   "weak": 376,
+   "strong": 266,
+   "density": 3.84,
+   "first_off": 8926
+  },
+  "UST": {
+   "weak": 2598,
+   "strong": 280,
+   "density": 4.05,
+   "first_off": 42844
+  },
+  "path": "corpus/sessions/D-Maestro/maestro-ai-music-system-main/legacy/maestrov5-dev-ust and sem-sessions.txt"
+ },
+ "S5/day3_v5b_v5c": {
+  "bytes": 1416372,
+  "SEM": {
+   "weak": 119,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 126,
+   "strong": 126,
+   "density": 0.89,
+   "first_off": 3277
+  },
+  "AGENTS": {
+   "weak": 838,
+   "strong": 126,
+   "density": 0.89,
+   "first_off": 3093
+  },
+  "EXCELLENCE": {
+   "weak": 729,
+   "strong": 211,
+   "density": 1.49,
+   "first_off": 52131
+  },
+  "UST": {
+   "weak": 3067,
+   "strong": 492,
+   "density": 3.47,
+   "first_off": 2727
+  },
+  "path": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/Day 3 Dev Chat.md"
+ },
+ "S5/staging_spine_v5b": {
+  "bytes": 1472871,
+  "SEM": {
+   "weak": 1390,
+   "strong": 51,
+   "density": 0.35,
+   "first_off": 728066
+  },
+  "FOIL": {
+   "weak": 29,
+   "strong": 25,
+   "density": 0.17,
+   "first_off": 541572
+  },
+  "AGENTS": {
+   "weak": 800,
+   "strong": 53,
+   "density": 0.36,
+   "first_off": 5720
+  },
+  "EXCELLENCE": {
+   "weak": 829,
+   "strong": 481,
+   "density": 3.27,
+   "first_off": 40604
+  },
+  "UST": {
+   "weak": 6377,
+   "strong": 538,
+   "density": 3.65,
+   "first_off": 48307
+  },
+  "path": "corpus/artifacts/D-Maestro/Maestro/v5-b/staging.spine.merged.ai_optimized.md"
+ },
+ "S5/houseinorder_v5b_aiopt": {
+  "bytes": 747689,
+  "SEM": {
+   "weak": 452,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 7,
+   "strong": 4,
+   "density": 0.05,
+   "first_off": 142710
+  },
+  "AGENTS": {
+   "weak": 538,
+   "strong": 35,
+   "density": 0.47,
+   "first_off": 1010
+  },
+  "EXCELLENCE": {
+   "weak": 393,
+   "strong": 273,
+   "density": 3.65,
+   "first_off": 16106
+  },
+  "UST": {
+   "weak": 3110,
+   "strong": 397,
+   "density": 5.31,
+   "first_off": 19653
+  },
+  "path": "corpus/artifacts/D-Maestro/Maestro/v5-b/houseinorder.ai_optimized.md"
+ },
+ "S5/technical_ust_v5b_aiopt": {
+  "bytes": 117420,
+  "SEM": {
+   "weak": 354,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 20,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "EXCELLENCE": {
+   "weak": 20,
+   "strong": 16,
+   "density": 1.36,
+   "first_off": 2351
+  },
+  "UST": {
+   "weak": 1151,
+   "strong": 118,
+   "density": 10.05,
+   "first_off": 12675
+  },
+  "path": "corpus/artifacts/D-Maestro/Maestro/v5-b/technical_ust_template.ai_optimized.md"
+ },
+ "S5/chimera_quality": {
+  "bytes": 115684,
+  "SEM": {
+   "weak": 58,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 17,
+   "strong": 2,
+   "density": 0.17,
+   "first_off": 7257
+  },
+  "EXCELLENCE": {
+   "weak": 5,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 329,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "path": "corpus/artifacts/D-Maestro/pws - maestro v5/chimera-quality-dev-chat (1).txt"
+ },
+ "S5/lyric_baseline": {
+  "bytes": 130601,
+  "SEM": {
+   "weak": 16,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 1,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 20,
+   "strong": 7,
+   "density": 0.54,
+   "first_off": 42252
+  },
+  "EXCELLENCE": {
+   "weak": 25,
+   "strong": 1,
+   "density": 0.08,
+   "first_off": 123043
+  },
+  "UST": {
+   "weak": 544,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "path": "corpus/artifacts/D-Maestro/pws - maestro v5/Lyric quality baseline (1).txt"
+ },
+ "S5/branch_lyric": {
+  "bytes": 140938,
+  "SEM": {
+   "weak": 22,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 17,
+   "strong": 5,
+   "density": 0.35,
+   "first_off": 42259
+  },
+  "EXCELLENCE": {
+   "weak": 18,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 457,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "path": "corpus/artifacts/D-Maestro/pws - maestro v5/Branch \u00b7 Branch \u00b7 Lyric quality baseline (1).txt"
+ },
+ "S5/v5c_workspace_identity": {
+  "bytes": 34263,
+  "SEM": {
+   "weak": 1,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 3,
+   "strong": 3,
+   "density": 0.88,
+   "first_off": 2808
+  },
+  "AGENTS": {
+   "weak": 31,
+   "strong": 6,
+   "density": 1.75,
+   "first_off": 8741
+  },
+  "EXCELLENCE": {
+   "weak": 16,
+   "strong": 12,
+   "density": 3.5,
+   "first_off": 6007
+  },
+  "UST": {
+   "weak": 89,
+   "strong": 40,
+   "density": 11.67,
+   "first_off": 3149
+  },
+  "path": "corpus/artifacts/D-Maestro/sources/workspace_identity-maestro_v5-c.txt"
+ },
+ "S5/maestro_architecture_session": {
+  "bytes": 332185,
+  "SEM": {
+   "weak": 62,
+   "strong": 1,
+   "density": 0.03,
+   "first_off": 45282
+  },
+  "FOIL": {
+   "weak": 268,
+   "strong": 267,
+   "density": 8.04,
+   "first_off": 35574
+  },
+  "AGENTS": {
+   "weak": 102,
+   "strong": 19,
+   "density": 0.57,
+   "first_off": 15111
+  },
+  "EXCELLENCE": {
+   "weak": 190,
+   "strong": 42,
+   "density": 1.26,
+   "first_off": 3220
+  },
+  "UST": {
+   "weak": 1100,
+   "strong": 280,
+   "density": 8.43,
+   "first_off": 10659
+  },
+  "path": "corpus/untracked/maestro architecture session.md"
+ },
+ "S5/fabric_rebirth": {
+  "bytes": 129294,
+  "SEM": {
+   "weak": 30,
+   "strong": 1,
+   "density": 0.08,
+   "first_off": 43327
+  },
+  "FOIL": {
+   "weak": 155,
+   "strong": 155,
+   "density": 11.99,
+   "first_off": 33619
+  },
+  "AGENTS": {
+   "weak": 61,
+   "strong": 11,
+   "density": 0.85,
+   "first_off": 13156
+  },
+  "EXCELLENCE": {
+   "weak": 65,
+   "strong": 9,
+   "density": 0.7,
+   "first_off": 1265
+  },
+  "UST": {
+   "weak": 576,
+   "strong": 173,
+   "density": 13.38,
+   "first_off": 8704
+  },
+  "path": "corpus/untracked/Maestro - Fabric - Rebirth.md"
+ },
+ "S5/technical_ust_template": {
+  "bytes": 36175,
+  "SEM": {
+   "weak": 177,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 10,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "EXCELLENCE": {
+   "weak": 10,
+   "strong": 8,
+   "density": 2.21,
+   "first_off": 1696
+  },
+  "UST": {
+   "weak": 574,
+   "strong": 59,
+   "density": 16.31,
+   "first_off": 9525
+  },
+  "path": "corpus/artifacts/D-Maestro/Maestro/technical.ust.template.txt"
+ },
+ "S5b/coldstart_TECH_UST_CANON": {
+  "bytes": 6316,
+  "SEM": {
+   "weak": 129,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "EXCELLENCE": {
+   "weak": 8,
+   "strong": 3,
+   "density": 4.75,
+   "first_off": 470
+  },
+  "UST": {
+   "weak": 307,
+   "strong": 54,
+   "density": 85.5,
+   "first_off": 860
+  },
+  "path": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/TECHNICAL_UST_CANON.md"
+ },
+ "S5b/coldstart_GOV_ADDENDUM": {
+  "bytes": 7641,
+  "SEM": {
+   "weak": 92,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "EXCELLENCE": {
+   "weak": 52,
+   "strong": 47,
+   "density": 61.51,
+   "first_off": 146
+  },
+  "UST": {
+   "weak": 132,
+   "strong": 1,
+   "density": 1.31,
+   "first_off": 6898
+  },
+  "path": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/TECHNICAL_UST_GOVERNANCE_ADDENDUM.md"
+ },
+ "S5b/coldstart_COUNCIL_MATRIX": {
+  "bytes": 2055,
+  "SEM": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 12,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "EXCELLENCE": {
+   "weak": 2,
+   "strong": 2,
+   "density": 9.73,
+   "first_off": 1974
+  },
+  "UST": {
+   "weak": 22,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "path": "corpus/code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/COUNCIL_MATRIX.md"
+ },
+ "S6/session13_window2": {
+  "bytes": 914340,
+  "SEM": {
+   "weak": 640,
+   "strong": 36,
+   "density": 0.39,
+   "first_off": 304720
+  },
+  "FOIL": {
+   "weak": 9,
+   "strong": 7,
+   "density": 0.08,
+   "first_off": 140894
+  },
+  "AGENTS": {
+   "weak": 452,
+   "strong": 21,
+   "density": 0.23,
+   "first_off": 98400
+  },
+  "EXCELLENCE": {
+   "weak": 294,
+   "strong": 160,
+   "density": 1.75,
+   "first_off": 3939
+  },
+  "UST": {
+   "weak": 1170,
+   "strong": 104,
+   "density": 1.14,
+   "first_off": 882
+  },
+  "path": "corpus/artifacts/D-Maestro/sources/claude-session13-window2.txt"
+ },
+ "S6/claud2": {
+  "bytes": 346364,
+  "SEM": {
+   "weak": 94,
+   "strong": 18,
+   "density": 0.52,
+   "first_off": 4916
+  },
+  "FOIL": {
+   "weak": 6,
+   "strong": 3,
+   "density": 0.09,
+   "first_off": 332433
+  },
+  "AGENTS": {
+   "weak": 60,
+   "strong": 7,
+   "density": 0.2,
+   "first_off": 139739
+  },
+  "EXCELLENCE": {
+   "weak": 60,
+   "strong": 18,
+   "density": 0.52,
+   "first_off": 272
+  },
+  "UST": {
+   "weak": 452,
+   "strong": 13,
+   "density": 0.38,
+   "first_off": 142
+  },
+  "path": "corpus/artifacts/D-Maestro/sources/claud2.txt"
+ },
+ "S6/051526_SEM": {
+  "bytes": 473436,
+  "SEM": {
+   "weak": 289,
+   "strong": 76,
+   "density": 1.61,
+   "first_off": 12242
+  },
+  "FOIL": {
+   "weak": 259,
+   "strong": 247,
+   "density": 5.22,
+   "first_off": 134944
+  },
+  "AGENTS": {
+   "weak": 442,
+   "strong": 21,
+   "density": 0.44,
+   "first_off": 10414
+  },
+  "EXCELLENCE": {
+   "weak": 260,
+   "strong": 127,
+   "density": 2.68,
+   "first_off": 37077
+  },
+  "UST": {
+   "weak": 1112,
+   "strong": 90,
+   "density": 1.9,
+   "first_off": 1186
+  },
+  "path": "corpus/artifacts/D-Maestro/sources/claude-session051526.md"
+ },
+ "S6/maestro5_report": {
+  "bytes": 242864,
+  "SEM": {
+   "weak": 22,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 26,
+   "strong": 26,
+   "density": 1.07,
+   "first_off": 12307
+  },
+  "AGENTS": {
+   "weak": 239,
+   "strong": 64,
+   "density": 2.64,
+   "first_off": 4763
+  },
+  "EXCELLENCE": {
+   "weak": 155,
+   "strong": 68,
+   "density": 2.8,
+   "first_off": 5199
+  },
+  "UST": {
+   "weak": 763,
+   "strong": 125,
+   "density": 5.15,
+   "first_off": 10773
+  },
+  "path": "corpus/artifacts/D-Maestro/sources/maestro5 report.txt"
+ },
+ "S5c/v5c_canonical_spine": {
+  "bytes": 28344,
+  "SEM": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 21,
+   "strong": 21,
+   "density": 7.41,
+   "first_off": 835
+  },
+  "AGENTS": {
+   "weak": 17,
+   "strong": 4,
+   "density": 1.41,
+   "first_off": 1617
+  },
+  "EXCELLENCE": {
+   "weak": 11,
+   "strong": 2,
+   "density": 0.71,
+   "first_off": 11466
+  },
+  "UST": {
+   "weak": 121,
+   "strong": 15,
+   "density": 5.29,
+   "first_off": 1186
+  },
+  "path": "corpus/artifacts/D-Maestro/canon/Maestro_v5c_Canonical_Spine.md"
+ },
+ "S5c/v5c_canonical_root": {
+  "bytes": 10508,
+  "SEM": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 2,
+   "strong": 2,
+   "density": 1.9,
+   "first_off": 7531
+  },
+  "AGENTS": {
+   "weak": 13,
+   "strong": 2,
+   "density": 1.9,
+   "first_off": 6606
+  },
+  "EXCELLENCE": {
+   "weak": 4,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 42,
+   "strong": 10,
+   "density": 9.52,
+   "first_off": 2923
+  },
+  "path": "corpus/artifacts/D-Maestro/canon/Maestro_v5c_Canonical_Root.md"
+ },
+ "S9/current_01_TECH_UST": {
+  "bytes": 29229,
+  "SEM": {
+   "weak": 171,
+   "strong": 1,
+   "density": 0.34,
+   "first_off": 1816
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "EXCELLENCE": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 571,
+   "strong": 65,
+   "density": 22.24,
+   "first_off": 2
+  },
+  "path": "corpus/maestro-current/01_TECHNICAL_UST_CANON.md"
+ },
+ "S9/current_02_CREATIVE_UST": {
+  "bytes": 8531,
+  "SEM": {
+   "weak": 1,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 1,
+   "strong": 1,
+   "density": 1.17,
+   "first_off": 192
+  },
+  "AGENTS": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "EXCELLENCE": {
+   "weak": 1,
+   "strong": 1,
+   "density": 1.17,
+   "first_off": 2049
+  },
+  "UST": {
+   "weak": 59,
+   "strong": 4,
+   "density": 4.69,
+   "first_off": 2
+  },
+  "path": "corpus/maestro-current/02_CREATIVE_UST_TEMPLATE.md"
+ },
+ "S9/current_04_COUNCIL": {
+  "bytes": 7088,
+  "SEM": {
+   "weak": 1,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 30,
+   "strong": 1,
+   "density": 1.41,
+   "first_off": 1175
+  },
+  "EXCELLENCE": {
+   "weak": 7,
+   "strong": 3,
+   "density": 4.23,
+   "first_off": 2715
+  },
+  "UST": {
+   "weak": 70,
+   "strong": 1,
+   "density": 1.41,
+   "first_off": 6550
+  },
+  "path": "corpus/maestro-current/04_COUNCIL_TOPOLOGY.md"
+ },
+ "S9/current_05_GOVERNANCE_SEG": {
+  "bytes": 4756,
+  "SEM": {
+   "weak": 15,
+   "strong": 4,
+   "density": 8.41,
+   "first_off": 292
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 2,
+   "strong": 1,
+   "density": 2.1,
+   "first_off": 1899
+  },
+  "EXCELLENCE": {
+   "weak": 28,
+   "strong": 18,
+   "density": 37.85,
+   "first_off": 8
+  },
+  "UST": {
+   "weak": 36,
+   "strong": 3,
+   "density": 6.31,
+   "first_off": 1803
+  },
+  "path": "corpus/maestro-current/05_GOVERNANCE_SEG.md"
+ },
+ "S9/current_TOPOLOGY_MATERIALIZED": {
+  "bytes": 27187,
+  "SEM": {
+   "weak": 169,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "FOIL": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "AGENTS": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "EXCELLENCE": {
+   "weak": 0,
+   "strong": 0,
+   "density": 0.0,
+   "first_off": null
+  },
+  "UST": {
+   "weak": 537,
+   "strong": 59,
+   "density": 21.7,
+   "first_off": 2
+  },
+  "path": "corpus/maestro-current/compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md"
+ }
+}

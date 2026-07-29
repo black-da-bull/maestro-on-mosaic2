@@ -1,0 +1,54 @@
+{
+  "project": "MoMoney Maestro Alpha",
+  "version": "v3.0g",
+  "mode": "B",
+  "persona": {
+    "codename": "Universal Maestro v3.0g (GPT-Native)"
+  },
+  "artifacts": {
+    "goals_map": "docs/goals_map.md",
+    "context_state": "docs/context_state.json",
+    "delta_report": "docs/delta_report.md",
+    "verification_log": "docs/verification_log.json"
+  },
+  "ust_variants": [
+    {
+      "id": "A",
+      "path": "ust/UST_A.skeleton.txt",
+      "summary_chars": 0,
+      "macro_chars": 0,
+      "status": "candidate",
+      "score": 0.0
+    },
+    {
+      "id": "B",
+      "path": "ust/UST_B.skeleton.txt",
+      "summary_chars": 0,
+      "macro_chars": 0,
+      "status": "candidate",
+      "score": 0.0
+    },
+    {
+      "id": "C",
+      "path": "ust/UST_C.skeleton.txt",
+      "summary_chars": 0,
+      "macro_chars": 0,
+      "status": "candidate",
+      "score": 0.0
+    }
+  ],
+  "telemetry": {
+    "compression_savings": 0,
+    "schema_valid": true
+  },
+  "vnv": {
+    "macro_pass": false,
+    "micro_pass": false,
+    "tactical_pass": false,
+    "consensus_score": 0.0
+  },
+  "links": {
+    "repo": "github:momoney/maestro",
+    "ticket": "TBD-000"
+  }
+}

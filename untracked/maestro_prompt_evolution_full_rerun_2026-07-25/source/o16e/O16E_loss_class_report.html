@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>O16E — Maestro Loss-Class Verdict</title>
+<style>
+  :root{
+    --bg:#0c0d10; --panel:#15171c; --panel2:#1b1e25; --ink:#e9e6df; --dim:#9aa0ab;
+    --line:#2a2e37; --gold:#d9a441; --good:#4f9d69; --warn:#c9922e; --bad:#c1543f;
+    --absent:#a23b2c;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1040px;margin:0 auto;padding:40px 24px 80px}
+  h1{font-size:26px;margin:0 0 4px;letter-spacing:-.01em}
+  h1 .sub{color:var(--gold);font-weight:600}
+  .meta{color:var(--dim);font-size:13px;margin-bottom:28px}
+  .meta code{background:var(--panel2);padding:1px 6px;border-radius:4px;color:var(--ink)}
+  h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);
+    margin:38px 0 14px;font-weight:700}
+  .lede{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);
+    border-radius:8px;padding:16px 18px;color:var(--ink)}
+  .lede b{color:#fff}
+  /* gradient bar */
+  .grad{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:18px 0}
+  .cell{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;text-align:center;position:relative;overflow:hidden}
+  .cell .n{font-size:30px;font-weight:800;letter-spacing:-.02em}
+  .cell .k{font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+  .cell .v{font-size:11px;margin-top:8px;font-weight:700;border-radius:20px;padding:3px 9px;display:inline-block}
+  .v.good{background:rgba(79,157,105,.18);color:#7fce97;border:1px solid #2f5d3f}
+  .v.warn{background:rgba(201,146,46,.16);color:#e3b25c;border:1px solid #6b551f}
+  .v.bad{background:rgba(193,84,63,.18);color:#e3836e;border:1px solid #7a3325}
+  .bar{height:5px;border-radius:3px;margin-top:10px;background:var(--line);position:relative}
+  .bar>i{display:block;height:100%;border-radius:3px}
+  table{width:100%;border-collapse:collapse;margin:6px 0 4px;font-size:13.5px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--dim);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+  td .tag{font-weight:700;font-size:11px;padding:2px 8px;border-radius:5px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0}
+  .card h3{margin:0 0 6px;font-size:16px}
+  .card h3 .pill{font-size:11px;font-weight:700;padding:2px 8px;border-radius:5px;margin-left:8px;vertical-align:middle}
+  .pill.absent{background:var(--absent);color:#fff}
+  .pill.thin{background:var(--warn);color:#1a1204}
+  .pill.ok{background:var(--good);color:#04140a}
+  .card p{margin:8px 0;color:var(--ink)}
+  .card .src{color:var(--dim);font-size:12.5px}
+  code,pre{font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace}
+  pre{background:#0a0b0e;border:1px solid var(--line);border-radius:8px;padding:14px;overflow:auto;font-size:12.5px;color:#cdd3dc}
+  .foot{color:var(--dim);font-size:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:16px}
+  .kernel{color:var(--gold);font-style:italic}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>O16E — <span class="sub">Maestro Loss-Class Verdict</span></h1>
+  <div class="meta">History-grounded derivation · 2026-07-20 · <code>maestro-forensic-transcript v1.1</code> + M18 REPLAY LAW · scope: DEC-28 four loss-classes · rung: <b>proposed</b> · 155 files / 104 MB / 58 strata sources walked S1→S9</div>
+
+  <div class="lede">
+    The question DEC-28 posed: does <b>maestro-current</b> still carry the FULL <b>SEM</b>, FULL <b>FOIL</b>, full <b>agents + storylines + "act as"</b>, and the <b>excellence statements</b> — or were they thinned? Walked across the whole chronology, the answer is a clean gradient. The container survived. The three schema-heavy classes the operator named were reduced in exactly the order predicted, FOIL to near-zero.
+  </div>
+
+  <h2>The gradient (strong structural hits in maestro-current)</h2>
+  <div class="grad">
+    <div class="cell"><div class="n" style="color:#7fce97">132</div><div class="k">UST</div><div class="v good">carried full</div><div class="bar"><i style="width:100%;background:var(--good)"></i></div></div>
+    <div class="cell"><div class="n" style="color:#7fce97">22</div><div class="k">Excellence</div><div class="v good">carried</div><div class="bar"><i style="width:60%;background:var(--good)"></i></div></div>
+    <div class="cell"><div class="n" style="color:#e3b25c">5</div><div class="k">SEM</div><div class="v warn">thinned</div><div class="bar"><i style="width:22%;background:var(--warn)"></i></div></div>
+    <div class="cell"><div class="n" style="color:#e3b25c">2</div><div class="k">Agents</div><div class="v warn">by-reference</div><div class="bar"><i style="width:12%;background:var(--warn)"></i></div></div>
+    <div class="cell"><div class="n" style="color:#e3836e">1<span style="font-size:16px">*</span></div><div class="k">FOIL</div><div class="v bad">absent structure</div><div class="bar"><i style="width:4%;background:var(--bad)"></i></div></div>
+  </div>
+  <div class="src" style="color:#9aa0ab;font-size:12px;margin-top:-4px">* named as the routing rule in 4 files (00/02/03/06); <b>0 lines</b> of FOIL tier structure materialized (W8 grep). Peak in-corpus: FOIL 267 (architecture session), SEM 195 (eldrik), agents 231 (v4.5.5 evidence).</div>
+
+  <h2>Per-class disposition</h2>
+
+  <div class="card">
+    <h3>FOIL <span class="pill absent">LOST / ABSENT · P0</span></h3>
+    <p>The full four-tier compilation language exists verbatim in-corpus with <b>both faces</b> — but maestro-current names it without carrying it. The runtime routes BY FOIL and does not carry WHAT it routes by.</p>
+    <p class="src"><b>Face A</b> (cascade) — <code>claude-session051526.md</code> §FOIL-spec:</p>
+    <pre>FOIL = First, Outer, Inner, Last — the binomial product (a+b)(c+d)=ac+ad+bc+bd.
+ 1 MACRO      Style Prompt / Show Summary   global identity/defaults
+ 2 MICRO      UST metacontainers            macro.key.subkey.variable+1
+ 3 TACTICAL   section headers + repeats     stanza.section_header
+ 4 VARIABLE+1 lyric lines + word triggers   line.word
+Schema view  macro.key.subkey.variable+1   ⟷   Surface view  stanza.section_header.line.word
+⊕ merge: MACRO ⊕ MICRO ⊕ TACTICAL ⊕ VARIABLE+1  (later tiers override only where specified)
+Duplicate Promotion Up-Shift · repeat primitives RPT/TAG/VAMP/ENDING/DS_AL_CODA · two-pass compile</pre>
+    <p class="src"><b>Face B</b> (governance) — <code>untracked/Untitled 1.md</code> Iter-9 "FOIL Promotion Contract" + STAFF.UST.CANON.V1: reverse-promotion + deduplication discipline, provenance-fielded, frozen surface artifacts before packaging.</p>
+    <p class="kernel">This is precisely the KERNEL's priced negative cost: "a full tier language … reduced by a later synthesis pass to a frequency count + one edge case." A partial <code>foil_reconstruction_v0_1.md</code> exists in the project but is unwired from the current product — the v5-loss (distribution-without-linkage) signature, recurring.</p>
+    <p class="src"><b>Repair MUT-FOIL-01:</b> materialize <code>11_FOIL_COMPILATION.md</code> (both faces, provenance-bound), wire into 02/03.</p>
+  </div>
+
+  <div class="card">
+    <h3>SEM <span class="pill thin">THINNED · P1</span></h3>
+    <p>maestro-current 05 carries the 12 criteria WITH weights (Hook 18 / Lyric 12 / … / QA 2), the composite formula, the <b>97.5</b> floor, the sub-gates, and the v5b governance address space. What's missing is the full rubric: the 0–5 band definitions, the modularized subframe, the per-genre weighting, the decision tree, and the agent voting-weight schema.</p>
+    <p class="src">Full detail lives in the SEM design session (origin: 12 criteria, ≥70 → 97.5 CR-009) and the 605 kB <code>song_excellence_reformatted.md</code>. <b>Repair MUT-SEM-01:</b> import the rubric detail; ruled values unchanged.</p>
+  </div>
+
+  <div class="card">
+    <h3>Agents + storylines + "act as" <span class="pill thin">THINNED — by reference · P1</span></h3>
+    <p>04 carries the 13-worker roster, the 9-element worker schema, the named seat map with tie-breaks, and the STAFF.UST.CANON.V1 role/permission matrix. The <b>filled per-seat storylines and "act as" definitions</b> are pointer-referenced by hash to <code>Maestro Personas aka the subagents.md</code> — not materialized, and not in this session's staged bundle (bridge dropped).</p>
+    <p class="src"><b>Repair MUT-AGENT-01</b> (blocked on stage): stage → hash-verify → materialize into 04. Preserve the PROVEN v4.5.5 roster in stratigraphy — no roster merge (DEC-23).</p>
+  </div>
+
+  <div class="card">
+    <h3>Excellence statements <span class="pill ok">CARRIED · P3 enrich</span></h3>
+    <p>05 carries the SEG umbrella, SE20, HPA, Sacred Imperfection, and the v5b governance address space as operative structure. The least-regressed class. Optional: attach the full statement prose as an evidence appendix (the "why" per gate).</p>
+  </div>
+
+  <div class="card">
+    <h3>UST (baseline container) <span class="pill ok">CARRIED FULL</span></h3>
+    <p>7-axis / 33-key / 165-subkey Technical UST materialized (01 + compiled topology); full Creative UST template + END-era shell + Technical↔Creative axis identity. The O16C/O16B materialization held. No regression.</p>
+  </div>
+
+  <h2>What this means</h2>
+  <div class="lede">
+    maestro-current is <b>not a skeleton to discard</b> — its UST materialization, interwoven-SEG model, overlay-chronology council model, and v5b address-space registration are correct and load-bearing. The four repairs are <b>imports of already-existing full detail</b> into a sound scaffold; three of four sources are already in the repo. Fix <b>FOIL first</b> (P0) — it is the highest-value linkage repair and the clearest instance of the very loss the "no distribution without linkage" law exists to prevent.
+  </div>
+
+  <div class="foot">
+    M18 compliance: this is a verification pass, not a verdict on the system. Nothing frozen, no deletion proposed, all repairs at <b>proposed</b> rung — operator ROOT ruling promotes. Evidence: <code>harvest_lossclass.py</code> · <code>lossclass_metrics.json</code> · verbatim payloads in the coverage matrix. Full write-up in <code>_PROVENANCE/O16E/</code>.
+  </div>
+</div>
+</body>
+</html>

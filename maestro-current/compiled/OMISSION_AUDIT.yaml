@@ -1,0 +1,7 @@
+work_item: MAESTRO.O16C.MATERIALIZE-INHERITED-CANON.R1
+technical_topology: {source_addresses: 198, carried_identity: 174, migrated: 24, omitted_unexplained: 0}
+creative_template: {containers: 7, shell_fields: all imported, scaffold_sections: all imported, removed: [Road-Map block (M13, explicit), crew tags (shell canon, explicit)]}
+staffing_schema: {roles_imported: 10, permissions_imported: all, meeting_template: imported, states: imported}
+remaining_pending: 
+  - richer named-worker seat map (owner+2 reviewers+tie-break per worker name) if extant in un-consolidated strata (Y-3/02/03 originals) - folds in as overlay when consolidated; does NOT block: STAFF.UST.CANON.V1 provides the executable layer
+  - O-15 final short-code binding (interim prose qualification governs)

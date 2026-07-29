@@ -1,0 +1,41 @@
+corpus_id: maestro_v5_corpus_bundle
+generated_utc: 2025-12-24T21:44:35Z
+files:
+  - id: houseinorder
+    source_file: houseinorder.txt
+    ai_optimized: houseinorder.ai_optimized.md
+    role: historical_source
+  - id: inmyroom
+    source_file: inmyroom.tx.txt
+    ai_optimized: inmyroom.ai_optimized.md
+    role: historical_source
+  - id: song_excellence_session
+    source_file: song.excellence.matrix.iterative.design.session - Copy.txt
+    ai_optimized: song_excellence_session.ai_optimized.md
+    role: historical_source
+  - id: maestro_devsession
+    source_file: maestro.devsession.iterative.txt
+    ai_optimized: maestro_devsession.ai_optimized.md
+    role: historical_source
+  - id: technical_ust_template
+    source_file: technical.ust.template.txt
+    ai_optimized: technical_ust_template.ai_optimized.md
+    role: historical_source
+  - id: creative_ust_template
+    source_file: creative.ust.template.txt
+    ai_optimized: creative_ust_template.ai_optimized.md
+    role: historical_source
+artifacts:
+  - id: staging_spine
+    file: staging.spine.merged.ai_optimized.md
+    role: staging_merge
+  - id: graph_substrate
+    file: graph.substrate.plantuml
+    role: structural_graph
+operational_targets:
+  - template.technical.ust.yaml
+  - template.creative.ust.yaml
+  - maestro.yaml
+  - custom.instructions.yaml
+  - personas.yaml
+  - song.excellence.yaml

@@ -1,0 +1,53 @@
+artifact: maestro_upgrade_aligned_manifest
+version: v0.2-plane-separated-admin-optimized
+status: OPERATOR_REVIEW_REQUIRED
+supersedes:
+  artifact: MAESTRO_ADMIN_UPGRADE_PACK_v0.1
+  status: QUARANTINED
+  reason: Plane collapse across Maestro App, Mosaic Host, Dev Environment, and Forensic
+    Reconstruction.
+four_planes:
+  maestro_app:
+    type: customer_owned_application
+    metaphor: virtual_record_label
+    owns:
+    - music creation
+    - virtual workforce
+    - Technical UST
+    - SEM/G-Card/HPA
+    - Suno output packaging
+  mosaic_host:
+    type: host_platform
+    metaphor: cloud runtime
+    owns:
+    - runtime hosting
+    - substrate services
+    - state portability
+    - application mounting
+  dev_environment:
+    type: build_and_iteration_space
+    owns:
+    - experiments
+    - v5/v5b/v5c
+    - staging
+    - failed branches
+    - patch prompts
+  forensic_reconstruction:
+    type: extraction_and_recovery_layer
+    owns:
+    - transcript analysis
+    - lineage reconstruction
+    - drift detection
+    - diagnostic control
+mandatory_response_gate:
+- plane_classification
+- authority_classification
+- node_edge_map
+- promotion_state
+- output
+forbidden_collapses:
+- Maestro equals Mosaic
+- Mosaic owns Maestro
+- Dev artifact equals runtime canon
+- Forensic control equals canon promotion
+- Candidate spec equals accepted canon

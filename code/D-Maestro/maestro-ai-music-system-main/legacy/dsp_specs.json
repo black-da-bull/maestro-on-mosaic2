@@ -1,0 +1,13 @@
+{
+  "target_lufs": -9.0,
+  "true_peak_db": -1.0,
+  "sample_rate_hz": 44100,
+  "bit_depth": 24,
+  "export_formats": [
+    "wav",
+    "mp3"
+  ],
+  "notes": [
+    "Mono-compatible low end; avoid DC offset"
+  ]
+}

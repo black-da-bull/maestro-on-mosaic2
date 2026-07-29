@@ -1,0 +1,17 @@
+{
+ "source": "/mnt/data/maestro_prompt_evolution_run_v2/source/o16e/thread_distillates/TH-15_chop_screw.md",
+ "source_md5": "f9ec809314827a36ee0c53e9af759fd7",
+ "source_bytes": 151728,
+ "normalized_chars": 150705,
+ "normalization": "CRLF/CR->LF (0 CR chars); character-lossless, offsets index normalized text (MF-1)",
+ "census": {
+  "preamble": 1,
+  "user": 19,
+  "assistant": 18
+ },
+ "R1_tail_recovery_candidates": [],
+ "R2_attachment_events": [],
+ "R3_inner_transcript_marker_hits": 0,
+ "R3_samples": [],
+ "note": "R1/R2 require human confirmation before reclassification (never auto-promote); R3 hits inside assistant text are usually the inner transcript quoting itself."
+}

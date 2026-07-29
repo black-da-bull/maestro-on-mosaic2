@@ -1,0 +1,7 @@
+source_axes: ['THY', 'VOC', 'STY', 'TIM', 'PER', 'POST', 'MAP', 'LYR']
+current_axes: [THY, VOC, STY, TIM, PER, POST, LYR]
+source_keys: 33
+source_subkeys: 165
+migrated_addresses: 24
+unexplained_omissions: 0
+map_disposition: retired axis; keys rehomed PER.K5-K8; display timing -> LYR section headers

@@ -1,0 +1,161 @@
+forensic_corpus_division:
+  version: "0.3-sem-seg-replay-applied"
+  status: "replay_applied_revision_candidate"
+  scope: "Revision of v0.2 Mosaic/Maestro runtime division only where SEM/SEG replay evidence requires change."
+  source_surface:
+    primary:
+      - song_excellence_architecture.md
+      - architecture.json
+      - song_excellence_sections.txt
+      - song_excellence_sections.json
+      - song_excellence_reformatted.md
+    source_identity:
+      source: "song_excellence.yaml@v5.0.2-dedup-kernel"
+      total_sections: 2131
+      extraction_date: "2026-05-25"
+    authority_note: "Local SEM/SEG replay evidence; does not promote unrelated Maestro/Mosaic claims."
+
+  governing_change:
+    previous_v0_2_problem: "SEM/SEG was under-scoped as mixed-use admissibility/rubric material."
+    replay_correction: "SEM/SEG is a mixed-use executable governance subsystem containing criteria, gates, state containers, artifacts, CR lineage, M0-M14/G0 execution modules, validators, G-Card, and a terminal Suno artifact path."
+    no_global_promotion: true
+
+  revised_buckets:
+    SUBSTRATE_A_MOSAIC_PROCEDURE_EXTRACTION:
+      runtime_eligibility: "candidate_when_domain_neutral"
+      add_from_sem_seg_replay:
+        - change_request_engine_abstraction
+        - state_container_model_abstraction
+        - authority_and_supersession_registry
+        - weighted_evaluator_engine_abstraction
+        - gate_engine_abstraction
+        - critical_gate_and_clause_pattern
+        - ranked_deficiency_formula_pattern
+        - revision_loop_orchestrator_pattern
+        - chain_report_generator_pattern
+        - context_portability_snapshot_pattern
+        - terminal_artifact_compiler_pattern
+        - chaos_decomposer_output_contract_pattern
+        - term_taxonomy_onboarding_pattern
+      exclude_after_replay:
+        - k1_k12_song_excellence_configuration
+        - sem_seg_97_5_release_threshold_as_global_law
+        - suno_specific_validator_rules_as_global_law
+        - lyric_syllable_range_as_global_law
+        - hitmaker_persona_archetype_payload
+        - concrete_ust_music_field_taxonomy
+
+    SUBSTRATE_B_MAESTRO_CONTEXT_HEURISTICS:
+      runtime_eligibility: "application_context_or_adapter_config_not_mosaic_core"
+      add_from_sem_seg_replay:
+        - k1_k12_song_excellence_criteria
+        - song_excellence_weights_and_min_scores
+        - sem_seg_97_5_release_grade_threshold
+        - lyric_integrity_lock_with_lcr_flow
+        - lyric_syllable_gate_configuration
+        - ust_prototype_modules_music_taxonomy
+        - suno_specific_validator_policy_m9_1_to_m9_7
+        - zero_touch_prompt_for_suno_terminal_artifact
+        - persona_red_pen_overlays
+        - hitmaker_archetype_stress_tests
+        - commercial_viability_market_fit_k8
+        - show_summary_strict_generation
+
+    MIXED_USE_EXECUTION_SUBSYSTEM_REQUIRES_LAYERED_SPLIT:
+      replaces: "MIXED_USE_REQUIRES_SPLIT.sem"
+      purpose: "Preserve SEM/SEG as an executable subsystem while splitting generic governance mechanics from Maestro/Suno/music configuration."
+      layers:
+        SEG_GENERIC_ENGINE:
+          route: SUBSTRATE_A_MOSAIC_PROCEDURE_EXTRACTION
+          contents:
+            - criteria_registry_schema
+            - weighted_scoring_engine
+            - normalized_composite_formula_pattern
+            - gate_registry_schema
+            - critical_gate_logic
+            - ranked_deficiency_calculation
+            - g_card_decision_artifact_schema
+            - revision_loop_contract
+            - cr_supersession_model
+            - state_and_artifact_ledger_model
+        SEG_MAESTRO_CONFIG:
+          route: SUBSTRATE_B_MAESTRO_CONTEXT_HEURISTICS
+          contents:
+            - k1_hook_strength
+            - k2_lyric_integrity_emotional_clarity
+            - k3_vocal_delivery_character
+            - k4_melody_topline_craft
+            - k5_structure_pacing
+            - k6_production_quality
+            - k7_arrangement_interest_contrast
+            - k8_commercial_viability_market_fit
+            - k9_originality_distinctive_element
+            - k10_metadata_governance
+            - k11_lyric_syllable_integrity
+            - k12_pre_release_QA
+            - 97_5_threshold
+        SEG_SUNO_ADAPTER:
+          route: SUBSTRATE_B_MAESTRO_CONTEXT_HEURISTICS
+          generic_extract_allowed_to_mosaic: "renderer_adapter_validation_pattern_only"
+          contents:
+            - m9_suno_validator_rules
+            - m10_show_summary_strict
+            - m11_zero_touch_prompt_for_suno
+            - suno_formatting_constraints
+
+    BLOCKED_OR_UNRESOLVED:
+      keep_blocked:
+        - q1_q16_actual_question_content
+        - se20_bicdm_sem_relationship
+        - executive_committee_composition
+      newly_identified_open_items:
+        - k11_syllable_range_6_10_vs_6_11
+        - production_gate_criticality
+        - ust_9_modules_vs_8_axes_reconciliation
+        - g_card_hold_trigger_conditions
+        - hook_gate_disposition
+      resolved_locally_by_replay:
+        g_card_scalar_relationship:
+          status: "resolved_for_sem_seg_source_surface"
+          resolution: "G-Card is a decision artifact summarizing SEG result, top deficiencies, and required actions; not an independent scalar."
+        vis_k8_scope:
+          status: "resolved_for_sem_seg_source_surface"
+          resolution: "K8 is Commercial Viability & Market Fit; Compression Survivability and Visual Coherence renames are superseded in this source."
+
+  revised_routing_decisions:
+    SEM: MIXED_USE_EXECUTION_SUBSYSTEM_REQUIRES_LAYERED_SPLIT
+    SEG: MIXED_USE_EXECUTION_SUBSYSTEM_REQUIRES_LAYERED_SPLIT
+    G_Card: MIXED_USE_EXECUTION_SUBSYSTEM_REQUIRES_LAYERED_SPLIT
+    M0_session_init_and_state_load: SUBSTRATE_A_MOSAIC_PROCEDURE_EXTRACTION
+    M1_change_request_handler: SUBSTRATE_A_MOSAIC_PROCEDURE_EXTRACTION
+    M2_RECA_snapshot_builder: SUBSTRATE_A_MOSAIC_PROCEDURE_EXTRACTION
+    M3_operating_env_snapshot_builder: SUBSTRATE_A_MOSAIC_PROCEDURE_EXTRACTION
+    M4_brief_and_artifact_parser: MIXED_USE_EXECUTION_SUBSYSTEM_REQUIRES_LAYERED_SPLIT
+    M5_technical_ust_initializer: MIXED_USE_EXECUTION_SUBSYSTEM_REQUIRES_LAYERED_SPLIT
+    M6_sme_round_robin_orchestrator: MIXED_USE_EXECUTION_SUBSYSTEM_REQUIRES_LAYERED_SPLIT
+    M7_SEG_and_G_card_evaluator: MIXED_USE_EXECUTION_SUBSYSTEM_REQUIRES_LAYERED_SPLIT
+    M8_revision_loop_orchestrator: SUBSTRATE_A_MOSAIC_PROCEDURE_EXTRACTION
+    M9_format_and_policy_validator_suno_focused: MIXED_USE_EXECUTION_SUBSYSTEM_REQUIRES_LAYERED_SPLIT
+    M10_show_summary_generator_strict: SUBSTRATE_B_MAESTRO_CONTEXT_HEURISTICS
+    M11_zero_touch_prompt_generator_for_SUNO: MIXED_USE_EXECUTION_SUBSYSTEM_REQUIRES_LAYERED_SPLIT
+    M12_chain_report_generator: SUBSTRATE_A_MOSAIC_PROCEDURE_EXTRACTION
+    M13_context_md_generator: SUBSTRATE_A_MOSAIC_PROCEDURE_EXTRACTION
+    M14_chaos_decomposer_core: SUBSTRATE_A_MOSAIC_PROCEDURE_EXTRACTION
+    G0_term_taxonomy_with_5Ws_5Whys: SUBSTRATE_A_MOSAIC_PROCEDURE_EXTRACTION
+    K1_to_K12_song_excellence_criteria: SUBSTRATE_B_MAESTRO_CONTEXT_HEURISTICS
+    UST_prototype_music_modules: SUBSTRATE_B_MAESTRO_CONTEXT_HEURISTICS
+    persona_red_pen_overlays: SUBSTRATE_B_MAESTRO_CONTEXT_HEURISTICS
+
+  validation_gates:
+    sem_seg_layered_split_complete:
+      pass_if: "Every SEM/SEG element is assigned to generic engine, Maestro config, Suno adapter, or open item."
+      fail_route: BLOCKED_OR_UNRESOLVED
+    generic_mosaic_extract_domain_neutral:
+      pass_if: "Extract remains useful when all music/Suno/genre/artist payload is removed."
+      fail_route: MIXED_USE_EXECUTION_SUBSYSTEM_REQUIRES_LAYERED_SPLIT
+    maestro_config_containment:
+      pass_if: "Song excellence criteria, thresholds, persona overlays, and Suno rules do not assert Mosaic-global law."
+      fail_route: MIXED_USE_EXECUTION_SUBSYSTEM_REQUIRES_LAYERED_SPLIT
+    replay_anchor_integrity:
+      pass_if: "Each revised claim is traceable to S-anchor or attached architecture source."
+      fail_route: BLOCKED_OR_UNRESOLVED

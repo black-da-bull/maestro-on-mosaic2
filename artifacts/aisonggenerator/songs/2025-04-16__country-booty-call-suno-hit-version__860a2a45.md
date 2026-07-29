@@ -1,0 +1,113 @@
+# Country Booty Call (Suno Hit Version)
+
+> Song family: **Country Booty Call (Suno Hit Version)** · generation #33 in family · created 2025-04-16T15:25:18.685Z
+
+## Metadata
+
+- song_id: `860a2a45-06ce-4f4c-b1b0-7e9ea7467184`
+- id: `841261`
+- model: `V4`
+- created_at: `2025-04-16T15:25:18.685Z`
+- updated_at: `2025-04-16T15:28:06.005Z`
+- duration: `198.96`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `ace`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/c83cf437-b86d-42e1-818f-f8a37c4969f8.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/69c8016b-f67a-4c16-8571-4706ace8dea9.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://audiopipe.suno.ai/?item_id=860a2a45-06ce-4f4c-b1b0-7e9ea7467184
+
+## Style / Prompt (tags)
+
+```
+2025 METRO BOOMIN + cardi b + wesley tyler glass
+country trap
+southern rap
+cinematic mix
+cipher
+female voice
+```
+
+## Lyrics
+
+```
+[Intro, Sub-bass pulse, Western whistle FX]
+Real hot girl shit (Yeah!)
+Saddle up, let’s ride (Giddy up)
+Moe Money made this beat
+(*Yeehaw, bitch!*)
+(Ah-huh) (Let’s go!)
+[Verse 1, Tight flow, punchy delivery]
+Cowgirl thighs make ‘em testify
+Got these country boys hypnotized
+Boots on but I’m still that city chick
+Ranch so clean, make your tractor flip (Skrrt!)
+Rodeo queen with that Houston lean
+They buyin’ rings tryna join the team
+Not no barn-bred basic broad
+I’m a thoroughbred, I go hard
+Big bounce like a bull in motion
+Milk they pockets, farm girl potion (Cha-ching!)
+[Chorus, Vocal stack, gang vocals underneath]
+Country booty call (Yeah-yeah!)
+Watch me make these cowboys fall (Fall down!)
+Thick like bales, I got it all (Too much!)
+Spin the bag at the country mall (Run it!)
+Country booty call
+Got ‘em wrapped like a lasso (Tie ‘em up!)
+Farm girls mad, they in the shadow (Woo!)
+[Ad-libs: (Uh huh) (Giddy up!) (Yup-yup!) layered L/C/R channels]
+[Verse 2, Groove locks in, Mustard-style bounce]
+Moonshine sippin’ like a real OG
+Got him swervin' in a lifted GMC (Skrrt!)
+John Deere? Nah, I steer deals
+Headliner, main stage, all feels
+Spurs on my boots, glitz in my jeans
+He tryna cuff — I’m chasin’ dreams
+Not a side chick, I’m the whole damn tour
+More stacked than his daddy’s four-door (Vroom!)
+[Bridge, Half-time, 808 drop out, reverb trail fx]
+He say “Yeehaw” when I pull up slow (Skrrt-skrrt)
+iMessage blowin’ like a rodeo (Ding-ding!)
+Can’t barn this shine, I glow
+Baddest belle with that bankroll flow
+(*Bow-legged flex, bitch!*)
+[Chorus, Beat switch w/ choir pad, stacked harmonies]
+Country booty call (Ayy!)
+Better bring that bag or don’t call at all (At all!)
+Sticky like syrup on a biscuit stack (Drip drip)
+Whole county know this queen is back (I’m back!)
+Country booty call
+He prayin’ like I’m gospel now (Blessed!)
+Say my name, watch ya girl say “wow” (Uh-oh!)
+[Verse 3, Final bounce, doubled vocals with delay fx]
+Ain’t no barn can box my fire
+Got these boys retired — desire expired
+Tryna wife me for the land and fence
+I’m cashin’ out, not past tense (Cha-ching!)
+Bougie cowgirl, Houston flare
+Whip that look, they stop and stare (Yessir!)
+Boots custom, charm deluxe
+I pull up, they down on luck
+[Final Hook – extended, layered with crowd FX]
+Country booty call (Woo!)
+Boots snakeskin, body all boss (Boss talk)
+Whole town whisper when I pass through (Shhh)
+I’m the story they be scrollin’ to (Facts!)
+Country booty call
+One glance? It’s a wrap, you lost
+Whole stable dreamin’ I’m the top
+[Outro, Reverb wash, fade w/ laugh FX]
+(*Yeehaw, bitch*)
+That’s how we do it in the South
+Real country girl shit
+Mwah 💋
+(*Giddy-up bassline fades out*)
+```

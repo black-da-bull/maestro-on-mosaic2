@@ -1,0 +1,162 @@
+<h2 class="sr-only">Entity-relationship diagram of the Maestro-on-Mosaic VIG and SEL pipeline as detailed across the three v5 dossiers. Master audio reverse-compiles in P3.5 into a Technical UST holding visual directives, which drive the VIG visual brief, shot grammar, and rendered video. A conformance report evaluates the video against the stylebook, and SEL fans the approved master into surface variants. The stylebook and its five sub-artifacts sit as substrate wired into compilation, generation, the gate, and export.</h2>
+<style>
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+#erd svg.erDiagram .divider path { stroke-opacity: 0.5; }
+#erd svg.erDiagram .row-rect-odd path,
+#erd svg.erDiagram .row-rect-odd rect,
+#erd svg.erDiagram .row-rect-even path,
+#erd svg.erDiagram .row-rect-even rect { stroke: none !important; }
+#erd { padding: 1rem 0; }
+</style>
+<div id="erd"></div>
+<script type="module">
+const SRC = `erDiagram
+  MASTER_AUDIO ||--|| TECHNICAL_UST : "compiles into"
+  LYRICS ||--o| TECHNICAL_UST : "lyric timing"
+  TECHNICAL_UST ||--|{ VISUAL_DIRECTIVE : "contains"
+  VISUAL_DIRECTIVE ||--o{ VISUAL_BRIEF : "drives"
+  STYLEBOOK ||--|| ACM : "part of"
+  STYLEBOOK ||--|| MOTIF_REGISTRY : "part of"
+  STYLEBOOK ||--|| IDENTITY_BUNDLE : "part of"
+  STYLEBOOK ||--|| EXCLUSION_LIST : "part of"
+  STYLEBOOK ||--|| SIB : "part of"
+  ACM ||--o{ TECHNICAL_UST : "biases mappings"
+  MOTIF_REGISTRY ||--o{ VISUAL_DIRECTIVE : "injects motifs"
+  STYLEBOOK ||--o{ VISUAL_BRIEF : "injected briefing"
+  STYLEBOOK ||--o{ RENDERED_VIDEO : "injected render"
+  STYLEBOOK ||--|| CONFORMANCE_REPORT : "is the spec"
+  EXCLUSION_LIST ||--o{ CONFORMANCE_REPORT : "auto reject"
+  VISUAL_BRIEF ||--o{ SHOT_GRAMMAR_SPEC : "expands to"
+  SHOT_GRAMMAR_SPEC ||--o{ RENDERED_VIDEO : "renders into"
+  RENDERED_VIDEO ||--|| CONFORMANCE_REPORT : "evaluated by"
+  CONFORMANCE_REPORT ||--o| EXPORT_MANIFEST : "passes to"
+  RENDERED_VIDEO ||--o{ EXPORT_MANIFEST : "master for"
+  EXPORT_MANIFEST ||--|{ SURFACE_VARIANT : "fans out"
+  STYLEBOOK ||--o{ SURFACE_VARIANT : "type and color"
+  SURFACE ||--o{ SURFACE_VARIANT : "targeted by"
+  MASTER_AUDIO {
+    string status "P3 canonical"
+    file wav
+    string source "generator agnostic"
+  }
+  LYRICS {
+    string status "canon or asr"
+    text lines
+  }
+  TECHNICAL_UST {
+    string status "versioned hashed"
+    string measured "beats sections envelopes"
+    string inferred "density arousal texture"
+  }
+  VISUAL_DIRECTIVE {
+    string status "derived"
+    string per_section "cut motion palette"
+    string sync "section bar beat"
+  }
+  STYLEBOOK {
+    string status "substrate canon"
+    string scope "persists across releases"
+  }
+  ACM {
+    string role "affirmative rules"
+    string fields "palette lighting camera"
+  }
+  MOTIF_REGISTRY {
+    string rule "two appearances to canon"
+  }
+  IDENTITY_BUNDLE {
+    string rule "core persists"
+    string lock "mandatory in shot"
+  }
+  EXCLUSION_LIST {
+    string role "negative rules"
+    string note "most updated learns"
+  }
+  SIB {
+    string axis "polish vs raw"
+    string cardinal "rough not false"
+  }
+  VISUAL_BRIEF {
+    string status "draft to accepted"
+    string content "concept mood refs"
+  }
+  SHOT_GRAMMAR_SPEC {
+    string status "draft to accepted"
+    string content "per section shotlist"
+  }
+  RENDERED_VIDEO {
+    string status "draft to gate"
+    string mode "concept perf narrative"
+  }
+  CONFORMANCE_REPORT {
+    string status "immutable"
+    enum gate "pass revise reject"
+  }
+  EXPORT_MANIFEST {
+    string status "immutable receipt"
+    string carries "ust hash provenance"
+  }
+  SURFACE_VARIANT {
+    string status "per surface"
+    string fmt "ratio audio caption"
+  }
+  SURFACE {
+    string role "export target"
+    string set "hooks tiktok reels archive"
+  }`;
+
+function fallback(msg) {
+  const spine = [
+    ['Master audio', 'P3 canonical WAV'],
+    ['Technical UST', 'P3.5 reverse-compile'],
+    ['Visual brief + shots', 'P4A VIG'],
+    ['Rendered video', 'P4A render'],
+    ['Conformance report', 'P4B = stylebook applied'],
+    ['Export manifest', 'P5 SEL'],
+    ['Surface variants', 'Hooks TikTok Reels archive']
+  ];
+  let y = 20, rows = '';
+  spine.forEach((s, i) => {
+    rows += '<rect x="190" y="'+y+'" width="300" height="48" rx="8" fill="var(--color-background-secondary)" stroke="var(--color-border-primary)" stroke-width="0.5"/>';
+    rows += '<text x="340" y="'+(y+20)+'" text-anchor="middle" font-size="14" font-weight="500" fill="var(--color-text-primary)">'+s[0]+'</text>';
+    rows += '<text x="340" y="'+(y+38)+'" text-anchor="middle" font-size="12" fill="var(--color-text-secondary)">'+s[1]+'</text>';
+    if (i < spine.length - 1) rows += '<line x1="340" y1="'+(y+48)+'" x2="340" y2="'+(y+70)+'" stroke="var(--color-border-primary)" stroke-width="1" marker-end="url(#a)"/>';
+    y += 70;
+  });
+  const stb = '<rect x="40" y="20" width="110" height="'+(y-90)+'" rx="8" fill="none" stroke="var(--color-border-secondary)" stroke-width="0.5" stroke-dasharray="4 4"/>'
+    + '<text x="95" y="44" text-anchor="middle" font-size="13" font-weight="500" fill="var(--color-text-primary)">Stylebook</text>'
+    + '<text x="95" y="62" text-anchor="middle" font-size="12" fill="var(--color-text-secondary)">substrate</text>';
+  document.getElementById('erd').innerHTML =
+    '<svg width="100%" viewBox="0 0 680 '+(y)+'" role="img"><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="var(--color-border-primary)" stroke-width="1.5"/></marker></defs>'
+    + stb + rows + '</svg>'
+    + (msg ? '<div style="font-size:12px;color:var(--color-text-tertiary);margin-top:8px">fallback view — mermaid: '+msg+'</div>' : '');
+}
+
+try {
+  const mermaid = (await import('https://esm.sh/mermaid@11/dist/mermaid.esm.min.mjs')).default;
+  const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+  await document.fonts.ready;
+  mermaid.initialize({
+    startOnLoad: false, theme: 'base',
+    fontFamily: '"Anthropic Sans", sans-serif',
+    themeVariables: { darkMode: dark, fontSize: '13px', fontFamily: '"Anthropic Sans", sans-serif',
+      lineColor: dark ? '#9c9a92' : '#73726c', textColor: dark ? '#c2c0b6' : '#3d3d3a' },
+  });
+  const { svg } = await mermaid.render('erd-v3', SRC);
+  document.getElementById('erd').innerHTML = svg;
+  document.querySelectorAll('#erd svg.erDiagram .node').forEach(node => {
+    const fp = node.querySelector('path[d]'); if (!fp) return;
+    const nums = fp.getAttribute('d').match(/-?[\d.]+/g)?.map(Number);
+    if (!nums || nums.length < 8) return;
+    const xs=[nums[0],nums[2],nums[4],nums[6]], ys=[nums[1],nums[3],nums[5],nums[7]];
+    const x=Math.min(...xs), yv=Math.min(...ys), w=Math.max(...xs)-x, h=Math.max(...ys)-yv;
+    const r=document.createElementNS('http://www.w3.org/2000/svg','rect');
+    r.setAttribute('x',x); r.setAttribute('y',yv); r.setAttribute('width',w); r.setAttribute('height',h); r.setAttribute('rx','8');
+    for (const a of ['fill','stroke','stroke-width','class','style']) if (fp.hasAttribute(a)) r.setAttribute(a, fp.getAttribute(a));
+    fp.replaceWith(r);
+  });
+  document.querySelectorAll('#erd svg.erDiagram .row-rect-odd path, #erd svg.erDiagram .row-rect-even path').forEach(p => p.setAttribute('stroke','none'));
+} catch (e) {
+  fallback(e && e.message ? e.message : String(e));
+}
+</script>

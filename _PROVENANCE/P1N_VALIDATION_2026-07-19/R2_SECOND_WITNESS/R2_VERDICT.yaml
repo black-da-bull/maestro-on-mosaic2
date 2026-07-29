@@ -1,0 +1,40 @@
+# P1N Validation Verdict — R2 second witness
+# Work item: REPAIR.P1N.PANEL-VALIDATION.R1 · 2026-07-19 (04:09 UTC)
+# Validator: independent Cowork cloud session #2 — separate context from the replay session AND the R1 validator.
+# Method variance vs R1: disjoint hash sample (stride 89 vs 107), independent probe set,
+# independent omission sweep, persistence scope widened to full code/ tree.
+
+verdict: PASS
+concurs_with: P1N_VALIDATION_2026-07-19 (R1) verdict PASS
+
+criteria:
+  source_coverage_complete: PASS            # split re-verified to the digit; 0 missing user segments; 0 new embedded operator inputs in 43 assistant segments
+  mutation_lineage_reproducible: PASS       # 61/61 contiguous; tallies consistent; all probes verbatim in source; flagship at byte 107525 exact
+  authority_classifications_materially_correct: PASS   # relay/quote-back/bleed regions held at proposal authority; REC-B K-2 flagged weakest class
+  contradictions_preserved: PASS            # 9/9 both-sides in source; independent omission sweep clean; CR-2 tension intact
+  persistence_search_properly_scoped: PASS  # zero genuine occurrences, scope widened; false positive caught and inspected
+  no_structured_artifact_outweighs_source: PASS  # R2 derived everything from primaries, not from R1 or the replay
+
+r1_claims_retested: 14
+r1_claims_reproduced: 14
+r1_claims_failed: 0
+
+new_findings:
+  - id: MF-7-candidate
+    finding: >
+      Persistence sweeps must use word-boundary patterns: naive 'Config B' matches 'Mini-Config Block'
+      (code/D-Maestro/maestro-ai-music-system-main/legacy/context.md:545373). Inspected: false positive;
+      zero-occurrence claim stands and is strengthened by the wider code/ scope.
+
+unchanged_gaps:                # carried, not closed
+  - MF-2 correction-density marker set still unpersisted (not re-derived by R2)
+  - MF-5 canon zip + pdf not text-searchable
+  - O-14 splitter script still absent; split validated by outputs only
+  - c07 T14 recount impossible from corpus (as-recorded)
+
+consequence: >
+  PASS authorizes staged replay of the next small session batch (T01–T13 sweep entry) — operator's
+  call to exercise, after MF-1..MF-4 + word-boundary hygiene are folded into the method and O-14 lands.
+stopping_point: >
+  Stopped at verdict. No runtime canon, LEDGER, STATE, or OPEN file touched. R2 writes live only in
+  _PROVENANCE/P1N_VALIDATION_2026-07-19/R2_SECOND_WITNESS/.

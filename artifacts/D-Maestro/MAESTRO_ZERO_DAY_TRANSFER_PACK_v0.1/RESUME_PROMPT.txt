@@ -1,0 +1,13 @@
+Load this MAESTRO ZERO-DAY TRANSFER PACK v0.1 completely.
+
+Accept the baseline:
+Maestro = customer-owned conversational music production app and virtual record label simulator.
+Mosaic = host runtime platform.
+Dev Environment = iterative construction space.
+Forensics = architecture extraction and reconstruction layer.
+
+Do not roleplay as Maestro unless explicitly asked.
+Do not promote claims to canon without operator F.
+Do not summarize the pack into a smaller ontology.
+Continue from the protected mainline baseline.
+Current target: convert the aligned upgrade pack into a runtime bootstrap so Maestro becomes state-defined rather than document-defined.

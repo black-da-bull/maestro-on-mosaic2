@@ -1,0 +1,58 @@
+{
+  "eq_id": "EQ-0002",
+  "operation": "enumerate files3.zip inventory only",
+  "mode": "non-synthesis / inventory only",
+  "generated_utc": "2026-05-13T09:53:51.265815+00:00",
+  "source": {
+    "path": "/mnt/data/files3.zip",
+    "bytes": 37011,
+    "sha256": "fab9953dd947504ba9c4bf952a2c9292a072786bfbeee2237729e546fbaea2d4"
+  },
+  "member_count": 4,
+  "members": [
+    {
+      "name": "maestro_v5c_bootstrap.md",
+      "compressed_size": 10451,
+      "uncompressed_size": 26055,
+      "zip_datetime": "2026-04-12T18:52:40",
+      "sha256": "58bba55491c10c19440aa96b6ec42083f0779b531f2d536be37ccf631fdb2343",
+      "kind": "text/md",
+      "line_count": 484,
+      "first_heading_or_label": "# MAESTRO v5-c — LOSSLESS COLD-START BOOTSTRAP PROMPT",
+      "inventory_notes": null
+    },
+    {
+      "name": "MOSAIC_system_architecture.svg",
+      "compressed_size": 3163,
+      "uncompressed_size": 14620,
+      "zip_datetime": "2026-04-12T18:52:40",
+      "sha256": "d47e6e48d7730458e4ba20984962a53c0ac246d9048d3becb7065949f6131a6c",
+      "kind": "text/svg",
+      "line_count": 276,
+      "first_heading_or_label": "<svg width=\"100%\" viewBox=\"0 0 680 920\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\">",
+      "inventory_notes": null
+    },
+    {
+      "name": "BASELINE_RECONSTRUCTION_LEDGER_v0.1.docx",
+      "compressed_size": 16902,
+      "uncompressed_size": 18952,
+      "zip_datetime": "2026-04-12T18:52:40",
+      "sha256": "8c5ca9a594b22a5bcfcfde36d56fce23c79b84e05ce40ee2ef4d412a288c0ab2",
+      "kind": "docx",
+      "line_count": null,
+      "first_heading_or_label": "   Un-named  Un-named  1  2026-04-08T18:40:27.295Z  2026-04-08T18:40:27.296Z   | doc_text: MAESTRO RECOVERY SURFACE BASELINE RECONSTRUCTION LEDGER v0.1 Phase 0 Recovery Artifact · Not a Redesign Pass 2026-04-08 · Frozen before v4.5 → v4.6 mutation <w:tblPr><w:tblW w:type=\"dxa\" w:w=\"9360\"/><w:tblBorders><w:top w:val=\"none\"/><w:left w:val=\"none\"/><w:bottom w:val=\"none\"/><w:right w:val=\"none",
+      "inventory_notes": "docx_parts=22"
+    },
+    {
+      "name": "MAESTRO_V5C_COLDSTART_BOOTSTRAP.md",
+      "compressed_size": 5913,
+      "uncompressed_size": 13769,
+      "zip_datetime": "2026-04-12T18:52:40",
+      "sha256": "dc3a454c39720dccc7955afa3a3498c3349fa087facc60401ae05e1da5f1735f",
+      "kind": "text/md",
+      "line_count": 306,
+      "first_heading_or_label": "# MAESTRO v5-c — Cold-Start Bootstrap Prompt",
+      "inventory_notes": null
+    }
+  ]
+}

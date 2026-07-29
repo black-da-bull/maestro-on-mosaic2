@@ -1,0 +1,85 @@
+# BRIDGE_INPUT_MANIFEST — authoritative input set for REPAIR.P1N.SESSION-TO-MAESTRO-BRIDGE.R1
+# Work item: REPAIR.P1N.BRIDGE-INPUT-PREFLIGHT.R1 · 2026-07-19
+# Rule: derived artifacts declare their parents; report twins are ONE logical family; no report outranks source.
+schema: v0.1
+families:
+  primary_sources:
+    class: SOURCE (raw primary evidence)
+    members:
+      - {path: artifacts/D-Maestro/sources/claud3.txt, md5: faecdb760a6248fd08d9cce4e6e738ca, bytes: 407408}
+      - {path: artifacts/D-Maestro/sources/claude-session13-window2.txt, md5: 94989f7f37f67e6d1a818a1b974c1efc, bytes: 927063}
+      - {path: artifacts/D-Maestro/sources/claud2.txt, md5: 090c0eff9fea9025e6ee019dd647241a, bytes: 349779}
+  split_work_products:
+    class: DERIVED-MECHANICAL (validated against sources by s13_split_validate_v0_1.py)
+    parent: primary_sources
+    members:
+      - _PROVENANCE/P1_narrow/_work/session13_window1_segments.jsonl
+      - _PROVENANCE/P1_narrow/_work/session13_window2_segments.jsonl
+      - _PROVENANCE/P1_narrow/_work/session13_window1_operator_verbatim.md
+      - _PROVENANCE/P1_narrow/_work/session13_window2_operator_verbatim.md
+  replay_ledger:
+    class: REPLAY-BACKED FINDING (authoritative mutation ledger — prose form)
+    parent: split_work_products
+    members:
+      - _PROVENANCE/P1_narrow/session13_window1_replay.md   # 27 mutations + CR-1..4
+      - _PROVENANCE/P1_narrow/session13_window2_replay.md   # 34 mutations + C1..5
+      - _PROVENANCE/P1_narrow/P1_NARROW_IMPACT_MAP.md
+    machine_readable_index:
+      path: PREFLIGHT/SESSION13_MUTATION_LEDGER_v0_1.jsonl   # 61 records; DERIVED CHILD of the replays, never outranks them
+  r1_validation:
+    class: VALIDATION EVIDENCE (continuity-aware witness; original workspace)
+    parent: [primary_sources, split_work_products, replay_ledger]
+    members:
+      - _PROVENANCE/P1N_VALIDATION_2026-07-19/P1_NARROW_VALIDATION_REPORT.md
+      - _PROVENANCE/P1N_VALIDATION_2026-07-19/P1_NARROW_VERDICT.yaml
+      - _PROVENANCE/P1N_VALIDATION_2026-07-19/P1_NARROW_COVERAGE.json
+      - {path: _PROVENANCE/P1N_VALIDATION_2026-07-19/P1_NARROW_MUTATION_AUDIT.jsonl,
+         note: "MISNOMER — contains 28 audit-CHECK records about the 61 mutations, NOT the mutation records; treat as P1_NARROW_MUTATION_AUDIT_CHECKS; original filename preserved (append-only), corrected here in manifest"}
+      - _PROVENANCE/P1N_VALIDATION_2026-07-19/P1_NARROW_CONTRADICTION_AUDIT.yaml
+      - {path: _PROVENANCE/P1N_VALIDATION_2026-07-19/P1_NARROW_PERSISTENCE_SEARCH.yaml,
+         note: "INVALID YAML (3 defect sites) — preserved untouched; parse from the repaired copy"}
+    repaired_copies:
+      - {path: PREFLIGHT/P1_NARROW_PERSISTENCE_SEARCH.repaired_v2.yaml, parent: P1_NARROW_PERSISTENCE_SEARCH.yaml, status: parses}
+  r2_validation:
+    class: VALIDATION EVIDENCE (cold portability witness; separate workspace)
+    parent: [primary_sources, split_work_products, replay_ledger]
+    members:
+      - _PROVENANCE/P1N_VALIDATION_2026-07-19/R2_SECOND_WITNESS/R2_SECOND_WITNESS_REPORT.md
+      - _PROVENANCE/P1N_VALIDATION_2026-07-19/R2_SECOND_WITNESS/R2_VERDICT.yaml
+      - _PROVENANCE/P1N_VALIDATION_2026-07-19/R2_SECOND_WITNESS/R2_EVIDENCE.json
+      - {path: _PROVENANCE/P1N_VALIDATION_2026-07-19/R2_SECOND_WITNESS/R2_COVERAGE_RECHECK.json,
+         note: "compact derivative; parent work item + hashes carried by R2_EVIDENCE.json in same folder"}
+  proposals:
+    class: AI PROPOSAL (INV-18; never bridge inputs without source anchoring)
+    members:
+      - _PROVENANCE/P1N_VALIDATION_2026-07-19/BRIDGE_RECONCILIATION_v0_1.md
+      - _PROVENANCE/P1N_VALIDATION_2026-07-19/ASSESSMENT_R1_R2_AND_PIPELINE_v0_1.md
+      - _PROVENANCE/P1N_VALIDATION_2026-07-19/WORKSPACE_RELATIONSHIP_ADDENDUM_2026-07-19.md
+      - _PROVENANCE/structural_fold/STRUCTURAL_FOLD_INTEGRATION_v0_1.md
+      - _PROVENANCE/structural_fold/AUX_INPUT_3_INTEGRATION_v0_1.md
+  fold_extension_family:
+    class: AI PROPOSAL — ONE logical artifact in two representations (report twins)
+    members:
+      - {path: _PROVENANCE/structural_fold/corpus_fold_extension_v0_2.md, md5: d3e5f94c88c60422b0362b1e2b7715ea}
+      - {path: _PROVENANCE/structural_fold/corpus_fold_extension_v0_2.html, md5: ec7820458ec09432156ca28842856210}
+    gap: "v0.1 baseline pair NOT in hand — export pending from fold session (M10 risk)"
+  public_surface:
+    class: PUBLIC_SITE_DESIGN_PROPOSAL — EXCLUDED from bridge corpus
+    members:
+      - {name: index_1.html, location: "NOT IN REPO (operator package to orchestrator only)", status: HOLD, see: BRIDGE_PUBLIC_SURFACE_HOLD.yaml}
+  bridge_candidate_package:
+    class: CANDIDATE REPAIR INTERPRETATION (generated 2026-07-19 pre-relay; HELD pending this preflight + operator review; nothing promoted)
+    members:
+      - S13_BRIDGE/SESSION13_CANDIDATE_PATCHSET/PATCH-01..05
+      - S13_BRIDGE/SESSION13_TARGET_ROUTING.yaml
+      - S13_BRIDGE/SESSION13_IMPACT_GRAPH.yaml
+      - S13_BRIDGE/SESSION13_STALENESS_MAP.yaml
+      - S13_BRIDGE/SESSION13_TEST_PLAN.yaml
+      - S13_BRIDGE/SESSION13_EXPERT_ADJUDICATION.yaml
+  method_tooling:
+    class: PERSISTED METHOD (model-agnostic scripts + patch notes)
+    members:
+      - _PROVENANCE/method/METHOD_PATCHES_2026-07-19.md
+      - _PROVENANCE/method/s13_split_validate_v0_1.py
+      - _PROVENANCE/method/persistence_sweep_v0_1.py
+      - _PROVENANCE/method/correction_markers_v0_1.py

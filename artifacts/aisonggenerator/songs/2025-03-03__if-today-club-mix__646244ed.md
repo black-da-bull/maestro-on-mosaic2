@@ -1,0 +1,104 @@
+# If Today (CLUB MIX)
+
+> Song family: **If Today (CLUB MIX)** · generation #2 in family · created 2025-03-03T16:20:05.062Z
+
+## Metadata
+
+- song_id: `646244ed-5a00-4fde-baef-18afb5feb662`
+- id: `419535`
+- model: `V4`
+- created_at: `2025-03-03T16:20:05.062Z`
+- updated_at: `2025-03-03T16:22:58.834Z`
+- duration: `165.08`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `damo`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/4fccd547-2932-4068-8ba3-bb7b22a990d0.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/24bee24e-6738-4ae3-b1e3-911f764c3942.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://mfile.erweima.ai/NjQ2MjQ0ZWQtNWEwMC00ZmRlLWJhZWYtMThhZmI1ZmViNjYy
+
+## Style / Prompt (tags)
+
+```
+Female Country Vocal Duet | CrunkBounce/Dirty South/Southern Rock Fusion | Heavy 808s | Club Anthem | 120-160 BPM | Soulful & Lively Atmosphere | Emotional Syncopation & Breakdowns
+```
+
+## Lyrics
+
+```
+[DJ Drop, 808s Building, Orchestral Horn Stabs]  
+**DJ:** *We at Moe Money Studios tonight, y’all! Let’s go, Moe!*  
+
+[Verse 1, Soulful Lead Vocal, Acoustic Guitar, 808 Pulse]  
+I’m sorry for the years I spent blind,  
+Running from the truth I couldn't find.  
+Kept it all inside, hidden away,  
+Thought I could fight it, day by day...  
+
+[Pre-Chorus, Beat Kicks In, Swelling Strings]  
+But the nights were darker than I ever knew,  
+And the pain inside, I never let through.  
+
+[Chorus, Club Anthem Energy, Call & Response Harmonies]  
+**(Lead Vocal)** I’m sorry to my family, to my friends,  
+**(Backups)** For the hurt, for where it ends...  
+**(Lead Vocal)** I should’ve faced it, I should’ve tried,  
+**(Backups)** But I was lost, couldn’t decide...  
+**(Lead Vocal)** Now I see the wreckage I’ve made,  
+**(Backups)** I’m sorry, I’m asking for grace...  
+
+[Post-Chorus, CrunkBounce Drums, Horn Stabs, Ad-Libs]  
+*(808s slap—crowd chants: “Let’s go!”)*  
+*(Yeah, yeah, yeah! Hands up now!)*  
+
+[Verse 2, Dirty South Bounce, Call & Response Harmonies]  
+For the times I pushed you all away,  
+When all I needed was someone to stay.  
+I let the bottle numb the fight,  
+And the voices in my head took flight...  
+
+[Pre-Chorus, Stripped Down Beat, Tension Rises]  
+I wasn’t strong enough to ask for help,  
+I shut you out, kept it to myself...  
+
+[Chorus, Full Club Explosion, Heavy 808s & Big Harmonies]  
+**(Lead Vocal)** I’m sorry to my family, to my friends,  
+**(Backups)** For the hurt, for where it ends...  
+**(Lead Vocal)** I should’ve faced it, I should’ve tried,  
+**(Backups)** But I was lost, couldn’t decide...  
+**(Lead Vocal)** Now I see the wreckage I’ve made,  
+**(Backups)** I’m sorry, I’m asking for grace...  
+
+[Breakdown, Stripped Beat, Emotional Build-Up]  
+*(808s cut out—just claps & harmonies swelling!)*  
+*(Crowd chants: “If today! If today! If today!”)*  
+
+[Bridge, Orchestral Horns, Duet Call & Response]  
+I was scared of what you’d see,  
+A man broken, trying to be free.  
+Didn’t know how to heal this fight,  
+But I’m here now, ready for the light...  
+
+[Final Chorus, Maximum Energy, Choir Harmonies]  
+**(Lead Vocal)** I’m sorry to my family, to my friends,  
+**(Choir)** For the hurt, for where it ends...  
+**(Lead Vocal)** I should’ve faced it, I should’ve tried,  
+**(Choir)** But I was lost, couldn’t decide...  
+**(Lead Vocal)** Now I see the wreckage I’ve made,  
+**(Choir)** I’m sorry, I’m asking for grace...  
+
+[Outro, Acoustic Guitar, Beat Fades, Singer Speaks to Audience]  
+**Singer:** *Y’all, Moe told me GOD wrote this song to be shared with the world.*  
+*There’s a lot of men out there who know why he feels that way.*  
+*He wants to thank everyone who mans the phones at the Veterans Crisis Center.*  
+*Y’all do good things, and your voices matter!*  
+
+*(Beat fades, orchestral horns echo out... Crowd cheers.)*
+```

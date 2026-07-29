@@ -1,0 +1,37 @@
+# UST PROMPT — Baseline (Rehearsal Bed)
+# Constraints: no cross-bar fills; topline suppression: TRUE; spatial plan: ENFORCED; syllabic window: 6–10
+
+[Intro]
+- bars: 4
+- density: low
+- negative_space: 1 bar
+
+[Verse A]
+- bars: 8
+- density: medium
+- negative_space: 1 bar (post-phrase)
+
+[PreChorus]
+- bars: 4
+- density: rising
+- negative_space: half-bar stutters allowed
+
+[Chorus]
+- bars: 8
+- density: high
+- negative_space: minimal; maintain anchor transients
+
+[PostChorus]
+- bars: 4
+- density: medium
+- negative_space: micro-gaps
+
+[Bridge]
+- bars: 8
+- density: contrast (timbre swap; rhythm off-axis)
+- negative_space: 1 bar (mid)
+
+[Outro]
+- bars: 4
+- density: taper
+- negative_space: 1 bar tail

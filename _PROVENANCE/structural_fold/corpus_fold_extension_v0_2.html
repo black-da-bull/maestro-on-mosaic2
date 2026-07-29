@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corpus Fold Extension v0.2 · Maestro on Mosaic</title>
+<style>
+  :root{
+    --bg:#0d0a07; --bg2:#151009; --panel:#1c150c; --panel2:#231a0f; --line:#3a2c17;
+    --ink:#e8dcc3; --dim:#9c8a68; --faint:#6b5c43;
+    --gold:#e3a72f; --amber:#c97f1e; --ember:#a8541f;
+    --ok:#8fbf6a; --alert:#d96a4a; --flow:#6fa8c9; --gov:#b98add; --container:#d9b25a;
+    --mono:"Cascadia Code","JetBrains Mono","Consolas",monospace;
+    --serif:"Palatino Linotype",Palatino,Georgia,serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.5;
+    background-image:radial-gradient(ellipse 1200px 500px at 50% -100px,#2a1d0c55,transparent),
+                     radial-gradient(ellipse 900px 400px at 10% 105%,#25140f33,transparent);}
+  .wrap{max-width:1180px;margin:0 auto;padding:34px 26px 90px}
+  header{border-bottom:3px double var(--line);padding-bottom:22px;margin-bottom:30px}
+  .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+  h1{font-size:clamp(30px,4.5vw,46px);font-weight:700;line-height:1.08}
+  h1 em{font-style:italic;color:var(--gold)}
+  .sub{margin-top:10px;color:var(--dim);font-size:15.5px;max-width:75ch}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .badge{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;border:1px solid var(--line);padding:4px 10px;border-radius:3px;color:var(--dim)}
+  .badge.hot{border-color:var(--alert);color:var(--alert)}
+  .badge.gold{border-color:var(--gold);color:var(--gold)}
+  .badge.ok{border-color:var(--ok);color:var(--ok)}
+  section{margin-top:46px}
+  h2{font-size:13px;font-family:var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);
+     border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:6px;display:flex;gap:12px;align-items:baseline}
+  h2 .n{color:var(--faint);font-size:20px}
+  .lede{color:var(--dim);font-size:14.5px;margin:8px 0 18px;max-width:88ch}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:16px 18px}
+  .panel h4{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px;color:var(--gold)}
+  .panel p,.panel li{font-size:13.6px}
+  code{font-family:var(--mono);font-size:.86em;background:#00000055;border:1px solid var(--line);border-radius:3px;padding:1px 5px;color:var(--container)}
+  .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+  .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  /* spine */
+  .spine{display:flex;flex-wrap:wrap;gap:0;align-items:stretch;margin-top:14px}
+  .sn{flex:1 1 150px;min-width:150px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:11px 12px}
+  .sn .tag{font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+  .sn b{display:block;font-size:12.8px;margin:3px 0 2px}
+  .sn span{font-size:11.3px;color:var(--dim);display:block}
+  .sn .dated{color:var(--ok);font-family:var(--mono);font-size:9.5px}
+  .sn .undated{color:var(--faint);font-family:var(--mono);font-size:9.5px}
+  .sar{align-self:center;padding:0 6px;color:var(--gold);font-size:17px;flex:0 0 auto}
+  .sn.hot{border-color:var(--alert);background:#20100b}
+  .sn.gold{border-color:var(--gold);background:#241a09}
+  /* yesterday-3 loop */
+  .loop{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:12px}
+  .lp{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:9px 11px;font-size:12px;color:var(--dim)}
+  .lp b{display:block;color:var(--ink);font-size:12.5px;font-family:var(--mono)}
+  .lp.gate{border-color:var(--alert)} .lp.gate b{color:var(--alert)}
+  .suite{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+  .art{font-family:var(--mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:5px 9px;color:var(--container);background:#00000033}
+  /* phase order */
+  .phases{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .ph{font-family:var(--mono);font-size:10.6px;border:1px solid var(--line);border-radius:4px;padding:6px 9px;color:var(--dim);flex:1 1 110px;min-width:108px;text-align:center}
+  .ph b{display:block;color:var(--ink);font-size:11px}
+  .ph.conc{border-color:var(--ok)} .ph.conc b{color:var(--ok)}
+  /* evidence chain */
+  .chain{display:flex;flex-wrap:wrap;gap:0;align-items:stretch;margin-top:12px}
+  .cn{flex:1 1 240px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px;min-width:230px}
+  .cn .lvl{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+  .cn b{display:block;font-size:13.5px;margin:3px 0}
+  .cn span{font-size:12px;color:var(--dim)}
+  table{width:100%;border-collapse:collapse;font-size:12.8px;margin-top:12px}
+  th{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-align:left;padding:8px 10px;border-bottom:2px solid var(--line)}
+  td{padding:8px 10px;border-bottom:1px solid #241b10;vertical-align:top}
+  td.idc{font-family:var(--mono);font-size:10.5px;color:var(--faint);white-space:nowrap}
+  tr:hover td{background:#ffffff06}
+  .era{color:var(--ember)} .cur{color:var(--ok)}
+  .held{font-family:var(--mono);font-size:10px;color:var(--alert);letter-spacing:.08em}
+  .res{font-family:var(--mono);font-size:10px;color:var(--ok);letter-spacing:.08em}
+  .new{font-family:var(--mono);font-size:10px;color:var(--flow);letter-spacing:.08em}
+  .count{font-family:var(--mono);color:var(--gold)}
+  footer{margin-top:60px;border-top:3px double var(--line);padding-top:16px;color:var(--faint);font-family:var(--mono);font-size:11px;line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">Maestro on Mosaic · Evolution Panel · Continuation · Extension of Baseline v0.1</div>
+  <h1>The Corpus, <em>Folded Forward</em></h1>
+  <p class="sub">Same process, applied to the attached corpus. Baseline preserved untouched. Headline: <code>Yesterday-3</code> is not the Yesterday the report read — it is the <b>canon-freeze / contract-formalization session</b>, and its opening snapshot is the current ontology in frozen form.</p>
+  <div class="badges">
+    <span class="badge hot">PROPOSAL-CLASS · ROOT DISPOSITION PENDING</span>
+    <span class="badge gold">BASELINE v0.1 PRESERVED — APPEND-ONLY</span>
+    <span class="badge ok">HASH-DEDUP: convoluted ≡ baseline source · Yesterday ×2 ≡ · files5 ⊂ files6</span>
+    <span class="badge">v0.2 · 2026-07-19</span>
+  </div>
+</header>
+
+<!-- I. GENERATIONAL SPINE -->
+<section>
+  <h2><span class="n">Ⅰ</span> Generational Spine — Transformation Across Sources, Now Dated</h2>
+  <p class="lede"><span style="color:var(--ok)">green stamps</span> = date-evidenced in artifact · <span style="color:var(--faint)">grey</span> = content-inferred ordering, held loose. The baseline's five-node rail expands into the full lane.</p>
+  <div class="spine">
+    <div class="sn"><span class="tag">predecessor</span><b>blueprint.json</b><span class="undated">○ inferred</span><span>Sense/Think/Act taxonomy</span></div>
+    <div class="sar">→</div>
+    <div class="sn"><span class="tag">os era</span><b>master.json v4.2 · spine v4.2.3</b><span class="undated">○/●</span><span>manifest + sha256 provenance</span></div>
+    <div class="sar">→</div>
+    <div class="sn"><span class="tag">proven</span><b>v4.5 line</b><span class="undated">○</span><span>Monolith 4.5.2 · budgets 1000/~4990 · container consolidation begins</span></div>
+    <div class="sar">→</div>
+    <div class="sn"><span class="tag">persona era</span><b>Yesterday-1</b><span class="undated">○ NOT IN HAND</span><span>13-persona accretion · MAP live · witnessed via report only</span></div>
+    <div class="sar">→</div>
+    <div class="sn gold"><span class="tag">baseline fold</span><b>ChatGPT session (v5-c)</b><span class="undated">○</span><span>Output Contract · simulation-OS correction</span></div>
+    <div class="sar">→</div>
+    <div class="sn"><span class="tag">harvest</span><b>V55 KB Harvest</b><span class="dated">● 2026-04-19</span><span>workspaces v5 · v5-b · v5-c · POC/WIP — <b>v5-b is real</b></span></div>
+    <div class="sar">→</div>
+    <div class="sn"><span class="tag">kernel rebuild</span><b>files / files2</b><span class="dated">● 04-11 / 04-12</span><span>kernel v1.0 · two-window recovery · canon doc v4.5.2</span></div>
+    <div class="sar">→</div>
+    <div class="sn"><span class="tag">bootstraps</span><b>files3 v5-c coldstarts</b><span class="undated">○ April 2026</span><span>Chimera Protocol · Day-3 fused critique</span></div>
+    <div class="sar">→</div>
+    <div class="sn"><span class="tag">audit suite</span><b>files6</b><span class="dated">● 2026-04-28</span><span>RTFA·SEC·SDG·SLR·CMA·MMR · Mosaic Engine v0.1 · Maestro v0 (5+13 lens)</span></div>
+    <div class="sar">→</div>
+    <div class="sn hot"><span class="tag">this fold</span><b>Yesterday-3 canon-freeze</b><span class="undated">○ "2026-11" HELD</span><span>contract suite · Road-Map removed · continuation gate</span></div>
+    <div class="sar">→</div>
+    <div class="sn"><span class="tag">current</span><b>v.0 on Mosaic</b><span class="undated">panel frame</span><span>§05 loop · sole-truth TUST · four planes</span></div>
+  </div>
+</section>
+
+<!-- II. YESTERDAY-3 -->
+<section>
+  <h2><span class="n">Ⅱ</span> Yesterday-3 — The Canon-Freeze Session, Folded</h2>
+  <p class="lede">697KB · 18,188 lines. Roster absent (0 hits, all 13). Contract vocabulary saturating: <span class="count">phase_contract ×173 · controller_contract ×114 · FOIL ×461 · draft.technical.ust ×300 · surface freeze ×208 · round-robin ×171</span>. The frozen laws at its open are the ontology you pasted to start this panel.</p>
+
+  <div class="grid2">
+    <div class="panel">
+      <h4>Frozen phase order — 8 phases</h4>
+      <div class="phases">
+        <div class="ph"><b>1</b>sequential axis completion</div>
+        <div class="ph"><b>2</b>draft.technical.ust freeze</div>
+        <div class="ph"><b>3</b>round-robin deliberation</div>
+        <div class="ph"><b>4</b>definitive technical.ust lock</div>
+        <div class="ph"><b>5</b>reverse promotion / dedup</div>
+        <div class="ph conc"><b>6</b>concurrent derivative surface drafting</div>
+        <div class="ph"><b>7</b>surface freeze</div>
+        <div class="ph"><b>8</b>packaging</div>
+      </div>
+      <p style="margin-top:10px;font-size:12.8px;color:var(--dim)">Phase 6 freezes <b style="color:var(--ok)">CONCURRENT</b> — the primary-source bridge from the era's serial phrasing to current triad concurrency (DISC-01 evidence upgrade).</p>
+    </div>
+    <div class="panel">
+      <h4>Session mechanics — hardening loop</h4>
+      <div class="loop">
+        <div class="lp gate"><b>Continuation Verdict</b>PASS / FAIL · fail-closed · one artifact only · provisional marking mandatory</div>
+        <div class="lp"><b>Role Declaration</b>what this artifact is / is not</div>
+        <div class="lp"><b>Acceptance + Pre-Scan</b>defect taxonomy: scope · canon · artifact-ontology drift</div>
+        <div class="lp"><b>Generate Revised</b>one queued artifact</div>
+        <div class="lp"><b>Scan + Readiness</b>promotion readiness check</div>
+        <div class="lp"><b>Next-Phase Gate</b>whole-suite re-checks at 27/33/36/40/44/66/68/72%</div>
+      </div>
+      <p style="margin-top:10px;font-size:12.8px;color:var(--dim)">In-log event: a prior continuation is ruled <b style="color:var(--alert)">drifted → invalid for promotion</b>. Documented ancestor of the resurrection boot gate and the no-revert-without-supersession law.</p>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:14px">
+    <h4>Contract suite generated &amp; hardened in-session — the web-MVP spec base</h4>
+    <div class="suite">
+      <span class="art">continuation_integrity_protocol.md</span>
+      <span class="art">controller_contract.yaml</span>
+      <span class="art">phase_contract.yaml</span>
+      <span class="art">artifact_contract.yaml</span>
+      <span class="art">artifact_taxonomy.md</span>
+      <span class="art">controller_lockout_policy.yaml</span>
+      <span class="art">foil_promotion_contract.yaml</span>
+      <span class="art">round_robin_notes_template.yaml</span>
+      <span class="art">creative_ust_canonical_shell.md</span>
+    </div>
+    <p style="margin-top:10px;font-size:12.8px;color:var(--dim)">"Existing contracts already constitute most of the spec — a compile, not a rewrite." This log is where they were forged. Lockout policy verbatim: controller may not <em>relabel semantic execution as orchestration to evade lockout</em>; clearance never inferred from silence, restatement, or renaming.</p>
+  </div>
+</section>
+
+<!-- III. AX-CONTRA-1 EVIDENCE CHAIN -->
+<section>
+  <h2><span class="n">Ⅲ</span> MAP → END — Three-Layer Evidence Chain (XFORM-15)</h2>
+  <p class="lede">The axis supersession is now evidenced at spec, freeze, and surface layers. Registry record can cite all three.</p>
+  <div class="chain">
+    <div class="cn"><span class="lvl">spec layer · MAP era</span><b>02_TECHNICAL_UST — Chimera Master Spec v1.0</b><span>Eight mandatory axes · <span class="era">AXIS 8 = Roadmap Axis (Execution Order)</span> · MAP ×27, END ×2 · five councils · G-Card · SEG "flags feasibility, not taste" · M-PIPELINE</span></div>
+    <div class="sar">→</div>
+    <div class="cn"><span class="lvl">freeze layer · the event</span><b>Yesterday-3 @ line ~12888</b><span>"Road-Map / map as a separate shell block is removed as a legacy construct — <span class="cur">section order belongs in Performance → execution; section notes in the Lyrics Block headers.</span>" Crew tags → Voices. MAP token: zero hits.</span></div>
+    <div class="sar">→</div>
+    <div class="cn"><span class="lvl">surface layer · END era</span><b>03_CREATIVE_UST_CANONICAL</b><span>6 containers + ▸ LYRICS BLOCK + <span class="cur">[End]</span> terminal · forbidden legacy: [Road-Map], [CREW_TAGS] · "character savings are fuel for preserved nuance, not the goal"</span></div>
+  </div>
+</section>
+
+<!-- IV. GROUNDINGS -->
+<section>
+  <h2><span class="n">Ⅳ</span> Groundings — What the Corpus Settles</h2>
+  <div class="grid3">
+    <div class="panel"><h4>v5-b is real (DISC-06 ▸ resolve)</h4><p>V55 harvest manifest, 2026-04-19: workspace_order = <code>POC/WIP · v5-c · v5-b · v5</code>. CH-18's "v5-b" marks the single-invocation branch's home generation — not a typo.</p></div>
+    <div class="panel"><h4>Budget lineage (DISC-04 ▸ resolve)</h4><p>Monolith v4.5.2: Show Summary ≤1000 · Macro LYRIC ≤~4990. Era "≤5000" is the rounded statement. Current form: "Suno-calibrated character bands" (maestro_v0).</p></div>
+    <div class="panel"><h4>5 + 13, by design (DISC-11 ▸ close)</h4><p>maestro_v0 mount manifest, N2 workforce: <b>"5-Council default + 13-worker expansion lens."</b> The Chimera councils and the Yesterday-1 roster coexist as default + lens — reconciliation, not rivalry.</p></div>
+    <div class="panel"><h4>Lyric lock is prior canon (XFORM-20)</h4><p>Yesterday-3 cites as already-standing law: <em>"quoted lyrics are immutable."</em> The lock predates the contract era — era-native phrasing recovered.</p></div>
+    <div class="panel"><h4>Roster persistence</h4><p>All 13 personas absent from Yesterday-3 but alive in files3 bootstraps, files6 <code>maestro_v0</code> / <code>morris_matrix_resolution</code> / <code>council_matrix_archaeology</code>, and V55 <code>PERSONA_BEHAVIOR_MAP</code>. The lattice survives as a lens; the formalization staff simply isn't the creative staff — exactly the SEG-3 boundary.</p></div>
+    <div class="panel"><h4>Convoluted is complete</h4><p><code>convoluted.txt</code> ≡ md5 ≡ project copy. Baseline fold v0.1 already covers the full ChatGPT session — no truncation delta. Concern closed.</p></div>
+  </div>
+</section>
+
+<!-- V. NEW XFORM EDGES -->
+<section>
+  <h2><span class="n">Ⅴ</span> New Transformation Edges (XFORM-14 … 22)</h2>
+  <table>
+    <tr><th>id</th><th>era (verbatim-class)</th><th>current</th><th>transformation</th></tr>
+    <tr><td class="idc">XFORM-14</td><td class="era">frozen 8-phase order · phase 6 "concurrent derivative surface drafting"</td><td class="cur">§05 loop · concurrent triad projection · surface-freeze</td><td>The freeze IS the loop's codification; supplies DISC-01's primary-source bridge.</td></tr>
+    <tr><td class="idc">XFORM-15</td><td class="era">Roadmap Axis (02) → removal event (Y-3) → [Road-Map] forbidden (03)</td><td class="cur">END canonical 8th axis</td><td>Three-layer supersession chain for AX-CONTRA-1.</td></tr>
+    <tr><td class="idc">XFORM-16</td><td class="era">5 councils (02) + 13 personas (Yesterday-1)</td><td class="cur">"5-Council default + 13-worker expansion lens" → SEG staffing</td><td>Dual taxonomies reconcile as default+lens.</td></tr>
+    <tr><td class="idc">XFORM-17</td><td class="era">≤1000 / ≤~4990 (monolith)</td><td class="cur">Suno-calibrated character bands</td><td>Continuous budget lineage; 5000 = rounded 4990.</td></tr>
+    <tr><td class="idc">XFORM-18</td><td class="era">controller may / may-not lists + lockout policy YAML</td><td class="cur">controller_contract · controller_lockout_policy · non-creative controller</td><td>Baseline anti-jailbreak law reaches terminal codified form.</td></tr>
+    <tr><td class="idc">XFORM-19</td><td class="era">Continuation Verdict gate + in-log drift-invalidation</td><td class="cur">5-question resurrection boot gate · supersession-log-before-revert</td><td>Boot-gate ancestry located in primary source.</td></tr>
+    <tr><td class="idc">XFORM-20</td><td class="era">"quoted lyrics are immutable" (prior-canon citation)</td><td class="cur">Lyric lock — absolute</td><td>Lock predates contract era; era phrasing recovered.</td></tr>
+    <tr><td class="idc">XFORM-21</td><td class="era">v4.5 container consolidation ([VocalPersona] · [AestheticIntent] · Road-Map→sequence-only)</td><td class="cur">Y-3 full legacy removal → 03 canonical containers</td><td>v4.5→v5-c is one continuous de-legacy program.</td></tr>
+    <tr><td class="idc">XFORM-22</td><td class="era">CANON VS HARDENING SEPARATION RULE + defect taxonomy</td><td class="cur">spec-not-mounted tagging · provisional-marking discipline</td><td>In-lineage ancestor of spec-not-mounted law.</td></tr>
+  </table>
+</section>
+
+<!-- VI. CONFLICT REGISTER -->
+<section>
+  <h2><span class="n">Ⅵ</span> Conflict Register — Updates &amp; New Entries</h2>
+  <p class="lede">Fail-closed. Resolution candidates await your close; nothing merged silently.</p>
+  <table>
+    <tr><th>id</th><th>item</th><th>status</th><th>note</th></tr>
+    <tr><td class="idc">DISC-01</td><td>Serial chain vs concurrent surfaces</td><td><span class="held">HELD ▸ candidate</span></td><td>Y-3 freezes CONCURRENT (phase 6). Read era serial phrasing as dependency order — your close.</td></tr>
+    <tr><td class="idc">DISC-02</td><td>MAP vs END</td><td><span class="res">EVIDENCE COMPLETE</span></td><td>Spec / freeze / surface chain assembled for the registry record.</td></tr>
+    <tr><td class="idc">DISC-04</td><td>CUST ≤5000 era budget</td><td><span class="res">RESOLVE CANDIDATE</span></td><td>= rounded ≤~4990 (monolith); point to band registry.</td></tr>
+    <tr><td class="idc">DISC-06</td><td>"v5-b" wobble</td><td><span class="res">RESOLVE CANDIDATE</span></td><td>v5-b is a real workspace generation (V55 manifest).</td></tr>
+    <tr><td class="idc">DISC-09</td><td>Authority inversion across eras</td><td><span class="new">NEW · HELD</span></td><td>"Documents primary, chat telemetry" (v4.5.2 + KBD-001) vs current runtime-primary hierarchy. Both era-real; needs explicit supersession statement.</td></tr>
+    <tr><td class="idc">DISC-10</td><td>Yesterday-1 not in hand</td><td><span class="new">NEW · GAP</span></td><td>Persona-accretion session witnessed only via the report + roster persistence. Recovery target.</td></tr>
+    <tr><td class="idc">DISC-11</td><td>5 councils vs 13 personas</td><td><span class="res">CLOSE CANDIDATE</span></td><td>Designed coexistence: default + expansion lens (maestro_v0).</td></tr>
+    <tr><td class="idc">DISC-12</td><td>"2026-11" filename token</td><td><span class="new">NEW · HELD</span></td><td>Content is v5-c canon-freeze; corpus dates cluster April 2026. No inference.</td></tr>
+    <tr><td class="idc">DISC-13</td><td><code>houseinorder.ai_optimized</code></td><td><span class="new">NEW · GAP</span></td><td>Lineage witness cited inside Y-3's continuity statement; unrecovered. Recovery target.</td></tr>
+  </table>
+</section>
+
+<!-- VII. NEXT WINDOW -->
+<section>
+  <h2><span class="n">Ⅶ</span> Next-Window Queue</h2>
+  <div class="grid3">
+    <div class="panel"><h4>ROOT dispositions</h4><p>Close DISC-01 / -04 / -06 / -09 / -11; acknowledge gaps DISC-10 / -13.</p></div>
+    <div class="panel"><h4>Deep folds pending</h4><p>files6 audit chain (CMA·MMR·SLR·SDG·SEC·RTFA) per-artifact; files3 bootstrap diff (COLDSTART vs LOSSLESS); files/files2 kernel-era fold; V55 JSON full extraction (17 deltas · 13 behaviors · routing signals).</p></div>
+    <div class="panel"><h4>Contract lift</h4><p>Extract the final hardened versions of the 9 artifacts out of Yesterday-3 into standalone files — the direct input to the web-MVP compile.</p></div>
+  </div>
+</section>
+
+<footer>
+  ARTIFACT corpus_fold_extension_v0_2.html · CLASS PROPOSAL · EXTENDS chatgpt_session_structural_fold_v0_1 (BASELINE, untouched)<br>
+  COMPANION corpus_fold_extension_v0_2.md (AI-optimized · stable IDs continue baseline numbering)<br>
+  DEDUP Yesterday ×2 identical · convoluted ≡ project copy · files5 ⊂ files6 · V55 sha256-manifested<br>
+  Your vision. Our mission.
+</footer>
+
+</div>
+</body>
+</html>

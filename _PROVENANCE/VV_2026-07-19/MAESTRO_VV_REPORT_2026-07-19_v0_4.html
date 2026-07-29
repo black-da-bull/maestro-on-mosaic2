@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maestro — Session Fold Report &amp; V&amp;V Package v0.4 (O16D)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E1116; --surface:#161B22; --surface-2:#1C232C; --surface-3:#222B36;
+    --line:#2A3340; --line-soft:#222A34;
+    --flow:#E8A33D; --flow-soft:#3A2E1B; --flow-line:#5C481F;
+    --container:#4FD1C5; --container-soft:#16302E; --container-line:#23514C;
+    --gov:#9AA2F2; --gov-soft:#23264A;
+    --alert:#E5604F; --alert-soft:#3A211D;
+    --ok:#5FBF7E;
+    --text:#E6EDF3; --dim:#9DA7B3; --faint:#6B7480;
+    --display:'Space Grotesk',system-ui,sans-serif;
+    --body:'Inter',system-ui,sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,monospace;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:radial-gradient(1200px 600px at 80% -10%, #19222d 0%, transparent 55%),radial-gradient(900px 500px at -10% 10%, #15201f 0%, transparent 50%),var(--ink);color:var(--text);font-family:var(--body);line-height:1.62;font-size:16px;-webkit-font-smoothing:antialiased}
+  a{color:var(--container);text-decoration:none} a:hover{text-decoration:underline}
+  ::selection{background:var(--flow);color:#1a1304}
+  .wrap{display:grid;grid-template-columns:248px minmax(0,1fr);gap:0;max-width:1340px;margin:0 auto}
+  nav.side{position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;padding:30px 18px 60px 26px;border-right:1px solid var(--line);font-size:13.5px}
+  nav.side .brandmark{display:flex;align-items:center;gap:10px;margin-bottom:22px}
+  nav.side .stacklogo{width:26px;height:26px;flex:none}
+  nav.side .brandmark b{font-family:var(--display);font-weight:700;letter-spacing:.02em;font-size:15px}
+  nav.side .brandmark span{display:block;color:var(--faint);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase}
+  nav.side h4{font-family:var(--display);color:var(--faint);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;margin:22px 0 8px}
+  nav.side ol{list-style:none;margin:0;padding:0} nav.side li{margin:1px 0}
+  nav.side a{display:block;color:var(--dim);padding:5px 10px;border-radius:7px;border-left:2px solid transparent}
+  nav.side a:hover{color:var(--text);background:var(--surface);text-decoration:none}
+  nav.side a.active{color:var(--text);background:var(--surface-2);border-left-color:var(--flow)}
+  nav.side a .n{color:var(--faint);font-family:var(--mono);font-size:11px;margin-right:7px}
+  main{padding:0 38px 120px;min-width:0}
+  section{max-width:var(--maxw);margin:0 auto;padding:54px 0 8px;scroll-margin-top:20px}
+  section + section{border-top:1px solid var(--line-soft)}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.6vw,46px);line-height:1.06;letter-spacing:-.01em;margin:0 0 8px}
+  h2{font-family:var(--display);font-weight:600;font-size:clamp(22px,3vw,30px);letter-spacing:-.005em;margin:0 0 6px;line-height:1.12}
+  h3{font-family:var(--display);font-weight:600;font-size:18.5px;margin:30px 0 8px;letter-spacing:.005em}
+  h4{font-family:var(--display);font-weight:600;font-size:14.5px;margin:18px 0 6px;color:var(--text)}
+  p{margin:0 0 14px;color:#D4DCE5}
+  .lead{font-size:18px;color:var(--dim);max-width:780px}
+  .eyebrow{font-family:var(--display);font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint);margin:0 0 14px;display:flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--flow);display:inline-block}
+  strong{color:#fff;font-weight:600} em{color:var(--flow);font-style:normal}
+  code{font-family:var(--mono);font-size:.86em;background:var(--surface-2);padding:1px 6px;border-radius:5px;color:#cfe9e6;border:1px solid var(--line)}
+  .muted{color:var(--faint)}
+  .hero{padding-top:46px}
+  .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+  .pill{font-family:var(--mono);font-size:11.5px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);color:var(--dim);background:var(--surface)}
+  .pill.flow{border-color:var(--flow-line);color:var(--flow);background:var(--flow-soft)}
+  .pill.cont{border-color:var(--container-line);color:var(--container);background:var(--container-soft)}
+  .pill.alert{border-color:#5a2e27;color:var(--alert);background:var(--alert-soft)}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:18px 0}
+  .panel.tight{padding:16px 18px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:880px){.grid2,.grid3{grid-template-columns:1fr}}
+  .callout{border-left:3px solid var(--flow);background:linear-gradient(90deg,var(--flow-soft),transparent 70%);padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0}
+  .callout.cont{border-left-color:var(--container);background:linear-gradient(90deg,var(--container-soft),transparent 70%)}
+  .callout.alert{border-left-color:var(--alert);background:linear-gradient(90deg,var(--alert-soft),transparent 70%)}
+  .callout .k{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--flow);display:block;margin-bottom:3px}
+  .callout.cont .k{color:var(--container)} .callout.alert .k{color:var(--alert)}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--dim);margin:10px 0 0}
+  .legend span{display:inline-flex;align-items:center;gap:7px}
+  .swatch{width:13px;height:13px;border-radius:3px;display:inline-block}
+  .sw-flow{background:var(--flow)} .sw-cont{background:var(--container)} .sw-gov{background:var(--gov)} .sw-alert{background:var(--alert)}
+  .tl{position:relative;margin:26px 0 8px;padding-left:26px}
+  .tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--flow),var(--gov),var(--container))}
+  .tlrow{position:relative;margin:0 0 12px;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:11px}
+  .tlrow::before{content:"";position:absolute;left:-23px;top:18px;width:11px;height:11px;border-radius:50%;background:var(--ink);border:2px solid var(--gov)}
+  .tlrow.a::before{border-color:var(--flow)} .tlrow.b::before{border-color:var(--gov)} .tlrow.c::before{border-color:var(--container)}
+  .tlrow .meta{font-family:var(--mono);font-size:11px;color:var(--faint);display:flex;gap:12px;flex-wrap:wrap;margin-bottom:3px}
+  .tlrow .meta .tag{padding:1px 7px;border-radius:5px;border:1px solid var(--line)}
+  .tlrow .meta .tag.a{color:var(--flow);border-color:var(--flow-line)} .tlrow .meta .tag.b{color:var(--gov);border-color:#3a3e6e} .tlrow .meta .tag.c{color:var(--container);border-color:var(--container-line)}
+  .tlrow b.t{font-family:var(--display);font-size:15px}
+  details.sess{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin:12px 0;overflow:hidden}
+  details.sess[open]{border-color:var(--flow-line)}
+  details.sess.b[open]{border-color:#3a3e6e} details.sess.c[open]{border-color:var(--container-line)}
+  details.sess summary{list-style:none;cursor:pointer;padding:15px 18px;display:flex;align-items:flex-start;gap:14px}
+  details.sess summary::-webkit-details-marker{display:none}
+  .sid{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--ink);background:var(--flow);border-radius:6px;padding:3px 8px;flex:none;margin-top:2px}
+  details.sess.b .sid{background:var(--gov)} details.sess.c .sid{background:var(--container)}
+  .stitle{font-family:var(--display);font-weight:600;font-size:16px;margin:0}
+  .ssub{font-size:12.5px;color:var(--faint);font-family:var(--mono)}
+  .schevron{margin-left:auto;color:var(--faint);transition:transform .2s;flex:none;margin-top:3px}
+  details.sess[open] .schevron{transform:rotate(90deg)}
+  .sbody{padding:2px 18px 18px 50px;border-top:1px solid var(--line-soft)}
+  .sbody dl{display:grid;grid-template-columns:140px 1fr;gap:6px 16px;margin:12px 0 0;font-size:14.5px}
+  .sbody dt{font-family:var(--display);font-weight:600;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);padding-top:2px}
+  .sbody dd{margin:0;color:#D4DCE5}
+  .sbody dd.lost{color:#e7b3ab} .sbody dd.kept{color:#bfe6cb}
+  .statusrow{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+  .st{font-family:var(--mono);font-size:11px;padding:3px 9px;border-radius:6px;border:1px solid var(--line);color:var(--dim)}
+  .st.lossy{color:var(--alert);border-color:#5a2e27;background:var(--alert-soft)}
+  .st.primary{color:var(--flow);border-color:var(--flow-line);background:var(--flow-soft)}
+  .st.open{color:var(--gov);border-color:#3a3e6e;background:var(--gov-soft)}
+  .st.ok{color:var(--ok);border-color:#2c5238;background:#13241a}
+  figure{margin:20px 0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 18px 14px}
+  figure svg{display:block;width:100%;height:auto}
+  figcaption{font-size:13px;color:var(--faint);margin-top:10px;text-align:center;font-family:var(--mono)}
+  .dlabel{font-family:var(--display);font-weight:600;font-size:13px;fill:var(--text)}
+  .dsub{font-family:var(--mono);font-size:10.5px;fill:var(--dim)}
+  .dnote{font-family:var(--mono);font-size:9.5px;fill:var(--faint)}
+  .mock{border:1px solid var(--line);border-radius:13px;overflow:hidden;margin:18px 0;background:var(--surface-2)}
+  .mockbar{display:flex;align-items:center;gap:8px;padding:9px 14px;background:#10151b;border-bottom:1px solid var(--line)}
+  .mockbar .dot{width:10px;height:10px;border-radius:50%;background:#33404e}
+  .mockbar .mt{font-family:var(--mono);font-size:11.5px;color:var(--dim);margin-left:8px}
+  .mockbody{padding:18px}
+  .lam{display:flex;flex-direction:column;gap:0}
+  .lam .layer{position:relative;border:1px solid var(--line);border-bottom:none;padding:11px 14px;background:var(--surface);display:flex;align-items:center;gap:12px}
+  .lam .layer:last-child{border-bottom:1px solid var(--line);border-radius:0 0 9px 9px}
+  .lam .layer:first-child{border-radius:9px 9px 0 0}
+  .lam .layer .lvl{font-family:var(--mono);font-size:10.5px;color:var(--ink);border-radius:5px;padding:2px 7px;font-weight:700;flex:none}
+  .lam .layer .lname{font-family:var(--display);font-weight:600;font-size:13.5px}
+  .lam .layer .lprov{margin-left:auto;font-family:var(--mono);font-size:10.5px;color:var(--faint)}
+  .badge-ok{font-family:var(--mono);font-size:11px;color:var(--ok);border:1px solid #2c5238;background:#13241a;padding:3px 9px;border-radius:6px}
+  .badge-block{font-family:var(--mono);font-size:11px;color:var(--alert);border:1px solid #5a2e27;background:var(--alert-soft);padding:3px 9px;border-radius:6px}
+  .gate q{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:8px;margin:7px 0;font-size:13.5px;color:#D4DCE5;display:flex;gap:10px;align-items:center}
+  .gate q .qn{font-family:var(--mono);font-size:11px;color:var(--faint);flex:none}
+  .gate q .qstat{margin-left:auto;font-family:var(--mono);font-size:11px}
+  .gate q .pass{color:var(--ok)} .gate q .wait{color:var(--faint)}
+  .verdict{margin-top:12px;padding:12px 14px;border-radius:9px;font-family:var(--display);font-weight:600;text-align:center;letter-spacing:.08em}
+  .verdict.fail{background:var(--alert-soft);border:1px solid #5a2e27;color:var(--alert)}
+  .gr{font-family:var(--mono);font-size:12.5px}
+  .gr .line{display:flex;gap:12px;padding:5px 10px;border-radius:6px}
+  .gr .line.del{background:var(--alert-soft);color:#f1b5ad} .gr .line.add{background:#13241a;color:#bfe6cb} .gr .line.ctx{color:var(--dim)}
+  .gr .sym{flex:none;width:14px;text-align:center;color:var(--faint)}
+  .codewrap{margin:16px 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0c1117}
+  .codehdr{display:flex;align-items:center;gap:9px;padding:9px 14px;background:#10151b;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--dim)}
+  .codehdr .fn{color:var(--container)}
+  .codehdr .lang{margin-left:auto;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+  pre{margin:0;padding:16px 18px;overflow-x:auto;font-family:var(--mono);font-size:12.6px;line-height:1.6;color:#cdd6e0;tab-size:2}
+  pre .c{color:#5d6b7a;font-style:italic} pre .k{color:#E8A33D} pre .s{color:#7fd6c9} pre .f{color:#9AA2F2} pre .n{color:#d9a8ff} pre .o{color:#9DA7B3}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.8px}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  th{font-family:var(--display);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);font-weight:600}
+  tbody tr:hover{background:var(--surface)}
+  td .w{font-family:var(--mono);font-size:11.5px;padding:1px 7px;border-radius:5px;border:1px solid var(--line);color:var(--dim)}
+  td .w.P{color:var(--flow);border-color:var(--flow-line)} td .w.B{color:var(--gov);border-color:#3a3e6e} td .w.L{color:var(--alert);border-color:#5a2e27} td .w.R{color:var(--faint)} td .w.K{color:var(--ok);border-color:#2c5238}
+  ul.clean{margin:8px 0 16px;padding-left:0;list-style:none}
+  ul.clean li{position:relative;padding:4px 0 4px 22px;color:#D4DCE5}
+  ul.clean li::before{content:"\25B9";position:absolute;left:2px;color:var(--flow);font-size:12px;top:6px}
+  ol.steps{counter-reset:s;list-style:none;margin:8px 0;padding:0}
+  ol.steps li{counter-increment:s;position:relative;padding:12px 16px 12px 56px;background:var(--surface);border:1px solid var(--line);border-radius:11px;margin:9px 0}
+  ol.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:16px;top:12px;font-family:var(--mono);font-weight:700;color:var(--flow);font-size:15px}
+  ol.steps li b{font-family:var(--display)}
+  footer{max-width:var(--maxw);margin:40px auto 0;padding-top:22px;border-top:1px solid var(--line);color:var(--faint);font-size:13px}
+  @media(max-width:980px){
+    .wrap{grid-template-columns:1fr}
+    nav.side{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line);display:flex;gap:18px;overflow-x:auto;padding:14px}
+    nav.side .brandmark{margin:0} nav.side h4{display:none} nav.side ol{display:flex;gap:4px} nav.side li{margin:0}
+    main{padding:0 18px 80px}
+  }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<nav class="side">
+  <div class="brandmark">
+    <svg class="stacklogo" viewBox="0 0 40 40" aria-hidden="true">
+      <rect x="6" y="24" width="28" height="6" rx="2" fill="#4FD1C5"/>
+      <rect x="9" y="16" width="24" height="6" rx="2" fill="#9AA2F2"/>
+      <rect x="12" y="8" width="20" height="6" rx="2" fill="#E8A33D"/>
+      <path d="M20 5 L20 31" stroke="#2A3340" stroke-width="1" stroke-dasharray="2 2"/>
+    </svg>
+    <div><b>Maestro</b><span>V&amp;V Package · O16D</span></div>
+  </div>
+  <h4>Report</h4>
+  <ol>
+    <li><a href="#contract"><span class="n">00</span>Contract</a></li>
+    <li><a href="#arc"><span class="n">01</span>Session arc</a></li>
+    <li><a href="#rulings"><span class="n">02</span>Rulings record</a></li>
+    <li><a href="#find"><span class="n">03</span>The v5b find</a></li>
+    <li><a href="#fold"><span class="n">04</span>The fold (v0.4)</a></li>
+    <li><a href="#lanes"><span class="n">05</span>Claims &amp; lanes</a></li>
+    <li><a href="#hashes"><span class="n">06</span>Hash anchors</a></li>
+    <li><a href="#zip"><span class="n">07</span>Zip inventory</a></li>
+    <li><a href="#checklist"><span class="n">08</span>V&amp;V checklist</a></li>
+    <li><a href="#open"><span class="n">09</span>Open items</a></li>
+  </ol>
+</nav>
+
+<main>
+
+<section class="hero" id="contract">
+  <p class="eyebrow">00 · Contract</p>
+  <h1>Session Fold Report &amp; V&amp;V Package — maestro-current v0.4 (O16D)</h1>
+  <p class="lead">Prepared 2026-07-19 in the R2 Cowork workspace for independent verification &amp;
+  validation by the orchestrator session. Everything asserted here is anchored to a file in the
+  accompanying zip; every hash is recomputable; every ruling cites its LEDGER record.</p>
+  <div class="pillrow">
+    <span class="pill flow">work item MAESTRO.O16D.MIGRATION-BUNDLE-CORRECTION.R1</span>
+    <span class="pill cont">bundle v0.4 · 33 members · validator PASS</span>
+    <span class="pill">STATE 0.5 · LEDGER M1–M17 · DEC-01..27</span>
+    <span class="pill alert">force-close SUSPENDED (M17)</span>
+  </div>
+  <div class="callout"><span class="k">What this package claims — and what it does not</span>
+  This is a fold report, not a completion report. It claims: the v5b coldstart stratum was located
+  in-repo, hash-verified, and folded into maestro-current v0.4; the scope errors of v0.3 are named
+  and corrected; two ROOT corrections (DEC-27, M17) are recorded and applied. It does NOT claim
+  completeness beyond the reached strata (M16), and it does NOT claim release status — M17
+  suspended version-based force-close entirely.</div>
+  <div class="callout cont"><span class="k">Evidence hierarchy for the reviewer</span>
+  Runtime evidence + operator synthesis = PRIMARY · baselines next · contracts/yaml/GitHub =
+  LAGGING · KERNEL = REFERENCE. Operator conversational rulings (ROOT) outrank all structured AI
+  output, including this report. Where this report conflicts with a LEDGER record, the LEDGER
+  record wins; where the LEDGER conflicts with the operator, the operator wins.</div>
+</section>
+
+<section id="arc">
+  <p class="eyebrow">01 · Session arc</p>
+  <h2>One session, one loop, executed end-to-end — then corrected twice</h2>
+  <p>The session ran the full session→Maestro pipeline once, then absorbed successive orchestrator
+  audits as build-upon corrections (never replacements), ending with two ROOT corrections that
+  reoriented the derivation basis itself.</p>
+  <div class="tl">
+    <div class="tlrow a"><div class="meta"><span class="tag a">VALIDATE</span><span>REPAIR.P1N.PANEL-VALIDATION.R1</span></div>
+      <b class="t">R1 + R2 dual-witness replay validation</b>
+      <p>Session-13 narrow replay independently re-verified in this workspace (W1 36 segments / W2 58; concat==normalized; payload md5 <code>52381c1e…</code>). Finding V1 confirmed: FIRM canon existed in zero persisted artifacts.</p></div>
+    <div class="tlrow a"><div class="meta"><span class="tag a">PREFLIGHT</span><span>REPAIR.P1N.BRIDGE-INPUT-PREFLIGHT.R1</span></div>
+      <b class="t">Parse gates, manifest, mutation-ledger index</b>
+      <p>All 10 blocking defects dispositioned; invalid source YAML repaired append-only; the gate caught the validator's own defects twice — recorded, not hidden.</p></div>
+    <div class="tlrow b"><div class="meta"><span class="tag b">RULINGS</span><span>M12 · elicitation rounds 1–4</span></div>
+      <b class="t">Interactive operator rulings — M12–M15, DEC-09..21</b>
+      <p>Every open item became a question, not a stop. V1 repaired: FIRM identifiers persisted (sweep flipped zero-found → found).</p></div>
+    <div class="tlrow c"><div class="meta"><span class="tag c">DERIVE</span><span>O-16 → O16B → O16C</span></div>
+      <b class="t">maestro-current v0.1 → v0.2 → v0.3</b>
+      <p>Product derivation; orchestrator audits absorbed each round (A8 relabel, A9a/A9b split, skeletonization FAIL repaired by import/materialization — 7 axes / 33 keys / 165 subkeys compiled, DEC-22..26 applied).</p></div>
+    <div class="tlrow c"><div class="meta"><span class="tag c">CORRECT</span><span>O16D · M16</span></div>
+      <b class="t">Migration-bundle correction — proven against this session's own work</b>
+      <p>The v5-b.coldstart.1 pack found complete in-repo after v0.3 claimed its contents were missing. Folded into v0.4; scope correction persisted; reassessment delivered.</p></div>
+    <div class="tlrow b"><div class="meta"><span class="tag b">ROOT ×2</span><span>DEC-27 · M17</span></div>
+      <b class="t">Post-O16D operator corrections</b>
+      <p>DEC-27: canon + governance addendum are ONE unit (gates act during null replacement). M17: derivation basis = the entire project history, never a version — force-close framing suspended; O16E opened.</p></div>
+  </div>
+</section>
+
+<section id="rulings">
+  <p class="eyebrow">02 · Rulings record</p>
+  <h2>Operator rulings in force (this session's additions)</h2>
+  <p>Full text in <code>_PROVENANCE/LEDGER.md</code> (zip). Verbatim ROOT quotes preserved for the
+  two corrections that arrived as free text.</p>
+  <table>
+    <thead><tr><th>ID</th><th>Ruling (condensed)</th><th>Consequence</th></tr></thead>
+    <tbody>
+      <tr><td><code>M12</code></td><td>Blockers become interactive questions, never passive stops.</td><td>Standing execution law.</td></tr>
+      <tr><td><code>M13</code></td><td>Roadmap functional migration: timing → LYR section headers; structure-reservation → Performance.execution; Intro/Outro named sections; fades in section instructions.</td><td>MAP retired as axis; 24 address migrations.</td></tr>
+      <tr><td><code>M14</code></td><td>Six verbs (update/upgrade/extend/enhance/exemplify/explain) + two completion obligations.</td><td>Session-end discipline.</td></tr>
+      <tr><td><code>M15</code></td><td>Era-bound authority: documents-primary vs runtime-primary; neither projects onto the other era.</td><td>Governs all era evidence.</td></tr>
+      <tr><td><code>M16</code></td><td>Migration-bundle epistemology: bundle ≠ system; absence ≠ nonexistence; claims name their lane; search-before-absence.</td><td>Produced the v5b find (03).</td></tr>
+      <tr><td><code>M17</code></td><td>ROOT verbatim: <em>"you are basing your work on the version and not on the projects entire history."</em></td><td>Force-close suspended; O16E (history-grounded derivation) is the top action.</td></tr>
+      <tr><td><code>DEC-22</code></td><td>Canon authority = chronology; each version is an overlay on the system at its time.</td><td>Strata map law.</td></tr>
+      <tr><td><code>DEC-23</code></td><td>Councils/rosters/matrices are version overlays; executable matrix migrates to the 7-axis top.</td><td>Seat-map import lawful.</td></tr>
+      <tr><td><code>DEC-24</code></td><td>Song Excellence INTERWOVEN — SEM criteria drive fills and round-robins; terminal composite ≥97.5 + G-Card closes; historical ≥7.0 = era history.</td><td>Governance model.</td></tr>
+      <tr><td><code>DEC-25</code></td><td>Syllable rule = style-conditioned breath-pattern + format + bar-count-accuracy rule; 6–10/6–11 are era instances.</td><td>Template law.</td></tr>
+      <tr><td><code>DEC-26</code></td><td>Technical UST axis names re-expanded to Creative container names; literal 1:1 identity; literature→vocal-performance-spacing transformation; lock binds words, spacing transformable.</td><td>Axis identity.</td></tr>
+      <tr><td><code>DEC-27</code></td><td>ROOT verbatim: <em>"one of those is the technical ust the other is an addendum showing how the quality and governance tie directly into the decision making as the nulls are replaced."</em></td><td>Canon+addendum = one unit; O-18 rivalry framing withdrawn.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="find">
+  <p class="eyebrow">03 · The v5b find</p>
+  <h2>M16 applied to this session's own work — and it cut</h2>
+  <p>v0.3 shipped stating the named seat map was <em>"blocked on CONS drops"</em> and that the pinned
+  topology was outside the repo. Both claims were false. The complete <strong>v5-b.coldstart.1</strong>
+  pack (generated 2026-01-23, GPT-5.2-Thinking-era) sat at
+  <code>legacy/maestro_v5b_coldstart/</code> the entire session.</p>
+  <div class="panel">
+    <h4>Pack completeness — 19/19 members located against its own MANIFEST.json</h4>
+    <table>
+      <thead><tr><th>Member (manifest path)</th><th>Found at</th><th>Verification</th></tr></thead>
+      <tbody>
+        <tr><td>15 core files (SYSTEM_PROMPT, docs/*, templates/*)</td><td>in place</td><td><span class="badge-ok">sha256 = manifest</span></td></tr>
+        <tr><td><code>docs/EXECUTABLE_CHAIN.md</code> · <code>docs/KNOWLEDGE_SPINE.md</code></td><td>relocated to <code>legacy/</code> root</td><td><span class="badge-ok">sha256 = manifest</span></td></tr>
+        <tr><td><code>runtime/context.md</code></td><td><code>legacy/context (1).md</code> — displaced, renamed</td><td><span class="badge-ok">re-bound by sha256 633f7ef3…</span></td></tr>
+        <tr><td><code>runtime/solution.md</code></td><td>repo-root <code>solution (1).md</code> — displaced, renamed</td><td><span class="badge-ok">re-bound by sha256 a4dae1d2…</span></td></tr>
+      </tbody>
+    </table>
+    <p class="muted">The pack's own hash manifest healed its own scatter — displaced members were provable purely by content hash. This re-binding move is now standard method (SCOPE_CORRECTION_v0_4).</p>
+  </div>
+  <div class="grid2">
+    <div class="panel tight"><h4>What the pack contains</h4>
+      <p>Pinset: <code>PIN.V5B.COUNCIL.MATRIX.V1</code> (named seat map with tie-breaks) ·
+      <code>PIN.V5B.EVIDENCE.CONTRACT.V1</code> (one-sentence constraint fills, source binding,
+      downstream prediction, challenge cycles, 8 mandatory logs) · <code>PATCH.CREATIVE.UST.MAP.V1</code>
+      (Road-Map parity patch) · <code>WI.V5B.SCHEMA.V1</code> (work-item cards) ·
+      <code>MIGRATE.V5B.PIPELINE.PROMOTION.V1</code>. Plus TECHNICAL_UST_CANON.md (topology monolith)
+      + TECHNICAL_UST_GOVERNANCE_ADDENDUM.md — per DEC-27, ONE UNIT: the Technical UST and the record
+      of how SEG / G-Card / SE20 tie into decision-making as the nulls are replaced.</p></div>
+    <div class="panel tight"><h4>The image-only PDF</h4>
+      <p><code>TECHNICAL.UST — CANONICAL ADDRESS MAP (v5-b).pdf</code> — a Gemini chat printed to PDF
+      the same night (2026-01-23), no text layer; every text-extraction tool returns empty. Extracted
+      by page render; transcription in the zip (<code>evidence/ADDRESS_MAP_PDF_TRANSCRIPTION.md</code>,
+      class DERIVED-MECHANICAL). A condensed third variant — corroborates DEC-24 concurrency (SE20
+      carried addresses beside the axes); PROPOSAL-rung provenance.</p></div>
+  </div>
+  <div class="callout alert"><span class="k">Named errors this find exposed (all corrected in v0.4)</span>
+  1 · "seat map blocked on CONS drops" — false, imported. 2 · "0 omissions" — true of the compile
+  source only, re-scoped. 3 · CONS queue carried nonexistence claims without recorded searches —
+  now each entry bears a verified-absent-by-search burden. 4 · displaced ≠ missing — two files
+  recovered by hash. 5 · the ADDRESS MAP PDF sat staged-unprocessed while conclusions referenced
+  "the pinned address map."</div>
+</section>
+
+<section id="fold">
+  <p class="eyebrow">04 · The fold (v0.4)</p>
+  <h2>What changed in maestro-current, file by file</h2>
+  <table>
+    <thead><tr><th>File</th><th>Change (O16D)</th><th>Rule applied</th></tr></thead>
+    <tbody>
+      <tr><td><code>04_COUNCIL_TOPOLOGY.md</code></td><td>Named seat map IMPORTED: Alan/Vanessa/Anva/Eldrik/Dave/Sage with adjacent reviewers + tie-breaks; source row in the retired four-letter Performance code read as PER; MAP row scope-split into PER.execution (Alan's structure seat beside Dave's groove seat — both preserved); V&amp;V Marshal registered beside STAFF.ROLE.GOVERNANCE (correspondence = operator).</td><td>DEC-23 · M13 · no invention</td></tr>
+      <tr><td><code>05_GOVERNANCE_SEG.md</code></td><td>v5b governance address space registered: SEG.K1–K5 (25) · G.K1–K6 (30, ≥7.0 stays era history) · SE20.K1–K7 (35) · cross-axis bindings · phase guarantee. Third SEG era alias recorded ("Structural &amp; Engineering Gate"). Per DEC-27 this layer is the executable record of gates acting DURING null replacement.</td><td>DEC-24 · DEC-27 · DEC-14</td></tr>
+      <tr><td><code>02_CREATIVE_UST_TEMPLATE.md</code></td><td>Era layer beside M13: v5b INSERTED [Road Map] between Performance and Post-Production (PATCH.CREATIVE.UST.MAP.V1); M13 later REMOVED it by functional migration — both records kept, chronology governs. Precise triad cap bands registered.</td><td>DEC-22 · M13 · no harmonization</td></tr>
+      <tr><td><code>06_RUNTIME_RULES.md</code></td><td>Suno parsing discipline (speaker tags outside quotes; sFX wrapped; no commas outside lyrics; no singer names in quotes; lock binds quoted text only) + triad caps 4960–4999 / 960–999 / ≤150+1960–1999; D3 widened to all three surfaces.</td><td>chronology carry-forward</td></tr>
+      <tr><td><code>STRATA_MIGRATION_MAP.md</code></td><td>v0.2: S5b sub-stratum entry (19/19 located, 2 re-bound); CONS queue narrowed + search-burden rule; seat map moved PENDING-IMPORT → IMPORTED.</td><td>M16 · DEC-22</td></tr>
+      <tr><td><code>SCOPE_CORRECTION_v0_4.md</code></td><td>NEW — the correction record itself: v0.3 claims re-scoped, five named error instances, M16 lanes going forward.</td><td>M16</td></tr>
+      <tr><td><code>MANIFEST.yaml</code></td><td>v0.4 · 33 members · v5b source-import block added · topology result re-stated as scope-relative.</td><td>—</td></tr>
+    </tbody>
+  </table>
+  <p>Registers: <code>LEDGER.md</code> +M16/O16D/DEC-27/M17 · <code>STATE.md</code> folded 0.3→0.5 ·
+  <code>OPEN.md</code> O-17 narrowed, O-18 opened-then-withdrawn-as-posed (DEC-27), O16E opened ·
+  <code>INDEX.json</code> 4319→4334 records, append-only.</p>
+</section>
+
+<section id="lanes">
+  <p class="eyebrow">05 · Claims &amp; lanes</p>
+  <h2>Every claim names its lane (M16)</h2>
+  <div class="grid2">
+    <div class="panel tight"><h4>KNOWN CANON</h4><p class="muted" style="font-size:13.5px">operator-ruled or hash-verified in reached strata</p>
+      <p>M1–M17 · DEC-01..27 · P-1..P-4 · 7-axis re-expanded topology top · M13 migration · SEM 12-criteria / 97.5 floor / G-Card artifact / interwoven execution · lyric lock (words locked, spacing transformable) · DEC-25 breath-pattern rule · chronology-authority law · Session-13 snapshot (historical class) · the v5b pack AS A STRATUM (era-canon of 2026-01-23).</p></div>
+    <div class="panel tight"><h4>PROBABLE CANON</h4><p class="muted" style="font-size:13.5px">multi-witness, unruled — held at PROPOSAL</p>
+      <p>Precise triad cap bands (three witnesses: v5b pack, validator band, DISC-04 rounding) · Suno parsing discipline · evidence-contract fill law as the executable form of "staffed fill" · WI mechanics as ancestry of the 03 phase chain. Per M17 corollary: any claim grounded only in the latest version is at most PROBABLE until the history pass confirms it.</p></div>
+    <div class="panel tight"><h4>HISTORICAL</h4><p class="muted" style="font-size:13.5px">era-bound overlays, preserved, non-current</p>
+      <p>MAP as axis + Creative [Road Map] parity patch · G-Card ≥7.0 scalar · fixed 6–10/6–11 bands · four-letter Performance code · three SEG-name expansions · v4.5.5 production roster · 5-council default + 13-worker lattice as stratum rosters · SE20-as-address-group (Gemini print) and SE20.K1–K7 item set (era instance).</p></div>
+    <div class="panel tight"><h4>UNVERIFIED</h4><p class="muted" style="font-size:13.5px">located-unfolded or inferred-only — nothing built on these</p>
+      <p>The ~40k-activity runtime history (mostly not in evidence) · coldstart docs folded only at registration depth (LOG_TEMPLATES, MODEL_PROFILE, DRY_RUN_EXAMPLE) · <code>05_SEM_MUTATION_TRANSCRIPT_REVISED.md</code> (located, unread) · authoring order of Chimera-era template ↔ v5b unit · everything in the CONS queue.</p></div>
+  </div>
+</section>
+
+<section id="hashes">
+  <p class="eyebrow">06 · Hash anchors</p>
+  <h2>Recompute these; if any fails, stop and flag</h2>
+  <p>Complete member hashes: <code>SHA256SUMS.txt</code> (zip root, covers every archived file) and
+  <code>maestro-current/MANIFEST.yaml</code> (md5 per bundle member). Headline anchors:</p>
+  <table>
+    <thead><tr><th>Artifact</th><th>Algorithm</th><th>Digest</th></tr></thead>
+    <tbody>
+      <tr><td>Session-13 payload (PATCH-01 / R-list v0.2)</td><td>md5</td><td><code>52381c1e13a25775f5491a7090a7f06d</code></td></tr>
+      <tr><td>Chimera-era compile source <code>technical.ust.template.txt</code></td><td>md5</td><td><code>eaf18e1101c7a5814850fe0c62743b3a</code></td></tr>
+      <tr><td>v5b <code>docs/COUNCIL_MATRIX.md</code></td><td>sha256</td><td><code>e7097f6ad02a43bcace2a27ebaf21d36350611cc0ea37e26bff134ce099a1765</code></td></tr>
+      <tr><td>v5b <code>docs/TECHNICAL_UST_CANON.md</code></td><td>sha256</td><td><code>bfe0b238a08edcd317b80ac0bf9be3a124029995770d91d83f8358ec5a441b5b</code></td></tr>
+      <tr><td>v5b <code>docs/TECHNICAL_UST_GOVERNANCE_ADDENDUM.md</code></td><td>sha256</td><td><code>29b0c9ff38a0cf4ecdfe1f1325a16837f6e75da4574814b19fa01cc1c97099fb</code></td></tr>
+      <tr><td>v5b <code>templates/CREATIVE_UST_TEMPLATE.txt</code></td><td>sha256</td><td><code>e192d29da2a1b63173e7897355bf8ffcad001963fdf049ab4eb7854ca77701d3</code></td></tr>
+      <tr><td>displaced <code>context (1).md</code> = runtime/context.md</td><td>sha256</td><td><code>633f7ef3f26b40787a2fd1729d3129e8be71cd559079a35529c8dbbe5699b6b9</code></td></tr>
+      <tr><td>displaced <code>solution (1).md</code> = runtime/solution.md</td><td>sha256</td><td><code>a4dae1d28758a4452e8bef5278f51098938d6fd0076c186570d1dd6fdc7e61ef</code></td></tr>
+      <tr><td>ADDRESS MAP PDF (image-only Gemini print)</td><td>md5</td><td><code>e39f3fbc6a575469b0f55e3a0250aef2</code></td></tr>
+      <tr><td><code>04_COUNCIL_TOPOLOGY.md</code> (v0.4)</td><td>md5</td><td><code>424dabbc36f085e22da0e75b9c27a8f6</code></td></tr>
+      <tr><td><code>05_GOVERNANCE_SEG.md</code> (v0.4)</td><td>md5</td><td><code>3cb62cd1cd442a92bd59aec5385bae26</code></td></tr>
+      <tr><td><code>MANIFEST.yaml</code> (v0.4)</td><td>md5</td><td><code>6fbff481528c9cd21a03ebae5c30fa37</code></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="zip">
+  <p class="eyebrow">07 · Zip inventory</p>
+  <h2>maestro_vv_package_2026-07-19_v0_4.zip</h2>
+  <div class="codewrap"><div class="codehdr"><span class="fn">archive layout</span><span class="lang">tree</span></div>
+<pre style="margin:0;padding:14px 18px;font-family:var(--mono);font-size:12.5px;line-height:1.7;color:#cfe9e6;overflow-x:auto">maestro_vv_v0_4/
+├─ REPORT.html                            ← this report (self-contained copy)
+├─ SHA256SUMS.txt                         ← every file below, sha256
+├─ maestro-current/                       ← the FULL v0.4 bundle (33 manifest members)
+│  ├─ 00_ROOT_SPEC.md … 10_TEST_PLAN.md   ← 11 numbered docs
+│  ├─ MANIFEST.yaml · STRATA_MIGRATION_MAP.md · SCOPE_CORRECTION_v0_4.md
+│  ├─ build/                              ← A9a packager · A9b compiler · 3 validators · templates
+│  ├─ compiled/                           ← materialized topology + migration/coverage/closure yamls
+│  └─ fixture/dryrun_project.md
+├─ _PROVENANCE/
+│  ├─ LEDGER.md (M1–M17, DEC-01..27) · STATE.md (0.5) · OPEN.md · INDEX.json (4,334 records)
+│  └─ REASSESSMENT_2026-07-19/MIGRATION_BUNDLE_REASSESSMENT_v0_1.md
+└─ evidence/
+   ├─ v5b_coldstart/                      ← the located pack, original filenames + relocations noted
+   │  ├─ CHANGELOG.md · MANIFEST.json · README.md · SYSTEM_PROMPT.md
+   │  ├─ docs/ (11 files incl. TECHNICAL_UST_CANON + GOVERNANCE_ADDENDUM + COUNCIL_MATRIX)
+   │  └─ templates/CREATIVE_UST_TEMPLATE.txt
+   ├─ displaced/context (1).md · solution (1).md · EXECUTABLE_CHAIN.md · KNOWLEDGE_SPINE.md
+   ├─ TECHNICAL.UST — CANONICAL ADDRESS MAP (v5-b).pdf   ← image-only original
+   └─ ADDRESS_MAP_PDF_TRANSCRIPTION.md    ← render-derived transcription (DERIVED-MECHANICAL)</pre></div>
+  <p class="muted">Evidence files keep their original (sometimes awkward) names deliberately — filename drift is itself evidence. The <code>evidence/</code> tree mirrors repo paths noted per file in SHA256SUMS.txt comments.</p>
+</section>
+
+<section id="checklist">
+  <p class="eyebrow">08 · V&amp;V checklist</p>
+  <h2>Checks for the orchestrator — each falsifiable, each independent</h2>
+  <div class="gate">
+    <q><span class="qn">V1</span>Re-hash every zip member against SHA256SUMS.txt; re-hash bundle members against MANIFEST.yaml (md5). Expect: 100% match.<span class="qstat wait">RUN</span></q>
+    <q><span class="qn">V2</span>Re-verify the two displaced-file re-bindings: sha256 of <code>evidence/displaced/context (1).md</code> and <code>solution (1).md</code> vs <code>evidence/v5b_coldstart/MANIFEST.json</code> entries runtime/context.md and runtime/solution.md.<span class="qstat wait">RUN</span></q>
+    <q><span class="qn">V3</span>Parse gates: every .yaml/.json in the zip loads clean (yaml.safe_load / json.load). Expect: 0 failures.<span class="qstat wait">RUN</span></q>
+    <q><span class="qn">V4</span>Seat-map fidelity: diff 04's imported table against <code>evidence/v5b_coldstart/docs/COUNCIL_MATRIX.md</code>. Expect: zero invented content; only the two declared migrations (four-letter code → PER; MAP row → PER.execution) and the scope-split footnotes.<span class="qstat wait">RUN</span></q>
+    <q><span class="qn">V5</span>Governance-layer fidelity: 05's SEG/G/SE20 counts (25/30/35) and G.K6.S4 ≥7.0 against <code>TECHNICAL_UST_GOVERNANCE_ADDENDUM.md</code>. Expect: exact; ≥7.0 classified era-history, NOT a current threshold.<span class="qstat wait">RUN</span></q>
+    <q><span class="qn">V6</span>Compiled topology: <code>compiled/</code> coverage matrix shows 7 axes / 33 keys / 165 subkeys / 24 migrations / 0 unexplained omissions — and SCOPE_CORRECTION_v0_4 correctly re-scopes that claim to its source. Optionally re-run <code>build/compile_current.py</code> if the Chimera-era source is available to you; without it, verify the compiler fails closed.<span class="qstat wait">RUN</span></q>
+    <q><span class="qn">V7</span>Era separation: confirm 02 keeps BOTH the v5b Road-Map insertion record and the M13 removal, unmerged; confirm the current template contains no Road-Map block.<span class="qstat wait">RUN</span></q>
+    <q><span class="qn">V8</span>Ruling propagation: DEC-27 and M17 appear in LEDGER with verbatim ROOT quotes; STATE 0.5 reflects both; OPEN shows O-18 withdrawn-as-posed and O16E opened; force-close language suspended everywhere (grep the bundle for stale "RELEASE CANDIDATE" claims — MANIFEST class line is the one permitted survivor pending O16E, flagged if you judge otherwise).<span class="qstat wait">RUN</span></q>
+    <q><span class="qn">V9</span>Lane audit: sample 10 claims from this report; verify each names a lane and the lane assignment survives scrutiny (especially: nothing UNVERIFIED is load-bearing).<span class="qstat wait">RUN</span></q>
+    <q><span class="qn">V10</span>Adversarial pass: attempt to refute the five named error-instances in section 03 — is there a sixth this session still hasn't found? Search the evidence tree for any file referenced-but-absent or absent-but-referenced.<span class="qstat wait">RUN</span></q>
+  </div>
+  <div class="callout"><span class="k">Requested verdict format</span>
+  Per-check PASS / FAIL / PARTIAL with evidence pointers, then an overall verdict and a blocking-defect
+  list in the established audit format (work item: <code>REVIEW.O16D.VV.R1</code>). Corrections will be
+  absorbed build-upon, per the session's standing Q-A-F loop.</div>
+</section>
+
+<section id="open">
+  <p class="eyebrow">09 · Open items</p>
+  <h2>Held open, deliberately — nothing here is silently resolved</h2>
+  <table>
+    <thead><tr><th>Item</th><th>State</th><th>Waiting on</th></tr></thead>
+    <tbody>
+      <tr><td><code>O16E</code> history-grounded derivation</td><td><span class="badge-block">TOP ACTION</span></td><td>Full-chronology sweep (S1→S9, T01–T17) as the derivation basis; per M17 this replaces version-based force-close.</td></tr>
+      <tr><td><code>O-15</code> prefix registry</td><td>open</td><td>Now includes v5b pinset IDs; blocks K-label short-code binding (DEC-12).</td></tr>
+      <tr><td><code>O-17</code> CONS drops</td><td>narrowed</td><td>03 END shell original · Y-3 · V55 · fold-session v0.1 pair · index_1.html — each now carries a verified-absent-by-search burden.</td></tr>
+      <tr><td>Chimera-template ↔ v5b-unit chronology</td><td>folded into O16E</td><td>Authoring order from transcripts; file dates insufficient.</td></tr>
+      <tr><td>V&amp;V Marshal ↔ STAFF.ROLE.GOVERNANCE</td><td>registered ×2</td><td>Operator correspondence ruling.</td></tr>
+      <tr><td>SE20 composition · sub-gate threshold OQs (70v75, SEM 12v13)</td><td>held</td><td>Operator; never harmonized.</td></tr>
+      <tr><td>D1–D4 runtime obligations</td><td>deferred-runtime</td><td>Executable app phase (P-4).</td></tr>
+    </tbody>
+  </table>
+  <div class="callout cont"><span class="k">Continuation</span>
+  Load <code>_PROVENANCE/STATE.md</code> (0.5) first in any successor session. The zip is a
+  point-in-time projection for V&amp;V — the repo at <code>D:\maestro-on-mosaic</code> remains the
+  single source of truth (DEC-07); on any conflict, the repo wins.</div>
+  <p class="muted" style="margin-top:34px">Maestro — Session Fold Report &amp; V&amp;V Package v0.4 · O16D · 2026-07-19 · R2 workspace · rung: persisted, PROPOSAL-class (operator + orchestrator review are the promotion gates)</p>
+</section>
+
+</main>
+</div>
+</body>
+</html>

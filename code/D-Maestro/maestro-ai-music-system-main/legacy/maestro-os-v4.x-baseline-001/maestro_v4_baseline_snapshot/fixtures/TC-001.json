@@ -1,0 +1,22 @@
+{
+  "project_name": "TC-001 Minimal intake",
+  "narrative_anchor": "A haunted-but-hopeful survivor rebuilds trust after betrayal.",
+  "lyrics": null,
+  "genre_tags": [
+    "southern_gothic",
+    "trap",
+    "acoustic",
+    "tape_warmth"
+  ],
+  "must_haves": [
+    "WORKING branch",
+    "null honesty",
+    "full SME chain",
+    "5 audit gates"
+  ],
+  "must_nots": [
+    "invent BPM or key",
+    "rewrite raw archive"
+  ],
+  "canon": false
+}

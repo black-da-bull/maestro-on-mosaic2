@@ -1,0 +1,17 @@
+{
+ "source": "/mnt/data/maestro_prompt_evolution_run_v2/source/o16e/thread_distillates/TH-10_sem_matrix_design.md",
+ "source_md5": "503ef936a63547235c9b7528394d5971",
+ "source_bytes": 122265,
+ "normalized_chars": 120015,
+ "normalization": "CRLF/CR->LF (0 CR chars); character-lossless, offsets index normalized text (MF-1)",
+ "census": {
+  "preamble": 1,
+  "user": 20,
+  "assistant": 20
+ },
+ "R1_tail_recovery_candidates": [],
+ "R2_attachment_events": [],
+ "R3_inner_transcript_marker_hits": 0,
+ "R3_samples": [],
+ "note": "R1/R2 require human confirmation before reclassification (never auto-promote); R3 hits inside assistant text are usually the inner transcript quoting itself."
+}

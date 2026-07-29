@@ -1,0 +1,3 @@
+## Mini Prompts
+
+- HOOK QUALITY CHECK: Rate hook memorability...

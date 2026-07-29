@@ -1,0 +1,300 @@
+{
+  "project_id": "momoney_os_v4_2",
+  "semver": "4.2.0",
+  "branding": {
+    "studio": "MoMoney Studios",
+    "tagline": "Gospel Trap Revival",
+    "values": [
+      "Authenticity over Artifice",
+      "Trust the Glow",
+      "Sacred Grit",
+      "Cinematic Weight",
+      "Post-Analog Soul"
+    ],
+    "signature_sound": "Southern-fried Soul Trap with Neo-Soul undertone"
+  },
+  "sources": [
+    {
+      "path": "/mnt/data/conversation_-1--_2025-09-27-1128.agi.md",
+      "role": "Design Log (conversation spine)",
+      "sha256": "8e3f63b7d10c51e66bcba551fb20bbd6537da7d05976a83820460138200d5ba1"
+    },
+    {
+      "path": "/mnt/data/research.pdf",
+      "role": "Research Layer (external benchmark)",
+      "sha256": "6dfb82f472d70d0d718a941198a039fafcba959d39953f3575aa427587f80145"
+    },
+    {
+      "path": "/mnt/data/Universal_Mastro_v3-5_session_leading_to_os_development.md",
+      "role": "Iterative Framework Build (v3.5 session meta)",
+      "sha256": "e28792b60262adddf5817a28be75983c0b09035af3dac3badf2ab32da3fa6f8e"
+    },
+    {
+      "path": "/mnt/data/Untitled.md",
+      "role": "Meta-Analytic Extensions (recursive outlining; DSRP)",
+      "sha256": "7684a3b703cceed2395d52b2bdcab4e51c9f0eb09d0787d77a324e0580a5b373"
+    },
+    {
+      "path": "/mnt/data/Universal_Maestro_3-5.md.md",
+      "role": "Iterative Framework Build (v3.5)",
+      "sha256": "1c89d1f9057c197e5c3153c8c96401388e8a86c86676e6fb7ca8f6707b4a391e"
+    },
+    {
+      "path": "/mnt/data/Universal_Maestro_v2-6.md.md",
+      "role": "Iterative Framework Build (v2.6 Framework Orchestrator)",
+      "sha256": "603ae5792e395b5fb99a4f9ca3231dfadb35767d057282f9e13f2332d5e27b8d"
+    },
+    {
+      "path": "/mnt/data/Universal_Maestro_v2-5.md.md",
+      "role": "Iterative Framework Build (v2.5)",
+      "sha256": "16567964e08f8f32fb62374a29192a6ef9590a1ab5e8d09bea19f8be6315c8ad"
+    },
+    {
+      "path": "/mnt/data/os.maestro.momoney.configuration.md",
+      "role": "OS Layer (v4.1) \u2014 Node/Edge/KPI config",
+      "sha256": "9ea5f3da0312b0c9e982279eaa4c6e5dd7f1d1266f1c1a97a9d40ad371cac572"
+    },
+    {
+      "path": "/mnt/data/os.maestro.momoney.knowledgeSpine.md",
+      "role": "OS Layer (v4.1) \u2014 Knowledge Spine",
+      "sha256": "7e42f6cee7fbfe528703ddf3bbee02fbc6bba07e7b3bde9b814be47404211e55"
+    },
+    {
+      "path": "/mnt/data/os.maestro.momoney.customInstructions.md",
+      "role": "OS Layer (v4.1) \u2014 Custom Instructions / SME Lab",
+      "sha256": "9b37fde18fe460bc9fa1b146866949e27e0d77793db99a36cf85ff97a754ffc1"
+    }
+  ],
+  "nodes": {
+    "N2.0": {
+      "name": "Core Relational Boot",
+      "status": "active"
+    },
+    "N2.1": {
+      "name": "AUTOMAT Init",
+      "status": "active"
+    },
+    "N3.1": {
+      "name": "Session Ingest & Context Reconstructor",
+      "status": "ready"
+    },
+    "N3.2": {
+      "name": "Policy Extractor",
+      "status": "ready"
+    },
+    "N3.3": {
+      "name": "Procedure Synthesizer",
+      "status": "ready"
+    },
+    "N3.4": {
+      "name": "Test Harness Generator",
+      "status": "ready"
+    },
+    "N4.1": {
+      "name": "Mood-Sense",
+      "status": "ready"
+    },
+    "N4.2": {
+      "name": "Feedback-Learn",
+      "status": "ready"
+    },
+    "N4.3": {
+      "name": "Cognitive-Load Offloader",
+      "status": "ready"
+    },
+    "N5.x": {
+      "name": "Creative Fragment Analysis (CFA)",
+      "status": "ready"
+    },
+    "N6.x": {
+      "name": "Tree-of-Drafts (ToD)",
+      "status": "ready"
+    },
+    "N7.x": {
+      "name": "UST Builder",
+      "status": "ready"
+    },
+    "N8.x": {
+      "name": "Round-Robin SME Confrontation Lab",
+      "status": "ready"
+    },
+    "N9.x": {
+      "name": "Post-Production Orchestrator",
+      "status": "ready"
+    },
+    "N10.x": {
+      "name": "Prompt Builder & Packaging",
+      "status": "ready"
+    },
+    "N11.x": {
+      "name": "Reverse-Pass Translator",
+      "status": "ready"
+    },
+    "N12.x": {
+      "name": "Verification Spine",
+      "status": "ready"
+    },
+    "N12.5": {
+      "name": "Verbatim Retention Auditor",
+      "status": "ready"
+    },
+    "N12.6": {
+      "name": "Diff Canonizer",
+      "status": "ready"
+    }
+  },
+  "edges": [
+    [
+      "N2.0",
+      "N2.1"
+    ],
+    [
+      "N2.1",
+      "N3.1"
+    ],
+    [
+      "N3.1",
+      "N3.2"
+    ],
+    [
+      "N3.2",
+      "N3.3"
+    ],
+    [
+      "N3.3",
+      "N3.4"
+    ],
+    [
+      "N3.4",
+      "N4.1"
+    ],
+    [
+      "N4.1",
+      "N4.2"
+    ],
+    [
+      "N4.2",
+      "N4.3"
+    ],
+    [
+      "N4.3",
+      "N5.x"
+    ],
+    [
+      "N5.x",
+      "N6.x"
+    ],
+    [
+      "N6.x",
+      "N7.x"
+    ],
+    [
+      "N7.x",
+      "N8.x"
+    ],
+    [
+      "N8.x",
+      "N9.x"
+    ],
+    [
+      "N9.x",
+      "N10.x"
+    ],
+    [
+      "N10.x",
+      "N11.x"
+    ],
+    [
+      "N11.x",
+      "N12.x"
+    ],
+    [
+      "N12.x",
+      "N12.5"
+    ],
+    [
+      "N12.5",
+      "N12.6"
+    ],
+    [
+      "N12.6",
+      "N10.x"
+    ]
+  ],
+  "policies": {
+    "dialogue_first": true,
+    "ust_enforcement": true,
+    "token_budget_chars_max": 4800,
+    "consensus_threshold": 0.85,
+    "branding_guardrail": "Critical if brand ethos missing from outputs"
+  },
+  "validators": {
+    "ust_order": [
+      "Theory",
+      "Voice",
+      "Lyrics Narrative",
+      "Intro",
+      "Verse 1",
+      "Pre-Chorus",
+      "Chorus",
+      "Verse 2",
+      "Bridge",
+      "Chorus 2",
+      "Outro",
+      "Style",
+      "Timbre",
+      "Performance",
+      "Post Production",
+      "Outro Directive",
+      "LYRICS BLOCK"
+    ],
+    "adlib_parentheses_only": true,
+    "length_limit_chars": 4800,
+    "comma_policy": "No commas outside lyric quotes"
+  },
+  "artifacts": {
+    "state": [
+      "relational_state.json",
+      "context_state.json",
+      "goals_map.json",
+      "affect_state.json",
+      "feedback_deltas.json",
+      "menu.json",
+      "themes.json",
+      "constraints.json",
+      "risk_map.json",
+      "drafts/*",
+      "ust_prompt.valid.txt",
+      "post_production_cues.json",
+      "verification_log.json",
+      "delta_report.md"
+    ]
+  },
+  "kpis": [
+    "validator_pass_rate",
+    "consensus_score",
+    "risk_density",
+    "token_budget_utilization",
+    "throughput_ms"
+  ],
+  "lineage": {
+    "design_log": "conversation_-1--_2025-09-27-1128.agi.md",
+    "iterative_builds": [
+      "Universal_Maestro_v2-5.md.md",
+      "Universal_Maestro_v2-6.md.md",
+      "Universal_Maestro_3-5.md.md",
+      "Universal_Mastro_v3-5_session_leading_to_os_development.md"
+    ],
+    "os_layer": [
+      "os.maestro.momoney.configuration.md",
+      "os.maestro.momoney.knowledgeSpine.md",
+      "os.maestro.momoney.customInstructions.md"
+    ],
+    "research": [
+      "research.pdf"
+    ],
+    "meta_analytic": [
+      "Untitled.md"
+    ]
+  }
+}

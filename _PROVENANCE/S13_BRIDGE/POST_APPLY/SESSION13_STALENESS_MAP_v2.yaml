@@ -1,0 +1,20 @@
+# SESSION13_STALENESS_MAP v2 — post-ruling supersession of v1 (v1 preserved)
+work_item: MAESTRO.O16.DERIVE-CURRENT-ARTIFACTS.R1
+supersedes: SESSION13_STALENESS_MAP.yaml
+entries:
+  - artifact: artifacts/D-Maestro/canon/Maestro_v5c_* (4 files)
+    state: ANNOTATED_HISTORICAL (supersession context applied 2026-07-19)
+  - artifact: artifacts/D-Maestro/drafts/maestro_v0.md
+    state: ANNOTATED_NAMESPACE (E-2 applied; both K value-sets preserved)
+  - artifact: "v.0 poster + MOSAIC diagrams + impl-plan axis registry (MAP-bearing)"
+    state: MIGRATION_REQUIRED_OR_HISTORICAL (M13 — Roadmap functions migrated; DISC-12 dating resolved per DEC-09)
+  - artifact: "v5-b Knowledge Spine + Road-Map-axis cold-start files"
+    state: DERIVATION_INPUT_SUPERSEDED_FORMS (use in O-16 with M13 migration; never copy forward verbatim)
+  - artifact: "v4.5.2 canon doc + KBD-001 documents-primary law"
+    state: ERA_BOUND_LAW (M15 supersession statement adopted; read each era under its own law)
+  - artifact: "SEG naming across eras"
+    state: RESOLVED_WITH_ALIASES (Song Excellence Governance current; Feasibility gate / Structural Excellence Gate = era-native aliases, DEC-14)
+  - artifact: "canon zip + who dat.pdf"
+    state: UNSEARCHED (MF-5, carried)
+  - artifact: "installed skill SKILL.md"
+    state: STALE (blocked on DEC-03 search; out of O-16 scope)

@@ -1,0 +1,17 @@
+{
+  "artifact": "MAESTRO_UPGRADE_ALIGNED_PACK",
+  "version": "v0.2-plane-separated-admin-optimized",
+  "date": "2026-05-27",
+  "status": "OPERATOR_REVIEW_REQUIRED",
+  "supersedes": "MAESTRO_ADMIN_UPGRADE_PACK_v0.1_QUARANTINED",
+  "reason_for_supersession": "Prior pack collapsed Maestro app, Mosaic host platform, dev environment, and forensic reconstruction plane.",
+  "primary_design_rule": "No plane collapse. Every claim must declare plane + authority class + promotion status.",
+  "files": [
+    "maestro_admin_instructions_upgrade_v0.2.md",
+    "maestro_admin_load_order_v0.2.md",
+    "maestro_architecture_knowledge_v0.2.md",
+    "maestro_quick_reference_card_v0.2.md",
+    "maestro_reassessment_prior_responses_v0.2.md",
+    "maestro_upgrade_aligned_manifest_v0.2.yaml"
+  ]
+}

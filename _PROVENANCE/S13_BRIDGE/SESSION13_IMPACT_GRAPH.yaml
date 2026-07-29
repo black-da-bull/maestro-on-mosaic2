@@ -1,0 +1,38 @@
+# SESSION13_IMPACT_GRAPH — direct and indirect dependents of the FIRM cluster
+# Inferred consequences are labeled INFERRED_UNAPPLIED; nothing here is applied automatically.
+work_item: REPAIR.P1N.SESSION-TO-MAESTRO-BRIDGE.R1
+date: 2026-07-19
+nodes:
+  PATCH-01_R_list_v0_2:
+    direct_dependents:
+      - "canon/Maestro_v5c_* register (reads as historical once destination canon is persisted)"  # via PATCH-02
+      - "_PROVENANCE/OPEN.md O-13 (closes on acceptance + persistence)"
+      - "_PROVENANCE/LEDGER.md V1 (repair recorded on phase-2 apply)"
+      - "STATE.md next-actions ladder"
+    indirect_dependents:
+      - {item: "K7/K8 CAND definitions + +4 governor schemas (GAP-12)", status: INFERRED_UNAPPLIED, note: "R-list marks CAND; definitions remain open work"}
+      - {item: "OPEN-Q5..Q8 (payload carries them OPEN)", status: carried_open}
+      - {item: "skill rebuild (O-02/O-03) — future skill should cite R-RT lineage", status: INFERRED_UNAPPLIED, blocked_by: DEC-03}
+      - {item: "axis registry build (impl plan next-action 1)", status: INFERRED_UNAPPLIED, blocked_by: "AUX-3 §3 MAP/END hold (DISC-12)"}
+  PATCH-02_v5c_annotation:
+    direct_dependents: ["four canon/*.md files (insert-only)"]
+    indirect_dependents:
+      - {item: "SEG name collision (Feasibility/Structural/Governance)", status: held, elicitation: E-7}
+      - {item: "canon zip + who dat.pdf unsearchable (MF-5)", status: carried_open}
+  PATCH-03_k_namespace:
+    direct_dependents: ["drafts/maestro_v0.md (insert-only)"]
+    indirect_dependents:
+      - {item: "O-13 reconstruction brief wording (MF-6 re-typed)", status: RESOLVE-CANDIDATE, elicitation: E-2}
+      - {item: "SEM criterion-count OQ (12 vs 13) untouched", status: carried_open}
+  PATCH-04_runtime_rules:
+    direct_dependents: ["future runtime conditioning / OS prompt rebuild (consumes rule cards)"]
+    indirect_dependents:
+      - {item: "runtime enforcement wiring", status: DEFERRED_UNTIL_RUNTIME}
+  PATCH-05_version_trinity:
+    direct_dependents: ["reconstruction version register; P1 sweep ordering (v4.5.5 as anchor corpus)"]
+    indirect_dependents:
+      - {item: "GitHub archive + contracts re-read as lagging projections", status: already_canon}
+non_dependents_declared:   # explicitly NOT touched by this bridge
+  - "Technical UST content, lyric material, any song artifact"
+  - "SEM weights/thresholds (97.5 etc.) — cited, not modified"
+  - "LEDGER/STATE/OPEN files themselves (phase-2 only, on acceptance)"

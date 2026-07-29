@@ -1,0 +1,133 @@
+| RDE UNIT 7 STATUS | VALUE |
+| :--- | :--- |
+| **Last File Ingested** | `Universal_Mastro_v3-5_session_leading_to_os_development.md` |
+| **New Data Points Added** | `0` |
+| **Next Action Required** | Wait for next file upload OR the final command: "SYNTHESIZE FINAL OUTLINE." |
+
+---
+
+### **MAESTRO OS LIVING EXTRACTION DOCUMENT (Preview)**
+* **DATA SET 1: Universal\_Maestro\_3-5.md.md**
+    * ***Modules & Sections Extracted:***
+        * I. High-Level Goal: The AUTOMAT Framework, II. Functional Modules, A. Module `01_CREATIVE_INGESTION`, B. Module `02_CREATIVE_GENERATION`, C. Module `03_PEER_REVIEW_AND_REFINEMENT` (The CONFRONTATION Module), D. Module `04_PRODUCTION_ASSETS`, III. Input/Output Design, IV. Implementation Steps, V. Test Scenarios, VI. Metrics, 0) Executive Snapshot, 1) Baseline vs. Gemini, 2) Single Source of Truth — master.json, 3) UST Skeletons, 4) Atomic Node–Edge SOPs (with IDs), 5. Framework Orchestrator, 6. Atomic Examples, 7. SME Round-Robin, 8. Multi-Phase V&V, 9. What to Do Right Now, 10. Anticipated Qs, I. High-Level Goal (Implementation Outline), II. Functional Modules (Implementation Outline), III. Input/Output Design (Implementation Outline), IV. Implementation Steps (Atomic) (Implementation Outline), V. Test Scenarios (Implementation Outline), VI. Metrics (Implementation Outline)
+    * ***N-Steps (Nodes & Atomic Instructions) Extracted:***
+        * **N0 — Session Source Detector** (Edge out: `N0→N1` or `N0→N2`): 1. Scan last ≤150 turns newest→oldest. 2. If artifacts found: set `session.mode=A`, list artifacts. Else `B`. 3. Write to `master.json.session`.
+        * **N1 — Decomposer (KPAI) [Mode A]** (Edge out: `N1→N3`): 1. Problem Understanding + confidence. 2. Key Points (rules, hooks, cues). 3. Action Items (executable). 4. Frameworks (method patterns). 5. Persist KPAI block; link to projects / songs.
+        * **N2 — Intake (Fresh) [Mode B]** (Edge out: `N2→N3`): 1. Request: title/theme, vibe, lead, tempo, explicitness, constraints. 2. Validate, set defaults, log assumptions.
+        * **N3 — Tree-of-Drafts (ToT)** (Edge out: `N3→N4`): 1. Generate A/B/C drafts. 2. Mini- SWOT + fishbone per draft. 3. Save `draft-*-A|B|C` IDs in `master.json.songs[].drafts`.
+        * **N4 — SME Round-Robin Debate** (Edge out: `N4→N5`): 1. Order: Musicologist → Producer → Linguist → Systems → Strategist (repeat). 2. Each claims 1 item + cites check; others may challenge. 3. Eject claimant after two sustained contradictions. 4. Stop when one full rotation occurs with no contradictions. 5. Record consensus minutes + ejection log.
+        * **N5 — Merge & Self-Consistency** (Edge out: `N5→N6`): 1. Merge shared strengths. 2. Generate 3 concise merges; select most consistent + lowest char. 3. Log decision criteria in `deltaReports`.
+        * **N6 — Composer (UST / Suno v4.5)** (Edge out: `N6→N7`): 1. Render Summary (≤1000). 2. Render Macro using `ust_song_skeleton.txt`. 3. Ensure [Exit]; post-prod cues in [Performance]. 4. Save files and link in `songs[].final`.
+        * **N7 — Compression & Format Guard** (Edge out: `N7→N8`): 1. Move repeats to Style/Timbre/Performance. 2. Use (repeat) for duplicate hooks. 3. Recount chars; ensure no commas outside quotes; lines ≤120.
+        * **N8 — Multi-Phase V&V** (Edge out: `N8→N9`): 1. Macro. 2. Micro. 3. Tactical. 4. Log to `ust_vnv_log_schema.json`.
+        * **N9 — Packaging & Telemetry** (Edge out: `N9→END`): 1. Telemetry line; optional manifest line. 2. Emit `project.json` scaffold. 3. Delta report if revised; update `master.json`.
+    * ***Lists/Orders Extracted:***
+        * **SME Roles (Gemini):** `SME_The_Critic`, `SME_The_Stylist`, `SME_The_Engineer`
+        * **Framework Orchestrator Selection Matrix (master.json):** `"when": "toolActions", "use": ["ReAct", "CoT"]`, `"when": "multiApproach", "use": ["ToT", "DARE"]`, `"when": "formatRisk", "use": ["CRISPE", "Few-Shot"]`, `"when": "accuracyHigh", "use": ["Self-Consistency"]`, `"when": "techSchema", "use": ["QUEST"]`
+        * **SME Round-Robin Order (master.json):** `"Musicologist"`, `"Producer"`, `"Linguist"`, `"Systems"`, `"Strategist"`
+        * **V&V Phases (Section 8):** `Macro`, `Micro` (no commas outside quotes; lines ≤120 chars), `Tactical` (bars only; mono kick/sub; dark plate on hooks; phone scene 200–5 kHz; headroom; `[Exit]`)
+        * **Implementation Steps (Outline):** 1. Create folder structure. 2. Instantiate **`master.json`**. 3. Load System Prompt. 4. Detect Mode A/B. 5. Generate ToT drafts. 6. Conduct SME debate. 7. Merge & Self-Consistency. 8. Compose Summary + Macro. 9. Run Compression & Format Guard. 10. Execute Multi-Phase V&V. 11. Package artifacts. 12. Repeat for additional songs.
+    * ***Metrics & KPIs Extracted:*** `Emotional Fidelity Score`, `Brand Adherence`, `Iteration to Consensus`, `SME-Inconsistency Rate`, `Fidelity Score`, `Reproducibility`, `Semantic Consistency`, `Pragmatic Usability`, `SME Reliability`, `Throughput/Latency`, `V&V Efficacy`, `Adoption`
+
+* **DATA SET 2: Untitled.md**
+    * **Modules/Sections/Headers Extracted:** `# IDENTITY and PURPOSE`, `# STEPS`, `# OUTPUT INSTRUCTIONS`, `# INPUT`, `# Your Task`, `Identify the System and Its Parts:`, `Zooming Out`, `Global and External Systems:`, `Adjacent Systems:`, `Feedback Loops and Dynamics:`, `Conclusion:`, `# Your Response`, `<# Understanding DSRP Distinctions --- # Your Task (Updated): Your task is to explore the key perspectives surrounding the system.`, `# Your Response:`, `# Understanding DSRP Relationships Foundational Concept Identifying relationships between and among ideas.`, `Key points about Relationships include:`, `# Your Task`, `# Instructions`, `Step-by-step template creation walkthrough:`, `OUTPUT FORMAT:`, `1. Introduction`, `2. Conversation Summary`, `3. Extracted Processes, Workflows, and Methodologies`, `4. Categorization: [Framework], [Procedure], [Insight], [Real-World Case]`, `5. Section Mapping to Guideline Framework`, `6. Identified Gaps for Future Consideration`, `## INPUT: ARTICLE`
+    * **Lists/Orders/Steps Extracted:** Recursive Outlining Steps, System Identification Steps, System Analysis Components, Perspective Analysis Components, DSRP Relationships Key Points (6 elements), Relationship Analysis Components, Advanced Dialogue Analysis Instructions (15 elements), Template Creation Walkthrough (6 elements), Prompt Engineering Frameworks (10 elements), Model-Specific Recommendations (4 elements), Getting Started for Daily Use (3 steps), Getting Started for Professional Applications (3 steps).
+
+* **DATA SET 3: Universal\_Maestro\_v2-5.md.md**
+    * **Modules/Sections/Headers Extracted:** `# SYSTEM PROMPT — Universal Maestro v2.5`, `## C — CONTEXT`, `## O — OBJECTIVE`, `## S — STYLE`, `## T — TONE`, `## A — AUDIENCE`, `## R — RESPONSE`, `### R1. Source Detection`, `### R2. KPAI Decomposition`, `### R3. Multi-Agent Musicology Orchestration`, `Governance Agents`, `Domain Virtual SMEs`, `### R4. Brainstorming 3 Solutions → Merge`, `### R5. Creative→Technical (Forward Pass)`, `### R6. Technical→Creative (Reverse Pass)`, `### R7. Multi-Phase Verification & Validation (MP-V&V)`, `### R8. Packaging (Maestro Artifacts)`, `### R9. Next Options`, `## DECISION LOGIC`, `## UNIVERSAL MUSIC WORKFLOW (Atomic Steps)`, `## FEW-SHOT EXAMPLES`, `### Example A — Mode A`, `### Example B — Mode B`, `## TEMPLATES`, `### 1) Show Summary (≤1000)`, `### 2) Macro LYRIC Prompt`, `### 3) Telemetry`, `### 4) Manifest`, `### 5) V&V Log`, `### 6) project.json`, `## SAFETY & COMPLIANCE`, `## STARTUP SEQUENCE`
+    * **Lists/Orders/Steps Extracted:**
+        * **Core System Pillars (3 elements):** Universal GPT Session Decomposer, Maestro AI Production Pipeline, Suno v4.5 Prime-Directive Composer.
+        * **Prime-Directive Macro LYRIC order (8 immutable elements):** `[Theory]`, `[Voice]`, `[CREW_TAGS]`, `[Road-Map]`, `[LYRICS BLOCK]`, `[Style]`, `[Timbre]`, `[Performance]`.
+        * **Objectives (4 elements):** Decompose sessions, Compose Suno v4.5 prompts, Verify with MP-V&V and log, Package Maestro artifacts.
+        * **Maestro Artifacts (4 elements):** `project.json` blueprint, Suno prompt string, README, (optionally) render command stub.
+        * **Output Style Labels (5 elements):** `[Framework]`, `[Procedure]`, `[Insight]`, `[Real-World Case]`, `[GAP]`.
+        * **Governance Agents (7 internal only):** Structure Validator, Format/Char Guard, Compression Engine, Multilingual QC, Scene Variant Manager, Telemetry Logger, Archive Normalizer.
+        * **Domain Virtual SMEs (5 task-specific):** Musicologist SME, Producer SME, Linguist SME, Systems Engineer SME, Strategist SME.
+        * **Forward Pass Analysis Stack (5 elements):** 1) Motif/semantic clustering, 2) Map to Prime-Directive schema, 3) Build bar-accurate Road-Map, 4) Specify timbre/FX, 5) Performance cues.
+        * **Multi-Phase Verification & Validation (3 phases):** Macro, Micro, Tactical.
+        * **Packaging Artifacts (5 elements):** `project.json`, Suno prompt string, README summary, (Optional) render command stub, Delta report.
+        * **Next Options (5 elements):** alt mixes, archive normalization, add language packs, export manifest, schedule validation cycle.
+        * **Decision Logic Conditions (6 IF statements):** prior artifacts found → Mode A; macro prompt > 4800 → Compression Engine; phone scene exists → enforce mono 200–5 kHz; multilingual → Multilingual QC; `[Exit]` missing → restore; V&V fail → fix silently.
+        * **UNIVERSAL MUSIC WORKFLOW (Atomic Steps - 14 elements):** 1) Intake/Scope... 14) V&V Log.
+        * **Startup Sequence (4 elements):** 1) Detect Mode. 2) Run Sense–Think–Act. 3) Present Outputs. 4) Offer Next Options.
+    * ***Metrics & KPIs Extracted:*** `≤1000 chars`, `≤~4800 chars`, `line length ≤120`, `mono phone scene 200–5 kHz`, `mono kick/sub`, `dark plate on hooks`, `mastering headroom`.
+
+* **DATA SET 4: Universal\_Maestro\_v2-6.md.md**
+    * **Modules/Sections/Headers Extracted:** `# SYSTEM PROMPT — Universal Maestro v2.6 (Framework Orchestrator Edition)`, `## IDENTITY`, `## MODE DETECTION`, `## PRIME-DIRECTIVE — SUNO v4.5 FORMAT`, `## MULTI-PHASE VERIFICATION (MP-V&V)`, `## MULTI-AGENT (VIRTUAL SMEs — INTERNAL ONLY)`, `## FRAMEWORK ORCHESTRATOR`, `## UNIVERSAL MUSIC WORKFLOW (ATOMIC STEPS)`, `## OUTPUTS (PER SONG)`, `## DECISION TREE (Sense–Think–Act)`, `## FEW-SHOT — CONDENSED`, `### FS-A: Compose from brief`, `### FS-B: Reverse from prompt`, `## PACKAGING`, `## START`, `### Selection matrix + prompt-chain (quick reference)`, `### VI. Metrics`, `## What you get now`
+    * **Lists/Orders/Steps Extracted:**
+        * **IDENTITY Pillars (5 elements):** Session Decomposer, Maestro AI Production Pipeline, Suno Prime-Directive Composer, Multi-Phase V&V, Framework Orchestrator.
+        * **Mode A (Existing Session) Steps (3 elements):** Scan last 100–150 turns, Collect musical artifacts, Build a **Song Set**.
+        * **Mode B (Fresh) Steps (2 elements):** Run minimal intake, Never invent history.
+        * **Prime-Directive Macro LYRIC order (8 immutable elements):** `[Theory]`, `[Voice]`, `[CREW_TAGS]`, `[Road-Map]`, `[LYRICS BLOCK]`, `[Style]`, `[Timbre]`, `[Performance]`.
+        * **MP-V&V Phases (3 elements):** Macro, Micro, Tactical.
+        * **Domain Virtual SMEs (5 elements):** Musicologist SME... Strategist SME.
+        * **Governance Utilities (7 elements):** Structure Validator... Archive Normalizer.
+        * **Framework Orchestrator List (10 elements):** CoT, ToT, ReAct, CRISPE, Few-Shot, Self-Consistency, Persona, DARE, Zero-Shot CoT, QUEST.
+        * **Framework Orchestrator Selection Policy (6 IF/ELSE statements):** IF tool use → ReAct. IF open-ended → ToT. IF formatting risk → Few-Shot inside CRISPE. IF accuracy critical → Self-Consistency. IF technical SOP/schema → QUEST. ELSE → CoT within CRISPE + Persona.
+        * **UNIVERSAL MUSIC WORKFLOW (Atomic Steps - 14 elements):** 1) Intake/Scope... 14) V&V Log.
+        * **OUTPUTS (PER SONG) (6 elements):** 1) **Show Summary** (≤1000). 2) **Macro LYRIC Prompt** (≤~4800). 3) **Telemetry**. 4) **Manifest line**. 5) **V&V Log**. 6) **project.json** scaffold.
+        * **DECISION TREE (Sense–Think–Act) (3 elements):** Sense, Think, Act.
+        * **PACKAGING Artifacts (2 elements):** Bundle artifacts; include delta report.
+        * **START Sequence (5 elements):** 1) Detect Mode A/B. 2) Apply Framework Orchestrator. 3) Run SMEs + ToT → merge. 4) Produce outputs + MP-V&V + Telemetry. 5) Offer next options.
+        * **Selection matrix + prompt-chain (quick reference) (6 elements):** Exploration/Multiple paths → ToT. Tool use/Actions → ReAct. Formatting fidelity → CRISPE + Few-Shot. High-stakes accuracy → Self-Consistency. Technical schemas/validators → QUEST. Always bind a Persona.
+        * **What you get now (3 documents):** A **single system prompt** (Document A), A **complete operating manual** (Document B), A **verification & dialogue protocol** (Document C).
+    * ***Metrics & KPIs Extracted:*** `Show Summary ≤1000`, `Macro ≤~4800`, `hard cap 5000`, `phone scene mono 200–5 kHz`, `mono kick/sub`, `dark plate on hooks`, `headroom`, `Fidelity Score`, `Reproducibility`, `Semantic Consistency`, `Pragmatic Usability`, `SME Reliability`, `Throughput/Latency`, `V&V Efficacy`, `Adoption`.
+
+* **DATA SET 5: System Prompt v3.0 (from response)**
+    * **Modules/Sections/Headers Extracted:** `# SYSTEM PROMPT — Universal Maestro v3.0`, `## CONTEXT`, `## MODE DETECTION`, `## SUNO v4.5 PRIME-DIRECTIVE`, `## FRAMEWORK ORCHESTRATOR`, `## MULTI-PHASE VERIFICATION (MP-V&V)`, `## VIRTUAL SMEs (INTERNAL)`, `## SME ROUND-ROBIN (DIALOGUE-BASED)`, `## UNIVERSAL MUSIC WORKFLOW (ATOMIC STEPS)`, `## OUTPUTS (PER SONG)`, `## START`
+    * **Lists/Orders/Steps Extracted:**
+        * **CONTEXT Pillars (5 elements):** Session Decomposer, Maestro Pipeline, Suno v4.5 Prime-Directive Composer, Multi-Phase Verification, Virtual SME Round-Robin.
+        * **Mode A (Existing) Steps (3 elements):** Scan last 100–150 turns, Collect artifacts, Build **Song Set**.
+        * **Mode B (Fresh) Steps (2 elements):** Minimal intake, Never invent history.
+        * **Prime-Directive Macro LYRIC order (8 immutable elements):** `[Theory]`, `[Voice]`, `[CREW_TAGS]`, `[Road-Map]`, `[LYRICS BLOCK]`, `[Style]`, `[Timbre]`, `[Performance]`.
+        * **Framework Orchestrator List (10 elements):** CRISPE... QUEST.
+        * **Framework Orchestrator Selection Policy (6 IF/ELSE statements):** Tool use/Actions → **ReAct**. Multiple valid approaches → **ToT**. Formatting/consistency risk → **CRISPE + Few-Shot**. High-stakes accuracy → add **Self-Consistency**. Technical schemas/SOPs → **QUEST**. Else → **CoT within CRISPE** + Persona.
+        * **MP-V&V Phases (3 elements):** Macro, Micro, Tactical.
+        * **VIRTUAL SMEs (5 elements):** Musicologist... Strategist.
+        * **SME Utilities (7 elements):** Structure Validator... Archive Normalizer.
+        * **SME Round-Robin Turn Order (5 elements):** Musicologist → Producer → Linguist → Systems → Strategist.
+        * **UNIVERSAL MUSIC WORKFLOW (Atomic Steps - 14 elements):** 1) Intake/Scope... 14) V&V Log.
+        * **OUTPUTS (PER SONG) (6 elements):** 1) **Show Summary** (≤1000). 2) **Macro LYRIC Prompt** (≤~4800). 3) **Telemetry**. 4) **Manifest line**. 5) **V&V Log**. 6) **project.json** scaffold.
+        * **START Sequence (7 elements):** Detect Mode A/B, Orchestrate frameworks, Run SME round-robin, Produce outputs, MP-V&V, Telemetry, Offer next options.
+    * ***Metrics & KPIs Extracted:*** `Show Summary ≤1000`, `Macro ≤~4800`, `hard cap 5000`.
+
+* **DATA SET 6: Document B — Operating Manual & Taxonomy (from response)**
+    * **Modules/Sections/Headers Extracted:** `## Document B — Operating Manual & Taxonomy`, `### B1) Node–Edge Taxonomy`, `### B2) Atomic SOPs`, `N0 — Session Source Detector`, `N1 — Decomposer (KPAI) [Mode A]`, `N2 — Intake (Fresh) [Mode B]`, `N3 — Draft Generator (ToT)`, `N4 — SME Round-Robin Debate`, `N5 — Merge & Decide (Self-Consistency)`, `N6 — Composer (Suno Prime-Directive)`, `N7 — Compression & Format Guard`, `N8 — Multi-Phase V&V`, `N9 — Packaging & Telemetry`, `### B3) Analytics (Per-Node)`, `### B4) Control-Flow (State Machine, condensed)`
+    * **N-Steps (Nodes & Atomic Instructions) Extracted:** N0-N9 with 3-5 sub-steps each.
+    * **Lists/Orders/Steps Extracted:** Node–Edge Taxonomy Nodes (10 elements), Node–Edge Taxonomy Edges (10 elements), Analytics Details (5 types/9 elements), Control-Flow (State Machine) (1 element): INIT → N0 → (A? N1 : N2) → N3 → N4 → N5 → N6 → N7 → N8 → N9 → DONE.
+    * ***Metrics & KPIs Extracted:*** `ms per node; cumulative latency.`, `macro and summary char counts; % saved by compression.`, `challenges issued/sustained; ejections per cycle.`, `fishbone category counts (People/Process/Tools/Policy/Data).`
+
+* **DATA SET 7: Document C, Few-Shot, Orchestration Hints, Implementation Guide (from response)**
+    * **Modules/Sections/Headers Extracted:** `## Document C — Verification & Dialogue Audit Protocol`, `### C1) Multi-Phase Checklists (Concise)`, `Macro`, `Micro`, `Tactical`, `**Log Format**`, `### C2) SME Round-Robin — Dialogue Rules`, `### C3) Delta Reporting`, `## Few-Shot Seeds (Condensed)`, `FS-1: Compose from minimal brief`, `FS-2: Reverse from prompt`, `## Orchestration Hints (Practical)`, `## Implementation Guide (Ready-to-Run)`, `### I. High-Level Goal`, `### II. Functional Modules`, `### III. Input/Output Design`, `### IV. Implementation Steps (Atomic, Numbered)`, `### V. Test Scenarios`, `### VI. Metrics`
+    * **Lists/Orders/Steps Extracted:**
+        * **C1 Macro Checklists (3 elements):** Structure, Policy, Goal Fit.
+        * **C1 Micro Checklists (2 elements):** Sentence clarity, Lists/code blocks follow house rules.
+        * **C1 Tactical Checklists (5 elements):** Bars only, Mono **kick/sub**; **dark plate on hooks**; phone scene **mono 200–5 kHz**; outro intact; mastering headroom.
+        * **C1 Log Format (1 element):** Phase | Checks | Pass/Fail | Fixes | Residual Risks | Timestamp.
+        * **C2 SME Round-Robin Dialogue Rules (6 elements):** Turn order, Claim, Challenge, Ejection, Consensus, Minutes.
+        * **C3 Delta Reporting (4 elements):** Macro, Micro, Tactical, Provide **why** and **impact**.
+        * **Orchestration Hints (3 elements):** Use **ToT** for A/B/C drafts, Run **Self-Consistency** on conflicting variants, Keep **Compression Engine** aggressive.
+        * **Functional Modules (6 elements):** 1. Session Decomposer, 2. Framework Orchestrator, 3. Maestro Composer, 4. SME Round-Robin, 5. Multi-Phase V&V, 6. Packaging.
+        * **Implementation Steps (Atomic, Numbered) (11 steps):** 1. **Bootstrap**... 11. **Offer Next**.
+        * **Test Scenarios (6 elements):** 1. **Reconstruction Test (Mode A)**, 2. **Compression Stress**, 3. **Phone-Scene Enforcement**, 4. **SME Conflict**, 5. **Multilingual QC**, 6. **Reverse-Engineering**.
+    * ***Metrics & KPIs Extracted:*** `mono 200–5 kHz`, `≤4800 chars`, `Fidelity Score`, `Reproducibility`, `Semantic Consistency`, `Pragmatic Usability`, `SME Reliability`, `Throughput/Latency`, `V&V Efficacy`, `Adoption`.
+
+* **DATA SET 8: Universal\_Mastro\_v3-5\_session\_leading\_to\_os\_development.md**
+    * ***Modules & Sections Extracted:***
+        * `## 1. Introduction`, `## 2. Conversation Summary`, `## 3. Extracted Processes, Workflows, and Methodologies`, `## 4. Categorization`, `## 5. Section Mapping`, `## 6. Identified Gaps`, `## UNIVERSAL MUSIC WORKFLOW — V3.5 (Prime-Directive Pass)`, `1. Intake & Scope`, `2. Prosody & Hook Lock`, `3. Road-Map & Harmony`, `4. Timbre & Style Kit`, `5. Performance Cues`, `6. Prime-Directive Formatting`, `7. Compression & Validation`, `8. Mix & Post Cues`, `9. QA & Deliverables`, `## Musical Reflection Heuristics I’ll Apply While Converting`
+    * ***Lists/Orders Extracted:***
+        * **Introduction Scope:** Main task: Perform a conversational deep dive of this session using recursive outlining. Purpose: Identify systems, subsystems, perspectives, and relationships... then synthesize actionable improvements. Scope: From initial Suno prime‑directive refinements... → meta‑request for systems/perspectives/relationships analysis and modular documentation.
+        * **Conversation Summary (4 elements):** Strict Suno v4.5 prime‑directive format enforced. Dual-Output separation established: **Show Summary (≤1000)** and **Macro LYRIC prompt (≤~4800)**, with **[Exit]** restored. Implemented council edits to **“Stay Away”**; char budget verified. Built second track (**“Who Pay di Price?”**) and compressed it under limit.
+        * **Extracted Processes, Workflows, and Methodologies (7 elements):** Prime-Directive Format Enforcement, Dual-Output/Char-Budget Triage, Artifact Compression Logic, Musical V&V (council edits), Tactical Mix Cues, Recursive Outlining/DSRP (Meta-Workflow), Modular Documentation.
+        * **Categorization Labels (5 elements):** `[Framework]`, `[Procedure]`, `[Insight]`, `[Real-World Case]`, `[GAP]`.
+        * **Section Mapping Goals (2 elements):** Match each to a relevant section in the current guideline framework (Sections I–IX). List unmatched insights as **[GAP]** for future consideration.
+        * **UNIVERSAL MUSIC WORKFLOW — V3.5 (9 steps):** 1. Intake & Scope. 2. Prosody & Hook Lock. 3. Road-Map & Harmony. 4. Timbre & Style Kit. 5. Performance Cues. 6. Prime-Directive Formatting. 7. Compression & Validation. 8. Mix & Post Cues. 9. QA & Deliverables.
+        * **Musical Reflection Heuristics (6 elements):** Prosody before harmony, Contrast architecture, Unity/variety balance, Hook intelligibility, Sub management, Story fidelity.
+    * ***Metrics & KPIs Extracted:***
+        * `Show Summary (≤1000)`
+        * `Macro LYRIC Prompt (≤~4800)`
+        * `hard cap 5 000`
+        * `line length ≤120 chars`
+        * `phone-scene mono 200–5 kHz`
+        * `mono kick/sub`
+        * `dark plate only on hooks`

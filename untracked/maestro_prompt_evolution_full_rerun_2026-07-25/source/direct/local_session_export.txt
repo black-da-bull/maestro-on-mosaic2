@@ -1,0 +1,873 @@
+Both Anthropic and Open AI have updated their guidance away from prompt engineering to context engineering.
+Thought for 26s
+
+That is directionally correct, but “away from prompt engineering” is too strong.
+
+What changed
+
+Both companies are increasingly treating prompting as one component of a larger systems problem:
+
+Anthropic has explicitly published guidance on “context engineering” for AI agents, defining it as curating what enters the model’s limited context window from a changing universe of possible information, and contrasting that with the narrower task of writing a prompt.
+OpenAI has also started using context engineering language in official cookbook material, especially around session memory, trimming/compression, and personalization/state management for agents.
+What did not change
+
+Neither company has actually retired prompt engineering:
+
+OpenAI still maintains current prompt engineering and prompt guidance documentation in its API docs and Help Center.
+Anthropic still maintains prompt engineering training/docs and even recent materials that explicitly discuss prompt engineering.
+The more accurate framing
+
+The shift is:
+
+Prompt engineering is now being treated as a subset of context engineering, especially for agentic systems.
+
+In practice, that means performance depends less on clever phrasing alone and more on:
+
+what information is retrieved,
+what memory is preserved or trimmed,
+how tools are described and returned,
+how state is structured across turns,
+what schemas/constraints are injected,
+and how irrelevant context is excluded.
+Why this happened
+
+This tracks the move from single-shot chat tasks to tool-using agents.
+
+OpenAI’s current agent materials emphasize tools, retrieval, orchestration, and workflow optimization, not just prompt wording.
+Anthropic’s context engineering piece makes the same point from the agent side: the hard problem is selecting and refreshing the right context each step, not merely drafting one good instruction block.
+
+Bottom line
+
+Your statement is substantively right about the trend, but the precise version is:
+
+They have not moved off prompt engineering.
+They have moved above it.
+Context engineering is becoming the higher-order discipline, with prompt engineering inside it.
+
+I can also lay out a clean prompt engineering vs. context engineering framework for production systems if that is the direction you are taking.
+
+I was informed that prompting is suggestive and that only by using:
+
+system state locking, constraints, cost based negatives, detailed step by step instructions, etc... actually works
+Thought for 10s
+
+That formulation is partly right but overstated.
+
+Core point
+
+Natural-language instructions are soft controls.
+They bias model behavior; they do not guarantee it.
+
+That applies to:
+
+prompting,
+system prompts,
+“step-by-step” instructions,
+constraints written in plain English,
+negative instructions,
+role definitions.
+
+Those can materially improve reliability, but they are still probabilistic steering, not hard enforcement.
+
+What actually changes reliability
+
+There are two different categories of control.
+
+1. Soft controls inside the model context
+
+These are still “prompting,” even when dressed up with stronger language:
+
+system state locking
+detailed constraints
+step-by-step instructions
+“do not do X”
+cost-based negatives
+examples
+rubrics
+checklists
+
+These often help because they:
+
+increase salience,
+reduce ambiguity,
+structure the task,
+create internal evaluation criteria.
+
+But they do not convert the model into a deterministic executor.
+
+2. Hard controls outside the model
+
+These are what actually enforce behavior:
+
+schema-constrained outputs
+grammar-constrained decoding
+tool gating
+code execution sandboxes
+state machines / workflows
+validators
+retries with adjudication
+permission boundaries
+retrieval filters
+post-processing rules
+external memory/state management
+
+These are not merely “better prompts.” They are system design.
+
+The accurate version
+
+A more correct statement would be:
+
+Prompting alone is suggestive. Reliability comes from combining strong instructions with external control mechanisms.
+
+That is the real distinction.
+
+On the specific items you listed
+System state locking
+
+If this means putting critical rules in the system message, that is stronger than user-level instructions because of instruction hierarchy. But it is still not absolute. It is higher-priority guidance, not true locking.
+
+If it means externally enforced state transitions, that is much stronger. Then the “lock” exists in the application, not in the model’s wording.
+
+Constraints
+
+Useful, especially when explicit, testable, and prioritized.
+Example: “Output valid JSON matching this schema” is better than “be structured.”
+
+Still soft unless paired with:
+
+constrained decoding,
+schema validation,
+rejection/retry logic.
+Cost-based negatives
+
+This can help when framed as tradeoffs:
+
+“Prefer omission over fabrication.”
+“If uncertain, mark unknown rather than infer.”
+“Treat unsupported claims as high-cost errors.”
+
+This improves policy behavior because it changes the model’s implicit optimization target. But again, it is still soft unless paired with validators.
+
+Detailed step-by-step instructions
+
+Helpful for tasks requiring decomposition, but not universally.
+
+They tend to help when:
+
+the task is multi-stage,
+order matters,
+there are hidden dependencies,
+output quality depends on process discipline.
+
+They can hurt when:
+
+the task is simple,
+the steps overconstrain a better internal solution,
+verbosity crowds out relevant context,
+the model starts following the procedure mechanically instead of solving the task well.
+
+So “step-by-step always works” is false.
+
+The real hierarchy of reliability
+
+From weaker to stronger:
+
+Plain prompting
+Well-structured system instructions + examples + explicit constraints
+Context engineering: better retrieval, state, memory, tool descriptions
+Structured output constraints: schemas, typed fields
+External enforcement: validators, rule engines, workflow orchestration
+Hard operational controls: permissions, execution boundaries, deterministic code paths
+
+That is why people say the field is moving from prompt engineering to context engineering and then further into agent/system engineering.
+
+The mistake in the claim you were told
+
+The mistake is treating these as separate categories:
+
+“prompting” on one side
+“system locking, constraints, steps” on the other
+
+In reality, those latter items are mostly just more disciplined prompting unless they are backed by external mechanisms.
+
+So the correct split is not:
+
+suggestive prompting
+vs.
+real prompt techniques
+
+It is:
+
+soft in-context controls
+vs.
+hard out-of-context enforcement
+Practical rule
+
+For production-grade reliability:
+
+use prompts to specify intent,
+use context engineering to supply the right information,
+use system design to enforce invariants.
+
+That is the workable model.
+
+Condensed version
+Yes: prompting is suggestive.
+No: system prompts, constraints, and step-by-step instructions are not magically different; by themselves they are also suggestive.
+What actually “works” is when those instructions are combined with external structure and enforcement.
+
+If useful, I can turn this into a precise framework with labels like soft constraints, hard constraints, orchestration, and enforcement surfaces.
+
+Sun, May 24 at 4:46 PM
+Pasted markdown(11).md
+File
+Thought for 11s
+
+Received. I will treat the uploaded Markdown as new source evidence / continuation material, not as a runtime prompt or a giant always-loaded document.
+
+Immediate recovery classification
+What it is
+
+A Maestro continuation judgment that adds product-specific evidence and authority structure to the Forensic Workspace.
+
+What it is not
+
+It is not a full runtime constitution, and it should not be injected wholesale into active context.
+
+Canon effect
+
+This material introduces or reinforces a Maestro-specific authority stack:
+
+L0 — Binding Reformulation Law
+L1 — v4.5 as pinned product reference
+L2 — precursor operational evidence
+L3 — transitional / bridge material
+L4 — historical archive
+
+That stack matters because it prevents the corpus from being flattened into “all useful context.”
+
+Key delta against current Forensic Workspace state
+
+The current Forensic Workspace had already corrected toward:
+
+recover source canon from evidence, keep runtime bounded, avoid giant document chains.
+
+This upload adds:
+
+when recovering Maestro, preserve the distinction between binding law, pinned implementation reference, operational precursor evidence, failed/lossy bridge material, and historical archive.
+
+The most important recovered rule
+
+Do not merge everything into grand canon.
+
+For Maestro, the correct movement is:
+
+anchor in binding law → use v4.5 as pinned reference → mine older materials as operational evidence → treat v5/v5-b as loss/salvage material → converge on the smallest lawful runtime slice.
+
+Runtime implication
+
+This should become a task card / recovery rule, not a giant active document.
+
+Compact card version:
+
+MAESTRO AUTHORITY STACK CARD
+
+When recovering Maestro canon, classify evidence into:
+
+L0 Binding Reformulation Law
+L1 v4.5 Pinned Product Reference
+L2 Precursor Operational Evidence
+L3 Transitional / Bridge Material
+L4 Historical Archive
+
+Do not flatten these layers.
+
+Use L0 to govern lawful rebuild decisions.
+Use L1 to prove last stable product behavior.
+Use L2 to recover proven operational mechanics.
+Use L3 to diagnose loss and salvage.
+Use L4 for lineage and rationale only.
+
+Goal: converge on a bounded runtime that preserves Maestro identity, not merely structure.
+Current next correct artifact
+
+Not another constitution.
+
+The next useful artifact is a Maestro Evidence Classification Register with columns like:
+
+artifact_id
+artifact_name
+authority_layer
+evidence_type
+proves
+must_preserve
+must_not_promote
+runtime_relevance
+confidence
+notes
+
+That would turn this upload into actual recovery infrastructure rather than more prose.
+
+Tuesday 9:45 PM
+The next useful artifact is a Maestro Evidence Classification Register
+Worked for 1m 23s
+
+Created the Maestro Evidence Classification Register from the uploaded continuation material. It classifies the source evidence into the L0–L4 authority stack, preservation duties, promotion limits, runtime relevance, and downstream actions. This is grounded in the uploaded Markdown’s authority model and reformulation mandate.
+
+Downloads:
+
+maestro_evidence_classification_register.xlsx
+maestro_evidence_classification_register.csv
+maestro_evidence_classification_register.md
+
+The workbook includes:
+
+Evidence Register — 40 classified evidence items
+Authority Layer Legend — L0 through L4 usage rules
+Action Queue — prioritized recovery actions
+README — scope and operating constraints
+
+Important scope limit: this is based on the uploaded continuation document only. It is not a full-corpus register yet.
+
+Today 1:52 PM
+Use @intent-compiler, @maestro-forensic-transcript, and @fabric-studio-orchestrator on the supplied files and conversation exports.
+
+# Mission
+
+Reconstruct the corpus as an append-only human–AI development record, but do not stop at recovering its final creative or technical state.
+
+For every meaningful prior operator prompt, use hindsight to produce the strongest faithful version of the prompt that could have been issued at that point using the knowledge available by the end of the supplied corpus.
+
+Treat this as both:
+
+1. a forensic reconstruction exercise; and
+2. a teaching and automation-discovery exercise.
+
+The work must show how the operator’s original requests evolved, why earlier wording produced incomplete or misleading results, how a stronger prompt would improve execution, and which repeated activities should become reusable AI automation.
+
+# Source authority
+
+Use the following authority order:
+
+1. operator messages and operator-supplied artifacts;
+2. later operator corrections and explicit acceptances;
+3. demonstrated runtime or generated artifacts;
+4. persisted assistant-produced material accepted or carried forward by the operator;
+5. unaccepted assistant proposals;
+6. model inference.
+
+Operator statements are root evidence.
+
+Assistant responses may influence the operator’s later working model, but they remain proposals unless accepted.
+
+Persistence proves that an artifact existed. It does not prove that the artifact was correct, accepted, operative, or runtime-enforced.
+
+Do not rewrite the historical record. Preserve the original prompt, the original response context, later corrections, and the hindsight-optimized prompt as separate objects.
+
+# Intent Compiler mode
+
+Use visible reframe mode.
+
+For every qualifying operator prompt:
+
+1. preserve the original prompt verbatim;
+2. identify the actual objective;
+3. identify the current state known at that moment;
+4. identify the destination later revealed by the corpus;
+5. recover explicit requirements;
+6. recover supported implications;
+7. separate optional enhancements;
+8. retain unresolved items as Unknown;
+9. identify prohibited behaviors and failure conditions;
+10. produce the strongest bounded, self-contained prompt that would have been more likely to produce the desired result.
+
+Classify every recovered requirement as:
+
+- Explicit
+- Supported implication
+- Optional enhancement
+- Unknown
+
+Do not invent architecture, deliverables, agents, documentation, or governance merely because they would make the prompt look more complete.
+
+# Forensic mode
+
+Run the Maestro Forensic Transcript workflow W0 through W9 across the corpus.
+
+Use:
+
+- backward-primary discovery from the known final state;
+- backward-nonlinear lineage tracing;
+- forward-linear verification;
+- forward-nonlinear cross-reference verification;
+- reconciliation without silent merging;
+- supersession by pointer;
+- contradiction preservation;
+- phantom-commitment detection;
+- operator-event and attachment-event coverage;
+- authority and state-rung classification;
+- direct and indirect impact mapping.
+
+Treat each operator prompt as a possible mutation event.
+
+For each event, determine whether it:
+
+- introduced a new objective;
+- refined an existing objective;
+- corrected an AI misunderstanding;
+- superseded an earlier assumption;
+- extended the scope;
+- narrowed the scope;
+- changed authority;
+- changed the definition of done;
+- exposed a missing dependency;
+- exposed an automation opportunity;
+- or remained unresolved.
+
+Do not treat version headings, files, polished summaries, or assistant recaps as natural event boundaries. Follow operator deltas and causal relationships.
+
+# Prompt reconstruction unit
+
+Create one Prompt Evolution Record for every materially distinct operator prompt or prompt cluster.
+
+Each record must contain:
+
+## 1. Event identity
+
+- stable event ID;
+- source file or session;
+- sequence position;
+- original operator prompt;
+- relevant attachments;
+- immediate task context.
+
+## 2. Original intent
+
+- what the operator explicitly asked;
+- what the operator appears to have expected;
+- what information was not yet available;
+- what assumptions the AI made.
+
+## 3. Result and failure analysis
+
+- what the AI actually did;
+- what was useful;
+- what was incomplete;
+- what was misunderstood;
+- what was invented;
+- what later operator correction exposed the defect;
+- which known failure mode occurred.
+
+Use named failure classes where applicable, including:
+
+- goal-inference collapse;
+- forward-primary reading;
+- mid-stream summarization;
+- AI prior text promoted to canon;
+- phantom commitment;
+- silent merge;
+- skeleton output;
+- authority inversion;
+- local correction without downstream propagation;
+- premature artifact generation;
+- excessive documentation;
+- or false completion.
+
+## 4. Hindsight-optimized prompt
+
+Produce the best bounded prompt that could have been supplied initially, using the later-established objective and constraints without pretending the operator originally possessed later terminology.
+
+The optimized prompt must be directly executable and must specify:
+
+- objective;
+- source scope;
+- authority;
+- current state;
+- desired destination;
+- required operations;
+- exclusions;
+- outputs;
+- validation;
+- stop conditions;
+- and unresolved decisions.
+
+## 5. Change explanation
+
+Explain, in teaching language:
+
+- what changed;
+- why it changed;
+- which ambiguity was removed;
+- which hidden dependency was made explicit;
+- which AI failure mode the change prevents;
+- and how the revised wording improves execution.
+
+Do not merely say that the new prompt is “clearer” or “more specific.” Explain the causal mechanism.
+
+## 6. Reusable lesson
+
+Extract a general prompting lesson that can be applied outside Maestro.
+
+Examples:
+
+- define authority before asking for synthesis;
+- distinguish creation order from causal order;
+- request evidence classification before interpretation;
+- separate artifact existence from acceptance;
+- specify whether a correction is local or corpus-wide;
+- specify whether the requested output is exploratory, operative, persisted, or runtime-enforced.
+
+## 7. Automation opportunity assessment
+
+Inspect the prompt, its execution, corrections, and repeated downstream work for automation opportunities.
+
+Classify each opportunity as one of:
+
+### A. Prompt pattern
+
+Use when the task needs reusable reasoning instructions but no persistent assets, deterministic code, or external tools.
+
+Examples:
+
+- authority classification;
+- contradiction extraction;
+- prompt hindsight comparison;
+- artifact-family reconstruction;
+- source-faithful summary.
+
+### B. Skill
+
+Use when the same multi-step workflow, conventions, schemas, examples, or validators will be reused across sessions.
+
+Examples:
+
+- prompt-evolution analyzer;
+- artifact-family mapper;
+- song-lineage reconstruction;
+- operator-authority classifier;
+- continuation-packet generator.
+
+### C. Deterministic script or parser
+
+Use when the operation is mechanical, countable, fragile, or exactly testable.
+
+Examples:
+
+- role splitting;
+- hashes and duplicate detection;
+- attachment-event extraction;
+- chronology normalization;
+- coverage verification;
+- prompt-pair generation;
+- stable-ID assignment.
+
+### D. Agent
+
+Use when the task requires iterative tool use, judgment, stateful execution, or autonomous pursuit of a bounded goal.
+
+Examples:
+
+- corpus inventory agent;
+- forensic replay agent;
+- impact-analysis agent;
+- automation-opportunity assessor;
+- validation and repair agent.
+
+Do not recommend an agent when a script, prompt pattern, or skill would be simpler and more reliable.
+
+### E. Multi-agent workflow
+
+Use only when independent analysis materially improves evidence separation or when specialist tool access differs.
+
+Possible roles include:
+
+- source inventory;
+- chronology and authority;
+- prompt reconstruction;
+- automation opportunity mining;
+- contradiction audit;
+- impact analysis;
+- independent evaluator.
+
+Use a manager/orchestrator pattern so one controller retains source scope, authority, synthesis responsibility, and user interaction.
+
+### F. SOP or checklist
+
+Use when the work should remain primarily human-operated but benefits from consistent steps, decision gates, or review requirements.
+
+Examples:
+
+- operator approval process;
+- canon promotion;
+- public release review;
+- persona correction;
+- cross-workspace handoff.
+
+### G. Connector, MCP server, or tool integration
+
+Use when execution requires recurring access to files, repositories, databases, applications, APIs, or external services.
+
+Identify:
+
+- required resource;
+- read or write capability;
+- authentication boundary;
+- destructive versus read-only operations;
+- and whether approval must be required.
+
+### H. Scheduled or event-driven automation
+
+Use when the activity should run periodically or when a condition changes.
+
+Examples:
+
+- new-session harvest;
+- repository drift scan;
+- stale-validator detection;
+- unresolved-item review;
+- new-artifact indexing.
+
+### I. Human-only judgment
+
+Use when the decision concerns artistic meaning, personal history, acceptance, authority, ethics, identity, or promotion to operative state.
+
+The automation may prepare evidence, but the operator retains the decision.
+
+# Automation opportunity record
+
+For every proposed automation, provide:
+
+- opportunity ID;
+- originating prompt event;
+- repeated pain or failure;
+- proposed automation type;
+- trigger;
+- inputs;
+- outputs;
+- required tools or connectors;
+- authority boundary;
+- human approval point;
+- deterministic components;
+- model-judgment components;
+- validation method;
+- failure and rollback behavior;
+- expected value;
+- implementation effort;
+- reuse frequency;
+- risk;
+- recommended priority;
+- and narrowest useful first version.
+
+Use this priority scale:
+
+- P0 — automate now
+- P1 — build after corpus fold
+- P2 — useful but not blocking
+- P3 — retain as manual practice
+- Rejected — added complexity without sufficient value
+
+# Fabric Studio Orchestrator mode
+
+After forensic reconstruction, use the replay_build profile.
+
+Also run these bounded specialist passes:
+
+- source_inventory
+- chronology_authority
+- extract_patterns
+- buildable_component_harvest
+- internal_ai_architecture
+- impact_coordinator
+- experiment_designer
+- source_fidelity
+- contradiction_audit
+- false_pass_audit
+
+Add two bounded logical specialist passes for this run:
+
+## Prompt Evolution Analyst
+
+For every operator prompt, reconstruct the optimized hindsight prompt, explain the change, and extract the reusable prompting lesson.
+
+## Automation Opportunity Analyst
+
+Search the complete event stream for repeated work, recurrent corrections, manual handoffs, validation burdens, context-loading problems, and tool-access gaps that could become prompt patterns, skills, scripts, agents, SOPs, connectors, or scheduled automations.
+
+If actual isolated specialists are unavailable, run each pass independently against the same immutable source snapshot and label the execution single-model emulation.
+
+Do not allow one specialist’s output to become another specialist’s source before integrity review.
+
+# Industry-practice application
+
+Apply the following design principles when recommending automation:
+
+1. Prefer the simplest mechanism that reliably performs the work.
+2. Prefer a deterministic script for exact mechanical operations.
+3. Prefer a reusable prompt pattern for bounded reasoning transformations.
+4. Prefer a skill when instructions, conventions, examples, references, or scripts must travel together.
+5. Prefer one tool-using agent before introducing multiple agents.
+6. Use multiple agents only when specialization, independent analysis, context isolation, or different tools materially improve the result.
+7. Use a manager pattern when one controller must retain authority, source scope, and final synthesis.
+8. Define explicit inputs, outputs, actions, branches, exit conditions, and approval boundaries.
+9. Reuse existing operator procedures and validated workflows rather than inventing parallel systems.
+10. Design evaluation fixtures and failure tests with the automation.
+11. Preserve logs, source hashes, prompt versions, outputs, and validation results.
+12. Separate development tooling from the Maestro and Mosaic product runtimes.
+13. Treat external data and actions as capability boundaries requiring explicit connectors, permissions, and auditability.
+14. Never automate operator-root acceptance, artistic meaning, identity, or canon promotion.
+
+# Required corpus-level outputs
+
+Produce:
+
+1. refined WorkRequest;
+2. source inventory;
+3. operator-event ledger;
+4. prompt-event index;
+5. prompt evolution records;
+6. original-to-optimized prompt pairs;
+7. teaching commentary for each prompt;
+8. reusable prompting-principles catalog;
+9. authority and state register;
+10. mutation register;
+11. supersession graph;
+12. contradiction register;
+13. phantom-commitment register;
+14. artifact-family map;
+15. persona-development map;
+16. production-doctrine map;
+17. recurring-law extraction;
+18. downstream impact map;
+19. automation-opportunity register;
+20. skill candidates;
+21. script/parser candidates;
+22. agent candidates;
+23. SOP candidates;
+24. connector and tool-integration candidates;
+25. scheduled-automation candidates;
+26. human-only decision register;
+27. prioritized automation roadmap;
+28. proposed evaluation suite;
+29. unresolved-items register;
+30. validation verdict;
+31. continuation packet.
+
+# Required teaching output
+
+For each prompt evolution record, present:
+
+
+text
+Original prompt
+→ What the AI likely understood
+→ What the operator actually needed
+→ Later evidence that revealed the gap
+→ Optimized hindsight prompt
+→ Why the revision works better
+→ Reusable lesson
+→ Automation opportunity
+
+
+The teaching explanation must remain grounded in the actual event. Do not turn it into generic prompt-engineering advice.
+
+# Prohibited behaviors
+
+- Do not merely rewrite prompts to sound polished.
+- Do not treat longer prompts as inherently better.
+- Do not invent requirements that did not emerge from the corpus.
+- Do not replace operator terminology with generic industry terminology.
+- Do not erase the historical prompt after optimizing it.
+- Do not blame every failure on prompt wording when tool limitations, missing context, inaccessible files, parser defects, or AI behavior were causal.
+- Do not recommend agents for tasks better handled by scripts or skills.
+- Do not recommend automation without defining validation and authority boundaries.
+- Do not promote assistant-generated architecture into operator intent.
+- Do not silently merge conflicting prompt interpretations.
+- Do not classify repeated duplicate text as independent reinforcement.
+- Do not produce category-only automation lists without source instances.
+- Do not stop after another calibration exercise if the supplied corpus and parser have already passed the required validation.
+- Do not claim execution against local files that were not accessible to the runtime.
+
+# Definition of done
+
+The work is complete only when:
+
+1. every material operator prompt is represented or explicitly excluded with a reason;
+2. every optimized prompt retains a traceable relationship to the original;
+3. every material revision is explained causally;
+4. every requirement is labeled by authority and classification;
+5. every automation opportunity points to one or more actual source events;
+6. every proposed automation identifies its correct mechanism and explains why a simpler mechanism is insufficient;
+7. every automation includes validation, failure handling, and human-approval boundaries;
+8. contradictions remain visible unless explicitly resolved by the operator;
+9. direct and indirect dependents are mapped;
+10. unresolved questions remain unresolved rather than being filled;
+11. corpus coverage is mechanically verified;
+12. integrity and false-PASS audits succeed;
+13. the final continuation packet identifies the narrowest executable implementation sequence.
+
+# Execution instruction
+
+This is an execution request, not a request to design or test the methodology again.
+
+Use the existing parser, validated skills, and consolidated corpus. Begin the full run. Do not stop after restating the plan or producing another example.
+Worked for 4m 9s
+Run completed
+
+Download the full Maestro prompt-evolution run archive
+
+The archive contains 91 hash-verified members, including the frozen source snapshot, mechanical parser results, specialist-pass outputs, all requested registers, prompt-evolution records, automation analysis, validation evidence, and continuation state.
+
+Key outputs
+RUN_SUMMARY.md
+00_refined_work_request.json
+01_source_inventory.csv
+02_operator_event_ledger.csv
+03_prompt_event_index.csv
+04_prompt_evolution_records.json
+05_prompt_evolution_records.md
+06_original_to_optimized_prompt_pairs.md
+18_automation_opportunity_register.json
+26_prioritized_automation_roadmap.json
+27_proposed_evaluation_suite.json
+28_unresolved_items_register.json
+29_validation_verdict.json
+30_continuation_packet.json
+orchestrator_dry_run.json
+MANIFEST.json
+Result
+
+Verdict: PARTIAL-PASS
+
+The run recovered:
+
+6 frozen source files
+94 operator events
+92 material prompt events
+2 explicitly excluded nonmaterial events
+5 of 5 structured coverage checks passed
+
+The parser verified the structured exports as character-lossless after declared CRLF→LF normalization, with zero gaps and all detected operator segments preserved. This follows the forensic skill’s requirement that mechanical coverage precede interpretation and that operator turns retain root authority.
+
+The run used:
+
+Maestro Forensic Transcript W0–W9
+Fabric Studio Orchestrator replay_build
+the requested integrity passes
+Prompt Evolution Analyst
+Automation Opportunity Analyst
+independent, immutable-source specialist artifacts
+explicit source-fidelity, contradiction, and false-PASS review
+
+The execution is labeled single-model emulation because isolated specialist agents and live Agents SDK model access were unavailable. This is the prescribed fallback rather than a claim of parallel agent execution.
+
+Why it is not a full PASS
+
+The false-PASS audit preserved these blockers:
+
+Two composite artifacts could not be reliably segmented as complete turn streams.
+A relevant who dat.pdf Library result could not be materialized.
+The current live conversation was not available as an authoritative raw export.
+@intent-compiler was not installed in the available skill set. Its visible-reframe behavior was emulated from your supplied contract and the orchestrator’s hindsight WorkRequest rules.
+Cross-file global chronology remains partially unresolved.
+
+No output was promoted into Maestro or Mosaic runtime state. The archive is a forensic development artifact, not operative or runtime-enforced canon.

@@ -1,0 +1,16 @@
+{
+  "project_name": "TC-005 Dedup promotion",
+  "narrative_anchor": "A hard truth said plainly; repetition is intentional.",
+  "lyrics": "Get away, leave today, stay away",
+  "genre_tags": [
+    "test"
+  ],
+  "must_haves": [
+    "Dedup constraints across Persona/Style/Lyrics",
+    "Promote repeated constraints upward"
+  ],
+  "must_nots": [
+    "duplicate same constraint at same level"
+  ],
+  "canon": false
+}

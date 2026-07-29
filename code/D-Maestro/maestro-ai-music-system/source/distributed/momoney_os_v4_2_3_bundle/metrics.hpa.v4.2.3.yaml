@@ -1,0 +1,3 @@
+weights: {MOS: 0.30, CLAP: 0.25, FAD_norm: 0.20, MotifRecurrence: 0.15, FractalProx: 0.10}
+targets: {CLAP_min: 0.80, FAD_max: 2.30, MFCC_dist_max: 0.30, MotifRecurrence_min: 0.65, DFA_melody_target: 1.31, DFA_tolerance: 0.05}
+round_trip: {enabled: true, measures: [MFCC_dist, CLAP, MOS_emotion]}

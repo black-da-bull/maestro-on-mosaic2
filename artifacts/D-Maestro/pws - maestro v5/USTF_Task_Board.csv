@@ -1,0 +1,11 @@
+Task,Priority,Owner
+Normalize templates using new Studio-Safe Skeleton,High,Producer
+Run Theory SME Round-Robin per track,High,Music Director
+Ensure Section Blocks match RoadMap 1:1,Medium,Arranger
+Remove tone terms from Style,High,Editor
+Consolidate all mix FX into PostProduction,Medium,Mix Engineer
+Create genre cards for top 3 hybrid styles,High,Creative Director
+Audit 808 mono behavior + imaging plan,Medium,Sound Designer
+Add missing bar counts to RoadMap,High,Arranger
+Apply AutoTrim to limit USTF ≤ 4800 chars,High,Editor
+Prepare reusable prompt for genre-to-card synthesis,High,Creative Director

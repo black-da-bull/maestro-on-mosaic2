@@ -1,0 +1,67 @@
+# Maestro adapter for transcript_audit pipeline
+# Configures pattern detection for ChatGPT-exported Maestro dev transcripts
+
+domain: maestro
+
+# Conversation-level boundary: line that opens an operator (BASE) turn.
+# Everything from one operator_turn_pattern to the next is one
+# (operator turn, ai response) pair.
+operator_turn_pattern: '^You said:'
+
+# Persona role-play markers within AI responses.
+# Some appear at line start; some appear inline (after operator content
+# on the same line as "You said:").
+personas:
+  - { name: clarity_architect,   pattern: 'Clarity Architect said:' }
+  - { name: maestro_facilitator, pattern: 'Maestro OS \(Facilitator\):' }
+  - { name: muse5,               pattern: 'Muse5 said:' }
+  - { name: chatgpt,             pattern: 'ChatGPT said:' }
+  - { name: lyrical_professor,   pattern: '^Lyrical Professor:' }
+  - { name: cultural_critic,     pattern: '^Cultural Critic:' }
+  - { name: battle_technician,   pattern: '^Battle Technician:' }
+  - { name: strategist,          pattern: '^Strategist:' }
+  - { name: mixmaster_ghost,     pattern: '^MixMaster_Ghost:' }
+  - { name: metadata_stitcher,   pattern: '^Metadata_Stitcher:' }
+  - { name: rapcouncil,          pattern: '^RapCouncil:' }
+  - { name: songcouncil,         pattern: '^SongCouncil:' }
+  - { name: dj_mo_money,         pattern: '^DJ Mo Money:' }
+
+# Version markers — sampling points on the delta flow, NOT segment boundaries.
+# Captures v2.6, v3.0, v3.0g, v4.2.3, v4.5.1, etc.
+version_pattern: '\bv\d+\.\d+(?:\.\d+)?[a-z]?\b'
+
+# File references — capture when artifacts are named.
+file_ref_pattern: '\b[\w./_-]+\.(?:md|txt|yaml|yml|json|py|js|csv)\b'
+
+# Retraction / repair candidates. Keyword presence is a candidate flag;
+# semantic classification belongs to a downstream LLM pass.
+retraction_keywords:
+  - "scratch that"
+  - "actually"
+  - "wait,"
+  - "wait."
+  - "correction"
+  - "let me correct"
+  - "retract"
+  - "never mind"
+  - "i changed my mind"
+  - "ignore that"
+  - "rescind"
+  - "undo"
+
+# Retroactive-reference candidates. Same caveat as above.
+retroactive_keywords:
+  - "as i said earlier"
+  - "as we said"
+  - "going back to"
+  - "the previous"
+  - "the prior"
+  - "earlier you"
+  - "earlier we"
+  - "above we"
+  - "from before"
+  - "in the prior"
+
+# Throughput / timing markers — present at end of AI responses in some
+# ChatGPT exports. Not turns; useful for response-end detection.
+timing_pattern: '^\d+\.\d+s \(\d+\.\d+ tok/s\)\s*$'

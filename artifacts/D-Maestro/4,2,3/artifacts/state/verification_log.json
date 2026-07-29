@@ -1,0 +1,59 @@
+{
+  "run_started": "2025-10-15 23:11:54",
+  "modules": {
+    "UST": {
+      "structure_checks": [
+        "order",
+        "negative_space",
+        "no_cross_bar_fills",
+        "topline_suppression",
+        "spatial_plan"
+      ],
+      "status": "PENDING"
+    },
+    "WORKFLOWS": {
+      "dag_nodes": [
+        "N7.x",
+        "N8.x",
+        "N12.x",
+        "N13.x",
+        "N14.x",
+        "N15.x",
+        "N16.x",
+        "N10.x"
+      ],
+      "status": "PENDING"
+    },
+    "VALIDATORS_HPA": {
+      "metrics": [
+        "CLAP",
+        "FAD",
+        "MFCC",
+        "Motif",
+        "DFA",
+        "MOS"
+      ],
+      "status": "PENDING"
+    },
+    "RIGHTS_REMIX": {
+      "artifacts": [
+        "rights_package.json",
+        "revenue_split.json",
+        "remix_matrix.json"
+      ],
+      "status": "PENDING"
+    },
+    "DSP": {
+      "artifacts": [
+        "dsp_specs.json",
+        "dsp_outputs/*"
+      ],
+      "status": "PENDING"
+    }
+  },
+  "gaps": [
+    "metrics thresholds to be read from metrics.hpa.v4.2.3.yaml",
+    "rights_package.json to be populated",
+    "remix_matrix.json to be populated"
+  ]
+}

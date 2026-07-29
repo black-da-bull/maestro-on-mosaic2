@@ -1,0 +1,149 @@
+<h2 class="sr-only">Entity-relationship diagram of the Maestro-on-Mosaic VIG/SEL pipeline as detailed across the three v5 dossiers. Master audio and lyrics reverse-compile in P3.5 into a Technical UST carrying measured, inferred, and visual-directive blocks. The UST drives the VIG visual brief, shot grammar, and rendered video; a conformance gate evaluates against the stylebook; SEL fans the approved master into surface variants. The stylebook and its five sub-artifacts sit as substrate wired into compilation, generation, the gate, and export.</h2>
+<style>
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+#erd svg.erDiagram .divider path { stroke-opacity: 0.5; }
+#erd svg.erDiagram .row-rect-odd path,
+#erd svg.erDiagram .row-rect-odd rect,
+#erd svg.erDiagram .row-rect-even path,
+#erd svg.erDiagram .row-rect-even rect { stroke: none !important; }
+#erd { padding: 1rem 0; }
+</style>
+<div id="erd"></div>
+<script type="module">
+import mermaid from 'https://esm.sh/mermaid@11/dist/mermaid.esm.min.mjs';
+const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+await document.fonts.ready;
+mermaid.initialize({
+  startOnLoad: false,
+  theme: 'base',
+  fontFamily: '"Anthropic Sans", sans-serif',
+  themeVariables: {
+    darkMode: dark,
+    fontSize: '13px',
+    fontFamily: '"Anthropic Sans", sans-serif',
+    lineColor: dark ? '#9c9a92' : '#73726c',
+    textColor: dark ? '#c2c0b6' : '#3d3d3a',
+  },
+});
+const { svg } = await mermaid.render('erd-svg', `erDiagram
+  MASTER_AUDIO ||--|| TECHNICAL_UST : "P3.5 reverse-compiles"
+  LYRICS ||--o| TECHNICAL_UST : "overlay timing, valence"
+  TECHNICAL_UST ||--|{ VISUAL_DIRECTIVE : "contains"
+  VISUAL_DIRECTIVE ||--o{ VISUAL_BRIEF : "drives"
+  STYLEBOOK ||--|| ACM : "sub-artifact"
+  STYLEBOOK ||--|| MOTIF_REGISTRY : "sub-artifact"
+  STYLEBOOK ||--|| IDENTITY_BUNDLE : "sub-artifact"
+  STYLEBOOK ||--|| EXCLUSION_LIST : "sub-artifact"
+  STYLEBOOK ||--|| SIB : "sub-artifact"
+  ACM ||--o{ TECHNICAL_UST : "biases mappings"
+  MOTIF_REGISTRY ||--o{ VISUAL_DIRECTIVE : "injects motifs"
+  STYLEBOOK ||--o{ VISUAL_BRIEF : "injected stage 1"
+  STYLEBOOK ||--o{ RENDERED_VIDEO : "injected stages 2-4"
+  STYLEBOOK ||--|| CONFORMANCE_REPORT : "is the spec"
+  EXCLUSION_LIST ||--o{ CONFORMANCE_REPORT : "auto-reject"
+  VISUAL_BRIEF ||--o{ SHOT_GRAMMAR_SPEC : "expands to"
+  SHOT_GRAMMAR_SPEC ||--o{ RENDERED_VIDEO : "renders into"
+  RENDERED_VIDEO ||--|| CONFORMANCE_REPORT : "evaluated by"
+  CONFORMANCE_REPORT ||--o| EXPORT_MANIFEST : "pass gates to"
+  RENDERED_VIDEO ||--o{ EXPORT_MANIFEST : "master for"
+  EXPORT_MANIFEST ||--|{ SURFACE_VARIANT : "fans out to"
+  STYLEBOOK ||--o{ SURFACE_VARIANT : "type and color"
+  SURFACE ||--o{ SURFACE_VARIANT : "targeted by"
+
+  MASTER_AUDIO {
+    string status "P3 canonical"
+    file wav
+    string source "generator-agnostic"
+  }
+  LYRICS {
+    string status "canon or ASR"
+    text lines
+  }
+  TECHNICAL_UST {
+    string status "P3.5 versioned hashed"
+    string measured "beats sections envelopes"
+    string inferred "density arousal texture"
+  }
+  VISUAL_DIRECTIVE {
+    string status "derived"
+    string per_section "cut motion palette"
+    string sync "section bar beat"
+  }
+  STYLEBOOK {
+    string status "substrate canon"
+    string scope "persists across releases"
+  }
+  ACM {
+    string status "affirmative rules"
+    string fields "palette lighting camera"
+  }
+  MOTIF_REGISTRY {
+    string status "earned not declared"
+    string rule "two appearances to canon"
+  }
+  IDENTITY_BUNDLE {
+    string status "core persists"
+    string lock "mandatory in shot"
+  }
+  EXCLUSION_LIST {
+    string status "negative rules"
+    string note "most-updated; learns"
+  }
+  SIB {
+    string status "polish vs raw"
+    string cardinal "rough not false"
+  }
+  VISUAL_BRIEF {
+    string status "draft to accepted"
+    string content "concept mood refs"
+  }
+  SHOT_GRAMMAR_SPEC {
+    string status "draft to accepted"
+    string content "per-section shotlist"
+  }
+  RENDERED_VIDEO {
+    string status "draft to conformance"
+    string mode "concept perf narrative"
+  }
+  CONFORMANCE_REPORT {
+    string status "immutable once issued"
+    enum gate "pass revise reject"
+  }
+  EXPORT_MANIFEST {
+    string status "immutable receipt"
+    string carries "ust hash provenance"
+  }
+  SURFACE_VARIANT {
+    string status "per surface"
+    string fmt "ratio audio caption"
+  }
+  SURFACE {
+    string status "export target"
+    string set "Hooks TikTok Reels archive"
+  }`);
+document.getElementById('erd').innerHTML = svg;
+
+document.querySelectorAll('#erd svg.erDiagram .node').forEach(node => {
+  const firstPath = node.querySelector('path[d]');
+  if (!firstPath) return;
+  const d = firstPath.getAttribute('d');
+  const nums = d.match(/-?[\d.]+/g)?.map(Number);
+  if (!nums || nums.length < 8) return;
+  const xs = [nums[0], nums[2], nums[4], nums[6]];
+  const ys = [nums[1], nums[3], nums[5], nums[7]];
+  const x = Math.min(...xs), y = Math.min(...ys);
+  const w = Math.max(...xs) - x, h = Math.max(...ys) - y;
+  const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  rect.setAttribute('x', x); rect.setAttribute('y', y);
+  rect.setAttribute('width', w); rect.setAttribute('height', h);
+  rect.setAttribute('rx', '8');
+  for (const a of ['fill', 'stroke', 'stroke-width', 'class', 'style']) {
+    if (firstPath.hasAttribute(a)) rect.setAttribute(a, firstPath.getAttribute(a));
+  }
+  firstPath.replaceWith(rect);
+});
+
+document.querySelectorAll('#erd svg.erDiagram .row-rect-odd path, #erd svg.erDiagram .row-rect-even path').forEach(p => {
+  p.setAttribute('stroke', 'none');
+});
+</script>

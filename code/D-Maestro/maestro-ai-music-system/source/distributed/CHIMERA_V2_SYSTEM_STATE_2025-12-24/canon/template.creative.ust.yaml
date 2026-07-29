@@ -1,0 +1,215 @@
+version: creative.ust.template.v1
+role: canonical_execution
+source: creative.ust.template.txt
+sections:
+  Theory:
+  - type: field
+    key: mode
+    template: INSERT MODE
+    source_line: 2
+  - type: field
+    key: tonal_center
+    template: INSERT ROOT NOTE
+    source_line: 3
+  - type: field
+    key: meter
+    template: INSERT METER WITH groove modifiers
+    source_line: 4
+  - type: field
+    key: tempo
+    template: INSERT TEMPO WITH transitions if applicable
+    source_line: 5
+  - type: field
+    key: chord_color
+    template: DESCRIBE chord usage eg gospel sus9 AND add11 WITH modal tension
+    source_line: 6
+  Voice:
+  - type: field
+    key: register
+    template: DESCRIBE LEAD VOICE AND RANGE WITH supporting textures
+    source_line: 9
+  - type: field
+    key: delivery
+    template: INSERT cadence type eg Southern sermon cadence WITH blues phrasing
+    source_line: 10
+  - type: field
+    key: expression
+    template: WHISPER-TO-BELT arcs OR falsetto confession arcs
+    source_line: 11
+  - type: field
+    key: layering
+    template: CHOIR STACKS; chipmunk FX; stereo breath echoes; etc
+    source_line: 12
+  - type: field
+    key: articulation
+    template: INSERT features like AAVE vowel slides OR gospel melisma
+    source_line: 13
+  Style:
+  - type: field
+    key: genre
+    template: Country Trap Gospel Revival OR Southern Gothic Soul × Americana
+    source_line: 16
+  - type: field
+    key: intent
+    template: WHAT STORY THIS TRACK TELLS eg grief; survival; baptism
+    source_line: 17
+  - type: field
+    key: texture
+    template: lap steel swells; lo-fi vinyl hiss; ambient gospel pads; etc
+    source_line: 18
+  - type: field
+    key: aesthetic
+    template: cinematic OR torchlight revival vibe OR radio prayer booth style
+    source_line: 19
+  Timbre:
+  - type: field
+    key: drum tone
+    template: DESCRIBE eg lo-fi stomp loops WITH trap swing
+    source_line: 22
+  - type: field
+    key: bass tone
+    template: INSERT eg Moog subbass OR upright bowed bass
+    source_line: 23
+  - type: field
+    key: keyboard tone
+    template: muted Rhodes OR gospel Hammond pad swirl
+    source_line: 24
+  - type: field
+    key: guitar tone
+    template: slide OR lap steel WITH delay OR reverb tail
+    source_line: 25
+  - type: field
+    key: fx palette
+    template: tape hiss; thunder crack; preacher echoes; crowd murmur; reverse decays
+    source_line: 26
+  - type: field
+    key: vocal tone
+    template: smoky baritone; layered falsetto; whispery lead WITH choir wash
+    source_line: 27
+  Performance:
+  - type: field
+    key: execution
+    template: LIST STRUCTURE eg Verse 1 -> Chorus -> Verse 2 -> Bridge -> Final Chorus
+      -> Outro
+    source_line: 30
+  - type: field
+    key: gesture
+    template: stomp-claps; breath gaps; preacher yell-ins; choir bounce
+    source_line: 31
+  - type: field
+    key: rhythm_handling
+    template: triplet drag groove WITH half-time chorus shift OR pocket-tight push
+      flow
+    source_line: 32
+  - type: field
+    key: adlibs
+    template: '"Lawd" "mmm-hmm" "say that" "revived" etc'
+    source_line: 33
+  Post Production:
+  - type: field
+    key: mix
+    template: mono verse; stereo choir; analog plate OR cassette compression
+    source_line: 36
+  - type: field
+    key: mastering
+    template: glue comp; reverb swells; airband tilt EQ; gospel wideners
+    source_line: 37
+  - type: field
+    key: transition
+    template: vinyl hiss tails; tape stops; crowd bleed; risers
+    source_line: 38
+  - type: raw
+    raw: ▸ LYRICS BLOCK
+    source_line: 40
+  - type: field
+    key: Intro
+    template: X bars | lead type; vocal FX | instrumentation | FX notes
+    source_line: 42
+  - type: raw
+    raw: '"INSERT LINES"'
+    source_line: 43
+  - type: raw
+    raw: (adlib | INSERT IF NEEDED)
+    source_line: 44
+  - type: raw
+    raw: (fx | INSERT FX CUES IF NEEDED)
+    source_line: 45
+  - type: field
+    key: Verse 1
+    template: X bars | tone description | instrumentation | swing feel
+    source_line: 47
+  - type: raw
+    raw: '"INSERT 6-10 SYLLABLE LINE"'
+    source_line: 48
+  - type: raw
+    raw: '"INSERT NEXT LINE"'
+    source_line: 49
+  - type: raw
+    raw: (fx | OPTIONAL)
+    source_line: 50
+  - type: raw
+    raw: (adlib | OPTIONAL)
+    source_line: 51
+  - type: field
+    key: Chorus
+    template: X bars | harmonized OR solo OR chipmunk lead
+    source_line: 53
+  - type: raw
+    raw: '"INSERT HOOK LINE"'
+    source_line: 54
+  - type: raw
+    raw: '"REPEAT WITH VARIATION"'
+    source_line: 55
+  - type: raw
+    raw: (choir | CALL-AND-RESPONSE)
+    source_line: 56
+  - type: raw
+    raw: (fx | REVERB SWELL OR SUB DROP)
+    source_line: 57
+  - type: field
+    key: Bridge
+    template: X bars | tone shift | dynamic arc
+    source_line: 59
+  - type: raw
+    raw: '"INSERT REFLECTIVE OR PEAK LINE"'
+    source_line: 60
+  - type: raw
+    raw: '"INSERT RESPONSE"'
+    source_line: 61
+  - type: raw
+    raw: (fx | THUNDER OR REVERSE ECHO)
+    source_line: 62
+  - type: field
+    key: Verse 2
+    template: X bars | continuation OR new character POV
+    source_line: 64
+  - type: raw
+    raw: '"INSERT STORY EXPANSION LINE"'
+    source_line: 65
+  - type: raw
+    raw: '"INSERT VISUAL PHRASE OR METAPHOR"'
+    source_line: 66
+  - type: field
+    key: Final Chorus
+    template: X bars | FULL LIFT
+    source_line: 68
+  - type: raw
+    raw: '"REPRISE HOOK"'
+    source_line: 69
+  - type: raw
+    raw: '"CALLBACK TO EARLY LINE"'
+    source_line: 70
+  - type: raw
+    raw: '"INSERT CLOSURE LINE"'
+    source_line: 71
+  - type: raw
+    raw: (choir | "Hallelujah" OR gospel belt)
+    source_line: 72
+  - type: field
+    key: Outro
+    template: X bars | fade FX; spoken word; vinyl drag
+    source_line: 74
+  - type: raw
+    raw: '"INSERT FADEOUT LINE OR ADLIB"'
+    source_line: 75
+  End: []

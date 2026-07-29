@@ -1,0 +1,127 @@
+# Four-plane separation contract.
+# Hard rule: do_not_conflate_planes.
+# Conflation = the v5 cascade failure mode.
+# Each plane is separately bounded with its own internals, governance, lifecycle.
+# Coupled by contract, not joined into one larger thing.
+
+planes:
+
+  maestro:
+    type: customer_owned_music_application
+    metaphor: virtual_record_label
+    role:
+      - simulate_virtual_record_label
+      - translate_human_vision_into_production_process
+      - orchestrate_bounded_music_labor
+      - produce_release_grade_music_artifacts
+    consumes_from:
+      mosaic: substrate_runtime_services
+    produces_to:
+      dev_environment: lived_behavior_observations
+      forensics: ATP_outputs_and_session_state
+    internals_authority: maestro_v0_application_spec    # SEM / UST / personas / M0-M14 + G0
+    forbidden:
+      - leak_music_specific_logic_into_mosaic_substrate_core
+      - replace_human_vision_with_AI_completion
+      - elevate_workforce_persona_to_canon_outside_explicit_authority_classes
+    partition:    # internal lifecycle; FILE-VERIFIED:v5b via INV-10
+      - Maestro.App           # lived behavior in v4.5 monolith
+      - Maestro.Project       # cross-system view from dev_environment + forensics
+      - Maestro.Runtime       # mounted on Mosaic, portable form
+    partition_status: |
+      Per operator 2026-05-27, three-Maestro partition needs upgrade to four
+      partitions reflecting separate dev_environment and forensics views.
+      Names pending operator F. See open_force_closures.
+
+  mosaic:
+    type: host_runtime_platform
+    analogy: cloud_runtime_platform
+    role:
+      - preserve_substrate
+      - provide_runtime_services
+      - support_portability
+      - protect_continuity
+      - host_applications_via_mount_manifest
+    consumes_from:
+      domain_neutral_substrate_definitions: substrate_layers_and_invariants
+    produces_to:
+      maestro:
+        - substrate_layers_N1_through_N8
+        - ten_kernel_invariants
+        - reasoning_stack
+    substrate_layers:    # per mosaic_engine_v0_1.md CANDIDATE_SPEC
+      - N1_Conversation
+      - N2_Workforce
+      - N3_Execution
+      - N4_Canon
+      - N5_Admissibility
+      - N6_Governance
+      - N7_Output
+      - N8_Cognitive_Operators
+    forbidden:
+      - bake_music_specific_maestro_logic_into_substrate_core
+      - claim_canon_promotion_via_documentation_alone
+
+  dev_environment:
+    type: iterative_build_and_experiment_space
+    operational_shape: dev_chat_with_two_windows_plus_human_in_the_middle
+    operator_role: bus_between_two_AI_chat_sessions
+    role:
+      - workspace_versions
+      - failed_branches
+      - prototype_evolution
+      - recovery_candidates
+    consumes_from:
+      maestro: lived_behavior_observations
+      forensics: KB_and_graph_refinements
+    produces_to:
+      maestro: promoted_candidates_via_operator_F
+      mosaic: promoted_candidates_via_operator_F
+      forensics: dev_session_source_material
+    forbidden:
+      - promote_dev_artifacts_to_runtime_canon_without_operator_F
+      - elevate_failed_branch_to_canon_lineage
+
+  forensics:
+    type: architecture_extraction_and_reconstruction_layer
+    cadence: weekly_appends
+    role:
+      - architecture_extraction
+      - lineage_recovery
+      - dev_session_audit
+      - authority_classification
+      - substrate_reconstruction
+    audit_chain:    # T2 forensic authority sequence
+      - RTFA          # Reasoning Trace Forensic Audit
+      - SEC           # Substrate Edge Confirmation
+      - SDG           # Substrate Dependency Graph
+      - SLR           # System Lineage Resolution
+      - MMR           # Morris Matrix Resolution
+    output_artifacts:
+      - KB_appends        # append-only knowledge base updates
+      - graph_appends     # append-only lineage / dependency graphs
+    consumes_from:
+      maestro: actual_usage_based_refinements
+      dev_environment: dev_session_transcripts
+    produces_to:
+      dev_environment: KB_and_graph_refinements
+    forbidden:
+      - mutate_past_KB_or_graph_state
+      - elevate_forensic_outputs_to_canon_without_operator_F
+
+mount_contracts:
+  maestro_on_mosaic:
+    type: application_execution_relationship
+    NOT:
+      - ownership
+      - subordination
+      - identity_collapse
+      - platform_collapse
+    interface: mount_manifest
+    validation_status: documented_but_not_source_validated
+    validation_blocker: mosaic_engine_v0_1_md_not_in_attached_set
+
+coupling_invariant: |
+  Cross-contamination between any two planes is the documented v5-cascade failure mode.
+  Each plane has its own authority surface, its own promotion rules, its own forbidden list.
+  Cross-plane traffic is by named contract only.

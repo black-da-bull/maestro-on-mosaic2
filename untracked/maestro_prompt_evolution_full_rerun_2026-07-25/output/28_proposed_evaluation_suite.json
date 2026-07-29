@@ -1,0 +1,33 @@
+{
+  "fixtures": [
+    {
+      "id": "EV-COV-01",
+      "test": "Every structured source passes zero-gap coverage after declared normalization."
+    },
+    {
+      "id": "EV-AUTH-01",
+      "test": "No assistant statement is promoted without operator evidence."
+    },
+    {
+      "id": "EV-DUP-01",
+      "test": "Duplicates do not increase authority."
+    },
+    {
+      "id": "EV-PH-01",
+      "test": "Unratified commitment language remains flagged."
+    },
+    {
+      "id": "EV-IMP-01",
+      "test": "Corrections identify direct and indirect dependents."
+    },
+    {
+      "id": "EV-PE-01",
+      "test": "Every material event has original, optimized, explanation, lesson, and automation link."
+    },
+    {
+      "id": "EV-FP-01",
+      "test": "No full PASS when global chronology or source completeness remains unresolved."
+    }
+  ],
+  "acceptance": "Deterministic fixtures pass; semantic fixtures require independent review and operator acceptance."
+}

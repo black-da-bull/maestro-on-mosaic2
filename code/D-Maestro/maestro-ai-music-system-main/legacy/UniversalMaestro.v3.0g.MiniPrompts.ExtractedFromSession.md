@@ -1,0 +1,1 @@
+- **HOOK QUALITY CHECK**: Rate hook memorability (0–1). If < 0.8, propose 2 punchier alternatives.

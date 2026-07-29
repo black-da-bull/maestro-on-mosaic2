@@ -1,0 +1,11 @@
+{
+  "splits": [
+    {
+      "party": "Owner",
+      "percent": 100.0
+    }
+  ],
+  "mechanicals": "Owner",
+  "publishing": "Owner",
+  "notes": []
+}

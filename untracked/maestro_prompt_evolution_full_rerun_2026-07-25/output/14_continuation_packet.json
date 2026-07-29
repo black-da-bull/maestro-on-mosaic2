@@ -1,0 +1,20 @@
+{
+  "run_id": "MAESTRO.PROMPT_EVOLUTION.FULL.RERUN.2026-07-25",
+  "baseline_run": null,
+  "accepted_state": [],
+  "proposed_state": [
+    "Run targeted semantic reconciliation against unresolved chronology and source-family conflicts"
+  ],
+  "operative_state": [
+    "mechanical source freeze and event extraction"
+  ],
+  "persisted_state": [
+    "this standalone full rerun archive"
+  ],
+  "runtime_enforced_state": [],
+  "unresolved": [
+    "global chronology",
+    "operator promotion decisions"
+  ],
+  "next_lawful_action": "Run source-family reconciliation: original thread vs O16E distillate vs who_dat derivative, then update prompt evolution records by targeted rerun rather than wholesale regeneration."
+}

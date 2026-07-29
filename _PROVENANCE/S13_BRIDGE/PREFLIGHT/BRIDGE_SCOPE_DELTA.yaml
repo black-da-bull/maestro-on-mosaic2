@@ -1,0 +1,33 @@
+# BRIDGE_SCOPE_DELTA — amendments to REPAIR.P1N.SESSION-TO-MAESTRO-BRIDGE.R1 from the preflight
+# Work item: REPAIR.P1N.BRIDGE-INPUT-PREFLIGHT.R1 · 2026-07-19
+retain:
+  - two-phase bridge (BRIDGE.R1 -> S13-APPLY.R1); operator-only acceptance; reversible patchset
+  - cold-workspace regeneration criterion (already exercised: payload md5 52381c1e13a25775f5491a7090a7f06d reproduced hash-identical by fresh-context agent)
+  - executable-now vs deferred-runtime test split; pause on T01-T13 replay
+amend:
+  MF-6:
+    from: DIRECT_SEMANTIC_CONFLICT (patch replaces K7/K8 values)
+    to:   NAMESPACE_COLLISION_CANDIDATE
+    rules: {patch_allowed: false, until: operator disposition E-2}
+    required: [verify source namespaces, qualify all K-address references by namespace, preserve BOTH value sets]
+    note: PATCH-03 already drafted as annotation-with-fallback; conforms to this delta
+  AX_CONTRA_1:
+    status: HELD
+    issues: [axis_vs_terminal_marker_object_type, era_ordering, branch_specificity, DISC-12_date_uncertainty]
+    rule: "no axis-registry patch and no global MAP->END disposition until DISC-12 ruled AND the [End] terminal-marker vs MAP-axis object-type distinction is adjudicated (a terminal marker and a semantic axis are different object types; occupying a terminal-looking position does not identify them)"
+  density:
+    rule: "correction density retired as authority-bearing session selector unless operator persists a fresh definition (E-5); recommended default: RETIRE"
+  artifact_validation_mandatory:
+    - every YAML/JSON/JSONL input parses (enforced by BRIDGE_INPUT_VALIDATION.json)
+    - every data artifact declares schema/work-item/parents (enforced via manifest for legacy files; native headers for new files)
+    - report twins registered as one logical family
+    - audit-check files distinguished from source ledgers (MUTATION_AUDIT = 28 checks; ledger index = SESSION13_MUTATION_LEDGER_v0_1.jsonl; replays authoritative)
+    - public-facing artifacts routed OUTSIDE the bridge corpus (BRIDGE_PUBLIC_SURFACE_HOLD.yaml)
+  fold_extension_usage:
+    rule: "corpus-fold v0.2 = structured hypothesis + source-navigation aid; NO bridge claim may cite it without tracing to the underlying transcript/artifact; its decisive sources (Y-3, 02, 03, V55) are STILL NOT IN REPO (CONS-01) so fold-derived claims remain unverifiable here"
+sequencing:
+  note: >
+    The bridge candidate package was generated before this preflight was relayed (operator
+    interrupt arrived mid-execution). Disposition: package HELD as CANDIDATE, persisted for M1
+    safety under S13_BRIDGE/ with held status; re-validated against this delta (PATCH-03 and the
+    staleness map already conform); nothing promoted; operator review gates everything.

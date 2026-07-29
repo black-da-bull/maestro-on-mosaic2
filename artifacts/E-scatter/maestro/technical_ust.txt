@@ -1,0 +1,80 @@
+technical_ust:
+  kernel:
+    id: "TECHNICAL.UST.SUNDAY_STORM.V1"
+    [cite_start]description: "New Jack Swing revenge narrative with smooth R&B transitions and high-energy chorus peaks." [cite: 30]
+
+  theory_axis:
+    [cite_start]axis_id: "THY" [cite: 34]
+    keys:
+      - key_id: "THY.K1" # Tonal System
+        subkeys:
+          - subkey_id: "THY.K1.S1" # Root Note
+            value: null
+          - subkey_id: "THY.K1.S2" # Primary Mode
+            value: null
+      - key_id: "THY.K3" # Rhythmic Grid
+        subkeys:
+          - subkey_id: "THY.K3.S3" # Feel Mode
+            [cite_start]value: "Swung (New Jack Swing)" [cite: 45]
+    [cite_start]notes: "Requires deep sub-bass and Rhodes piano foundation." [cite: 34]
+
+  vocals_axis:
+    [cite_start]axis_id: "VOC" [cite: 47]
+    keys:
+      - key_id: "VOC.K1" # Lead Identity
+        subkeys:
+          - subkey_id: "VOC.K1.S1" # Timbre Profile
+            [cite_start]value: "Breathy, sultry contralto" [cite: 48]
+          - subkey_id: "VOC.K1.S5" # Emotion Palette
+            [cite_start]value: ["Seductive", "Defiant", "Unfiltered", "Powerful"] [cite: 48]
+      - key_id: "VOC.K3" # Stacking and Layers
+        subkeys:
+          - subkey_id: "VOC.K3.S1" # Harmony Type
+            value: "Male quartet (soft humming/harmonic layers)"
+    [cite_start]notes: "Includes spoken declarations and ad-libs (Mommas... gon....' get her.... some.... B B C)." [cite: 47]
+
+  style_axis:
+    [cite_start]axis_id: "STY" [cite: 12]
+    keys:
+      - key_id: "STY.K1" # Primary Genre
+        [cite_start]value: "New Jack Swing" [cite: 12]
+      - key_id: "STY.K2" # Secondary Fusions
+        [cite_start]value: "R&B, Soul" [cite: 12]
+    [cite_start]notes: "Influences: Late 80s/Early 90s digital production." [cite: 12]
+
+  timbre_axis:
+    [cite_start]axis_id: "TIM" [cite: 12]
+    keys:
+      - key_id: "TIM.K1" # Instrument Palette
+        [cite_start]value: ["Digital Rhodes piano", "Swung hi-hats", "Deep sub-bass", "Deep kick drum", "Sharp synth lead"] [cite: 12]
+    [cite_start]notes: "Requires finger snaps on the third beat of the intro." [cite: 12]
+
+  performance_axis:
+    [cite_start]axis_id: "PER" [cite: 13]
+    keys:
+      - key_id: "PER.K1" # Energy Curve
+        [cite_start]value: "Low/Seductive → High energy/Commanding → Halftime breakdown → Soaring" [cite: 13]
+    [cite_start]notes: "Vocal delivery ranges from seductive whispers to confident sneers and direct spoken declarations." [cite: 13]
+
+  post_production_axis:
+    [cite_start]axis_id: "POST" [cite: 13]
+    keys:
+      - key_id: "POST.K2" # FX Routing
+        [cite_start]value: "Chopped & screwed whispers, vinyl scratch, DJ spinback, vinyl hiss" [cite: 13]
+    [cite_start]notes: "Subs must sweep L to R and Front to Back during the breakdown." [cite: 13]
+
+  road_map_axis:
+    [cite_start]axis_id: "MAP" [cite: 15]
+    keys:
+      - key_id: "MAP.K1" # Section Order
+        [cite_start]value: ["Intro", "Verse 1", "Pre-Chorus", "Chorus", "Verse 2", "Bridge", "Verse 3 P1", "Verse 3 P2", "Climax", "Breakdown"] [cite: 15]
+      - key_id: "MAP.K2" # Transitions
+        [cite_start]value: "16-bar tempo switch to halftime during breakdown" [cite: 15]
+    notes: null
+
+  lyrics_block_axis:
+    [cite_start]axis_id: "LYR" [cite: 14]
+    keys:
+      - key_id: "LYR.K1" # Lyrics-Lock Content
+        [cite_start]value: "Full lyrics provided (Sunday Storm)" [cite: 14]
+    [cite_start]notes: "Mandatory [Exit] stanza to be finalized by Writer Council." [cite: 14]

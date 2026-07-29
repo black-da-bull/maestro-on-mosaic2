@@ -1,0 +1,108 @@
+{
+  "FRAME": {
+    "purpose": "Convert messy dialogue into a tested, auditable plan using a plain-English taxonomy.",
+    "generated": "2025-12-10T00:36:54.264079Z"
+  },
+  "ROLES": [
+    "SystemOrchestrator"
+  ],
+  "MAP": {
+    "Part_1_Sense": [
+      "Parse",
+      "Timeline",
+      "Atoms",
+      "Threads"
+    ],
+    "Part_2_Think": [
+      "TriAttention",
+      "Fishbone",
+      "SWOT"
+    ],
+    "Part_3_Act": [
+      "Blueprint",
+      "Checks",
+      "Packaging"
+    ]
+  },
+  "OUTLINE": [
+    "FRAME",
+    "ROLES",
+    "MAP",
+    "OUTLINE",
+    "LINES",
+    "STYLE",
+    "TONE",
+    "POSTOPS",
+    "CLAIMS",
+    "CHECKS"
+  ],
+  "LINES": [
+    "Gemini",
+    "2.5 Flash\nConversation with Gemini",
+    "inf10\nTXT",
+    "N",
+    "Nexus\nCustom Gem",
+    "Show thinking\nDescribing File Contents",
+    "I'm currently retrieving the contents of inf10.txt and g37.pdf.",
+    "The task is straightforward, so I'm progressing rapidly.",
+    "Once the content is available, I will formulate descriptions for each file, focusing on its nature and key features.",
+    "Analyzing Content Retrieval",
+    "I've decided to fetch the content of inf10.txt and g37.pdf concurrently.",
+    "This parallel approach should significantly speed up the initial retrieval phase, as each fetch operation is independent."
+  ],
+  "STYLE": {
+    "aesthetic": "plain-english",
+    "texture": "lean & legible"
+  },
+  "TONE": {
+    "mode": "mentor-critic",
+    "register": "direct"
+  },
+  "POSTOPS": {
+    "packaging": [
+      "timeline.md",
+      "atoms.csv",
+      "threads.json",
+      "swot.json",
+      "fishbone.json",
+      "blueprint.json",
+      "checks.json",
+      "system.yaml",
+      "system_prompt.md",
+      "master_schema.json",
+      "ust_template.md",
+      "fewshot_crew.md",
+      "fewshot_lines.md",
+      "demo_ust.txt",
+      "ust_lint.json"
+    ]
+  },
+  "CLAIMS": [
+    {
+      "id": "C-001",
+      "description": "Taxonomy + STA orchestration for dialogue\u2192blueprint"
+    }
+  ],
+  "CHECKS": {
+    "Macro": [
+      "Purpose present",
+      "Roles identified",
+      "Map defined"
+    ],
+    "Micro": [
+      "Outline present",
+      "STYLE/TONE set",
+      "POSTOPS listed"
+    ],
+    "Tactical": [
+      "Artifacts emitted",
+      "Threads linked",
+      "SWOT/Fishbone present"
+    ],
+    "Atomic": [
+      "No undefined jargon",
+      "Files non-empty",
+      "Timestamp recorded"
+    ]
+  }
+}

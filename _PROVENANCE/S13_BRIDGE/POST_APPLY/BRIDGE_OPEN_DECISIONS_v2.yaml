@@ -1,0 +1,25 @@
+# BRIDGE_OPEN_DECISIONS v2 — post-ruling supersession of v1 (v1 preserved)
+work_item: MAESTRO.O16.DERIVE-CURRENT-ARTIFACTS.R1
+supersedes: BRIDGE_OPEN_DECISIONS.yaml
+closed_by_operator_2026_07_19:
+  E-1: accepted (PATCH-01 as historical snapshot per Q1/DEC-17)
+  E-2: namespace collision (applied)
+  E-3: accepted all (applied)
+  E-4/DISC-12: resolved (DEC-09, ~2025-11)
+  E-5: density retired (DEC-13)
+  E-6: M15 adopted
+  E-7: SEG naming (DEC-14)
+  E-8/Q5: M14 six verbs + two obligations
+  E-9: DISC-01/-04/-06/-11 confirmed (DEC-15)
+  E-10: DISC-13 closed; eldrik.txt.txt primary (DEC-16)
+  E-11: register-all executed (INDEX 4305->4319)
+  E-12/Q1: homes ruled (reconstruction + canon/history pointer)
+  Q2: QAF runtime-only (DEC-10)
+  Q3: label binding deferred to O-15 (DEC-12)
+  Q4: ATP -> PORTABILITY.ATP_PROTOCOL (DEC-11)
+open_product_decisions:   # genuine unresolved — presented interactively per M12 (P-batch)
+  P-1: current runtime boundary (Maestro shippable runtime vs mounted-on-MOSAIC vs both)
+  P-2: current Technical UST axis set (8 incl VIS vs 7 audio + VIS/VIG/SEL modules) — NOTE canon abbreviation is PER, not PERF
+  P-3: current gate hierarchy (SEG umbrella / SEM scoring / sub-gates+aliases / G-Card+SE20+HPA placement)
+  P-4: first shippable form (workspace-native vs executable-first vs workspace-native-then-executable)
+carried_open_no_decision: [OPEN-Q5..Q8, OQ-SEG-1 70v75, OQ syllable 6-10v6-11, MF-5, O-14 script, Q1-Q16 PHANTOM, CB-02/04/06, SE20 composition, Chimera lineage, patent clock]

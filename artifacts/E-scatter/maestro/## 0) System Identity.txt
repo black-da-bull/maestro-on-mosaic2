@@ -1,0 +1,832 @@
+## 0) System Identity
+This workspace defines a **portable, zero-touch, end-to-end prompt architecture** for converting human song intent into **Suno-ready output** using a **Technical UST** and strict formatting governance. All dialogue is treated as **development worklogs**. All corrections are **Change Requests (CRs)** that update canon via versioned lineage.
+
+Core objectives:
+- Raise the bar of **song excellence** using auditability, gating, and measurable KPIs.
+- Validate that the **UST prototype is Suno-efficient** by matching how Suno interprets and expands the UST.
+- Produce **monolithic, modular, end-to-end prompts** that a brand-new session can run without hidden context.
+
+---
+
+## 1) Canonical Output Artifacts
+### A) Technical UST (Suno-facing)
+A structured session container composed of meta-containers and fields:
+- `[Theory]` mode, tonal center, meter, tempo, chord color
+- `[Voice]` register, delivery, expression, articulation
+- `[Style]` genre, era, intent, texture, aesthetic, focus
+- `[Timbre]` drum tone, bass tone, keyboard tone, guitar tone, fx palette, vocal tone
+- `[Performance]` execution, gesture, rhythm handling, touch, phrasing ops
+- `[Post]` comp, eq, space, dynamics, mastering targets, mix notes
+- `[Operators]` optional transformations and directives
+- `[Validators]` enforcement rules (punctuation, attribution, lint)
+
+### B) Lyrics Block (Tactical + Atomic)
+A sequence of section blocks that must remain Suno-compatible:
+- Section header line (succinct directive form)
+- Optional `[ ** sFX: ... ** ]` stage-direction blocks (non-vocal)
+- Quoted lyric lines `"..."` only
+- Optional parenthetical adlibs `("...")` after lyric lines
+
+### C) Show Summary (Suno-facing)
+A short professional narrative describing the record as if briefing a producer/engineer.
+Strict character discipline is required (target short, avoid token waste, avoid comma issues).
+
+### D) Governance Outputs (Quality + Traceability)
+- Validators pass/fail
+- Excellence scoring (SEG) and decisions (G-Card)
+- Chain report (Q→A→F / CR lineage) where required
+
+---
+
+## 2) Suno Translation Model (Observed Behavior)
+Suno tends to:
+- **Expand** UST shorthand into narrative prose per container (Theory, Voice, Style, etc.).
+- Respect **validators** when phrased as enforceable rules.
+- Trigger **content moderation/blocked words** on certain genre terms (example observed: “skank” blocked), requiring safe synonyming.
+- Treat commas as parsing friction, motivating a punctuation policy that quarantines commas inside quoted lyric text.
+
+Implication:
+- UST must be optimized for **interpretability, governance compliance, resilience to filters, and expressivity** (Operators and Post translate into audible choices).
+
+---
+
+## 3) Excellence Framework (SEG + G-Card)
+The Song Excellence Matrix is a rubric plus gating system used for:
+- Quality control and release readiness decisions
+- Targeted revision instruction generation
+- KPI-based improvement loops
+
+### Pass Threshold Canon (CR)
+The pass threshold must reflect the user’s correction:
+- Canon target is **~97.5% pass** (supersedes earlier ~70% pass guidance that was rejected).
+
+---
+
+## 4) Formatting Canon for Suno Efficiency (Highest Priority)
+### 4.1 Section Header Standard (Must Use)
+Section headers must be **succinct** and avoid schema-like tag clouds.
+
+**DO**
+`[Worship Hook | 16 bars | Lead+BGV1 | worship call-and-response WITH stop-time entry AND full choir AND sax counterpoint AND peak energy]`
+
+**DON’T**
+`[Worship Hook | durationbars: 16 | who: Lead+BGV1 | mode: ... | feel/tags: ...]`
+
+Rules:
+- Replace `durationbars: N` with `N bars` (or `{x} bars`).
+- No key/subkey labels in headers (`who:`, `mode:`, `tags:` etc.).
+- Header must contain only **variables and a directive sentence**, not field labels.
+
+### 4.2 Stage Directions Must Not Be Quoted
+Stage direction examples belong in **sFX blocks**, not in quoted lyric lines.
+
+**DO**
+`[ ** sFX: Organ swells AND deepening bass WITH light hi-hats as the choir takes the lead. ** ]`
+
+**DON’T**
+`"*(Organ swells, deepening bass, light hi-hats as the choir takes the lead.)*"`
+
+### 4.3 First Lyric Line Placement
+The first lyric line must appear **exactly one line below the section header(s)**.
+If present, sFX blocks appear between header and the first quoted lyric line.
+
+### 4.4 Speaker Attribution Canon (Critical)
+Speaker attribution uses **square-bracket performer tokens** only.
+Colon labels are banned.
+
+**DO**
+`[Lead] "Some say it’s like fire shut up in my bones…"`
+
+**DON’T**
+`"[Lead:] Some say it’s like fire shut up in my bones…"`
+
+#### Choir and BGV Handling (Most Important Edge Case)
+If the choir/BGV is not an independent primary vocalist, treat choir/BGV responses as **adlibs**, not separate speakers.
+
+**Preferred**
+`[Lead] "Some say it’s like fire shut up in my bones…", ("Fire in my bones!")`
+
+Speaker tokens are only required when:
+- Multiple primaries (Lead + Guest lead, Lead1 + Lead2, rapper + singer as co-primaries) actively interact and must be labeled.
+Gender alignment must match declared voice roles.
+
+### 4.5 Comma Policy (Suno Stop-Word Mitigation)
+Commas are restricted due to Suno parsing behavior.
+
+Allowed locations:
+- Inside quoted lyric lines `"..."`.
+- Between a lyric quote and an adlib: `"....", ("...")`.
+
+Disallowed:
+- Commas in section headers
+- Commas in meta containers
+- Commas in sFX blocks
+- Commas in narration outside quotes
+
+---
+
+## 5) Change Request Governance
+- Every correction is treated as a governance event (CR).
+- Newer CRs supersede older behavior but never erase lineage.
+- If ambiguity exists, fork with a conflict note.
+
+Key CRs captured:
+- Update lyric immutability rule: lyrics/music processes can edit lyrics; other tree branches cannot.
+- Replace high-level summaries with atomic task → subtask → audit check → KPI breakdowns.
+- Replace generic pass threshold (70) with corrected pass expectation (~97.5%).
+- Convert “decomposer” from QA explanation into a tool for unearthing the actual end-to-end zero-touch prompt architecture.
+
+---
+
+## 6) Module Families
+### A) Chimera / Sonic Architect / Maestro Ecosystem
+A multi-line OS ecosystem with councils, governance, and deterministic pipelines.
+
+### B) Chaos-Decomposer v1.6
+A continuity-aware decomposition engine that converts session + environment into four canonical sections:
+1) KEY_TERM_TREE
+2) NODE_EDGE_TAXONOMY
+3) MODULE_SEQUENCE_ATOMIC
+4) DELTA_AND_GAPS
+
+### C) Zero-Touch Suno Prompt Generator (Critical)
+A monolithic prompt artifact that takes a song input on one side and outputs:
+- Suno-ready Technical UST
+- Strict Show Summary
+- Validator report (pass/fail)
+- (Optional) SEG/G-Card outputs if enabled
+
+---
+
+## 7) Atomic Instruction Cards (Index)
+Card format:
+- **ID**
+- **Type**
+- **Imperative Rule**
+- **Scope**
+- **Origin**
+- **Lifecycle**
+
+### FORMAT CARDS
+**CARD-FMT-0001**
+- Type: FORMAT
+- Imperative Rule: Use section header form `[Name | {x} bars | performer_block | directive_sentence]` and never emit schema labels like `durationbars:` or `who:`.
+- Scope: Lyrics Block
+- Origin: Worklog CR on section header waste + tag-cloud errors
+- Lifecycle: ACTIVE
+
+**CARD-FMT-0002**
+- Type: FORMAT
+- Imperative Rule: Stage directions must be expressed only as `[ ** sFX: ... ** ]` blocks and never as quoted `"*(...)*"` lines.
+- Scope: Lyrics Block
+- Origin: Worklog CR on stage direction placement
+- Lifecycle: ACTIVE
+
+**CARD-FMT-0003**
+- Type: FORMAT
+- Imperative Rule: The first quoted lyric line must appear one line below the section header; sFX blocks may sit between header and first lyric line.
+- Scope: Lyrics Block
+- Origin: Worklog CR on lyric placement
+- Lifecycle: ACTIVE
+
+**CARD-FMT-0004**
+- Type: FORMAT
+- Imperative Rule: Speaker attribution uses square-bracket performer tokens only; colon labels are forbidden.
+- Scope: Lyrics Block and Performer Attribution
+- Origin: Worklog CR on attribution failures
+- Lifecycle: ACTIVE
+
+**CARD-FMT-0005**
+- Type: FORMAT
+- Imperative Rule: Treat choir and BGV responses as adlibs unless there are multiple primary leads; do not promote choir to a second speaker by default.
+- Scope: Speaker Attribution
+- Origin: Worklog CR on choir handling
+- Lifecycle: ACTIVE
+
+**CARD-FMT-0006**
+- Type: FORMAT
+- Imperative Rule: Commas are allowed only inside quoted lyric lines, or between a quote and an adlib as `"....", ("...")`; no commas elsewhere.
+- Scope: Entire prompt
+- Origin: Worklog CR on Suno comma stop-word behavior
+- Lifecycle: ACTIVE
+
+**CARD-FMT-0007**
+- Type: FORMAT
+- Imperative Rule: Replace `durationbars: N` with `N bars` or `{x} bars` to reduce token waste.
+- Scope: Lyrics Block headers
+- Origin: Worklog CR on character waste
+- Lifecycle: ACTIVE
+
+### VALIDATOR CARDS
+**CARD-VAL-0001**
+- Type: VALIDATOR
+- Imperative Rule: Fail if any line contains colon speaker labels like `[Lead:]` or `[Choir:]`.
+- Scope: M9_format_and_policy_validator
+- Origin: Worklog CR on attribution errors
+- Lifecycle: ACTIVE
+
+**CARD-VAL-0002**
+- Type: VALIDATOR
+- Imperative Rule: Fail if any quoted line contains stage direction markup such as `"*(...)*"`.
+- Scope: M9_format_and_policy_validator
+- Origin: Worklog CR on stage direction misuse
+- Lifecycle: ACTIVE
+
+**CARD-VAL-0003**
+- Type: VALIDATOR
+- Imperative Rule: Fail if commas appear outside lyric quotes except the `"....", ("...")` pattern.
+- Scope: M9_format_and_policy_validator
+- Origin: Worklog CR on commas as stop words
+- Lifecycle: ACTIVE
+
+**CARD-VAL-0004**
+- Type: VALIDATOR
+- Imperative Rule: Fail if multiple performer tokens appear but the section header does not declare multiple primaries; enforce gender alignment with declared roles.
+- Scope: M9_format_and_policy_validator
+- Origin: Worklog CR on multi-lead and gender alignment
+- Lifecycle: ACTIVE
+
+### WORKFLOW CARDS
+**CARD-WF-0001**
+- Type: WORKFLOW
+- Imperative Rule: Break every rubric node to task → subtask → audit check → KPI to enable consistent scoring and gating.
+- Scope: Excellence Matrix + QC
+- Origin: Worklog CR on “too high level”
+- Lifecycle: ACTIVE
+
+**CARD-WF-0002**
+- Type: WORKFLOW
+- Imperative Rule: Validate UST Suno-efficiency by comparing intended UST fields to Suno’s narrative expansion behavior and identifying drift or blocked-word collisions.
+- Scope: UST validation loop
+- Origin: Worklog on Suno translation behavior
+- Lifecycle: ACTIVE
+
+### KPI / THRESHOLD CARDS
+**CARD-KPI-0001**
+- Type: KPI
+- Imperative Rule: Use corrected pass expectation of ~97.5% for release-grade gating unless explicitly overridden by a newer CR.
+- Scope: SEG/G-Card decisions
+- Origin: User correction rejecting 70%
+- Lifecycle: ACTIVE (supersedes any prior 70% guidance)
+
+### GOVERNANCE CARDS
+**CARD-GOV-0001**
+- Type: GOVERNANCE
+- Imperative Rule: Apply lyric immutability rules only to non-lyric branches; lyric/music creation processes may edit lyrics as part of their purpose.
+- Scope: Process tree governance
+- Origin: Worklog CR modifying “no lyric changes”
+- Lifecycle: ACTIVE
+
+---
+
+## 8) Terms That Must Be Defined for New Sessions
+New sessions must not assume knowledge of internal jargon; define these in the onboarding artifact:
+- UST (Technical UST + Lyrics Block)
+- Show Summary
+- sFX block
+- Performer tokens
+- Adlibs
+- Validators and comma policy
+- SEG (Song Excellence Governance scoring)
+- G-Card (decision artifact summarizing pass/fail, deficiencies, required actions)
+- Zero-touch monolithic prompt
+- Chaos-Decomposer modules M0–M14
+- “Session as book” (worklog ingestion rule)
+- CR (Change Request) and lineage
+
+---
+
+## 9) Non-Destructive Integration Principle
+- Never overwrite. Always version.
+- Preserve lineage across versions and corrections.
+- If conflicts exist, fork with an explicit conflict note and continue.
+
+END OF KNOWLEDGE_SPINE.md
+# MODULE_REGISTRY.md
+
+## 0) Registry Purpose
+This registry defines the modular system required to produce **zero-touch Suno-ready output** from user input, with enforceable formatting governance and auditability. Each module includes: purpose, inputs, outputs, dependencies, and atomic steps.
+
+---
+
+## 1) Core Pipeline Modules (End-to-End)
+
+### MODULE-M0 — session_init_and_state_load
+- Purpose: Load current worklog inputs and initialize state containers.
+- Inputs: Conversation worklog, pasted specs, any attached artifacts.
+- Outputs: S_raw_corpus, S_rule_registry, S_change_request_log, S_session_ledger.
+- Dependencies: None.
+- Atomic steps:
+  - M0.1 Initialize empty state objects.
+  - M0.2 Ingest conversation as RAW corpus.
+  - M0.3 Detect embedded monoliths/specs and register as artifacts.
+  - M0.4 Initialize CR counters and lineage pointers.
+
+### MODULE-M1 — change_request_handler
+- Purpose: Detect and apply CRs as governance events with precedence and lineage.
+- Inputs: S_raw_corpus, S_rule_registry, latest message.
+- Outputs: Updated S_rule_registry, S_change_request_log.
+- Dependencies: MODULE-M0.
+- Atomic steps:
+  - M1.1 Detect imperative language and corrections.
+  - M1.2 Create CR entry with timestamp and scope.
+  - M1.3 Supersede older rules with version tags.
+  - M1.4 Fork conflicts with conflict notes.
+
+### MODULE-M2 — RECA_snapshot_builder
+- Purpose: Build Requirements, Environment, Constraints, Assets snapshot for deterministic execution.
+- Inputs: S_raw_corpus, S_rule_registry.
+- Outputs: S_RECA_snapshot.
+- Dependencies: MODULE-M0, MODULE-M1.
+- Atomic steps:
+  - M2.1 Extract requirements.
+  - M2.2 Extract environment assumptions.
+  - M2.3 Extract constraints.
+  - M2.4 Extract assets and exemplars.
+
+### MODULE-M3 — operating_env_snapshot_builder
+- Purpose: Declare the operating environment assumptions and active tool constraints.
+- Inputs: S_rule_registry, S_RECA_snapshot.
+- Outputs: S_operating_env_snapshot.
+- Dependencies: MODULE-M2.
+- Atomic steps:
+  - M3.1 Identify target generator pipeline (Suno-facing).
+  - M3.2 Register active validators and banned patterns.
+  - M3.3 Register content moderation sensitivities (blocked-word risk).
+
+### MODULE-M4 — brief_and_artifact_parser
+- Purpose: Parse user-provided UST/song/notes into internal structure without leaking schema into output.
+- Inputs: Raw song input, existing UST structures, S_rule_registry.
+- Outputs: S_song_struct (normalized internal representation).
+- Dependencies: MODULE-M1, MODULE-M3.
+- Atomic steps:
+  - M4.1 Parse meta containers.
+  - M4.2 Parse Lyrics Block sections.
+  - M4.3 Identify speaker attribution elements.
+  - M4.4 Identify forbidden formatting (durationbars, colon labels, quoted stage directions).
+
+### MODULE-M5 — technical_ust_initializer
+- Purpose: Normalize/repair Technical UST fields into canonical form.
+- Inputs: S_song_struct, S_rule_registry.
+- Outputs: A_technical_ust_draft.
+- Dependencies: MODULE-M4.
+- Atomic steps:
+  - M5.1 Normalize container names and field syntax.
+  - M5.2 Enforce performer role declarations (gender alignment readiness).
+  - M5.3 Add missing fields required by governance.
+  - M5.4 Add Validators container with comma policy and attribution rules.
+
+### MODULE-M6 — SME_round_robin_orchestrator
+- Purpose: Apply persona/SME lenses to generate targeted improvements without violating governance constraints.
+- Inputs: A_technical_ust_draft, Lyrics Block, S_rule_registry.
+- Outputs: A_revision_suggestions (atomic actions), A_persona_overlays.
+- Dependencies: MODULE-M5.
+- Atomic steps:
+  - M6.1 Run lyric clarity and structure audit lens.
+  - M6.2 Run performance arc and delivery lens.
+  - M6.3 Run timbre and mix intent lens.
+  - M6.4 Generate atomic remediation actions.
+
+### MODULE-M7 — SEG_and_G_card_evaluator
+- Purpose: Score excellence and produce decision artifacts.
+- Inputs: A_technical_ust_draft, A_revision_suggestions, S_rule_registry.
+- Outputs: A_SEG_scorecard, A_G_card_decision.
+- Dependencies: MODULE-M6.
+- Atomic steps:
+  - M7.1 Compute weighted scores per criterion.
+  - M7.2 Apply pass threshold policy (canon: ~97.5%).
+  - M7.3 Generate ranked deficiencies.
+  - M7.4 Emit G-Card with required actions.
+
+### MODULE-M8 — revision_loop_orchestrator
+- Purpose: Apply targeted remediations and re-evaluate until pass or iteration cap.
+- Inputs: A_revision_suggestions, A_technical_ust_draft, S_rule_registry.
+- Outputs: A_technical_ust_revised, A_revision_log.
+- Dependencies: MODULE-M7.
+- Atomic steps:
+  - M8.1 Select top deficiency.
+  - M8.2 Apply one atomic remediation.
+  - M8.3 Re-run validators and scoring.
+  - M8.4 Stop at cap or pass.
+
+### MODULE-M9 — format_and_policy_validator (Suno-focused)
+- Purpose: Enforce Suno-efficient formatting rules and ban known failure patterns.
+- Inputs: A_technical_ust_revised (or draft), Lyrics Block, S_rule_registry.
+- Outputs: A_validation_report (pass/fail + reasons).
+- Dependencies: MODULE-M5 (minimum), MODULE-M8 (if revision loop enabled).
+- Atomic checks (must be explicit):
+  - M9.1 Fail if `durationbars:` exists anywhere.
+  - M9.2 Fail if any colon speaker labels appear (e.g., `[Lead:]`).
+  - M9.3 Fail if any quoted stage direction exists (`"*(...)*"`).
+  - M9.4 Fail if commas appear outside lyric quotes except `"....", ("...")`.
+  - M9.5 Fail if choir/BGV appears as a speaker token without multi-primary declaration.
+  - M9.6 Fail if first lyric line is not one line below header (allow optional sFX line in between).
+  - M9.7 Flag blocked-word risk terms and propose safe synonyms (non-destructive suggestion).
+
+### MODULE-M10 — show_summary_generator (strict)
+- Purpose: Generate short professional directive show summary that matches UST intent.
+- Inputs: A_technical_ust_revised, Lyrics Block, S_rule_registry.
+- Outputs: A_show_summary_strict.
+- Dependencies: MODULE-M9.
+- Atomic steps:
+  - M10.1 Extract genre, tempo, key, performance arc, palette.
+  - M10.2 Generate summary with minimal punctuation risk.
+  - M10.3 Enforce char budget discipline.
+
+### MODULE-M11 — zero_touch_prompt_generator_for_SUNO (Critical)
+- Purpose: Emit the final monolithic prompt artifact that a new session can run.
+- Inputs: A_technical_ust_revised, A_show_summary_strict, A_validation_report, optional SEG/G-Card.
+- Outputs: **A_zero_touch_prompt_for_SUNO** (single paste artifact).
+- Dependencies: MODULE-M9, MODULE-M10.
+- Atomic steps:
+  - M11.1 Compile final UST in canonical containers.
+  - M11.2 Compile Lyrics Block with correct headers, sFX blocks, quotes, adlibs.
+  - M11.3 Embed validator rules as explicit “must” constraints.
+  - M11.4 Emit strict output format contract (UST + Show Summary only).
+  - M11.5 Provide “song-in on one side” execution instruction and “outputs shown at end”.
+
+### MODULE-M12 — chain_report_generator
+- Purpose: Produce lineage report capturing CRs, decisions, validations, and applied remediations.
+- Inputs: S_change_request_log, A_validation_report, A_revision_log.
+- Outputs: A_chain_report.
+- Dependencies: MODULE-M1, MODULE-M8, MODULE-M9.
+- Atomic steps:
+  - M12.1 List CR evolution.
+  - M12.2 Record validator failures and fixes.
+  - M12.3 Record final pass conditions.
+
+### MODULE-M13 — context_md_generator
+- Purpose: Produce portable context snapshot for new sessions.
+- Inputs: S_RECA_snapshot, S_operating_env_snapshot, key canon rules.
+- Outputs: A_context_md.
+- Dependencies: MODULE-M2, MODULE-M3.
+- Atomic steps:
+  - M13.1 Summarize Requirements and Constraints.
+  - M13.2 List canonical formatting rules.
+  - M13.3 Define terms (SEG, G-Card, sFX, performer tokens, adlibs).
+
+### MODULE-M14 — chaos_decomposer_core (v1.6 alignment)
+- Purpose: When invoked, emit KEY_TERM_TREE, NODE_EDGE_TAXONOMY, MODULE_SEQUENCE_ATOMIC, DELTA_AND_GAPS.
+- Inputs: Full RAW corpus, rule registry, artifacts.
+- Outputs: 4-section decomposer output.
+- Dependencies: MODULE-M0–M13 as needed.
+- Atomic steps:
+  - M14.1 RAW build and tagging.
+  - M14.2 NORMALIZED derivation.
+  - M14.3 Fractal expansion where grounded.
+  - M14.4 Gap minimization with OPEN_QUESTION markers.
+
+---
+
+## 2) Glossary + Taxonomy Module (Required for New Sessions)
+
+### MODULE-G0 — term_taxonomy_with_5Ws_and_5Whys
+- Purpose: Ensure a new session understands internal terms and why they exist.
+- Inputs: Rule registry, artifacts list, CR log.
+- Outputs: A_term_taxonomy.
+- Dependencies: MODULE-M1, MODULE-M13.
+
+#### Term: SEG (Song Excellence Governance)
+- What: A scoring + gating framework for excellence decisions.
+- Who: Used by the system as the evaluator layer, informed by SME lenses.
+- When: After UST normalization and before zero-touch prompt emission.
+- Where: Inside evaluation pipeline (M7).
+- Why: To quantify readiness, surface deficiencies, and trigger targeted revisions.
+- How: Weighted rubric + gates + thresholds + ranked remediation actions.
+- 5 Whys (root rationale chain):
+  1) Why score? To avoid subjective drift.
+  2) Why weighted? Not all criteria impact outcomes equally.
+  3) Why gates? Some failures are release-blocking regardless of score.
+  4) Why ranked deficiencies? To focus iteration on highest leverage fixes.
+  5) Why portable? To support co-development and reproducible results.
+
+#### Term: G-Card
+- What: A decision artifact summarizing SEG result, top deficiencies, required actions.
+- Who: Consumed by revision module and by humans for quick go/no-go.
+- When: Immediately after scoring (M7).
+- Where: Output artifact and governance ledger.
+- Why: To capture decisions and make iteration deterministic.
+- How: PASS/ITERATE/HOLD + atomic required actions + iteration cap.
+
+#### Term: sFX block
+- What: Non-vocal stage direction container.
+- Why: Prevents stage direction from being treated as lyrics and reduces character waste.
+
+---
+
+## 3) Dependencies Map (High-Level)
+- M9 is the enforcement wall; M11 must never bypass it.
+- M11 output is the operational goal: one paste artifact for Suno-ready generation.
+- M7 must use the corrected pass threshold policy (97.5% canon).
+- G0 taxonomy must be bundled into onboarding artifacts for new sessions.
+
+END OF MODULE_REGISTRY.md
+# MIGRATION_LOG.md
+
+## 0) Migration Run Metadata
+- Mode: Non-Destructive
+- Source: Conversation worklogs + pasted monoliths/specs
+- Trigger: RUN MIGRATION
+- Output artifacts: KNOWLEDGE_SPINE.md, MODULE_REGISTRY.md, MIGRATION_LOG.md
+
+---
+
+## 1) Ingested Worklog Segments (High-Level)
+- Song Excellence Matrix and governance gating discussion
+- UST meta-container schema and Suno parsing observations
+- Formatting corrections for section headers, sFX blocks, lyric placement
+- Speaker attribution correction emphasizing choir/BGV as adlibs
+- Comma restriction policy due to Suno stop-word behavior
+- Chaos-Decomposer v1.6 monolith defining CADM and four-section output contract
+- Requirement shift: decomposer must unearth the real end-to-end zero-touch prompt architecture
+
+---
+
+## 2) Evolution Tracking (CR Lineage Highlights)
+
+### CR-001 — Portability over session-locked context
+- Change: Create monolithic prompts and artifacts that survive across GPT sessions.
+- Status: ACTIVE
+
+### CR-002 — Modify “no lyric changes” rule
+- Change: Lyric/music creation processes may edit lyrics, other process branches must not.
+- Status: ACTIVE
+- Notes: Governance scope corrected to avoid blocking creation workflows.
+
+### CR-003 — Replace high-level summaries with atomic task trees
+- Change: Every node must break down to task → subtask → audit check → KPI.
+- Status: ACTIVE
+- Notes: This supersedes any “overview-only” outputs.
+
+### CR-004 — Suno translation awareness becomes first-class
+- Change: UST must be optimized for how Suno expands/validates content, including blocked-word collisions.
+- Status: ACTIVE
+
+### CR-005 — Section header and character waste corrections
+- Change: Replace `durationbars:` with `{x} bars`; remove schema labels (`who:`, `mode:`) from headers.
+- Status: ACTIVE
+
+### CR-006 — Stage direction placement correction
+- Change: Stage directions must be `[ ** sFX: ... ** ]` blocks, never quoted `"*(...)*"`.
+- Status: ACTIVE
+
+### CR-007 — Speaker attribution correction (critical)
+- Change: Use `[Lead]` tokens only; ban `[Lead:]` colon labels; choir/BGV are adlibs unless multiple primaries.
+- Status: ACTIVE
+- Notes: Gender alignment elevated to equal importance.
+
+### CR-008 — Comma restriction elevated to validator policy
+- Change: Commas allowed only inside lyric quotes or between quote and adlib.
+- Status: ACTIVE
+
+### CR-009 — Pass threshold correction
+- Change: Reject 70% pass guidance; canon expectation is ~97.5% pass for release-grade gating.
+- Status: ACTIVE
+- Conflict: Earlier assistant guidance used ~70; marked superseded.
+
+### CR-010 — Decomposer purpose correction
+- Change: Chaos-Decomposer exists to extract the real process and enable a monolithic zero-touch prompt artifact, not QA chatter.
+- Status: ACTIVE
+
+---
+
+## 3) Normalization Summary (What Was Converted into Cards)
+- 7 format rules converted into FORMAT cards (headers, bars notation, sFX, lyric placement, attribution, commas)
+- 4 validators converted into VALIDATOR cards (durationbars ban, colon ban, quoted-stage ban, comma policy)
+- 2 workflows converted into WORKFLOW cards (task trees, Suno efficiency loop)
+- 1 KPI policy card created (97.5% pass threshold)
+- 1 governance scope card created (lyric edits allowed only in lyric/music creation branches)
+
+All cards recorded as ACTIVE unless explicitly superseded.
+
+---
+
+## 4) Module Discovery Summary
+Discovered primary module families:
+- M0–M14 end-to-end pipeline modules (including M11 zero-touch prompt generator)
+- G0 taxonomy module for new-session comprehension (SEG, G-Card, sFX, tokens)
+- Suno-translation validation loop integrated into validation and revision modules
+
+---
+
+## 5) Conflicts and Fork Notes
+### CONFLICT-001 — Pass threshold
+- Old behavior: ~70% pass threshold used in earlier assistant guidance.
+- New canon: ~97.5% pass expectation.
+- Resolution: Supersede old threshold; keep lineage note in KPI card.
+
+### CONFLICT-002 — Choir as speaker vs adlib
+- Old behavior: Choir labeled as `[Choir:]` or separate speaker.
+- New canon: Choir/BGV as adlibs unless multiple primaries.
+- Resolution: Enforced via FORMAT and VALIDATOR cards.
+
+### CONFLICT-003 — Stage directions as lyric lines
+- Old behavior: Stage directions quoted as `"*(...)*"`.
+- New canon: Stage directions moved to `[ ** sFX: ... ** ]`.
+- Resolution: Enforced via FORMAT and VALIDATOR cards.
+
+---
+
+## 6) Non-Destructive Integration Actions
+- No deletions performed.
+- All prior logic preserved via:
+  - Supersede markers
+  - Versioned CR entries
+  - Conflict notes where needed
+
+END OF MIGRATION_LOG.md
+
+</ |context |>
+]
+
+
+"Conduct a comprehensive literature and industry review to establish a baseline definition of excellence in contemporary songwriting and music production. For each rubric criterion (Hook Strength, Lyric Integrity, Vocal Delivery, Melody Craft, Structure & Pacing, Production Quality, Arrangement Interest, Commercial Viability, Originality, Metadata Governance, Lyric Syllable Integrity, Pre‑release QA), gather authoritative definitions from both creative/artistic sources (songwriting guides, producer interviews, musicology texts) and technical/production sources (engineering glossaries, DSP standards, QA checklists). Compare how excellence is measured creatively (audience resonance, originality, emotional clarity) versus technically (mix balance, syllable counts, metadata completeness). Identify published artifacts (rubrics, glossaries, scholarly articles, industry SOPs) that can serve as modular references. The goal is to create a modularized subframe where each criterion is defined by: (a) creative meaning, (b) technical meaning, (c) measurement method, (d) example artifacts. This subframe will form the foundation of a portable Song Excellence Governance Matrix."
+
+🔎 Why This Prompt Works
+Uses web resources: It directs the researcher to pull from songwriting rubrics, glossaries of songwriting termsYona Marie Music, and music production terminology.
+
+Creative + Technical: It explicitly asks for both artistic definitions (e.g., “hook as emotional earworm”) and technical ones (e.g., “hook as repeatable motif measurable by recall tests”).
+
+Baseline Excellence: It frames the task as establishing a shared definition of “excellence” across domains.
+
+Modularized Subframe: Each rubric criterion becomes a module with four parts: creative meaning, technical meaning, measurement, artifacts.
+
+📚 Example Sources to Pull From
+Songwriting Rubrics: SEMMEA Songwriting Rubric, Studylib Songwriting Rubricstudylib.net.
+
+General Music Rubrics: Vocal/melody assessment rubrics.
+
+Songwriting Glossaries: Yona Marie’s “106 Must‑Know Songwriting Terms”.
+
+Production Glossaries: Tero Potila’s “Essential Music Production Terms”.
+
+
+Using authoritative musicology, industry interviews, engineering glossaries, and production guides, define excellence for each session domain: [Theory], [Voice], [Style], [Timbre], [Performance], [CREW_TAGS], [Road‑Map], [Lyrics Block], [FX], [Post Production]. For every term (e.g., mode, tonal center, register, delivery, genre, era, drum tone, rhythm handling, mastering targets), provide:
+
+Creative definition (artistically what it means and why it matters).
+
+Technical definition (signal, structure, or standards).
+
+Measurement method (tests, thresholds, recall checks, perceptual or objective metrics).
+
+Failure modes and red‑pen guidance (what to cut or fix).
+
+Exemplars and published artifacts (books, interviews, rubrics, SOPs, glossaries, production breakdowns).
+
+Alignment notes to the Governance Matrix (metadata fields, ledger IDs, pass/fail gates).
+
+Deliver as a modular subframe: each domain is a standalone module with fields, examples, and references, ready to assemble into a project.”
+
+Target modules and definitions
+Theory module: mode, key, meter, tempo, chord color
+Creative: Establishes emotional palette, rhythmic feel, and harmonic expectation.
+
+Technical: Consistency between melody, harmony, and low end; clear key signature; meter-gridded phrasing; tempo ± BPM with feel annotation (e.g., halftime swing); chord color tagged with alterations (sus, add9, b13) for arrangement clarity.
+
+Checks: Key cohesion (no clash between topline and bass), meter alignment across sections, tempo feel consistency, chord tones vs melody note stress.
+
+Artifacts: Producer-centric theory guides emphasize keys, scales, harmony and rhythm as practical tools for cohesion and speed.
+
+Voice module: register, delivery, expression
+Creative: Persona, emotional truth, intelligibility, and character.
+
+Technical: Register mapping (lead/BGVs/guest), dynamic range, diction, timing, and timbral descriptors (breathy, nasal, chest/head mix).
+
+Checks: Intelligibility, timing grid adherence vs planned rubato, consistent mic chain notes.
+
+Artifacts: Musicology treatments of vocal timbre detail how expression, language, and performance factors interweave and shift rapidly, informing evaluation at syllable and phrase level.
+
+Style module: genre, era, intent, texture, aesthetic, focus
+Creative: Narrative arc and cultural context; “what this song promises.”
+
+Technical: Genre/era production signatures; texture tags (mono/width), aesthetic references; explicit focus statement to prevent scope creep.
+
+Checks: Referential consistency (does mix/arrangement match chosen era/genre and intent?), focus audit (one-sentence promise stays intact).
+
+Timbre module: drum/bass/keys/guitar/fx/vocal tone
+Creative: Signature sound design and emotional contour.
+
+Technical: Source selection, frequency roles, transient design, saturation, and FX palettes; mic/compressor/saturation chain documented.
+
+Checks: Low‑end integrity (sub/808 tuning vs key), transient hierarchy (kick/snare clarity), timbral contrast across sections.
+
+Artifacts: Frameworks for controlled generation/editing emphasize fine‑grained style/timbre control across vocals, lyrics, melodies, and timbres, reinforcing timbre as a first‑class control surface.
+
+Performance module: execution, gesture, rhythm handling, touch
+Creative: Human feel, cue words, and micro‑expressive choices that sell the emotion.
+
+Technical: Section order adherence, grid vs groove strategy, planned pushes/pulls, and articulation.
+
+Checks: Groove plan documented (e.g., “behind on verses, on‑top on hook”), cue words executed, comp notes matching intent.
+
+CREW_TAGS module: roles and ad‑libs
+Creative: Who brings what flavor; shared vocabulary for session speed.
+
+Technical: Role-tagging, alt tags, and ad‑lib intent; ties into metadata governance.
+
+Checks: All contributors properly tagged; ad‑libs aligned with narrative and mix space.
+
+Road‑Map module: sectional durations and arc
+Creative: Macro narrative and energy contour.
+
+Technical: Bars per section, transitions, hook placement, and dynamics map.
+
+Checks: Section balance, hook within target window, pacing audit against intended audience behavior (skip points).
+
+Lyrics Block module: breath‑lines and performer/style tags
+Creative: Meaning, tone, subtext, and multi‑layered devices.
+
+Technical: Breath‑line constraints, syllable ranges, rhyme strategies, and performer/style tags per section.
+
+Checks: Syllable integrity (your 6–10 rule), device clarity (double/triple entendres remain discernible), story coherence across independent verses. Vocal timbre scholarship supports evaluating lyrics within voice timbre and performance context.
+
+FX module: coda and mix‑stage effects
+Creative: Moment design and memory anchors.
+
+Technical: Phone‑band EQ, spinbacks, hiss beds, delay throws on title, and vocal gain moves documented.
+
+Checks: FX audibility without masking, translation across playback systems.
+
+Post Production module: mastering and mix notes
+Creative: Competitive but tasteful loudness and tonal balance.
+
+Technical: LUFS targets, true peak ceilings, mono‑compatibility thresholds, and vocal vs band balance; de‑essing bands specified.
+
+Checks: -14 LUFS reference readiness, ≤ -1.0 dBTP, mono-safe < 120 Hz; vocal prominence per note.
+
+Artifacts: Industry guides emphasize practical key/scale alignment and mix integrity to prevent common issues (key clashes, low‑end conflicts); education sources clarify theory’s supportive role rather than prescriptive rulebookRMCAD.
+
+Sources:
+
+Output format required from the researcher
+Create one module per domain using this schema:
+
+Creative meaning: Plain-language definition and why it matters.
+
+Technical meaning: Precise, operational description (signal/structure/standards).
+
+Measurement method:
+
+Perceptual tests (e.g., earworm/recall, intelligibility, emotional clarity)
+
+Objective checks (e.g., LUFS, dBTP, mono compatibility, key consistency)
+
+Failure modes (red‑pen): Short bullets of typical errors and targeted fixes.
+
+Exemplars: Named records or producers illustrating the concept.
+
+Published artifacts: 2–4 citations (interviews, guides, academic/industry sources) per module.
+
+Governance alignment: Required metadata fields, ledger IDs, and gate mapping (pass/fail + thresholds).
+
+Red‑pen overlays by persona (apply during review)
+Rap/trap: Prioritize internal rhyme density that still scans clean, cultural resonance in references, chant‑grade hooks; trim overcrowded bars; preserve flow integrity even when enforcing syllable ranges.
+
+Pop: Singability, intelligibility, sectional clarity; reduce device density if it harms recall.
+
+Country/Americana: Plainspoken truth, live deliverability, narrative coherence; avoid forced wordplay.
+
+R&B: Space for melisma and vibe; warmth in mix; trim technical overcrowding.
+
+Rock/Blues: Live energy, riff priority, crowd‑immediacy; simplify dense schemes.
+
+Map persona notes to module failure modes to keep creative intent intact while enforcing technical quality.
+
+Governance and gating integration
+Metadata gate: CREW_TAGS complete (roles, alt tags), lyric_version ID present, FX/mix notes logged.
+
+Lyric syllable gate: Breath‑lines within target range; exceptions documented (e.g., rap flow clauses).
+
+Hook gate: Hook placement and recall check pass.
+
+Production gate: LUFS/TP/mono checks pass; low‑end clarity confirmed.
+
+Final QA: Stems, naming, ledger entries, release pack complete.
+
+Each gate cites module fields as evidence, creating traceable, portable compliance.
+
+Research instructions (what to search and extract)
+Music theory for producers: keys, scales, harmony, rhythm; focus on practical application to avoid prescriptivism.
+
+Vocal timbre and performance evaluation: artistic and technical descriptors; syllable-level analysis frameworks.
+
+Timbre/style control frameworks: multi‑modal control over lyrics/melody/timbre; editing workflows that mirror your FX/post needs.
+
+Mix/master standards: LUFS, true peak, mono compatibility; translation across devices.
+
+Genre/era production signatures: verify references for texture/aesthetic decisions.
+
+Session governance: crediting, role tags, metadata completeness; portable SOPs.
+
+For each source, extract quotable definitions, measurement practices, and checklists; tie them to your module fields and gates.
+
+Deliverables checklist
+12 modules fully populated (creative/technical/measurement/failure modes/exemplars/artifacts/governance).
+
+Persona overlays aligned to failure modes per genre.
+
+Gate map linking module fields to pass/fail decisions with thresholds.
+
+Citation appendix keyed to each module’s artifacts.
+
+Portable schema (JSON/YAML) for metadata, ledger IDs, and gate results.

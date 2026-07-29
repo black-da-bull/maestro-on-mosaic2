@@ -1,0 +1,19 @@
+# SESSION13_TEST_PLAN v2 — post-application supersession of v1 (v1 preserved)
+work_item: MAESTRO.O16.DERIVE-CURRENT-ARTIFACTS.R1
+supersedes: SESSION13_TEST_PLAN.yaml
+executable_now_results:
+  T1_anchor_verification: PASS (payload md5 52381c1e13a25775f5491a7090a7f06d; anchors verified)
+  T2_totals_arithmetic: PASS (14 categories = 96; 92/3/1)
+  T3_split_validator: PASS (both windows, persisted script)
+  T4_zero_overwrite: PASS (insert-only verified programmatically; pre/post hashes in APPLY/annotation_hashes.json)
+  T5_contradiction_preservation: PASS (registers carried; CR-2 closed by M14 with both sides preserved in replay record)
+  T6_persistence_flip: PASS (sweep_after.txt — zero-found -> found in 3 persisted artifacts)
+  T7_candidate_cold_regeneration: PASS (hash-identical, pre-ruling candidate core)
+new_obligations:
+  T8_post_application_hash_verification: >-
+    verify on-device hashes of the 5 annotated files match annotation_hashes.json post values
+    (run at O-16 Stage 0 exit)
+  T9_final_package_cold_regeneration: >-
+    REQUIRED at O-16 Stage 3 — a cold workspace must regenerate/validate the COMPLETE post-ruling
+    package (not inheriting T7's pre-ruling result)
+deferred_until_runtime: [D1 QAF/PD enforcement wiring, D2 lyric-lock behavioral, D3 char-cap 4960-4999 live emission, D4 fixtures + SEG gate execution]

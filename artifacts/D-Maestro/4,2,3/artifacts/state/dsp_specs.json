@@ -1,0 +1,5 @@
+{
+  "samplerate_hz": 48000,
+  "bitdepth": 24,
+  "render_targets": []
+}

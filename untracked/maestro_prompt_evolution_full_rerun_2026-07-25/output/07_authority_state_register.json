@@ -1,0 +1,17 @@
+{
+  "rules": [
+    "operator messages and supplied artifacts=root evidence",
+    "later explicit corrections supersede by pointer",
+    "assistant outputs=proposal unless accepted",
+    "persistence proves existence only",
+    "state ladder is distinct from authority"
+  ],
+  "source_families": {
+    "chimera_evidence": 8,
+    "local_session_export": 1,
+    "direct_pdf": 1,
+    "pdf_text_derivative": 1,
+    "O16E_sample_archive": 42
+  },
+  "intent_compiler_status": "requested skill not discoverable through runtime skill registry or local /home/oai/skills; visible-reframe contract from operator request applied as fallback"
+}

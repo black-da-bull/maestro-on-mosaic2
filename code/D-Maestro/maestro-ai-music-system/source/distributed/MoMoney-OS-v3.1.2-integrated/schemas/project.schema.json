@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "project.json",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "linked_prompts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "vvlog_id": {
+            "type": "string"
+          },
+          "telemetry_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "path"
+        ]
+      }
+    }
+  },
+  "required": [
+    "project_id",
+    "title",
+    "version"
+  ]
+}

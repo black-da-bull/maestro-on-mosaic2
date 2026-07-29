@@ -1,0 +1,21 @@
+{
+  "verdict": "PARTIAL-PASS-IMPROVED",
+  "coverage": {
+    "source_members": 53,
+    "operator_events": 712,
+    "assistant_events": 518,
+    "material_prompt_events": 669,
+    "mechanical_parse_reports": 37
+  },
+  "closed_blockers": [
+    "local session export",
+    "who dat PDF",
+    "O16E sampled archive",
+    "Chimera direct evidence"
+  ],
+  "open_blockers": [
+    "global chronology remains partial",
+    "sample archive is not complete corpus"
+  ],
+  "false_pass_control": "No canon or runtime promotion performed."
+}

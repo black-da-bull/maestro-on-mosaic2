@@ -1,0 +1,121 @@
+package: maestro-forensic-transcript
+version: '1.1'
+assembled: '2026-07-19'
+authority: transfer pack (ATP). SSOT = D:\maestro-on-mosaic\_PROVENANCE\. Found originals outrank reconstructions
+  (DEC-03). Operator ruling 2026-07-19 authorized reconstruction.
+validation: components smoke-tested 2026-07-19; fold engine self-test ALL PASS; verify_coverage PASS against session-13
+  W1 artifacts
+files:
+  02_FAILURE_MODES.md:
+    md5: c0fc50e2f028d98103be7310bfedf114
+    status: RECONSTRUCTED
+    note: 10 anchored FM numbers, 8 renumbered; all excerpts corpus-verbatim; original MISSING
+  SKILL.md:
+    md5: 275bbb1fda6e203ef95461741497f1d7
+    status: v1.1 FOLD
+    note: fold of SKILL_v1_ORIGINAL.md + 06 lessons layer; supersedes v1.0 by pointer
+  00_OPERATOR_ABOUT_ME.md:
+    md5: 6c6431a956447ffa9087fe24f4c5f654
+    status: RECOVERED-CORE + RECONSTRUCTED-FRAME
+    note: "kernel \xA7A byte-verified from im_dead_kb.zip (md5 884af3ed2c602d9d7e2811aa575111a6); \xA7B verbatim\
+      \ via found 03 draft; frame AI-assembled"
+  05_WORKFLOW.md:
+    md5: 1d00a41d057e629422e1396cae934912
+    status: RECONSTRUCTED
+    note: W0-W9; W5 name anchored; original MISSING
+  06_LESSONS_LEARNED_2026-07.md:
+    md5: c8832421b2864066835c8612f509b431
+    status: NEW
+    note: v1.0->v1.1 update layer
+  README_FIRST.md:
+    md5: 96909dcd64f4fb4f89b6222a4e3653bf
+    status: NEW
+    note: load order + status summary
+  OPERATOR_CONTEXT.md:
+    md5: c8f13a414f8b0b1ebeee181a4c099262
+    status: RECONSTRUCTED-THIN
+    note: evidence-backed items only; SOURCE_PENDING gaps marked; original MISSING
+  03_WHY_AI_DEFAULTS_HERE.md:
+    md5: 2e124f31fe6aa89fc0b2b22fb58d20a0
+    status: FOUND DRAFT
+    note: verbatim copy of artifacts/D-Maestro/drafts/03_WHY_AI_DEFAULTS_HERE.md (md5 2e124f31fe6aa89fc0b2b22fb58d20a0);
+      never packaged before
+  SKILL_v1_ORIGINAL.md:
+    md5: 8de87a876f1826daed401d0de9e683ab
+    status: ORIGINAL
+    note: installed skill v1.0, verbatim
+  01_METHODOLOGY.md:
+    md5: b3013a26522abe1c80482a5766efad30
+    status: RECONSTRUCTED
+    note: from operator-ratified practice, P1N-validated; original MISSING
+  04_KERNEL.md:
+    md5: 2aa9d189817137201d724c7dd9048494
+    status: RECONSTRUCTED
+    note: invariant texts verbatim from locking sources; original MISSING
+  patterns/detect_phantom_commitment.md:
+    md5: 72b3d93edc13c3a7cde2f1c91be58204
+    status: RECONSTRUCTED
+  patterns/verify_coverage.md:
+    md5: 0c3c7e4f02c55d81f8c81382a098690e
+    status: RECONSTRUCTED
+  patterns/register_contradiction.md:
+    md5: 693ae3808fb8be2231a9e63a1eb9d108
+    status: RECONSTRUCTED
+  patterns/extract_operator_turns.md:
+    md5: 3f10ca83d891a6f579800812805bd9fe
+    status: RECONSTRUCTED
+  patterns/classify_mutation.md:
+    md5: 6591be1fdfd56a535731a0834fc3f46c
+    status: RECONSTRUCTED
+  patterns/fold_session.md:
+    md5: 1f1c2a9d85b71470a8ca70ecd3b0db20
+    status: RECONSTRUCTED
+  patterns/establish_congruency.md:
+    md5: ca2d4179516e67e4d0665434882402ba
+    status: RECONSTRUCTED
+  state_snapshot_2026-07-19/P1_NARROW_VERDICT.yaml:
+    md5: 762ad38c5a7cd8bdb438e67316fabfb2
+    status: NEW
+    note: P1N validation verdict (PASS)
+  state_snapshot_2026-07-19/STATE.md:
+    md5: d54ae397b140ff779d8efd07cae8456c
+    status: SNAPSHOT
+    note: copy of SSOT 2026-07-19; SSOT wins on conflict
+  state_snapshot_2026-07-19/OPEN.md:
+    md5: 6b6aba6d1f5137bfe67a409454b43bcc
+    status: SNAPSHOT
+    note: copy of SSOT 2026-07-19
+  state_snapshot_2026-07-19/LEDGER.md:
+    md5: 6c0d3b26cd43e732fd96c265c32e98c1
+    status: SNAPSHOT
+    note: copy of SSOT 2026-07-19
+  state_snapshot_2026-07-19/SNAPSHOT_NOTE.md:
+    md5: 45a4f051f446da8f866fd2f2226e72a7
+    status: NEW
+    note: snapshot != SSOT rule
+  python/verify_coverage_v0_1.py:
+    md5: 17a28ba469158bc962646971f6180329
+    status: NEW (validated)
+    note: the exact checks that passed P1N against session-13 artifacts
+  python/phantom_detect_v0_1.py:
+    md5: 2c40c1001a2fe126bf544eedea492424
+    status: NEW
+    note: R-RT-PD-01 reporting tool; heuristic, never resolves
+  python/fold_laminate_v0_1.py:
+    md5: 0f8478d6b4e3bec0d7dcb91f55897113
+    status: ORIGINAL
+    note: extant, verbatim (md5 0f8478d6b4e3bec0d7dcb91f55897113); self-test ALL PASS 2026-07-19
+  python/parse_transcript_v0_2.py:
+    md5: bf47553dc32506485c2e2b3e1a4d8614
+    status: NEW (O-14 partial repair)
+    note: "heuristic splitter + R1/R2/R3 audits; census may differ from hand-verified split \u2014 coverage gate\
+      \ exists for that"
+  examples/EX02_recovered_operator_inputs.md:
+    md5: 11efac6dd4a98b36fb8c42d47177d46f
+    status: NEW (verbatim corpus passages)
+  examples/EX03_contradiction_preservation_CR2.md:
+    md5: 48562b40bdecdbfd11583ca7f76a5258
+    status: NEW (verbatim corpus passages)
+  examples/EX01_flagship_no_parse_correction.md:
+    md5: 369e54857a58b9b78fdc733023d2bd9e
+    status: NEW (verbatim corpus passages)

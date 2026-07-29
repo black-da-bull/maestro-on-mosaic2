@@ -1,0 +1,415 @@
+{
+  "meta": {
+    "project_id": "momoney_os_v4_2_3",
+    "semver": "4.2.3",
+    "schema_version": "1.0",
+    "created_at": "2025-09-19T21:47:56.642611+00:00",
+    "run_id": "d2558aa4-24f7-4a74-84cf-ba2d40a5daee",
+    "source_mode": "B_fresh",
+    "description": "Master manifest for Maestro OS runs. Tracks graph, artifacts, SMEs, V&V, HPA, DSP, and versions."
+  },
+  "graph": {
+    "nodes": {
+      "N7.x": {
+        "label": "Intake+SWOT",
+        "status": "done"
+      },
+      "N8.x": {
+        "label": "ToT(3) Drafts",
+        "status": "done"
+      },
+      "N12.x": {
+        "label": "UST Build",
+        "status": "done"
+      },
+      "N13.x": {
+        "label": "Validators",
+        "status": "done"
+      },
+      "N14.x": {
+        "label": "Rights & Remix Prep",
+        "status": "pending"
+      },
+      "N15.x": {
+        "label": "HPA + Round-Trip",
+        "status": "pending"
+      },
+      "N16.x": {
+        "label": "DSP Packaging",
+        "status": "pending"
+      },
+      "N10.x": {
+        "label": "Archive & Telemetry",
+        "status": "pending"
+      }
+    },
+    "edges": [
+      [
+        "N7.x",
+        "N8.x"
+      ],
+      [
+        "N8.x",
+        "N12.x"
+      ],
+      [
+        "N12.x",
+        "N13.x"
+      ],
+      [
+        "N13.x",
+        "N14.x"
+      ],
+      [
+        "N14.x",
+        "N15.x"
+      ],
+      [
+        "N15.x",
+        "N16.x"
+      ],
+      [
+        "N16.x",
+        "N10.x"
+      ]
+    ]
+  },
+  "song": {
+    "title": "Boy Icarus",
+    "version": "v1",
+    "tags": [
+      "alt-R&B",
+      "melancholic",
+      "auto-tune",
+      "minimalist",
+      "808",
+      "mythic"
+    ],
+    "summary_chars_limit": 1000,
+    "macro_chars_limit": 4800
+  },
+  "smes": {
+    "roster": [
+      "Critic",
+      "Stylist",
+      "Engineer",
+      "DevilsAdvocate",
+      "Therapist",
+      "PluginArchitect",
+      "RightsAgent",
+      "ModelBenchmarkAuditor"
+    ],
+    "policy": {
+      "round_robin": true,
+      "two_strikes_eject": true,
+      "consensus_required": true
+    },
+    "debate_log": [
+      {
+        "timestamp": "2025-09-19T22:01:35.872216+00:00",
+        "topic": "Initial metric inference from minimal intake",
+        "meeting": [
+          "Critic: Flow density & breath count → 2.85 | tighten weak metaphors; protect clarity",
+          "Stylist: Flow density & breath count → 2.42 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Flow density & breath count → 2.59 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Flow density & breath count → 2.56 | challenge clichés; remove dated myth-isms",
+          "Therapist: Flow density & breath count → 2.92 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Flow density & breath count → 2.87 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Flow density & breath count → 3.02 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Flow density & breath count → 2.46 | flag A→T→A test needs",
+          "Critic: Rhyme symmetry across verses → 3.2 | tighten weak metaphors; protect clarity",
+          "Stylist: Rhyme symmetry across verses → 2.92 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Rhyme symmetry across verses → 3.05 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Rhyme symmetry across verses → 3.25 | challenge clichés; remove dated myth-isms",
+          "Therapist: Rhyme symmetry across verses → 2.92 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Rhyme symmetry across verses → 3.04 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Rhyme symmetry across verses → 3.35 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Rhyme symmetry across verses → 3.28 | flag A→T→A test needs",
+          "Critic: Pacing entropy vs internal consistency → 2.8 | tighten weak metaphors; protect clarity",
+          "Stylist: Pacing entropy vs internal consistency → 3.06 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Pacing entropy vs internal consistency → 3.22 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Pacing entropy vs internal consistency → 2.65 | challenge clichés; remove dated myth-isms",
+          "Therapist: Pacing entropy vs internal consistency → 3.21 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Pacing entropy vs internal consistency → 3.14 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Pacing entropy vs internal consistency → 2.89 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Pacing entropy vs internal consistency → 2.76 | flag A→T→A test needs",
+          "Critic: Line length variance vs impact retention → 3.82 | tighten weak metaphors; protect clarity",
+          "Stylist: Line length variance vs impact retention → 3.39 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Line length variance vs impact retention → 3.21 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Line length variance vs impact retention → 3.22 | challenge clichés; remove dated myth-isms",
+          "Therapist: Line length variance vs impact retention → 3.74 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Line length variance vs impact retention → 3.57 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Line length variance vs impact retention → 3.71 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Line length variance vs impact retention → 3.66 | flag A→T→A test needs",
+          "Critic: Emotional polarity per stanza → 4.03 | tighten weak metaphors; protect clarity",
+          "Stylist: Emotional polarity per stanza → 4.33 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Emotional polarity per stanza → 3.91 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Emotional polarity per stanza → 4.04 | challenge clichés; remove dated myth-isms",
+          "Therapist: Emotional polarity per stanza → 4.23 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Emotional polarity per stanza → 4.08 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Emotional polarity per stanza → 4.25 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Emotional polarity per stanza → 4.05 | flag A→T→A test needs",
+          "Critic: Visualizability of lines → 3.74 | tighten weak metaphors; protect clarity",
+          "Stylist: Visualizability of lines → 3.28 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Visualizability of lines → 3.41 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Visualizability of lines → 3.45 | challenge clichés; remove dated myth-isms",
+          "Therapist: Visualizability of lines → 3.31 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Visualizability of lines → 3.41 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Visualizability of lines → 3.32 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Visualizability of lines → 3.44 | flag A→T→A test needs",
+          "Critic: Beat adaptability & melodic scalability → 3.99 | tighten weak metaphors; protect clarity",
+          "Stylist: Beat adaptability & melodic scalability → 3.81 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Beat adaptability & melodic scalability → 3.81 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Beat adaptability & melodic scalability → 3.7 | challenge clichés; remove dated myth-isms",
+          "Therapist: Beat adaptability & melodic scalability → 3.74 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Beat adaptability & melodic scalability → 4.21 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Beat adaptability & melodic scalability → 4.0 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Beat adaptability & melodic scalability → 3.98 | flag A→T→A test needs",
+          "Critic: Imagery uniqueness → 3.17 | tighten weak metaphors; protect clarity",
+          "Stylist: Imagery uniqueness → 3.56 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Imagery uniqueness → 3.16 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Imagery uniqueness → 3.32 | challenge clichés; remove dated myth-isms",
+          "Therapist: Imagery uniqueness → 3.74 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Imagery uniqueness → 3.5 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Imagery uniqueness → 3.44 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Imagery uniqueness → 3.53 | flag A→T→A test needs",
+          "Critic: Audience empathy activation → 3.94 | tighten weak metaphors; protect clarity",
+          "Stylist: Audience empathy activation → 3.89 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Audience empathy activation → 3.51 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Audience empathy activation → 3.37 | challenge clichés; remove dated myth-isms",
+          "Therapist: Audience empathy activation → 3.57 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Audience empathy activation → 3.54 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Audience empathy activation → 3.5 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Audience empathy activation → 4.01 | flag A→T→A test needs",
+          "Critic: Semantic overlap with archetypes → 3.36 | tighten weak metaphors; protect clarity",
+          "Stylist: Semantic overlap with archetypes → 2.97 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Semantic overlap with archetypes → 3.21 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Semantic overlap with archetypes → 3.03 | challenge clichés; remove dated myth-isms",
+          "Therapist: Semantic overlap with archetypes → 3.39 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Semantic overlap with archetypes → 3.07 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Semantic overlap with archetypes → 2.94 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Semantic overlap with archetypes → 2.92 | flag A→T→A test needs",
+          "Critic: Performative contrast potential → 3.34 | tighten weak metaphors; protect clarity",
+          "Stylist: Performative contrast potential → 3.13 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Performative contrast potential → 3.36 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Performative contrast potential → 3.58 | challenge clichés; remove dated myth-isms",
+          "Therapist: Performative contrast potential → 3.23 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Performative contrast potential → 3.1 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Performative contrast potential → 3.65 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Performative contrast potential → 3.31 | flag A→T→A test needs",
+          "Critic: Repeatability index (hook & chorus) → 3.81 | tighten weak metaphors; protect clarity",
+          "Stylist: Repeatability index (hook & chorus) → 3.78 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Repeatability index (hook & chorus) → 3.83 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Repeatability index (hook & chorus) → 4.19 | challenge clichés; remove dated myth-isms",
+          "Therapist: Repeatability index (hook & chorus) → 4.3 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Repeatability index (hook & chorus) → 4.05 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Repeatability index (hook & chorus) → 3.79 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Repeatability index (hook & chorus) → 4.02 | flag A→T→A test needs",
+          "Critic: Socio-political subtext density → 1.35 | tighten weak metaphors; protect clarity",
+          "Stylist: Socio-political subtext density → 1.02 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Socio-political subtext density → 1.33 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Socio-political subtext density → 1.25 | challenge clichés; remove dated myth-isms",
+          "Therapist: Socio-political subtext density → 0.66 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Socio-political subtext density → 1.15 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Socio-political subtext density → 1.13 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Socio-political subtext density → 1.03 | flag A→T→A test needs",
+          "Critic: Flow-mode shift frequency → 2.74 | tighten weak metaphors; protect clarity",
+          "Stylist: Flow-mode shift frequency → 3.0 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Flow-mode shift frequency → 2.63 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Flow-mode shift frequency → 2.85 | challenge clichés; remove dated myth-isms",
+          "Therapist: Flow-mode shift frequency → 2.87 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Flow-mode shift frequency → 3.22 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Flow-mode shift frequency → 3.16 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Flow-mode shift frequency → 2.73 | flag A→T→A test needs",
+          "Critic: Recursiveness of metaphors → 3.55 | tighten weak metaphors; protect clarity",
+          "Stylist: Recursiveness of metaphors → 3.33 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Recursiveness of metaphors → 3.84 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Recursiveness of metaphors → 3.81 | challenge clichés; remove dated myth-isms",
+          "Therapist: Recursiveness of metaphors → 3.41 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Recursiveness of metaphors → 3.65 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Recursiveness of metaphors → 3.63 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Recursiveness of metaphors → 3.31 | flag A→T→A test needs",
+          "Critic: Narrative vs poetic ratio → 2.93 | tighten weak metaphors; protect clarity",
+          "Stylist: Narrative vs poetic ratio → 2.78 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Narrative vs poetic ratio → 2.95 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Narrative vs poetic ratio → 2.77 | challenge clichés; remove dated myth-isms",
+          "Therapist: Narrative vs poetic ratio → 2.4 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Narrative vs poetic ratio → 2.63 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Narrative vs poetic ratio → 2.41 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Narrative vs poetic ratio → 3.05 | flag A→T→A test needs",
+          "Critic: Call-and-response compatibility → 3.47 | tighten weak metaphors; protect clarity",
+          "Stylist: Call-and-response compatibility → 3.43 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Call-and-response compatibility → 3.07 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Call-and-response compatibility → 2.89 | challenge clichés; remove dated myth-isms",
+          "Therapist: Call-and-response compatibility → 3.46 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Call-and-response compatibility → 3.51 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Call-and-response compatibility → 2.91 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Call-and-response compatibility → 3.19 | flag A→T→A test needs",
+          "Critic: Memory activation likelihood → 3.5 | tighten weak metaphors; protect clarity",
+          "Stylist: Memory activation likelihood → 3.98 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Memory activation likelihood → 3.99 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Memory activation likelihood → 3.54 | challenge clichés; remove dated myth-isms",
+          "Therapist: Memory activation likelihood → 3.78 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Memory activation likelihood → 3.83 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Memory activation likelihood → 3.64 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Memory activation likelihood → 4.06 | flag A→T→A test needs",
+          "Critic: Energy return curve → 3.4 | tighten weak metaphors; protect clarity",
+          "Stylist: Energy return curve → 3.25 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Energy return curve → 3.48 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Energy return curve → 3.61 | challenge clichés; remove dated myth-isms",
+          "Therapist: Energy return curve → 3.24 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Energy return curve → 3.32 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Energy return curve → 3.8 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Energy return curve → 3.55 | flag A→T→A test needs",
+          "Critic: Voice character assignability → 3.61 | tighten weak metaphors; protect clarity",
+          "Stylist: Voice character assignability → 3.66 | push glitch/alt textures; modern slang restraint",
+          "Engineer: Voice character assignability → 3.38 | ensure validator compliance & signal chain",
+          "DevilsAdvocate: Voice character assignability → 3.46 | challenge clichés; remove dated myth-isms",
+          "Therapist: Voice character assignability → 3.54 | anchor vulnerability; consent & self-awareness",
+          "PluginArchitect: Voice character assignability → 3.71 | parameterize repeats; automate plate/808 notes",
+          "RightsAgent: Voice character assignability → 3.46 | check originality; avoid protected phrases",
+          "ModelBenchmarkAuditor: Voice character assignability → 3.45 | flag A→T→A test needs"
+        ],
+        "axis_summary": {
+          "Flow density & breath count": 2.71,
+          "Rhyme symmetry across verses": 3.13,
+          "Pacing entropy vs internal consistency": 2.97,
+          "Line length variance vs impact retention": 3.54,
+          "Emotional polarity per stanza": 4.11,
+          "Visualizability of lines": 3.42,
+          "Beat adaptability & melodic scalability": 3.91,
+          "Imagery uniqueness": 3.43,
+          "Audience empathy activation": 3.67,
+          "Semantic overlap with archetypes": 3.11,
+          "Performative contrast potential": 3.34,
+          "Repeatability index (hook & chorus)": 3.97,
+          "Socio-political subtext density": 1.11,
+          "Flow-mode shift frequency": 2.9,
+          "Recursiveness of metaphors": 3.57,
+          "Narrative vs poetic ratio": 2.74,
+          "Call-and-response compatibility": 3.24,
+          "Memory activation likelihood": 3.79,
+          "Energy return curve": 3.46,
+          "Voice character assignability": 3.53
+        },
+        "overall_metric_score_5pt": 3.28
+      },
+      {
+        "timestamp": "2025-09-19T22:01:35.872705+00:00",
+        "topic": "Council enhancement toward masterwork level",
+        "decisions": [
+          "Sharpen metaphor recursion: repeat 'heat/ash/flare' cycle across stanzas.",
+          "Ensure hook syllable counts are singable at 78bpm; keep breath room.",
+          "Bridge phone‑scene uses tighter 2‑line band‑pass for contrast.",
+          "Exit remains whisper with minimal reverb tail to signal collapse."
+        ]
+      }
+    ]
+  },
+  "prompts": {
+    "ust_skeleton_ref": "os.maestro.momoney.knowledgeSpine.v4.2.3.md#USTF",
+    "show_summary": "A melancholic alt‑R&B ballad reframing Icarus as modern heartbreak. Auto‑tuned falsetto glides over sparse 808s; imagery of heat shimmer, ash, and daylight flare punctuates a mantra‑like hook. Phone‑scene interlude provides contrast, then a soft collapse in the exit.",
+    "macro_lyrics_prompt": "[Summary]\nMelancholic alt‑R&B with auto‑tune; minimalist space; Icarus myth recast as modern heartbreak and ambition.\n\n[Theory | Aeolian mode | tonal center A | meter 4/4 | tempo 78bpm | chord color minor‑9]\n\n[Voice | register lead falsetto + bgvs low‑mid | delivery mantra‑fragment hybrid | expression yearning→singe→quiet]\n\n[CREW_TAGS]\nEngineer (808 drop): \"deep cut\"\nStylist (BGV layering): \"ghost echo\"\nPluginArchitect (plate on hook): \"dark plate 1.6s\"\nRightsAgent (originality): \"no quoted myth text\"\n\n[Road-Map]\n[Intro | 4 bars]\n[Verse 1 | 8 bars]\n[Pre | 4 bars]\n[Hook | 8 bars]\n[Verse 2 | 8 bars]\n[Bridge | 4 bars | phone‑scene]\n[Hook | 8 bars]\n[Exit | 4 bars]\n\n[LYRICS BLOCK]\n[Intro | 4 | Lead | floaty]\n\"Boy Icarus, light on my skin\"\n\"Heat in the air, dayburn begins\"\n\n[Verse 1 | 8 | Lead | melancholic]\n\"I climb in a city of mirrored glass\"\n\"Hands on the sky till the knuckles ash\"\n\"Breath runs thin where the jetlines cross\"\n\"Gold turns soft, every gain a loss\"\n\n[Pre | 4 | Lead+BGVs | tense]\n\"Heat rising / breath breaking / sky shaking\"\n\n[Hook | 8 | Lead | auto‑tuned]\n\"Boy Icarus, falling slow\"\n\"Melody cracked, can't let go\"\n\"You said fly safe, I said 'I know'\"\n\"But I lit the fuse just for the glow\"\n\n[Verse 2 | 8 | Lead | fragmented]\n\"Phone light flicker on the ocean black\"\n\"Feathers like pixels never coming back\"\n\"Heart in a kiln, every beat a flare\"\n\"Name in the smoke, hanging in the air\"\n\n[Bridge | 4 | Phone scene | band‑pass 200–5kHz]\n\"Can you hear me now? you're cutting out\"\n\"Signal like wings when they start to doubt\"\n\n[Hook | 8 | Lead | heavy 808 + dark plate]\n\"Boy Icarus, wings undone\"\n\"Gravity sings, I'm the sunburned one\"\n\"All that height for a single tone\"\n\"I chased the light, now I'm flying alone\"\n\n[Exit | 4 | Lead | whisper]\n\"Falling, falling, Boy Icarus\"\n\n[Style] Minimalist, spacious, hook‑forward; limit verse repetition; concrete images (heat shimmer, ash, flare).\n[Timbre] Polished auto‑tune falsetto; ghosted BGVs; dark plate on hooks; mono sub/kick.\n[Performance] Intimate restraint; micro‑dynamics swell on hooks; collapse in exit.",
+    "postprocess_notes": []
+  },
+  "validators": {
+    "macro": {
+      "checks": [
+        "structure_order",
+        "policy_compliance",
+        "length_bounds"
+      ],
+      "status": "done",
+      "findings": [
+        {
+          "audit": "metrics_inference",
+          "notes": [
+            "Keep subtext low; not core to concept.",
+            "Favor poetic fragments over literal plot; preserve clarity in hook."
+          ]
+        }
+      ]
+    },
+    "micro": {
+      "checks": [
+        "grammar",
+        "prosody",
+        "clarity",
+        "dedupe"
+      ],
+      "status": "done",
+      "findings": []
+    },
+    "tactical": {
+      "checks": [
+        "USTF_order",
+        "phone_scene_bp_200_5k",
+        "exit_stanza",
+        "mono_sub_kick",
+        "hook_plate_reverb"
+      ],
+      "status": "done",
+      "findings": []
+    },
+    "log_path": "verification_log.json"
+  },
+  "rights_and_remix": {
+    "rights_package_path": "rights_package.json",
+    "revenue_split_path": "revenue_split.json",
+    "remix_matrix_path": "remix_matrix.json",
+    "remix_pack_dir": "remix_pack/",
+    "notes": []
+  },
+  "hpa": {
+    "targets": [
+      "CLAP",
+      "FAD",
+      "MFCC",
+      "Motif",
+      "DFA",
+      "MOS"
+    ],
+    "metrics_file": "metrics.hpa.v4.2.3.yaml",
+    "hpa_feedback_file": "hpa_feedback.json",
+    "hpa_score_log": "hpa_score.log",
+    "status": "pending"
+  },
+  "dsp": {
+    "specs_file": "dsp_specs.json",
+    "outputs_dir": "dsp_outputs/",
+    "status": "pending"
+  },
+  "e2e": {
+    "testplan_file": "E2E_TestPlan_v4.2.3.md",
+    "result_ingest_template": "E2E_Result_Ingest_Template.md",
+    "validation_report_template": "Validation_Report_Template.md",
+    "status": "pending"
+  },
+  "artifacts": {
+    "state": [
+      "versions.log",
+      "ust_prompt.valid.txt",
+      "verification_log.json",
+      "persona_usage.log",
+      "revenue_split.json",
+      "rights_package.json",
+      "remix_matrix.json",
+      "remix_pack/*",
+      "hpa_feedback.json",
+      "hpa_score.log",
+      "dsp_specs.json",
+      "dsp_outputs/*",
+      "metrics.hpa.v4.2.3.yaml",
+      "benchmark.audio_models.v4.2.3.md",
+      "E2E_TestPlan_v4.2.3.md",
+      "E2E_Result_Ingest_Template.md",
+      "Validation_Report_Template.md"
+    ]
+  },
+  "telemetry": {
+    "manifest": [
+      "[Song | Boy Icarus | v1 | chars 2080 | PASS | alt-R&B, melancholic, auto-tune]"
+    ],
+    "last_telemetry_line": "Boy Icarus | v1 | summary:267 | macro:2080 | validators:PASS | metric:3.28/5"
+  }
+}

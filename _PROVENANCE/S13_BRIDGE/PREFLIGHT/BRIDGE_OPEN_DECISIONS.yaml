@@ -1,0 +1,24 @@
+# BRIDGE_OPEN_DECISIONS — merged register, ALL lanes, nothing auto-resolved
+# Work item: REPAIR.P1N.BRIDGE-INPUT-PREFLIGHT.R1 · 2026-07-19
+# Presentation to operator per M6: batches of 3-5, multiple-choice + Other, context attached.
+batch_1_bridge_acceptance:
+  E-1: {q: "PATCH-01 R-list v0.2 persisted artifact (verbatim U20 payload, hash-bound)", options: [accept, accept-with-corrections, reject-hold-at-transcript-rung]}
+  E-2: {q: "MF-6 disposition", options: [namespace-annotation (PATCH-03 primary), stale-conflict-framing (fallback), other], recommended: namespace-annotation}
+  E-3: {q: "PATCH-02 v5c supersession annotations + PATCH-04 rule cards + PATCH-05 trinity register", options: [accept-all, accept-some (specify), reject]}
+batch_2_method_rulings:
+  E-4: {q: "DISC-12 Yesterday-3 date semantics ('2026-11' token vs April clustering)", options: [april-era, november, unknown-hold], unblocks: [AX-CONTRA-1, axis-registry build]}
+  E-5: {q: "correction density as session-ordering authority", options: [retire (recommended), persist-fresh-definition, other]}
+  E-6: {q: "DISC-09 era authority-inversion supersession statement (documents-primary = era-bound law; runtime-primary = current law; neither projects onto the other era)", options: [adopt-as-drafted, edit, hold]}
+batch_3_register_closes:
+  E-7: {q: "SEG name collision (Feasibility gate / Structural Excellence Gate / Song Excellence Governance)", options: [song-excellence-governance-with-era-notes, needs-source-adjudication, other]}
+  E-8: {q: "SM13-W1-11 8-verb promotion mandate (interrupted, conflicts CR-2 six-verb canon)", options: [close-as-superseded-by-U56, discharge-differently, hold]}
+  E-9: {q: "batch-confirm fold-lane resolve candidates: DISC-01 concurrent · DISC-04 5000≈4990 · DISC-06 v5-b real workspace · DISC-11 5+13 designed coexistence", options: [confirm-all, confirm-some (specify), hold]}
+batch_4_corpus_and_surfaces:
+  E-10: {q: "DISC-13 houseinorder close (recovered in repo) + DISC-10 primary-wrapper designation for the eldrik/clarity Yesterday-1 family (DEC-02-style ruling)", options: [close-13-and-designate-primary, close-13-only, hold]}
+  E-11: {q: "INDEX registration: v5b-discussion export, files07192026claude zip contents, CONS-02 uploads-2026-07-19 set, preflight outputs; + T-series entry for the two dev_session_slice_evaluation files", options: [register-all, register-some, hold]}
+  E-12: {q: "on acceptance: authorize Phase 2 (S13-APPLY.R1) and choose PATCH-01 destination home", options: ["canon/ (new file beside v5c register)", "canon/destination/ subfolder", other]}
+carried_open_no_decision_requested:  # preserved, not elicited now
+  - OPEN-Q5..Q8 (inside R-list payload)
+  - OQ-SEG-1 sub-gate thresholds 70v75 · OQ-SEG-2 SEM 12v13 · syllable 6-10 v 6-11
+  - MF-5 canon zip/pdf unsearchable · O-14 original splitter script · Q1-Q16 PHANTOM (never fabricate)
+  - CB-02/CB-04/CB-06 · ATP pack discharge · SE20 composition · Chimera lineage · patent clock

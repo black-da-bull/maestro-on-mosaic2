@@ -1,0 +1,279 @@
+# Chimera-Indigo v1.0 — node_registry.cinr
+
+## 0. Purpose
+
+The Unified Node Registry (CINR) defines the structure and conventions for all nodes in the Chimera-Indigo operating system. It does not have to list every historical node explicitly, but it must define:
+
+- How nodes are named.
+- How they are categorized.
+- Which fields they contain.
+- How they relate to one another.
+- How scrapper and other modules are allowed to create or modify them.
+
+---
+
+## 1. Node Concepts
+
+### 1.1 Node
+
+A **node** represents a unit of logic, behavior, configuration, or knowledge in the OS. Examples:
+
+- A reasoning pattern.
+- A validation step.
+- A persona behavior rule.
+- A pipeline stage.
+- A state transformation.
+
+### 1.2 Node Class
+
+Nodes are grouped into **classes** by ID prefix:
+
+- `N0x.x` – Kernel & invariants.
+- `N1x.x` – Intake, RECA, and sensing.
+- `N2x.x` – Decomposition, ToT, and problem structuring.
+- `N3x.x` – Tri-Attention and DSRP operations.
+- `N4x.x` – Analytical frameworks (SWOT, 5 Whys, Fishbone).
+- `N5x.x` – Knowledge Spine (USTF, narrative governance, genres).
+- `N6x.x` – SME Engine and persona behaviors.
+- `N7x.x` – E2E pipelines and orchestration.
+- `N8x.x` – Validators and metrics.
+- `N9x.x` – Rights, remix, and DSP relationships.
+- `N10.x` – Results ingest and reporting.
+- `N11.x` – Evidence and forensic modes.
+- `N12.x` – Scrapper and state capture.
+- `N13.x` – Governance, bias, and risk.
+- `N14.x` – Runtime decision engine.
+- `N15.x` – Optimization and meta-learning.
+- `N16.x+` – Reserved for future ranges and subsystems.
+
+These ranges can be extended in future versions, but the above meanings must remain stable.
+
+---
+
+## 2. Node Schema
+
+All nodes share a common schema. This file defines the canonical template.
+
+```yaml
+node_id: "N7.3"                 # unique identifier
+class: "pipeline"               # high-level class label
+title: "E2E: USTF Generation"   # short human-readable name
+
+description: |
+  Concise but precise description of what this node is responsible for.
+  May include assumptions, limitations, and dependencies.
+
+inputs:
+  - type: "context"
+    ref: "session.intent"
+  - type: "artifact"
+    ref: "creative_brief"
+
+outputs:
+  - type: "artifact"
+    ref: "ustf_prompt"
+  - type: "log"
+    ref: "node_trace"
+
+parents:
+  - "N7.1"
+children:
+  - "N7.4"
+
+status: "active"                # active | deprecated | experimental
+version_introduced: "1.0.0"
+version_last_modified: "1.0.0"
+
+invariants:
+  - "must respect Lyrics-Lock when generating prompts"
+  - "must not violate kernel safety policies"
+
+evidence:
+  - type: "transcript"
+    ref: "session_2025-11-20_segment_043"
+  - type: "artifact"
+    ref: "spec_ustf_v1"
+
+tags:
+  - "pipeline"
+  - "suno"
+  - "ustf"
+```
+
+Notes:
+
+- `evidence` is especially important for forensic use: it shows where the node’s definition comes from.
+- `invariants` must be consistent with the kernel invariants.
+
+---
+
+## 3. Node Class Definitions
+
+### 3.1 N0x.x — Kernel & Invariants
+
+- Nodes that define how the OS thinks, reasons, and enforces rules.
+- Example responsibilities:
+  - No-summarization logic.
+  - Non-regression guarantees.
+  - Q-A-F handling.
+
+### 3.2 N1x.x — Intake & Sensing
+
+- Capture user intent, goals, constraints.
+- Map natural language requests to internal structures (projects, tasks, artifacts).
+
+### 3.3 N2x.x — Decomposition & Structuring
+
+- Recursive breakdown of tasks into sub-tasks.
+- Decision trees and tree-of-thoughts.
+- Links between problem statements, hypotheses, and plans.
+
+### 3.4 N3x.x — Attention & DSRP
+
+- Nodes that encapsulate Tri-Attention and DSRP passes.
+- Responsible for multi-perspective analysis and relational mapping.
+
+### 3.5 N4x.x — Analytical Frameworks
+
+- Nodes implementing SWOT, 5 Whys, Fishbone, and related patterns.
+- May be reused across creative, OS, and evidence tasks.
+
+### 3.6 N5x.x — Knowledge Spine
+
+- USTF rules.
+- Narrative governance.
+- Genre, voice, and persona catalogs.
+- Error-mode documentation.
+
+### 3.7 N6x.x — SME Engine
+
+- Persona roles and behaviors.
+- Round-robin patterns.
+- Bias mitigation and CRITIC-style review.
+
+### 3.8 N7x.x — Pipelines
+
+- High-level flows (e.g., Intake → SWOT → ToT → USTF → Validators → Rights → Remix → HPA → DSP → Packaging → Version Log).
+- Nodes may represent phases or specific steps within phases.
+
+### 3.9 N8x.x — Validators
+
+- Audio metrics.
+- Rights and attribution checks.
+- HPA scoring.
+- DSP integrity checks.
+
+### 3.10 N9x.x — Rights & DSP
+
+- Relationships between rights, revenue splits, remixes, and DSP deliverables.
+
+### 3.11 N10.x — Results Ingest & Reporting
+
+- Nodes that describe how validator results are ingested and reported.
+- Tied to state and provenance models.
+
+### 3.12 N11.x — Evidence & Forensic
+
+- Nodes defining how evidence is collected, organized, and presented.
+- Used heavily in SSA/VA or legal/documentation contexts.
+
+### 3.13 N12.x — Scrapper
+
+- Nodes that define the scrapper engine behavior, parsing, mapping, and state capsule generation.
+
+### 3.14 N13.x — Governance & Risk
+
+- Nodes for bias audits, risk heatmaps, and governance policies.
+
+### 3.15 N14.x — Runtime Decision Engine
+
+- Routing between product modes and pipelines.
+- Selection logic for which subsystem to engage.
+
+### 3.16 N15.x — Optimization & Meta-Learning
+
+- Nodes that capture lessons learned, KPI improvements, and meta-reasoning.
+
+---
+
+## 4. Example Node Definitions
+
+Below are conceptual examples of nodes that might exist in a fully populated CINR.
+
+### 4.1 N0.1 — Kernel: No-Summarization Rule
+
+- Ensures that canonical artifacts are never replaced by lossy summaries.
+- Invariants:
+  - Any compression must be explicitly marked as a view, not a replacement.
+  - Evidence pointers must remain intact.
+
+### 4.2 N1.1 — Intake: RECA Extraction
+
+- Implements the RECA pattern for new requests.
+- Inputs:
+  - Raw user message.
+  - Current session context.
+- Outputs:
+  - Structured request record with context, constraints, and desired artifacts.
+
+### 4.3 N7.1 — Pipeline: E2E Scaffold
+
+- Describes the canonical pipeline stages and order.
+- Children:
+  - N7.2 (Intake+SWOT).
+  - N7.3 (ToT and structuring).
+  - N7.4 (USTF generation).
+  - N7.5 (Validators).
+  - N7.6 (Rights & Remix).
+  - N7.7 (HPA & DSP).
+  - N7.8 (Packaging & Versioning).
+
+---
+
+## 5. Population Rules
+
+### 5.1 Manual Population
+
+- During OS design, nodes can be manually defined and edited by an architect.
+- Manual edits must be recorded in the change ledger.
+
+### 5.2 Scrapper-Driven Population
+
+- chimera-scrapper reads transcripts and artifacts.
+- It creates or updates nodes where new behavior, rules, or invariants appear.
+- Each scrapper action must:
+  - Provide evidence references.
+  - Update `version_last_modified`.
+  - Avoid overwriting fields without clear justification.
+
+### 5.3 Inference vs Evidence
+
+- Direct evidence:
+  - Node definitions based on literal text from conversations or files.
+- Inferred structure:
+  - Nodes that represent patterns recognized across many Q-A-F cycles.
+- Inferred nodes must be labeled so they can be re-examined later.
+
+---
+
+## 6. Governance
+
+### 6.1 Status and Lifecycle
+
+- **active** – used in current OS behavior.
+- **deprecated** – scheduled for removal; kept for compatibility or historical record.
+- **experimental** – under test; may change or be removed.
+
+### 6.2 Editing Constraints
+
+- Kernel and invariants nodes (N0x.x) require the strongest justification to modify.
+- Pipelines and validators must be altered carefully to avoid breaking existing workflows.
+
+### 6.3 Audit and Review
+
+- Periodic review of CINR ensures:
+  - No orphaned nodes.
+  - No contradictory invariants.
+  - Nodes reflect current best practices and research.
+
+This node registry file defines the rules of the game for all Chimera-Indigo nodes. The actual population of nodes is the job of scrapper, architects, and future sessions working together.

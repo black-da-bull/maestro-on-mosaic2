@@ -1,0 +1,331 @@
+
+
+=== Page 1 ===
+Project Chimera
+Growth to Version 5
+Amazon-style narrative report  Prepared December 15, 2025
+Executive Summary
+Over this dialogue-driven build, the system evolved from a prompt-only exchange into a governed, lossless
+specification pipeline (Technical.UST → gates → Creative.UST → platform outputs). Version 5 is defined by
+strict formatting and parsing guardrails (speaker attribution, sFX containment, comma discipline), a
+gospel-correct 6/8th timing model, and a high-fidelity lead vocalist persona designed to stress-test realism.
+The workflow is now reversible: decisions are captured as state changes, and failures can be traced back to
+specific spec addresses for repair.
+Scope and Deliverables
+This report documents all hard-coded changes through Version 5, including decision-tree state capture, a
+Phase 0–5 operational workflow, and appended artifacts: Artist Bio, Show Summary, Creative.UST surface
+spec, a Technical.UST excerpt with gates summary, SEG detail, G-Card evidence mapping, and the Sonic
+Excellence 20 matrix.
+Version History and Hard-coded Changes
+Version
+What changed (hard-coded)
+v1
+Single-shot prompting. Minimal structure guidance. No governance, no gates.
+v2
+Introduced UST-first thinking and Maestro OS compilation model. Lyrics-Lock elevated to a non-negotiable law.
+v3
+Creative.UST surface format stabilized: section headers become meta containers; stage direction moved into sFX lines; speaker attribution migrated from colon labels to tokens/adlibs.
+v4
+Meter corrected to gospel 6/8th with dotted-quarter feel. Added prosody grid (11-syllable target via delivery rules). Added AAVE pronunciation directives. Added anti-pattern allowances as intentional realism markers.
+v5
+Character-budget discipline enforced. Non-lyric text compressed first. Outro and End preserved. Added three-factor Suno contribution strategy (Bio + Summary + Creative.UST) and curving weights by observed failure mode.
+Decision Tree and State Change Capture
+Decision Tree (state change capture)
+ROOT: Output Fidelity
+■■ If lyric drift risk
+■  ■■ Enforce Lyrics-Lock as HARD law
+■  ■■ Move all non-lyric direction into sFX lines
+■■ If speaker attribution confusion
+■  ■■ Use bracket performer tokens only for true co-leads
+■  ■■ Treat choir responses as adlibs in parentheses
+■■ If Suno parsing glitches
+■  ■■ Remove commas outside quoted lyric lines
+■  ■■ Keep headers as succinct descriptive sentences
+■  ■■ Avoid tag-cloud lists in section headers
+■■ If meter or groove drifts
+
+
+=== Page 2 ===
+■  ■■ Hardcode meter as 6/8th
+■  ■■ Specify dotted-quarter gospel roll
+■  ■■ Define stop-time entry length
+■■ If vocal persona drift
+■  ■■ Encode lead vocal biometrics and technique map
+■  ■■ Provide AAVE pronunciation map for key words
+■■ If character limit exceeds 4999
+   ■■ Compress non-lyric sections first
+   ■■ Keep Outro and End uncut
+   ■■ Shorten sFX text while retaining intent
+Phase 0–5 Workflow
+Phase 0: Kernel and Governance
+ Declare global laws: Lyrics-Lock, addressability, reversibility, nulls-are-signal, and no output without gate
+pass.
+ Select compilation model: forward compile (spec → prompt) plus reverse compile (output → deltas →
+spec).
+ Instantiate the three contributing factors as separate artifacts: Artist Bio (no song data), Show Summary
+(song data), Creative.UST (full control spec).
+Phase 1: Context Synthesis
+ Ingest user persona and target sound identity.
+ Normalize requirements into non-negotiables and negotiables.
+ Draft initial structure map and instrumentation roles.
+Phase 2: Spec Authoring
+ Author Technical.UST (canonical) and Creative.UST (Suno-surface) from the same intent.
+ Run SME round-robin: Musicologist, Producer, Linguist, Systems, Strategist.
+ Apply deltas and record decisions and anti-pattern allowances.
+Phase 3: Validation and Gates
+ Run SEG feasibility checks: form, temporal integrity, spectral feasibility, human execution limits, policy
+enforcement.
+ Run G-Card scoring with evidence bindings to UST addresses and require aggregate ≥ 7.0.
+ Run SE20 baseline checklist and capture any WARN items with remediation plans.
+Phase 4: Compilation Outputs
+ Compile Artist Bio (no song data), Show Summary, and Creative.UST with strict character budget handling.
+ Perform parsing safety pass: comma audit, header sanity, adlib conventions, Outro+End preservation.
+ Set curving weights for Suno: Bio, Summary, UST, based on observed failure mode (voice drift vs structure
+drift vs arrangement drift).
+Phase 5: Iteration Loop
+ Generate renders and measure bars-per-line if needed.
+ Reverse compile observed failures into micro-deltas on Creative.UST and relevant Technical.UST
+addresses.
+
+
+=== Page 3 ===
+ Re-run gates if structural or policy changes occur; version and archive each stable release.
+
+
+=== Page 4 ===
+Artifact A: Artist Bio (2K, no song data)
+Born in a small Southern town and raised in the heat of a Baptist church sanctuary, mo$ is a contralto with
+near-baritone grit and a smoke-and-bourbon warmth that feels lived in. Her voice moves like a working
+instrument: grounded in gut-sung testimony, refined by years of operatic discipline, and fearless enough to
+bend microtones, slide into fry, or drop from a controlled belt to a whispered confession without losing the
+story.
+As an artist, she treats tradition as a backbone, not a cage. She carries the spiritual urgency of old gospel, the
+bruised truth of the blues, and the porch-to-juke-joint realism of Southern music culture, while letting modern
+Southern rhythm and Houston pocket inform the way the music breathes. Her listening map runs from Robert
+Johnson’s haunted minimalism to Hank Jr.’s hard-edged drawl and the wild Southern swagger of
+Skynyrd—then flips into funk and jazz discipline for timing, harmony, and touch.
+mo$ is most at home chasing authenticity in bars, juke joints, and late-night jam sessions, learning the room
+the way a preacher learns a congregation. She writes and performs to make the sacred feel immediate: lived
+faith, hard days, redemption, and the communal electricity of call-and-response. The production philosophy is
+simple—human first, artifacts last—capturing breath, edge, and space on purpose, then shaping it with
+precision. She’s not chasing perfection as polish; she’s chasing precision as truth. That means clear diction
+when it counts, intentional grit when it matters, and dynamics that move like real breath. In every project, mo$
+aims to honor the elders, advance the lineage, and leave enough open space for listeners to hear themselves
+inside the music. The result is a catalog that feels southern, fearless, and unmistakably hers.
+Artifact B: Co-created Show Summary
+We co created a 6/8th Southern gospel blues record with Texas grit and a Houston pocket inside the swing.
+Lead is a small town Black woman contralto with baritone grit and smokey warmth from Southern Baptist
+roots plus operatic control for micro nuance. Tribal drums drive the roll and a 3 sax frontline is the signature
+where fast attack alto cuts and runs tenor answers with body and bass sax anchors low mids without masking
+the voice. Rhodes and Hammond frame the worship air with sparse blues guitar punctuation. The arc moves
+from warning to testimony to a full worship peak on the name Jesus then returns to a warm reflective outro
+with spinback and vinyl hiss. Mix intent is live room realism with mono bass dark plate hooks phone safe
+mids and no shimmer.
+
+
+=== Page 5 ===
+Artifact C: Creative.UST (Suno surface spec)
+[Theory]
+[mode | minor blues gospel WITH lift color only]
+[meter | 6/8th]
+[tempo | dotted quarter gospel roll WITH Texas sway]
+[key/tonal_center | D minor]
+[chord_color | i iv V WITH sus4 add9 13 WITH bII passing]
+[genre(s) | Southern Gospel Blues {primary} WITH Houston pocket AND tribal percussion]
+[mood | warning THEN testimony THEN worship THEN release]
+[bpm | 72]
+[Voices]
+[Vocalist: Lead]
+[gender | female] [register | low mid contralto WITH baritone grit]
+[delivery | church gut singer WITH operatic control]
+[expression | smokey warmth THEN fierce praise THEN hush]
+[articulation | crisp on house order Jesus sweetest fire]
+[capabilities | belt to whisper WITH fry WITH micro bends]
+[pronunciation | AAVE Jesus=JEE zus order=OR duh coming=CUH min sweetest=SWEE tist Holy Ghost=HO lee GOHST]
+[Vocalist: BGV1]
+[gender | mixed choir] [register | low mid bed] [delivery | hum AND short shouts]
+[Style]
+[genre | Gospel 6/8th AND Southern blues] [aesthetic | raw live room]
+[intent | sacred urgency then praise] [texture | organic warmth WITH no shimmer]
+[focus | one lead WITH 3 sax WITH tribal drums]
+[Timbre]
+[drum tone | tribal toms AND hand drums AND shakers WITH brush intro outro]
+[bass tone | warm electric WITH mono low end]
+[guitar tone | sparse blues fills]
+[keyboard tone | Rhodes AND Hammond WITH organ thinned at peaks]
+[fx palette | short room AND dark plate hooks AND light slap bridge AND vinyl hiss]
+[vocal tone | close mic grit WITH clean endings]
+[sax tone | fast attack alto AND tenor answers AND bass sax anchor WITH clear lanes]
+[Performance]
+[execution | hyper human church feel WITH operatic micro control]
+[gesture | sax answers phrase ends AND choir answers as adlibs]
+[rhythm handling | 6/8th roll WITH behind beat comfort]
+[stop_time | 1 bar before worship entry]
+[prosody | target 11 syllables per 2 bars WITH breath at bar 2 beat 5]
+[anti_patterns | breath AND edge crack THEN recover]
+[clarity | duck sax under Jesus AND sweetest AND thin organ under choir peaks]
+[Post-production]
+[final mix and master | mono bass AND dark plate hooks AND phone mono 200–5k AND spinback exit AND warm room tail AND no shimmer]
+[Road-Map]
+[Intro | Verse A | Hook | Break | Verse B | Hook | Bridge | Worship Hook | Outro | End]
+[LYRICS BLOCK]
+[Intro | 8 bars | Lead | slow build WITH sax swells]
+[ ** sFX: Rhodes WITH organ swell WITH deep bass WITH brushed snare WHILE choir hums **]
+"Ohhh, you gotta get ready now… (mmm-hmm)"
+"Ohhh, no man knows the day or the hour…"
+[Verse A | 16 bars | Lead | stripped warning WITH sax stabs]
+"Get your house in order, oh do it today"
+"Get your house in order, oh do it right away"
+
+
+=== Page 6 ===
+"For Jesus is coming, no man knows where or when"
+"Get your house in order, for He’s coming back again"
+[Hook | 8 bars | Lead | call and response WITH choir adlibs]
+"Get your house in order..." ("In order!")
+"Oh, don’t wait too late..." ("Don’t wait!")
+"For Jesus is coming..." ("Coming!")
+"He's coming back again"
+[ ** sFX: blues guitar WITH organ swell WHILE choir hums **]
+[Break | 4 bars | Band | instrumental breath]
+[ ** sFX: sax trio answers THEN reset **]
+[Verse B | 16 bars | Lead | signs AND testimony cues]
+"There’s earthquakes, hurricanes, famines, and disease"
+"Can’t you hear the Lord is callin’?"
+"You better take heed..."
+"So many homeless, lost out in the cold"
+"But my God’s got mansions"
+"More precious than gold"
+[Hook | 8 bars | Lead | repeat hook WITH stronger answers]
+"Get your house in order, oh do it today"
+"Get your house in order, oh do it right away"
+"For Jesus is coming, no man knows where or when"
+"Get your house in order, for He’s coming back again"
+[Bridge | 8 bars | Lead | testimony breakdown]
+[ ** sFX: Rhodes and bass pulse WITH half time feel inside 6/8th WITH whisper and fry **]
+"Ohh, but there’s something, something about His name..."
+[ ** sFX: choir hum rises AND drums build into entry **]
+[Worship Hook | 16 bars | Lead | worship call and response WITH 1 bar stop time entry]
+[ ** sFX: 1 bar stop time THEN organ swell WITH deep bass WITH light hi hats **]
+"Something about the name Jesus,"
+"Something about the name Jesus,"
+"It is the sweetest name I know..."
+"Oh, how I love the name Jesus,"
+"Oh, how I love the name Jesus,"
+"It is the sweetest name I know..."
+[ ** sFX: lead pushes THEN choir responds **]
+"Some say it’s like fire shut up in my bones…" ("Fire in my bones!")
+"Oh, the Holy Ghost is moving, I can feel it strong…" ("He won’t leave us alone!")
+[ ** sFX: drums lift AND sax counterpoint tightens **]
+"Something about the name Jesus,"
+"Something about the name Jesus,"
+"It is the sweetest name I know…"
+[Outro | 8 bars | Lead | return to softness WITH choir echo]
+[ ** sFX: Rhodes WITH deep bass WITH light taps WITH sax fade **]
+"Get your house in order, oh do it today…"
+"Get your house in order, oh don’t delay…"
+("For He’s coming… back… again…")
+(** DJ spinback **) (** vinyl hiss **)
+[End]
+
+
+=== Page 7 ===
+Artifact D: Technical.UST excerpt and Gates Summary
+technical_ust:
+  kernel:
+    system_name: TECHNICAL.UST
+    system_version: CANON.V1
+    system_mode: non_destructive_lossless
+    compilation_model: forward_plus_reverse
+    governance_model: SEG_plus_GCARD_enforced
+    global_laws:
+      lyrics_lock: HARD
+      addressability_required: HARD
+      reversibility_required: HARD
+      nulls_are_signal: HARD
+      no_suno_output_without_pass: HARD
+  THY:
+    THY.K3.S1_meter: 4/4  -> revised to 6/8th in Creative.UST surface
+  SEG:
+    SEG.K5.S5_pass_fail_verdict: PASS_WITH_WARN (bars_per_line unmeasured)
+  G_CARD:
+    G.K6.S3_aggregate_score: 8.44
+    G.K6.S5_promotion_eligibility: PASS
+SEG Detail (interpretation of PASS_WITH_WARN)
+SEG passed feasibility with one warning: bars-per-line measurement is deferred until the first render. This is
+compliant with the nulls-are-signal law: unknown measurements remain null until empirically measured, then
+written back as a reversible delta. All other SEG domains are mitigated in-spec through spectral lane
+allocation (lead vocal priority, organ thinning at peaks, bass-sax lane control) and temporal controls
+(stop-time entry).
+G-Card Detail (evidence-bound scoring)
+Aggregate score 8.44 passed the 7.0 promotion threshold. Evidence bindings reference exact UST addresses,
+ensuring auditability. High-scoring domains include narrative coherence, performance believability, and
+cultural integrity. Differentiation is driven by the 3-sax frontline with tribal percussion in a gospel 6/8th
+pocket, plus the contralto persona spec.
+Sonic Excellence 20 Matrix
+Item
+Status
+Evidence / note
+SE20.K1.S1 tonal clarity
+PASS
+THY.K1 tonic_center + chord_color stable in D minor.
+SE20.K1.S2 harmonic interest
+PASS
+Gospel colors + bII passing tension for sax.
+SE20.K1.S3 rhythmic intent
+PASS
+6/8th roll + dotted-quarter feel + stop-time entry.
+SE20.K1.S4 form purpose
+PASS
+Intro warning -> hooks -> testimony -> worship -> release.
+SE20.K1.S5 tension release logic
+PASS
+Bridge drop then worship peak then soft outro.
+SE20.K2.S1 narrative arc
+PASS
+Warning, signs, testimony, worship, closing admonition.
+SE20.K2.S2 internal rhyme density
+N/A
+Lyrics locked; no rewrite permitted.
+SE20.K2.S3 bar math accuracy
+WARN
+Bars per line pending measurement after first render.
+SE20.K2.S4 line functionality
+PASS
+Call/response lines mapped to adlibs; clear roles.
+SE20.K2.S5 memorability
+PASS
+Repeated hook phrases; worship refrain strong.
+
+
+=== Page 8 ===
+SE20.K3.S1 casting accuracy
+PASS
+Contralto grit + operatic control defined and reinforced.
+SE20.K3.S2 register strategy
+PASS
+Chest resonance verses -> belt peak -> hush outro.
+SE20.K3.S3 harmony intelligence
+PASS
+Choir limited to hum + short shouts to avoid masking.
+SE20.K3.S4 adlib discipline
+PASS
+Adlibs only in parentheses; no second lead.
+SE20.K3.S5 articulation intent
+PASS
+AAVE pronunciation map + key-word clarity rules.
+SE20.K4.S1 build control
+PASS
+Stop-time entry + controlled lift.
+SE20.K4.S2 drop impact
+PASS
+Bridge stripdown + whisper/fry as contrast.
+SE20.K4.S3 sectional contrast
+PASS
+Verse stripped vs worship dense.
+SE20.K4.S4 density modulation
+PASS
+Organ thinned at peaks; sax lanes defined.
+SE20.K4.S5 negative space use
+PASS
+Phrase-end answers + breath windows + stop-time.

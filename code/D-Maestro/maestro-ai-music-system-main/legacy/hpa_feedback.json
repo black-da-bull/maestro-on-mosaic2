@@ -1,0 +1,14 @@
+{
+  "targets": [
+    "CLAP",
+    "FAD",
+    "MFCC",
+    "Motif",
+    "DFA",
+    "MOS"
+  ],
+  "status": "pending-simulated",
+  "notes": [
+    "Run A\u2192T\u2192A when audio is rendered"
+  ]
+}

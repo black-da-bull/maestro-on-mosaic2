@@ -1,0 +1,50 @@
+{
+  "chains": [
+    {
+      "id": "CHAIN-UST-STRUCTURE",
+      "source": "SYSTEM_PROMPT + KNOWLEDGE_SPINE",
+      "consumers": [
+        "ust_prompt.valid.txt",
+        "Validation_Report_Template.md",
+        "verification_log.json"
+      ],
+      "variants": [
+        "density_tactics",
+        "negative_space_windows",
+        "section_naming"
+      ]
+    },
+    {
+      "id": "CHAIN-EVAL-HPA",
+      "source": "metrics.hpa.v4.2.3.yaml",
+      "consumers": [
+        "hpa_score.log",
+        "Validation_Report_Template.md"
+      ]
+    },
+    {
+      "id": "CHAIN-A2T2A",
+      "source": "benchmark.audio_models.v4.2.3.md",
+      "consumers": [
+        "verification_log.json",
+        "hpa_feedback.json"
+      ]
+    },
+    {
+      "id": "CHAIN-RIGHTS-REVENUE",
+      "source": "rights_package.json + revenue_split.json",
+      "consumers": [
+        "packaging",
+        "versions.log"
+      ]
+    },
+    {
+      "id": "CHAIN-REMIX",
+      "source": "remix_matrix.json",
+      "consumers": [
+        "remix_pack/*",
+        "dsp_outputs/*"
+      ]
+    }
+  ]
+}

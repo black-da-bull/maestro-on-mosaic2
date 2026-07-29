@@ -1,0 +1,30 @@
+pack_id: MAESTRO.ZERO_DAY.TRANSFER.V0_1
+baseline_id: MAESTRO_ZERO_DAY_BASELINE_2026_05_27_A
+status: PROVISIONAL_ZERO_DAY_BASELINE
+mainline_status: PROTECTED
+product:
+  name: Maestro on Mosaic
+  type: conversational_language_based_music_production_operating_environment
+  slogan: "Your vision. Our mission."
+planes:
+  maestro:
+    type: customer_owned_music_application
+    metaphor: virtual_record_label
+  mosaic:
+    type: host_platform
+    analogy: cloud_runtime_platform
+  dev_environment:
+    type: iterative_build_and_experiment_space
+  forensics:
+    type: architecture_extraction_and_reconstruction_layer
+hard_rules:
+  - do_not_conflate_planes
+  - do_not_promote_without_operator_F
+  - do_not_summarize_substrate
+  - preserve_scars_as_operational_intelligence
+  - treat_load_knowledge_load_maestro_hi_maestro_as_bootstrap
+stash:
+  tangent_v5_beauty_ui_cli_reflection:
+    status: stashed_not_merged
+    merge_rule: operator_F_required
+next_action: create_MAESTRO_ON_MOSAIC_RUNTIME_BOOTSTRAP_v0.1

@@ -1,0 +1,17 @@
+{
+ "source": "/mnt/data/maestro_prompt_evolution_run_v2/source/direct/local_session_export.txt",
+ "source_md5": "0c4f34affb534ede862e26ae09108c44",
+ "source_bytes": 30350,
+ "normalized_chars": 29715,
+ "normalization": "CRLF/CR->LF (477 CR chars); character-lossless, offsets index normalized text (MF-1)",
+ "census": {
+  "preamble": 1,
+  "user": 0,
+  "assistant": 0
+ },
+ "R1_tail_recovery_candidates": [],
+ "R2_attachment_events": [],
+ "R3_inner_transcript_marker_hits": 0,
+ "R3_samples": [],
+ "note": "R1/R2 require human confirmation before reclassification (never auto-promote); R3 hits inside assistant text are usually the inner transcript quoting itself."
+}

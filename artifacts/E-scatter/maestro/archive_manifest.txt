@@ -1,0 +1,12 @@
+Archive contents:
+- Day 3 Dev Chat.md (1447516 bytes)
+- Maestro Personas aka the subagents.md (128690 bytes)
+- MoMoney Maestro OS v4.5.2 — MONOLITHIC PROMPT.md (83266 bytes)
+- MoMoney_Maestro_OS_Knowledge_Base_Heuristics.md.md (10754 bytes)
+- conversation_foil-based-tiered-system_2026-04-03-1252.agi.md (889686 bytes)
+- conversation_maestro-chat---clarity_2026-04-03-1250.agi.md (3340910 bytes)
+- conversation_os-dev_2025-09-22-1447.agi.json (1325718 bytes)
+- conversation_os-dev_2025-09-22-1602.agi.md (1281622 bytes)
+- eldrik.txt.txt (3577046 bytes)
+- today-dev_chat_window.md (729640 bytes)
+- today-work_window.md (377373 bytes)

@@ -1,0 +1,48 @@
+{
+  "title": "Vanity\u2019s Seed",
+  "tempo_bpm": 74,
+  "feel": "swung, half-time bounce",
+  "duration_suggested_sec": 225,
+  "sections": [
+    {
+      "name": "Intro - Porch ambience",
+      "start": "0:00",
+      "end": "0:18"
+    },
+    {
+      "name": "Verse 1 - Whisper + slide",
+      "start": "0:18",
+      "end": "0:54"
+    },
+    {
+      "name": "Bridge A - Ghost harmonies",
+      "start": "0:54",
+      "end": "1:06"
+    },
+    {
+      "name": "Verse 2 - Hummed underlay",
+      "start": "1:06",
+      "end": "1:42"
+    },
+    {
+      "name": "Bridge B - Whispered soul line",
+      "start": "1:42",
+      "end": "1:58"
+    },
+    {
+      "name": "Choir Refrain (hook from Bridge lines)",
+      "start": "1:58",
+      "end": "2:26"
+    },
+    {
+      "name": "+2 semitone lift \u2192 Final Refrain",
+      "start": "2:26",
+      "end": "3:10"
+    },
+    {
+      "name": "Chopped & Screwed Outro (slow-roll)",
+      "start": "3:10",
+      "end": "3:45"
+    }
+  ]
+}

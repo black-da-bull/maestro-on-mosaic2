@@ -1,0 +1,30 @@
+{
+  "pack_id": "MAESTRO.ZERO_DAY.TRANSFER.V0_1",
+  "emission_date": "2026-05-27",
+  "status": "PROVISIONAL_ZERO_DAY_BASELINE",
+  "mainline_status": "PROTECTED",
+  "stashed_tangent": "tangent_v5_beauty_ui_cli_reflection",
+  "next_recommended_action": "create_MAESTRO_ON_MOSAIC_RUNTIME_BOOTSTRAP_v0.1",
+  "files": [
+    {
+      "filename": "README_TRANSFER_PACK.md",
+      "sha256": "12c14e4c9247af46f387ea5c552f138bc506dee9fee2cbba2e049e64f6f96181",
+      "bytes": 12889
+    },
+    {
+      "filename": "runtime_state.yaml",
+      "sha256": "47c3db2798579bdfbf9895c46d8e1adc3ea6f408519fb573baaefedd02da34b9",
+      "bytes": 1003
+    },
+    {
+      "filename": "PEER_REVIEW.md",
+      "sha256": "d1e81a46d1d55ea0e0252a4242ac5c97fc8093dc701614a1e46766f65af604ed",
+      "bytes": 525
+    },
+    {
+      "filename": "RESUME_PROMPT.txt",
+      "sha256": "14e55635da609161e698b31bdaba09598481e5156c12b196d25903c360ef0b3a",
+      "bytes": 658
+    }
+  ]
+}

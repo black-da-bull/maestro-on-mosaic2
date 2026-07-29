@@ -1,0 +1,17 @@
+V1 FLIP SWEEP — 2026-07-19, post-apply (S13-APPLY.R1 objective gate)
+Method: word-boundary grep, scope = persisted registers (reconstruction/, canon/, drafts/),
+transcripts (sources/) and _PROVENANCE excluded. Terms: R-RT-QAF-01, R-RT-PD-01,
+CONFIG B FIRM, R-LIST/R-list v0.2.
+
+BEFORE (R1 2026-07-19 + R2 2026-07-19, independently): ZERO genuine occurrences in any
+persisted artifact — the session-13 FIRM canon existed only inside transcripts (finding V1).
+
+AFTER (this run, on-device):
+  artifacts/D-Maestro/canon/history/session13/README_POINTER.md
+  artifacts/D-Maestro/canon/session13_runtime_rules.md
+  reconstruction/replay-backed/session13/R_LIST_v0_2.md
+
+VERDICT: PASS — the persistence sweep flipped from zero-found to found. Every persisted entry
+is source-anchored (payload md5 52381c1e13a25775f5491a7090a7f06d; anchors in file headers);
+operator acceptance recorded per item (LEDGER DEC-09..17, M12–M15); LEDGER/OPEN/STATE/INDEX
+updated with rungs named. The session→Maestro update loop has executed once, end to end.

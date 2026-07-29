@@ -1,0 +1,4986 @@
+[
+  {
+    "event_id": "PER2-00001",
+    "source_file": "o16e/thread_distillates/TH-01_begin_gpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00002",
+    "source_file": "o16e/thread_distillates/TH-01_begin_gpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00003",
+    "source_file": "o16e/thread_distillates/TH-01_begin_gpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00004",
+    "source_file": "o16e/thread_distillates/TH-01_begin_gpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00005",
+    "source_file": "o16e/thread_distillates/TH-01_begin_gpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00006",
+    "source_file": "o16e/thread_distillates/TH-01_begin_gpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00007",
+    "source_file": "o16e/thread_distillates/TH-01_begin_gpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00008",
+    "source_file": "o16e/thread_distillates/TH-01_begin_gpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00009",
+    "source_file": "o16e/thread_distillates/TH-01_begin_gpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00010",
+    "source_file": "o16e/thread_distillates/TH-01_begin_gpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00011",
+    "source_file": "o16e/thread_distillates/TH-02a_chatgpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00012",
+    "source_file": "o16e/thread_distillates/TH-02a_chatgpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00013",
+    "source_file": "o16e/thread_distillates/TH-02a_chatgpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00014",
+    "source_file": "o16e/thread_distillates/TH-02a_chatgpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00015",
+    "source_file": "o16e/thread_distillates/TH-02a_chatgpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00016",
+    "source_file": "o16e/thread_distillates/TH-02a_chatgpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00017",
+    "source_file": "o16e/thread_distillates/TH-02a_chatgpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00018",
+    "source_file": "o16e/thread_distillates/TH-02a_chatgpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00019",
+    "source_file": "o16e/thread_distillates/TH-02a_chatgpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00020",
+    "source_file": "o16e/thread_distillates/TH-02a_chatgpt.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00021",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00022",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00023",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00024",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00025",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00026",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00027",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00028",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00029",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00030",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00031",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00032",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00033",
+    "source_file": "o16e/thread_distillates/TH-02b_chatgpt1.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00034",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00035",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00036",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00037",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00038",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00039",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00040",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00041",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00042",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00043",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00044",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00045",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00046",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00047",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00048",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00049",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00050",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00051",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00052",
+    "source_file": "o16e/thread_distillates/TH-03_momoney_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00053",
+    "source_file": "o16e/thread_distillates/TH-05a_gemini_gem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00054",
+    "source_file": "o16e/thread_distillates/TH-05a_gemini_gem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00055",
+    "source_file": "o16e/thread_distillates/TH-05a_gemini_gem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00056",
+    "source_file": "o16e/thread_distillates/TH-05a_gemini_gem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00057",
+    "source_file": "o16e/thread_distillates/TH-05a_gemini_gem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00058",
+    "source_file": "o16e/thread_distillates/TH-05a_gemini_gem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00059",
+    "source_file": "o16e/thread_distillates/TH-05a_gemini_gem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00060",
+    "source_file": "o16e/thread_distillates/TH-05a_gemini_gem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00061",
+    "source_file": "o16e/thread_distillates/TH-05a_gemini_gem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00062",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00063",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00064",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00065",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00066",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00067",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00068",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00069",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00070",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00071",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00072",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00073",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00074",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00075",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00076",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00077",
+    "source_file": "o16e/thread_distillates/TH-05b_1213.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00078",
+    "source_file": "o16e/thread_distillates/TH-07_taxonomy.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00079",
+    "source_file": "o16e/thread_distillates/TH-07_taxonomy.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00080",
+    "source_file": "o16e/thread_distillates/TH-07_taxonomy.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00081",
+    "source_file": "o16e/thread_distillates/TH-07_taxonomy.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00082",
+    "source_file": "o16e/thread_distillates/TH-07_taxonomy.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00083",
+    "source_file": "o16e/thread_distillates/TH-07_taxonomy.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00084",
+    "source_file": "o16e/thread_distillates/TH-07_taxonomy.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00085",
+    "source_file": "o16e/thread_distillates/TH-07_taxonomy.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00086",
+    "source_file": "o16e/thread_distillates/TH-07_taxonomy.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00087",
+    "source_file": "o16e/thread_distillates/TH-07_taxonomy.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00088",
+    "source_file": "o16e/thread_distillates/TH-07_taxonomy.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00089",
+    "source_file": "o16e/thread_distillates/TH-07_taxonomy.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00090",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00091",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00092",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00093",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00094",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00095",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00096",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00097",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00098",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00099",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00100",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00101",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00102",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00103",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00104",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00105",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00106",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00107",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00108",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00109",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00110",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00111",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00112",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00113",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00114",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00115",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00116",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00117",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00118",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00119",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00120",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00121",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00122",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00123",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00124",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00125",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00126",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00127",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00128",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00129",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00130",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00131",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00132",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00133",
+    "source_file": "o16e/thread_distillates/TH-08_houseinorder.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00134",
+    "source_file": "o16e/thread_distillates/TH-09_inmyroom.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00135",
+    "source_file": "o16e/thread_distillates/TH-09_inmyroom.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00136",
+    "source_file": "o16e/thread_distillates/TH-09_inmyroom.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00137",
+    "source_file": "o16e/thread_distillates/TH-09_inmyroom.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00138",
+    "source_file": "o16e/thread_distillates/TH-09_inmyroom.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00139",
+    "source_file": "o16e/thread_distillates/TH-09_inmyroom.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00140",
+    "source_file": "o16e/thread_distillates/TH-09_inmyroom.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00141",
+    "source_file": "o16e/thread_distillates/TH-09_inmyroom.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00142",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00143",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00144",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00145",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00146",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00147",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00148",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00149",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00150",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00151",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00152",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00153",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00154",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00155",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00156",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00157",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00158",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00159",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00160",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00161",
+    "source_file": "o16e/thread_distillates/TH-10_sem_matrix_design.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00162",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00163",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00164",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00165",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00166",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00167",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00168",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00169",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00170",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00171",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00172",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00173",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00174",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00175",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00176",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00177",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00178",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00179",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00180",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00181",
+    "source_file": "o16e/thread_distillates/TH-11_os_dev.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00182",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00183",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00184",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00185",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00186",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00187",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00188",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00189",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00190",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00191",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00192",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00193",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00194",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00195",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00196",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00197",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00198",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00199",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00200",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00201",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00202",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00203",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00204",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00205",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00206",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00207",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00208",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00209",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00210",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00211",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00212",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00213",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00214",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00215",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00216",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00217",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00218",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00219",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00220",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00221",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00222",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00223",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00224",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00225",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00226",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00227",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00228",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00229",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00230",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00231",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00232",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00233",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00234",
+    "source_file": "o16e/thread_distillates/TH-14_session_ust.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00235",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00236",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00237",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00238",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00239",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00240",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00241",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00242",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00243",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00244",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00245",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00246",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00247",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00248",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00249",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00250",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00251",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00252",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00253",
+    "source_file": "o16e/thread_distillates/TH-15_chop_screw.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00254",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00255",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00256",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00257",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00258",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00259",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00260",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00261",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00262",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00263",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00264",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00265",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00266",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00267",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00268",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00269",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00270",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00271",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00272",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00273",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00274",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00275",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00276",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00277",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00278",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00279",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00280",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00281",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00282",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00283",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00284",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00285",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00286",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00287",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00288",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00289",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00290",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00291",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00292",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00293",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00294",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00295",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00296",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00297",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00298",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00299",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00300",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00301",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00302",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00303",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00304",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00305",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00306",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00307",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00308",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00309",
+    "source_file": "o16e/thread_distillates/TH-16_extrct_engine.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00310",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00311",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00312",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00313",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00314",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00315",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00316",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00317",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00318",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00319",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00320",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00321",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00322",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00323",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00324",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00325",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00326",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00327",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00328",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00329",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00330",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00331",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00332",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00333",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00334",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00335",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00336",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00337",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00338",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00339",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00340",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00341",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00342",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00343",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00344",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00345",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00346",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00347",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00348",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00349",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00350",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00351",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00352",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00353",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00354",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00355",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00356",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00357",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00358",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00359",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00360",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00361",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00362",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00363",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00364",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00365",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00366",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00367",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00368",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00369",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00370",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00371",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00372",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00373",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00374",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00375",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00376",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00377",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00378",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00379",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00380",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00381",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00382",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00383",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00384",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00385",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00386",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00387",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00388",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00389",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00390",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00391",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00392",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00393",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00394",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00395",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00396",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00397",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00398",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00399",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00400",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00401",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00402",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00403",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00404",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00405",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00406",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00407",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00408",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00409",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00410",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00411",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00412",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00413",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00414",
+    "source_file": "o16e/thread_distillates/TH-17_v5_ust_sem.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00415",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00416",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00417",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00418",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00419",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00420",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00421",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00422",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00423",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00424",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00425",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00426",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00427",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00428",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00429",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00430",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00431",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00432",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00433",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00434",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00435",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00436",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00437",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00438",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00439",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00440",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00441",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00442",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00443",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00444",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00445",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00446",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00447",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00448",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00449",
+    "source_file": "o16e/thread_distillates/TH-18_devsession_iter.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00450",
+    "source_file": "o16e/thread_distillates/TH-20a_chimera_gulf.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00451",
+    "source_file": "o16e/thread_distillates/TH-20a_chimera_gulf.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00452",
+    "source_file": "o16e/thread_distillates/TH-20a_chimera_gulf.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00453",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00454",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00455",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00456",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00457",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00458",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00459",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00460",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00461",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00462",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00463",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00464",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00465",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00466",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00467",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00468",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00469",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00470",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00471",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00472",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00473",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00474",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00475",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00476",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00477",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00478",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00479",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00480",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00481",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00482",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00483",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00484",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00485",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00486",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00487",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00488",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00489",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00490",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00491",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00492",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00493",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00494",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00495",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00496",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00497",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00498",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00499",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00500",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00501",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00502",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00503",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00504",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00505",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00506",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00507",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00508",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00509",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00510",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00511",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00512",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00513",
+    "source_file": "o16e/thread_distillates/TH-20b_chimera_quality.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00514",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00515",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00516",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00517",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00518",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00519",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00520",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00521",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00522",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00523",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00524",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00525",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00526",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00527",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00528",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00529",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00530",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00531",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00532",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00533",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00534",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00535",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00536",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00537",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00538",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00539",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00540",
+    "source_file": "o16e/thread_distillates/TH-20c_lyric_baseline.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00541",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00542",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00543",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00544",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00545",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00546",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00547",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00548",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00549",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00550",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00551",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00552",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00553",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00554",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00555",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00556",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00557",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00558",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00559",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00560",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00561",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00562",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00563",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00564",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00565",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00566",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00567",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00568",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00569",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00570",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00571",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00572",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00573",
+    "source_file": "o16e/thread_distillates/TH-20d_branch_lyric.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00574",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00575",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00576",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00577",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00578",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00579",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00580",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00581",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00582",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00583",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00584",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00585",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00586",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00587",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00588",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00589",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00590",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00591",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00592",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00593",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00594",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00595",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00596",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00597",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00598",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00599",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00600",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00601",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00602",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00603",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00604",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00605",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00606",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00607",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00608",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00609",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00610",
+    "source_file": "o16e/thread_distillates/TH-22_foil_tiered.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00611",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00612",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00613",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00614",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00615",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00616",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00617",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00618",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00619",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00620",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00621",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00622",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00623",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00624",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00625",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00626",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00627",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00628",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00629",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00630",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00631",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00632",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00633",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00634",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00635",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00636",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00637",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00638",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00639",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00640",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00641",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00642",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00643",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00644",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00645",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00646",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00647",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00648",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00649",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00650",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00651",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00652",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00653",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00654",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00655",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00656",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00657",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00658",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00659",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00660",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00661",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00662",
+    "source_file": "o16e/thread_distillates/TH-23_eldrik.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00663",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00664",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00665",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00666",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00667",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00668",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00669",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00670",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00671",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00672",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00673",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00674",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00675",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00676",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00677",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00678",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00679",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00680",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00681",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00682",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00683",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00684",
+    "source_file": "o16e/thread_distillates/TH-27_051526.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00685",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00686",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00687",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00688",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00689",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00690",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00691",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00692",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00693",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00694",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00695",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00696",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00697",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00698",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00699",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00700",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00701",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00702",
+    "source_file": "o16e/thread_distillates/TH-31_v455_evidence.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00703",
+    "source_file": "o16e/thread_distillates/operator_turns.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00704",
+    "source_file": "o16e/thread_distillates/operator_turns.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00705",
+    "source_file": "o16e/thread_distillates/operator_turns.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00706",
+    "source_file": "o16e/thread_distillates/operator_turns.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00707",
+    "source_file": "o16e/thread_distillates/operator_turns.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00708",
+    "source_file": "o16e/thread_distillates/operator_turns.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00709",
+    "source_file": "o16e/thread_distillates/operator_turns.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00710",
+    "source_file": "o16e/thread_distillates/operator_turns.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00711",
+    "source_file": "o16e/thread_distillates/operator_turns.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  },
+  {
+    "event_id": "PER2-00712",
+    "source_file": "o16e/thread_distillates/operator_turns.md",
+    "authority": "operator_root",
+    "state_rung": "conversational",
+    "promotion_status": "not promoted by this run"
+  }
+]

@@ -1,0 +1,170 @@
+meta:
+  artifact_name: controller_lockout_policy.yaml
+  artifact_type: controller_overreach_lockout_policy
+  version: v5_c.gold_standard.2
+  status: promotion_ready
+  mode: exact_canon
+  scope: policy_layer_only
+  purpose: define explicit lockout triggers, responses, and block conditions when the controller overreaches into prohibited semantic or worker-owned domains
+
+governing_parent:
+  controller_contract.yaml:
+    responsibility_statement: "Governs controller authority, scope, permissions, prohibitions, and generic enforcement boundaries."
+  phase_contract.yaml:
+    responsibility_statement: "Governs detailed per-phase procedure and progression rules."
+  artifact_contract.yaml:
+    responsibility_statement: "Governs artifact ontology, lifecycle, naming, readiness, and artifact-event handling."
+  artifact_taxonomy.md:
+    responsibility_statement: "Governs normalized vocabulary for classes, states, freeze states, events, readiness, validity, relations, and defect labels."
+  this_contract_rule: "controller_lockout_policy.yaml governs controller lockout behavior when controller actions or implied controller scope violate approved boundaries."
+  out_of_scope_here:
+    - "full controller authority restatement"
+    - "full phase machine restatement"
+    - "full artifact ontology restatement"
+    - "worker procedure design"
+    - "downstream shell design"
+    - "new canon invention"
+
+policy_role_and_scope:
+  role_name: controller_overreach_lockout_policy
+  scope_statement: "This policy defines when the controller must be locked out from prohibited action domains, what kinds of overreach trigger that lockout, and what immediate policy response is required."
+  policy_limit_statement: "This policy does not redefine controller authority; it enforces lockout when approved controller boundaries are breached or threatened."
+
+inherited_lockout_relevant_canon:
+  inherited_canonical_laws:
+    - "Technical UST is the sole canonical source-of-truth middleware."
+    - "The assistant acts as a non-creative container-controller."
+    - "SMEs own musical and creative content decisions."
+    - "Nulls are signal and may not be silently filled."
+    - "Promotion and deduplication follow FOIL discipline and must be ledgered."
+  inherited_controller_boundary_from_parent:
+    - "The controller may orchestrate, validate, gate, log, and block."
+    - "The controller may not perform semantic compression."
+    - "Reverse processing over finalized technical.ust is worker-owned."
+    - "The controller may not own semantic repetition classification."
+    - "The controller may not substitute for worker judgment in the distinction between promotion candidates and notation candidates."
+
+implementation_hardening_rules:
+  labeled_as_non_canonical_operational_tightening:
+    - "Lockout shall trigger on attempted overreach as well as completed overreach when intent or operational effect is clear."
+    - "Policy-layer lockout may block progression even when no artifact mutation has yet occurred."
+    - "Lockout response shall preserve upstream and downstream integrity by stopping impermissible controller-domain crossing before semantic execution proceeds."
+  provisional_extensions: []
+
+protected_non_controller_domains:
+  worker_owned_domains:
+    - "reverse processing over finalized technical.ust"
+    - "semantic compression execution"
+    - "semantic repetition classification as semantic work"
+    - "judgment between promotion candidates and notation candidates"
+
+  sme_owned_domains:
+    - "musical content decisions"
+    - "creative content decisions"
+    - "substantive artistic or musical judgment"
+
+  policy_rule: "The controller may not enter, claim, execute, or substitute for protected non-controller domains."
+
+lockout_trigger_taxonomy:
+  controller_scope_overreach:
+    definition: "Controller action or implied controller authority crosses into a prohibited domain."
+  semantic_compression_attempt:
+    definition: "Controller attempts to perform, direct-perform, or substantively determine semantic compression."
+  reverse_processing_ownership_attempt:
+    definition: "Controller attempts to own, execute, or claim reverse processing over finalized technical.ust."
+  semantic_repetition_classification_attempt:
+    definition: "Controller attempts to classify repeated material as semantic work owned by the controller."
+  promotion_notation_judgment_substitution_attempt:
+    definition: "Controller attempts to decide, as semantic judgment, whether repeated material is a promotion candidate or notation candidate."
+  worker_domain_displacement:
+    definition: "Controller action displaces worker-owned semantic work even if phrased as coordination."
+  implied_authority_expansion:
+    definition: "Controller scope is widened implicitly through procedure, wording, or operational effect."
+  anticipatory_overreach_risk:
+    definition: "Controller action pattern indicates imminent prohibited semantic incursion and lockout is required before execution continues."
+
+prohibited_controller_incursions:
+  absolute:
+    - "perform semantic compression"
+    - "own or execute reverse processing over finalized technical.ust"
+    - "own semantic repetition classification"
+    - "substitute for worker judgment in promotion-vs-notation distinction"
+    - "relabel semantic execution as orchestration in order to evade lockout"
+    - "decide materially semantic repeat handling under controller authority"
+    - "treat coordination authority as semantic decision authority"
+
+permitted_controller_actions_when_boundary_is_respected:
+  allowed:
+    - "route work"
+    - "validate contract compliance"
+    - "log governed events"
+    - "gate progression"
+    - "block impermissible actions"
+    - "freeze governed artifacts when parent conditions permit"
+    - "enforce promotion and deduplication controls procedurally"
+    - "package only after required upstream conditions are satisfied"
+  policy_rule: "Permitted controller actions remain procedural and enforcement-oriented only."
+
+lockout_response_rules:
+  immediate_response_required_if_triggered:
+    - "block the attempted controller action"
+    - "halt progression across the affected boundary"
+    - "record a lockout event"
+    - "preserve current artifact state without semantic mutation by the controller"
+    - "preserve nulls and unresolved distinctions explicitly"
+    - "return semantic decision responsibility to the proper worker or SME domain"
+
+  lockout_effects:
+    - "controller may continue procedural routing, validation, logging, and blocking only to the extent needed to contain overreach"
+    - "controller may not continue the prohibited semantic activity under any alternate label"
+    - "controller may not convert blocked semantic work into summary, compression, or convenience merge"
+    - "downstream progression remains blocked until the overreach condition is cleared through proper ownership handling"
+
+  lockout_clearance_rule:
+    - "Lockout clears only when the prohibited controller role is removed and the work is returned to the lawful owner domain."
+    - "Lockout clearance may not be inferred from silence, partial restatement, or renaming of the prohibited action."
+
+lockout_event_logging:
+  lockout_event_required_fields:
+    - "lockout_event_id"
+    - "lockout_trigger_category"
+    - "attempted_controller_action"
+    - "protected_domain_implicated"
+    - "affected_artifacts_or_phases"
+    - "policy_basis"
+    - "resulting_block_state"
+    - "reassignment_target"
+    - "event_reason"
+
+policy_block_conditions:
+  progression_shall_be_blocked_if:
+    - "controller scope overreach is detected"
+    - "controller semantic compression is attempted"
+    - "controller-owned reverse processing is attempted"
+    - "controller-owned semantic repetition classification is attempted"
+    - "controller substitution for worker judgment in promotion-vs-notation distinction is attempted"
+    - "controller action displaces worker-owned semantic work"
+    - "controller procedural authority is being used as a cover for semantic execution"
+    - "lockout-triggering overreach is identified but not logged"
+    - "downstream progression would continue despite unresolved controller overreach"
+
+policy_integrity_rules:
+  must_remain_true:
+    - "lockout policy remains narrower than the controller contract and does not restate it in full"
+    - "lockout policy remains policy-layer only"
+    - "lockout policy enforces approved controller boundaries without redefining phase mechanics or artifact ontology"
+    - "lockout policy preserves worker and SME ownership boundaries"
+
+compliance_test:
+  controller_lockout_policy_yaml_is_compliant_only_if:
+    - "It remains policy-layer only."
+    - "It does not restate the full controller contract."
+    - "It does not restate the phase machine."
+    - "It does not restate the artifact contract."
+    - "It explicitly locks out controller semantic compression."
+    - "It explicitly locks out controller-owned reverse processing."
+    - "It explicitly locks out controller-owned semantic repetition classification."
+    - "It explicitly locks out controller substitution for worker judgment in promotion-vs-notation distinction."
+    - "It preserves the controller's procedural orchestration, validation, gating, logging, and blocking role when boundaries are respected."
+    - "It defines explicit trigger categories, lockout responses, and block conditions for controller overreach."
+    - "No policy-layer blocking defect remains."

@@ -1,0 +1,25 @@
+# SESSION13_STALENESS_MAP — persisted artifacts vs session-13 FIRM canon
+work_item: REPAIR.P1N.SESSION-TO-MAESTRO-BRIDGE.R1
+date: 2026-07-19
+entries:
+  - artifact: artifacts/D-Maestro/canon/Maestro_v5c_{Root,Spine,Lineage,Conflict}*.md
+    state: CONFIRMED_STALE
+    evidence: "zero v4.5.5 references (R1 §6, R2 §5, 9/9 text files); predates/ignores U57 trinity ruling"
+    action: PATCH-02 annotation (insert-only)
+  - artifact: artifacts/D-Maestro/drafts/maestro_v0.md
+    state: NAMESPACE_COLLISION_CANDIDATE   # formerly MF-6 "conflict"
+    evidence: "K7 Arrangement 6% / K8 Commercial 8% == SEM rubric rows 7-8 (impl plan §05; corpus-division v0_3); admissibility K7/K8 differ"
+    action: PATCH-03 annotation; disposition E-2
+  - artifact: "canon/SONG EXCELLENCE GOVERNENCE files.zip + who dat.pdf"
+    state: UNSEARCHED (MF-5)
+    action: carried open; optional text-extraction task post-bridge
+  - artifact: "v.0 poster + MOSAIC v2.3 diagrams + impl plan axis registry"
+    state: AXIS_SET_HOLD    # MAP present vs Yesterday-3 END-era removal
+    evidence: "AUX-3 §3; wiring file classes diagrams as diagnostic human-view references (LAGGING), but Y-3 date unresolved (DISC-12)"
+    action: NO annotation until DISC-12 ruled (elicitation E-4); AX-CONTRA-1 record stays open
+  - artifact: "v4.5.2 canon doc + KBD-001 (documents-primary law)"
+    state: ERA_BOUND_AUTHORITY_INVERSION (DISC-09)
+    action: supersession statement drafted in decision packet (E-6); nothing recorded until ruled
+  - artifact: "installed skill maestro-forensic-transcript SKILL.md"
+    state: STALE (original INV-18 only; provenance line unannotated)
+    action: out of bridge scope; blocked on DEC-03 search (O-01/O-02/O-03) — listed for completeness

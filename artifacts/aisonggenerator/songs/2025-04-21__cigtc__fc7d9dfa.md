@@ -1,0 +1,79 @@
+# cigtc
+
+> Song family: **cigtc** · generation #4 in family · created 2025-04-21T09:03:07.331Z
+
+## Metadata
+
+- song_id: `fc7d9dfa-e99f-4c26-9eab-6675083bc624`
+- id: `886885`
+- model: `V4`
+- created_at: `2025-04-21T09:03:07.331Z`
+- updated_at: `2025-04-21T09:05:35.368Z`
+- duration: `144.68`
+- is_delete: `False`
+- is_public: `True`
+- is_extend: `False` · is_merge: `False`
+- api_provider: `ace`
+
+## Asset URLs
+
+- audio_url: https://file.aisonggenerator.ai/997c5776-a2dc-4760-aafc-e85e0c1a74f5.mp3
+- wav_url: —
+- cover_url: https://file.aisonggenerator.ai/da47bbbb-a0b2-4e44-b7f5-268ea18da730.jpg
+- vocal_url: —
+- instrumental_url: —
+- pipe_url: https://audiopipe.suno.ai/?item_id=fc7d9dfa-e99f-4c26-9eab-6675083bc624
+
+## Style / Prompt (tags)
+
+```
+Southern Black gospel quartet
+raw and reverent.
+Quartet: Grit.
+Female trio: Church mother power.
+Stomps = kick + Claps
+```
+
+## Lyrics
+
+```
+# --- VOCAL + MIX SETTINGS (DO NOT SING) ---
+[Lead Vocal: Black male voice, deep Southern baritone. Hood preacher energy. Smooth, grown, dominant.]
+[Vocal Tone: Laid-back and commanding. Swagger-laced, slight rasp, slow tempo. Think Pimp C crossed with Tank.]
+[Vocal Style: Spoken-sung delivery with soul trap cadences. Innuendo, humor, Southern slang.]
+[Guest Rap: Pimp C-style verse. Swag rap. No autotune. Drawl intact.]
+[Arrangement: Slow trap blues. Analog bass, acoustic guitar, gospel organ, 808s, Texas bounce hats.]
+[Key: D minor. Tempo: 70BPM.]
+[Mix: Dirty analog heat. Lead vocal dry. Wide stereo reverb on chorus. Vocal fry and breaths kept in. Mastered to -9 LUFS.]
+# --- LYRICS ---
+[Intro – Slow Banjo Pluck, Deep 808s Rolling In, Soft Gospel Humming]
+(*Mmm, mmm, Lord, Lord…*)
+(*Whoo!*) *Stomp... clap... stomp...*
+(*808 hums under banjo, wind-like sweep fades in*)
+Ohhh, I was born (*mmm-hmm*)
+By the river (*harmony swells*)
+In a little ol’ tent (*yes, Lord!*)
+And just like that river (*stomp-STOMP, clap*)
+I’ve been runnin’ ever since…
+[Verse 1 – Soulful Lead, Banjo Carries Melody, Stomps & Spoons Accent]
+It’s been a long… (*LONG!*)
+A long time comin’ (*Whoo!*)
+But I know (*I KNOW!*)
+A change gon’ come (*Yes, it will!*)
+(*808s rise subtly, foot stomps double on second beat*)
+[Verse 2 – Call and Response, Organ Swell Enters]
+It’s been too hard livin’ (*Too hard!*)
+But I’m afraid to die (*Afraid, Lord!*)
+‘Cause I don’t know what’s up there (*Banjo slows, gospel hums rise*)
+Beyond the sky… (*Whoo!*)
+[Pre-Chorus – Quartet Takes Over, Powerhouse Harmonies]
+(Call) It’s been a long… (*Long!*)
+(Response – Choir) *Long time comin’*
+(Call) But I know… (*I know!*)
+(Response – Choir) *A change gon’ come, oh yes, it will!*
+(*Banjo riff, 808 sub-drop, cinematic sweep into next section*)
+[Verse 3 – Deep Groove, Stomps Heavy, 808s Locked In]
+I went to my brother (*My brother!*)
+And I asked him for help (*Help me, Lord!*)
+But he just kept knockin’
+```

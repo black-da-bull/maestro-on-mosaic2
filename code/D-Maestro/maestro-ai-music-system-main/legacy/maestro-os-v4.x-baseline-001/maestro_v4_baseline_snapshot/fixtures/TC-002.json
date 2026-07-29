@@ -1,0 +1,19 @@
+{
+  "project_name": "TC-002 Lyrics present WORKING",
+  "narrative_anchor": "I\u2019m leaving the old house behind, but it still echoes in me.",
+  "lyrics": "Get away, leave today, stay away",
+  "genre_tags": [
+    "alt-country",
+    "lofi",
+    "gothic"
+  ],
+  "must_haves": [
+    "allow rewrite in WORKING",
+    "preserve raw archive"
+  ],
+  "must_nots": [
+    "lock lyrics",
+    "paraphrase without ticketing"
+  ],
+  "canon": false
+}

@@ -1,0 +1,8 @@
+work_item: MAESTRO.O16C.MATERIALIZE-INHERITED-CANON.R1
+date: '2026-07-19'
+closure: >-
+  Every file referenced by bundle 00-10 is now a manifest member (STRATA_MIGRATION_MAP, compiled
+  topology + migration + coverage, builders, validators, fixtures, templates). External references
+  that remain are EVIDENCE pointers (historical snapshot, rule cards, ledgers) — provenance
+  citations, not runtime dependencies; the bundle interprets and validates without them.
+undeclared_runtime_dependencies: 0

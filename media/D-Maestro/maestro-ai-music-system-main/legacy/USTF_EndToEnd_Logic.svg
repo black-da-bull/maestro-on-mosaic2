@@ -1,0 +1,67 @@
+// USTF End-to-End System Logic
+digraph {
+	Input [label="🎙️ USTF Template or Suno Track
+[User Input]" fillcolor=lightyellow shape=box style=filled]
+	Parse [label="📜 Ingest & Parse
+- Normalize brackets
+- Flag [Missing]" shape=box]
+	StructureGate [label="🔐 Structure Gate
+- RoadMap ↔ Section Blocks
+- Six keys per section" shape=box]
+	TheoryCouncil [label="🎼 Theory Round-Robin
+1. Harmony SME
+2. Rhythm SME
+3. Texture SME
+4. Form SME
+5. Genre SME" fillcolor=lightblue shape=box style=filled]
+	Dedupe [label="🧹 Redundancy Guard
+- Migrate tone, mix, bpm, genre data
+to proper containers" fillcolor=lavender shape=box style=filled]
+	Arrangement [label="🎭 Arrangement Audit
+- Section lift
+- Motifs
+- Transitions" shape=box]
+	Performance [label="🎤 Performance Audit
+- Vocal phrasing
+- Rhythm feel
+- Register realism" shape=box]
+	Production [label="🎛️ Production Audit
+- Drums
+- 808
+- FX space plan
+- Saturation" shape=box]
+	Mixing [label="🎚️ Mix & Master Audit
+- LUFS
+- Imaging
+- EQ
+- Loudness" shape=box]
+	AutoTrim [label="✂️ AutoTrim + Format
+- Compress duplicate choruses
+- Validate char length
+- Enforce comma rule" shape=box]
+	Consensus [label="🧠 THEORY_CONSENSUS
+- Adversarial→Consensus theory
+- Harmony, Mood, Genre logic" shape=box]
+	Report [label="📊 ARRANGEMENT_REPORT
+- Section table
+- Bars, energy, motifs" shape=box]
+	USTF [label="✅ FIXED_USTF
+- Studio-safe format
+- Clean + deduped" shape=box]
+	Log [label="🧾 CHANGE_LEDGER
+- What moved, where, why
+- Traceable audit log" shape=box]
+	Input -> Parse
+	Parse -> StructureGate
+	StructureGate -> TheoryCouncil
+	TheoryCouncil -> Dedupe
+	Dedupe -> Arrangement
+	Arrangement -> Performance
+	Performance -> Production
+	Production -> Mixing
+	Mixing -> AutoTrim
+	AutoTrim -> Consensus
+	AutoTrim -> Report
+	AutoTrim -> USTF
+	AutoTrim -> Log
+}

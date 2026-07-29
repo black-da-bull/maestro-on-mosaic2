@@ -1,0 +1,49 @@
+# Deterministic MANIFEST metadata — consumed by build_maestro_current.py (v2)
+# Every field here is emitted verbatim into MANIFEST.yaml ahead of the computed files map.
+product: maestro-current
+version: v0.5
+work_item: REPAIR.O16D.VV.R1 (builds on O16D; absorbs REVIEW.O16D.VV.R1 verdict FAIL -> repaired)
+date: '2026-07-19'
+class: >-
+  REPAIRED CANDIDATE (post-V&V; promotion path per M17 = O16E history-grounded derivation +
+  operator acceptance; version-based force-close SUSPENDED)
+self_contained: >-
+  every member required to interpret/validate current behavior is listed in the files map;
+  inventory completeness is machine-checked (validator A11)
+inventory_classes:
+  runtime_docs: 00-10 numbered docs + STRATA_MIGRATION_MAP.md + SCOPE_CORRECTION_v0_4.md (13; regenerated from build/templates, byte-identical)
+  build_tools: build/*.py + build/manifest_meta.yaml + build/templates/* (packaged verbatim)
+  compiled: compiled/* (A9b topology derivations + validation reports; BUILD_REGENERATION_REPORT records A9 runs)
+  fixture: fixture/dryrun_project.md
+source_imports:
+  technical_topology:
+    source: artifacts/D-Maestro/Maestro/technical.ust.template.txt
+    md5: eaf18e1101c7a5814850fe0c62743b3a
+    result: >-
+      33 keys / 165 subkeys / 7 axes, 24 MAP->PER migrations, 0 omissions RELATIVE TO THIS
+      SOURCE (scope per SCOPE_CORRECTION_v0_4)
+  creative_shell:
+    source: artifacts/HYDRA/creative_ust_canonical_shell.md
+  creative_scaffold:
+    source: artifacts/D-Maestro/Maestro/creative.ust.template.txt
+  staffing_schema:
+    source: system/D-Maestro/drafts/Maestro Personas aka the subagents.md
+  v5b_coldstart_pack:
+    source: code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/
+    package_version: v5-b.coldstart.1 (2026-01-23)
+    council_matrix_sha256: e7097f6ad02a43bcace2a27ebaf21d36350611cc0ea37e26bff134ce099a1765
+    governance_addendum_sha256: 29b0c9ff38a0cf4ecdfe1f1325a16837f6e75da4574814b19fa01cc1c97099fb
+    technical_canon_sha256: bfe0b238a08edcd317b80ac0bf9be3a124029995770d91d83f8358ec5a441b5b
+    result: >-
+      seat map imported (04); governance address space registered (05); MAP parity patch era
+      record (02); parsing discipline + triad caps (06); 19/19 pack members located, 2 re-bound
+      by hash
+    note: >-
+      DEC-27 (ROOT): the v5b Technical UST canon and its governance addendum are ONE UNIT — the
+      Technical UST plus the record of how quality/governance tie directly into decision-making
+      as the nulls are replaced. The earlier competing-stratum/O-18 framing is withdrawn; the
+      residual cross-era chronology question (Chimera-era template <-> v5b unit) rides O16E.
+builders:
+  A9a_packager: build/build_maestro_current.py (v2 — regenerates the FULL member set + this manifest)
+  A9b_source_delta_compiler: build/compile_current.py (hash-verified input; fails closed on unmapped address)
+  validator: build/validate_bundle.py (v2 — recursive parse A10 + inventory completeness A11)
