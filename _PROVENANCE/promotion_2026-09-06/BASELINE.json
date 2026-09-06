@@ -1,0 +1,187 @@
+{
+  "baseline_sha": "88cd150cceacaebe79a3a0e97edb50497cc59a47",
+  "tree_sha": "8bb41062261c325e822234290b557ba9b5f2ec95",
+  "branch": "main",
+  "promotion_branch": "promotion/2026-09-06",
+  "pre_checkpoint": "checkpoint/pre-promotion-2026-09-06",
+  "status": "Pinned remote Git tree; no pre-existing local checkout or worktree. Retrieved files verified against Git blob IDs; unrelated remote members retained by base-tree commits.",
+  "immutable_checkpoint": "Baseline Git commit is content-addressed. Checkpoint branch is a named ref, not an immutable tag.",
+  "files": {
+    "_PROVENANCE/LEDGER.md": {
+      "git_blob": "30cc15ce19a30310f9f1b05c5944174d771c27d3",
+      "sha256": "5add578178da261b82925d844f0cc4c136f44af1f950c58c72132c87287765ef"
+    },
+    "_PROVENANCE/OPEN.md": {
+      "git_blob": "d7210b71d6a78362bd2608c7977bb5b75ea4a326",
+      "sha256": "38fe00cba9a399b50be30666cd4ee4950da1311450da334a0da9ab5c420d217a"
+    },
+    "_PROVENANCE/STATE.md": {
+      "git_blob": "c5c78efabfa2adda27f4b9cdb5b5cff9a6138249",
+      "sha256": "42db2140496dc39d883c566fc9e7d421cc63c36a1e64af3cddae802c2ffcd491"
+    },
+    "drafts/EXECUTABLE_APP_DESIGN_v0_1.md": {
+      "git_blob": "31eb6cd122c74e37a28198976c0dc5e792de7509",
+      "sha256": "9f7efb160cc8bbbc5993bce73c4713426b28b77f0ed3bc374003cc5e61e9e14d"
+    },
+    "maestro-current/00_ROOT_SPEC.md": {
+      "git_blob": "ebb4c30ac7cb27103d9d814e8bdc9c2b244c6f8d",
+      "sha256": "a48eebffadd5b6feaed0e76d88ac0310e83bbbc7271baeeb551408410e130610"
+    },
+    "maestro-current/01_TECHNICAL_UST_CANON.md": {
+      "git_blob": "d715b7fd03e220a5298ed039b7011bc496839287",
+      "sha256": "5928b91d39c0311a9f690a92cb85ee4cf9c508fb6f0a4018914d84014493e68d"
+    },
+    "maestro-current/02_CREATIVE_UST_TEMPLATE.md": {
+      "git_blob": "28fca6a6d6530667c3e571d8660ef7247ebf8e9c",
+      "sha256": "0481c7129516d5ae86da8b0d7b2160a9e69932dbb9e91283b48da7a1a4abcf5c"
+    },
+    "maestro-current/03_PHASE_CHAIN.md": {
+      "git_blob": "a2ad26e67f9b583b8b07a74093b4d0b17b130541",
+      "sha256": "2be39d7736734668d21f9c8f5511d33972c04fdae2f080dd893fedb0ab8d28a8"
+    },
+    "maestro-current/04_COUNCIL_TOPOLOGY.md": {
+      "git_blob": "f1c0e433645ede0e9b8e1d5b45652639663841c0",
+      "sha256": "5d081a9388454184a5b30effcede00b2f63b898570060740bdae1110405dd204"
+    },
+    "maestro-current/05_GOVERNANCE_SEG.md": {
+      "git_blob": "00b8734d451693ad250fa30cc9e8614b0ffe55c8",
+      "sha256": "ec5bcbf0c82ad7fd42d2921d1e9ce4e626f23e555181c7f3b7d51e386302ebd6"
+    },
+    "maestro-current/06_RUNTIME_RULES.md": {
+      "git_blob": "546e5e3b7f65808937d1ec9f0f305e697fb52c88",
+      "sha256": "20ee34844fcb89c271d31ccc7a48083294a6ac4cecc1ae7ce043b7456cd0b01b"
+    },
+    "maestro-current/07_ADDRESS_REGISTRY.md": {
+      "git_blob": "6a40dbccfec1d69cf5d1a9aa99e681cae45a8a04",
+      "sha256": "bbf4765ebc9fd8fd2964db172c8be3d866bb754d06c3455b6892148454c17ef2"
+    },
+    "maestro-current/08_PORTABILITY_ATP.md": {
+      "git_blob": "67abdf86e6155bd8b26836adce4ab7c69662f938",
+      "sha256": "058669ec4c820002ef3cfc89a09537998ffd371a6e2f0aa502ee56815d459729"
+    },
+    "maestro-current/09_LOGS_AND_CONTINUATION.md": {
+      "git_blob": "366917391968274984070e266b1f2eb3950eef45",
+      "sha256": "d50831cd58e220785f9c0e44f5f080a571e0a05ac0b15f07012d560ef16b29d0"
+    },
+    "maestro-current/10_TEST_PLAN.md": {
+      "git_blob": "a7867940a0cb5832f90a1d7b85fc9e9d2f04394d",
+      "sha256": "e96128239264c5c0059c05ef195d3594b7a551230b621eaa66e63bf29d054ba3"
+    },
+    "maestro-current/MANIFEST.yaml": {
+      "git_blob": "28706e7c6b624c33b0fce9b71451c7e17b579856",
+      "sha256": "d72619a59df0661cb646c8a770de84d018a9c1ffbda70304c048bda00d6e9a22"
+    },
+    "maestro-current/SCOPE_CORRECTION_v0_4.md": {
+      "git_blob": "c58d04b9ef2f172fddf1d4dded992cd075625ca6",
+      "sha256": "c008c1cef200160c98bb967fb398256bf7d8e301bf3c2e8de5c7851884e232d1"
+    },
+    "maestro-current/STRATA_MIGRATION_MAP.md": {
+      "git_blob": "f2cd117c38e88b5f5ad97940980e08312d82a987",
+      "sha256": "d522f7b3d10992867069e7b6e570b2b083e27f280b62425e4c563456fac92d3c"
+    },
+    "maestro-current/build/build_maestro_current.py": {
+      "git_blob": "604137c68c2ced536c2b33f18654faf78afeac7d",
+      "sha256": "148cacd4ac7128123d391684d5875d44efda60b14caabbe63f23e5168cf56a88"
+    },
+    "maestro-current/build/cap_validator.py": {
+      "git_blob": "b7a1e91e7a1d57c3c22322211376412115994212",
+      "sha256": "348721418293958e280df39948a4a1ab21f9446926a6abdc0b4116cb5b661758"
+    },
+    "maestro-current/build/compile_current.py": {
+      "git_blob": "596529416888e8b993163466409dec037a55d11e",
+      "sha256": "4b16f2392757dcbb6aafef54651f90a1fa9f0c91da57d3ea9a8d2f8908670182"
+    },
+    "maestro-current/build/lyric_lock_check.py": {
+      "git_blob": "4df5763c855b3e89b09a36033d886fea1b72cf94",
+      "sha256": "f54f98e549b9f924ec09dfb68ca0ad9ac798ae7c55a5e495204f8bf682a09c52"
+    },
+    "maestro-current/build/manifest_meta.yaml": {
+      "git_blob": "5422546687ecc55e028621a45845c88bf7ff1bab",
+      "sha256": "af6a97e5efd9491bb3579ce59fe9f5cb17aace8543826c957da22161b2410d7e"
+    },
+    "maestro-current/build/templates/00_ROOT_SPEC.md": {
+      "git_blob": "ebb4c30ac7cb27103d9d814e8bdc9c2b244c6f8d",
+      "sha256": "a48eebffadd5b6feaed0e76d88ac0310e83bbbc7271baeeb551408410e130610"
+    },
+    "maestro-current/build/templates/01_TECHNICAL_UST_CANON.md": {
+      "git_blob": "d715b7fd03e220a5298ed039b7011bc496839287",
+      "sha256": "5928b91d39c0311a9f690a92cb85ee4cf9c508fb6f0a4018914d84014493e68d"
+    },
+    "maestro-current/build/templates/02_CREATIVE_UST_TEMPLATE.md": {
+      "git_blob": "28fca6a6d6530667c3e571d8660ef7247ebf8e9c",
+      "sha256": "0481c7129516d5ae86da8b0d7b2160a9e69932dbb9e91283b48da7a1a4abcf5c"
+    },
+    "maestro-current/build/templates/03_PHASE_CHAIN.md": {
+      "git_blob": "a2ad26e67f9b583b8b07a74093b4d0b17b130541",
+      "sha256": "2be39d7736734668d21f9c8f5511d33972c04fdae2f080dd893fedb0ab8d28a8"
+    },
+    "maestro-current/build/templates/04_COUNCIL_TOPOLOGY.md": {
+      "git_blob": "f1c0e433645ede0e9b8e1d5b45652639663841c0",
+      "sha256": "5d081a9388454184a5b30effcede00b2f63b898570060740bdae1110405dd204"
+    },
+    "maestro-current/build/templates/05_GOVERNANCE_SEG.md": {
+      "git_blob": "00b8734d451693ad250fa30cc9e8614b0ffe55c8",
+      "sha256": "ec5bcbf0c82ad7fd42d2921d1e9ce4e626f23e555181c7f3b7d51e386302ebd6"
+    },
+    "maestro-current/build/templates/06_RUNTIME_RULES.md": {
+      "git_blob": "546e5e3b7f65808937d1ec9f0f305e697fb52c88",
+      "sha256": "20ee34844fcb89c271d31ccc7a48083294a6ac4cecc1ae7ce043b7456cd0b01b"
+    },
+    "maestro-current/build/templates/07_ADDRESS_REGISTRY.md": {
+      "git_blob": "6a40dbccfec1d69cf5d1a9aa99e681cae45a8a04",
+      "sha256": "bbf4765ebc9fd8fd2964db172c8be3d866bb754d06c3455b6892148454c17ef2"
+    },
+    "maestro-current/build/templates/08_PORTABILITY_ATP.md": {
+      "git_blob": "67abdf86e6155bd8b26836adce4ab7c69662f938",
+      "sha256": "058669ec4c820002ef3cfc89a09537998ffd371a6e2f0aa502ee56815d459729"
+    },
+    "maestro-current/build/templates/09_LOGS_AND_CONTINUATION.md": {
+      "git_blob": "366917391968274984070e266b1f2eb3950eef45",
+      "sha256": "d50831cd58e220785f9c0e44f5f080a571e0a05ac0b15f07012d560ef16b29d0"
+    },
+    "maestro-current/build/templates/10_TEST_PLAN.md": {
+      "git_blob": "a7867940a0cb5832f90a1d7b85fc9e9d2f04394d",
+      "sha256": "e96128239264c5c0059c05ef195d3594b7a551230b621eaa66e63bf29d054ba3"
+    },
+    "maestro-current/build/templates/SCOPE_CORRECTION_v0_4.md": {
+      "git_blob": "c58d04b9ef2f172fddf1d4dded992cd075625ca6",
+      "sha256": "c008c1cef200160c98bb967fb398256bf7d8e301bf3c2e8de5c7851884e232d1"
+    },
+    "maestro-current/build/templates/STRATA_MIGRATION_MAP.md": {
+      "git_blob": "f2cd117c38e88b5f5ad97940980e08312d82a987",
+      "sha256": "d522f7b3d10992867069e7b6e570b2b083e27f280b62425e4c563456fac92d3c"
+    },
+    "maestro-current/build/validate_bundle.py": {
+      "git_blob": "617b93c443e17a814af7b11c20d33eed7baccc9d",
+      "sha256": "13c680bf082a7a1f67ae4632417c161ce69045dff2fa1459f9a8794b8171b8bf"
+    },
+    "maestro-current/compiled/BUILD_REGENERATION_REPORT.yaml": {
+      "git_blob": "26fcbaea2651e843c37543a8b7a6b86f7e383cd5",
+      "sha256": "7253ae65cacaa20a606c974620dd16e54be101cdf4683f3d90779b0755b0f7e2"
+    },
+    "maestro-current/compiled/DEPENDENCY_CLOSURE_REPORT.yaml": {
+      "git_blob": "06531252bae6246d0a755bf687bca3c51612499e",
+      "sha256": "06b3f5ee193034171dc80805164465c92139ed25dc75730881fe4ffb784ae5d5"
+    },
+    "maestro-current/compiled/FULL_CANON_COVERAGE_MATRIX.yaml": {
+      "git_blob": "7206a51dff1d7a97fd28fc53de56e02025c6389a",
+      "sha256": "dae303831773695a0e50a75a06c72a54027f3da72744d7d09d0d231ae4be4db6"
+    },
+    "maestro-current/compiled/OMISSION_AUDIT.yaml": {
+      "git_blob": "cc1823bb60b2133828d74ada38d4a4b8805630f2",
+      "sha256": "965dd931972b999a894f002961d0cfcfc11683127b5fddf24f9ec78f013f5929"
+    },
+    "maestro-current/compiled/TECHNICAL_UST_ADDRESS_MIGRATION.yaml": {
+      "git_blob": "bb2327a765a356bd7378a252f610f5e7ecdac4e1",
+      "sha256": "36779fc30c6f5ed7b76ec58c2374a482a2fe9d0cba0fe932180a08cfb2330988"
+    },
+    "maestro-current/compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md": {
+      "git_blob": "448c9604904243c3faa8f71ca9e0e9b5e3b022e8",
+      "sha256": "65627c96da0f3c8b154453f92f9763648b3a630c863ad76db8ef8b825cd42854"
+    },
+    "maestro-current/fixture/dryrun_project.md": {
+      "git_blob": "6b7481f141ed334adb6ecd4458a88746e549cd57",
+      "sha256": "16bb8506f63f1e85713a464a710eb46aede1a5902018b263073375dfd80d3dbe"
+    }
+  }
+}

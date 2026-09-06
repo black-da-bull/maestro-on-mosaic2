@@ -223,3 +223,6 @@ Operator, verbatim: *"close o-03 too."* Explicit close by ID. O-03 was the M5/DE
 **Not extinguished:** a later-surfacing original still supersedes its reconstruction **by pointer** under ordinary append-only discipline (M2/rule 6) — a standing rule requiring no open item.
 **Consequence handled:** O-07's search burden previously rode O-03; O-07 REMAINS OPEN and now carries its own burden (parse + phantom-detect are reconstructions; fold_laminate is the sole extant original).
 Status after this close: O-01 ✓ O-02 ✓ O-03 ✓ closed. Open: O-04 O-05 O-06 O-07 O-08 O-09 O-10 O-11 O-12 O-14 O-15 O-16 O-17 O16E, plus the claude.ai re-upload packaging step. Rung: operative (this LEDGER) + persisted (OPEN.md closes block).
+
+## PROMOTION-2026-09-06 — accepted deltas recorded before propagation
+Morris / Mo explicitly accepts DEC-PROMO-01 through DEC-PROMO-13. See PROMOTION_2026-09-06.md for each interpretation, evidence, impacted objects and independent authority/acceptance/persistence/enforcement status. DEC-PROMO-01/02 supersede the universal numeric reading in DEC-20/DEC-24 and CR-009 derivatives, not the evaluation capability or historical evidence. Application and validation remain pending in this initial entry. Baseline 88cd150cceacaebe79a3a0e97edb50497cc59a47 is recoverable through checkpoint/pre-promotion-2026-09-06.
