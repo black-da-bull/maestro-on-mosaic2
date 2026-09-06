@@ -1,3 +1,55 @@
+# CURRENT STATE — promotion fold, 2026-09-06
+Doctrine: **Your Vision. Our Mission.**
+**Promotion status: PARTIAL — NOT PROMOTION COMPLETE; branch candidate, not merged.**
+
+This block supersedes conflicting current interpretations in the retained snapshots below.
+Authority: operator DEC-PROMO-01–13, individually recorded in `PROMOTION_2026-09-06.md`.
+The accepted correction window repairs current sources and rebuilds maestro-current; it does
+not close broader reconstruction obligations or assert deployed song-runtime enforcement.
+Promotion verification and checkpoint outcome: `CONTINUATION_2026-09-06.md` and
+`promotion_2026-09-06/VALIDATION.md` (final run evidence, not older snapshot claims).
+
+## Current evaluation and authority
+- SEM/SEG/G-Card evaluation remains architectural, including feasibility, evidence-bound
+  critique, deficiencies/remediation, HPA/authenticity and lawful exceptions.
+- No universal numeric release floor. The historical song-local 97.5 target and historical
+  G≥7 mechanism remain separate; neither silently replaces or reinstates the other.
+- Applied numeric thresholds require explicit run/policy/version/context and authority;
+  absent applicability is unresolved, never an invented number or numeric PASS.
+- Human creative vision → working Technical UST → SME reasoning/consensus → locked
+  Technical UST → reverse compilation → derived renderer-facing triad. Creative UST stays derived.
+- Audio runtime target: 13 workers; 4 visual roles remain separately scoped optional modules.
+- Generation/model adapter, renderer grammar and Studio/editing workspace are downstream
+  Suno concerns; they never redefine canonical UST authority.
+
+## Current issue fold
+| Item | Effective status | Product critical path |
+|---|---|---|
+| Q1–Q16 | PHANTOM; never fabricate; no required deliverable | No |
+| O-03 | CLOSED by operator 2026-07-21; reconstructions accepted | No |
+| O-13 | CLOSED; V1 repair persisted 2026-07-19 | No |
+| O-04 | OPEN, provenance/session attribution only; b9f69085 and b161088a unverified | No |
+| O-05 | forensic_replay_required | No, unless replay discovers a current architectural mutation |
+| O-12 | external_asset_preservation_blocker; original Claude visual assets unverified | No audio-promotion block |
+| Seedance fit | experiment_required; identity/timing/narrative/cues/intent quality unproven | No audio-promotion block |
+
+Other historical obligations are not silently closed: O-06/07/08/09/10 (non-phantom residue),
+O-11/14/15/17/O16E and external skill upload retain their recorded scopes until evidence closes
+them. An old open record alone is not evidence of an audio-promotion critical-path dependency.
+O-18 rivalry framing is withdrawn per DEC-27; residual cross-era chronology rides O16E.
+
+## Next-work order — after promotion checks pass
+P0: executable 13-worker instances/workforce registry → Technical UST ownership and crossstream
+dependency overlay → first genuine golden structural-interpretation fixture.
+P1: empirical B3 baselines → O-05 suppressed-output/coverage replay.
+P2: recover original O-12 assets → Seedance musical-fit experiments.
+No item in this next-phase queue was executed during this promotion.
+
+## Preserved state snapshots — historical, not the live queue
+The material below is retained verbatim as earlier state evidence. Its claims to “ONLY live
+ordering” and its O-03-open line are superseded by this dated fold and later OPEN/LEDGER closes.
+
+---
 # STATE — Carried-Forward Working State
 **Version:** 0.7 (2026-07-20) · Fold of LEDGER M1–M18 + DEC-01..28 + CR-V5-STATUS-1 + V1-REPAIR + O16..O16D + REVIEW/REPAIR.O16D.VV.R1 · Load this at the start of every Maestro session before doing anything else.
 

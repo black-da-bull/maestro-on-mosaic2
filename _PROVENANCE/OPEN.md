@@ -77,3 +77,21 @@ Staging-copy deletion pending; 17GB audio ingest pending; final operator JSON pa
 - **Retired with it:** the standing DEC-03 search obligation (`SKILL_FILES_SEARCH_CHECKLIST.md`, `o03_sweep.ps1`) — retained as method artifacts, no longer a blocking open item. Per the checklist's own "when done" clause, unfound components are hereby reclassified from *possibly extant* to **never externalized — reconstruction is the artifact of record**.
 - **Not extinguished:** if an original later surfaces, ordinary append-only discipline still applies — it supersedes the reconstruction **by pointer** (never rewrite-in-place). That is a standing rule, not an open item; no reopening of O-03 required.
 - **O-07 REHOMED (still open):** its search burden previously rode O-03. O-07 now carries its own burden: `parse_transcript_v0_2.py` and `phantom_detect_v0_1.py` are reconstructions; `fold_laminate_v0_1.py` is the sole extant original. Closing O-03 does not close O-07.
+
+## Current classification fold — 2026-09-06 (DEC-PROMO-06–13)
+This append supersedes conflicting current interpretations of earlier entries; it deletes none.
+- Q1–Q16: PHANTOM; never fabricate; not a missing deliverable or active product blocker.
+  O-10's other unratified questions are not silently closed. Its historical eligibility-vs-release
+  numerical reconciliation is not current policy (DEC-PROMO-01/02).
+- O-03 CLOSED (operator 2026-07-21); O-13 CLOSED (repaired 2026-07-19). Prior opens remain history.
+- O-04: OPEN provenance-only attribution (b9f69085 / b161088a); non-critical for audio product.
+- O-05: forensic_replay_required, not a design question. Non-blocking for unrelated product
+  work unless replay proves a mutation of present architecture. Replay not performed here.
+- O-12: external_asset_preservation_blocker. Exact originals unverified: Claude design-project
+  `campaigns/run-it-to-me/Cover Directions.html`, `Run It To Me Covers.html`, and six referenced
+  cover images (their individual names/hashes require the original package). A repository
+  `Run It To Me - Track Page (standalone).html` is not evidence of that original cover package.
+  Does not block audio promotion; no asset recreation performed.
+- Seedance: experiment_required for song identity, timing, narrative, cues and intent fit.
+  No comparative quality success claimed; no experiment performed in this run.
+See CONTINUATION_2026-09-06.md for validation limits and the gated next-work queue.

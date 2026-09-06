@@ -226,3 +226,17 @@ Status after this close: O-01 ✓ O-02 ✓ O-03 ✓ closed. Open: O-04 O-05 O-06
 
 ## PROMOTION-2026-09-06 — accepted deltas recorded before propagation
 Morris / Mo explicitly accepts DEC-PROMO-01 through DEC-PROMO-13. See PROMOTION_2026-09-06.md for each interpretation, evidence, impacted objects and independent authority/acceptance/persistence/enforcement status. DEC-PROMO-01/02 supersede the universal numeric reading in DEC-20/DEC-24 and CR-009 derivatives, not the evaluation capability or historical evidence. Application and validation remain pending in this initial entry. Baseline 88cd150cceacaebe79a3a0e97edb50497cc59a47 is recoverable through checkpoint/pre-promotion-2026-09-06.
+
+## PROMOTION-2026-09-06 — application checkpoint and limited validation
+Supersedes only the pending-application status of the initial entry above. DEC-PROMO-01–13
+are now recorded and applied/verified at their applicable current layers. Source templates
+00/01/05/06/10/STRATA, validator and downstream draft repaired; full bundle regenerated;
+STATE reconciled; OPEN appended. 02/03/04 and their templates verified unchanged. Build
+validation and 33 regressions pass; 41 members reproduce byte-identically in two clean builds;
+three topology outputs reproduce exactly. Production-runtime enforcement is NOT claimed.
+
+Verdict: PARTIAL — NOT PROMOTION COMPLETE. V1 full-corpus occurrence coverage is unresolved
+for the two historical text blobs in promotion_2026-09-06/SOURCE_LIMITATIONS.md; remaining
+current-bundle checks V2–V10 pass in their recorded scope. Main not merged. The post-run
+checkpoint preserves this partial candidate. CONTINUATION_2026-09-06.md carries exact next
+mechanical work and the gated downstream queue. No next-phase development executed.

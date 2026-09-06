@@ -191,3 +191,16 @@ Source authority, acceptance, persistence and runtime enforcement are separate f
 ## Supersession scope
 DEC-PROMO-01/02 supersede only the universal-threshold interpretation in LEDGER DEC-20/24, CR-009-derived current claims, and inherited release-floor prose. They preserve SEM capability, arithmetic, interwoven evaluation, lyric lock, historical strata and run-specific targets. The repository is a migration corpus, not a collection of automatically current authority by filename (README.md).
 No next-phase workforce implementation, ownership overlay, golden run, B3 baseline, O-05 replay, O-12 recreation or Seedance experiment is authorized inside this promotion window.
+
+## Application outcome — append-only close of this work window
+The initial acceptance entries above remain historical records of the before-patch state.
+Their product-application status is superseded by promotion_2026-09-06/DECISION_OUTCOMES.json:
+all thirteen decisions persisted at applicable current layers or verified without change.
+The six source templates and downstream executable-app draft were repaired first; the entire
+bundle was regenerated; two clean rebuilds match all 41 members; 33 promotion regressions pass.
+Current state and append-only issue/ledger surfaces are reconciled.
+
+PARTIAL — NOT PROMOTION COMPLETE: full V1 coverage awaits exact raw-byte retrieval/audit of
+two historical text objects. No merge; no production-runtime claim. V2–V10 current checks pass
+in VALIDATION.md. Post-run checkpoint preserves the partial candidate; the continuation packet
+states the exact required mechanical work before the downstream P0 queue may begin.
