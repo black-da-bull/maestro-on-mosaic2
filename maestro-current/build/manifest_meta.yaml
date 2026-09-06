@@ -1,12 +1,12 @@
 # Deterministic MANIFEST metadata — consumed by build_maestro_current.py (v2)
 # Every field here is emitted verbatim into MANIFEST.yaml ahead of the computed files map.
 product: maestro-current
-version: v0.5
-work_item: REPAIR.O16D.VV.R1 (builds on O16D; absorbs REVIEW.O16D.VV.R1 verdict FAIL -> repaired)
-date: '2026-07-19'
+version: v0.6-promotion-2026-09-06
+work_item: PROMOTION.2026-09-06 (DEC-PROMO-01–13; scoped threshold repair)
+date: '2026-09-06'
 class: >-
-  REPAIRED CANDIDATE (post-V&V; promotion path per M17 = O16E history-grounded derivation +
-  operator acceptance; version-based force-close SUSPENDED)
+  CONTROLLED CORRECTION CANDIDATE; operator-accepted DEC-PROMO-01–13 applied.
+  Promotion validation recorded separately; broader O16E and production runtime not claimed complete.
 self_contained: >-
   every member required to interpret/validate current behavior is listed in the files map;
   inventory completeness is machine-checked (validator A11)
@@ -46,4 +46,4 @@ source_imports:
 builders:
   A9a_packager: build/build_maestro_current.py (v2 — regenerates the FULL member set + this manifest)
   A9b_source_delta_compiler: build/compile_current.py (hash-verified input; fails closed on unmapped address)
-  validator: build/validate_bundle.py (v2 — recursive parse A10 + inventory completeness A11)
+  validator: build/validate_bundle.py (v3 — scoped SEM configuration/policy oracle + recursive parse + actual hashes)

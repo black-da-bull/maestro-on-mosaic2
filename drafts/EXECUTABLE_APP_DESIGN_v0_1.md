@@ -128,10 +128,12 @@ orchestrator (V&V Marshal role) holds gate authority and cannot be overridden.
 ### 3.4 Interwoven Gate Engine — DEC-27 as architecture
 Gates **subscribe to fill events**; every accepted fill emits `(UST delta, SEM delta)` together
 — the preload ratchet. Live gates: SEG feasibility (physics override — taste cannot override),
-SEM 12-criteria running composite (weights fixed; floor 97.5 terminal), SE20 checklist, CAP
+SEM 12-criteria running composite (weights retained; terminal threshold from explicit applicable scoped policy, no numeric default), SE20 checklist, CAP
 projection (will the triad fit its bands?), lock compliance (D2 comparator: sequence +
 multiplicity over quoted lyric text only — meta/spacing transformable per DEC-26). Terminal
-close: composite ≥97.5 → G-Card decision artifact. Any FAIL = stop-the-line: the RUN halts and
+close: composite compared with the explicit applicable scoped threshold → G-Card decision artifact,
+with independent hard gates intact. Missing threshold authority/context yields an unresolved
+numeric verdict (DEC-PROMO-01/02), not an invented default or numeric PASS. Any FAIL = stop-the-line: the RUN halts and
 emits only diagnostics, missing work items, and dissent references (D1 wires QAF/PD rule cards
 here: authority declaration on artifact receipt, phantom-commitment scan pre-emit).
 

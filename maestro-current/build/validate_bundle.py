@@ -1,51 +1,108 @@
 #!/usr/bin/env python3
-"""Bundle validator v2 (REPAIR.O16D.VV.R1 — coverage widened per BLOCK-01/BLOCK-05 findings).
-A1 parse (top-level docs + yaml fences) · A2 refs (incl. shorthand 'in 08' / '(09)' / 'per 08') ·
-A3 axis parity · A5 gate arithmetic · A10 RECURSIVE structured-file parse (every .yaml/.yml/.json
-under the bundle — the check the v1 validator lacked, which let an unparseable compiled report
-ship) · A11 inventory completeness (MANIFEST.files == on-disk files, minus MANIFEST itself).
-Usage: validate_bundle.py BUNDLEDIR ; exit 0 = PASS."""
-import sys, os, re, json, yaml
+"""Bundle validator v3: scoped SEM policy, structured parse, references and actual hashes.
+Build-time validation only; does not assert deployed song-runtime enforcement.
+Usage: validate_bundle.py BUNDLEDIR
+"""
+import sys, os, re, json, yaml, hashlib, math
+
+POLICY_FIELDS = ('threshold', 'scope', 'context_ref', 'authority_ref')
+SCOPES = ('run', 'policy', 'version', 'context')
+
+def number(x):
+    return type(x) in (int, float) and math.isfinite(x)
+
+def sem_config(text):
+    found = []
+    for block in re.findall(r'```yaml\n(.*?)```', text, re.S):
+        value = yaml.safe_load(block)
+        if isinstance(value, dict) and 'sem_configuration' in value:
+            found.append(value['sem_configuration'])
+    if len(found) != 1:
+        raise ValueError('exactly one sem_configuration required')
+    c = found[0]
+    if not isinstance(c, dict): raise ValueError('SEM config mapping required')
+    weights = c.get('weights')
+    if not isinstance(weights, dict) or len(weights) != 12 or not all(number(v) and v > 0 for v in weights.values()) or sum(weights.values()) != 100:
+        raise ValueError('12 positive SEM weights must sum to 100')
+    if c.get('score_max') != 5: raise ValueError('SEM score scale must be 0–5')
+    if c.get('threshold_selection') != 'explicit_applicable_context': raise ValueError('explicit applicable context required')
+    if 'default_threshold' not in c or c['default_threshold'] is not None: raise ValueError('no numeric default authorized')
+    if c.get('allowed_scopes') != list(SCOPES): raise ValueError('scope declaration invalid')
+    if c.get('required_policy_fields') != list(POLICY_FIELDS): raise ValueError('policy evidence fields invalid')
+    return c
+
+def validate_policy(policy):
+    if not isinstance(policy, dict) or any(k not in policy for k in POLICY_FIELDS):
+        raise ValueError('explicit policy with threshold/scope/context/authority required')
+    if policy['scope'] not in SCOPES: raise ValueError('unsupported threshold scope')
+    if not number(policy['threshold']) or not 0 <= policy['threshold'] <= 100:
+        raise ValueError('threshold must be finite on SEM 0–100 scale')
+    for field in ('context_ref', 'authority_ref'):
+        if not isinstance(policy[field], str) or not policy[field].strip():
+            raise ValueError('nonempty ' + field + ' required')
+    return policy
+
+def evaluate_sem(scores, config, policy):
+    """Explicit-policy numeric oracle for build tests; never an overall SEG verdict.
+    Nonempty references prove structural binding only, not operator authenticity/applicability.
+    Runtime must resolve those references and independent hard gates (D4 obligation).
+    """
+    validate_policy(policy)
+    if not isinstance(scores, dict) or set(scores) != set(config['weights']):
+        raise ValueError('every SEM criterion must be scored exactly once')
+    if any(not number(v) or not 0 <= v <= config['score_max'] for v in scores.values()):
+        raise ValueError('score out of range or nonfinite')
+    composite = sum(scores[k] / config['score_max'] * w for k,w in config['weights'].items())
+    return {'composite': composite, 'numeric_pass': composite >= policy['threshold'],
+            'scope': policy['scope'], 'context_ref': policy['context_ref'],
+            'authority_ref': policy['authority_ref'], 'overall_seg_verdict': 'not_evaluated'}
 
 def main(d):
     errs = []; allt = {}
     for f in sorted(os.listdir(d)):
-        if f.endswith(".md"):
-            allt[f] = open(os.path.join(d, f), encoding="utf-8").read()
+        if f.endswith('.md'):
+            allt[f] = open(os.path.join(d,f),encoding='utf-8').read()
     nums = {f[:2] for f in allt}
-    manifest = yaml.safe_load(open(os.path.join(d, "MANIFEST.yaml")))
-    # A1/A2/A3 over top-level docs
-    for f, t in allt.items():
-        for m in re.finditer(r"```yaml\n(.*?)```", t, re.S):
-            yaml.safe_load(m.group(1))
-        for r in re.findall(r"(\d\d_[A-Z_]+\.md)", t):
-            if r not in allt: errs.append(f"A2 {f}: dangling {r}")
-        for m in re.finditer(r"(?:documented in|Per |per |see )(\d\d)(?![\d.])", t):
-            if m.group(1) not in nums: errs.append(f"A2 {f}: shorthand ref {m.group(1)} unresolved")
-        if re.search(r"\bPERF\b", t): errs.append(f"A3 {f}: retired 4-letter token")
-    if re.search(r"\|\s*MAP\s*\|", allt["01_TECHNICAL_UST_CANON.md"]): errs.append("A3: MAP axis row")
-    if sum([18,12,10,10,8,12,6,8,6,4,4,2]) != 100: errs.append("A5 weights")
-    if "97.5" not in allt["05_GOVERNANCE_SEG.md"]: errs.append("A5 floor")
-    # A10 recursive structured-file parse — the whole tree, no exceptions
-    for root, _, files in os.walk(d):
+    manifest = yaml.safe_load(open(os.path.join(d,'MANIFEST.yaml'),encoding='utf-8'))
+    for f,t in allt.items():
+        for block in re.findall(r'```yaml\n(.*?)```',t,re.S):
+            try: yaml.safe_load(block)
+            except yaml.YAMLError as e: errs.append(f'A1 {f}: {e}')
+        for ref in re.findall(r'(\d\d_[A-Z_]+\.md)',t):
+            if ref not in allt: errs.append(f'A2 {f}: dangling {ref}')
+        for m in re.finditer(r'(?:documented in|Per |per |see )(\d\d)(?![\d.])',t):
+            if m.group(1) not in nums: errs.append(f'A2 {f}: shorthand ref unresolved')
+        if re.search(r'\bPERF\b',t): errs.append(f'A3 {f}: retired token')
+        # Reject the exact historical-to-current promotion defect, including inherited templates.
+        if re.search(r'composite\s*≥\s*97\.5|release floor\s*\*\*97\.5|locked operator values \(97\.5\)|floor 97\.5 terminal|97\.5 floor present',t):
+            errs.append(f'A5 {f}: superseded global threshold semantics')
+    if re.search(r'\|\s*MAP\s*\|',allt['01_TECHNICAL_UST_CANON.md']): errs.append('A3 MAP axis row')
+    try: sem_config(allt['05_GOVERNANCE_SEG.md'])
+    except (ValueError, yaml.YAMLError) as e: errs.append('A5 '+str(e))
+    if 'composite = Σ((score/5)×weight)' not in allt['05_GOVERNANCE_SEG.md']: errs.append('A5 formula missing')
+    for root,_,files in os.walk(d):
         for fn in sorted(files):
-            p = os.path.join(root, fn); rel = os.path.relpath(p, d)
+            p=os.path.join(root,fn);rel=os.path.relpath(p,d)
             try:
-                if fn.endswith((".yaml", ".yml")): yaml.safe_load(open(p, encoding="utf-8"))
-                elif fn.endswith(".json"): json.load(open(p, encoding="utf-8"))
-            except Exception as e:
-                errs.append(f"A10 {rel}: {str(e).splitlines()[0]}")
-    # A11 inventory completeness
-    listed = set(manifest.get("files", {}))
-    on_disk = set()
-    for root, _, files in os.walk(d):
+                if fn.endswith(('.yaml','.yml')): yaml.safe_load(open(p,encoding='utf-8'))
+                elif fn.endswith('.json'): json.load(open(p,encoding='utf-8'))
+            except Exception as e: errs.append(f'A10 {rel}: {str(e).splitlines()[0]}')
+    listed=manifest.get('files',{});on_disk=set()
+    for root,_,files in os.walk(d):
         for fn in files:
-            rel = os.path.relpath(os.path.join(root, fn), d).replace(os.sep, "/")
-            if rel != "MANIFEST.yaml": on_disk.add(rel)
-    for miss in sorted(on_disk - listed): errs.append(f"A11 unlisted on disk: {miss}")
-    for ghost in sorted(listed - on_disk): errs.append(f"A11 listed but absent: {ghost}")
-    print("PASS" if not errs else "FAIL:" + ";".join(errs))
+            rel=os.path.relpath(os.path.join(root,fn),d).replace(os.sep,'/')
+            if rel!='MANIFEST.yaml':on_disk.add(rel)
+    for miss in sorted(on_disk-set(listed)):errs.append('A11 unlisted: '+miss)
+    for ghost in sorted(set(listed)-on_disk):errs.append('A11 absent: '+ghost)
+    for rel in sorted(set(listed)&on_disk):
+        actual=hashlib.md5(open(os.path.join(d,rel),'rb').read()).hexdigest()
+        if listed[rel]!=actual:errs.append('A11 hash mismatch: '+rel)
+    # Source/template drift cannot hide behind a freshly stamped manifest.
+    for name in allt:
+        template=os.path.join(d,'build','templates',name)
+        if os.path.isfile(template) and open(template,'rb').read()!=open(os.path.join(d,name),'rb').read():
+            errs.append('A9 template mismatch: '+name)
+    print('PASS' if not errs else 'FAIL: '+'; '.join(errs))
     return 0 if not errs else 2
 
-if __name__ == "__main__":
-    sys.exit(main(sys.argv[1]))
+if __name__=='__main__':sys.exit(main(sys.argv[1]))
