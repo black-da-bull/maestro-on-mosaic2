@@ -25,6 +25,12 @@ unchanged. Evidence: `promotion_2026-09-06/VALIDATION.md`, `V1_COVERAGE.json`,
   enforces it: five artifacts were cited as this promotion's evidence and never committed.
   Their names now resolve; the original text is unrecoverable and was not reconstructed.
 
+Figures note: the sweep excludes its own packet directory (its output quotes matched
+snippets verbatim, so scanning it would make the check grow on every run). The committed
+evidence files are measured at this branch head and reproduce exactly on re-run; the
+constrained figures — current-surface occurrences, violations, unresolved objects, layer
+discrepancies — are identical to the audited candidate's. Reconciliation in VALIDATION.md.
+
 Corpus finding worth carrying: the strongest surviving universal-floor phrasings in the
 whole corpus sit in `who dat.pdf` and `claude-session051526.oxps` — container formats a
 text-only scan cannot read. All historical, none on a current surface. Any future claim

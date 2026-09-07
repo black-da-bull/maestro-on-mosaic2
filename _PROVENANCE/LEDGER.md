@@ -277,3 +277,13 @@ reconstructed, paraphrased or invented** — the originals are unrecoverable.
 
 No bundle member modified; MANIFEST hashes untouched. No next-phase development executed.
 Merge remains an operator decision.
+
+## PROMOTION-2026-09-06.RESUME.FIGURES — coverage figures re-measured at resume head
+Housekeeping append; changes no verdict. The sweep gained one exclusion after its first
+run: it now skips its own packet directory, because `V1_OCCURRENCES.csv` quotes thousands
+of matched snippets verbatim and scanning it would make the check grow on every run.
+The committed `V1_*` evidence files are therefore regenerated from the tool as committed,
+measured at this branch head, so re-running reproduces them exactly. The audited object
+is unchanged and so is the outcome: every constrained figure (current-surface
+occurrences, violations, unresolved objects, layer discrepancies) is identical under both
+measurements. Exact figures and the reconciliation: `promotion_2026-09-06/VALIDATION.md`.
