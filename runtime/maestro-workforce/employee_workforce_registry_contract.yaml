@@ -1,5 +1,5 @@
 {
-  "meta": {"artifact_name":"employee_workforce_registry_contract.yaml","artifact_type":"runtime_workforce_registry_contract","version":"v5_c.p0.3_candidate","status":"operator_authorized_materialized","date":"2026-09-07"},
+  "meta": {"artifact_name":"employee_workforce_registry_contract.yaml","artifact_type":"runtime_workforce_registry_contract","version":"v5_c.p0.3","status":"operator_authorized_materialized","date":"2026-09-07"},
   "purpose":"Provide a machine-callable registry for exactly the current 13 audio workers and integrate address-aware dispatch with the materialized Technical UST ownership/dependency overlay without moving ownership into worker objects.",
   "governing_refs":["runtime/maestro-workforce/canonical_employee_module_spec.yaml","runtime/maestro-workforce/canonical_13_employee_instances.yaml","runtime/maestro-workforce/technical_ust_ownership_dependency_overlay.yaml","04_COUNCIL_TOPOLOGY.md","06_RUNTIME_RULES.md"],
   "audio_runtime": {
@@ -27,6 +27,6 @@
   "runtime_truth": {
     "materialized":["worker definitions","registry","broad dispatch envelopes","Technical UST ownership overlay","crossstream dependency graph","address-aware Technical UST dispatch","state-level dependency reopening","peer-objection blocking","lyric-lock enforcement","MAP.K3 reference invalidation","golden fixture executable"],
     "not_yet_materialized":["model/provider execution adapter","autonomous LLM worker processes","autonomous round-robin model invocation"],
-    "p0_3_fixture_status":"candidate_pending_repository_execution"
+    "p0_3_fixture_status":"passed_repository_native_run_34167433583"
   }
 }
