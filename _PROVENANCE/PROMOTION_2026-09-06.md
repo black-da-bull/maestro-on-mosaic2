@@ -226,3 +226,15 @@ The original text is unrecoverable and was not reconstructed. Registered as **O-
 
 Unchanged: no merge, no production-runtime claim, no next-phase work. Promotion
 completion beyond V1 remains an operator decision.
+
+
+## Promotion overlay correction — 2026-09-07
+- **DEC-PROMO-14:** Maestro version history, SEG, FOIL, and SEM are recovered repository
+  resources. They are overlay inputs, not artifacts to recreate and not grounds for another audit.
+- **DEC-PROMO-15:** Current integration semantics are **overlay**, not fold-and-laminate.
+  Historical fold/lamination tools and outputs remain evidence only.
+- **O16E CLOSED FOR THE RECOVERED TARGET SET.** Cross-version differences are chronological
+  overlays, not a generic unresolved rivalry.
+- **O-19 / O-20 SUPERSEDED — NOT ACTIVE.** They were AI-created audit/method extensions, not
+  operator-accepted blockers.
+- Evidence: `_PROVENANCE/OVERLAY_CORRECTION_2026-09-07.md`.

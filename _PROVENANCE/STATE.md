@@ -196,3 +196,15 @@ PARTIAL — NOT PROMOTION COMPLETE. Exact operator V1–V10 bindings and current
 Original missing evidence has been recovered from this conversation workspace and persisted with Git hash verification (RECOVERED_FILES.json). Earlier statements that this evidence no longer existed are superseded; prior prose is retained.
 O-19 missing-file aspect is repaired; no new universal governance rule is inferred. The actual second original retrieval gap was SYSTEM_GRAPH_IMPROVED.json, not the inferred Word owner file. Later raw-sweep records remain useful evidence, but this review cannot independently establish full-corpus V1. Current bundle checks pass, with all 41 members matching remote and two clean builds; no deployed-runtime claim. No merge or downstream work until V1 is established. The existing operator instruction already authorizes promotion once blocking checks pass.
 O-03/O-13 CLOSED; O-04 provenance-only; O-05 forensic_replay_required; O-12 external_asset_preservation_blocker; Q1–Q16 PHANTOM. External preservation and experiments retain their non-audio-blocking scopes.
+
+
+## Promotion overlay correction — 2026-09-07
+- **DEC-PROMO-14:** Maestro version history, SEG, FOIL, and SEM are recovered repository
+  resources. They are overlay inputs, not artifacts to recreate and not grounds for another audit.
+- **DEC-PROMO-15:** Current integration semantics are **overlay**, not fold-and-laminate.
+  Historical fold/lamination tools and outputs remain evidence only.
+- **O16E CLOSED FOR THE RECOVERED TARGET SET.** Cross-version differences are chronological
+  overlays, not a generic unresolved rivalry.
+- **O-19 / O-20 SUPERSEDED — NOT ACTIVE.** They were AI-created audit/method extensions, not
+  operator-accepted blockers.
+- Evidence: `_PROVENANCE/OVERLAY_CORRECTION_2026-09-07.md`.
