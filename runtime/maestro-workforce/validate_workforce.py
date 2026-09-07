@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed validator for Maestro P0 workforce materialization (stdlib only)."""
+"""Fail-closed validator for Maestro workforce plus P0.2/P0.3 runtime integration."""
 import json,os,sys,subprocess,importlib.util
 ROOT=os.path.dirname(os.path.abspath(__file__))
 EXPECTED=['Mo','Canon Orchestrator','Megazord Orchestrator','Sibling Architect','Metro Craft','Melody Scout','Sage','Alan','Dave','Vanessa','Analog Confessor','Anva','Eldrik']
@@ -26,13 +26,14 @@ def main():
         if e.get('explicit_non_authority',{}).get('may_not_gate_or_progress_phases_directly') is not True:errs.append(f'{n}: phase-gate prohibition')
         if e.get('reverse_pass_participation',{}).get('allowed_after')!='definitive_technical_ust_lock':errs.append(f'{n}: reverse pass timing')
         forbidden=set(e.keys()) & {'owns_axes','axis_key_ownership','owned_addresses'}
-        if forbidden:errs.append(f'{n}: premature ownership fields {sorted(forbidden)}')
-        if e.get('conflict_precedence',{}).get('may_override'):errs.append(f'{n}: worker override authority forbidden in P0')
+        if forbidden:errs.append(f'{n}: ownership belongs in overlay, not worker object {sorted(forbidden)}')
+        if e.get('conflict_precedence',{}).get('may_override'):errs.append(f'{n}: worker override authority forbidden')
     if reg.get('audio_runtime',{}).get('expected_worker_count')!=13:errs.append('registry count')
     if reg.get('audio_runtime',{}).get('worker_names')!=EXPECTED:errs.append('registry roster mismatch')
     if set(reg.get('audio_runtime',{}).get('visual_roles_excluded',[]))!=VISUAL:errs.append('visual exclusion mismatch')
-    if reg.get('registry_law',{}).get('axis_key_ownership')!='deferred_next_task':errs.append('axis ownership not deferred')
-    if reg.get('registry_law',{}).get('crossstream_dependency_overlay')!='deferred_next_task':errs.append('dependency overlay not deferred')
+    law=reg.get('registry_law',{})
+    if law.get('axis_key_ownership')!='materialized_by_technical_ust_overlay':errs.append('ownership overlay not integrated')
+    if law.get('crossstream_dependency_overlay')!='materialized_by_technical_ust_overlay':errs.append('dependency overlay not integrated')
     if reg.get('controller_boundary',{}).get('controller_may')!=['route','validate','log','gate','freeze','promote','package']:errs.append('controller boundary widened/drifted')
     mo=next((e for e in es if e['identity']['role_name']=='Mo'),None)
     if not mo or not any('live operator' in s for s in mo['five_elements']['constraints']):errs.append('Mo operator-impersonation guard missing')
@@ -40,8 +41,10 @@ def main():
         out=subprocess.check_output([sys.executable,os.path.join(ROOT,'workforce_runtime.py'),'list'],text=True)
         if len(json.loads(out))!=13:errs.append('runtime list count')
         pkt=subprocess.check_output([sys.executable,os.path.join(ROOT,'workforce_runtime.py'),'dispatch','Dave','--task','evaluate pocket readability'],text=True)
-        if json.loads(pkt)['authority_scope']['axis_key_ownership']!='not_inferred_p0':errs.append('dispatch ownership leak')
+        if json.loads(pkt)['authority_scope']['axis_key_ownership']!='not_claimed_without_address':errs.append('broad dispatch ownership leak')
+        fixture=subprocess.check_output([sys.executable,os.path.join(ROOT,'golden_structural_interpretation_fixture.py')],text=True)
+        if json.loads(fixture).get('passed') is not True:errs.append('golden fixture failed')
     except Exception as ex:errs.append('runtime smoke failed: '+str(ex))
-    print('PASS: 13 bounded audio workers materialized; registry/runtime smoke clean; ownership overlay deferred' if not errs else 'FAIL: '+'; '.join(errs))
+    print('PASS: 13 bounded audio workers + ownership/dependency integration + P0.3 golden fixture clean' if not errs else 'FAIL: '+'; '.join(errs))
     return 0 if not errs else 2
 if __name__=='__main__':raise SystemExit(main())

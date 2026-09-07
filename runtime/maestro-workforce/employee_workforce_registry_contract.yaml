@@ -1,7 +1,7 @@
 {
-  "meta": {"artifact_name":"employee_workforce_registry_contract.yaml","artifact_type":"runtime_workforce_registry_contract","version":"v5_c.p0.1","status":"operator_authorized_materialized","date":"2026-09-07"},
-  "purpose":"Provide a machine-callable registry for exactly the current 13 audio workers without freezing the next-task Technical UST ownership/dependency overlay.",
-  "governing_refs":["workforce/canonical_employee_module_spec.yaml","workforce/canonical_13_employee_instances.yaml","04_COUNCIL_TOPOLOGY.md","06_RUNTIME_RULES.md"],
+  "meta": {"artifact_name":"employee_workforce_registry_contract.yaml","artifact_type":"runtime_workforce_registry_contract","version":"v5_c.p0.3","status":"operator_authorized_materialized","date":"2026-09-07"},
+  "purpose":"Provide a machine-callable registry for exactly the current 13 audio workers and integrate address-aware dispatch with the materialized Technical UST ownership/dependency overlay without moving ownership into worker objects.",
+  "governing_refs":["runtime/maestro-workforce/canonical_employee_module_spec.yaml","runtime/maestro-workforce/canonical_13_employee_instances.yaml","runtime/maestro-workforce/technical_ust_ownership_dependency_overlay.yaml","04_COUNCIL_TOPOLOGY.md","06_RUNTIME_RULES.md"],
   "audio_runtime": {
     "expected_worker_count":13,
     "worker_ids":["MAESTRO.AUDIO.01.MO","MAESTRO.AUDIO.02.CANON","MAESTRO.AUDIO.03.MEGAZORD","MAESTRO.AUDIO.04.SIBLING","MAESTRO.AUDIO.05.METRO","MAESTRO.AUDIO.06.MELODY_SCOUT","MAESTRO.AUDIO.07.SAGE","MAESTRO.AUDIO.08.ALAN","MAESTRO.AUDIO.09.DAVE","MAESTRO.AUDIO.10.VANESSA","MAESTRO.AUDIO.11.ANALOG_CONFESSOR","MAESTRO.AUDIO.12.ANVA","MAESTRO.AUDIO.13.ELDRIK"],
@@ -9,17 +9,24 @@
     "visual_roles_excluded":["Visual Director","Identity Keeper","Motion Editor","Distribution Strategist"]
   },
   "registry_law": {
-    "may":["resolve exact worker id","resolve declared alias","enumerate materialized workers","construct a bounded dispatch envelope","validate instance shape and controller separation"],
-    "may_not":["infer axis/key ownership","invent a worker","add historical Isla/Huan seats","merge historical Melony with Melody Scout","grant controller powers to a worker","claim autonomous model execution merely because a worker descriptor exists"],
-    "axis_key_ownership":"deferred_next_task","crossstream_dependency_overlay":"deferred_next_task"
+    "may":["resolve exact worker id","resolve declared alias","enumerate materialized workers","construct a bounded broad dispatch envelope","construct an address-authorized dispatch only after overlay resolution","validate instance shape and controller separation"],
+    "may_not":["infer unsupported axis/key ownership","invent a worker","add historical Isla/Huan seats","merge historical Melony with Melody Scout","grant controller powers to a worker","claim autonomous model execution merely because a worker descriptor exists"],
+    "axis_key_ownership":"materialized_by_technical_ust_overlay",
+    "crossstream_dependency_overlay":"materialized_by_technical_ust_overlay",
+    "ownership_location":"technical_ust_ownership_dependency_overlay.yaml",
+    "worker_object_rule":"employee descriptors stay domain-bounded; address ownership is joined at runtime rather than copied into worker objects"
   },
   "controller_boundary": {"controller_may":["route","validate","log","gate","freeze","promote","package"],"controller_may_not":["invent artistic content","resolve creative nulls","absorb employee judgment"],"worker_may_not_act_as_controller":true},
   "dispatch_contract": {
     "required_fields":["dispatch_id","worker_id","task","context_refs","requested_output","authority_scope"],
-    "authority_scope_rule":"must name an explicit bounded task; absence of an ownership overlay means dispatch is never proof of canonical axis/key ownership",
-    "write_rule":"write target must be listed in the selected worker writable_zones or dispatch remains proposal-only",
+    "authority_scope_rule":"broad dispatch makes no canonical address claim; address-aware dispatch is lawful only when technical_ust_runtime resolves an explicit primary_owner from the materialized overlay",
+    "write_rule":"state mutation additionally requires technical_ust_runtime ownership, lyric-lock, dependency, and peer-objection checks; a dispatch envelope alone never authorizes mutation",
     "result_statuses":["completed","partial","blocked","abstained_out_of_domain"],
-    "conflict_rule":"unresolved conflicts remain explicit and route to round-robin/controller gate as appropriate"
+    "conflict_rule":"a lawful peer objection remains blocking inside that peer lane until explicitly resolved; primary ownership does not erase peer authority"
   },
-  "runtime_truth": {"materialized":"worker definitions + registry + validation + dispatch-envelope runtime","not_yet_materialized":["model/provider execution adapter","Technical UST axis/key ownership overlay","crossstream dependency graph","golden structural-interpretation run"]}
+  "runtime_truth": {
+    "materialized":["worker definitions","registry","broad dispatch envelopes","Technical UST ownership overlay","crossstream dependency graph","address-aware Technical UST dispatch","state-level dependency reopening","peer-objection blocking","lyric-lock enforcement","MAP.K3 reference invalidation","golden fixture executable"],
+    "not_yet_materialized":["model/provider execution adapter","autonomous LLM worker processes","autonomous round-robin model invocation"],
+    "p0_3_fixture_status":"passed_repository_native_run_34167433583"
+  }
 }
