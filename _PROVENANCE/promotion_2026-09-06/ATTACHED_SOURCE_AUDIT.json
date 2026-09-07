@@ -1,0 +1,229 @@
+[
+  {
+    "file": ".codex-upload-4029b56c18064152826b0bdd871f971f",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "matches": []
+  },
+  {
+    "file": ".codex-upload-6bc4531ed5654d3db1873087c4abc565",
+    "sha256": "95bfddb0ecb85b8dcd247c1fbeeffda2172faa8195fcb302441b6435a5a2fae6",
+    "bytes": 40224,
+    "matches": [
+      {
+        "line": 1049,
+        "term": "Composite",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      },
+      {
+        "line": 1052,
+        "term": "composite",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      }
+    ]
+  },
+  {
+    "file": ".codex-upload-8a3f9df60763416f801140d5d7cbdda9",
+    "sha256": "1e200876552031c4e965a7f59bc9323cc64e3fbded5a24c55f7bd73d5b7c600c",
+    "bytes": 6215,
+    "matches": []
+  },
+  {
+    "file": ".codex-upload-dea99b59e3de47f1a0b03b2f4f5c5c98",
+    "sha256": "f4f4620d9dd9faf6b5fbea99b94454683c6d2ddd4b27ba1644675b5c5a675d79",
+    "bytes": 16568,
+    "matches": []
+  },
+  {
+    "file": "01-Maestro.txt",
+    "sha256": "1ef5935666178e8f097a7aa1e61a665397c054e0ce6b2dd91615faed57ae9540",
+    "bytes": 20355,
+    "matches": []
+  },
+  {
+    "file": "02-round_robin_notes_template.yaml",
+    "sha256": "1f4ec8d3dba79de7a007d8adefb31d3201c05349c4e2c2bf96078653a863e161",
+    "bytes": 3677,
+    "matches": []
+  },
+  {
+    "file": "03-day_2_snapshot_and_simulated_stashes.md",
+    "sha256": "9472eb36b4fce89b45223c220da74b33459c4a7b07079bfb8eaf269ef294ddba",
+    "bytes": 3676,
+    "matches": [
+      {
+        "line": 51,
+        "term": "composite",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      }
+    ]
+  },
+  {
+    "file": "04-canonical_employee_module_spec.yaml",
+    "sha256": "69e2dac59ea254c6f3b3d2ac5e4d9f90516b17f9e7e29cbe3742f1da0dd07332",
+    "bytes": 14247,
+    "matches": []
+  },
+  {
+    "file": "05-maestro_day3_work_window_script.md",
+    "sha256": "4a6cbb4cdf573b7a7d41f3ec71555022aa675aff27f3b1a1eff501402c7a828c",
+    "bytes": 12569,
+    "matches": []
+  },
+  {
+    "file": "06-foil_promotion_contract.yaml",
+    "sha256": "d9636bcbc68cd5f56ed4e6fdd596301681202b737169f58bb4598db8e54d930e",
+    "bytes": 5090,
+    "matches": []
+  },
+  {
+    "file": "07-creative_ust_canonical_shell.md",
+    "sha256": "c4cd8c8e34959dd757da3da8d98cc9251034f8593051ec052ba827f180905fd3",
+    "bytes": 5672,
+    "matches": [
+      {
+        "line": 73,
+        "term": "Composite",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      },
+      {
+        "line": 76,
+        "term": "composite",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      }
+    ]
+  },
+  {
+    "file": "08-artifact_contract.yaml",
+    "sha256": "9667a10527ec2c3f4f1ae6c6540a43905e2f633b0bd079099e58f26504c4f80e",
+    "bytes": 7255,
+    "matches": []
+  },
+  {
+    "file": "09-artifact_taxonomy.md",
+    "sha256": "629f22fc815b15d88391fd4782a27b44eac4456ca60ee85c6181886c0795c647",
+    "bytes": 3983,
+    "matches": []
+  },
+  {
+    "file": "10-controller_contract.yaml",
+    "sha256": "65c8ac9119651e3b19d5ae4f53d138fdc6b1e7c8c6c9d26990d9cf460ee8baa3",
+    "bytes": 7698,
+    "matches": []
+  },
+  {
+    "file": "11-phase_contract.yaml",
+    "sha256": "1e200876552031c4e965a7f59bc9323cc64e3fbded5a24c55f7bd73d5b7c600c",
+    "bytes": 6215,
+    "matches": []
+  },
+  {
+    "file": "12-DAY2_CLOSEOUT_REPORT.md",
+    "sha256": "95bfddb0ecb85b8dcd247c1fbeeffda2172faa8195fcb302441b6435a5a2fae6",
+    "bytes": 40224,
+    "matches": [
+      {
+        "line": 1049,
+        "term": "Composite",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      },
+      {
+        "line": 1052,
+        "term": "composite",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      }
+    ]
+  },
+  {
+    "file": "13-template.creative.ust.yaml",
+    "sha256": "49c7737e6127582b67fbf18757d2496286dad5dbccf2a7ee646ef3787451beac",
+    "bytes": 4672,
+    "matches": []
+  },
+  {
+    "file": "14-template.technical.ust.yaml",
+    "sha256": "acfadbe3f129d6feb0260066d9641a023bae595198a539b8fe274ff0e6c931a9",
+    "bytes": 19738,
+    "matches": []
+  },
+  {
+    "file": "15-ai-personas.txt",
+    "sha256": "34eda7d53e9ad66642bd9aa9d805d68a46a1226a41f6c5bb59e29e61b763fe5b",
+    "bytes": 128690,
+    "matches": [
+      {
+        "line": 350,
+        "term": "G-CARD",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      },
+      {
+        "line": 350,
+        "term": "G-CARD",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      },
+      {
+        "line": 350,
+        "term": "G-CARD",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      },
+      {
+        "line": 350,
+        "term": "G-CARD",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      },
+      {
+        "line": 350,
+        "term": "G-CARD",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      },
+      {
+        "line": 350,
+        "term": "G-CARD",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      },
+      {
+        "line": 350,
+        "term": "G-CARD",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      },
+      {
+        "line": 350,
+        "term": "G-CARD",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      },
+      {
+        "line": 350,
+        "term": "G-CARD",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      },
+      {
+        "line": 386,
+        "term": "97.5%",
+        "disposition": "HISTORICAL_VALID",
+        "reason": "Supporting uploaded artifact; operator DEC-PROMO-01\u201313 controls current interpretation."
+      }
+    ]
+  },
+  {
+    "file": "16-maestro_v_5_c_execution_scaffold.md",
+    "sha256": "f4f4620d9dd9faf6b5fbea99b94454683c6d2ddd4b27ba1644675b5c5a675d79",
+    "bytes": 16568,
+    "matches": []
+  }
+]

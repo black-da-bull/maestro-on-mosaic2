@@ -189,3 +189,10 @@ The `maestro-forensic-transcript` skill is no longer a skeleton. The v1.1 ATP (2
 - **Discharged-in-package, landed in SSOT:** O-01 (claud2 dating annotation), O-02 (Revised INV-18 in contract #2), O-07 (parse + phantom-detect extractors). Effective on the claude.ai surface once re-uploaded.
 - **Still open:** O-03 original-file sweep (found originals outrank these reconstructions, DEC-03).
 - **Next-action 7 update:** "skill rebuild" is DONE and installed; the remaining step is the operator's manual claude.ai re-upload (delete skeleton → upload the 2026-07-20 build zip). P2 classification still pending.
+
+
+## Promotion reconciliation — 2026-09-07 (supersedes prior completion interpretation)
+PARTIAL — NOT PROMOTION COMPLETE. Exact operator V1–V10 bindings and current continuation: `promotion_2026-09-06/RECONCILIATION_2026-09-07.md`.
+Original missing evidence has been recovered from this conversation workspace and persisted with Git hash verification (RECOVERED_FILES.json). Earlier statements that this evidence no longer existed are superseded; prior prose is retained.
+O-19 missing-file aspect is repaired; no new universal governance rule is inferred. The actual second original retrieval gap was SYSTEM_GRAPH_IMPROVED.json, not the inferred Word owner file. Later raw-sweep records remain useful evidence, but this review cannot independently establish full-corpus V1. Current bundle checks pass, with all 41 members matching remote and two clean builds; no deployed-runtime claim. No merge or downstream work until V1 is established. The existing operator instruction already authorizes promotion once blocking checks pass.
+O-03/O-13 CLOSED; O-04 provenance-only; O-05 forensic_replay_required; O-12 external_asset_preservation_blocker; Q1–Q16 PHANTOM. External preservation and experiments retain their non-audio-blocking scopes.

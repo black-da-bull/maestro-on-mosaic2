@@ -1,0 +1,165 @@
+{
+  "current_bundle_checks": "PASS",
+  "deterministic_members": 41,
+  "sha256": {
+    "00_ROOT_SPEC.md": "0811484b1730ada2e868b2d535f43b1dc088d81a7036bea25de4b77059939321",
+    "01_TECHNICAL_UST_CANON.md": "d2c9ca6a414f8c9268f3400767459722e592db45193af95576820bff31314ca5",
+    "02_CREATIVE_UST_TEMPLATE.md": "0481c7129516d5ae86da8b0d7b2160a9e69932dbb9e91283b48da7a1a4abcf5c",
+    "03_PHASE_CHAIN.md": "2be39d7736734668d21f9c8f5511d33972c04fdae2f080dd893fedb0ab8d28a8",
+    "04_COUNCIL_TOPOLOGY.md": "5d081a9388454184a5b30effcede00b2f63b898570060740bdae1110405dd204",
+    "05_GOVERNANCE_SEG.md": "fd3ee10bd52d557fd563a031efbd922f7455e2868316e4b6fe10487000aec5c1",
+    "06_RUNTIME_RULES.md": "8565aeca97dfa043992df47304968e48a666f0f4bad9f7f11aa4da7cb8acd46d",
+    "07_ADDRESS_REGISTRY.md": "bbf4765ebc9fd8fd2964db172c8be3d866bb754d06c3455b6892148454c17ef2",
+    "08_PORTABILITY_ATP.md": "058669ec4c820002ef3cfc89a09537998ffd371a6e2f0aa502ee56815d459729",
+    "09_LOGS_AND_CONTINUATION.md": "d50831cd58e220785f9c0e44f5f080a571e0a05ac0b15f07012d560ef16b29d0",
+    "10_TEST_PLAN.md": "b356388406e70d2780546093eb695d9d5dd0dc6044455cf74543882a89feb46f",
+    "MANIFEST.yaml": "2c0b5f353009e1bcfe84b59c3da7afa3af0b7f28672eeff094f243ce4290bc22",
+    "SCOPE_CORRECTION_v0_4.md": "c008c1cef200160c98bb967fb398256bf7d8e301bf3c2e8de5c7851884e232d1",
+    "STRATA_MIGRATION_MAP.md": "a41535d60291141696f4d38ededa429355308ea130500ec0362a83ba7247cad1",
+    "build/build_maestro_current.py": "148cacd4ac7128123d391684d5875d44efda60b14caabbe63f23e5168cf56a88",
+    "build/cap_validator.py": "348721418293958e280df39948a4a1ab21f9446926a6abdc0b4116cb5b661758",
+    "build/compile_current.py": "4b16f2392757dcbb6aafef54651f90a1fa9f0c91da57d3ea9a8d2f8908670182",
+    "build/lyric_lock_check.py": "f54f98e549b9f924ec09dfb68ca0ad9ac798ae7c55a5e495204f8bf682a09c52",
+    "build/manifest_meta.yaml": "cd8912b5823b22073ade8e7af3e1b6bc63a48c29a1f6755eb8d1b3a8a6abd8d4",
+    "build/templates/00_ROOT_SPEC.md": "0811484b1730ada2e868b2d535f43b1dc088d81a7036bea25de4b77059939321",
+    "build/templates/01_TECHNICAL_UST_CANON.md": "d2c9ca6a414f8c9268f3400767459722e592db45193af95576820bff31314ca5",
+    "build/templates/02_CREATIVE_UST_TEMPLATE.md": "0481c7129516d5ae86da8b0d7b2160a9e69932dbb9e91283b48da7a1a4abcf5c",
+    "build/templates/03_PHASE_CHAIN.md": "2be39d7736734668d21f9c8f5511d33972c04fdae2f080dd893fedb0ab8d28a8",
+    "build/templates/04_COUNCIL_TOPOLOGY.md": "5d081a9388454184a5b30effcede00b2f63b898570060740bdae1110405dd204",
+    "build/templates/05_GOVERNANCE_SEG.md": "fd3ee10bd52d557fd563a031efbd922f7455e2868316e4b6fe10487000aec5c1",
+    "build/templates/06_RUNTIME_RULES.md": "8565aeca97dfa043992df47304968e48a666f0f4bad9f7f11aa4da7cb8acd46d",
+    "build/templates/07_ADDRESS_REGISTRY.md": "bbf4765ebc9fd8fd2964db172c8be3d866bb754d06c3455b6892148454c17ef2",
+    "build/templates/08_PORTABILITY_ATP.md": "058669ec4c820002ef3cfc89a09537998ffd371a6e2f0aa502ee56815d459729",
+    "build/templates/09_LOGS_AND_CONTINUATION.md": "d50831cd58e220785f9c0e44f5f080a571e0a05ac0b15f07012d560ef16b29d0",
+    "build/templates/10_TEST_PLAN.md": "b356388406e70d2780546093eb695d9d5dd0dc6044455cf74543882a89feb46f",
+    "build/templates/SCOPE_CORRECTION_v0_4.md": "c008c1cef200160c98bb967fb398256bf7d8e301bf3c2e8de5c7851884e232d1",
+    "build/templates/STRATA_MIGRATION_MAP.md": "a41535d60291141696f4d38ededa429355308ea130500ec0362a83ba7247cad1",
+    "build/test_promotion.py": "91d7bb7dfd799aede542e5521570026b807cbaa41a6fd59b0a1279e2280fc3b8",
+    "build/validate_bundle.py": "d4e79657063206ebf70d5a0c6228aaee381ab9a60ce0014d55e6aa965857a96d",
+    "compiled/BUILD_REGENERATION_REPORT.yaml": "7253ae65cacaa20a606c974620dd16e54be101cdf4683f3d90779b0755b0f7e2",
+    "compiled/DEPENDENCY_CLOSURE_REPORT.yaml": "06b3f5ee193034171dc80805164465c92139ed25dc75730881fe4ffb784ae5d5",
+    "compiled/FULL_CANON_COVERAGE_MATRIX.yaml": "dae303831773695a0e50a75a06c72a54027f3da72744d7d09d0d231ae4be4db6",
+    "compiled/OMISSION_AUDIT.yaml": "965dd931972b999a894f002961d0cfcfc11683127b5fddf24f9ec78f013f5929",
+    "compiled/TECHNICAL_UST_ADDRESS_MIGRATION.yaml": "36779fc30c6f5ed7b76ec58c2374a482a2fe9d0cba0fe932180a08cfb2330988",
+    "compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md": "65627c96da0f3c8b154453f92f9763648b3a630c863ad76db8ef8b825cd42854",
+    "fixture/dryrun_project.md": "16bb8506f63f1e85713a464a710eb46aede1a5902018b263073375dfd80d3dbe"
+  },
+  "references": [
+    {
+      "document": "01_TECHNICAL_UST_CANON.md",
+      "reference": "build/compile_current.py",
+      "resolved": "maestro-current/build/compile_current.py"
+    },
+    {
+      "document": "01_TECHNICAL_UST_CANON.md",
+      "reference": "artifacts/D-Maestro/Maestro/technical.ust.template.txt",
+      "resolved": "artifacts/D-Maestro/Maestro/technical.ust.template.txt"
+    },
+    {
+      "document": "04_COUNCIL_TOPOLOGY.md",
+      "reference": "system/D-Maestro/drafts/Maestro Personas aka the subagents.md",
+      "resolved": "system/D-Maestro/drafts/Maestro Personas aka the subagents.md"
+    },
+    {
+      "document": "04_COUNCIL_TOPOLOGY.md",
+      "reference": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/COUNCIL_MATRIX.md",
+      "resolved": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/COUNCIL_MATRIX.md"
+    },
+    {
+      "document": "STRATA_MIGRATION_MAP.md",
+      "reference": "legacy/context (1).md",
+      "resolved": "code/D-Maestro/maestro-ai-music-system-main/legacy/context (1).md"
+    },
+    {
+      "document": "STRATA_MIGRATION_MAP.md",
+      "reference": "solution (1).md",
+      "resolved": "code/D-Maestro/maestro-ai-music-system-main/solution (1).md"
+    },
+    {
+      "document": "05_GOVERNANCE_SEG.md",
+      "reference": "legacy/maestro_v5b_coldstart/docs/TECHNICAL_UST_GOVERNANCE_ADDENDUM.md",
+      "resolved": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/TECHNICAL_UST_GOVERNANCE_ADDENDUM.md"
+    },
+    {
+      "document": "05_GOVERNANCE_SEG.md",
+      "reference": "artifacts/D-Maestro/Maestro/song.excellence.matrix.iterative.design.session.txt",
+      "resolved": "artifacts/D-Maestro/Maestro/song.excellence.matrix.iterative.design.session.txt"
+    },
+    {
+      "document": "05_GOVERNANCE_SEG.md",
+      "reference": "code/D-Maestro/maestro-ai-music-system-main/Activity.txt",
+      "resolved": "code/D-Maestro/maestro-ai-music-system-main/Activity.txt"
+    },
+    {
+      "document": "SCOPE_CORRECTION_v0_4.md",
+      "reference": "legacy/maestro_v5b_coldstart/docs/COUNCIL_MATRIX.md",
+      "resolved": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/COUNCIL_MATRIX.md"
+    },
+    {
+      "document": "SCOPE_CORRECTION_v0_4.md",
+      "reference": "legacy/context (1).md",
+      "resolved": "code/D-Maestro/maestro-ai-music-system-main/legacy/context (1).md"
+    },
+    {
+      "document": "SCOPE_CORRECTION_v0_4.md",
+      "reference": "solution (1).md",
+      "resolved": "code/D-Maestro/maestro-ai-music-system-main/solution (1).md"
+    },
+    {
+      "document": "02_CREATIVE_UST_TEMPLATE.md",
+      "reference": "artifacts/HYDRA/creative_ust_canonical_shell.md",
+      "resolved": "artifacts/HYDRA/creative_ust_canonical_shell.md"
+    },
+    {
+      "document": "02_CREATIVE_UST_TEMPLATE.md",
+      "reference": "artifacts/D-Maestro/Maestro/creative.ust.template.txt",
+      "resolved": "artifacts/D-Maestro/Maestro/creative.ust.template.txt"
+    },
+    {
+      "document": "02_CREATIVE_UST_TEMPLATE.md",
+      "reference": "templates/CREATIVE_UST_TEMPLATE.txt",
+      "resolved": "code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/templates/CREATIVE_UST_TEMPLATE.txt"
+    }
+  ],
+  "verified_no_change": [
+    "maestro-current/02_CREATIVE_UST_TEMPLATE.md",
+    "maestro-current/build/templates/02_CREATIVE_UST_TEMPLATE.md",
+    "maestro-current/03_PHASE_CHAIN.md",
+    "maestro-current/build/templates/03_PHASE_CHAIN.md",
+    "maestro-current/04_COUNCIL_TOPOLOGY.md",
+    "maestro-current/build/templates/04_COUNCIL_TOPOLOGY.md"
+  ],
+  "commands": [
+    {
+      "command": "python /workspace/scratch/79872f7bc0de/maestro-on-mosaic2/maestro-current/build/validate_bundle.py /workspace/scratch/79872f7bc0de/maestro-on-mosaic2/maestro-current",
+      "exit": 0,
+      "stdout": "PASS\n",
+      "stderr": ""
+    },
+    {
+      "command": "python /workspace/scratch/79872f7bc0de/maestro-on-mosaic2/maestro-current/build/test_promotion.py /workspace/scratch/79872f7bc0de/maestro-on-mosaic2/maestro-current",
+      "exit": 0,
+      "stdout": "PASS: 33 promotion checks\n  PASS run-local 76.8 does not meet its explicit target\n  PASS numeric success is not an overall SEG release\n  PASS explicit alternate fixture boundary\n  PASS reject missing threshold\n  PASS reject missing scope\n  PASS reject missing context_ref\n  PASS reject missing authority_ref\n  PASS reject invalid scope'global'\n  PASS reject invalid scope'universal'\n  PASS reject invalid thresholdnan\n  PASS reject invalid thresholdinf\n  PASS reject invalid thresholdTrue\n  PASS reject invalid threshold101\n  PASS reject invalid authority_ref''\n  PASS reject invalid context_ref' '\n  PASS reject bad score nan\n  PASS reject bad score inf\n  PASS reject bad score -1\n  PASS reject bad score 6\n  PASS reject bad score True\n  PASS reject unscored criterion\n  PASS policy required\n  PASS bundle passes\n  PASS actual hash tamper rejected\n  PASS global floor regression rejected semantically\n  PASS lyric spacing\n  PASS lyric edit\n  PASS lyric reorder\n  PASS lyric delete duplicate\n  PASS Creative is derived from locked Technical\n  PASS lock precedes reverse compilation\n  PASS 13 audio workers and separate visual module\n  PASS phantom not requirement\n",
+      "stderr": ""
+    },
+    {
+      "command": "python /workspace/scratch/79872f7bc0de/maestro-on-mosaic2/maestro-current/build/build_maestro_current.py /workspace/scratch/79872f7bc0de/tmpvverb6fq/one /workspace/scratch/79872f7bc0de/maestro-on-mosaic2/maestro-current",
+      "exit": 0,
+      "stdout": "built 40 members + MANIFEST -> /workspace/scratch/79872f7bc0de/tmpvverb6fq/one\nA9 PASS: regenerated bundle is byte-identical to source\n",
+      "stderr": ""
+    },
+    {
+      "command": "python /workspace/scratch/79872f7bc0de/maestro-on-mosaic2/maestro-current/build/build_maestro_current.py /workspace/scratch/79872f7bc0de/tmpvverb6fq/two /workspace/scratch/79872f7bc0de/maestro-on-mosaic2/maestro-current",
+      "exit": 0,
+      "stdout": "built 40 members + MANIFEST -> /workspace/scratch/79872f7bc0de/tmpvverb6fq/two\nA9 PASS: regenerated bundle is byte-identical to source\n",
+      "stderr": ""
+    },
+    {
+      "command": "python /workspace/scratch/79872f7bc0de/maestro-on-mosaic2/maestro-current/build/compile_current.py /workspace/scratch/79872f7bc0de/maestro-on-mosaic2/artifacts/D-Maestro/Maestro/technical.ust.template.txt /workspace/scratch/79872f7bc0de/tmpvverb6fq/compiled",
+      "exit": 0,
+      "stdout": "COMPILED: 7 axes, 33 keys, 165 subkeys, 24 migrated addresses, 0 omissions\n",
+      "stderr": ""
+    }
+  ],
+  "corpus_audit": "PARTIAL: see SOURCE_LIMITATIONS.md; this script does not waive it"
+}

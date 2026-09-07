@@ -1,0 +1,334 @@
+{
+  "ref": "f02fa3bf1b4165a189f1b8452d6a23f25ec55cd0",
+  "all_41_local_members_match_git_blob_sha": true,
+  "objects": [
+    {
+      "mode": "100644",
+      "path": "maestro-current/00_ROOT_SPEC.md",
+      "sha": "d78483b314af136aee16668158d27f58f4b56fa8",
+      "size": 4560,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/d78483b314af136aee16668158d27f58f4b56fa8"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/01_TECHNICAL_UST_CANON.md",
+      "sha": "22a0c99f60cfa73c1263d00d8adc3ed0c13c0ccd",
+      "size": 29539,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/22a0c99f60cfa73c1263d00d8adc3ed0c13c0ccd"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/02_CREATIVE_UST_TEMPLATE.md",
+      "sha": "28fca6a6d6530667c3e571d8660ef7247ebf8e9c",
+      "size": 8702,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/28fca6a6d6530667c3e571d8660ef7247ebf8e9c"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/03_PHASE_CHAIN.md",
+      "sha": "a2ad26e67f9b583b8b07a74093b4d0b17b130541",
+      "size": 1945,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/a2ad26e67f9b583b8b07a74093b4d0b17b130541"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/04_COUNCIL_TOPOLOGY.md",
+      "sha": "f1c0e433645ede0e9b8e1d5b45652639663841c0",
+      "size": 7208,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/f1c0e433645ede0e9b8e1d5b45652639663841c0"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/05_GOVERNANCE_SEG.md",
+      "sha": "dedb93c5e8b7b20c30e88ce94077b4bf0606109d",
+      "size": 7140,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/dedb93c5e8b7b20c30e88ce94077b4bf0606109d"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/06_RUNTIME_RULES.md",
+      "sha": "4985b569726aa960a4eafea3ce78efb17fe88e1e",
+      "size": 2377,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/4985b569726aa960a4eafea3ce78efb17fe88e1e"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/07_ADDRESS_REGISTRY.md",
+      "sha": "6a40dbccfec1d69cf5d1a9aa99e681cae45a8a04",
+      "size": 1189,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/6a40dbccfec1d69cf5d1a9aa99e681cae45a8a04"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/08_PORTABILITY_ATP.md",
+      "sha": "67abdf86e6155bd8b26836adce4ab7c69662f938",
+      "size": 1214,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/67abdf86e6155bd8b26836adce4ab7c69662f938"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/09_LOGS_AND_CONTINUATION.md",
+      "sha": "366917391968274984070e266b1f2eb3950eef45",
+      "size": 1161,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/366917391968274984070e266b1f2eb3950eef45"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/10_TEST_PLAN.md",
+      "sha": "abf5a1702bd55b9cce72bf9be3a631721e71d596",
+      "size": 2320,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/abf5a1702bd55b9cce72bf9be3a631721e71d596"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/MANIFEST.yaml",
+      "sha": "ea80ec1a2dd5d326d283a7265267b0a3cfe19cf1",
+      "size": 5564,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/ea80ec1a2dd5d326d283a7265267b0a3cfe19cf1"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/SCOPE_CORRECTION_v0_4.md",
+      "sha": "c58d04b9ef2f172fddf1d4dded992cd075625ca6",
+      "size": 4775,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/c58d04b9ef2f172fddf1d4dded992cd075625ca6"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/STRATA_MIGRATION_MAP.md",
+      "sha": "848b0c2f455eea1178a76f16bf98356e0623e3ff",
+      "size": 5018,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/848b0c2f455eea1178a76f16bf98356e0623e3ff"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/build_maestro_current.py",
+      "sha": "604137c68c2ced536c2b33f18654faf78afeac7d",
+      "size": 3596,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/604137c68c2ced536c2b33f18654faf78afeac7d"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/cap_validator.py",
+      "sha": "b7a1e91e7a1d57c3c22322211376412115994212",
+      "size": 786,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/b7a1e91e7a1d57c3c22322211376412115994212"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/compile_current.py",
+      "sha": "596529416888e8b993163466409dec037a55d11e",
+      "size": 4573,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/596529416888e8b993163466409dec037a55d11e"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/lyric_lock_check.py",
+      "sha": "4df5763c855b3e89b09a36033d886fea1b72cf94",
+      "size": 951,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/4df5763c855b3e89b09a36033d886fea1b72cf94"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/manifest_meta.yaml",
+      "sha": "d16ca1e1900e39a76be4a034f140c12ae9df9589",
+      "size": 3051,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/d16ca1e1900e39a76be4a034f140c12ae9df9589"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/00_ROOT_SPEC.md",
+      "sha": "d78483b314af136aee16668158d27f58f4b56fa8",
+      "size": 4560,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/d78483b314af136aee16668158d27f58f4b56fa8"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/01_TECHNICAL_UST_CANON.md",
+      "sha": "22a0c99f60cfa73c1263d00d8adc3ed0c13c0ccd",
+      "size": 29539,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/22a0c99f60cfa73c1263d00d8adc3ed0c13c0ccd"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/02_CREATIVE_UST_TEMPLATE.md",
+      "sha": "28fca6a6d6530667c3e571d8660ef7247ebf8e9c",
+      "size": 8702,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/28fca6a6d6530667c3e571d8660ef7247ebf8e9c"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/03_PHASE_CHAIN.md",
+      "sha": "a2ad26e67f9b583b8b07a74093b4d0b17b130541",
+      "size": 1945,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/a2ad26e67f9b583b8b07a74093b4d0b17b130541"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/04_COUNCIL_TOPOLOGY.md",
+      "sha": "f1c0e433645ede0e9b8e1d5b45652639663841c0",
+      "size": 7208,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/f1c0e433645ede0e9b8e1d5b45652639663841c0"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/05_GOVERNANCE_SEG.md",
+      "sha": "dedb93c5e8b7b20c30e88ce94077b4bf0606109d",
+      "size": 7140,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/dedb93c5e8b7b20c30e88ce94077b4bf0606109d"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/06_RUNTIME_RULES.md",
+      "sha": "4985b569726aa960a4eafea3ce78efb17fe88e1e",
+      "size": 2377,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/4985b569726aa960a4eafea3ce78efb17fe88e1e"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/07_ADDRESS_REGISTRY.md",
+      "sha": "6a40dbccfec1d69cf5d1a9aa99e681cae45a8a04",
+      "size": 1189,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/6a40dbccfec1d69cf5d1a9aa99e681cae45a8a04"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/08_PORTABILITY_ATP.md",
+      "sha": "67abdf86e6155bd8b26836adce4ab7c69662f938",
+      "size": 1214,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/67abdf86e6155bd8b26836adce4ab7c69662f938"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/09_LOGS_AND_CONTINUATION.md",
+      "sha": "366917391968274984070e266b1f2eb3950eef45",
+      "size": 1161,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/366917391968274984070e266b1f2eb3950eef45"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/10_TEST_PLAN.md",
+      "sha": "abf5a1702bd55b9cce72bf9be3a631721e71d596",
+      "size": 2320,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/abf5a1702bd55b9cce72bf9be3a631721e71d596"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/SCOPE_CORRECTION_v0_4.md",
+      "sha": "c58d04b9ef2f172fddf1d4dded992cd075625ca6",
+      "size": 4775,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/c58d04b9ef2f172fddf1d4dded992cd075625ca6"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/templates/STRATA_MIGRATION_MAP.md",
+      "sha": "848b0c2f455eea1178a76f16bf98356e0623e3ff",
+      "size": 5018,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/848b0c2f455eea1178a76f16bf98356e0623e3ff"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/test_promotion.py",
+      "sha": "179007f931c796b9b7c8cb469aa58e3e70d67297",
+      "size": 4383,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/179007f931c796b9b7c8cb469aa58e3e70d67297"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/build/validate_bundle.py",
+      "sha": "0dcd2657628aa91c29685863e7093f406eb23ac2",
+      "size": 6363,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/0dcd2657628aa91c29685863e7093f406eb23ac2"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/compiled/BUILD_REGENERATION_REPORT.yaml",
+      "sha": "26fcbaea2651e843c37543a8b7a6b86f7e383cd5",
+      "size": 1762,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/26fcbaea2651e843c37543a8b7a6b86f7e383cd5"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/compiled/DEPENDENCY_CLOSURE_REPORT.yaml",
+      "sha": "06531252bae6246d0a755bf687bca3c51612499e",
+      "size": 500,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/06531252bae6246d0a755bf687bca3c51612499e"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/compiled/FULL_CANON_COVERAGE_MATRIX.yaml",
+      "sha": "7206a51dff1d7a97fd28fc53de56e02025c6389a",
+      "size": 299,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/7206a51dff1d7a97fd28fc53de56e02025c6389a"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/compiled/OMISSION_AUDIT.yaml",
+      "sha": "cc1823bb60b2133828d74ada38d4a4b8805630f2",
+      "size": 780,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/cc1823bb60b2133828d74ada38d4a4b8805630f2"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/compiled/TECHNICAL_UST_ADDRESS_MIGRATION.yaml",
+      "sha": "bb2327a765a356bd7378a252f610f5e7ecdac4e1",
+      "size": 691,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/bb2327a765a356bd7378a252f610f5e7ecdac4e1"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md",
+      "sha": "448c9604904243c3faa8f71ca9e0e9b5e3b022e8",
+      "size": 27355,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/448c9604904243c3faa8f71ca9e0e9b5e3b022e8"
+    },
+    {
+      "mode": "100644",
+      "path": "maestro-current/fixture/dryrun_project.md",
+      "sha": "6b7481f141ed334adb6ecd4458a88746e549cd57",
+      "size": 690,
+      "type": "blob",
+      "url": "https://api.github.com/repos/black-da-bull/maestro-on-mosaic2/git/blobs/6b7481f141ed334adb6ecd4458a88746e549cd57"
+    }
+  ]
+}

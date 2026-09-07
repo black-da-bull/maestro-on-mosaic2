@@ -1,0 +1,796 @@
+--- _PROVENANCE/LEDGER.md (baseline)
++++ _PROVENANCE/LEDGER.md
+@@ -223,3 +223,20 @@
+ **Not extinguished:** a later-surfacing original still supersedes its reconstruction **by pointer** under ordinary append-only discipline (M2/rule 6) — a standing rule requiring no open item.
+ **Consequence handled:** O-07's search burden previously rode O-03; O-07 REMAINS OPEN and now carries its own burden (parse + phantom-detect are reconstructions; fold_laminate is the sole extant original).
+ Status after this close: O-01 ✓ O-02 ✓ O-03 ✓ closed. Open: O-04 O-05 O-06 O-07 O-08 O-09 O-10 O-11 O-12 O-14 O-15 O-16 O-17 O16E, plus the claude.ai re-upload packaging step. Rung: operative (this LEDGER) + persisted (OPEN.md closes block).
++
++## PROMOTION-2026-09-06 — accepted deltas recorded before propagation
++Morris / Mo explicitly accepts DEC-PROMO-01 through DEC-PROMO-13. See PROMOTION_2026-09-06.md for each interpretation, evidence, impacted objects and independent authority/acceptance/persistence/enforcement status. DEC-PROMO-01/02 supersede the universal numeric reading in DEC-20/DEC-24 and CR-009 derivatives, not the evaluation capability or historical evidence. Application and validation remain pending in this initial entry. Baseline 88cd150cceacaebe79a3a0e97edb50497cc59a47 is recoverable through checkpoint/pre-promotion-2026-09-06.
++
++## PROMOTION-2026-09-06 — application checkpoint and limited validation
++Supersedes only the pending-application status of the initial entry above. DEC-PROMO-01–13
++are now recorded and applied/verified at their applicable current layers. Source templates
++00/01/05/06/10/STRATA, validator and downstream draft repaired; full bundle regenerated;
++STATE reconciled; OPEN appended. 02/03/04 and their templates verified unchanged. Build
++validation and 33 regressions pass; 41 members reproduce byte-identically in two clean builds;
++three topology outputs reproduce exactly. Production-runtime enforcement is NOT claimed.
++
++Verdict: PARTIAL — NOT PROMOTION COMPLETE. V1 full-corpus occurrence coverage is unresolved
++for the two historical text blobs in promotion_2026-09-06/SOURCE_LIMITATIONS.md; remaining
++current-bundle checks V2–V10 pass in their recorded scope. Main not merged. The post-run
++checkpoint preserves this partial candidate. CONTINUATION_2026-09-06.md carries exact next
++mechanical work and the gated downstream queue. No next-phase development executed.
+--- _PROVENANCE/OPEN.md (baseline)
++++ _PROVENANCE/OPEN.md
+@@ -77,3 +77,21 @@
+ - **Retired with it:** the standing DEC-03 search obligation (`SKILL_FILES_SEARCH_CHECKLIST.md`, `o03_sweep.ps1`) — retained as method artifacts, no longer a blocking open item. Per the checklist's own "when done" clause, unfound components are hereby reclassified from *possibly extant* to **never externalized — reconstruction is the artifact of record**.
+ - **Not extinguished:** if an original later surfaces, ordinary append-only discipline still applies — it supersedes the reconstruction **by pointer** (never rewrite-in-place). That is a standing rule, not an open item; no reopening of O-03 required.
+ - **O-07 REHOMED (still open):** its search burden previously rode O-03. O-07 now carries its own burden: `parse_transcript_v0_2.py` and `phantom_detect_v0_1.py` are reconstructions; `fold_laminate_v0_1.py` is the sole extant original. Closing O-03 does not close O-07.
++
++## Current classification fold — 2026-09-06 (DEC-PROMO-06–13)
++This append supersedes conflicting current interpretations of earlier entries; it deletes none.
++- Q1–Q16: PHANTOM; never fabricate; not a missing deliverable or active product blocker.
++  O-10's other unratified questions are not silently closed. Its historical eligibility-vs-release
++  numerical reconciliation is not current policy (DEC-PROMO-01/02).
++- O-03 CLOSED (operator 2026-07-21); O-13 CLOSED (repaired 2026-07-19). Prior opens remain history.
++- O-04: OPEN provenance-only attribution (b9f69085 / b161088a); non-critical for audio product.
++- O-05: forensic_replay_required, not a design question. Non-blocking for unrelated product
++  work unless replay proves a mutation of present architecture. Replay not performed here.
++- O-12: external_asset_preservation_blocker. Exact originals unverified: Claude design-project
++  `campaigns/run-it-to-me/Cover Directions.html`, `Run It To Me Covers.html`, and six referenced
++  cover images (their individual names/hashes require the original package). A repository
++  `Run It To Me - Track Page (standalone).html` is not evidence of that original cover package.
++  Does not block audio promotion; no asset recreation performed.
++- Seedance: experiment_required for song identity, timing, narrative, cues and intent fit.
++  No comparative quality success claimed; no experiment performed in this run.
++See CONTINUATION_2026-09-06.md for validation limits and the gated next-work queue.
+--- _PROVENANCE/STATE.md (baseline)
++++ _PROVENANCE/STATE.md
+@@ -1,3 +1,55 @@
++# CURRENT STATE — promotion fold, 2026-09-06
++Doctrine: **Your Vision. Our Mission.**
++**Promotion status: PARTIAL — NOT PROMOTION COMPLETE; branch candidate, not merged.**
++
++This block supersedes conflicting current interpretations in the retained snapshots below.
++Authority: operator DEC-PROMO-01–13, individually recorded in `PROMOTION_2026-09-06.md`.
++The accepted correction window repairs current sources and rebuilds maestro-current; it does
++not close broader reconstruction obligations or assert deployed song-runtime enforcement.
++Promotion verification and checkpoint outcome: `CONTINUATION_2026-09-06.md` and
++`promotion_2026-09-06/VALIDATION.md` (final run evidence, not older snapshot claims).
++
++## Current evaluation and authority
++- SEM/SEG/G-Card evaluation remains architectural, including feasibility, evidence-bound
++  critique, deficiencies/remediation, HPA/authenticity and lawful exceptions.
++- No universal numeric release floor. The historical song-local 97.5 target and historical
++  G≥7 mechanism remain separate; neither silently replaces or reinstates the other.
++- Applied numeric thresholds require explicit run/policy/version/context and authority;
++  absent applicability is unresolved, never an invented number or numeric PASS.
++- Human creative vision → working Technical UST → SME reasoning/consensus → locked
++  Technical UST → reverse compilation → derived renderer-facing triad. Creative UST stays derived.
++- Audio runtime target: 13 workers; 4 visual roles remain separately scoped optional modules.
++- Generation/model adapter, renderer grammar and Studio/editing workspace are downstream
++  Suno concerns; they never redefine canonical UST authority.
++
++## Current issue fold
++| Item | Effective status | Product critical path |
++|---|---|---|
++| Q1–Q16 | PHANTOM; never fabricate; no required deliverable | No |
++| O-03 | CLOSED by operator 2026-07-21; reconstructions accepted | No |
++| O-13 | CLOSED; V1 repair persisted 2026-07-19 | No |
++| O-04 | OPEN, provenance/session attribution only; b9f69085 and b161088a unverified | No |
++| O-05 | forensic_replay_required | No, unless replay discovers a current architectural mutation |
++| O-12 | external_asset_preservation_blocker; original Claude visual assets unverified | No audio-promotion block |
++| Seedance fit | experiment_required; identity/timing/narrative/cues/intent quality unproven | No audio-promotion block |
++
++Other historical obligations are not silently closed: O-06/07/08/09/10 (non-phantom residue),
++O-11/14/15/17/O16E and external skill upload retain their recorded scopes until evidence closes
++them. An old open record alone is not evidence of an audio-promotion critical-path dependency.
++O-18 rivalry framing is withdrawn per DEC-27; residual cross-era chronology rides O16E.
++
++## Next-work order — after promotion checks pass
++P0: executable 13-worker instances/workforce registry → Technical UST ownership and crossstream
++dependency overlay → first genuine golden structural-interpretation fixture.
++P1: empirical B3 baselines → O-05 suppressed-output/coverage replay.
++P2: recover original O-12 assets → Seedance musical-fit experiments.
++No item in this next-phase queue was executed during this promotion.
++
++## Preserved state snapshots — historical, not the live queue
++The material below is retained verbatim as earlier state evidence. Its claims to “ONLY live
++ordering” and its O-03-open line are superseded by this dated fold and later OPEN/LEDGER closes.
++
++---
+ # STATE — Carried-Forward Working State
+ **Version:** 0.7 (2026-07-20) · Fold of LEDGER M1–M18 + DEC-01..28 + CR-V5-STATUS-1 + V1-REPAIR + O16..O16D + REVIEW/REPAIR.O16D.VV.R1 · Load this at the start of every Maestro session before doing anything else.
+ 
+--- drafts/EXECUTABLE_APP_DESIGN_v0_1.md (baseline)
++++ drafts/EXECUTABLE_APP_DESIGN_v0_1.md
+@@ -128,10 +128,12 @@
+ ### 3.4 Interwoven Gate Engine — DEC-27 as architecture
+ Gates **subscribe to fill events**; every accepted fill emits `(UST delta, SEM delta)` together
+ — the preload ratchet. Live gates: SEG feasibility (physics override — taste cannot override),
+-SEM 12-criteria running composite (weights fixed; floor 97.5 terminal), SE20 checklist, CAP
++SEM 12-criteria running composite (weights retained; terminal threshold from explicit applicable scoped policy, no numeric default), SE20 checklist, CAP
+ projection (will the triad fit its bands?), lock compliance (D2 comparator: sequence +
+ multiplicity over quoted lyric text only — meta/spacing transformable per DEC-26). Terminal
+-close: composite ≥97.5 → G-Card decision artifact. Any FAIL = stop-the-line: the RUN halts and
++close: composite compared with the explicit applicable scoped threshold → G-Card decision artifact,
++with independent hard gates intact. Missing threshold authority/context yields an unresolved
++numeric verdict (DEC-PROMO-01/02), not an invented default or numeric PASS. Any FAIL = stop-the-line: the RUN halts and
+ emits only diagnostics, missing work items, and dissent references (D1 wires QAF/PD rule cards
+ here: authority declaration on artifact receipt, phantom-commitment scan pre-emit).
+ 
+--- maestro-current/00_ROOT_SPEC.md (baseline)
++++ maestro-current/00_ROOT_SPEC.md
+@@ -1,4 +1,4 @@
+-# MAESTRO — Current Root Specification (bundle v0.5)
++# MAESTRO — Current Root Specification (bundle v0.6-promotion-2026-09-06)
+ **Derived 2026-07-19 by MAESTRO.O16.DERIVE-CURRENT-ARTIFACTS.R1 · compiled FORWARD from the
+ replay-backed Session-13 snapshot + operator deltas M12–M17 / DEC-09..27 / P-1..P-4. PROPOSAL-class;
+ the snapshot itself is never edited. Promotion path (M17): version-based force-close is SUSPENDED —
+@@ -8,7 +8,7 @@
+ 
+ ## Identity
+ Maestro is a compiler: creative seed (source) → Technical UST (intermediate representation) → Suno
+-(target machine). Not a metaphor — the shape the problem has. Creeds: "Your vision. Our mission." ·
++(target machine). Not a metaphor — the shape the problem has. Creeds: "Your Vision. Our Mission." ·
+ "Yesterday's world-class is today's baseline." North-star: teach the AI the Black-Southern-gospel
+ soul that causes emotion — the scaffolding exists for the soul, never the reverse.
+ 
+@@ -48,5 +48,17 @@
+ See STRATA_MIGRATION_MAP.md for the stratum chain and address-level dispositions.
+ 
+ ## Proven / specified / historical
+-v4.5 line proven (released songs). v5 line diagnostic. This derivation = current specified state.
++v4.5 line proven (released songs). v5 line admissible design evidence; non-shipment is not failure (CR-V5-STATUS-1). This derivation = current specified state.
+ Historical Session-13 snapshot: reconstruction/replay-backed/session13/R_LIST_v0_2.md.
++
++## Controlled correction window — 2026-09-06
++DEC-PROMO-01–13 are operator-accepted corrections to this current specification. This window
++repairs their dependents; it does not assert that the broader O16E reconstruction or D1–D4
++song runtime is complete. Current evaluation semantics are in 05_GOVERNANCE_SEG.md. Any
++inherited universal numeric floor is explicitly superseded, including CR-009-derived claims
++in migrated source documents; their history is preserved.
++
++Suno boundary (DEC-PROMO-12): generation/model adapter, renderer prompt/grammar behavior and
++Studio/editing/workspace capability are distinct downstream concerns. Changes to an editing
++workspace do not redefine the canonical Technical UST or its locked-source authority. This
++clarifies the target-machine shorthand above; it creates no speculative adapter implementation.
+--- maestro-current/01_TECHNICAL_UST_CANON.md (baseline)
++++ maestro-current/01_TECHNICAL_UST_CANON.md
+@@ -25,8 +25,8 @@
+ 
+ ## State machine
+ NULL → PROPOSED → PRESSURED → RESOLVED → LOCKED (monotonic; no drop, no revert).
+-Invariants: populated addresses never return to NULL; locked operator values (97.5) hold unless a
+-supersession is logged; only ROOT supersession clears a guard (AI proposals record, never clear).
++Invariants: populated addresses never return to NULL; locked operator values hold within their explicit applicable scope unless a
++supersession is logged; no numeric evaluation threshold is universal by inheritance (DEC-PROMO-01/02); only ROOT supersession clears a guard (AI proposals record, never clear).
+ 
+ ## MATERIALIZED FULL TOPOLOGY (O16C — compiled, zero omissions)
+ Compiled by `build/compile_current.py` from the predecessor master spec
+--- maestro-current/05_GOVERNANCE_SEG.md (baseline)
++++ maestro-current/05_GOVERNANCE_SEG.md
+@@ -5,8 +5,9 @@
+ ## Inside the umbrella
+ - **SEM** — the weighted scoring system: 12 criteria, 0–5 × weights (Hook 18/Lyric Integrity 12/
+   Vocal 10/Melody 10/Structure 8/Production 12/Arrangement 6/Commercial 8/Originality 6/
+-  Metadata 4/Syllable 4/QA 2), composite = Σ((score/5)×weight); release floor **97.5**
+-  (CR-009 lineage from ≥70 origin; locked operator value; independent witness: VIRAL-5 PROOF).
++  Metadata 4/Syllable 4/QA 2), composite = Σ((score/5)×weight). Evaluation capability and
++  arithmetic are architectural; numeric pass targets require explicit applicable context
++  (DEC-PROMO-01/02/03). There is no universal numeric default.
+   Namespace: SEM rubric numbering ≠ admissibility K-set (DEC on E-2); qualify every K-reference;
+   short-code binding deferred to O-15 (DEC-12).
+ - **Hard sub-gates**: metadata · lyric-syllable (style-conditioned per DEC-25) · hook ≥4 · production ·
+@@ -24,8 +25,12 @@
+ ## Execution model (DEC-24: interwoven, not terminal-only)
+ Song Excellence runs CONCURRENT with Technical UST construction: SEM criteria serve as live
+ criteria for subagent fills and for team round-robins/management reviews; every step emits UST
+-delta + SEM delta together (preload ratchet). The terminal surface — composite ≥97.5 → G-Card
+-decision artifact — CLOSES the interwoven evaluation; it is not a standalone end-gate chain.
++delta + SEM delta together (preload ratchet). The terminal surface evaluates the composite
++against the explicitly applicable run/policy/version/context threshold, alongside independent
++hard gates, evidence and lawful exceptions, then emits the G-Card decision artifact. It CLOSES
++the interwoven evaluation; it is not a standalone end-gate chain. If threshold applicability or
++source authority is unresolved, record that unresolved numeric verdict; never invent a default
++or claim numeric PASS. Critique, feasibility and remediation remain available.
+ Historical G-Card ≥7.0 scalar = era history (its stratum), not a current second threshold.
+ Syllable sub-gate: style-conditioned per DEC-25 (see 02).
+ 
+@@ -57,7 +62,47 @@
+ 
+ Disposition (DEC-22/DEC-24): this layer is the v5b-era EXECUTABLE FORM of the interwoven model —
+ registered as the address-level detail stratum for SEG/G-Card/SE20. It does NOT reinstate ≥7.0 as
+-a current threshold (the 97.5 composite governs); its 7×5 SE20 item set is an era instance of the
++a current threshold; G≥7 and the song-local SEM target are separate historical mechanisms,
++not successive universal constants (DEC-PROMO-02). Its 7×5 SE20 item set is an era instance of the
+ SE20 checklist (composition OQ stays held). Era-alias register: the v5b expansion of SEG —
+ "Structural & Engineering Gate" — joins DEC-14's alias list ("Feasibility gate" v2.1, "Structural
+ Excellence Gate" MONO OS); current name remains Song Excellence Governance.
++
++## Scoped SEM configuration — DEC-PROMO-01/02/03
++The originating interaction is `song_test_2025-12-07_001` / `decomposer_v1.6_run_001`:
++composite 76.8, then Morris: “who said 70% pass? we are 97.5% pass”. Source:
++`artifacts/D-Maestro/Maestro/song.excellence.matrix.iterative.design.session.txt`, lines
++3547–3612 (operator statement at 3599). The 97.5 value is RUN_LOCAL_VALID there. CR-009-derived
++universal-floor interpretations are superseded; historical texts remain intact.
++Session PASS_THRESHOLD input is demonstrated in `code/D-Maestro/maestro-ai-music-system-main/Activity.txt`
++M7.3 (line 401). Its later proposed default is not imported. Minimal current contract:
++
++```yaml
++sem_configuration:
++  score_max: 5
++  weights:
++    hook: 18
++    lyric_integrity: 12
++    vocal: 10
++    melody: 10
++    structure: 8
++    production: 12
++    arrangement: 6
++    commercial: 8
++    originality: 6
++    metadata: 4
++    syllable: 4
++    qa: 2
++  threshold_selection: explicit_applicable_context
++  default_threshold: null
++  allowed_scopes: [run, policy, version, context]
++  required_policy_fields: [threshold, scope, context_ref, authority_ref]
++```
++
++An applied evaluation supplies its threshold (on the 0–100 SEM scale), scope, context_ref and
++source-authority reference in the run's existing evidence/ledger surfaces. No numeric fallback
++is authorized. A policy or version label alone does not establish authority or applicability.
++The build validator checks configuration and explicit-policy arithmetic; this is not deployed
++song-runtime enforcement. Independent lyric lock, feasibility, evidence binding, authenticity
++judgment and logged Sacred Imperfection remain intact; a numeric comparison alone is never
++an overall SEG release verdict. D4 remains an executable-runtime obligation.
+--- maestro-current/06_RUNTIME_RULES.md (baseline)
++++ maestro-current/06_RUNTIME_RULES.md
+@@ -8,7 +8,7 @@
+   packs/artifacts. [persisted requirement; D1]
+ - **Lyric lock** (universal law; behavioral test = D2).
+ - **CAP compilation** 4960–4999 (live-emission test = D3).
+-- **Generational release surface** — SEM criteria interwoven throughout construction (DEC-24); composite ≥97.5 + G-Card close; admissibility checks per stratum (execution test = D4).
++- **Generational release surface** — SEM criteria interwoven throughout construction (DEC-24); composite evaluated against explicit applicable scoped policy + independent hard gates + G-Card close (05); no universal numeric default. Missing threshold authority/applicability produces an unresolved numeric verdict, never assumed PASS; admissibility checks per stratum (execution test = D4; DEC-PROMO-01/02/03).
+ - **No distribution without linkage**: files distribute only with every linkage preserved and
+   provenance-bound (blueprint→UST, Technical↔Creative axis identity, SEG/FOIL structure).
+ - **Session Ledger** (09) is mandatory: meaningful phase transitions, validation failures,
+--- maestro-current/10_TEST_PLAN.md (baseline)
++++ maestro-current/10_TEST_PLAN.md
+@@ -3,7 +3,10 @@
+ A1 schema parse: MANIFEST + all yaml blocks parse. A2 internal references: every cross-file
+ reference in 00–10 resolves. A3 axis parity: PER everywhere (the retired four-letter variant must not appear); MAP never an active axis;
+ VIS only in module contexts. A4 source anchors: each file cites its ruling/source basis.
+-A5 gate arithmetic: SEM weights sum 100; composite formula stated; 97.5 floor present.
++A5 gate arithmetic: parse the actual SEM configuration in 05; 12 positive weights sum 100;
++score scale and composite formula valid; explicit scoped threshold policy with authority/context
++references; no numeric default. Test run-local arithmetic and reject absent/malformed policies,
++unsupported global scope and false current universal claims (DEC-PROMO-01/02/03).
+ A6 container rules consistency: 02 rules match the persisted floor. A7 post-application hashes
+ (T8): on-device hashes of the 5 annotated files match annotation_hashes.json.
+ A8 cold-LOAD validation: a cold workspace reloads this folder + manifest and re-validates
+@@ -16,3 +19,9 @@
+ D4 SEG gate execution + representative end-to-end triad fixture (seed → locked UST → three
+ surfaces → Suno prompt) — the triad fixture graduates to executable-now once the runtime exists;
+ until then a DRY-RUN fixture (template instantiation walk) stands in.
++
++Promotion regression: `build/test_promotion.py BUNDLEDIR` exercises scoped SEM comparison,
++missing authority/context, malformed scores/policies, hard-coded-floor regression, actual member
++hash tampering, lyric-lock sequence/multiplicity and protected UST/workforce semantics.
++A11 includes actual member MD5 verification, not inventory shape alone. These are build/test
++enforcements; D1–D4 production-runtime obligations remain deferred.
+--- maestro-current/MANIFEST.yaml (baseline)
++++ maestro-current/MANIFEST.yaml
+@@ -1,10 +1,10 @@
+ product: maestro-current
+-version: v0.5
+-work_item: REPAIR.O16D.VV.R1 (builds on O16D; absorbs REVIEW.O16D.VV.R1 verdict FAIL -> repaired)
+-date: '2026-07-19'
++version: v0.6-promotion-2026-09-06
++work_item: PROMOTION.2026-09-06 (DEC-PROMO-01–13; scoped threshold repair)
++date: '2026-09-06'
+ class: >-
+-  REPAIRED CANDIDATE (post-V&V; promotion path per M17 = O16E history-grounded derivation +
+-  operator acceptance; version-based force-close SUSPENDED)
++  CONTROLLED CORRECTION CANDIDATE; operator-accepted DEC-PROMO-01–13 applied.
++  Promotion validation recorded separately; broader O16E and production runtime not claimed complete.
+ self_contained: >-
+   every member required to interpret/validate current behavior is listed in the files map;
+   inventory completeness is machine-checked (validator A11)
+@@ -44,40 +44,41 @@
+ builders:
+   A9a_packager: build/build_maestro_current.py (v2 — regenerates the FULL member set + this manifest)
+   A9b_source_delta_compiler: build/compile_current.py (hash-verified input; fails closed on unmapped address)
+-  validator: build/validate_bundle.py (v2 — recursive parse A10 + inventory completeness A11)
++  validator: build/validate_bundle.py (v3 — scoped SEM configuration/policy oracle + recursive parse + actual hashes)
+ files:
+-  00_ROOT_SPEC.md: 3cc5a9ba26348c46ce080903d3232bf2
+-  01_TECHNICAL_UST_CANON.md: 683fb78ec2c53a8d137b933ea9887710
++  00_ROOT_SPEC.md: ac4db6b7db896ff58338328a4383054a
++  01_TECHNICAL_UST_CANON.md: 5608cd1c18218bbcbcf0bf5d3f19e52c
+   02_CREATIVE_UST_TEMPLATE.md: 7c7f2a4a84a5b113e85bf4837582b3f0
+-  03_PHASE_CHAIN.md: b73e64991d3a1f02de14f7fbcd4a8453
++  03_PHASE_CHAIN.md: 13a49f07e9cb65267a96997e93de9437
+   04_COUNCIL_TOPOLOGY.md: 424dabbc36f085e22da0e75b9c27a8f6
+-  05_GOVERNANCE_SEG.md: 3cb62cd1cd442a92bd59aec5385bae26
+-  06_RUNTIME_RULES.md: 4d649d86bac2a4759c291a31497e6279
+-  07_ADDRESS_REGISTRY.md: b9c4c6639e1cc63b952c04f4ce8a7074
+-  08_PORTABILITY_ATP.md: fa397a4adcb71c7fa4c05605cf7fe366
+-  09_LOGS_AND_CONTINUATION.md: 8d40fcc08e639cf05d6e976c7df6bea6
+-  10_TEST_PLAN.md: f520dd1ea8a3a9f2e96fa4df961cd24a
++  05_GOVERNANCE_SEG.md: 63f1fcc958e576464459b14ed43c5e86
++  06_RUNTIME_RULES.md: 174403a8bd3e6ff0db0f198756e2271d
++  07_ADDRESS_REGISTRY.md: 89ee2a806f174e4aac45ca92eb94f47c
++  08_PORTABILITY_ATP.md: e53ffd00161795e827d301ba54f6c378
++  09_LOGS_AND_CONTINUATION.md: 3763a80899aabec642409855230e0ed8
++  10_TEST_PLAN.md: bd557fc9af342beb19db4af17d98b30b
+   SCOPE_CORRECTION_v0_4.md: cf7d6f4de88cbd33a09442c1056192da
+-  STRATA_MIGRATION_MAP.md: 948977a7022d17b4832860a8e1884012
++  STRATA_MIGRATION_MAP.md: 897dab7379ffc0ced27f56841d66bf79
+   build/build_maestro_current.py: 051e2d02bd300aee3bc07313d6dfaa3c
+   build/cap_validator.py: 0a947ef11a09a89f7ef49f86e86b521e
+   build/compile_current.py: 966115ad2b0071979023204cc7be0473
+   build/lyric_lock_check.py: cce5b6348f063996bf6881169af8d842
+-  build/manifest_meta.yaml: 45ce8467e296cb44b86edc6aa6846884
+-  build/templates/00_ROOT_SPEC.md: 3cc5a9ba26348c46ce080903d3232bf2
+-  build/templates/01_TECHNICAL_UST_CANON.md: 683fb78ec2c53a8d137b933ea9887710
++  build/manifest_meta.yaml: 163fec2ea25c3dd7b9af4d984bc5eecd
++  build/templates/00_ROOT_SPEC.md: ac4db6b7db896ff58338328a4383054a
++  build/templates/01_TECHNICAL_UST_CANON.md: 5608cd1c18218bbcbcf0bf5d3f19e52c
+   build/templates/02_CREATIVE_UST_TEMPLATE.md: 7c7f2a4a84a5b113e85bf4837582b3f0
+-  build/templates/03_PHASE_CHAIN.md: b73e64991d3a1f02de14f7fbcd4a8453
++  build/templates/03_PHASE_CHAIN.md: 13a49f07e9cb65267a96997e93de9437
+   build/templates/04_COUNCIL_TOPOLOGY.md: 424dabbc36f085e22da0e75b9c27a8f6
+-  build/templates/05_GOVERNANCE_SEG.md: 3cb62cd1cd442a92bd59aec5385bae26
+-  build/templates/06_RUNTIME_RULES.md: 4d649d86bac2a4759c291a31497e6279
+-  build/templates/07_ADDRESS_REGISTRY.md: b9c4c6639e1cc63b952c04f4ce8a7074
+-  build/templates/08_PORTABILITY_ATP.md: fa397a4adcb71c7fa4c05605cf7fe366
+-  build/templates/09_LOGS_AND_CONTINUATION.md: 8d40fcc08e639cf05d6e976c7df6bea6
+-  build/templates/10_TEST_PLAN.md: f520dd1ea8a3a9f2e96fa4df961cd24a
++  build/templates/05_GOVERNANCE_SEG.md: 63f1fcc958e576464459b14ed43c5e86
++  build/templates/06_RUNTIME_RULES.md: 174403a8bd3e6ff0db0f198756e2271d
++  build/templates/07_ADDRESS_REGISTRY.md: 89ee2a806f174e4aac45ca92eb94f47c
++  build/templates/08_PORTABILITY_ATP.md: e53ffd00161795e827d301ba54f6c378
++  build/templates/09_LOGS_AND_CONTINUATION.md: 3763a80899aabec642409855230e0ed8
++  build/templates/10_TEST_PLAN.md: bd557fc9af342beb19db4af17d98b30b
+   build/templates/SCOPE_CORRECTION_v0_4.md: cf7d6f4de88cbd33a09442c1056192da
+-  build/templates/STRATA_MIGRATION_MAP.md: 948977a7022d17b4832860a8e1884012
+-  build/validate_bundle.py: c83e4e0b7070752fd17263be22e0a267
++  build/templates/STRATA_MIGRATION_MAP.md: 897dab7379ffc0ced27f56841d66bf79
++  build/test_promotion.py: 3ad007372ace65bc18b6d25225c23621
++  build/validate_bundle.py: f3c8f8579aab71571abd2d9fe010873b
+   compiled/BUILD_REGENERATION_REPORT.yaml: 567fffb207b739ec9b1909fcb4f73fcd
+   compiled/DEPENDENCY_CLOSURE_REPORT.yaml: 8b482bf5ba5b5ffae43e3cf7018e23d9
+   compiled/FULL_CANON_COVERAGE_MATRIX.yaml: 372369d8c2d53599e9c0445ab2764ed4
+--- maestro-current/STRATA_MIGRATION_MAP.md (baseline)
++++ maestro-current/STRATA_MIGRATION_MAP.md
+@@ -4,7 +4,7 @@
+ 
+ ## Stratum chain (oldest → newest)
+ S1 v3.0g Creative OS → S2 v4.2.3 spine → S3 v4.5.2 → S4 **v4.5.5 (PROVEN — released songs;
+-staging floor persisted)** → S5 v5/v5b/v5c (DIAGNOSTIC — failed recreations; canon-freeze/
++staging floor persisted)** → S5 v5/v5b/v5c (admissible design evidence, not failed by non-shipment; CR-V5-STATUS-1; canon-freeze/
+ contract era incl. Y-3, END shell) → S6 Session-13 snapshot (replay-backed, May 2026) →
+ S7 June reconstruction lane (impl plan v0_3, grounded fold) → S8 July forensic + rulings lane
+ (M1–M15, DEC-01..26, P-1..P-4) → **S9 maestro-current (top stratum, this bundle)**.
+@@ -28,18 +28,18 @@
+ SUPERSEDED: MAP axis → timing to LYR section headers + structure-reservation to
+ Performance.execution (M13) · Road-Map block in Creative shell → retired ([End] = terminal marker,
+ not an axis) · 4-letter Performance code → PER · fixed syllable bands 6-10/6-11 → style-conditioned
+-breath-pattern rule (DEC-25) · G-Card ≥7.0 scalar → era history (O16B-4 context, DEC-24) ·
++breath-pattern rule (DEC-25) ·
+ literature/poetry lyric display in Creative UST → vocal performance spacing (DEC-26).
+ CARRIED FORWARD (chronology, not restated): full Technical UST key/subkey topology — COMPILED
+ from the Chimera-era master template (01/07, source md5 `eaf18e11…`); the v5b-era canon monolith
+ (TECHNICAL_UST_CANON.md: 8 era-axes, 28 keys / ~128 subkeys, different granularity + LYR.K0
+-governance keys + THY.K5 tension–release) is REGISTERED as a competing detail stratum —
+-**adjudication = O-18** (which stratum feeds compiled subkey granularity; no silent merge) ·
++governance keys + THY.K5 tension–release) and its governance addendum are ONE UNIT (DEC-27); O-18 rivalry framing is withdrawn.
++Residual cross-era granularity/chronology remains O16E; no silent merge ·
+ v4.5.5 container rules, budgets, VIRAL-5/HPA, Sacred Imperfection, Session Ledger schema
+ (persisted floor) · owner/reviewer/tie-break matrix rows (**IMPORTED — 04,
+ PIN.V5B.COUNCIL.MATRIX.V1**, migrated under re-expanded names; MAP-row re-homes to
+-Performance.execution) · both rosters (overlay chronology) · SEM 12-criteria weights + 97.5
+-floor · QAF/PD rule cards · v5b work-item mechanics (WI.V5B.SCHEMA.V1), evidence contract
++Performance.execution) · both rosters (overlay chronology) · SEM 12-criteria weights + explicit applicable scoped evaluation policy
++(no universal numeric floor; DEC-PROMO-01/02/03) · QAF/PD rule cards · v5b work-item mechanics (WI.V5B.SCHEMA.V1), evidence contract
+ (one-sentence constraint fills, source binding, downstream sensitivity, challenge cycles,
+ mandatory logs — PIN.V5B.EVIDENCE.CONTRACT.V1), phased executable chain (P0 dual-scaffold →
+ P5 delivery) — the executable ancestry of the 03 phase chain.
+@@ -52,3 +52,9 @@
+ v5b topology/governance monoliths (`legacy/maestro_v5b_coldstart/`). Absence from the reached
+ strata was mistaken for absence from the repo; the CONS queue now lists only items verified
+ absent by search, and each entry carries that verification burden.
++
++Historical threshold disposition (DEC-PROMO-01/02): G-Card ≥7.0 remains in its own era;
++97.5 remains the target of its identified song interaction. Neither universally supersedes the
++other; neither is automatically current. Universal CR-009 interpretations in earlier imported
++spines, proposals and reconstruction snapshots are superseded for present use, with original
++bytes preserved. Current numeric applicability is specified in 05_GOVERNANCE_SEG.md.
+--- maestro-current/build/manifest_meta.yaml (baseline)
++++ maestro-current/build/manifest_meta.yaml
+@@ -1,12 +1,12 @@
+ # Deterministic MANIFEST metadata — consumed by build_maestro_current.py (v2)
+ # Every field here is emitted verbatim into MANIFEST.yaml ahead of the computed files map.
+ product: maestro-current
+-version: v0.5
+-work_item: REPAIR.O16D.VV.R1 (builds on O16D; absorbs REVIEW.O16D.VV.R1 verdict FAIL -> repaired)
+-date: '2026-07-19'
++version: v0.6-promotion-2026-09-06
++work_item: PROMOTION.2026-09-06 (DEC-PROMO-01–13; scoped threshold repair)
++date: '2026-09-06'
+ class: >-
+-  REPAIRED CANDIDATE (post-V&V; promotion path per M17 = O16E history-grounded derivation +
+-  operator acceptance; version-based force-close SUSPENDED)
++  CONTROLLED CORRECTION CANDIDATE; operator-accepted DEC-PROMO-01–13 applied.
++  Promotion validation recorded separately; broader O16E and production runtime not claimed complete.
+ self_contained: >-
+   every member required to interpret/validate current behavior is listed in the files map;
+   inventory completeness is machine-checked (validator A11)
+@@ -46,4 +46,4 @@
+ builders:
+   A9a_packager: build/build_maestro_current.py (v2 — regenerates the FULL member set + this manifest)
+   A9b_source_delta_compiler: build/compile_current.py (hash-verified input; fails closed on unmapped address)
+-  validator: build/validate_bundle.py (v2 — recursive parse A10 + inventory completeness A11)
++  validator: build/validate_bundle.py (v3 — scoped SEM configuration/policy oracle + recursive parse + actual hashes)
+--- maestro-current/build/templates/00_ROOT_SPEC.md (baseline)
++++ maestro-current/build/templates/00_ROOT_SPEC.md
+@@ -1,4 +1,4 @@
+-# MAESTRO — Current Root Specification (bundle v0.5)
++# MAESTRO — Current Root Specification (bundle v0.6-promotion-2026-09-06)
+ **Derived 2026-07-19 by MAESTRO.O16.DERIVE-CURRENT-ARTIFACTS.R1 · compiled FORWARD from the
+ replay-backed Session-13 snapshot + operator deltas M12–M17 / DEC-09..27 / P-1..P-4. PROPOSAL-class;
+ the snapshot itself is never edited. Promotion path (M17): version-based force-close is SUSPENDED —
+@@ -8,7 +8,7 @@
+ 
+ ## Identity
+ Maestro is a compiler: creative seed (source) → Technical UST (intermediate representation) → Suno
+-(target machine). Not a metaphor — the shape the problem has. Creeds: "Your vision. Our mission." ·
++(target machine). Not a metaphor — the shape the problem has. Creeds: "Your Vision. Our Mission." ·
+ "Yesterday's world-class is today's baseline." North-star: teach the AI the Black-Southern-gospel
+ soul that causes emotion — the scaffolding exists for the soul, never the reverse.
+ 
+@@ -48,5 +48,17 @@
+ See STRATA_MIGRATION_MAP.md for the stratum chain and address-level dispositions.
+ 
+ ## Proven / specified / historical
+-v4.5 line proven (released songs). v5 line diagnostic. This derivation = current specified state.
++v4.5 line proven (released songs). v5 line admissible design evidence; non-shipment is not failure (CR-V5-STATUS-1). This derivation = current specified state.
+ Historical Session-13 snapshot: reconstruction/replay-backed/session13/R_LIST_v0_2.md.
++
++## Controlled correction window — 2026-09-06
++DEC-PROMO-01–13 are operator-accepted corrections to this current specification. This window
++repairs their dependents; it does not assert that the broader O16E reconstruction or D1–D4
++song runtime is complete. Current evaluation semantics are in 05_GOVERNANCE_SEG.md. Any
++inherited universal numeric floor is explicitly superseded, including CR-009-derived claims
++in migrated source documents; their history is preserved.
++
++Suno boundary (DEC-PROMO-12): generation/model adapter, renderer prompt/grammar behavior and
++Studio/editing/workspace capability are distinct downstream concerns. Changes to an editing
++workspace do not redefine the canonical Technical UST or its locked-source authority. This
++clarifies the target-machine shorthand above; it creates no speculative adapter implementation.
+--- maestro-current/build/templates/01_TECHNICAL_UST_CANON.md (baseline)
++++ maestro-current/build/templates/01_TECHNICAL_UST_CANON.md
+@@ -25,8 +25,8 @@
+ 
+ ## State machine
+ NULL → PROPOSED → PRESSURED → RESOLVED → LOCKED (monotonic; no drop, no revert).
+-Invariants: populated addresses never return to NULL; locked operator values (97.5) hold unless a
+-supersession is logged; only ROOT supersession clears a guard (AI proposals record, never clear).
++Invariants: populated addresses never return to NULL; locked operator values hold within their explicit applicable scope unless a
++supersession is logged; no numeric evaluation threshold is universal by inheritance (DEC-PROMO-01/02); only ROOT supersession clears a guard (AI proposals record, never clear).
+ 
+ ## MATERIALIZED FULL TOPOLOGY (O16C — compiled, zero omissions)
+ Compiled by `build/compile_current.py` from the predecessor master spec
+--- maestro-current/build/templates/05_GOVERNANCE_SEG.md (baseline)
++++ maestro-current/build/templates/05_GOVERNANCE_SEG.md
+@@ -5,8 +5,9 @@
+ ## Inside the umbrella
+ - **SEM** — the weighted scoring system: 12 criteria, 0–5 × weights (Hook 18/Lyric Integrity 12/
+   Vocal 10/Melody 10/Structure 8/Production 12/Arrangement 6/Commercial 8/Originality 6/
+-  Metadata 4/Syllable 4/QA 2), composite = Σ((score/5)×weight); release floor **97.5**
+-  (CR-009 lineage from ≥70 origin; locked operator value; independent witness: VIRAL-5 PROOF).
++  Metadata 4/Syllable 4/QA 2), composite = Σ((score/5)×weight). Evaluation capability and
++  arithmetic are architectural; numeric pass targets require explicit applicable context
++  (DEC-PROMO-01/02/03). There is no universal numeric default.
+   Namespace: SEM rubric numbering ≠ admissibility K-set (DEC on E-2); qualify every K-reference;
+   short-code binding deferred to O-15 (DEC-12).
+ - **Hard sub-gates**: metadata · lyric-syllable (style-conditioned per DEC-25) · hook ≥4 · production ·
+@@ -24,8 +25,12 @@
+ ## Execution model (DEC-24: interwoven, not terminal-only)
+ Song Excellence runs CONCURRENT with Technical UST construction: SEM criteria serve as live
+ criteria for subagent fills and for team round-robins/management reviews; every step emits UST
+-delta + SEM delta together (preload ratchet). The terminal surface — composite ≥97.5 → G-Card
+-decision artifact — CLOSES the interwoven evaluation; it is not a standalone end-gate chain.
++delta + SEM delta together (preload ratchet). The terminal surface evaluates the composite
++against the explicitly applicable run/policy/version/context threshold, alongside independent
++hard gates, evidence and lawful exceptions, then emits the G-Card decision artifact. It CLOSES
++the interwoven evaluation; it is not a standalone end-gate chain. If threshold applicability or
++source authority is unresolved, record that unresolved numeric verdict; never invent a default
++or claim numeric PASS. Critique, feasibility and remediation remain available.
+ Historical G-Card ≥7.0 scalar = era history (its stratum), not a current second threshold.
+ Syllable sub-gate: style-conditioned per DEC-25 (see 02).
+ 
+@@ -57,7 +62,47 @@
+ 
+ Disposition (DEC-22/DEC-24): this layer is the v5b-era EXECUTABLE FORM of the interwoven model —
+ registered as the address-level detail stratum for SEG/G-Card/SE20. It does NOT reinstate ≥7.0 as
+-a current threshold (the 97.5 composite governs); its 7×5 SE20 item set is an era instance of the
++a current threshold; G≥7 and the song-local SEM target are separate historical mechanisms,
++not successive universal constants (DEC-PROMO-02). Its 7×5 SE20 item set is an era instance of the
+ SE20 checklist (composition OQ stays held). Era-alias register: the v5b expansion of SEG —
+ "Structural & Engineering Gate" — joins DEC-14's alias list ("Feasibility gate" v2.1, "Structural
+ Excellence Gate" MONO OS); current name remains Song Excellence Governance.
++
++## Scoped SEM configuration — DEC-PROMO-01/02/03
++The originating interaction is `song_test_2025-12-07_001` / `decomposer_v1.6_run_001`:
++composite 76.8, then Morris: “who said 70% pass? we are 97.5% pass”. Source:
++`artifacts/D-Maestro/Maestro/song.excellence.matrix.iterative.design.session.txt`, lines
++3547–3612 (operator statement at 3599). The 97.5 value is RUN_LOCAL_VALID there. CR-009-derived
++universal-floor interpretations are superseded; historical texts remain intact.
++Session PASS_THRESHOLD input is demonstrated in `code/D-Maestro/maestro-ai-music-system-main/Activity.txt`
++M7.3 (line 401). Its later proposed default is not imported. Minimal current contract:
++
++```yaml
++sem_configuration:
++  score_max: 5
++  weights:
++    hook: 18
++    lyric_integrity: 12
++    vocal: 10
++    melody: 10
++    structure: 8
++    production: 12
++    arrangement: 6
++    commercial: 8
++    originality: 6
++    metadata: 4
++    syllable: 4
++    qa: 2
++  threshold_selection: explicit_applicable_context
++  default_threshold: null
++  allowed_scopes: [run, policy, version, context]
++  required_policy_fields: [threshold, scope, context_ref, authority_ref]
++```
++
++An applied evaluation supplies its threshold (on the 0–100 SEM scale), scope, context_ref and
++source-authority reference in the run's existing evidence/ledger surfaces. No numeric fallback
++is authorized. A policy or version label alone does not establish authority or applicability.
++The build validator checks configuration and explicit-policy arithmetic; this is not deployed
++song-runtime enforcement. Independent lyric lock, feasibility, evidence binding, authenticity
++judgment and logged Sacred Imperfection remain intact; a numeric comparison alone is never
++an overall SEG release verdict. D4 remains an executable-runtime obligation.
+--- maestro-current/build/templates/06_RUNTIME_RULES.md (baseline)
++++ maestro-current/build/templates/06_RUNTIME_RULES.md
+@@ -8,7 +8,7 @@
+   packs/artifacts. [persisted requirement; D1]
+ - **Lyric lock** (universal law; behavioral test = D2).
+ - **CAP compilation** 4960–4999 (live-emission test = D3).
+-- **Generational release surface** — SEM criteria interwoven throughout construction (DEC-24); composite ≥97.5 + G-Card close; admissibility checks per stratum (execution test = D4).
++- **Generational release surface** — SEM criteria interwoven throughout construction (DEC-24); composite evaluated against explicit applicable scoped policy + independent hard gates + G-Card close (05); no universal numeric default. Missing threshold authority/applicability produces an unresolved numeric verdict, never assumed PASS; admissibility checks per stratum (execution test = D4; DEC-PROMO-01/02/03).
+ - **No distribution without linkage**: files distribute only with every linkage preserved and
+   provenance-bound (blueprint→UST, Technical↔Creative axis identity, SEG/FOIL structure).
+ - **Session Ledger** (09) is mandatory: meaningful phase transitions, validation failures,
+--- maestro-current/build/templates/10_TEST_PLAN.md (baseline)
++++ maestro-current/build/templates/10_TEST_PLAN.md
+@@ -3,7 +3,10 @@
+ A1 schema parse: MANIFEST + all yaml blocks parse. A2 internal references: every cross-file
+ reference in 00–10 resolves. A3 axis parity: PER everywhere (the retired four-letter variant must not appear); MAP never an active axis;
+ VIS only in module contexts. A4 source anchors: each file cites its ruling/source basis.
+-A5 gate arithmetic: SEM weights sum 100; composite formula stated; 97.5 floor present.
++A5 gate arithmetic: parse the actual SEM configuration in 05; 12 positive weights sum 100;
++score scale and composite formula valid; explicit scoped threshold policy with authority/context
++references; no numeric default. Test run-local arithmetic and reject absent/malformed policies,
++unsupported global scope and false current universal claims (DEC-PROMO-01/02/03).
+ A6 container rules consistency: 02 rules match the persisted floor. A7 post-application hashes
+ (T8): on-device hashes of the 5 annotated files match annotation_hashes.json.
+ A8 cold-LOAD validation: a cold workspace reloads this folder + manifest and re-validates
+@@ -16,3 +19,9 @@
+ D4 SEG gate execution + representative end-to-end triad fixture (seed → locked UST → three
+ surfaces → Suno prompt) — the triad fixture graduates to executable-now once the runtime exists;
+ until then a DRY-RUN fixture (template instantiation walk) stands in.
++
++Promotion regression: `build/test_promotion.py BUNDLEDIR` exercises scoped SEM comparison,
++missing authority/context, malformed scores/policies, hard-coded-floor regression, actual member
++hash tampering, lyric-lock sequence/multiplicity and protected UST/workforce semantics.
++A11 includes actual member MD5 verification, not inventory shape alone. These are build/test
++enforcements; D1–D4 production-runtime obligations remain deferred.
+--- maestro-current/build/templates/STRATA_MIGRATION_MAP.md (baseline)
++++ maestro-current/build/templates/STRATA_MIGRATION_MAP.md
+@@ -4,7 +4,7 @@
+ 
+ ## Stratum chain (oldest → newest)
+ S1 v3.0g Creative OS → S2 v4.2.3 spine → S3 v4.5.2 → S4 **v4.5.5 (PROVEN — released songs;
+-staging floor persisted)** → S5 v5/v5b/v5c (DIAGNOSTIC — failed recreations; canon-freeze/
++staging floor persisted)** → S5 v5/v5b/v5c (admissible design evidence, not failed by non-shipment; CR-V5-STATUS-1; canon-freeze/
+ contract era incl. Y-3, END shell) → S6 Session-13 snapshot (replay-backed, May 2026) →
+ S7 June reconstruction lane (impl plan v0_3, grounded fold) → S8 July forensic + rulings lane
+ (M1–M15, DEC-01..26, P-1..P-4) → **S9 maestro-current (top stratum, this bundle)**.
+@@ -28,18 +28,18 @@
+ SUPERSEDED: MAP axis → timing to LYR section headers + structure-reservation to
+ Performance.execution (M13) · Road-Map block in Creative shell → retired ([End] = terminal marker,
+ not an axis) · 4-letter Performance code → PER · fixed syllable bands 6-10/6-11 → style-conditioned
+-breath-pattern rule (DEC-25) · G-Card ≥7.0 scalar → era history (O16B-4 context, DEC-24) ·
++breath-pattern rule (DEC-25) ·
+ literature/poetry lyric display in Creative UST → vocal performance spacing (DEC-26).
+ CARRIED FORWARD (chronology, not restated): full Technical UST key/subkey topology — COMPILED
+ from the Chimera-era master template (01/07, source md5 `eaf18e11…`); the v5b-era canon monolith
+ (TECHNICAL_UST_CANON.md: 8 era-axes, 28 keys / ~128 subkeys, different granularity + LYR.K0
+-governance keys + THY.K5 tension–release) is REGISTERED as a competing detail stratum —
+-**adjudication = O-18** (which stratum feeds compiled subkey granularity; no silent merge) ·
++governance keys + THY.K5 tension–release) and its governance addendum are ONE UNIT (DEC-27); O-18 rivalry framing is withdrawn.
++Residual cross-era granularity/chronology remains O16E; no silent merge ·
+ v4.5.5 container rules, budgets, VIRAL-5/HPA, Sacred Imperfection, Session Ledger schema
+ (persisted floor) · owner/reviewer/tie-break matrix rows (**IMPORTED — 04,
+ PIN.V5B.COUNCIL.MATRIX.V1**, migrated under re-expanded names; MAP-row re-homes to
+-Performance.execution) · both rosters (overlay chronology) · SEM 12-criteria weights + 97.5
+-floor · QAF/PD rule cards · v5b work-item mechanics (WI.V5B.SCHEMA.V1), evidence contract
++Performance.execution) · both rosters (overlay chronology) · SEM 12-criteria weights + explicit applicable scoped evaluation policy
++(no universal numeric floor; DEC-PROMO-01/02/03) · QAF/PD rule cards · v5b work-item mechanics (WI.V5B.SCHEMA.V1), evidence contract
+ (one-sentence constraint fills, source binding, downstream sensitivity, challenge cycles,
+ mandatory logs — PIN.V5B.EVIDENCE.CONTRACT.V1), phased executable chain (P0 dual-scaffold →
+ P5 delivery) — the executable ancestry of the 03 phase chain.
+@@ -52,3 +52,9 @@
+ v5b topology/governance monoliths (`legacy/maestro_v5b_coldstart/`). Absence from the reached
+ strata was mistaken for absence from the repo; the CONS queue now lists only items verified
+ absent by search, and each entry carries that verification burden.
++
++Historical threshold disposition (DEC-PROMO-01/02): G-Card ≥7.0 remains in its own era;
++97.5 remains the target of its identified song interaction. Neither universally supersedes the
++other; neither is automatically current. Universal CR-009 interpretations in earlier imported
++spines, proposals and reconstruction snapshots are superseded for present use, with original
++bytes preserved. Current numeric applicability is specified in 05_GOVERNANCE_SEG.md.
+--- maestro-current/build/validate_bundle.py (baseline)
++++ maestro-current/build/validate_bundle.py
+@@ -1,51 +1,108 @@
+ #!/usr/bin/env python3
+-"""Bundle validator v2 (REPAIR.O16D.VV.R1 — coverage widened per BLOCK-01/BLOCK-05 findings).
+-A1 parse (top-level docs + yaml fences) · A2 refs (incl. shorthand 'in 08' / '(09)' / 'per 08') ·
+-A3 axis parity · A5 gate arithmetic · A10 RECURSIVE structured-file parse (every .yaml/.yml/.json
+-under the bundle — the check the v1 validator lacked, which let an unparseable compiled report
+-ship) · A11 inventory completeness (MANIFEST.files == on-disk files, minus MANIFEST itself).
+-Usage: validate_bundle.py BUNDLEDIR ; exit 0 = PASS."""
+-import sys, os, re, json, yaml
++"""Bundle validator v3: scoped SEM policy, structured parse, references and actual hashes.
++Build-time validation only; does not assert deployed song-runtime enforcement.
++Usage: validate_bundle.py BUNDLEDIR
++"""
++import sys, os, re, json, yaml, hashlib, math
++
++POLICY_FIELDS = ('threshold', 'scope', 'context_ref', 'authority_ref')
++SCOPES = ('run', 'policy', 'version', 'context')
++
++def number(x):
++    return type(x) in (int, float) and math.isfinite(x)
++
++def sem_config(text):
++    found = []
++    for block in re.findall(r'```yaml\n(.*?)```', text, re.S):
++        value = yaml.safe_load(block)
++        if isinstance(value, dict) and 'sem_configuration' in value:
++            found.append(value['sem_configuration'])
++    if len(found) != 1:
++        raise ValueError('exactly one sem_configuration required')
++    c = found[0]
++    if not isinstance(c, dict): raise ValueError('SEM config mapping required')
++    weights = c.get('weights')
++    if not isinstance(weights, dict) or len(weights) != 12 or not all(number(v) and v > 0 for v in weights.values()) or sum(weights.values()) != 100:
++        raise ValueError('12 positive SEM weights must sum to 100')
++    if c.get('score_max') != 5: raise ValueError('SEM score scale must be 0–5')
++    if c.get('threshold_selection') != 'explicit_applicable_context': raise ValueError('explicit applicable context required')
++    if 'default_threshold' not in c or c['default_threshold'] is not None: raise ValueError('no numeric default authorized')
++    if c.get('allowed_scopes') != list(SCOPES): raise ValueError('scope declaration invalid')
++    if c.get('required_policy_fields') != list(POLICY_FIELDS): raise ValueError('policy evidence fields invalid')
++    return c
++
++def validate_policy(policy):
++    if not isinstance(policy, dict) or any(k not in policy for k in POLICY_FIELDS):
++        raise ValueError('explicit policy with threshold/scope/context/authority required')
++    if policy['scope'] not in SCOPES: raise ValueError('unsupported threshold scope')
++    if not number(policy['threshold']) or not 0 <= policy['threshold'] <= 100:
++        raise ValueError('threshold must be finite on SEM 0–100 scale')
++    for field in ('context_ref', 'authority_ref'):
++        if not isinstance(policy[field], str) or not policy[field].strip():
++            raise ValueError('nonempty ' + field + ' required')
++    return policy
++
++def evaluate_sem(scores, config, policy):
++    """Explicit-policy numeric oracle for build tests; never an overall SEG verdict.
++    Nonempty references prove structural binding only, not operator authenticity/applicability.
++    Runtime must resolve those references and independent hard gates (D4 obligation).
++    """
++    validate_policy(policy)
++    if not isinstance(scores, dict) or set(scores) != set(config['weights']):
++        raise ValueError('every SEM criterion must be scored exactly once')
++    if any(not number(v) or not 0 <= v <= config['score_max'] for v in scores.values()):
++        raise ValueError('score out of range or nonfinite')
++    composite = sum(scores[k] / config['score_max'] * w for k,w in config['weights'].items())
++    return {'composite': composite, 'numeric_pass': composite >= policy['threshold'],
++            'scope': policy['scope'], 'context_ref': policy['context_ref'],
++            'authority_ref': policy['authority_ref'], 'overall_seg_verdict': 'not_evaluated'}
+ 
+ def main(d):
+     errs = []; allt = {}
+     for f in sorted(os.listdir(d)):
+-        if f.endswith(".md"):
+-            allt[f] = open(os.path.join(d, f), encoding="utf-8").read()
++        if f.endswith('.md'):
++            allt[f] = open(os.path.join(d,f),encoding='utf-8').read()
+     nums = {f[:2] for f in allt}
+-    manifest = yaml.safe_load(open(os.path.join(d, "MANIFEST.yaml")))
+-    # A1/A2/A3 over top-level docs
+-    for f, t in allt.items():
+-        for m in re.finditer(r"```yaml\n(.*?)```", t, re.S):
+-            yaml.safe_load(m.group(1))
+-        for r in re.findall(r"(\d\d_[A-Z_]+\.md)", t):
+-            if r not in allt: errs.append(f"A2 {f}: dangling {r}")
+-        for m in re.finditer(r"(?:documented in|Per |per |see )(\d\d)(?![\d.])", t):
+-            if m.group(1) not in nums: errs.append(f"A2 {f}: shorthand ref {m.group(1)} unresolved")
+-        if re.search(r"\bPERF\b", t): errs.append(f"A3 {f}: retired 4-letter token")
+-    if re.search(r"\|\s*MAP\s*\|", allt["01_TECHNICAL_UST_CANON.md"]): errs.append("A3: MAP axis row")
+-    if sum([18,12,10,10,8,12,6,8,6,4,4,2]) != 100: errs.append("A5 weights")
+-    if "97.5" not in allt["05_GOVERNANCE_SEG.md"]: errs.append("A5 floor")
+-    # A10 recursive structured-file parse — the whole tree, no exceptions
+-    for root, _, files in os.walk(d):
++    manifest = yaml.safe_load(open(os.path.join(d,'MANIFEST.yaml'),encoding='utf-8'))
++    for f,t in allt.items():
++        for block in re.findall(r'```yaml\n(.*?)```',t,re.S):
++            try: yaml.safe_load(block)
++            except yaml.YAMLError as e: errs.append(f'A1 {f}: {e}')
++        for ref in re.findall(r'(\d\d_[A-Z_]+\.md)',t):
++            if ref not in allt: errs.append(f'A2 {f}: dangling {ref}')
++        for m in re.finditer(r'(?:documented in|Per |per |see )(\d\d)(?![\d.])',t):
++            if m.group(1) not in nums: errs.append(f'A2 {f}: shorthand ref unresolved')
++        if re.search(r'\bPERF\b',t): errs.append(f'A3 {f}: retired token')
++        # Reject the exact historical-to-current promotion defect, including inherited templates.
++        if re.search(r'composite\s*≥\s*97\.5|release floor\s*\*\*97\.5|locked operator values \(97\.5\)|floor 97\.5 terminal|97\.5 floor present',t):
++            errs.append(f'A5 {f}: superseded global threshold semantics')
++    if re.search(r'\|\s*MAP\s*\|',allt['01_TECHNICAL_UST_CANON.md']): errs.append('A3 MAP axis row')
++    try: sem_config(allt['05_GOVERNANCE_SEG.md'])
++    except (ValueError, yaml.YAMLError) as e: errs.append('A5 '+str(e))
++    if 'composite = Σ((score/5)×weight)' not in allt['05_GOVERNANCE_SEG.md']: errs.append('A5 formula missing')
++    for root,_,files in os.walk(d):
+         for fn in sorted(files):
+-            p = os.path.join(root, fn); rel = os.path.relpath(p, d)
++            p=os.path.join(root,fn);rel=os.path.relpath(p,d)
+             try:
+-                if fn.endswith((".yaml", ".yml")): yaml.safe_load(open(p, encoding="utf-8"))
+-                elif fn.endswith(".json"): json.load(open(p, encoding="utf-8"))
+-            except Exception as e:
+-                errs.append(f"A10 {rel}: {str(e).splitlines()[0]}")
+-    # A11 inventory completeness
+-    listed = set(manifest.get("files", {}))
+-    on_disk = set()
+-    for root, _, files in os.walk(d):
++                if fn.endswith(('.yaml','.yml')): yaml.safe_load(open(p,encoding='utf-8'))
++                elif fn.endswith('.json'): json.load(open(p,encoding='utf-8'))
++            except Exception as e: errs.append(f'A10 {rel}: {str(e).splitlines()[0]}')
++    listed=manifest.get('files',{});on_disk=set()
++    for root,_,files in os.walk(d):
+         for fn in files:
+-            rel = os.path.relpath(os.path.join(root, fn), d).replace(os.sep, "/")
+-            if rel != "MANIFEST.yaml": on_disk.add(rel)
+-    for miss in sorted(on_disk - listed): errs.append(f"A11 unlisted on disk: {miss}")
+-    for ghost in sorted(listed - on_disk): errs.append(f"A11 listed but absent: {ghost}")
+-    print("PASS" if not errs else "FAIL:" + ";".join(errs))
++            rel=os.path.relpath(os.path.join(root,fn),d).replace(os.sep,'/')
++            if rel!='MANIFEST.yaml':on_disk.add(rel)
++    for miss in sorted(on_disk-set(listed)):errs.append('A11 unlisted: '+miss)
++    for ghost in sorted(set(listed)-on_disk):errs.append('A11 absent: '+ghost)
++    for rel in sorted(set(listed)&on_disk):
++        actual=hashlib.md5(open(os.path.join(d,rel),'rb').read()).hexdigest()
++        if listed[rel]!=actual:errs.append('A11 hash mismatch: '+rel)
++    # Source/template drift cannot hide behind a freshly stamped manifest.
++    for name in allt:
++        template=os.path.join(d,'build','templates',name)
++        if os.path.isfile(template) and open(template,'rb').read()!=open(os.path.join(d,name),'rb').read():
++            errs.append('A9 template mismatch: '+name)
++    print('PASS' if not errs else 'FAIL: '+'; '.join(errs))
+     return 0 if not errs else 2
+ 
+-if __name__ == "__main__":
+-    sys.exit(main(sys.argv[1]))
++if __name__=='__main__':sys.exit(main(sys.argv[1]))
