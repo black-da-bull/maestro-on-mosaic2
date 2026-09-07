@@ -3,7 +3,10 @@
 A1 schema parse: MANIFEST + all yaml blocks parse. A2 internal references: every cross-file
 reference in 00–10 resolves. A3 axis parity: PER everywhere (the retired four-letter variant must not appear); MAP never an active axis;
 VIS only in module contexts. A4 source anchors: each file cites its ruling/source basis.
-A5 gate arithmetic: SEM weights sum 100; composite formula stated; 97.5 floor present.
+A5 gate arithmetic: parse the actual SEM configuration in 05; 12 positive weights sum 100;
+score scale and composite formula valid; explicit scoped threshold policy with authority/context
+references; no numeric default. Test run-local arithmetic and reject absent/malformed policies,
+unsupported global scope and false current universal claims (DEC-PROMO-01/02/03).
 A6 container rules consistency: 02 rules match the persisted floor. A7 post-application hashes
 (T8): on-device hashes of the 5 annotated files match annotation_hashes.json.
 A8 cold-LOAD validation: a cold workspace reloads this folder + manifest and re-validates
@@ -16,3 +19,9 @@ D1 QAF/PD enforcement wiring · D2 lyric-lock behavioral fixture · D3 CAP 4960�
 D4 SEG gate execution + representative end-to-end triad fixture (seed → locked UST → three
 surfaces → Suno prompt) — the triad fixture graduates to executable-now once the runtime exists;
 until then a DRY-RUN fixture (template instantiation walk) stands in.
+
+Promotion regression: `build/test_promotion.py BUNDLEDIR` exercises scoped SEM comparison,
+missing authority/context, malformed scores/policies, hard-coded-floor regression, actual member
+hash tampering, lyric-lock sequence/multiplicity and protected UST/workforce semantics.
+A11 includes actual member MD5 verification, not inventory shape alone. These are build/test
+enforcements; D1–D4 production-runtime obligations remain deferred.

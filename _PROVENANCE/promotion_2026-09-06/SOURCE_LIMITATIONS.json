@@ -1,0 +1,26 @@
+{
+  "blocking_text_audit": [
+    {
+      "path": "code/D-Maestro/maestro-ai-music-system-main/Today.txt",
+      "git_blob": "dab487853a34922d3798e0b38c1c640e6207f2b7",
+      "bytes": 184731,
+      "disposition": "UNRESOLVED_SOURCE_REQUIRED",
+      "reason": "Connector UTF-8 decoding fails or normalized text cannot match original blob bytes; historical object preserved unchanged remotely. No exact full-occurrence audit claimed."
+    },
+    {
+      "path": "untracked/SYSTEM_GRAPH_IMPROVED.json",
+      "git_blob": "7d93baa89c17f3f3eff3e642dbe86a8e86baf0fa",
+      "bytes": 7435400,
+      "disposition": "UNRESOLVED_SOURCE_REQUIRED",
+      "reason": "Connector UTF-8 decoding fails or normalized text cannot match original blob bytes; historical object preserved unchanged remotely. No exact full-occurrence audit claimed."
+    }
+  ],
+  "opaque_historical_assets_not_materialized": [
+    "artifacts/D-Maestro/canon/who dat.pdf",
+    "artifacts/D-Maestro/sources/claude-session051526.oxps",
+    "artifacts/uploads-2026-07-19/mosaic.paint",
+    "untracked/maestro_prompt_evolution_full_rerun_2026-07-25/source/direct/who_dat.pdf"
+  ],
+  "external_gitlink": "untracked/momoneystudios-Exporting to Vercel",
+  "exact_operation_remaining": "Retrieve raw bytes of the two named historical text objects, decode with verified encoding, rerun occurrence audit and impact review; only then consider merge."
+}

@@ -4,7 +4,7 @@ no implicit deprecation — everything not explicitly superseded carries forward
 
 ## Stratum chain (oldest → newest)
 S1 v3.0g Creative OS → S2 v4.2.3 spine → S3 v4.5.2 → S4 **v4.5.5 (PROVEN — released songs;
-staging floor persisted)** → S5 v5/v5b/v5c (DIAGNOSTIC — failed recreations; canon-freeze/
+staging floor persisted)** → S5 v5/v5b/v5c (admissible design evidence, not failed by non-shipment; CR-V5-STATUS-1; canon-freeze/
 contract era incl. Y-3, END shell) → S6 Session-13 snapshot (replay-backed, May 2026) →
 S7 June reconstruction lane (impl plan v0_3, grounded fold) → S8 July forensic + rulings lane
 (M1–M15, DEC-01..26, P-1..P-4) → **S9 maestro-current (top stratum, this bundle)**.
@@ -28,18 +28,18 @@ a later stratum consumed it. Folded into: 04 (named seat map), 05 (governance ad
 SUPERSEDED: MAP axis → timing to LYR section headers + structure-reservation to
 Performance.execution (M13) · Road-Map block in Creative shell → retired ([End] = terminal marker,
 not an axis) · 4-letter Performance code → PER · fixed syllable bands 6-10/6-11 → style-conditioned
-breath-pattern rule (DEC-25) · G-Card ≥7.0 scalar → era history (O16B-4 context, DEC-24) ·
+breath-pattern rule (DEC-25) ·
 literature/poetry lyric display in Creative UST → vocal performance spacing (DEC-26).
 CARRIED FORWARD (chronology, not restated): full Technical UST key/subkey topology — COMPILED
 from the Chimera-era master template (01/07, source md5 `eaf18e11…`); the v5b-era canon monolith
 (TECHNICAL_UST_CANON.md: 8 era-axes, 28 keys / ~128 subkeys, different granularity + LYR.K0
-governance keys + THY.K5 tension–release) is REGISTERED as a competing detail stratum —
-**adjudication = O-18** (which stratum feeds compiled subkey granularity; no silent merge) ·
+governance keys + THY.K5 tension–release) and its governance addendum are ONE UNIT (DEC-27); O-18 rivalry framing is withdrawn.
+Residual cross-era granularity/chronology remains O16E; no silent merge ·
 v4.5.5 container rules, budgets, VIRAL-5/HPA, Sacred Imperfection, Session Ledger schema
 (persisted floor) · owner/reviewer/tie-break matrix rows (**IMPORTED — 04,
 PIN.V5B.COUNCIL.MATRIX.V1**, migrated under re-expanded names; MAP-row re-homes to
-Performance.execution) · both rosters (overlay chronology) · SEM 12-criteria weights + 97.5
-floor · QAF/PD rule cards · v5b work-item mechanics (WI.V5B.SCHEMA.V1), evidence contract
+Performance.execution) · both rosters (overlay chronology) · SEM 12-criteria weights + explicit applicable scoped evaluation policy
+(no universal numeric floor; DEC-PROMO-01/02/03) · QAF/PD rule cards · v5b work-item mechanics (WI.V5B.SCHEMA.V1), evidence contract
 (one-sentence constraint fills, source binding, downstream sensitivity, challenge cycles,
 mandatory logs — PIN.V5B.EVIDENCE.CONTRACT.V1), phased executable chain (P0 dual-scaffold →
 P5 delivery) — the executable ancestry of the 03 phase chain.
@@ -52,3 +52,9 @@ original · Y-3 worklog · V55 harvest · fold-session v0.1 pair. REMOVED from t
 v5b topology/governance monoliths (`legacy/maestro_v5b_coldstart/`). Absence from the reached
 strata was mistaken for absence from the repo; the CONS queue now lists only items verified
 absent by search, and each entry carries that verification burden.
+
+Historical threshold disposition (DEC-PROMO-01/02): G-Card ≥7.0 remains in its own era;
+97.5 remains the target of its identified song interaction. Neither universally supersedes the
+other; neither is automatically current. Universal CR-009 interpretations in earlier imported
+spines, proposals and reconstruction snapshots are superseded for present use, with original
+bytes preserved. Current numeric applicability is specified in 05_GOVERNANCE_SEG.md.

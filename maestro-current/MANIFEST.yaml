@@ -1,10 +1,10 @@
 product: maestro-current
-version: v0.5
-work_item: REPAIR.O16D.VV.R1 (builds on O16D; absorbs REVIEW.O16D.VV.R1 verdict FAIL -> repaired)
-date: '2026-07-19'
+version: v0.6-promotion-2026-09-06
+work_item: PROMOTION.2026-09-06 (DEC-PROMO-01–13; scoped threshold repair)
+date: '2026-09-06'
 class: >-
-  REPAIRED CANDIDATE (post-V&V; promotion path per M17 = O16E history-grounded derivation +
-  operator acceptance; version-based force-close SUSPENDED)
+  CONTROLLED CORRECTION CANDIDATE; operator-accepted DEC-PROMO-01–13 applied.
+  Promotion validation recorded separately; broader O16E and production runtime not claimed complete.
 self_contained: >-
   every member required to interpret/validate current behavior is listed in the files map;
   inventory completeness is machine-checked (validator A11)
@@ -44,40 +44,41 @@ source_imports:
 builders:
   A9a_packager: build/build_maestro_current.py (v2 — regenerates the FULL member set + this manifest)
   A9b_source_delta_compiler: build/compile_current.py (hash-verified input; fails closed on unmapped address)
-  validator: build/validate_bundle.py (v2 — recursive parse A10 + inventory completeness A11)
+  validator: build/validate_bundle.py (v3 — scoped SEM configuration/policy oracle + recursive parse + actual hashes)
 files:
-  00_ROOT_SPEC.md: 3cc5a9ba26348c46ce080903d3232bf2
-  01_TECHNICAL_UST_CANON.md: 683fb78ec2c53a8d137b933ea9887710
+  00_ROOT_SPEC.md: ac4db6b7db896ff58338328a4383054a
+  01_TECHNICAL_UST_CANON.md: 5608cd1c18218bbcbcf0bf5d3f19e52c
   02_CREATIVE_UST_TEMPLATE.md: 7c7f2a4a84a5b113e85bf4837582b3f0
-  03_PHASE_CHAIN.md: b73e64991d3a1f02de14f7fbcd4a8453
+  03_PHASE_CHAIN.md: 13a49f07e9cb65267a96997e93de9437
   04_COUNCIL_TOPOLOGY.md: 424dabbc36f085e22da0e75b9c27a8f6
-  05_GOVERNANCE_SEG.md: 3cb62cd1cd442a92bd59aec5385bae26
-  06_RUNTIME_RULES.md: 4d649d86bac2a4759c291a31497e6279
-  07_ADDRESS_REGISTRY.md: b9c4c6639e1cc63b952c04f4ce8a7074
-  08_PORTABILITY_ATP.md: fa397a4adcb71c7fa4c05605cf7fe366
-  09_LOGS_AND_CONTINUATION.md: 8d40fcc08e639cf05d6e976c7df6bea6
-  10_TEST_PLAN.md: f520dd1ea8a3a9f2e96fa4df961cd24a
+  05_GOVERNANCE_SEG.md: 63f1fcc958e576464459b14ed43c5e86
+  06_RUNTIME_RULES.md: 174403a8bd3e6ff0db0f198756e2271d
+  07_ADDRESS_REGISTRY.md: 89ee2a806f174e4aac45ca92eb94f47c
+  08_PORTABILITY_ATP.md: e53ffd00161795e827d301ba54f6c378
+  09_LOGS_AND_CONTINUATION.md: 3763a80899aabec642409855230e0ed8
+  10_TEST_PLAN.md: bd557fc9af342beb19db4af17d98b30b
   SCOPE_CORRECTION_v0_4.md: cf7d6f4de88cbd33a09442c1056192da
-  STRATA_MIGRATION_MAP.md: 948977a7022d17b4832860a8e1884012
+  STRATA_MIGRATION_MAP.md: 897dab7379ffc0ced27f56841d66bf79
   build/build_maestro_current.py: 051e2d02bd300aee3bc07313d6dfaa3c
   build/cap_validator.py: 0a947ef11a09a89f7ef49f86e86b521e
   build/compile_current.py: 966115ad2b0071979023204cc7be0473
   build/lyric_lock_check.py: cce5b6348f063996bf6881169af8d842
-  build/manifest_meta.yaml: 45ce8467e296cb44b86edc6aa6846884
-  build/templates/00_ROOT_SPEC.md: 3cc5a9ba26348c46ce080903d3232bf2
-  build/templates/01_TECHNICAL_UST_CANON.md: 683fb78ec2c53a8d137b933ea9887710
+  build/manifest_meta.yaml: 163fec2ea25c3dd7b9af4d984bc5eecd
+  build/templates/00_ROOT_SPEC.md: ac4db6b7db896ff58338328a4383054a
+  build/templates/01_TECHNICAL_UST_CANON.md: 5608cd1c18218bbcbcf0bf5d3f19e52c
   build/templates/02_CREATIVE_UST_TEMPLATE.md: 7c7f2a4a84a5b113e85bf4837582b3f0
-  build/templates/03_PHASE_CHAIN.md: b73e64991d3a1f02de14f7fbcd4a8453
+  build/templates/03_PHASE_CHAIN.md: 13a49f07e9cb65267a96997e93de9437
   build/templates/04_COUNCIL_TOPOLOGY.md: 424dabbc36f085e22da0e75b9c27a8f6
-  build/templates/05_GOVERNANCE_SEG.md: 3cb62cd1cd442a92bd59aec5385bae26
-  build/templates/06_RUNTIME_RULES.md: 4d649d86bac2a4759c291a31497e6279
-  build/templates/07_ADDRESS_REGISTRY.md: b9c4c6639e1cc63b952c04f4ce8a7074
-  build/templates/08_PORTABILITY_ATP.md: fa397a4adcb71c7fa4c05605cf7fe366
-  build/templates/09_LOGS_AND_CONTINUATION.md: 8d40fcc08e639cf05d6e976c7df6bea6
-  build/templates/10_TEST_PLAN.md: f520dd1ea8a3a9f2e96fa4df961cd24a
+  build/templates/05_GOVERNANCE_SEG.md: 63f1fcc958e576464459b14ed43c5e86
+  build/templates/06_RUNTIME_RULES.md: 174403a8bd3e6ff0db0f198756e2271d
+  build/templates/07_ADDRESS_REGISTRY.md: 89ee2a806f174e4aac45ca92eb94f47c
+  build/templates/08_PORTABILITY_ATP.md: e53ffd00161795e827d301ba54f6c378
+  build/templates/09_LOGS_AND_CONTINUATION.md: 3763a80899aabec642409855230e0ed8
+  build/templates/10_TEST_PLAN.md: bd557fc9af342beb19db4af17d98b30b
   build/templates/SCOPE_CORRECTION_v0_4.md: cf7d6f4de88cbd33a09442c1056192da
-  build/templates/STRATA_MIGRATION_MAP.md: 948977a7022d17b4832860a8e1884012
-  build/validate_bundle.py: c83e4e0b7070752fd17263be22e0a267
+  build/templates/STRATA_MIGRATION_MAP.md: 897dab7379ffc0ced27f56841d66bf79
+  build/test_promotion.py: 3ad007372ace65bc18b6d25225c23621
+  build/validate_bundle.py: f3c8f8579aab71571abd2d9fe010873b
   compiled/BUILD_REGENERATION_REPORT.yaml: 567fffb207b739ec9b1909fcb4f73fcd
   compiled/DEPENDENCY_CLOSURE_REPORT.yaml: 8b482bf5ba5b5ffae43e3cf7018e23d9
   compiled/FULL_CANON_COVERAGE_MATRIX.yaml: 372369d8c2d53599e9c0445ab2764ed4

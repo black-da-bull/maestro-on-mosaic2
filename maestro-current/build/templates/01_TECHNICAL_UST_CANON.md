@@ -25,8 +25,8 @@ no silent fill, no skipped subkey, no truncation. Never delete, never infer a nu
 
 ## State machine
 NULL → PROPOSED → PRESSURED → RESOLVED → LOCKED (monotonic; no drop, no revert).
-Invariants: populated addresses never return to NULL; locked operator values (97.5) hold unless a
-supersession is logged; only ROOT supersession clears a guard (AI proposals record, never clear).
+Invariants: populated addresses never return to NULL; locked operator values hold within their explicit applicable scope unless a
+supersession is logged; no numeric evaluation threshold is universal by inheritance (DEC-PROMO-01/02); only ROOT supersession clears a guard (AI proposals record, never clear).
 
 ## MATERIALIZED FULL TOPOLOGY (O16C — compiled, zero omissions)
 Compiled by `build/compile_current.py` from the predecessor master spec

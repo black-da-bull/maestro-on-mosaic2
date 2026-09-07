@@ -8,7 +8,7 @@ operator-corrections-as-root and is NOT governed by QAF).
   packs/artifacts. [persisted requirement; D1]
 - **Lyric lock** (universal law; behavioral test = D2).
 - **CAP compilation** 4960–4999 (live-emission test = D3).
-- **Generational release surface** — SEM criteria interwoven throughout construction (DEC-24); composite ≥97.5 + G-Card close; admissibility checks per stratum (execution test = D4).
+- **Generational release surface** — SEM criteria interwoven throughout construction (DEC-24); composite evaluated against explicit applicable scoped policy + independent hard gates + G-Card close (05); no universal numeric default. Missing threshold authority/applicability produces an unresolved numeric verdict, never assumed PASS; admissibility checks per stratum (execution test = D4; DEC-PROMO-01/02/03).
 - **No distribution without linkage**: files distribute only with every linkage preserved and
   provenance-bound (blueprint→UST, Technical↔Creative axis identity, SEG/FOIL structure).
 - **Session Ledger** (09) is mandatory: meaningful phase transitions, validation failures,

@@ -1,3 +1,94 @@
+# CURRENT STATE — promotion V1 close, 2026-09-06 (resume run)
+Doctrine: **Your Vision. Our Mission.**
+**Promotion status: V1 CLOSED — all recorded checks PASS. Branch candidate, not merged.**
+
+This block supersedes only the V1/promotion-completion status of the dated blocks below;
+every other claim in them stands, retained as written. Authority: operator DEC-PROMO-01–13,
+unchanged. Evidence: `promotion_2026-09-06/VALIDATION.md`, `V1_COVERAGE.json`,
+`SOURCE_LIMITATIONS.md`, and `CONTINUATION_2026-09-06.md`.
+
+- **V1 CLOSED (PASS).** Full-corpus occurrence coverage executed over all 4,751 tracked
+  objects with containers extracted: 3,284 occurrences, 23 on current surfaces and every
+  one scoped, 0 violations, 0 unresolved, byte-identical across two independent runs.
+  The two historical text objects that blocked it were audited byte-for-byte and contain
+  neither threshold family. Resolved, not waived.
+- **V2–V10 re-executed this run**, not carried over on trust: validate_bundle PASS ·
+  test_promotion 33/33 · builder twice into clean directories, 41 members byte-identical ·
+  compile_current twice, 3 topology outputs byte-identical. V6/V7 are read-verified, not
+  machine-gated (O-20).
+- **No bundle member was modified.** The V1 tool lives in `_PROVENANCE/`; MANIFEST hashes
+  are untouched and the 2026-09-06 build stands as recorded.
+- **Runtime enforcement still NOT claimed.** Merge is an operator decision. No next-phase
+  development was executed; the P0/P1/P2 order below is unchanged.
+- **NEW O-19** (cited-but-unpersisted packet artifacts) and **NEW O-20** (V6/V7 not
+  machine-gated) are open — see OPEN.md. O-19 is M1 breached inside the record that
+  enforces it: five artifacts were cited as this promotion's evidence and never committed.
+  Their names now resolve; the original text is unrecoverable and was not reconstructed.
+
+Figures note: the sweep excludes its own packet directory (its output quotes matched
+snippets verbatim, so scanning it would make the check grow on every run). The committed
+evidence files are measured at this branch head and reproduce exactly on re-run; the
+constrained figures — current-surface occurrences, violations, unresolved objects, layer
+discrepancies — are identical to the audited candidate's. Reconciliation in VALIDATION.md.
+
+Corpus finding worth carrying: the strongest surviving universal-floor phrasings in the
+whole corpus sit in `who dat.pdf` and `claude-session051526.oxps` — container formats a
+text-only scan cannot read. All historical, none on a current surface. Any future claim
+of corpus coverage or absence must extract containers or say that it did not.
+
+---
+# CURRENT STATE — promotion fold, 2026-09-06
+Doctrine: **Your Vision. Our Mission.**
+**Promotion status: PARTIAL — NOT PROMOTION COMPLETE; branch candidate, not merged.**
+
+This block supersedes conflicting current interpretations in the retained snapshots below.
+Authority: operator DEC-PROMO-01–13, individually recorded in `PROMOTION_2026-09-06.md`.
+The accepted correction window repairs current sources and rebuilds maestro-current; it does
+not close broader reconstruction obligations or assert deployed song-runtime enforcement.
+Promotion verification and checkpoint outcome: `CONTINUATION_2026-09-06.md` and
+`promotion_2026-09-06/VALIDATION.md` (final run evidence, not older snapshot claims).
+
+## Current evaluation and authority
+- SEM/SEG/G-Card evaluation remains architectural, including feasibility, evidence-bound
+  critique, deficiencies/remediation, HPA/authenticity and lawful exceptions.
+- No universal numeric release floor. The historical song-local 97.5 target and historical
+  G≥7 mechanism remain separate; neither silently replaces or reinstates the other.
+- Applied numeric thresholds require explicit run/policy/version/context and authority;
+  absent applicability is unresolved, never an invented number or numeric PASS.
+- Human creative vision → working Technical UST → SME reasoning/consensus → locked
+  Technical UST → reverse compilation → derived renderer-facing triad. Creative UST stays derived.
+- Audio runtime target: 13 workers; 4 visual roles remain separately scoped optional modules.
+- Generation/model adapter, renderer grammar and Studio/editing workspace are downstream
+  Suno concerns; they never redefine canonical UST authority.
+
+## Current issue fold
+| Item | Effective status | Product critical path |
+|---|---|---|
+| Q1–Q16 | PHANTOM; never fabricate; no required deliverable | No |
+| O-03 | CLOSED by operator 2026-07-21; reconstructions accepted | No |
+| O-13 | CLOSED; V1 repair persisted 2026-07-19 | No |
+| O-04 | OPEN, provenance/session attribution only; b9f69085 and b161088a unverified | No |
+| O-05 | forensic_replay_required | No, unless replay discovers a current architectural mutation |
+| O-12 | external_asset_preservation_blocker; original Claude visual assets unverified | No audio-promotion block |
+| Seedance fit | experiment_required; identity/timing/narrative/cues/intent quality unproven | No audio-promotion block |
+
+Other historical obligations are not silently closed: O-06/07/08/09/10 (non-phantom residue),
+O-11/14/15/17/O16E and external skill upload retain their recorded scopes until evidence closes
+them. An old open record alone is not evidence of an audio-promotion critical-path dependency.
+O-18 rivalry framing is withdrawn per DEC-27; residual cross-era chronology rides O16E.
+
+## Next-work order — after promotion checks pass
+P0: executable 13-worker instances/workforce registry → Technical UST ownership and crossstream
+dependency overlay → first genuine golden structural-interpretation fixture.
+P1: empirical B3 baselines → O-05 suppressed-output/coverage replay.
+P2: recover original O-12 assets → Seedance musical-fit experiments.
+No item in this next-phase queue was executed during this promotion.
+
+## Preserved state snapshots — historical, not the live queue
+The material below is retained verbatim as earlier state evidence. Its claims to “ONLY live
+ordering” and its O-03-open line are superseded by this dated fold and later OPEN/LEDGER closes.
+
+---
 # STATE — Carried-Forward Working State
 **Version:** 0.7 (2026-07-20) · Fold of LEDGER M1–M18 + DEC-01..28 + CR-V5-STATUS-1 + V1-REPAIR + O16..O16D + REVIEW/REPAIR.O16D.VV.R1 · Load this at the start of every Maestro session before doing anything else.
 
@@ -98,3 +189,22 @@ The `maestro-forensic-transcript` skill is no longer a skeleton. The v1.1 ATP (2
 - **Discharged-in-package, landed in SSOT:** O-01 (claud2 dating annotation), O-02 (Revised INV-18 in contract #2), O-07 (parse + phantom-detect extractors). Effective on the claude.ai surface once re-uploaded.
 - **Still open:** O-03 original-file sweep (found originals outrank these reconstructions, DEC-03).
 - **Next-action 7 update:** "skill rebuild" is DONE and installed; the remaining step is the operator's manual claude.ai re-upload (delete skeleton → upload the 2026-07-20 build zip). P2 classification still pending.
+
+
+## Promotion reconciliation — 2026-09-07 (supersedes prior completion interpretation)
+PARTIAL — NOT PROMOTION COMPLETE. Exact operator V1–V10 bindings and current continuation: `promotion_2026-09-06/RECONCILIATION_2026-09-07.md`.
+Original missing evidence has been recovered from this conversation workspace and persisted with Git hash verification (RECOVERED_FILES.json). Earlier statements that this evidence no longer existed are superseded; prior prose is retained.
+O-19 missing-file aspect is repaired; no new universal governance rule is inferred. The actual second original retrieval gap was SYSTEM_GRAPH_IMPROVED.json, not the inferred Word owner file. Later raw-sweep records remain useful evidence, but this review cannot independently establish full-corpus V1. Current bundle checks pass, with all 41 members matching remote and two clean builds; no deployed-runtime claim. No merge or downstream work until V1 is established. The existing operator instruction already authorizes promotion once blocking checks pass.
+O-03/O-13 CLOSED; O-04 provenance-only; O-05 forensic_replay_required; O-12 external_asset_preservation_blocker; Q1–Q16 PHANTOM. External preservation and experiments retain their non-audio-blocking scopes.
+
+
+## Promotion overlay correction — 2026-09-07
+- **DEC-PROMO-14:** Maestro version history, SEG, FOIL, and SEM are recovered repository
+  resources. They are overlay inputs, not artifacts to recreate and not grounds for another audit.
+- **DEC-PROMO-15:** Current integration semantics are **overlay**, not fold-and-laminate.
+  Historical fold/lamination tools and outputs remain evidence only.
+- **O16E CLOSED FOR THE RECOVERED TARGET SET.** Cross-version differences are chronological
+  overlays, not a generic unresolved rivalry.
+- **O-19 / O-20 SUPERSEDED — NOT ACTIVE.** They were AI-created audit/method extensions, not
+  operator-accepted blockers.
+- Evidence: `_PROVENANCE/OVERLAY_CORRECTION_2026-09-07.md`.

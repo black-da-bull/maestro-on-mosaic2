@@ -1,4 +1,4 @@
-# MAESTRO — Current Root Specification (bundle v0.5)
+# MAESTRO — Current Root Specification (bundle v0.6-promotion-2026-09-06)
 **Derived 2026-07-19 by MAESTRO.O16.DERIVE-CURRENT-ARTIFACTS.R1 · compiled FORWARD from the
 replay-backed Session-13 snapshot + operator deltas M12–M17 / DEC-09..27 / P-1..P-4. PROPOSAL-class;
 the snapshot itself is never edited. Promotion path (M17): version-based force-close is SUSPENDED —
@@ -8,7 +8,7 @@ entire history) followed by operator acceptance.**
 
 ## Identity
 Maestro is a compiler: creative seed (source) → Technical UST (intermediate representation) → Suno
-(target machine). Not a metaphor — the shape the problem has. Creeds: "Your vision. Our mission." ·
+(target machine). Not a metaphor — the shape the problem has. Creeds: "Your Vision. Our Mission." ·
 "Yesterday's world-class is today's baseline." North-star: teach the AI the Black-Southern-gospel
 soul that causes emotion — the scaffolding exists for the soul, never the reverse.
 
@@ -48,5 +48,17 @@ MAP axis (→ M13 homes), the retired 4-letter code, and the Road-Map block are 
 See STRATA_MIGRATION_MAP.md for the stratum chain and address-level dispositions.
 
 ## Proven / specified / historical
-v4.5 line proven (released songs). v5 line diagnostic. This derivation = current specified state.
+v4.5 line proven (released songs). v5 line admissible design evidence; non-shipment is not failure (CR-V5-STATUS-1). This derivation = current specified state.
 Historical Session-13 snapshot: reconstruction/replay-backed/session13/R_LIST_v0_2.md.
+
+## Controlled correction window — 2026-09-06
+DEC-PROMO-01–13 are operator-accepted corrections to this current specification. This window
+repairs their dependents; it does not assert that the broader O16E reconstruction or D1–D4
+song runtime is complete. Current evaluation semantics are in 05_GOVERNANCE_SEG.md. Any
+inherited universal numeric floor is explicitly superseded, including CR-009-derived claims
+in migrated source documents; their history is preserved.
+
+Suno boundary (DEC-PROMO-12): generation/model adapter, renderer prompt/grammar behavior and
+Studio/editing/workspace capability are distinct downstream concerns. Changes to an editing
+workspace do not redefine the canonical Technical UST or its locked-source authority. This
+clarifies the target-machine shorthand above; it creates no speculative adapter implementation.

@@ -1,0 +1,117 @@
+{
+  "date": "2026-09-07",
+  "origin": "Existing conversation workspace, original bytes; no reconstruction",
+  "files": [
+    {
+      "bytes": 7323,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/ATTACHED_SOURCE_AUDIT.json",
+      "path": "_PROVENANCE/promotion_2026-09-06/ATTACHED_SOURCE_AUDIT.json",
+      "sha": "7996305727c8bf1cb3b7542494f952ca5965f02f",
+      "sha256": "5bc35f3a41355102a658ab106a81952a92368e7c6b08d9d146fa7d122ce0e6b5"
+    },
+    {
+      "bytes": 56073,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/BASELINE_DIFF.patch",
+      "path": "_PROVENANCE/promotion_2026-09-06/BASELINE_DIFF.patch",
+      "sha": "1b8fa02ced2c0200f857f76a3c1576070747dd35",
+      "sha256": "8aed4e44a05da8150e02520cf75579a324b30b45f6475a4249dbc829a45c311e"
+    },
+    {
+      "bytes": 16042,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/CURRENT_THRESHOLD_OCCURRENCES.csv",
+      "path": "_PROVENANCE/promotion_2026-09-06/CURRENT_THRESHOLD_OCCURRENCES.csv",
+      "sha": "36ad5c55646561d8ff87045a7e73c787df1654e7",
+      "sha256": "4a226309ec19f878ab457ecc8f1322e809a379bf2b329746a41759ca79d7be57"
+    },
+    {
+      "bytes": 11482,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/DECISION_OUTCOMES.json",
+      "path": "_PROVENANCE/promotion_2026-09-06/recovered_original/DECISION_OUTCOMES.json",
+      "sha": "378967f5cc6a271990b0598b25bcb519224b0382",
+      "sha256": "2d854c9aefcb112bd59ef94cd964950b0e9a5b073196b71df9ec086fced99242"
+    },
+    {
+      "bytes": 159293,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/IMPACT.csv",
+      "path": "_PROVENANCE/promotion_2026-09-06/recovered_original/IMPACT.csv",
+      "sha": "936cab9f678cdd93e4cf309564406c4c209f85c9",
+      "sha256": "777c2005f7388cee9a3b77321e46231b84b1017260fccd937631d5b091e2a615"
+    },
+    {
+      "bytes": 2626,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/IMPACT_NOTES.md",
+      "path": "_PROVENANCE/promotion_2026-09-06/IMPACT_NOTES.md",
+      "sha": "58c59921616c9fb3a751199e4ffd59a2ed1b86a6",
+      "sha256": "dd829c2bfefff54fa0694138e81655897c9d00420e7a5a2b0025c9cec8358195"
+    },
+    {
+      "bytes": 639863,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/OCCURRENCES_AFTER.csv.gz",
+      "path": "_PROVENANCE/promotion_2026-09-06/OCCURRENCES_AFTER.csv.gz",
+      "sha": "209de487cb5d14315369b9535b27a046d78c680a",
+      "sha256": "aa0a063b94938ba2c54f67e49fe0d0c9c725878a51437481fa8c059aaa742505"
+    },
+    {
+      "bytes": 936929,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/OCCURRENCES_BEFORE.csv.gz",
+      "path": "_PROVENANCE/promotion_2026-09-06/OCCURRENCES_BEFORE.csv.gz",
+      "sha": "a18bd29f2e8909a871653037302ab2fd4cb98f4c",
+      "sha256": "30eb2f793a6db4f6b33d70ce6c086025f141f99c8b85e0adbe91e8ef19eafb37"
+    },
+    {
+      "bytes": 649023,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/REPOSITORY_INVENTORY.csv",
+      "path": "_PROVENANCE/promotion_2026-09-06/REPOSITORY_INVENTORY.csv",
+      "sha": "692cb77fb3f35fd928f88559c71d24a538932441",
+      "sha256": "1945c45acce96dec4e83f3695002b3bce47a68f62ae5c115ebbd93f8b8fa63ff"
+    },
+    {
+      "bytes": 1400,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/SOURCE_LIMITATIONS.json",
+      "path": "_PROVENANCE/promotion_2026-09-06/SOURCE_LIMITATIONS.json",
+      "sha": "fcd2f46be9c9e99d7814c989dae31a6a9d8f1ab9",
+      "sha256": "34277e8cb9f482612288df555e16f23f1454954e90841bfbd322e0206d906728"
+    },
+    {
+      "bytes": 2001,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/SOURCE_LIMITATIONS.md",
+      "path": "_PROVENANCE/promotion_2026-09-06/recovered_original/SOURCE_LIMITATIONS.md",
+      "sha": "c35ad888cff11661ff9bfa3e4162b565a981877f",
+      "sha256": "9f93244a8069ae6b88ef5db914beb1e892b9c0b68f2430b9060e21660e2d268f"
+    },
+    {
+      "bytes": 3116,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/VALIDATION.md",
+      "path": "_PROVENANCE/promotion_2026-09-06/recovered_original/VALIDATION.md",
+      "sha": "20ebfdb5b8e0fa461bfe7d38489451d285baf61f",
+      "sha256": "7993d7d672210642ae16a82178246046f05a180d7fe9bb574e2b5337cd11a9bb"
+    },
+    {
+      "bytes": 11209,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/VALIDATION_RESULTS.json",
+      "path": "_PROVENANCE/promotion_2026-09-06/VALIDATION_RESULTS.json",
+      "sha": "ccdff2bc00b9b8a0733c91987ecc04994ed49cac",
+      "sha256": "7b278471bd732ccc7bb8edc23e1d4e68ce387e3cc9053a0390496b2960875c20"
+    },
+    {
+      "bytes": 2894,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/scan_occurrences.py",
+      "path": "_PROVENANCE/promotion_2026-09-06/scan_occurrences.py",
+      "sha": "ecc5f96bd74654c983d60ba289bf3fd2c5056f5a",
+      "sha256": "98c31567710893a47cbabb084b3a3e416b11fe66b3d1d65eaa7e9e5409f04d36"
+    },
+    {
+      "bytes": 3370,
+      "original_path": "_PROVENANCE/promotion_2026-09-06/verify_promotion.py",
+      "path": "_PROVENANCE/promotion_2026-09-06/verify_promotion.py",
+      "sha": "7a9700e3257fd828bd3e722947d74bb721ddc5bd",
+      "sha256": "b451d2498925af38181a3799882f0da9e20456ff7e7ee36b3008ca039cf70468"
+    },
+    {
+      "bytes": 8796,
+      "path": "_PROVENANCE/promotion_2026-09-06/recovered_original/CONTINUATION_2026-09-06.md",
+      "sha": "3d7a6b408ce65d149a5aaa704b65c7e4f6513c19",
+      "sha256": "1e992634970f27f893213488805af579d76ac939435eea00f0706407ac8ebdd2"
+    }
+  ]
+}

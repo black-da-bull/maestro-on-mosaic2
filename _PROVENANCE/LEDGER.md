@@ -223,3 +223,86 @@ Operator, verbatim: *"close o-03 too."* Explicit close by ID. O-03 was the M5/DE
 **Not extinguished:** a later-surfacing original still supersedes its reconstruction **by pointer** under ordinary append-only discipline (M2/rule 6) — a standing rule requiring no open item.
 **Consequence handled:** O-07's search burden previously rode O-03; O-07 REMAINS OPEN and now carries its own burden (parse + phantom-detect are reconstructions; fold_laminate is the sole extant original).
 Status after this close: O-01 ✓ O-02 ✓ O-03 ✓ closed. Open: O-04 O-05 O-06 O-07 O-08 O-09 O-10 O-11 O-12 O-14 O-15 O-16 O-17 O16E, plus the claude.ai re-upload packaging step. Rung: operative (this LEDGER) + persisted (OPEN.md closes block).
+
+## PROMOTION-2026-09-06 — accepted deltas recorded before propagation
+Morris / Mo explicitly accepts DEC-PROMO-01 through DEC-PROMO-13. See PROMOTION_2026-09-06.md for each interpretation, evidence, impacted objects and independent authority/acceptance/persistence/enforcement status. DEC-PROMO-01/02 supersede the universal numeric reading in DEC-20/DEC-24 and CR-009 derivatives, not the evaluation capability or historical evidence. Application and validation remain pending in this initial entry. Baseline 88cd150cceacaebe79a3a0e97edb50497cc59a47 is recoverable through checkpoint/pre-promotion-2026-09-06.
+
+## PROMOTION-2026-09-06 — application checkpoint and limited validation
+Supersedes only the pending-application status of the initial entry above. DEC-PROMO-01–13
+are now recorded and applied/verified at their applicable current layers. Source templates
+00/01/05/06/10/STRATA, validator and downstream draft repaired; full bundle regenerated;
+STATE reconciled; OPEN appended. 02/03/04 and their templates verified unchanged. Build
+validation and 33 regressions pass; 41 members reproduce byte-identically in two clean builds;
+three topology outputs reproduce exactly. Production-runtime enforcement is NOT claimed.
+
+Verdict: PARTIAL — NOT PROMOTION COMPLETE. V1 full-corpus occurrence coverage is unresolved
+for the two historical text blobs in promotion_2026-09-06/SOURCE_LIMITATIONS.md; remaining
+current-bundle checks V2–V10 pass in their recorded scope. Main not merged. The post-run
+checkpoint preserves this partial candidate. CONTINUATION_2026-09-06.md carries exact next
+mechanical work and the gated downstream queue. No next-phase development executed.
+
+## PROMOTION-2026-09-06.RESUME — V1 closed; cited-but-unpersisted packet artifacts landed
+Supersedes only the V1 PARTIAL status of the checkpoint entry above; every other claim
+in that entry stands. Rung: persisted. Runtime-enforced: not claimed.
+
+**V1 CLOSED — PASS.** `_PROVENANCE/promotion_2026-09-06/v1_occurrence_sweep.py` sweeps
+every object the commit tracks in two layers (raw-byte, then decoded/container-extracted),
+with format dispatch by magic bytes. 4,751 objects · 3,284 occurrences · 23 on current
+surfaces, all scoped · 0 violations · 0 unresolved · 0 Layer-A/Layer-B discrepancies ·
+byte-identical across two independent runs. The two blocked historical text objects are
+`Today.txt` (CP1252, 184,731 B, sha256 e79cbe79…) and `~$Today.txt` (162 B Word owner
+file, sha256 9a5277b5…); both retrieved and audited byte-for-byte, **neither contains
+either threshold family**. Resolved, not waived. Residues recorded and hash-pinned: one
+unresolvable gitlink (f13aa940…, no .gitmodules, no bytes) and five non-textual assets.
+
+**Finding.** The corpus's strongest surviving universal-floor phrasings ("97.5% release
+threshold", "97.5% default threshold", "enforced at three layers") live in `who dat.pdf`
+and `claude-session051526.oxps` — container formats a text-only scan cannot read. All
+historical; none on a current surface; DEC-PROMO-01/02 hold. A text-only corpus check
+would have reported clean while missing exactly the passages most mistakable for canon.
+
+**V2–V10 re-executed, not carried on trust:** validate_bundle PASS · test_promotion 33/33
+· builder twice into clean dirs, 41 members byte-identical · compile_current twice, 3
+topology outputs byte-identical. V6/V7 are read-verified, not machine-gated — recorded as
+a gap, not closed (gating them changes a bundle member).
+
+**NEW O-19 — cited-but-unpersisted packet artifacts.** `IMPACT.csv`,
+`DECISION_OUTCOMES.json`, `VALIDATION.md`, `SOURCE_LIMITATIONS.md` and
+`CONTINUATION_2026-09-06.md` were cited across PROMOTION/STATE/OPEN/LEDGER as the
+2026-09-06 run's evidence and were never committed — M1 failing inside the record that
+enforces it, and REGISTRATION ≠ APPLICATION in a new form. All five names now resolve:
+IMPACT/DECISION_OUTCOMES re-derived from DECISIONS.json + commit evidence 88cd150..5e701d8;
+the other three authored in the resume run and labelled as such. **No prior text was
+reconstructed, paraphrased or invented** — the originals are unrecoverable.
+
+No bundle member modified; MANIFEST hashes untouched. No next-phase development executed.
+Merge remains an operator decision.
+
+## PROMOTION-2026-09-06.RESUME.FIGURES — coverage figures re-measured at resume head
+Housekeeping append; changes no verdict. The sweep gained one exclusion after its first
+run: it now skips its own packet directory, because `V1_OCCURRENCES.csv` quotes thousands
+of matched snippets verbatim and scanning it would make the check grow on every run.
+The committed `V1_*` evidence files are therefore regenerated from the tool as committed,
+measured at this branch head, so re-running reproduces them exactly. The audited object
+is unchanged and so is the outcome: every constrained figure (current-surface
+occurrences, violations, unresolved objects, layer discrepancies) is identical under both
+measurements. Exact figures and the reconciliation: `promotion_2026-09-06/VALIDATION.md`.
+
+
+## Promotion reconciliation — 2026-09-07 (supersedes prior completion interpretation)
+PARTIAL — NOT PROMOTION COMPLETE. Exact operator V1–V10 bindings and current continuation: `promotion_2026-09-06/RECONCILIATION_2026-09-07.md`.
+Original missing evidence has been recovered from this conversation workspace and persisted with Git hash verification (RECOVERED_FILES.json). Earlier statements that this evidence no longer existed are superseded; prior prose is retained.
+O-19 missing-file aspect is repaired; no new universal governance rule is inferred. The actual second original retrieval gap was SYSTEM_GRAPH_IMPROVED.json, not the inferred Word owner file. Later raw-sweep records remain useful evidence, but this review cannot independently establish full-corpus V1. Current bundle checks pass, with all 41 members matching remote and two clean builds; no deployed-runtime claim. No merge or downstream work until V1 is established. The existing operator instruction already authorizes promotion once blocking checks pass.
+O-03/O-13 CLOSED; O-04 provenance-only; O-05 forensic_replay_required; O-12 external_asset_preservation_blocker; Q1–Q16 PHANTOM. External preservation and experiments retain their non-audio-blocking scopes.
+
+
+## Promotion overlay correction — 2026-09-07
+- **DEC-PROMO-14:** Maestro version history, SEG, FOIL, and SEM are recovered repository
+  resources. They are overlay inputs, not artifacts to recreate and not grounds for another audit.
+- **DEC-PROMO-15:** Current integration semantics are **overlay**, not fold-and-laminate.
+  Historical fold/lamination tools and outputs remain evidence only.
+- **O16E CLOSED FOR THE RECOVERED TARGET SET.** Cross-version differences are chronological
+  overlays, not a generic unresolved rivalry.
+- **O-19 / O-20 SUPERSEDED — NOT ACTIVE.** They were AI-created audit/method extensions, not
+  operator-accepted blockers.
+- Evidence: `_PROVENANCE/OVERLAY_CORRECTION_2026-09-07.md`.

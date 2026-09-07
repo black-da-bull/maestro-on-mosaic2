@@ -5,8 +5,9 @@
 ## Inside the umbrella
 - **SEM** — the weighted scoring system: 12 criteria, 0–5 × weights (Hook 18/Lyric Integrity 12/
   Vocal 10/Melody 10/Structure 8/Production 12/Arrangement 6/Commercial 8/Originality 6/
-  Metadata 4/Syllable 4/QA 2), composite = Σ((score/5)×weight); release floor **97.5**
-  (CR-009 lineage from ≥70 origin; locked operator value; independent witness: VIRAL-5 PROOF).
+  Metadata 4/Syllable 4/QA 2), composite = Σ((score/5)×weight). Evaluation capability and
+  arithmetic are architectural; numeric pass targets require explicit applicable context
+  (DEC-PROMO-01/02/03). There is no universal numeric default.
   Namespace: SEM rubric numbering ≠ admissibility K-set (DEC on E-2); qualify every K-reference;
   short-code binding deferred to O-15 (DEC-12).
 - **Hard sub-gates**: metadata · lyric-syllable (style-conditioned per DEC-25) · hook ≥4 · production ·
@@ -24,8 +25,12 @@
 ## Execution model (DEC-24: interwoven, not terminal-only)
 Song Excellence runs CONCURRENT with Technical UST construction: SEM criteria serve as live
 criteria for subagent fills and for team round-robins/management reviews; every step emits UST
-delta + SEM delta together (preload ratchet). The terminal surface — composite ≥97.5 → G-Card
-decision artifact — CLOSES the interwoven evaluation; it is not a standalone end-gate chain.
+delta + SEM delta together (preload ratchet). The terminal surface evaluates the composite
+against the explicitly applicable run/policy/version/context threshold, alongside independent
+hard gates, evidence and lawful exceptions, then emits the G-Card decision artifact. It CLOSES
+the interwoven evaluation; it is not a standalone end-gate chain. If threshold applicability or
+source authority is unresolved, record that unresolved numeric verdict; never invent a default
+or claim numeric PASS. Critique, feasibility and remediation remain available.
 Historical G-Card ≥7.0 scalar = era history (its stratum), not a current second threshold.
 Syllable sub-gate: style-conditioned per DEC-25 (see 02).
 
@@ -57,7 +62,47 @@ Source (hash-verified): `legacy/maestro_v5b_coldstart/docs/TECHNICAL_UST_GOVERNA
 
 Disposition (DEC-22/DEC-24): this layer is the v5b-era EXECUTABLE FORM of the interwoven model —
 registered as the address-level detail stratum for SEG/G-Card/SE20. It does NOT reinstate ≥7.0 as
-a current threshold (the 97.5 composite governs); its 7×5 SE20 item set is an era instance of the
+a current threshold; G≥7 and the song-local SEM target are separate historical mechanisms,
+not successive universal constants (DEC-PROMO-02). Its 7×5 SE20 item set is an era instance of the
 SE20 checklist (composition OQ stays held). Era-alias register: the v5b expansion of SEG —
 "Structural & Engineering Gate" — joins DEC-14's alias list ("Feasibility gate" v2.1, "Structural
 Excellence Gate" MONO OS); current name remains Song Excellence Governance.
+
+## Scoped SEM configuration — DEC-PROMO-01/02/03
+The originating interaction is `song_test_2025-12-07_001` / `decomposer_v1.6_run_001`:
+composite 76.8, then Morris: “who said 70% pass? we are 97.5% pass”. Source:
+`artifacts/D-Maestro/Maestro/song.excellence.matrix.iterative.design.session.txt`, lines
+3547–3612 (operator statement at 3599). The 97.5 value is RUN_LOCAL_VALID there. CR-009-derived
+universal-floor interpretations are superseded; historical texts remain intact.
+Session PASS_THRESHOLD input is demonstrated in `code/D-Maestro/maestro-ai-music-system-main/Activity.txt`
+M7.3 (line 401). Its later proposed default is not imported. Minimal current contract:
+
+```yaml
+sem_configuration:
+  score_max: 5
+  weights:
+    hook: 18
+    lyric_integrity: 12
+    vocal: 10
+    melody: 10
+    structure: 8
+    production: 12
+    arrangement: 6
+    commercial: 8
+    originality: 6
+    metadata: 4
+    syllable: 4
+    qa: 2
+  threshold_selection: explicit_applicable_context
+  default_threshold: null
+  allowed_scopes: [run, policy, version, context]
+  required_policy_fields: [threshold, scope, context_ref, authority_ref]
+```
+
+An applied evaluation supplies its threshold (on the 0–100 SEM scale), scope, context_ref and
+source-authority reference in the run's existing evidence/ledger surfaces. No numeric fallback
+is authorized. A policy or version label alone does not establish authority or applicability.
+The build validator checks configuration and explicit-policy arithmetic; this is not deployed
+song-runtime enforcement. Independent lyric lock, feasibility, evidence binding, authenticity
+judgment and logged Sacred Imperfection remain intact; a numeric comparison alone is never
+an overall SEG release verdict. D4 remains an executable-runtime obligation.

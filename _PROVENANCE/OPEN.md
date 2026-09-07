@@ -77,3 +77,67 @@ Staging-copy deletion pending; 17GB audio ingest pending; final operator JSON pa
 - **Retired with it:** the standing DEC-03 search obligation (`SKILL_FILES_SEARCH_CHECKLIST.md`, `o03_sweep.ps1`) — retained as method artifacts, no longer a blocking open item. Per the checklist's own "when done" clause, unfound components are hereby reclassified from *possibly extant* to **never externalized — reconstruction is the artifact of record**.
 - **Not extinguished:** if an original later surfaces, ordinary append-only discipline still applies — it supersedes the reconstruction **by pointer** (never rewrite-in-place). That is a standing rule, not an open item; no reopening of O-03 required.
 - **O-07 REHOMED (still open):** its search burden previously rode O-03. O-07 now carries its own burden: `parse_transcript_v0_2.py` and `phantom_detect_v0_1.py` are reconstructions; `fold_laminate_v0_1.py` is the sole extant original. Closing O-03 does not close O-07.
+
+## Current classification fold — 2026-09-06 (DEC-PROMO-06–13)
+This append supersedes conflicting current interpretations of earlier entries; it deletes none.
+- Q1–Q16: PHANTOM; never fabricate; not a missing deliverable or active product blocker.
+  O-10's other unratified questions are not silently closed. Its historical eligibility-vs-release
+  numerical reconciliation is not current policy (DEC-PROMO-01/02).
+- O-03 CLOSED (operator 2026-07-21); O-13 CLOSED (repaired 2026-07-19). Prior opens remain history.
+- O-04: OPEN provenance-only attribution (b9f69085 / b161088a); non-critical for audio product.
+- O-05: forensic_replay_required, not a design question. Non-blocking for unrelated product
+  work unless replay proves a mutation of present architecture. Replay not performed here.
+- O-12: external_asset_preservation_blocker. Exact originals unverified: Claude design-project
+  `campaigns/run-it-to-me/Cover Directions.html`, `Run It To Me Covers.html`, and six referenced
+  cover images (their individual names/hashes require the original package). A repository
+  `Run It To Me - Track Page (standalone).html` is not evidence of that original cover package.
+  Does not block audio promotion; no asset recreation performed.
+- Seedance: experiment_required for song identity, timing, narrative, cues and intent fit.
+  No comparative quality success claimed; no experiment performed in this run.
+See CONTINUATION_2026-09-06.md for validation limits and the gated next-work queue.
+
+## Resume-run append — 2026-09-06 (promotion V1 close)
+- **V1 CLOSED (PASS).** The `PARTIAL — NOT PROMOTION COMPLETE` blocker is discharged:
+  full-corpus occurrence coverage executed over all 4,751 tracked objects, containers
+  extracted, 0 unqualified current-surface occurrences. Evidence:
+  `promotion_2026-09-06/VALIDATION.md` + `V1_COVERAGE.json`. The two blocked historical
+  text objects were audited byte-for-byte and contain neither threshold family
+  (`promotion_2026-09-06/SOURCE_LIMITATIONS.md`).
+- **NEW O-19 · Cited-but-unpersisted packet artifacts.** Five artifacts
+  (`IMPACT.csv`, `DECISION_OUTCOMES.json`, `VALIDATION.md`, `SOURCE_LIMITATIONS.md`,
+  `CONTINUATION_2026-09-06.md`) were cited by PROMOTION/STATE/OPEN/LEDGER on 2026-09-06
+  as the run's evidence and never committed — M1 breached inside the record that
+  enforces it. The names now resolve (two re-derived from commit evidence, three
+  authored in the resume run, each labelled in its own header); **the original text is
+  unrecoverable and was not reconstructed**. Open for an operator ruling: should a
+  citation-resolves check join the V&V gate, so a record cannot cite an artifact that
+  does not exist? Until ruled, this is a standing method risk, not a closed item.
+- **NEW O-20 · V6/V7 read-verified only.** No executable check asserts the provenance
+  issue fold (V6) or the Suno boundary separation (V7); both can drift silently. Closing
+  it means extending `test_promotion.py`, which changes a bundle member and its MANIFEST
+  hash — outside the promotion window. Carried, not closed.
+- **V1 residues (recorded, hash-pinned in `V1_COVERAGE.json`, not blocking):** the
+  unresolvable gitlink `untracked/momoneystudios-Exporting to Vercel` → `f13aa940…` (no
+  `.gitmodules`, no bytes in this commit) and five non-textual assets. PDF text
+  extraction is extraction, not ground truth: an image-only page reads as an absence.
+- **Not touched by this run**, retaining their recorded scopes: O-04, O-05, O-06, O-07,
+  O-08, O-09, O-10 residue, O-11, O-12, O-14, O-15, O-17, O16E, external skill re-upload.
+
+
+## Promotion reconciliation — 2026-09-07 (supersedes prior completion interpretation)
+PARTIAL — NOT PROMOTION COMPLETE. Exact operator V1–V10 bindings and current continuation: `promotion_2026-09-06/RECONCILIATION_2026-09-07.md`.
+Original missing evidence has been recovered from this conversation workspace and persisted with Git hash verification (RECOVERED_FILES.json). Earlier statements that this evidence no longer existed are superseded; prior prose is retained.
+O-19 missing-file aspect is repaired; no new universal governance rule is inferred. The actual second original retrieval gap was SYSTEM_GRAPH_IMPROVED.json, not the inferred Word owner file. Later raw-sweep records remain useful evidence, but this review cannot independently establish full-corpus V1. Current bundle checks pass, with all 41 members matching remote and two clean builds; no deployed-runtime claim. No merge or downstream work until V1 is established. The existing operator instruction already authorizes promotion once blocking checks pass.
+O-03/O-13 CLOSED; O-04 provenance-only; O-05 forensic_replay_required; O-12 external_asset_preservation_blocker; Q1–Q16 PHANTOM. External preservation and experiments retain their non-audio-blocking scopes.
+
+
+## Promotion overlay correction — 2026-09-07
+- **DEC-PROMO-14:** Maestro version history, SEG, FOIL, and SEM are recovered repository
+  resources. They are overlay inputs, not artifacts to recreate and not grounds for another audit.
+- **DEC-PROMO-15:** Current integration semantics are **overlay**, not fold-and-laminate.
+  Historical fold/lamination tools and outputs remain evidence only.
+- **O16E CLOSED FOR THE RECOVERED TARGET SET.** Cross-version differences are chronological
+  overlays, not a generic unresolved rivalry.
+- **O-19 / O-20 SUPERSEDED — NOT ACTIVE.** They were AI-created audit/method extensions, not
+  operator-accepted blockers.
+- Evidence: `_PROVENANCE/OVERLAY_CORRECTION_2026-09-07.md`.
