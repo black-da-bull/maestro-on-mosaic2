@@ -1,12 +1,12 @@
-# Deterministic MANIFEST metadata — consumed by build_maestro_current.py (v2)
+# Deterministic MANIFEST metadata — consumed by build_maestro_current.py (v2.1)
 # Every field here is emitted verbatim into MANIFEST.yaml ahead of the computed files map.
 product: maestro-current
-version: v0.6-promotion-2026-09-06
-work_item: PROMOTION.2026-09-06 (DEC-PROMO-01–13; scoped threshold repair)
-date: '2026-09-06'
+version: v0.7-p0-workforce-2026-09-07
+work_item: P0.WORKFORCE.REGISTRY.2026-09-07
+date: '2026-09-07'
 class: >-
-  CONTROLLED CORRECTION CANDIDATE; operator-accepted DEC-PROMO-01–13 applied.
-  Promotion validation recorded separately; broader O16E and production runtime not claimed complete.
+  P0 WORKFORCE MATERIALIZATION CANDIDATE; promotion baseline retained; exactly 13 bounded audio
+  worker instances and a machine-callable registry/dispatch-envelope runtime are materialized.
 self_contained: >-
   every member required to interpret/validate current behavior is listed in the files map;
   inventory completeness is machine-checked (validator A11)
@@ -15,6 +15,7 @@ inventory_classes:
   build_tools: build/*.py + build/manifest_meta.yaml + build/templates/* (packaged verbatim)
   compiled: compiled/* (A9b topology derivations + validation reports; BUILD_REGENERATION_REPORT records A9 runs)
   fixture: fixture/dryrun_project.md
+  workforce: workforce/* + workforce/instances/* (13 bounded audio worker deltas, source schema, registry, runtime loader and fail-closed validator)
 source_imports:
   technical_topology:
     source: artifacts/D-Maestro/Maestro/technical.ust.template.txt
@@ -28,6 +29,9 @@ source_imports:
     source: artifacts/D-Maestro/Maestro/creative.ust.template.txt
   staffing_schema:
     source: system/D-Maestro/drafts/Maestro Personas aka the subagents.md
+  employee_module_schema:
+    source: project canonical_employee_module_spec.yaml
+    current_copy: workforce/canonical_employee_module_spec.yaml
   v5b_coldstart_pack:
     source: code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/
     package_version: v5-b.coldstart.1 (2026-01-23)
@@ -39,11 +43,10 @@ source_imports:
       record (02); parsing discipline + triad caps (06); 19/19 pack members located, 2 re-bound
       by hash
     note: >-
-      DEC-27 (ROOT): the v5b Technical UST canon and its governance addendum are ONE UNIT — the
-      Technical UST plus the record of how quality/governance tie directly into decision-making
-      as the nulls are replaced. The earlier competing-stratum/O-18 framing is withdrawn; the
-      residual cross-era chronology question (Chimera-era template <-> v5b unit) rides O16E.
+      DEC-27 (ROOT): the v5b Technical UST canon and its governance addendum are ONE UNIT. The
+      historical seat map remains evidence; P0 workforce materialization does not yet freeze the
+      Technical UST ownership/dependency overlay.
 builders:
-  A9a_packager: build/build_maestro_current.py (v2 — regenerates the FULL member set + this manifest)
+  A9a_packager: build/build_maestro_current.py (v2.1 — full member set + workforce tree + manifest)
   A9b_source_delta_compiler: build/compile_current.py (hash-verified input; fails closed on unmapped address)
-  validator: build/validate_bundle.py (v3 — scoped SEM configuration/policy oracle + recursive parse + actual hashes)
+  validator: build/validate_bundle.py (v3.1 — scoped SEM + recursive parse + hashes + A12 workforce gate)

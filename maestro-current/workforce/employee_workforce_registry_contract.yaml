@@ -1,0 +1,25 @@
+{
+  "meta": {"artifact_name":"employee_workforce_registry_contract.yaml","artifact_type":"runtime_workforce_registry_contract","version":"v5_c.p0.1","status":"operator_authorized_materialized","date":"2026-09-07"},
+  "purpose":"Provide a machine-callable registry for exactly the current 13 audio workers without freezing the next-task Technical UST ownership/dependency overlay.",
+  "governing_refs":["workforce/canonical_employee_module_spec.yaml","workforce/canonical_13_employee_instances.yaml","04_COUNCIL_TOPOLOGY.md","06_RUNTIME_RULES.md"],
+  "audio_runtime": {
+    "expected_worker_count":13,
+    "worker_ids":["MAESTRO.AUDIO.01.MO","MAESTRO.AUDIO.02.CANON","MAESTRO.AUDIO.03.MEGAZORD","MAESTRO.AUDIO.04.SIBLING","MAESTRO.AUDIO.05.METRO","MAESTRO.AUDIO.06.MELODY_SCOUT","MAESTRO.AUDIO.07.SAGE","MAESTRO.AUDIO.08.ALAN","MAESTRO.AUDIO.09.DAVE","MAESTRO.AUDIO.10.VANESSA","MAESTRO.AUDIO.11.ANALOG_CONFESSOR","MAESTRO.AUDIO.12.ANVA","MAESTRO.AUDIO.13.ELDRIK"],
+    "worker_names":["Mo","Canon Orchestrator","Megazord Orchestrator","Sibling Architect","Metro Craft","Melody Scout","Sage","Alan","Dave","Vanessa","Analog Confessor","Anva","Eldrik"],
+    "visual_roles_excluded":["Visual Director","Identity Keeper","Motion Editor","Distribution Strategist"]
+  },
+  "registry_law": {
+    "may":["resolve exact worker id","resolve declared alias","enumerate materialized workers","construct a bounded dispatch envelope","validate instance shape and controller separation"],
+    "may_not":["infer axis/key ownership","invent a worker","add historical Isla/Huan seats","merge historical Melony with Melody Scout","grant controller powers to a worker","claim autonomous model execution merely because a worker descriptor exists"],
+    "axis_key_ownership":"deferred_next_task","crossstream_dependency_overlay":"deferred_next_task"
+  },
+  "controller_boundary": {"controller_may":["route","validate","log","gate","freeze","promote","package"],"controller_may_not":["invent artistic content","resolve creative nulls","absorb employee judgment"],"worker_may_not_act_as_controller":true},
+  "dispatch_contract": {
+    "required_fields":["dispatch_id","worker_id","task","context_refs","requested_output","authority_scope"],
+    "authority_scope_rule":"must name an explicit bounded task; absence of an ownership overlay means dispatch is never proof of canonical axis/key ownership",
+    "write_rule":"write target must be listed in the selected worker writable_zones or dispatch remains proposal-only",
+    "result_statuses":["completed","partial","blocked","abstained_out_of_domain"],
+    "conflict_rule":"unresolved conflicts remain explicit and route to round-robin/controller gate as appropriate"
+  },
+  "runtime_truth": {"materialized":"worker definitions + registry + validation + dispatch-envelope runtime","not_yet_materialized":["model/provider execution adapter","Technical UST axis/key ownership overlay","crossstream dependency graph","golden structural-interpretation run"]}
+}
