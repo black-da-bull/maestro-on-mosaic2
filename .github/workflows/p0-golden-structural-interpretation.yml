@@ -6,7 +6,9 @@ on:
       - 'runtime/maestro-workforce/**'
       - '.github/workflows/p0-golden-structural-interpretation.yml'
   push:
-    branches: [main]
+    branches:
+      - main
+      - p0-3-golden-structural-interpretation-2026-09-07
     paths:
       - 'runtime/maestro-workforce/**'
       - '.github/workflows/p0-golden-structural-interpretation.yml'
