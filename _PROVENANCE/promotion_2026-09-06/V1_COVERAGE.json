@@ -1,0 +1,36 @@
+{
+  "authority": "DEC-PROMO-01, DEC-PROMO-02, DEC-PROMO-03",
+  "check": "V1 full-corpus threshold-occurrence coverage",
+  "encodings_used": {
+    "cp1252": 1,
+    "utf-16": 7,
+    "utf-8": 4719
+  },
+  "layer_a_vs_layer_b_discrepancies": [],
+  "nontextual_assets_waived": [
+    "artifacts/uploads-2026-07-19/mosaic.paint",
+    "code/D-Maestro/maestro-ai-music-system-main/legacy/Data Analyst - Pattern analysis and advice_files/595937492b1d27a99a0c2c3db3d88550",
+    "code/D-Maestro/maestro-ai-music-system-main/legacy/~$Today.txt",
+    "code/D-Maestro/maestro-ai-music-system-main/song.excellence.matrix.iterative.design.session.txt - Shortcut.lnk",
+    "code/D-Maestro/maestro-ai-music-system/frontend/public/favicon.ico"
+  ],
+  "objects_needing_fallback_or_extraction": 32,
+  "objects_scanned": 4751,
+  "objects_unresolved": [],
+  "objects_waived": [
+    {
+      "gitlink": "f13aa940e6649ddb2b539f501a4750a94ee10f7e",
+      "object": "untracked/momoneystudios-Exporting to Vercel",
+      "waiver": "Gitlink f13aa940e6649ddb2b539f501a4750a94ee10f7e with no .gitmodules and no checked-out bytes: a deployment-export pointer, not a Maestro doctrine source. No bytes exist in this commit to audit. Recorded in OPEN as V1 residue."
+    }
+  ],
+  "occurrences_by_disposition": {
+    "historical_record": 3142,
+    "provenance_record": 119,
+    "scoped": 23
+  },
+  "occurrences_on_current_surfaces": 23,
+  "occurrences_total": 3284,
+  "superseded_phrasing_on_current_surfaces": [],
+  "verdict": "PASS"
+}

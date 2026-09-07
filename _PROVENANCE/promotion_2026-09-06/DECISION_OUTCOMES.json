@@ -1,0 +1,331 @@
+{
+  "artifact": "DECISION_OUTCOMES.json",
+  "status": "re-derived in the 2026-09-06 resume run",
+  "note": "The original file this name refers to was cited by PROMOTION_2026-09-06.md but never committed. This is not a recovery of it. Every field here is re-derived in the resume run from DECISIONS.json, IMPACT.csv and checks re-executed against the working tree; nothing is carried over on trust.",
+  "v1_verdict": "PASS",
+  "baseline": "88cd150cceacaebe79a3a0e97edb50497cc59a47",
+  "promotion_head_at_derivation": "5e701d806b9e708e7092f3acd6e68c4564154635",
+  "decisions": [
+    {
+      "id": "DEC-PROMO-01",
+      "decision": "97.5 scope",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V1",
+        "V8",
+        "V9"
+      ],
+      "validation_results": {
+        "V1": "PASS \u2014 full-corpus threshold-occurrence sweep re-executed this run: 4751 objects, 3284 occurrences, 23 on current surfaces all scoped, 0 unresolved (v1_occurrence_sweep.py -> V1_COVERAGE.json)",
+        "V8": "PASS \u2014 test_promotion.py: evaluate_sem/validate_policy reject a policy missing any of threshold/scope/context_ref/authority_ref, reject scope global/universal, reject NaN/inf/bool/out-of-range thresholds, and reject an absent policy outright",
+        "V9": "PASS \u2014 build_maestro_current.py run twice into clean directories: 41 members, both trees byte-identical to each other and to source (exit 0). compile_current.py run twice: 3 topology outputs byte-identical to maestro-current/compiled/"
+      },
+      "objects": [
+        "drafts/EXECUTABLE_APP_DESIGN_v0_1.md",
+        "maestro-current/01_TECHNICAL_UST_CANON.md",
+        "maestro-current/05_GOVERNANCE_SEG.md",
+        "maestro-current/06_RUNTIME_RULES.md",
+        "maestro-current/10_TEST_PLAN.md",
+        "maestro-current/STRATA_MIGRATION_MAP.md",
+        "maestro-current/build/templates/01_TECHNICAL_UST_CANON.md",
+        "maestro-current/build/templates/05_GOVERNANCE_SEG.md",
+        "maestro-current/build/templates/06_RUNTIME_RULES.md",
+        "maestro-current/build/templates/10_TEST_PLAN.md",
+        "maestro-current/build/templates/STRATA_MIGRATION_MAP.md"
+      ],
+      "object_dispositions": {
+        "patched": 11
+      },
+      "application_status": "applied_and_verified",
+      "caveats": [],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    },
+    {
+      "id": "DEC-PROMO-02",
+      "decision": "Separate G and SEM history",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V1",
+        "V2"
+      ],
+      "validation_results": {
+        "V1": "PASS \u2014 full-corpus threshold-occurrence sweep re-executed this run: 4751 objects, 3284 occurrences, 23 on current surfaces all scoped, 0 unresolved (v1_occurrence_sweep.py -> V1_COVERAGE.json)",
+        "V2": "PASS \u2014 validate_bundle.py sem_config: 12 weights summing to 100, score_max 5, threshold_selection=explicit_applicable_context, default_threshold null, composite formula present"
+      },
+      "objects": [
+        "maestro-current/05_GOVERNANCE_SEG.md",
+        "maestro-current/STRATA_MIGRATION_MAP.md",
+        "maestro-current/build/templates/05_GOVERNANCE_SEG.md",
+        "maestro-current/build/templates/STRATA_MIGRATION_MAP.md"
+      ],
+      "object_dispositions": {
+        "patched": 4
+      },
+      "application_status": "applied_and_verified",
+      "caveats": [],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    },
+    {
+      "id": "DEC-PROMO-03",
+      "decision": "B6 evaluation capability",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V1",
+        "V2"
+      ],
+      "validation_results": {
+        "V1": "PASS \u2014 full-corpus threshold-occurrence sweep re-executed this run: 4751 objects, 3284 occurrences, 23 on current surfaces all scoped, 0 unresolved (v1_occurrence_sweep.py -> V1_COVERAGE.json)",
+        "V2": "PASS \u2014 validate_bundle.py sem_config: 12 weights summing to 100, score_max 5, threshold_selection=explicit_applicable_context, default_threshold null, composite formula present"
+      },
+      "objects": [
+        "maestro-current/05_GOVERNANCE_SEG.md",
+        "maestro-current/10_TEST_PLAN.md",
+        "maestro-current/build/templates/05_GOVERNANCE_SEG.md",
+        "maestro-current/build/templates/10_TEST_PLAN.md"
+      ],
+      "object_dispositions": {
+        "patched": 4
+      },
+      "application_status": "applied_and_verified",
+      "caveats": [],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    },
+    {
+      "id": "DEC-PROMO-04",
+      "decision": "B7 Technical UST authority",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V3"
+      ],
+      "validation_results": {
+        "V3": "PASS \u2014 test_promotion.py: \"Creative is derived from locked Technical\" and \"lock precedes reverse compilation\" (02_CREATIVE_UST_TEMPLATE.md, 03_PHASE_CHAIN.md)"
+      },
+      "objects": [
+        "maestro-current/01_TECHNICAL_UST_CANON.md",
+        "maestro-current/02_CREATIVE_UST_TEMPLATE.md",
+        "maestro-current/03_PHASE_CHAIN.md",
+        "maestro-current/build/templates/01_TECHNICAL_UST_CANON.md",
+        "maestro-current/build/templates/02_CREATIVE_UST_TEMPLATE.md",
+        "maestro-current/build/templates/03_PHASE_CHAIN.md"
+      ],
+      "object_dispositions": {
+        "patched": 2,
+        "verified_unchanged": 4
+      },
+      "application_status": "applied_and_verified",
+      "caveats": [],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    },
+    {
+      "id": "DEC-PROMO-05",
+      "decision": "B11 workforce scope",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V4"
+      ],
+      "validation_results": {
+        "V4": "PASS \u2014 test_promotion.py: \"13 audio workers and separate visual module\" (04_COUNCIL_TOPOLOGY.md)"
+      },
+      "objects": [
+        "maestro-current/04_COUNCIL_TOPOLOGY.md",
+        "maestro-current/build/templates/04_COUNCIL_TOPOLOGY.md"
+      ],
+      "object_dispositions": {
+        "verified_unchanged": 2
+      },
+      "application_status": "verified_unchanged",
+      "caveats": [],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    },
+    {
+      "id": "DEC-PROMO-06",
+      "decision": "Phantom Q1\u2013Q16",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V5",
+        "V6"
+      ],
+      "validation_results": {
+        "V5": "PASS \u2014 test_promotion.py: \"phantom not requirement\" \u2014 05_GOVERNANCE_SEG.md carries \"Q1\u2013Q16 = PHANTOM (never fabricate)\"",
+        "V6": "PASS \u2014 read this run: STATE.md \"Current issue fold\" table (7 rows) and OPEN.md \"Current classification fold \u2014 2026-09-06\" both present and consistent. Read-verified, not machine-gated; see CONTINUATION for the gap."
+      },
+      "objects": [
+        "_PROVENANCE/OPEN.md",
+        "_PROVENANCE/STATE.md",
+        "maestro-current/05_GOVERNANCE_SEG.md",
+        "maestro-current/build/templates/05_GOVERNANCE_SEG.md"
+      ],
+      "object_dispositions": {
+        "patched": 4
+      },
+      "application_status": "applied_and_verified",
+      "caveats": [],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    },
+    {
+      "id": "DEC-PROMO-07",
+      "decision": "O-03 closed",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V6"
+      ],
+      "validation_results": {
+        "V6": "PASS \u2014 read this run: STATE.md \"Current issue fold\" table (7 rows) and OPEN.md \"Current classification fold \u2014 2026-09-06\" both present and consistent. Read-verified, not machine-gated; see CONTINUATION for the gap."
+      },
+      "objects": [
+        "_PROVENANCE/OPEN.md",
+        "_PROVENANCE/STATE.md"
+      ],
+      "object_dispositions": {
+        "patched": 2
+      },
+      "application_status": "applied_and_verified",
+      "caveats": [],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    },
+    {
+      "id": "DEC-PROMO-08",
+      "decision": "O-13 closed",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V6"
+      ],
+      "validation_results": {
+        "V6": "PASS \u2014 read this run: STATE.md \"Current issue fold\" table (7 rows) and OPEN.md \"Current classification fold \u2014 2026-09-06\" both present and consistent. Read-verified, not machine-gated; see CONTINUATION for the gap."
+      },
+      "objects": [
+        "_PROVENANCE/OPEN.md",
+        "_PROVENANCE/STATE.md"
+      ],
+      "object_dispositions": {
+        "patched": 2
+      },
+      "application_status": "applied_and_verified",
+      "caveats": [],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    },
+    {
+      "id": "DEC-PROMO-09",
+      "decision": "O-04 provenance only",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V6"
+      ],
+      "validation_results": {
+        "V6": "PASS \u2014 read this run: STATE.md \"Current issue fold\" table (7 rows) and OPEN.md \"Current classification fold \u2014 2026-09-06\" both present and consistent. Read-verified, not machine-gated; see CONTINUATION for the gap."
+      },
+      "objects": [
+        "_PROVENANCE/OPEN.md",
+        "_PROVENANCE/STATE.md"
+      ],
+      "object_dispositions": {
+        "patched": 2
+      },
+      "application_status": "applied_and_verified",
+      "caveats": [],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    },
+    {
+      "id": "DEC-PROMO-10",
+      "decision": "O-05 forensic replay",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V6"
+      ],
+      "validation_results": {
+        "V6": "PASS \u2014 read this run: STATE.md \"Current issue fold\" table (7 rows) and OPEN.md \"Current classification fold \u2014 2026-09-06\" both present and consistent. Read-verified, not machine-gated; see CONTINUATION for the gap."
+      },
+      "objects": [
+        "_PROVENANCE/OPEN.md",
+        "_PROVENANCE/STATE.md"
+      ],
+      "object_dispositions": {
+        "patched": 2
+      },
+      "application_status": "applied_and_verified",
+      "caveats": [],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    },
+    {
+      "id": "DEC-PROMO-11",
+      "decision": "O-12 external preservation",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V6"
+      ],
+      "validation_results": {
+        "V6": "PASS \u2014 read this run: STATE.md \"Current issue fold\" table (7 rows) and OPEN.md \"Current classification fold \u2014 2026-09-06\" both present and consistent. Read-verified, not machine-gated; see CONTINUATION for the gap."
+      },
+      "objects": [
+        "_PROVENANCE/OPEN.md",
+        "_PROVENANCE/STATE.md"
+      ],
+      "object_dispositions": {
+        "patched": 2
+      },
+      "application_status": "applied_and_verified",
+      "caveats": [],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    },
+    {
+      "id": "DEC-PROMO-12",
+      "decision": "Suno boundaries",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V3",
+        "V7"
+      ],
+      "validation_results": {
+        "V3": "PASS \u2014 test_promotion.py: \"Creative is derived from locked Technical\" and \"lock precedes reverse compilation\" (02_CREATIVE_UST_TEMPLATE.md, 03_PHASE_CHAIN.md)",
+        "V7": "PASS \u2014 read this run: 00_ROOT_SPEC.md:61-64 keeps generation/model adapter, renderer grammar and Studio/editing distinct from canonical UST. Read-verified, not machine-gated; see CONTINUATION for the gap."
+      },
+      "objects": [
+        "maestro-current/00_ROOT_SPEC.md",
+        "maestro-current/build/templates/00_ROOT_SPEC.md"
+      ],
+      "object_dispositions": {
+        "patched": 2
+      },
+      "application_status": "applied_and_verified",
+      "caveats": [],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    },
+    {
+      "id": "DEC-PROMO-13",
+      "decision": "Seedance empirical fit",
+      "authority_status": "operator_accepted",
+      "required_validation": [
+        "V6"
+      ],
+      "validation_results": {
+        "V6": "PASS \u2014 read this run: STATE.md \"Current issue fold\" table (7 rows) and OPEN.md \"Current classification fold \u2014 2026-09-06\" both present and consistent. Read-verified, not machine-gated; see CONTINUATION for the gap."
+      },
+      "objects": [
+        "_PROVENANCE/CONTINUATION_2026-09-06.md",
+        "_PROVENANCE/STATE.md"
+      ],
+      "object_dispositions": {
+        "declared_but_absent_at_baseline": 1,
+        "patched": 1
+      },
+      "application_status": "applied_and_verified",
+      "caveats": [
+        "declared object absent at baseline and created in the resume run: _PROVENANCE/CONTINUATION_2026-09-06.md"
+      ],
+      "rung_reached": "persisted",
+      "runtime_enforcement": "not_claimed"
+    }
+  ]
+}

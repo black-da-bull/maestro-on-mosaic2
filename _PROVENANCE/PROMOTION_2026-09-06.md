@@ -204,3 +204,25 @@ PARTIAL — NOT PROMOTION COMPLETE: full V1 coverage awaits exact raw-byte retri
 two historical text objects. No merge; no production-runtime claim. V2–V10 current checks pass
 in VALIDATION.md. Post-run checkpoint preserves the partial candidate; the continuation packet
 states the exact required mechanical work before the downstream P0 queue may begin.
+
+## Resume-run append — V1 closed (2026-09-06)
+Append-only. The `PARTIAL — NOT PROMOTION COMPLETE` paragraph above is superseded **on
+its V1 clause only**, by pointer; every other statement in this file stands as written.
+
+V1 full-corpus occurrence coverage is **CLOSED — PASS**. The exact raw-byte retrieval
+and audit it awaited was performed: `Today.txt` (CP1252, 184,731 B) and `~$Today.txt`
+(162 B Word owner file) contain neither threshold family, and the sweep now covers every
+one of the 4,751 tracked objects with containers extracted — 23 current-surface
+occurrences, all scoped, 0 violations, 0 unresolved. Evidence: `promotion_2026-09-06/`
+→ `VALIDATION.md`, `V1_COVERAGE.json`, `V1_OCCURRENCES.csv`, `V1_OBJECTS.csv`,
+`SOURCE_LIMITATIONS.md`, and the re-runnable `v1_occurrence_sweep.py`.
+
+Correction of record, not silently harmonized: the four packet artifacts this file cites
+above — `IMPACT.csv`, `DECISION_OUTCOMES.json`, `VALIDATION.md`, `SOURCE_LIMITATIONS.md`
+— plus `CONTINUATION_2026-09-06.md` were **never committed by the run that cited them**.
+They exist now: the first two re-derived from `DECISIONS.json` and commit evidence
+`88cd150..5e701d8`, the rest authored in the resume run, each labelled in its own header.
+The original text is unrecoverable and was not reconstructed. Registered as **O-19**.
+
+Unchanged: no merge, no production-runtime claim, no next-phase work. Promotion
+completion beyond V1 remains an operator decision.

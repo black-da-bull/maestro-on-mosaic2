@@ -240,3 +240,40 @@ for the two historical text blobs in promotion_2026-09-06/SOURCE_LIMITATIONS.md;
 current-bundle checks V2–V10 pass in their recorded scope. Main not merged. The post-run
 checkpoint preserves this partial candidate. CONTINUATION_2026-09-06.md carries exact next
 mechanical work and the gated downstream queue. No next-phase development executed.
+
+## PROMOTION-2026-09-06.RESUME — V1 closed; cited-but-unpersisted packet artifacts landed
+Supersedes only the V1 PARTIAL status of the checkpoint entry above; every other claim
+in that entry stands. Rung: persisted. Runtime-enforced: not claimed.
+
+**V1 CLOSED — PASS.** `_PROVENANCE/promotion_2026-09-06/v1_occurrence_sweep.py` sweeps
+every object the commit tracks in two layers (raw-byte, then decoded/container-extracted),
+with format dispatch by magic bytes. 4,751 objects · 3,284 occurrences · 23 on current
+surfaces, all scoped · 0 violations · 0 unresolved · 0 Layer-A/Layer-B discrepancies ·
+byte-identical across two independent runs. The two blocked historical text objects are
+`Today.txt` (CP1252, 184,731 B, sha256 e79cbe79…) and `~$Today.txt` (162 B Word owner
+file, sha256 9a5277b5…); both retrieved and audited byte-for-byte, **neither contains
+either threshold family**. Resolved, not waived. Residues recorded and hash-pinned: one
+unresolvable gitlink (f13aa940…, no .gitmodules, no bytes) and five non-textual assets.
+
+**Finding.** The corpus's strongest surviving universal-floor phrasings ("97.5% release
+threshold", "97.5% default threshold", "enforced at three layers") live in `who dat.pdf`
+and `claude-session051526.oxps` — container formats a text-only scan cannot read. All
+historical; none on a current surface; DEC-PROMO-01/02 hold. A text-only corpus check
+would have reported clean while missing exactly the passages most mistakable for canon.
+
+**V2–V10 re-executed, not carried on trust:** validate_bundle PASS · test_promotion 33/33
+· builder twice into clean dirs, 41 members byte-identical · compile_current twice, 3
+topology outputs byte-identical. V6/V7 are read-verified, not machine-gated — recorded as
+a gap, not closed (gating them changes a bundle member).
+
+**NEW O-19 — cited-but-unpersisted packet artifacts.** `IMPACT.csv`,
+`DECISION_OUTCOMES.json`, `VALIDATION.md`, `SOURCE_LIMITATIONS.md` and
+`CONTINUATION_2026-09-06.md` were cited across PROMOTION/STATE/OPEN/LEDGER as the
+2026-09-06 run's evidence and were never committed — M1 failing inside the record that
+enforces it, and REGISTRATION ≠ APPLICATION in a new form. All five names now resolve:
+IMPACT/DECISION_OUTCOMES re-derived from DECISIONS.json + commit evidence 88cd150..5e701d8;
+the other three authored in the resume run and labelled as such. **No prior text was
+reconstructed, paraphrased or invented** — the originals are unrecoverable.
+
+No bundle member modified; MANIFEST hashes untouched. No next-phase development executed.
+Merge remains an operator decision.

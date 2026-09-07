@@ -95,3 +95,30 @@ This append supersedes conflicting current interpretations of earlier entries; i
 - Seedance: experiment_required for song identity, timing, narrative, cues and intent fit.
   No comparative quality success claimed; no experiment performed in this run.
 See CONTINUATION_2026-09-06.md for validation limits and the gated next-work queue.
+
+## Resume-run append — 2026-09-06 (promotion V1 close)
+- **V1 CLOSED (PASS).** The `PARTIAL — NOT PROMOTION COMPLETE` blocker is discharged:
+  full-corpus occurrence coverage executed over all 4,751 tracked objects, containers
+  extracted, 0 unqualified current-surface occurrences. Evidence:
+  `promotion_2026-09-06/VALIDATION.md` + `V1_COVERAGE.json`. The two blocked historical
+  text objects were audited byte-for-byte and contain neither threshold family
+  (`promotion_2026-09-06/SOURCE_LIMITATIONS.md`).
+- **NEW O-19 · Cited-but-unpersisted packet artifacts.** Five artifacts
+  (`IMPACT.csv`, `DECISION_OUTCOMES.json`, `VALIDATION.md`, `SOURCE_LIMITATIONS.md`,
+  `CONTINUATION_2026-09-06.md`) were cited by PROMOTION/STATE/OPEN/LEDGER on 2026-09-06
+  as the run's evidence and never committed — M1 breached inside the record that
+  enforces it. The names now resolve (two re-derived from commit evidence, three
+  authored in the resume run, each labelled in its own header); **the original text is
+  unrecoverable and was not reconstructed**. Open for an operator ruling: should a
+  citation-resolves check join the V&V gate, so a record cannot cite an artifact that
+  does not exist? Until ruled, this is a standing method risk, not a closed item.
+- **NEW O-20 · V6/V7 read-verified only.** No executable check asserts the provenance
+  issue fold (V6) or the Suno boundary separation (V7); both can drift silently. Closing
+  it means extending `test_promotion.py`, which changes a bundle member and its MANIFEST
+  hash — outside the promotion window. Carried, not closed.
+- **V1 residues (recorded, hash-pinned in `V1_COVERAGE.json`, not blocking):** the
+  unresolvable gitlink `untracked/momoneystudios-Exporting to Vercel` → `f13aa940…` (no
+  `.gitmodules`, no bytes in this commit) and five non-textual assets. PDF text
+  extraction is extraction, not ground truth: an image-only page reads as an absence.
+- **Not touched by this run**, retaining their recorded scopes: O-04, O-05, O-06, O-07,
+  O-08, O-09, O-10 residue, O-11, O-12, O-14, O-15, O-17, O16E, external skill re-upload.

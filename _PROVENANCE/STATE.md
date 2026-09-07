@@ -1,3 +1,36 @@
+# CURRENT STATE — promotion V1 close, 2026-09-06 (resume run)
+Doctrine: **Your Vision. Our Mission.**
+**Promotion status: V1 CLOSED — all recorded checks PASS. Branch candidate, not merged.**
+
+This block supersedes only the V1/promotion-completion status of the dated blocks below;
+every other claim in them stands, retained as written. Authority: operator DEC-PROMO-01–13,
+unchanged. Evidence: `promotion_2026-09-06/VALIDATION.md`, `V1_COVERAGE.json`,
+`SOURCE_LIMITATIONS.md`, and `CONTINUATION_2026-09-06.md`.
+
+- **V1 CLOSED (PASS).** Full-corpus occurrence coverage executed over all 4,751 tracked
+  objects with containers extracted: 3,284 occurrences, 23 on current surfaces and every
+  one scoped, 0 violations, 0 unresolved, byte-identical across two independent runs.
+  The two historical text objects that blocked it were audited byte-for-byte and contain
+  neither threshold family. Resolved, not waived.
+- **V2–V10 re-executed this run**, not carried over on trust: validate_bundle PASS ·
+  test_promotion 33/33 · builder twice into clean directories, 41 members byte-identical ·
+  compile_current twice, 3 topology outputs byte-identical. V6/V7 are read-verified, not
+  machine-gated (O-20).
+- **No bundle member was modified.** The V1 tool lives in `_PROVENANCE/`; MANIFEST hashes
+  are untouched and the 2026-09-06 build stands as recorded.
+- **Runtime enforcement still NOT claimed.** Merge is an operator decision. No next-phase
+  development was executed; the P0/P1/P2 order below is unchanged.
+- **NEW O-19** (cited-but-unpersisted packet artifacts) and **NEW O-20** (V6/V7 not
+  machine-gated) are open — see OPEN.md. O-19 is M1 breached inside the record that
+  enforces it: five artifacts were cited as this promotion's evidence and never committed.
+  Their names now resolve; the original text is unrecoverable and was not reconstructed.
+
+Corpus finding worth carrying: the strongest surviving universal-floor phrasings in the
+whole corpus sit in `who dat.pdf` and `claude-session051526.oxps` — container formats a
+text-only scan cannot read. All historical, none on a current surface. Any future claim
+of corpus coverage or absence must extract containers or say that it did not.
+
+---
 # CURRENT STATE — promotion fold, 2026-09-06
 Doctrine: **Your Vision. Our Mission.**
 **Promotion status: PARTIAL — NOT PROMOTION COMPLETE; branch candidate, not merged.**
