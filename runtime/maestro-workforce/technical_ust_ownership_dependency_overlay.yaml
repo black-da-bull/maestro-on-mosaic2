@@ -1,0 +1,300 @@
+meta:
+  artifact_name: technical_ust_ownership_dependency_overlay.yaml
+  artifact_type: runtime_ownership_dependency_overlay
+  version: v5_c.p0.2
+  status: operator_authorized_materialized
+  date: 2026-09-07
+  parent_runtime: runtime/maestro-workforce/canonical_13_employee_instances.yaml
+  technical_ust_source: project:template.technical.ust.yaml
+  rule: bind only what source evidence supports; unresolved ownership remains explicit and blocks autonomous write authority
+
+governing_invariants:
+  - Technical UST remains the canonical song-state substrate.
+  - Controller authority is not widened by this overlay.
+  - Read access, review participation, and dependency participation do not imply write ownership.
+  - Governance/evaluation workers do not become creative leaf owners by proximity.
+  - A worker may write only an address explicitly bound here or later promoted by operator-authorized evidence.
+  - Unresolved primary ownership is a runtime signal, not permission for orchestration to fill the gap.
+
+worker_roles:
+  MAESTRO.AUDIO.01.MO:
+    overlay_role: global_intent_and_continuity_reviewer
+    primary_leaf_ownership: none
+  MAESTRO.AUDIO.02.CANON:
+    overlay_role: structure_approval_and_lineage_reviewer
+    primary_leaf_ownership: none
+  MAESTRO.AUDIO.03.MEGAZORD:
+    overlay_role: dependency_and_handoff_coordinator
+    primary_leaf_ownership: none
+  MAESTRO.AUDIO.04.SIBLING:
+    overlay_role: ethics_trust_lore_reviewer
+    primary_leaf_ownership: none
+  MAESTRO.AUDIO.05.METRO:
+    overlay_role: production_style_and_backdrop_sme
+  MAESTRO.AUDIO.06.MELODY_SCOUT:
+    overlay_role: melodic_motif_and_hook_dna_sme
+  MAESTRO.AUDIO.07.SAGE:
+    overlay_role: lyric_motion_section_intent_and_clarity_sme
+  MAESTRO.AUDIO.08.ALAN:
+    overlay_role: arrangement_space_and_section_instrumentation_sme
+  MAESTRO.AUDIO.09.DAVE:
+    overlay_role: pocket_groove_and_drum_feel_sme
+  MAESTRO.AUDIO.10.VANESSA:
+    overlay_role: vocal_delivery_phrasing_and_believability_sme
+  MAESTRO.AUDIO.11.ANALOG_CONFESSOR:
+    overlay_role: aesthetic_world_texture_coherence_sme
+  MAESTRO.AUDIO.12.ANVA:
+    overlay_role: replay_identity_and_listener_fit_reviewer
+    primary_leaf_ownership: none
+  MAESTRO.AUDIO.13.ELDRIK:
+    overlay_role: technical_feasibility_capture_mix_and_translation_sme
+
+axis_bindings:
+  THY:
+    status: partially_bound_blocking_gaps
+    primary_owner: unresolved
+    reason: current 13-worker evidence does not establish a lawful general theory/harmony SME
+    contributors:
+      - MAESTRO.AUDIO.05.METRO
+      - MAESTRO.AUDIO.06.MELODY_SCOUT
+      - MAESTRO.AUDIO.08.ALAN
+      - MAESTRO.AUDIO.09.DAVE
+      - MAESTRO.AUDIO.13.ELDRIK
+    key_bindings:
+      THY.K1:
+        status: unresolved_primary_owner
+        scope: tonal_center_scale_mode_modal_pivots_non_diatonic_color
+      THY.K2:
+        status: unresolved_primary_owner
+        scope: harmonic_function_resolutions_anchors_color_tones
+      THY.K3:
+        status: shared_supported_no_single_primary
+        contributors: [MAESTRO.AUDIO.09.DAVE, MAESTRO.AUDIO.05.METRO, MAESTRO.AUDIO.13.ELDRIK]
+        subkey_bindings:
+          THY.K3.S4:
+            role: allowed_micro_grids
+            primary_owner: MAESTRO.AUDIO.09.DAVE
+            status: evidence_supported_domain_binding
+      THY.K4:
+        status: partially_bound
+        subkey_bindings:
+          THY.K4.S2:
+            role: motif_atom_sizes
+            primary_owner: MAESTRO.AUDIO.06.MELODY_SCOUT
+            status: evidence_supported_domain_binding
+          THY.K4.S3:
+            role: how_motifs_evolve
+            primary_owner: MAESTRO.AUDIO.06.MELODY_SCOUT
+            status: evidence_supported_domain_binding
+          THY.K4.S5:
+            role: global_form_energy_shape
+            primary_owner: MAESTRO.AUDIO.08.ALAN
+            status: evidence_supported_domain_binding
+          THY.K4.S1:
+            status: unresolved_primary_owner
+          THY.K4.S4:
+            status: unresolved_primary_owner
+
+  VOC:
+    status: partially_bound
+    primary_owner: MAESTRO.AUDIO.10.VANESSA
+    primary_scope_limit: delivery_phrasing_tone_intensity_and_believability_only
+    reviewers: [MAESTRO.AUDIO.09.DAVE, MAESTRO.AUDIO.13.ELDRIK, MAESTRO.AUDIO.12.ANVA]
+    key_bindings:
+      VOC.K1:
+        status: primary_with_scope_limit
+        primary_owner: MAESTRO.AUDIO.10.VANESSA
+      VOC.K2:
+        status: primary_with_crossstream_review
+        primary_owner: MAESTRO.AUDIO.10.VANESSA
+        required_reviewers: [MAESTRO.AUDIO.09.DAVE]
+      VOC.K3:
+        status: unresolved_primary_owner
+        contributors: [MAESTRO.AUDIO.10.VANESSA, MAESTRO.AUDIO.08.ALAN, MAESTRO.AUDIO.06.MELODY_SCOUT]
+      VOC.K4:
+        status: shared_supported_no_single_primary
+        contributors: [MAESTRO.AUDIO.10.VANESSA, MAESTRO.AUDIO.08.ALAN, MAESTRO.AUDIO.13.ELDRIK]
+
+  STY:
+    status: bound
+    primary_owner: MAESTRO.AUDIO.05.METRO
+    required_reviewers: [MAESTRO.AUDIO.11.ANALOG_CONFESSOR, MAESTRO.AUDIO.12.ANVA]
+    conditional_reviewers:
+      lore_or_catalog_continuity_active: [MAESTRO.AUDIO.04.SIBLING]
+    key_bindings:
+      STY.K1: {primary_owner: MAESTRO.AUDIO.05.METRO, status: evidence_supported_domain_binding}
+      STY.K2: {primary_owner: MAESTRO.AUDIO.05.METRO, status: evidence_supported_domain_binding}
+      STY.K3: {primary_owner: MAESTRO.AUDIO.05.METRO, status: evidence_supported_domain_binding}
+      STY.K4: {primary_owner: MAESTRO.AUDIO.05.METRO, status: evidence_supported_domain_binding}
+
+  TIM:
+    status: shared_supported_no_single_primary
+    contributors: [MAESTRO.AUDIO.11.ANALOG_CONFESSOR, MAESTRO.AUDIO.05.METRO]
+    required_reviewers: [MAESTRO.AUDIO.08.ALAN, MAESTRO.AUDIO.13.ELDRIK]
+    rule: one of the supported contributors must be explicitly assigned for a writable task; orchestration may not infer a winner
+    key_bindings:
+      TIM.K1: {status: shared_supported_no_single_primary, contributors: [MAESTRO.AUDIO.11.ANALOG_CONFESSOR, MAESTRO.AUDIO.05.METRO]}
+      TIM.K2: {status: shared_supported_no_single_primary, contributors: [MAESTRO.AUDIO.11.ANALOG_CONFESSOR, MAESTRO.AUDIO.05.METRO]}
+      TIM.K3: {status: shared_supported_no_single_primary, contributors: [MAESTRO.AUDIO.11.ANALOG_CONFESSOR, MAESTRO.AUDIO.05.METRO]}
+      TIM.K4: {status: shared_supported_no_single_primary, contributors: [MAESTRO.AUDIO.11.ANALOG_CONFESSOR, MAESTRO.AUDIO.05.METRO], required_reviewers: [MAESTRO.AUDIO.08.ALAN]}
+
+  PER:
+    status: shared_supported_no_single_primary
+    contributors: [MAESTRO.AUDIO.10.VANESSA, MAESTRO.AUDIO.09.DAVE, MAESTRO.AUDIO.08.ALAN]
+    required_reviewers: [MAESTRO.AUDIO.13.ELDRIK]
+    rule: performance leaves must be routed by semantic lane; no single worker owns the whole axis
+
+  POST:
+    status: bound
+    primary_owner: MAESTRO.AUDIO.13.ELDRIK
+    key_bindings:
+      POST.K1: {primary_owner: MAESTRO.AUDIO.13.ELDRIK, status: evidence_supported_domain_binding}
+      POST.K2: {primary_owner: MAESTRO.AUDIO.13.ELDRIK, status: evidence_supported_domain_binding}
+      POST.K3: {primary_owner: MAESTRO.AUDIO.13.ELDRIK, status: evidence_supported_domain_binding}
+      POST.K4: {primary_owner: MAESTRO.AUDIO.13.ELDRIK, status: evidence_supported_domain_binding}
+
+  MAP:
+    status: bound
+    primary_owner: MAESTRO.AUDIO.08.ALAN
+    required_reviewers: [MAESTRO.AUDIO.05.METRO, MAESTRO.AUDIO.10.VANESSA]
+    key_bindings:
+      MAP.K1: {primary_owner: MAESTRO.AUDIO.08.ALAN, status: evidence_supported_domain_binding}
+      MAP.K2: {primary_owner: MAESTRO.AUDIO.08.ALAN, status: evidence_supported_domain_binding}
+      MAP.K3: {primary_owner: MAESTRO.AUDIO.08.ALAN, status: schema_crossstream_index}
+      MAP.K4: {primary_owner: MAESTRO.AUDIO.08.ALAN, status: evidence_supported_domain_binding}
+
+  LYR:
+    status: bound_with_lock_constraint
+    primary_owner: MAESTRO.AUDIO.07.SAGE
+    lock_rule: locked lyrics remain immutable unless operator-authorized modification is explicit
+    required_reviewers: [MAESTRO.AUDIO.12.ANVA]
+    key_bindings:
+      LYR.K1: {primary_owner: MAESTRO.AUDIO.07.SAGE, status: evidence_supported_domain_binding}
+      LYR.K2: {primary_owner: MAESTRO.AUDIO.07.SAGE, status: evidence_supported_domain_binding}
+      LYR.K3:
+        primary_owner: MAESTRO.AUDIO.07.SAGE
+        status: evidence_supported_domain_binding
+        subkey_reviewers:
+          LYR.K3.S4: [MAESTRO.AUDIO.06.MELODY_SCOUT]
+      LYR.K4:
+        primary_owner: MAESTRO.AUDIO.07.SAGE
+        status: evidence_supported_domain_binding
+        required_reviewers: [MAESTRO.AUDIO.10.VANESSA, MAESTRO.AUDIO.09.DAVE]
+      LYR.K5: {primary_owner: MAESTRO.AUDIO.07.SAGE, status: evidence_supported_domain_binding}
+
+crossstream_dependencies:
+  hard_schema_edges:
+    - {from: THY, to: MAP.K3, relation: section_reference_map, basis: template.technical.ust/MAP.K3.S1}
+    - {from: VOC, to: MAP.K3, relation: section_reference_map, basis: template.technical.ust/MAP.K3.S2}
+    - {from: TIM, to: MAP.K3, relation: section_reference_map, basis: template.technical.ust/MAP.K3.S3}
+    - {from: PER, to: MAP.K3, relation: section_reference_map, basis: template.technical.ust/MAP.K3.S4}
+    - {from: POST, to: MAP.K3, relation: section_reference_map, basis: template.technical.ust/MAP.K3.S5}
+
+  supported_labor_edges:
+    - from: LYR
+      to: VOC
+      relation: lyric_intent_to_vocal_delivery
+      owner_from: MAESTRO.AUDIO.07.SAGE
+      owner_to: MAESTRO.AUDIO.10.VANESSA
+      effect: lyric intent changes require vocal delivery review
+    - from: LYR
+      to: PER
+      relation: lyric_intent_to_performance_believability
+      owner_from: MAESTRO.AUDIO.07.SAGE
+      reviewers_to: [MAESTRO.AUDIO.10.VANESSA, MAESTRO.AUDIO.09.DAVE]
+    - from: PER
+      to: LYR
+      relation: pocket_to_cadence_viability
+      owner_from: MAESTRO.AUDIO.09.DAVE
+      owner_to: MAESTRO.AUDIO.07.SAGE
+      effect: pocket changes require cadence/line-fit review; they do not authorize lyric mutation
+    - from: MAP
+      to: VOC
+      relation: section_arrangement_to_vocal_priority
+      owner_from: MAESTRO.AUDIO.08.ALAN
+      reviewer_to: MAESTRO.AUDIO.10.VANESSA
+    - from: MAP
+      to: POST
+      relation: arrangement_before_mix
+      owner_from: MAESTRO.AUDIO.08.ALAN
+      reviewer_to: MAESTRO.AUDIO.13.ELDRIK
+      effect: post may reject mix-as-fix and route upstream to arrangement
+    - from: TIM
+      to: POST
+      relation: texture_to_engineering_translation
+      contributors_from: [MAESTRO.AUDIO.11.ANALOG_CONFESSOR, MAESTRO.AUDIO.05.METRO]
+      reviewer_to: MAESTRO.AUDIO.13.ELDRIK
+    - from: STY
+      to: TIM
+      relation: aesthetic_direction_to_texture_choice
+      owner_from: MAESTRO.AUDIO.05.METRO
+      reviewers_to: [MAESTRO.AUDIO.11.ANALOG_CONFESSOR, MAESTRO.AUDIO.13.ELDRIK]
+    - from: THY.K4
+      to: LYR.K3
+      relation: melodic_motif_to_lyric_motif_alignment
+      contributor_from: MAESTRO.AUDIO.06.MELODY_SCOUT
+      owner_to: MAESTRO.AUDIO.07.SAGE
+    - from: STY
+      to: ALL_CREATIVE_AXES
+      relation: identity_and_artist_intent_crosscheck
+      reviewer: MAESTRO.AUDIO.12.ANVA
+      effect: replay/identity objection may trigger review but does not transfer ownership
+
+coordination_and_review_overlay:
+  dependency_coordinator: MAESTRO.AUDIO.03.MEGAZORD
+  structural_attribution_reviewer: MAESTRO.AUDIO.02.CANON
+  operator_intent_continuity_reviewer: MAESTRO.AUDIO.01.MO
+  ethics_lore_reviewer: MAESTRO.AUDIO.04.SIBLING
+  replay_identity_reviewer: MAESTRO.AUDIO.12.ANVA
+  rule: these roles may route/challenge/review within their worker contracts but may not acquire creative leaf ownership from this overlay
+
+blocking_gaps:
+  - id: P0.2.GAP.THY.GENERAL
+    severity: blocking_for_zero_touch
+    scope: [THY.K1, THY.K2, THY.K3_except_S4, THY.K4.S1, THY.K4.S4]
+    reason: no current worker instance has source-supported general harmonic/theory ownership
+    required_resolution: operator-authorized evidence mapping or creation/promotion of a lawful current theory SME; do not infer from role names
+  - id: P0.2.GAP.VOC.HARMONY_ASSIGNMENT
+    severity: blocking_for_unattended_leaf_write
+    scope: [VOC.K3]
+    reason: current evidence supports Vanessa for delivery but not sole ownership of performer/harmony assignment
+  - id: P0.2.GAP.TIM.PRIMARY
+    severity: nonblocking_for_review_blocking_for_unattended_leaf_write
+    scope: [TIM]
+    reason: Metro and Analog Confessor both have supported lanes; no evidence selects a universal primary owner
+  - id: P0.2.GAP.PER.PRIMARY
+    severity: nonblocking_for_review_blocking_for_unattended_leaf_write
+    scope: [PER]
+    reason: Vanessa, Dave, and Alan own different performance dimensions; no evidence supports collapsing them to one primary owner
+
+evidence_sources:
+  runtime:
+    - runtime/maestro-workforce/canonical_13_employee_instances.yaml
+    - runtime/maestro-workforce/instances/01_mo.yaml
+    - runtime/maestro-workforce/instances/02_canon_orchestrator.yaml
+    - runtime/maestro-workforce/instances/03_megazord_orchestrator.yaml
+    - runtime/maestro-workforce/instances/04_sibling_architect.yaml
+    - runtime/maestro-workforce/instances/05_metro_craft.yaml
+    - runtime/maestro-workforce/instances/06_melody_scout.yaml
+    - runtime/maestro-workforce/instances/07_sage.yaml
+    - runtime/maestro-workforce/instances/08_alan.yaml
+    - runtime/maestro-workforce/instances/09_dave.yaml
+    - runtime/maestro-workforce/instances/10_vanessa.yaml
+    - runtime/maestro-workforce/instances/11_analog_confessor.yaml
+    - runtime/maestro-workforce/instances/12_anva.yaml
+    - runtime/maestro-workforce/instances/13_eldrik.yaml
+  project:
+    - project:template.technical.ust.yaml
+    - project:ai-personas.txt
+    - project:eldrik-export.txt
+    - project:conversation_maestro-chat---eldrik_2026-03-28-2105.agi.md
+
+runtime_policy:
+  autonomous_write_allowed_only_if:
+    - address has an explicit primary_owner in this overlay
+    - worker runtime writable-zone and non-authority checks pass
+    - no applicable blocking gap covers the address
+    - crossstream required reviewers are scheduled before final acceptance
+  unresolved_behavior: abstain_and_route
+  dependency_change_behavior: reopen_only_impacted_addresses_and_dependents
+  no_full_stack_rerun_by_default: true
