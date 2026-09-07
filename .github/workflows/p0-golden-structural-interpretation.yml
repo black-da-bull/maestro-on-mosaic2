@@ -1,0 +1,29 @@
+name: P0 Golden Structural Interpretation
+
+on:
+  pull_request:
+    paths:
+      - 'runtime/maestro-workforce/**'
+      - '.github/workflows/p0-golden-structural-interpretation.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'runtime/maestro-workforce/**'
+      - '.github/workflows/p0-golden-structural-interpretation.yml'
+
+jobs:
+  golden-fixture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install runtime dependency
+        run: python -m pip install -r runtime/maestro-workforce/requirements.txt
+      - name: Validate integrated workforce runtime
+        run: python runtime/maestro-workforce/validate_workforce.py
+      - name: Run golden structural-interpretation fixture
+        run: python runtime/maestro-workforce/golden_structural_interpretation_fixture.py | tee /tmp/p0-golden.json
+      - name: Assert fixture PASS
+        run: python -c "import json; d=json.load(open('/tmp/p0-golden.json')); assert d['passed'] is True"
