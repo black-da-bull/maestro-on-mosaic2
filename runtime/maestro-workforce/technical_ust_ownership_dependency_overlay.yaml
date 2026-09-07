@@ -1,12 +1,13 @@
 meta:
   artifact_name: technical_ust_ownership_dependency_overlay.yaml
   artifact_type: runtime_ownership_dependency_overlay
-  version: v5_c.p0.2
+  version: v5_c.p0.2.1
   status: operator_authorized_materialized
   date: 2026-09-07
   parent_runtime: runtime/maestro-workforce/canonical_13_employee_instances.yaml
   technical_ust_source: project:template.technical.ust.yaml
   rule: bind only what source evidence supports; unresolved ownership remains explicit and blocks autonomous write authority
+  operator_correction: Alan owns arrangement sections of Theory; applied to THY.K4 arrangement/form leaves while motif leaves remain with Melody Scout
 
 governing_invariants:
   - Technical UST remains the canonical song-state substrate.
@@ -53,7 +54,7 @@ axis_bindings:
   THY:
     status: partially_bound_blocking_gaps
     primary_owner: unresolved
-    reason: current 13-worker evidence does not establish a lawful general theory/harmony SME
+    reason: current 13-worker evidence does not establish a lawful general theory/harmony SME; operator correction assigns arrangement/form leaves to Alan
     contributors:
       - MAESTRO.AUDIO.05.METRO
       - MAESTRO.AUDIO.06.MELODY_SCOUT
@@ -76,8 +77,12 @@ axis_bindings:
             primary_owner: MAESTRO.AUDIO.09.DAVE
             status: evidence_supported_domain_binding
       THY.K4:
-        status: partially_bound
+        status: bound_by_semantic_lane
         subkey_bindings:
+          THY.K4.S1:
+            role: allowed_phrase_sizes
+            primary_owner: MAESTRO.AUDIO.08.ALAN
+            status: operator_authorized_domain_binding
           THY.K4.S2:
             role: motif_atom_sizes
             primary_owner: MAESTRO.AUDIO.06.MELODY_SCOUT
@@ -86,14 +91,14 @@ axis_bindings:
             role: how_motifs_evolve
             primary_owner: MAESTRO.AUDIO.06.MELODY_SCOUT
             status: evidence_supported_domain_binding
+          THY.K4.S4:
+            role: how_harmony_links_sections
+            primary_owner: MAESTRO.AUDIO.08.ALAN
+            status: operator_authorized_domain_binding
           THY.K4.S5:
             role: global_form_energy_shape
             primary_owner: MAESTRO.AUDIO.08.ALAN
             status: evidence_supported_domain_binding
-          THY.K4.S1:
-            status: unresolved_primary_owner
-          THY.K4.S4:
-            status: unresolved_primary_owner
 
   VOC:
     status: partially_bound
@@ -251,8 +256,8 @@ coordination_and_review_overlay:
 blocking_gaps:
   - id: P0.2.GAP.THY.GENERAL
     severity: blocking_for_zero_touch
-    scope: [THY.K1, THY.K2, THY.K3_except_S4, THY.K4.S1, THY.K4.S4]
-    reason: no current worker instance has source-supported general harmonic/theory ownership
+    scope: [THY.K1, THY.K2, THY.K3_except_S4]
+    reason: no current worker instance has source-supported general harmonic/theory ownership outside the operator-assigned arrangement/form leaves and Dave's THY.K3.S4 micro-grid lane
     required_resolution: operator-authorized evidence mapping or creation/promotion of a lawful current theory SME; do not infer from role names
   - id: P0.2.GAP.VOC.HARMONY_ASSIGNMENT
     severity: blocking_for_unattended_leaf_write
@@ -288,6 +293,8 @@ evidence_sources:
     - project:ai-personas.txt
     - project:eldrik-export.txt
     - project:conversation_maestro-chat---eldrik_2026-03-28-2105.agi.md
+  operator_authority:
+    - conversation:2026-09-07 alan owns arrangement sections of theory
 
 runtime_policy:
   autonomous_write_allowed_only_if:
