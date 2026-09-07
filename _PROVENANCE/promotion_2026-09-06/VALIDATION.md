@@ -34,23 +34,36 @@ text scan would have read their compressed streams as noise and missed their rea
 A Layer A hit in an object where Layer B found nothing is reported as a discrepancy
 rather than silently trusted.
 
-**Result.**
+**Result.** Figures from the sweep as committed, run at this branch head; the audited
+promotion candidate's figures are shown beside them.
 
-| | |
-|---|---|
-| Objects scanned | 4,751 |
-| Objects needing a fallback encoding or a container extractor | 32 |
-| Occurrences enumerated | 3,284 |
-| — historical record (preserved evidence, unconstrained) | 3,142 |
-| — provenance record (`_PROVENANCE/`, append-only) | 119 |
-| — **current surfaces (`maestro-current/`)** | **23, every one scoped** |
-| Unqualified current-surface occurrences (violations) | **0** |
-| Superseded phrasing on current documentation surfaces | **0** |
-| Layer A / Layer B discrepancies | **0** |
-| Objects unresolved | **0** |
-| Objects waived (named, hash-pinned) | 1 gitlink + 5 non-textual assets |
+| | at branch head (committed evidence) | at audited candidate `5e701d8` |
+|---|---|---|
+| Objects scanned | 4,750 | 4,751 |
+| Objects needing a fallback encoding or a container extractor | 32 | 32 |
+| Occurrences enumerated | 3,283 | 3,284 |
+| — historical record (preserved evidence, unconstrained) | 3,142 | 3,142 |
+| — provenance record (`_PROVENANCE/`, append-only) | 118 | 119 |
+| — **current surfaces (`maestro-current/`)** | **23, every one scoped** | **23, every one scoped** |
+| Unqualified current-surface occurrences (violations) | **0** | **0** |
+| Superseded phrasing on current documentation surfaces | **0** | **0** |
+| Layer A / Layer B discrepancies | **0** | **0** |
+| Objects unresolved | **0** | **0** |
+| Objects waived (named, hash-pinned) | 1 gitlink + 5 non-textual assets | same |
 
-Encodings actually required: UTF-8 ×4,719 · UTF-16 (BOM-gated) ×7 · CP1252 ×1.
+Encodings actually required: UTF-8 ×4,718 · UTF-16 (BOM-gated) ×7 · CP1252 ×1.
+
+**Why two columns.** The sweep excludes its own packet directory: `V1_OCCURRENCES.csv`
+quotes thousands of matched snippets verbatim, so scanning it would count this check's
+output as corpus evidence and the totals would grow on every run. That exclusion landed
+after the first measurement. The committed `V1_*` files are the branch-head run, so
+re-running the tool as committed reproduces them exactly; the right-hand column is the
+audited promotion candidate. The difference is one provenance object and one provenance
+occurrence — this run's own records, plus the two packet files that moved inside the
+exclusion. **Every constrained figure is identical in both columns**, which is what the
+verdict rests on: nothing skipped by the exclusion is a class the check constrains.
+Records outside the packet directory carry the resume run's prose deliberately
+threshold-token-free, so appending to them does not move these counts.
 
 **Two findings worth carrying forward.**
 1. The strongest surviving *universal-floor* phrasings in the whole corpus — "97.5%

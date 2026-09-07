@@ -4,7 +4,7 @@
   "encodings_used": {
     "cp1252": 1,
     "utf-16": 7,
-    "utf-8": 4719
+    "utf-8": 4718
   },
   "layer_a_vs_layer_b_discrepancies": [],
   "nontextual_assets_waived": [
@@ -14,8 +14,20 @@
     "code/D-Maestro/maestro-ai-music-system-main/song.excellence.matrix.iterative.design.session.txt - Shortcut.lnk",
     "code/D-Maestro/maestro-ai-music-system/frontend/public/favicon.ico"
   ],
+  "objects_excluded_as_audit_workspace": [
+    "_PROVENANCE/promotion_2026-09-06/BASELINE.json",
+    "_PROVENANCE/promotion_2026-09-06/DECISIONS.json",
+    "_PROVENANCE/promotion_2026-09-06/DECISION_OUTCOMES.json",
+    "_PROVENANCE/promotion_2026-09-06/IMPACT.csv",
+    "_PROVENANCE/promotion_2026-09-06/SOURCE_LIMITATIONS.md",
+    "_PROVENANCE/promotion_2026-09-06/V1_COVERAGE.json",
+    "_PROVENANCE/promotion_2026-09-06/V1_OBJECTS.csv",
+    "_PROVENANCE/promotion_2026-09-06/V1_OCCURRENCES.csv",
+    "_PROVENANCE/promotion_2026-09-06/VALIDATION.md",
+    "_PROVENANCE/promotion_2026-09-06/v1_occurrence_sweep.py"
+  ],
   "objects_needing_fallback_or_extraction": 32,
-  "objects_scanned": 4751,
+  "objects_scanned": 4750,
   "objects_unresolved": [],
   "objects_waived": [
     {
@@ -26,11 +38,11 @@
   ],
   "occurrences_by_disposition": {
     "historical_record": 3142,
-    "provenance_record": 119,
+    "provenance_record": 118,
     "scoped": 23
   },
   "occurrences_on_current_surfaces": 23,
-  "occurrences_total": 3284,
+  "occurrences_total": 3283,
   "superseded_phrasing_on_current_surfaces": [],
   "verdict": "PASS"
 }
