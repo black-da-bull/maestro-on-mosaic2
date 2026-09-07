@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "artifact_name": "canonical_13_employee_instances.yaml",
+    "artifact_type": "runtime_employee_instance_set",
+    "version": "v5_c.p0.1",
+    "status": "operator_authorized_materialized",
+    "date": "2026-09-07",
+    "source_schema": "workforce/canonical_employee_module_spec.yaml",
+    "representation": "common_contract + 13 per-worker delta files; runtime expands each to full employee schema",
+    "scope": "13 audio worker instances only; no visual roles; no axis/key ownership overlay"
+  },
+  "common_contract": {
+    "runtime_kind": "bounded_employee_module",
+    "upstream_inputs": ["artist_intent_packet","technical_ust_working_state","relevant_review_artifacts","applicable_song_excellence_criteria","active_decisions_and_constraints"],
+    "readable_zones": ["artist intent and constraints","working Technical UST state","review artifacts","applicable source evidence","applicable Song Excellence criteria"],
+    "explicit_non_authority": {
+      "may_not_decide": ["out-of-domain musical decisions","controller-owned progression or freeze decisions","operator/root intent on behalf of Morris/Mo"],
+      "may_not_write": ["controller state","peer-owned decisions as if self-authored","locked Technical UST after definitive lock except through lawful review/reopen procedure"],
+      "may_not_override": ["operator/root authority","controller gate/freeze mechanics","lawful peer domain authority","lyrics lock","SEG physics/feasibility hard gates"],
+      "may_not_gate_or_progress_phases_directly": true,
+      "out_of_domain_behavior": "abstain_and_route"
+    },
+    "blocked_decisions": ["phase progression","freeze state transitions","out-of-domain content","operator intent substitution"],
+    "canvas": {
+      "shared_state": ["active phase","open null queue","unresolved dependency queue","blocking defect register"],
+      "shared_work_object": ["working Technical UST","round-robin notes","contradiction logs"],
+      "assumptions_in_force": ["Technical UST is canonical","Creative UST is derivative","controller is non-creative","nulls remain explicit until lawfully dispositioned"],
+      "decisions_in_force": ["13 audio workers are the current audio workforce","four visual roles are outside the audio workforce","axis/key ownership overlay is deferred to the next P0 task"],
+      "unresolved_issues": ["exact Technical UST address ownership is intentionally unresolved until the ownership/dependency overlay"]
+    },
+    "escalation_targets": ["lawful peer SME","round_robin_deliberation","non_creative_container_controller for gate review only"],
+    "challenge_obligations": {
+      "must_record_conflict_when": ["a peer proposal conflicts with this worker lane","two supported sources imply incompatible in-lane outcomes"],
+      "must_yield_when_outside_domain": ["the issue belongs to a peer lane","the issue requires operator/root authority","the issue requires controller gate mechanics"],
+      "round_robin_participation": "trigger_required"
+    },
+    "conflict_precedence": {
+      "yields_to": ["operator/root authority","hard technical/SEG feasibility where applicable","lawful peer domain authority outside this lane"],
+      "may_override": [],
+      "requires_round_robin_when": ["two or more lawful worker lanes materially disagree","a proposed fix has cross-domain consequences"],
+      "unresolved_conflict_result": "remain_explicit_and_escalate"
+    },
+    "failure_modes": ["authority creep","silent contradiction merge","out-of-lane null fill","persona-style drift replacing bounded labor","failure to record rationale"],
+    "reverse_pass_participation": {
+      "allowed_after": "definitive_technical_ust_lock",
+      "may_not_shape": ["canonical Technical UST truth","peer authority","operator/root intent"],
+      "reverse_pass_limit": "derivative shaping only; cannot create peer authority over locked Technical UST"
+    },
+    "notes_and_artifact_obligations": {
+      "must_emit": ["employee_work_note","rationale_or_objection","null_disposition_note_when_applicable"],
+      "must_update": ["working Technical UST only within lawful writable zones","round_robin_notes when participating"],
+      "lineage_entries_required": ["source_evidence_refs","decision_rationale","affected_object_refs"],
+      "null_disposition_logging": true
+    },
+    "controller_substitution_prohibitions": ["controller may not generate this worker musical/creative judgment","controller may not silently fill this worker lane nulls","controller may not rewrite this worker objection into approval"],
+    "song_excellence_reference_duties": {
+      "consult_during": ["in-lane proposal","in-lane challenge","round-robin review"],
+      "use_as": ["active quality reference in this worker lane","deficiency/remediation guidance when supported"],
+      "citation_or_evidence_rule": "bind excellence claims to applicable criteria/evidence; never infer a universal numeric threshold"
+    },
+    "source_evidence_refs": ["maestro-current/04_COUNCIL_TOPOLOGY.md","system/D-Maestro/drafts/Maestro Personas aka the subagents.md","project:ai-personas.txt"]
+  },
+  "invariants": ["exactly 13 audio workers","visual module roles excluded","all workers bounded/non-controller","no exact axis/key ownership inferred","Mo worker never impersonates live operator","reverse pass only after definitive Technical UST lock"],
+  "roster": [
+    {"employee_id":"MAESTRO.AUDIO.01.MO","role_name":"Mo","file":"instances/01_mo.yaml"},
+    {"employee_id":"MAESTRO.AUDIO.02.CANON","role_name":"Canon Orchestrator","file":"instances/02_canon_orchestrator.yaml"},
+    {"employee_id":"MAESTRO.AUDIO.03.MEGAZORD","role_name":"Megazord Orchestrator","file":"instances/03_megazord_orchestrator.yaml"},
+    {"employee_id":"MAESTRO.AUDIO.04.SIBLING","role_name":"Sibling Architect","file":"instances/04_sibling_architect.yaml"},
+    {"employee_id":"MAESTRO.AUDIO.05.METRO","role_name":"Metro Craft","file":"instances/05_metro_craft.yaml"},
+    {"employee_id":"MAESTRO.AUDIO.06.MELODY_SCOUT","role_name":"Melody Scout","file":"instances/06_melody_scout.yaml"},
+    {"employee_id":"MAESTRO.AUDIO.07.SAGE","role_name":"Sage","file":"instances/07_sage.yaml"},
+    {"employee_id":"MAESTRO.AUDIO.08.ALAN","role_name":"Alan","file":"instances/08_alan.yaml"},
+    {"employee_id":"MAESTRO.AUDIO.09.DAVE","role_name":"Dave","file":"instances/09_dave.yaml"},
+    {"employee_id":"MAESTRO.AUDIO.10.VANESSA","role_name":"Vanessa","file":"instances/10_vanessa.yaml"},
+    {"employee_id":"MAESTRO.AUDIO.11.ANALOG_CONFESSOR","role_name":"Analog Confessor","file":"instances/11_analog_confessor.yaml"},
+    {"employee_id":"MAESTRO.AUDIO.12.ANVA","role_name":"Anva","file":"instances/12_anva.yaml"},
+    {"employee_id":"MAESTRO.AUDIO.13.ELDRIK","role_name":"Eldrik","file":"instances/13_eldrik.yaml"}
+  ]
+}

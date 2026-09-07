@@ -1,0 +1,406 @@
+meta:
+  artifact_name: canonical_employee_module_spec.yaml
+  artifact_type: runtime_labor_unit_schema
+  version: v5_c.day3_candidate.3
+  status: patched_candidate_for_review
+  mode: runtime_first_not_registry_first
+  purpose: define the lawful schema for one canonical v5-c employee as a bounded runtime labor unit while preserving employee simulation around shared work
+
+artifact_role_and_scope:
+  is:
+    - lawful_runtime_labor_unit_schema
+    - canonical_employee_module_definition
+    - employee_level_authority_boundary_spec
+    - migration_safe_runtime_formalization_artifact
+    - employee_simulation_preservation_schema
+  is_not:
+    - workforce_registry
+    - controller_contract
+    - full_runtime_ontology
+    - packaging_artifact
+    - creative_output_artifact
+    - broad_permissions_framework
+    - theatrical_persona_profile
+    - tone_or_voice_skin
+  scope_rule:
+    - define one employee module only
+    - do not instantiate the full canonical_13 here
+    - do not widen controller authority
+    - do not infer organization_wide_ontology beyond what one employee module requires
+    - do not freeze global worker taxonomy in this artifact
+    - preserve employee_simulation scaffolding as runtime structure rather than descriptive flavor
+
+governing_constraints:
+  preserved_laws:
+    - technical_ust_is_the_sole_canonical_source_of_truth_middleware
+    - creative_ust_is_a_derivative_downstream_shell
+    - show_summary_is_a_derivative_style_surface
+    - controller_is_non_creative
+    - smes_own_musical_and_creative_decisions
+    - nulls_are_signal_and_may_not_be_silently_filled
+    - sequential_zero_skip_completion_precedes_deliberation
+    - round_robin_argumentative_review_is_mandatory
+    - definitive_technical_ust_must_exist_before_reverse_processing
+    - foil_governs_promotion_and_deduplication_only_and_is_ledgered
+    - frozen_surface_artifacts_precede_packaging
+  controller_boundary_reference:
+    controller_may:
+      - route
+      - validate
+      - log
+      - gate
+      - freeze
+      - promote
+      - package
+    no_additional_permission_may_be_inferred: true
+    controller_may_not:
+      - invent_artistic_content
+      - resolve_creative_nulls
+      - absorb_employee_judgment
+      - perform_semantic_compression_by_discretion
+      - substitute_for_employee_module_behavior
+      - invent_new_authority_structures
+      - manage_runtime_coherence
+
+schema_contract:
+  canonical_employee_module:
+    identity:
+      employee_id:
+        type: string
+        required: true
+        rule: stable_runtime_identifier_for_one_canonical_employee_instance
+      role_name:
+        type: string
+        required: true
+        rule: human_readable_role_title_for_the_employee_instance
+      runtime_kind:
+        type: constant
+        required: true
+        value: bounded_employee_module
+        rule: prevents_persona_as_style_interpretation
+
+    five_elements:
+      type: mapping
+      required: true
+      rule: preserved_employee_simulation_core_not_optional_descriptive_prose
+      fields:
+        role:
+          type: string
+          required: true
+          rule: what_the_employee_is_for_inside_the_runtime
+        expertise:
+          type: list[string]
+          required: true
+          rule: bounded_competence_domains_this_employee_may_reason_over_in_role
+        process:
+          type: list[string]
+          required: true
+          rule: repeatable_in_role_work_steps_the_employee_performs
+        output:
+          type: list[string]
+          required: true
+          rule: concrete_work_products_the_employee_emits_or_updates
+        constraints:
+          type: list[string]
+          required: true
+          rule: hard_limits_preserving_bounded_worker_behavior
+
+    mission:
+      type: string
+      required: true
+      rule: concise_statement_of_why_this_employee_exists_inside_the_runtime
+
+    domain_authority:
+      type: mapping
+      required: true
+      fields:
+        owns_domains:
+          type: list[string]
+          required: true
+          rule: domains_this_employee_is_the_lawful_authority_for
+        may_decide:
+          type: list[string]
+          required: true
+          rule: decision_classes_this_employee_may_settle_in_role
+        may_write:
+          type: list[string]
+          required: true
+          rule: artifact_zones_this_employee_may_directly_modify
+        may_raise_blocking_objection:
+          type: list[string]
+          required: true
+          rule: conditions_under_which_this_employee_may_formally_object_to_progression
+        may_trigger_gate_review:
+          type: list[string]
+          required: true
+          rule: conditions_under_which_this_employee_may_require_controller_or_governance_gate_review
+        may_recommend_progression_block:
+          type: list[string]
+          required: true
+          rule: conditions_under_which_this_employee_may_recommend_that_progression_be_blocked_by_lawful_gate_authority
+
+    explicit_non_authority:
+      type: mapping
+      required: true
+      fields:
+        may_not_decide:
+          type: list[string]
+          required: true
+        may_not_write:
+          type: list[string]
+          required: true
+        may_not_override:
+          type: list[string]
+          required: true
+        may_not_gate_or_progress_phases_directly:
+          type: boolean
+          required: true
+          value: true
+        out_of_domain_behavior:
+          type: enum
+          required: true
+          allowed_values:
+            - comment_only
+            - escalate_only
+            - abstain_and_route
+          rule: prevents_silent_authority_creep
+
+    owned_decisions:
+      type: list[string]
+      required: true
+      rule: concrete_decision_classes_the_employee_owns
+
+    blocked_decisions:
+      type: list[string]
+      required: true
+      rule: decision_classes_the_employee_must_not_unilaterally_take
+
+    upstream_inputs:
+      type: list[string]
+      required: true
+      rule: admissible_inputs_this_employee_may_consume
+
+    downstream_outputs:
+      type: list[string]
+      required: true
+      rule: work_products_this_employee_may_emit_or_update
+
+    readable_zones:
+      type: list[string]
+      required: true
+      rule: shared_canvas_or_artifact_zones_the_employee_may_read
+
+    writable_zones:
+      type: list[string]
+      required: true
+      rule: artifact_zones_the_employee_may_lawfully_write
+      constraint:
+        - readable_zones_and_writable_zones_must_not_be_inferred_from_each_other
+
+    scope:
+      type: mapping
+      required: true
+      rule: preserved_employee_scope_fields_supporting_simulation_rather_than_flavor
+      fields:
+        conditioning:
+          type: list[string]
+          required: true
+          rule: standing_context_or_operating_conditioners_that_shape_how_the_employee_works
+        evaluation_facets:
+          type: list[string]
+          required: true
+          rule: criteria_this_employee_uses_to_judge_work_in_role
+
+    canvas:
+      type: mapping
+      required: true
+      rule: shared_work_context_for_employee_simulation_around_a_common_object
+      fields:
+        shared_state:
+          type: list[string]
+          required: true
+          rule: runtime_state_visible_to_the_employee
+        shared_work_object:
+          type: list[string]
+          required: true
+          rule: authoritative_and_derivative_artifacts_this_employee_orients_around
+        assumptions_in_force:
+          type: list[string]
+          required: true
+          rule: active_assumptions_the_employee_must_treat_as_current_until_changed
+        decisions_in_force:
+          type: list[string]
+          required: true
+          rule: active_decisions_the_employee_must_respect_until_reopened
+        unresolved_issues:
+          type: list[string]
+          required: true
+          rule: open_conflicts_or_unknowns_the_employee_must_keep_visible
+
+    null_classes_handled:
+      type: list[string]
+      required: true
+      rule: null_classes_the_employee_is_expected_to_resolve_or_disposition
+      constraint:
+        - must_not_exceed_domain_authority_without_explicit_justification
+
+    escalation_targets:
+      type: list[string]
+      required: true
+      rule: lawful_escalation_recipients_when_the_employee_cannot_resolve_in_role
+
+    challenge_obligations:
+      type: mapping
+      required: true
+      fields:
+        must_challenge_when:
+          type: list[string]
+          required: true
+        must_record_conflict_when:
+          type: list[string]
+          required: true
+        must_yield_when_outside_domain:
+          type: list[string]
+          required: true
+        round_robin_participation:
+          type: enum
+          required: true
+          allowed_values:
+            - always_required
+            - trigger_required
+            - optional_by_request
+      rule: challenge_obligations_are_mandatory_runtime_behavior_not_optional_temperament
+
+    conflict_precedence:
+      type: mapping
+      required: true
+      fields:
+        yields_to:
+          type: list[string]
+          required: true
+        may_override:
+          type: list[string]
+          required: true
+        requires_round_robin_when:
+          type: list[string]
+          required: true
+        unresolved_conflict_result:
+          type: enum
+          required: true
+          allowed_values:
+            - remain_explicit_and_escalate
+            - recommend_progression_block
+          rule: forbids_silent_merge_or_silent_fill
+
+    failure_modes:
+      type: list[string]
+      required: true
+      rule: known_ways_this_employee_can_drift_overreach_under_specify_or_mishandle_runtime_labor
+
+    reverse_pass_participation:
+      type: mapping
+      required: true
+      fields:
+        allowed_after:
+          type: constant
+          required: true
+          value: definitive_technical_ust_lock
+        may_shape:
+          type: list[string]
+          required: true
+          rule: derivative_surfaces_or_downstream_framing_this_employee_may_help_shape_after_lock
+        may_not_shape:
+          type: list[string]
+          required: true
+          rule: technical_ust_authority_and_peer_authority_violations_excluded_from_reverse_pass
+        reverse_pass_limit:
+          type: string
+          required: true
+          rule: reverse_pass_role_remains_derivative_and_does_not_create_peer_authority_over_technical_ust
+
+    notes_and_artifact_obligations:
+      type: mapping
+      required: true
+      fields:
+        must_emit:
+          type: list[string]
+          required: true
+        must_update:
+          type: list[string]
+          required: true
+        lineage_entries_required:
+          type: list[string]
+          required: true
+        null_disposition_logging:
+          type: boolean
+          required: true
+
+    controller_substitution_prohibitions:
+      type: list[string]
+      required: true
+      rule: explicit_statements_that_the_controller_may_not_stand_in_for_this_employee
+
+    song_excellence_reference_duties:
+      type: mapping
+      required: true
+      fields:
+        consult_during:
+          type: list[string]
+          required: true
+        use_as:
+          type: list[string]
+          required: true
+        citation_or_evidence_rule:
+          type: string
+          required: true
+          rule: song_excellence_must_function_as_active_in_role_reference_behavior_not_terminal_audit_only_commentary
+
+runtime_semantics:
+  module_law:
+    - one_employee_module_equals_one_bounded_worker_not_one_prose_persona
+    - persona_rehabilitation_means_employee_simulation_not_theatrical_flavor
+    - five_elements_scope_and_canvas_are_runtime_fields_not_optional_notes
+    - identity_does_not_imply_universal_write_authority
+    - readable_zones_and_writable_zones_must_never_be_inferred_from_each_other
+    - owned_decisions_and_blocked_decisions_must_both_be_explicit
+    - null_classes_handled_must_not_exceed_domain_authority_owns_domains_without_explicit_justification
+    - reverse_pass_participation_begins_only_after_definitive_technical_ust_lock
+    - challenge_obligations_are_mandatory_runtime_behavior_not_optional_temperament
+    - controller_substitution_prohibitions_are_first_class_fields_not_implied_behavior
+    - song_excellence_reference_duties_are_operational_duties_not_decorative_notes
+    - employee_blocking_behavior_is_objection_and_gate_escalation_not_autonomous_phase_control
+    - this_schema_does_not_freeze_global_worker_taxonomy
+    - canvas_fields_preserve_shared_work_visibility_and_prevent_persona_drift_into_style_wrapper
+
+validation_rules:
+  artifact_is_valid_only_if:
+    - one_employee_can_be_instantiated_from_the_schema_without_inventing_extra_authority_fields
+    - the_schema_defines_bounded_semantic_labor_rather_than_stylistic_personality_prose
+    - the_schema_preserves_employee_simulation_through_five_elements_scope_and_canvas
+    - the_schema_does_not_require_a_workforce_registry_to_understand_one_employee_module
+    - controller_power_is_not_widened_by_any_field
+    - reverse_pass_participation_is_explicitly_derivative_and_post_lock_only
+    - writable_zones_are_explicit_and_non_inferred
+    - escalation_and_challenge_behavior_are_explicit
+    - song_excellence_duties_are_active_during_work_not_audit_only
+    - conflict_precedence_preserves_explicit_escalation_instead_of_silent_merge
+    - no_global_worker_taxonomy_is_silently_frozen_here
+
+anti_drift_rules:
+  forbidden_moves:
+    - convert_this_schema_into_a_full_workforce_registry
+    - encode_controller_policy_here_as_if_it_were_employee_behavior
+    - infer_global_org_chart_fields_not_required_for_one_employee
+    - collapse_read_permissions_into_write_permissions
+    - collapse_creative_authority_into_orchestration_support
+    - treat_creative_ust_and_technical_ust_as_peer_authorities
+    - allow_reverse_pass_before_definitive_technical_ust_lock
+    - reduce_song_excellence_to_terminal_audit_only
+    - grant_employees_autonomous_phase_progression_control
+    - freeze_global_worker_taxonomy_inside_this_schema
+    - treat_personas_as_tones_voices_or_theatrical_flavor
+
+next_safe_sequence:
+  - canonical_employee_module_spec.yaml
+  - canonical_13_employee_instances.yaml
+  - employee_workforce_registry_contract.yaml
