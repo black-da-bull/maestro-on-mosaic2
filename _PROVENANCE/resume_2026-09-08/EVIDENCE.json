@@ -1,0 +1,585 @@
+{
+  "schema_version": 1,
+  "observed_date": "2026-09-08",
+  "repository": "black-da-bull/maestro-on-mosaic2",
+  "baseline_sha": "d2ab1c6c7b9c6738e616564d4575cdf4660b4717",
+  "scope": "Resume-state reconciliation only; no historical corpus re-audit, experiment execution, runtime code change, memory operation, or new acceptance decision.",
+  "input_basis": "Live pinned GitHub objects and this conversation's operator instructions. Previous scratch materialization retained separately and not imported as pending edits.",
+  "authority_records": [
+    "_PROVENANCE/PROMOTION_CLOSE_2026-09-07.md",
+    "_PROVENANCE/OVERLAY_CORRECTION_2026-09-07.md",
+    "_PROVENANCE/P0_WORKFORCE_REGISTRY_CLOSE_2026-09-07.md",
+    "_PROVENANCE/P0_GOLDEN_STRUCTURAL_INTERPRETATION_2026-09-07.md"
+  ],
+  "pull_requests": [
+    {
+      "number": 10,
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/10",
+      "title": "P1: B3 empirical Suno calibration package",
+      "state": "open",
+      "draft": true,
+      "merged_at": null,
+      "merge_commit_sha": "720b8b923f88401c66c6035b346b7eafb248662e",
+      "head_ref": "p1-b3-empirical-calibration-2026-09-07",
+      "head_sha": "7e4ace243adcd51383c9a26b00a73c715941e098",
+      "base_ref": "main"
+    },
+    {
+      "number": 9,
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/9",
+      "title": "P0.3: golden structural interpretation execution proof",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-09-07T22:41:10Z",
+      "merge_commit_sha": "d2ab1c6c7b9c6738e616564d4575cdf4660b4717",
+      "head_ref": "p0-3-golden-structural-interpretation-2026-09-07",
+      "head_sha": "08477d6b70ba133cb198dad608f664850df1f830",
+      "base_ref": "main"
+    },
+    {
+      "number": 8,
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/8",
+      "title": "P0.2: resolve Technical UST ownership blockers",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-09-07T22:30:58Z",
+      "merge_commit_sha": "39e3b97bb32bcfd12c19c1cd26b44cf78fd4217f",
+      "head_ref": "p0-2-resolve-ownership-blockers-2026-09-07",
+      "head_sha": "357f4f21b92146513fcb39aedff6a2341b92788c",
+      "base_ref": "main"
+    },
+    {
+      "number": 7,
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/7",
+      "title": "P0.2 patch: Alan owns theory arrangement sections",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-09-07T22:00:45Z",
+      "merge_commit_sha": "1a6540f3e7b281aa5b1266b81bd76117569b20c2",
+      "head_ref": "p0-2-patch-alan-theory-arrangement-2026-09-07",
+      "head_sha": "ae6f622494eb532a916b3b6af32da4de6ba293f6",
+      "base_ref": "main"
+    },
+    {
+      "number": 6,
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/6",
+      "title": "P0: materialize Technical UST ownership + crossstream dependency overlay",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-09-07T21:57:27Z",
+      "merge_commit_sha": "c095e3f7689687fbc02719db52d47b601a138c17",
+      "head_ref": "p0-technical-ust-ownership-overlay-2026-09-07",
+      "head_sha": "78b4c618932c976581e4477715bb66b228594196",
+      "base_ref": "main"
+    },
+    {
+      "number": 5,
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/5",
+      "title": "P0: materialize Maestro 13-worker runtime registry",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-09-07T08:50:38Z",
+      "merge_commit_sha": "2a8ab0c97610ff136f1a9637783dbd66bdfc5f28",
+      "head_ref": "p0-workforce-registry-2026-09-07",
+      "head_sha": "27bff61144c3835bdc4981b284d4dfe2e3ce1dc5",
+      "base_ref": "main"
+    },
+    {
+      "number": 4,
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/4",
+      "title": "Promote Maestro v5-c 2026-09-06 integration checkpoint",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-09-07T07:38:53Z",
+      "merge_commit_sha": "cfbe537e8175ac93aa857333d3c73f642d433da5",
+      "head_ref": "promotion/2026-09-06",
+      "head_sha": "c43451be62f50ddfaa1dd337b8720d635d39bcb0",
+      "base_ref": "main"
+    }
+  ],
+  "observed_files": [
+    {
+      "path": ".github/workflows/p0-golden-structural-interpretation.yml",
+      "git_blob_sha": "e4d0a7f8e3592446fba39bb8fbbe2b4a2397921e",
+      "bytes": 1131,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "git_blob_sha": "90d767e2f0456619726bd147ea4f7d64e4952f1a",
+      "bytes": 1704,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "_PROVENANCE/CONTINUATION_2026-09-06.md",
+      "git_blob_sha": "a5b3331850ccebdbb2ced72a2ce084e1449b5072",
+      "bytes": 7993,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "_PROVENANCE/LEDGER.md",
+      "git_blob_sha": "1b9b592b634f8f4b2fc0aa024fb9b328b39eb9c8",
+      "bytes": 49756,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "_PROVENANCE/OPEN.md",
+      "git_blob_sha": "fd96e07a3fc9773c6a969c8f9907038ee6ac6705",
+      "bytes": 17458,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "_PROVENANCE/OVERLAY_CORRECTION_2026-09-07.md",
+      "git_blob_sha": "e84f270466b95329a0e304df0c4303c133aa22e4",
+      "bytes": 2415,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "_PROVENANCE/P0_GOLDEN_STRUCTURAL_INTERPRETATION_2026-09-07.md",
+      "git_blob_sha": "a98ee907bc7add4212648d8d73be883bd8e76649",
+      "bytes": 5066,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "_PROVENANCE/P0_WORKFORCE_REGISTRY_2026-09-07.md",
+      "git_blob_sha": "ddcfbd26ada3fff1ba1b91d5cc91dd650a1ec60f",
+      "bytes": 6017,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "_PROVENANCE/P0_WORKFORCE_REGISTRY_CLOSE_2026-09-07.md",
+      "git_blob_sha": "e9fe53a1c27958501a4569baad93d9e4fef73a4e",
+      "bytes": 3688,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "_PROVENANCE/PROMOTION_CLOSE_2026-09-07.md",
+      "git_blob_sha": "3679e1db570fd83f906e92d0abe3ab3c4fbe2a00",
+      "bytes": 7933,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "_PROVENANCE/STATE.md",
+      "git_blob_sha": "5fedc475186919c4f622883dd258d791230f6241",
+      "bytes": 19401,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/00_ROOT_SPEC.md",
+      "git_blob_sha": "d78483b314af136aee16668158d27f58f4b56fa8",
+      "bytes": 4560,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/01_TECHNICAL_UST_CANON.md",
+      "git_blob_sha": "22a0c99f60cfa73c1263d00d8adc3ed0c13c0ccd",
+      "bytes": 29539,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/02_CREATIVE_UST_TEMPLATE.md",
+      "git_blob_sha": "28fca6a6d6530667c3e571d8660ef7247ebf8e9c",
+      "bytes": 8702,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/03_PHASE_CHAIN.md",
+      "git_blob_sha": "a2ad26e67f9b583b8b07a74093b4d0b17b130541",
+      "bytes": 1945,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/04_COUNCIL_TOPOLOGY.md",
+      "git_blob_sha": "f1c0e433645ede0e9b8e1d5b45652639663841c0",
+      "bytes": 7208,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/05_GOVERNANCE_SEG.md",
+      "git_blob_sha": "dedb93c5e8b7b20c30e88ce94077b4bf0606109d",
+      "bytes": 7140,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/06_RUNTIME_RULES.md",
+      "git_blob_sha": "4985b569726aa960a4eafea3ce78efb17fe88e1e",
+      "bytes": 2377,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/07_ADDRESS_REGISTRY.md",
+      "git_blob_sha": "6a40dbccfec1d69cf5d1a9aa99e681cae45a8a04",
+      "bytes": 1189,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/08_PORTABILITY_ATP.md",
+      "git_blob_sha": "67abdf86e6155bd8b26836adce4ab7c69662f938",
+      "bytes": 1214,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/09_LOGS_AND_CONTINUATION.md",
+      "git_blob_sha": "366917391968274984070e266b1f2eb3950eef45",
+      "bytes": 1161,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/10_TEST_PLAN.md",
+      "git_blob_sha": "abf5a1702bd55b9cce72bf9be3a631721e71d596",
+      "bytes": 2320,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/MANIFEST.yaml",
+      "git_blob_sha": "ea80ec1a2dd5d326d283a7265267b0a3cfe19cf1",
+      "bytes": 5564,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/SCOPE_CORRECTION_v0_4.md",
+      "git_blob_sha": "c58d04b9ef2f172fddf1d4dded992cd075625ca6",
+      "bytes": 4775,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/STRATA_MIGRATION_MAP.md",
+      "git_blob_sha": "848b0c2f455eea1178a76f16bf98356e0623e3ff",
+      "bytes": 5018,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/build_maestro_current.py",
+      "git_blob_sha": "604137c68c2ced536c2b33f18654faf78afeac7d",
+      "bytes": 3596,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/cap_validator.py",
+      "git_blob_sha": "b7a1e91e7a1d57c3c22322211376412115994212",
+      "bytes": 786,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/compile_current.py",
+      "git_blob_sha": "596529416888e8b993163466409dec037a55d11e",
+      "bytes": 4573,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/lyric_lock_check.py",
+      "git_blob_sha": "4df5763c855b3e89b09a36033d886fea1b72cf94",
+      "bytes": 951,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/manifest_meta.yaml",
+      "git_blob_sha": "d16ca1e1900e39a76be4a034f140c12ae9df9589",
+      "bytes": 3051,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/00_ROOT_SPEC.md",
+      "git_blob_sha": "d78483b314af136aee16668158d27f58f4b56fa8",
+      "bytes": 4560,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/01_TECHNICAL_UST_CANON.md",
+      "git_blob_sha": "22a0c99f60cfa73c1263d00d8adc3ed0c13c0ccd",
+      "bytes": 29539,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/02_CREATIVE_UST_TEMPLATE.md",
+      "git_blob_sha": "28fca6a6d6530667c3e571d8660ef7247ebf8e9c",
+      "bytes": 8702,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/03_PHASE_CHAIN.md",
+      "git_blob_sha": "a2ad26e67f9b583b8b07a74093b4d0b17b130541",
+      "bytes": 1945,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/04_COUNCIL_TOPOLOGY.md",
+      "git_blob_sha": "f1c0e433645ede0e9b8e1d5b45652639663841c0",
+      "bytes": 7208,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/05_GOVERNANCE_SEG.md",
+      "git_blob_sha": "dedb93c5e8b7b20c30e88ce94077b4bf0606109d",
+      "bytes": 7140,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/06_RUNTIME_RULES.md",
+      "git_blob_sha": "4985b569726aa960a4eafea3ce78efb17fe88e1e",
+      "bytes": 2377,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/07_ADDRESS_REGISTRY.md",
+      "git_blob_sha": "6a40dbccfec1d69cf5d1a9aa99e681cae45a8a04",
+      "bytes": 1189,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/08_PORTABILITY_ATP.md",
+      "git_blob_sha": "67abdf86e6155bd8b26836adce4ab7c69662f938",
+      "bytes": 1214,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/09_LOGS_AND_CONTINUATION.md",
+      "git_blob_sha": "366917391968274984070e266b1f2eb3950eef45",
+      "bytes": 1161,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/10_TEST_PLAN.md",
+      "git_blob_sha": "abf5a1702bd55b9cce72bf9be3a631721e71d596",
+      "bytes": 2320,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/SCOPE_CORRECTION_v0_4.md",
+      "git_blob_sha": "c58d04b9ef2f172fddf1d4dded992cd075625ca6",
+      "bytes": 4775,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/templates/STRATA_MIGRATION_MAP.md",
+      "git_blob_sha": "848b0c2f455eea1178a76f16bf98356e0623e3ff",
+      "bytes": 5018,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/test_promotion.py",
+      "git_blob_sha": "179007f931c796b9b7c8cb469aa58e3e70d67297",
+      "bytes": 4383,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/build/validate_bundle.py",
+      "git_blob_sha": "0dcd2657628aa91c29685863e7093f406eb23ac2",
+      "bytes": 6363,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/compiled/BUILD_REGENERATION_REPORT.yaml",
+      "git_blob_sha": "26fcbaea2651e843c37543a8b7a6b86f7e383cd5",
+      "bytes": 1762,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/compiled/DEPENDENCY_CLOSURE_REPORT.yaml",
+      "git_blob_sha": "06531252bae6246d0a755bf687bca3c51612499e",
+      "bytes": 500,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/compiled/FULL_CANON_COVERAGE_MATRIX.yaml",
+      "git_blob_sha": "7206a51dff1d7a97fd28fc53de56e02025c6389a",
+      "bytes": 299,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/compiled/OMISSION_AUDIT.yaml",
+      "git_blob_sha": "cc1823bb60b2133828d74ada38d4a4b8805630f2",
+      "bytes": 780,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/compiled/TECHNICAL_UST_ADDRESS_MIGRATION.yaml",
+      "git_blob_sha": "bb2327a765a356bd7378a252f610f5e7ecdac4e1",
+      "bytes": 691,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md",
+      "git_blob_sha": "448c9604904243c3faa8f71ca9e0e9b5e3b022e8",
+      "bytes": 27355,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "maestro-current/fixture/dryrun_project.md",
+      "git_blob_sha": "6b7481f141ed334adb6ecd4458a88746e549cd57",
+      "bytes": 690,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/README.md",
+      "git_blob_sha": "cab0226c9c142610b28a03da99ecc8fba9aa6d8b",
+      "bytes": 2915,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/canonical_13_employee_instances.yaml",
+      "git_blob_sha": "1e3a8c4596f328c871de5460eaf13268a1c11858",
+      "bytes": 6808,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/canonical_employee_module_spec.yaml",
+      "git_blob_sha": "0198dcb69ec056e90f6149a8a719646754522830",
+      "bytes": 14247,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/employee_workforce_registry_contract.yaml",
+      "git_blob_sha": "948347d73ff867eadb1cf9fa53810fd06fc4c4c9",
+      "bytes": 3974,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/golden_structural_interpretation_fixture.py",
+      "git_blob_sha": "433d5fc396edbbdf218c16cddf8da4007f301c88",
+      "bytes": 3647,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/01_mo.yaml",
+      "git_blob_sha": "f9011963fb9d73df433fa282c629eeb01bab384c",
+      "bytes": 1613,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/02_canon_orchestrator.yaml",
+      "git_blob_sha": "db3670f1ceeb56d8a8be4e23f46d8ccfb20958fe",
+      "bytes": 1501,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/03_megazord_orchestrator.yaml",
+      "git_blob_sha": "e6db0250b25e7312e2c65eeb218a11d4d9c533b4",
+      "bytes": 1545,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/04_sibling_architect.yaml",
+      "git_blob_sha": "4411cbabed10e01c5d119517e84dd0e2e39db72e",
+      "bytes": 1543,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/05_metro_craft.yaml",
+      "git_blob_sha": "506148c881b41e4b061a2bb67d59390ac3b5785d",
+      "bytes": 1519,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/06_melody_scout.yaml",
+      "git_blob_sha": "818f20b73d939c902921503864856b342c7a8035",
+      "bytes": 1435,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/07_sage.yaml",
+      "git_blob_sha": "905b191fefca499a180d7fec0c44b803fd030b26",
+      "bytes": 1538,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/08_alan.yaml",
+      "git_blob_sha": "0ba3667be925fff9771dc708de1555ee0756bc97",
+      "bytes": 2311,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/09_dave.yaml",
+      "git_blob_sha": "f04f2b74eb2eeec42cee61467b7cee5e5ed503d5",
+      "bytes": 2142,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/10_vanessa.yaml",
+      "git_blob_sha": "c9a0f7ff707a6539f79ae0c755ae6f939252ae06",
+      "bytes": 2345,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/11_analog_confessor.yaml",
+      "git_blob_sha": "b71fa4d229f027b51d5ed8a890c63ec287d0bf87",
+      "bytes": 2631,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/12_anva.yaml",
+      "git_blob_sha": "8557e8b1f831da46892c1fc76fd582e720cf3577",
+      "bytes": 1577,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/instances/13_eldrik.yaml",
+      "git_blob_sha": "84a07a475ecc5859c96f57195d047b18bb22f585",
+      "bytes": 1688,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/requirements.txt",
+      "git_blob_sha": "1910948f82d7b228755552cd3f5b343cebbca412",
+      "bytes": 15,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/technical_ust_ownership_dependency_overlay.yaml",
+      "git_blob_sha": "969c9bef26961ebd99a4e0c96d5df6367163abf5",
+      "bytes": 15480,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/technical_ust_runtime.py",
+      "git_blob_sha": "a727ed7db8ecda431db9ffdf85f47e54f20813c3",
+      "bytes": 8923,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/validate_workforce.py",
+      "git_blob_sha": "d888826518de0a74bfeff2e32c3d0dfab1e66281",
+      "bytes": 4727,
+      "local_utf8_roundtrip_git_blob_verified": true
+    },
+    {
+      "path": "runtime/maestro-workforce/workforce_runtime.py",
+      "git_blob_sha": "9b3d698ba05bf782538eaa66bb7b48e1bd13e790",
+      "bytes": 5503,
+      "local_utf8_roundtrip_git_blob_verified": true
+    }
+  ],
+  "validation": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python maestro-current/build/validate_bundle.py maestro-current",
+      "chunk_id": "7d05ab",
+      "exit_code": 0,
+      "original_token_count": 2,
+      "output": "PASS\n",
+      "wall_time_seconds": 0.000003105
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python runtime/maestro-workforce/validate_workforce.py",
+      "chunk_id": "bb04cc",
+      "exit_code": 0,
+      "original_token_count": 24,
+      "output": "PASS: 13 bounded audio workers + ownership/dependency integration + P0.3 golden fixture clean\n",
+      "wall_time_seconds": 0.084008898
+    }
+  ],
+  "existing_ci": {
+    "id": 34167433583,
+    "head_sha": "bdef0d8a9b50e476474a831ee1fccdd9d0eed84f",
+    "conclusion": "success",
+    "url": "https://github.com/black-da-bull/maestro-on-mosaic2/actions/runs/34167433583",
+    "scope": "Existing P0.3 execution evidence; current main independently rerun above."
+  },
+  "unresolved": {
+    "p1_b3": "PR #10 draft, text protocol candidate, audible B3/Leslie baseline unproven. Existing exact/equivalent render evidence to be checked before fresh rendering. Not an audio-promotion blocker.",
+    "O04": "provenance_only",
+    "O05": "forensic_replay_required",
+    "O12": "external_asset_preservation_blocker",
+    "Seedance": "experiment_required"
+  },
+  "status_repair": "Current entry points still instructed the reader to reopen a merged promotion, O-19/O-20, and completed P0 work. Supersede those navigation instructions while preserving all earlier bytes."
+}

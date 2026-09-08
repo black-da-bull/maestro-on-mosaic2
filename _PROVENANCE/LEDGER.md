@@ -306,3 +306,13 @@ O-03/O-13 CLOSED; O-04 provenance-only; O-05 forensic_replay_required; O-12 exte
 - **O-19 / O-20 SUPERSEDED — NOT ACTIVE.** They were AI-created audit/method extensions, not
   operator-accepted blockers.
 - Evidence: `_PROVENANCE/OVERLAY_CORRECTION_2026-09-07.md`.
+
+
+## RESUME-2026-09-08 — reconcile evolved repository and stale entry points
+Authority: operator “Resume execution and resolve the blockers. Ignore memory operations,” followed by “the workspace and repo have evolved since your work was interrupted.” Evidence first: pinned main d2ab1c6c7b9c6738e616564d4575cdf4660b4717, promotion close, DEC-PROMO-14/15, merged PRs #4–#9, and draft PR #10 at 7e4ace243adcd51383c9a26b00a73c715941e098.
+
+Finding: the requested promotion had already merged, followed by all three P0 stages, while STATE and the old continuation still instructed a reader to resume PARTIAL/audit/P0 work. Corrected navigation through supersession pointers in STATE and CONTINUATION_2026-09-06, appended current issue classification in OPEN, and persisted CONTINUATION_2026-09-08 plus read/validation receipts in resume_2026-09-08/EVIDENCE.json. Earlier bytes remain intact; no source/template/runtime/manifest or experiment file is changed.
+
+Rungs: accepted decisions retained; merged implementations recognized; this record's persistence is its containing commit. Existing executable workforce/golden behavior was exercised on pinned main, as was bundle validation; both passed. No model/provider execution, audible experiment result or baseline acceptance is claimed. PR #10 remains draft, with evidence recovery before fresh render comparison. No repeat corpus audit, memory operation or next-phase execution occurred.
+
+Session effect: link completed integration to the correct current entry points, explain the stale resume failure, propagate status to dependent registers, and leave a reproducible continuation. No new method gate or product requirement is introduced.
