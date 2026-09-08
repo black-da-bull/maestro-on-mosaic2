@@ -1,3 +1,21 @@
+# CURRENT ENTRY POINT — 2026-09-08
+Doctrine: **Your Vision. Our Mission.**
+
+**Promotion COMPLETE AND MERGED (PR #4). P0.1–P0.3 MERGED (PRs #5–#9). P1 PR #10 remains DRAFT; its B3/Leslie result is OPEN.**
+
+Current continuation: [CONTINUATION_2026-09-08.md](CONTINUATION_2026-09-08.md).
+Evidence: [resume_2026-09-08/EVIDENCE.json](resume_2026-09-08/EVIDENCE.json).
+Verified main baseline: `d2ab1c6c7b9c6738e616564d4575cdf4660b4717`.
+
+This entry supersedes obsolete PARTIAL/merge-pending and P0-next instructions below using the already-persisted promotion close and GitHub merge records. It introduces no new acceptance decision. The current bundle and integrated workforce/golden validators passed against pinned main files.
+
+DEC-PROMO-14/15 stand: recovered resources are overlay inputs; no repeat corpus audit. O16E is closed for the recovered target set; O-19/O-20 are superseded and inactive. O-03/O-13 remain closed; Q1–Q16 remains phantom. O-04 is provenance-only, O-05 needs forensic replay, O-12 needs original external assets, and Seedance needs a musical-fit experiment.
+
+Next: continue the existing PR #10 evidence-recovery step before deciding whether fresh B3/Leslie comparisons are needed. The draft is not an accepted audible baseline. Current runtime proof covers deterministic routing/state/governance behavior; no autonomous LLM or renderer-quality claim is added.
+
+## Earlier state records — preserved in full
+
+---
 # CURRENT STATE — promotion V1 close, 2026-09-06 (resume run)
 Doctrine: **Your Vision. Our Mission.**
 **Promotion status: V1 CLOSED — all recorded checks PASS. Branch candidate, not merged.**

@@ -141,3 +141,13 @@ O-03/O-13 CLOSED; O-04 provenance-only; O-05 forensic_replay_required; O-12 exte
 - **O-19 / O-20 SUPERSEDED — NOT ACTIVE.** They were AI-created audit/method extensions, not
   operator-accepted blockers.
 - Evidence: `_PROVENANCE/OVERLAY_CORRECTION_2026-09-07.md`.
+
+
+## Current resume classification — 2026-09-08
+The promotion is COMPLETE AND MERGED (PR #4, merge cfbe537e8175ac93aa857333d3c73f642d433da5). P0.1–P0.3 are MERGED through PR #9 (d2ab1c6c7b9c6738e616564d4575cdf4660b4717); PR #8 resolved the recorded ownership blockers. Earlier retrieval/PARTIAL and P0-next instructions are historical, not active work.
+
+DEC-PROMO-14/15 retain authority: O16E closed for recovered target set; O-19/O-20 superseded and inactive. O-03/O-13 closed; Q1–Q16 phantom. O-04 provenance-only; O-05 forensic_replay_required; O-12 external_asset_preservation_blocker, non-blocking for audio promotion; Seedance experiment_required.
+
+PR #10 remains an open B3/Leslie calibration draft, not a result. Its protocol calls for checking existing specific render/listening evidence before fresh comparisons. This is an experiment-evidence gap, not an inherited promotion blocker. No new blocker ID or audit requirement is created.
+
+Current next-work pointer and bounded validation receipts: CONTINUATION_2026-09-08.md and resume_2026-09-08/EVIDENCE.json. All earlier issue history is retained.

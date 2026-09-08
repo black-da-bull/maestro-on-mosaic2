@@ -1,3 +1,9 @@
+# Supersession pointer — 2026-09-08
+
+Current continuation: [CONTINUATION_2026-09-08.md](CONTINUATION_2026-09-08.md).
+The promotion below is complete and merged through PR #4; P0 is merged through PR #9. PR #10 is an open calibration draft. Earlier PARTIAL, merge-pending, O-19/O-20 and P0-next instructions below are historical, superseded by the promotion close, DEC-PROMO-14/15 and subsequent merge records. No repeat corpus audit is authorized. The original packet follows unchanged.
+
+---
 # Continuation packet — promotion 2026-09-06 (resume run)
 Doctrine: **Your Vision. Our Mission.**
 Branch `promotion/2026-09-06` → resume branch `claude/resume-promotion-2026-09-06-l35t85`.
