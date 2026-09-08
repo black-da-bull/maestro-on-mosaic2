@@ -1,0 +1,118 @@
+meta:
+  artifact: run_it_to_me_output_manifest
+  project: Maestro v5-c
+  doctrine: Your Vision. Our Mission.
+  status: direct_export_evidence_received_all_five_outputs
+  authority:
+    - operator_root_chronology
+    - direct_uploaded_stem_exports
+    - embedded_suno_id3_provenance
+  purpose: Preserve the five-output Run It To Me renderer work window as auditable P1 empirical evidence without promoting an unsupported B3/Leslie PASS.
+operator_chronology:
+  - Run It To Me began as a cover.
+  - "The cover was followed by four fresh generations using four different style prompts: initial/style A, style B, style C, style D."
+outputs:
+  - stage: cover
+    label: generation_1_cover
+    generation_mode: cover
+    archive_name: run it to me (cover) Stems.zip
+    archive_sha256: 505bf2f0bd115bf7aec4b10fa16ae48aa8eee051f341a3a7c5ec30b9a1a7ed4c
+    suno_export_created_at_utc: '2026-09-08T07:43:39.688787+00:00'
+    duration_seconds: 336.936
+    mp3_stem_count: 9
+    midi_file_count: 8
+    keyboard_mp3_present: true
+    vocal_stem_asset_id: ab7028a3-7453-456a-8f43-24dec7a94f95
+    vocal_stem_asset_url: https://suno.com/song/ab7028a3-7453-456a-8f43-24dec7a94f95
+    creative_ust_full_sha256: ad59202386c78ab6d3d42bc8b7ab71d0e8304b446b40114b86229797ba8084f2
+    creative_ust_sorted_nonblank_lines_sha256: a087c1fe511255048b4e49d04a7f26ea1009559bcc41cde278b33d451a48c73c
+    creative_ust_block_order: [Theory, Voice, LYRICS NARRATIVE, Style, Timbre, Performance]
+    parent_render_url: https://suno.com/song/ea27cad7-632d-43bc-8e68-2b618643f642
+    cover_of_source_url: https://suno.com/song/92dc625a-e4fb-489a-94e0-686946ba38fb
+  - stage: fresh_a
+    label: initial_fresh_generation_style_a
+    generation_mode: fresh
+    archive_name: run it to me  Stems.zip
+    archive_sha256: 532e03856abdd39322ba1a0bd30fb43a3f916a79554931d31ab56e48d9509df1
+    suno_export_created_at_utc: '2026-09-08T07:46:43.164022+00:00'
+    duration_seconds: 287.808
+    mp3_stem_count: 9
+    midi_file_count: 8
+    keyboard_mp3_present: true
+    vocal_stem_asset_id: cb273061-31c9-4113-83dd-1348ffa2e600
+    vocal_stem_asset_url: https://suno.com/song/cb273061-31c9-4113-83dd-1348ffa2e600
+    creative_ust_full_sha256: ad59202386c78ab6d3d42bc8b7ab71d0e8304b446b40114b86229797ba8084f2
+    creative_ust_sorted_nonblank_lines_sha256: a087c1fe511255048b4e49d04a7f26ea1009559bcc41cde278b33d451a48c73c
+    creative_ust_block_order: [Theory, Voice, LYRICS NARRATIVE, Style, Timbre, Performance]
+  - stage: style_b
+    label: fresh_generation_style_b
+    generation_mode: fresh
+    archive_name: run it to me style b Stems.zip
+    archive_sha256: 6f6862bdc8c0e30ee6c5b9cdc2692e4f9888c85777d2904e90fb2b0f910e1e5d
+    suno_export_created_at_utc: '2026-09-08T07:47:23.907990+00:00'
+    duration_seconds: 252.840
+    mp3_stem_count: 8
+    midi_file_count: 8
+    keyboard_mp3_present: false
+    vocal_stem_asset_id: 2eb85a56-9871-46c0-925f-a48df85decf2
+    vocal_stem_asset_url: https://suno.com/song/2eb85a56-9871-46c0-925f-a48df85decf2
+    creative_ust_full_sha256: 8798eb896787fb50179195383290b2747072f16dd5caf1a6a27feddb9d11fde6
+    creative_ust_sorted_nonblank_lines_sha256: a087c1fe511255048b4e49d04a7f26ea1009559bcc41cde278b33d451a48c73c
+    creative_ust_block_order: [Theory, Voice, Style, Timbre, Performance, LYRICS NARRATIVE]
+  - stage: style_c
+    label: fresh_generation_style_c
+    generation_mode: fresh
+    archive_name: run it to me style c Stems.zip
+    archive_sha256: 924e7242d4b439081d3e8d48e2fc10819ea1bea91f176796a41a7873432bb7f5
+    suno_export_created_at_utc: '2026-09-08T07:53:39.909751+00:00'
+    duration_seconds: 272.928
+    mp3_stem_count: 9
+    midi_file_count: 9
+    keyboard_mp3_present: true
+    vocal_stem_asset_id: b41a28e2-df15-4292-9e1f-879151790412
+    vocal_stem_asset_url: https://suno.com/song/b41a28e2-df15-4292-9e1f-879151790412
+    creative_ust_full_sha256: 8798eb896787fb50179195383290b2747072f16dd5caf1a6a27feddb9d11fde6
+    creative_ust_sorted_nonblank_lines_sha256: a087c1fe511255048b4e49d04a7f26ea1009559bcc41cde278b33d451a48c73c
+    creative_ust_block_order: [Theory, Voice, Style, Timbre, Performance, LYRICS NARRATIVE]
+  - stage: style_d
+    label: fresh_generation_style_d
+    generation_mode: fresh
+    archive_name: run it to me style d Stems.zip
+    archive_sha256: f7ab2004a029726da08bbaf8ebedfd0c1d802244c160928da6571c83c0151a49
+    suno_export_created_at_utc: '2026-09-08T07:56:49.280177+00:00'
+    duration_seconds: 291.480
+    mp3_stem_count: 8
+    midi_file_count: 8
+    keyboard_mp3_present: false
+    vocal_stem_asset_id: 26d64ca7-98d4-4403-babe-f72a20dc942e
+    vocal_stem_asset_url: https://suno.com/song/26d64ca7-98d4-4403-babe-f72a20dc942e
+    creative_ust_full_sha256: 8798eb896787fb50179195383290b2747072f16dd5caf1a6a27feddb9d11fde6
+    creative_ust_sorted_nonblank_lines_sha256: a087c1fe511255048b4e49d04a7f26ea1009559bcc41cde278b33d451a48c73c
+    creative_ust_block_order: [Theory, Voice, Style, Timbre, Performance, LYRICS NARRATIVE]
+cross_output_findings:
+  all_five_ust_line_content_identical_ignoring_order: true
+  shared_sorted_nonblank_lines_sha256: a087c1fe511255048b4e49d04a7f26ea1009559bcc41cde278b33d451a48c73c
+  serialization_regime_1: [cover, fresh_a]
+  serialization_regime_1_block_order: [Theory, Voice, LYRICS NARRATIVE, Style, Timbre, Performance]
+  serialization_regime_2: [style_b, style_c, style_d]
+  serialization_regime_2_block_order: [Theory, Voice, Style, Timbre, Performance, LYRICS NARRATIVE]
+  cleanest_style_prompt_comparison_subset: [style_b, style_c, style_d]
+  reason: B/C/D carry byte-identical Creative UST serialization while the operator states their style prompts differ. Fresh A versus B/C/D is confounded by the Creative UST serialization-order change in addition to style-prompt variation.
+  duration_range_seconds: {min: 252.840, max: 336.936}
+  session_export_span_seconds: 789.592
+  stem_partition_observation: Cover, fresh A, and style C include a named Keyboard MP3 stem. Styles B and D do not. Stem partition labels are renderer/separator outputs and are not sufficient by themselves to prove organ presence or absence.
+b3_leslie_evidence:
+  creative_ust_instruction_present_all_five: '[keyboard tone | gospel organ pad with rotary swirl]'
+  cover_style_prompt_b3_instruction: User-provided cover Style prompt explicitly states that choruses erupt with mournful B3 organ.
+  current_classification: PARTIAL_CONFOUNDED
+  why_not_pass: The five exports prove a real comparative render lineage and preserve B3/rotary instructions, but stem naming alone does not establish audible Hammond identity, Leslie speed/behavior, or section-by-section musical function. Direct criterion-level audible scoring remains required for a B3-specific PASS.
+unresolved:
+  - Exact fresh-generation Style prompt bodies for A/B/C/D are not embedded in the received stem archives.
+  - Parent render URLs/IDs for fresh A/B/C/D are not yet established; embedded WOAS values identify exported vocal-stem assets.
+  - Exact generation model/version is not established by the stem C2PA data; C2PA systemVersion identifies the stem-separation system (chirp-ahi-stem-12-t1).
+  - Criterion-level audible B3/Leslie observations with timestamps remain to be scored.
+promotion_state:
+  general_renderer_output_reality: SUPPORTED
+  run_it_to_me_five_output_comparison_lineage: SUPPORTED
+  b3_leslie_specific_baseline: OPEN_PARTIAL_CONFOUNDED
+  fresh_four_download_requirement: SUPERSEDED
