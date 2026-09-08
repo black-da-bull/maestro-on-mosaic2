@@ -1,0 +1,84 @@
+[Theory]
+[mode | D dorian]
+[tonal center | D]
+[meter | 4/4 WITH laid-back half-time sway]
+[tempo | 78 BPM]
+[chord color | bVII lifts AND IV to iv mixture AND gospel add9 add11 AND blues turnarounds]
+
+[Voices]
+[performers | intimate male low tenor lead AND responsive gospel choir]
+[register | low tenor gritty WITH controlled upper belt]
+[delivery | whispered confession → aching testimony → gospel belt → spent resolve]
+[expression | humble resolve AND aching hope]
+[layering | lead stays human and forward; choir enters for communal lift]
+[articulation | soft consonants AND long vowels AND restrained melisma AND preacher asides]
+
+[Style]
+[genre | Southern Soul × Delta Blues × Black church Gospel Roots Rock]
+[era | modern vintage WITH 1960s church memory]
+[intent | private hurt becoming communal release]
+[texture | sparse wood-and-room opening → gathered church lift → spent room-tail ending]
+[aesthetic | delta juke joint meeting small Southern church WITH documentary realism]
+[focus | human pocket AND call-and-response AND Hammond B3 emotional movement]
+
+[Timbre]
+[drum tone | woody kick AND brushed snare WITH handclap lift]
+[bass tone | micd upright bass center mono]
+[keyboard tone | Hammond B3 warm Leslie WITH audible rotary movement; breath under quiet sections; phrase replies; timed swells; never constant pad]
+[guitar tone | fingerpicked acoustic AND muted slide replies]
+[fx palette | spring reverb AND short tape echo AND gospel plate widen AND natural room]
+[vocal tone | close dry intimacy → plate-backed communal lift]
+
+[Performance]
+[execution | Intro → Build → Verse → Pre-Chorus → Chorus → Bridge → Outro]
+[gesture | foot stomps AND handclaps AND breath gaps AND preacher calls]
+[rhythm handling | laid-back half-time pocket in verses → straighter emotional drive in chorus]
+[touch | leave holes around the lead; musicians answer rather than fill]
+[phrasing ops | natural breath points AND split-bar holds AND restrained melisma without changing locked words]
+
+[Post-Production]
+[mastering | preserve dynamics AND room air; gentle glue only]
+[mix notes | vocal forward; upright centered; B3 Leslie wide enough to feel rotary motion but never mask consonants; choir opens around lead]
+[automation priorities | B3 enters beneath Build; pulls back under Verse lines; swells into Pre-Chorus; blooms behind Chorus; rises under final Bridge words; recedes for Outro]
+[cleanup rules | preserve human timing AND wood AND room noise; avoid sterile quantization AND glossy pop-gospel polish]
+
+▸ LYRICS BLOCK
+
+[Intro | 4 bars | close mic whisper; fingerpicked acoustic; upright waits; B3 absent until final breath]
+"A lone guitar breathes in a small room and the air holds the wood."
+"Upright bass waits in the dark and hearts keep steady time."
+"My voice comes quiet and honest and I let the truth begin."
+
+[Build | 8 bars | brushes gather; handclaps flicker; first restrained Leslie motion]
+"Brushes gather a pulse and a whisper of organ warms the floor."
+"Handclaps flicker at the edges and a small hope starts to glow."
+** sFX: Hammond B3 enters as a low warm breath WITH Leslie rotation becoming audible only at the line ending **
+
+[Verse | 8 bars | laid-back confession; upright center mono; slide replies; B3 answers spaces only]
+"I name the bruise and I carry the blame alone."
+"I walk the river road with dust drying out my tongue."
+"I keep a match alive against the wind to find my way."
+** sFX: short Hammond replies in vocal gaps WITH rotor settling back after each answer **
+
+[Pre-Chorus | 4 bars | chest opens; room leans forward; organ begins controlled rise]
+"Let the room lean forward then catch the breath with me."
+"Open the chest wide and ready the heart to rise."
+** sFX: B3 Leslie accelerates into the transition WITHOUT becoming a wash **
+
+[Chorus | 8 bars | full communal lift; choir response; handclaps driving; plate opens]
+"Roll me through the water and raise me higher tonight."
+"Let the choir answer back and keep me steady standing."
+"Make the plate bloom wide and leave the heart open wide."
+** sFX: Hammond B3 blooms behind choir WITH warm Leslie sweep and held church voicing while leaving lead vocal center clear **
+
+[Bridge | 4 bars | band thins; testimony low; slide answers; organ supports final words]
+"Slide guitar answers prayers with a bent and broken smile."
+"I testify low and I mean every word I say."
+** sFX: B3 swells under the last phrase then releases rather than sustaining through the space **
+
+[Outro | 4 bars | instruments fall away; room and plate tail; spent resolve]
+"The band falls away and the floor remembers our feet."
+"The room fades slow and I whisper roll on to the dark."
+** sFX: Leslie slows into room tone and disappears before silence **
+
+[End]
