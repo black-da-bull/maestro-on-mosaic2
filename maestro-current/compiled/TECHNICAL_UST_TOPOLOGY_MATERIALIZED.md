@@ -1,8 +1,8 @@
 # Technical UST — MATERIALIZED Current Canon (compiled)
 # Compiled by compile_current.py from predecessor md5 eaf18e1101c7a5814850fe0c62743b3a
-# Deltas applied: M13 Roadmap migration (MAP.Kn -> PER.K(n+4), verbatim subkeys);
-# DEC-26 canonical names = Creative containers; PER 3-letter coding (native in source).
-# Coverage: 8 source axes -> 7 current; 33 keys, 165 subkeys — ZERO omissions.
+# DEC-PROMO-16: retain Technical MAP; Creative surface omission is downstream.
+# Coverage: 8 source axes -> 8 current; 33 keys, 165 subkeys; 198 identity addresses.
+# Scope: this pinned source; no claim to flatten other historical strata.
 
 # TECHNICAL.UST – CANON SKELETON
 
@@ -48,7 +48,7 @@ axis_order:
 
 patterns:
 
-axis_id: "{AXIS_TAG}" # THY, VOC, STY, TIM, PER, POST, LYR (7 axes; MAP retired per M13 - its keys live at PER.K5-K8)
+axis_id: "{AXIS_TAG}" # e.g. THY, VOC, STY, TIM, PER, POST, MAP, LYR
 
 key_id: "{AXIS_TAG}.K{key_index}" # e.g. THY.K1
 
@@ -1368,13 +1368,13 @@ type: "scale_0_1"
 
 road_map_axis:
 
-axis_id: "PER"  # EXECUTION EXTENSION (migrated from retired MAP axis per M13)
+axis_id: "MAP"
 
-description: "Performance.execution: section order, transitions, per-section overrides (structure-reservation migrated from Roadmap; display timing lives in LYR section headers)."
+description: "Section order, bar counts, per-section axis overrides."
 
 keys:
 
-- key_id: "PER.K5"
+- key_id: "MAP.K1"
 
 name: "Section_List"
 
@@ -1382,37 +1382,37 @@ level: "macro"
 
 subkeys:
 
-- subkey_id: "PER.K5.S1"
+- subkey_id: "MAP.K1.S1"
 
 name: "Sections{n}"
 
 type: "ordered_list<section_label>"
 
-- subkey_id: "PER.K5.S2"
+- subkey_id: "MAP.K1.S2"
 
 name: "Bar_Count_By_Section{n}"
 
 type: "map<section→bars>"
 
-- subkey_id: "PER.K5.S3"
+- subkey_id: "MAP.K1.S3"
 
 name: "Function_By_Section{n}"
 
 type: "map<section→function_label>"
 
-- subkey_id: "PER.K5.S4"
+- subkey_id: "MAP.K1.S4"
 
 name: "Focus_By_Section{n}"
 
 type: "map<section→focus_label>"
 
-- subkey_id: "PER.K5.S5"
+- subkey_id: "MAP.K1.S5"
 
 name: "Double_Time_or_Half_Time_By_Section{n}"
 
 type: "map<section→enum>"
 
-- key_id: "PER.K6"
+- key_id: "MAP.K2"
 
 name: "Transition_Logic"
 
@@ -1420,37 +1420,37 @@ level: "meso"
 
 subkeys:
 
-- subkey_id: "PER.K6.S1"
+- subkey_id: "MAP.K2.S1"
 
 name: "Into_Cues{n}"
 
 type: "map<section→descriptor>"
 
-- subkey_id: "PER.K6.S2"
+- subkey_id: "MAP.K2.S2"
 
 name: "Out_Of_Cues{n}"
 
 type: "map<section→descriptor>"
 
-- subkey_id: "PER.K6.S3"
+- subkey_id: "MAP.K2.S3"
 
 name: "Energy_Jumps{n}"
 
 type: "map<section_pair→descriptor>"
 
-- subkey_id: "PER.K6.S4"
+- subkey_id: "MAP.K2.S4"
 
 name: "FX_At_Transitions{n}"
 
 type: "map<section_pair→list<label>>"
 
-- subkey_id: "PER.K6.S5"
+- subkey_id: "MAP.K2.S5"
 
 name: "Silence_or_Pause_Slots{n}"
 
 type: "list<section_bar_range>"
 
-- key_id: "PER.K7"
+- key_id: "MAP.K3"
 
 name: "Axis_Overrides"
 
@@ -1458,37 +1458,37 @@ level: "meso"
 
 subkeys:
 
-- subkey_id: "PER.K7.S1"
+- subkey_id: "MAP.K3.S1"
 
 name: "Theory_Overrides{n}"
 
 type: "map<section→list<THY_subkey_id>>"
 
-- subkey_id: "PER.K7.S2"
+- subkey_id: "MAP.K3.S2"
 
 name: "Vocals_Overrides{n}"
 
 type: "map<section→list<VOC_subkey_id>>"
 
-- subkey_id: "PER.K7.S3"
+- subkey_id: "MAP.K3.S3"
 
 name: "Timbre_Overrides{n}"
 
 type: "map<section→list<TIM_subkey_id>>"
 
-- subkey_id: "PER.K7.S4"
+- subkey_id: "MAP.K3.S4"
 
 name: "Performance_Overrides{n}"
 
 type: "map<section→list<PER_subkey_id>>"
 
-- subkey_id: "PER.K7.S5"
+- subkey_id: "MAP.K3.S5"
 
 name: "Post_Overrides{n}"
 
 type: "map<section→list<POST_subkey_id>>"
 
-- key_id: "PER.K8"
+- key_id: "MAP.K4"
 
 name: "Live_Arranger_Notes"
 
@@ -1496,31 +1496,31 @@ level: "meso"
 
 subkeys:
 
-- subkey_id: "PER.K8.S1"
+- subkey_id: "MAP.K4.S1"
 
 name: "Optional_Loops{n}"
 
 type: "list<section_label>"
 
-- subkey_id: "PER.K8.S2"
+- subkey_id: "MAP.K4.S2"
 
 name: "Optional_Cuts{n}"
 
 type: "list<section_label>"
 
-- subkey_id: "PER.K8.S3"
+- subkey_id: "MAP.K4.S3"
 
 name: "Extended_Outros{n}"
 
 type: "list<section_label>"
 
-- subkey_id: "PER.K8.S4"
+- subkey_id: "MAP.K4.S4"
 
 name: "DJ_Friendly_In_Out{n}"
 
 type: "list<section_label>"
 
-- subkey_id: "PER.K8.S5"
+- subkey_id: "MAP.K4.S5"
 
 name: "Alternate_Versions{n}"
 

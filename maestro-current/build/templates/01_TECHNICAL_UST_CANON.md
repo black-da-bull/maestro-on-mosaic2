@@ -1,22 +1,25 @@
-# Technical UST — Current Canon v0.1 (O-16 derivation)
+# Technical UST — Current Canon — DEC-PROMO-16 layer repair
 **The sole canonical truth object. Internal process/control artifact at lock — NEVER an output.**
 
-## Axis registry (P-2: 7 audio axes; M13 applied — Roadmap is not an axis)
+## Axis registry (8 Technical audio axes; 7 Creative containers)
 **Axis names are RE-EXPANDED to match the Creative UST metacontainers (operator, 2026-07-19) —
-Technical↔Creative axis identity is literal, 1:1, and is the linkage law.**
+Shared axis names retain identity. Technical MAP remains internal and has no separate Creative
+container; its applicable presentation is derived into Performance.execution and section headers.
+DEC-PROMO-16 corrects the earlier 1:1 interpretation without changing the song-state addresses.**
 | Code (alias) | Canonical axis name | Creative UST container | Notes |
 |---|---|---|---|
 | THY | Theory | Theory | |
 | VOC | Voices | Voices | crew tags consolidate here (Y-3 freeze) |
 | STY | Style | Style | AestheticIntent = era alias |
 | TIM | Timbre | Timbre | |
-| PER | Performance | Performance | code is 3-letter; 4-letter variant retired. Carries `Performance.execution` — structure-reservation migrated from the retired Roadmap axis (M13) |
+| PER | Performance | Performance | code is 3-letter; 4-letter variant retired. Creative execution presentation may derive from Technical MAP; MAP keys stay in MAP |
 | POST | Post-Production | Post-Production | |
+| MAP | Road Map | none (internal) | canonical section order, transitions and cross-axis section references; MAP.K1–K4 retained |
 | LYR | Lyrics | Lyrics Block | section headers carry timing (M13); lyric lock applies |
 VIS/VIG/SEL: separate optional module set (visual identity axis + generation + surface export),
 NOT part of the audio runtime axis registry. Extension point documented in 08.
-Aliases never become separate identities; resolve via this registry only. MAP appears in historical
-artifacts only — read under M13/DEC-09; never instantiate as an axis.
+Aliases never become separate identities; resolve via this registry only. MAP is an active Technical axis. M13 removes the Creative Road-Map block only;
+no Technical MAP-to-PER address migration applies (DEC-PROMO-16).
 
 ## Addressing & null protocol
 Address form `axis.key.subkey.null(n+1)`; addressable, nullable, lineage-preserving.
@@ -31,9 +34,10 @@ supersession is logged; no numeric evaluation threshold is universal by inherita
 ## MATERIALIZED FULL TOPOLOGY (O16C — compiled, zero omissions)
 Compiled by `build/compile_current.py` from the predecessor master spec
 (`artifacts/D-Maestro/Maestro/technical.ust.template.txt`, md5 `eaf18e1101c7a5814850fe0c62743b3a`,
-INDEX-verified) with the M13 migration applied address-by-address: 33 keys, 165 subkeys, 7 axes;
-MAP.K1–K4 rehomed as PER.K5–K8 (24 migrated addresses; see TECHNICAL_UST_ADDRESS_MIGRATION.yaml;
-coverage: FULL_CANON_COVERAGE_MATRIX.yaml — 0 unexplained omissions).
+INDEX-verified), preserving all eight axes, 33 keys and 165 subkeys as identity addresses.
+All 24 MAP key/subkey addresses remain unchanged; Creative presentation is downstream.
+See TECHNICAL_UST_ADDRESS_MIGRATION.yaml and FULL_CANON_COVERAGE_MATRIX.yaml.
+Zero omissions is scoped to this pinned predecessor, not the entirety of Maestro history.
 
 # TECHNICAL.UST – CANON SKELETON
 
@@ -79,7 +83,7 @@ axis_order:
 
 patterns:
 
-axis_id: "{AXIS_TAG}" # THY, VOC, STY, TIM, PER, POST, LYR (7 axes; MAP retired per M13 - its keys live at PER.K5-K8)
+axis_id: "{AXIS_TAG}" # e.g. THY, VOC, STY, TIM, PER, POST, MAP, LYR
 
 key_id: "{AXIS_TAG}.K{key_index}" # e.g. THY.K1
 
@@ -1399,13 +1403,13 @@ type: "scale_0_1"
 
 road_map_axis:
 
-axis_id: "PER"  # EXECUTION EXTENSION (migrated from retired MAP axis per M13)
+axis_id: "MAP"
 
-description: "Performance.execution: section order, transitions, per-section overrides (structure-reservation migrated from Roadmap; display timing lives in LYR section headers)."
+description: "Section order, bar counts, per-section axis overrides."
 
 keys:
 
-- key_id: "PER.K5"
+- key_id: "MAP.K1"
 
 name: "Section_List"
 
@@ -1413,37 +1417,37 @@ level: "macro"
 
 subkeys:
 
-- subkey_id: "PER.K5.S1"
+- subkey_id: "MAP.K1.S1"
 
 name: "Sections{n}"
 
 type: "ordered_list<section_label>"
 
-- subkey_id: "PER.K5.S2"
+- subkey_id: "MAP.K1.S2"
 
 name: "Bar_Count_By_Section{n}"
 
 type: "map<section→bars>"
 
-- subkey_id: "PER.K5.S3"
+- subkey_id: "MAP.K1.S3"
 
 name: "Function_By_Section{n}"
 
 type: "map<section→function_label>"
 
-- subkey_id: "PER.K5.S4"
+- subkey_id: "MAP.K1.S4"
 
 name: "Focus_By_Section{n}"
 
 type: "map<section→focus_label>"
 
-- subkey_id: "PER.K5.S5"
+- subkey_id: "MAP.K1.S5"
 
 name: "Double_Time_or_Half_Time_By_Section{n}"
 
 type: "map<section→enum>"
 
-- key_id: "PER.K6"
+- key_id: "MAP.K2"
 
 name: "Transition_Logic"
 
@@ -1451,37 +1455,37 @@ level: "meso"
 
 subkeys:
 
-- subkey_id: "PER.K6.S1"
+- subkey_id: "MAP.K2.S1"
 
 name: "Into_Cues{n}"
 
 type: "map<section→descriptor>"
 
-- subkey_id: "PER.K6.S2"
+- subkey_id: "MAP.K2.S2"
 
 name: "Out_Of_Cues{n}"
 
 type: "map<section→descriptor>"
 
-- subkey_id: "PER.K6.S3"
+- subkey_id: "MAP.K2.S3"
 
 name: "Energy_Jumps{n}"
 
 type: "map<section_pair→descriptor>"
 
-- subkey_id: "PER.K6.S4"
+- subkey_id: "MAP.K2.S4"
 
 name: "FX_At_Transitions{n}"
 
 type: "map<section_pair→list<label>>"
 
-- subkey_id: "PER.K6.S5"
+- subkey_id: "MAP.K2.S5"
 
 name: "Silence_or_Pause_Slots{n}"
 
 type: "list<section_bar_range>"
 
-- key_id: "PER.K7"
+- key_id: "MAP.K3"
 
 name: "Axis_Overrides"
 
@@ -1489,37 +1493,37 @@ level: "meso"
 
 subkeys:
 
-- subkey_id: "PER.K7.S1"
+- subkey_id: "MAP.K3.S1"
 
 name: "Theory_Overrides{n}"
 
 type: "map<section→list<THY_subkey_id>>"
 
-- subkey_id: "PER.K7.S2"
+- subkey_id: "MAP.K3.S2"
 
 name: "Vocals_Overrides{n}"
 
 type: "map<section→list<VOC_subkey_id>>"
 
-- subkey_id: "PER.K7.S3"
+- subkey_id: "MAP.K3.S3"
 
 name: "Timbre_Overrides{n}"
 
 type: "map<section→list<TIM_subkey_id>>"
 
-- subkey_id: "PER.K7.S4"
+- subkey_id: "MAP.K3.S4"
 
 name: "Performance_Overrides{n}"
 
 type: "map<section→list<PER_subkey_id>>"
 
-- subkey_id: "PER.K7.S5"
+- subkey_id: "MAP.K3.S5"
 
 name: "Post_Overrides{n}"
 
 type: "map<section→list<POST_subkey_id>>"
 
-- key_id: "PER.K8"
+- key_id: "MAP.K4"
 
 name: "Live_Arranger_Notes"
 
@@ -1527,31 +1531,31 @@ level: "meso"
 
 subkeys:
 
-- subkey_id: "PER.K8.S1"
+- subkey_id: "MAP.K4.S1"
 
 name: "Optional_Loops{n}"
 
 type: "list<section_label>"
 
-- subkey_id: "PER.K8.S2"
+- subkey_id: "MAP.K4.S2"
 
 name: "Optional_Cuts{n}"
 
 type: "list<section_label>"
 
-- subkey_id: "PER.K8.S3"
+- subkey_id: "MAP.K4.S3"
 
 name: "Extended_Outros{n}"
 
 type: "list<section_label>"
 
-- subkey_id: "PER.K8.S4"
+- subkey_id: "MAP.K4.S4"
 
 name: "DJ_Friendly_In_Out{n}"
 
 type: "list<section_label>"
 
-- subkey_id: "PER.K8.S5"
+- subkey_id: "MAP.K4.S5"
 
 name: "Alternate_Versions{n}"
 

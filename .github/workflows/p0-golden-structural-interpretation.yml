@@ -4,6 +4,9 @@ on:
   pull_request:
     paths:
       - 'runtime/maestro-workforce/**'
+      - 'maestro-current/**'
+      - 'artifacts/D-Maestro/Maestro/technical.ust.template.txt'
+      - '_PROVENANCE/promotion_2026-09-09/validate_integration.py'
       - '.github/workflows/p0-golden-structural-interpretation.yml'
   push:
     branches:
@@ -11,11 +14,16 @@ on:
       - p0-3-golden-structural-interpretation-2026-09-07
     paths:
       - 'runtime/maestro-workforce/**'
+      - 'maestro-current/**'
+      - 'artifacts/D-Maestro/Maestro/technical.ust.template.txt'
+      - '_PROVENANCE/promotion_2026-09-09/validate_integration.py'
       - '.github/workflows/p0-golden-structural-interpretation.yml'
 
 jobs:
   golden-fixture:
     runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,3 +37,6 @@ jobs:
         run: python runtime/maestro-workforce/golden_structural_interpretation_fixture.py | tee /tmp/p0-golden.json
       - name: Assert fixture PASS
         run: python -c "import json; d=json.load(open('/tmp/p0-golden.json')); assert d['passed'] is True"
+
+      - name: Verify current compiler, bundle and runtime parity
+        run: python _PROVENANCE/promotion_2026-09-09/validate_integration.py

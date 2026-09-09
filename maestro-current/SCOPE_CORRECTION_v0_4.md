@@ -4,6 +4,14 @@
 files are a SELECTED MIGRATION BUNDLE applied to a much larger (~40k-activity) system — not the
 system itself. Absence from reached material must never be read as absence from the system.
 
+## Current status — September 2026 overlay
+The July analysis below is retained as historical scope evidence. DEC-PROMO-14/15 closes
+O16E for the recovered version-history/SEG/FOIL/SEM target set and supersedes its audit and
+fold/lamination requirements. DEC-PROMO-16 retains Technical MAP; Creative Roadmap omission
+never readdresses Technical UST. Current compiled counts are 8 axes, 33 keys, 165 subkeys,
+198 identity addresses and zero omissions relative to the pinned source. Current P0 runtime
+ownership comes from the merged workforce overlay, not a renewed hunt for the historical seats.
+
 ## The correction, applied to this bundle's own claims
 1. **"0 omissions" (v0.3 compiled topology)** — RE-SCOPED. True statement: zero omissions
    *relative to the Chimera-era master template* (source md5 `eaf18e11…`). Not a claim about the

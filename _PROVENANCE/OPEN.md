@@ -151,3 +151,23 @@ DEC-PROMO-14/15 retain authority: O16E closed for recovered target set; O-19/O-2
 PR #10 remains an open B3/Leslie calibration draft, not a result. Its protocol calls for checking existing specific render/listening evidence before fresh comparisons. This is an experiment-evidence gap, not an inherited promotion blocker. No new blocker ID or audit requirement is created.
 
 Current next-work pointer and bounded validation receipts: CONTINUATION_2026-09-08.md and resume_2026-09-08/EVIDENCE.json. All earlier issue history is retained.
+
+
+## Integration/promotion close — 2026-09-09
+DEC-PROMO-16 corrects the Technical/Creative Roadmap layer mismatch: Technical MAP retained;
+Creative Road-Map omitted. Compiler, source/templates, derived bundle and validator repaired;
+existing P0 runtime verified unchanged. This is a repaired propagation defect, not a new open item.
+DEC-PROMO-14/15 is propagated into current sources; O16E closed for recovered target set;
+O-19/O-20 inactive. O-03/O-13 remain closed; Q1–Q16 phantom. O-04/O-05/O-12/B3/Seedance
+retain their prior scope and evidence status. No new blocker or experiment result is invented.
+Current continuation: CONTINUATION_2026-09-09.md; checks: promotion_2026-09-09/VALIDATION.json.
+This integration window stops before P1 development.
+
+
+## Final live-navigation correction — 2026-09-09
+GitHub shows PR #10 closed without merge; its P1 successor is open draft PR #15 at
+9a68a6a4a97321a2decced55767ee0b318948913. The draft preserves broader renderer-response
+evidence and separates exact B3/Leslie identity as a narrower probe. This navigation repair
+does not reopen general adherence evidence, accept draft results as canon, or run an experiment.
+PRs #14/#16 are separate browser drafts; #12 is a tooling draft. None is merged by this run.
+This supersedes the earlier PR #10-next instructions. REMOTE_STATE.json records live evidence.

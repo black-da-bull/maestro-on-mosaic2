@@ -1,24 +1,26 @@
 product: maestro-current
-version: v0.6-promotion-2026-09-06
-work_item: PROMOTION.2026-09-06 (DEC-PROMO-01–13; scoped threshold repair)
-date: '2026-09-06'
+version: v0.7-promotion-2026-09-09
+work_item: PROMOTION.2026-09-09 (DEC-PROMO-14/15 propagation; DEC-PROMO-16 Technical MAP)
+date: '2026-09-09'
 class: >-
-  CONTROLLED CORRECTION CANDIDATE; operator-accepted DEC-PROMO-01–13 applied.
-  Promotion validation recorded separately; broader O16E and production runtime not claimed complete.
+  CONTROLLED INTEGRATION; accepted DEC-PROMO-01–16 applied at their respective layers.
+  Recovery target set closed; P0 merged; validation and persistence recorded separately.
+  No autonomous model or renderer-quality claim.
 self_contained: >-
-  every member required to interpret/validate current behavior is listed in the files map;
-  inventory completeness is machine-checked (validator A11)
+  every packaged member required for local bundle validation is listed in the files map;
+  inventory completeness is machine-checked (validator A11). Source recompilation and
+  runtime parity require repository dependencies declared in DEPENDENCY_CLOSURE_REPORT.yaml
 inventory_classes:
   runtime_docs: 00-10 numbered docs + STRATA_MIGRATION_MAP.md + SCOPE_CORRECTION_v0_4.md (13; regenerated from build/templates, byte-identical)
-  build_tools: build/*.py + build/manifest_meta.yaml + build/templates/* (packaged verbatim)
-  compiled: compiled/* (A9b topology derivations + validation reports; BUILD_REGENERATION_REPORT records A9 runs)
+  build_tools: build/*.py + build/manifest_meta.yaml + build/templates/* + build/report_templates/* (packaged verbatim)
+  compiled: compiled/* (A9b topology derivations; other reports regenerated from build/report_templates)
   fixture: fixture/dryrun_project.md
 source_imports:
   technical_topology:
     source: artifacts/D-Maestro/Maestro/technical.ust.template.txt
     md5: eaf18e1101c7a5814850fe0c62743b3a
     result: >-
-      33 keys / 165 subkeys / 7 axes, 24 MAP->PER migrations, 0 omissions RELATIVE TO THIS
+      33 keys / 165 subkeys / 8 axes, 198 identity addresses, 0 omissions RELATIVE TO THIS
       SOURCE (scope per SCOPE_CORRECTION_v0_4)
   creative_shell:
     source: artifacts/HYDRA/creative_ust_canonical_shell.md
@@ -40,49 +42,52 @@ source_imports:
       DEC-27 (ROOT): the v5b Technical UST canon and its governance addendum are ONE UNIT — the
       Technical UST plus the record of how quality/governance tie directly into decision-making
       as the nulls are replaced. The earlier competing-stratum/O-18 framing is withdrawn; the
-      residual cross-era chronology question (Chimera-era template <-> v5b unit) rides O16E.
+      recovered target set is closed per DEC-PROMO-14/15; chronological overlays remain distinct.
 builders:
-  A9a_packager: build/build_maestro_current.py (v2 — regenerates the FULL member set + this manifest)
+  A9a_packager: build/build_maestro_current.py (source-compiling packager; regenerates FULL member set + manifest)
   A9b_source_delta_compiler: build/compile_current.py (hash-verified input; fails closed on unmapped address)
   validator: build/validate_bundle.py (v3 — scoped SEM configuration/policy oracle + recursive parse + actual hashes)
 files:
-  00_ROOT_SPEC.md: ac4db6b7db896ff58338328a4383054a
-  01_TECHNICAL_UST_CANON.md: 5608cd1c18218bbcbcf0bf5d3f19e52c
-  02_CREATIVE_UST_TEMPLATE.md: 7c7f2a4a84a5b113e85bf4837582b3f0
+  00_ROOT_SPEC.md: 7e0a1f8ebc6a67a7e1f9de39565734ed
+  01_TECHNICAL_UST_CANON.md: 4c338273049d8fc2afcf9d2dba2c0c3d
+  02_CREATIVE_UST_TEMPLATE.md: 7403037d304d449118af6694deebee41
   03_PHASE_CHAIN.md: 13a49f07e9cb65267a96997e93de9437
-  04_COUNCIL_TOPOLOGY.md: 424dabbc36f085e22da0e75b9c27a8f6
+  04_COUNCIL_TOPOLOGY.md: 36477309696dc82950f8cc167202c740
   05_GOVERNANCE_SEG.md: 63f1fcc958e576464459b14ed43c5e86
   06_RUNTIME_RULES.md: 174403a8bd3e6ff0db0f198756e2271d
-  07_ADDRESS_REGISTRY.md: 89ee2a806f174e4aac45ca92eb94f47c
+  07_ADDRESS_REGISTRY.md: bf09626bab089cd170a2630abfe49f08
   08_PORTABILITY_ATP.md: e53ffd00161795e827d301ba54f6c378
   09_LOGS_AND_CONTINUATION.md: 3763a80899aabec642409855230e0ed8
-  10_TEST_PLAN.md: bd557fc9af342beb19db4af17d98b30b
-  SCOPE_CORRECTION_v0_4.md: cf7d6f4de88cbd33a09442c1056192da
-  STRATA_MIGRATION_MAP.md: 897dab7379ffc0ced27f56841d66bf79
-  build/build_maestro_current.py: 051e2d02bd300aee3bc07313d6dfaa3c
+  10_TEST_PLAN.md: 6dc699211db99facc30d7d4a5761945c
+  SCOPE_CORRECTION_v0_4.md: 211f0fdcf1ba1d0a98235c75f36e0ea4
+  STRATA_MIGRATION_MAP.md: 651721b1ee1e7b720409bd9eb11e8489
+  build/build_maestro_current.py: 221d5a7dbe00880a58924589b5f4341a
   build/cap_validator.py: 0a947ef11a09a89f7ef49f86e86b521e
-  build/compile_current.py: 966115ad2b0071979023204cc7be0473
+  build/compile_current.py: 70befaf0b9dded069faa4cfbdde3182e
   build/lyric_lock_check.py: cce5b6348f063996bf6881169af8d842
-  build/manifest_meta.yaml: 163fec2ea25c3dd7b9af4d984bc5eecd
-  build/templates/00_ROOT_SPEC.md: ac4db6b7db896ff58338328a4383054a
-  build/templates/01_TECHNICAL_UST_CANON.md: 5608cd1c18218bbcbcf0bf5d3f19e52c
-  build/templates/02_CREATIVE_UST_TEMPLATE.md: 7c7f2a4a84a5b113e85bf4837582b3f0
+  build/manifest_meta.yaml: 7584c805051b911125b5669ea223f1aa
+  build/report_templates/BUILD_REGENERATION_REPORT.yaml: 33a8f37832c863167c1add4c6099728c
+  build/report_templates/DEPENDENCY_CLOSURE_REPORT.yaml: a183034f1f8bdb55f16120695280b384
+  build/report_templates/OMISSION_AUDIT.yaml: 1fc0ee70254f149d3bf7700f7c6f6649
+  build/templates/00_ROOT_SPEC.md: 7e0a1f8ebc6a67a7e1f9de39565734ed
+  build/templates/01_TECHNICAL_UST_CANON.md: 4c338273049d8fc2afcf9d2dba2c0c3d
+  build/templates/02_CREATIVE_UST_TEMPLATE.md: 7403037d304d449118af6694deebee41
   build/templates/03_PHASE_CHAIN.md: 13a49f07e9cb65267a96997e93de9437
-  build/templates/04_COUNCIL_TOPOLOGY.md: 424dabbc36f085e22da0e75b9c27a8f6
+  build/templates/04_COUNCIL_TOPOLOGY.md: 36477309696dc82950f8cc167202c740
   build/templates/05_GOVERNANCE_SEG.md: 63f1fcc958e576464459b14ed43c5e86
   build/templates/06_RUNTIME_RULES.md: 174403a8bd3e6ff0db0f198756e2271d
-  build/templates/07_ADDRESS_REGISTRY.md: 89ee2a806f174e4aac45ca92eb94f47c
+  build/templates/07_ADDRESS_REGISTRY.md: bf09626bab089cd170a2630abfe49f08
   build/templates/08_PORTABILITY_ATP.md: e53ffd00161795e827d301ba54f6c378
   build/templates/09_LOGS_AND_CONTINUATION.md: 3763a80899aabec642409855230e0ed8
-  build/templates/10_TEST_PLAN.md: bd557fc9af342beb19db4af17d98b30b
-  build/templates/SCOPE_CORRECTION_v0_4.md: cf7d6f4de88cbd33a09442c1056192da
-  build/templates/STRATA_MIGRATION_MAP.md: 897dab7379ffc0ced27f56841d66bf79
-  build/test_promotion.py: 3ad007372ace65bc18b6d25225c23621
-  build/validate_bundle.py: f3c8f8579aab71571abd2d9fe010873b
-  compiled/BUILD_REGENERATION_REPORT.yaml: 567fffb207b739ec9b1909fcb4f73fcd
-  compiled/DEPENDENCY_CLOSURE_REPORT.yaml: 8b482bf5ba5b5ffae43e3cf7018e23d9
-  compiled/FULL_CANON_COVERAGE_MATRIX.yaml: 372369d8c2d53599e9c0445ab2764ed4
-  compiled/OMISSION_AUDIT.yaml: 27c579d7556fe80120abb8a87bdaf839
-  compiled/TECHNICAL_UST_ADDRESS_MIGRATION.yaml: 37ae7d2e89a971f801d4f9d2f2c0e348
-  compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md: 5d275fbfee738d475e97281b7d837bfd
+  build/templates/10_TEST_PLAN.md: 6dc699211db99facc30d7d4a5761945c
+  build/templates/SCOPE_CORRECTION_v0_4.md: 211f0fdcf1ba1d0a98235c75f36e0ea4
+  build/templates/STRATA_MIGRATION_MAP.md: 651721b1ee1e7b720409bd9eb11e8489
+  build/test_promotion.py: 849d2e0f792847128e1e302fb847b19e
+  build/validate_bundle.py: 28fe822a630605d6a260f5efb29c036e
+  compiled/BUILD_REGENERATION_REPORT.yaml: 33a8f37832c863167c1add4c6099728c
+  compiled/DEPENDENCY_CLOSURE_REPORT.yaml: a183034f1f8bdb55f16120695280b384
+  compiled/FULL_CANON_COVERAGE_MATRIX.yaml: 3c07ae66825e1b5917c60baa8ac3f42a
+  compiled/OMISSION_AUDIT.yaml: 1fc0ee70254f149d3bf7700f7c6f6649
+  compiled/TECHNICAL_UST_ADDRESS_MIGRATION.yaml: 8fdbb3cab7209fedeeb19ba298e70d75
+  compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md: 96d46f02453ff95b3e773379544d3f78
   fixture/dryrun_project.md: 755bbdb1716c7db3ea699675cdff98e0
