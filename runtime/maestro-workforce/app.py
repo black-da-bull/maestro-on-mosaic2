@@ -16,8 +16,7 @@ import technical_ust_runtime as technical_ust
 import workforce_runtime as workforce
 
 ROOT = Path(__file__).resolve().parent
-REPO_ROOT = ROOT.parents[1]
-APP_ROOT = REPO_ROOT / "apps" / "maestro-browser-mvp"
+APP_ROOT = ROOT / "public"
 
 ADAPTER_VERSION = "suno-adherence-v1"
 ADHERENCE_MATRIX = {
@@ -106,7 +105,7 @@ def _runtime_addresses():
 
 def _static_file(path: str):
     rel = "index.html" if path == "/" else path.lstrip("/")
-    if rel not in {"index.html", "app.js", "styles.css"}:
+    if rel not in {"index.html"}:
         return None
     target = APP_ROOT / rel
     if not target.exists():
