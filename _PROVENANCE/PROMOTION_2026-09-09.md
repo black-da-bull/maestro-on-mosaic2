@@ -100,3 +100,12 @@ Runtime source and historical transcript/artifact/code/source trees have empty d
 Persistence is established by this record's containing commit and the checkpoint refs;
 remote CI/merge status is established by GitHub, not assumed by this pre-commit receipt.
 Continuation: CONTINUATION_2026-09-09.md. No next-phase development executed.
+
+
+## Final live repository reconciliation
+After committing the validated source repair, live GitHub metadata showed that PR #10 was
+closed/unmerged and PR #15 now carries the P1 evidence work as an open draft. Its updated
+scope preserves broad renderer-instruction response evidence and separates exact B3 identity.
+The current handoff is corrected accordingly, without promoting that draft or beginning P1.
+PR #17 CI passed at repair commit 21f864e7030b3707a09c5b81f9f1c05bcfd19fa0; later
+navigation-only changes leave all validated bundle and runtime bytes unchanged.

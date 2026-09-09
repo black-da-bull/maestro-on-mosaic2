@@ -162,3 +162,12 @@ O-19/O-20 inactive. O-03/O-13 remain closed; Q1–Q16 phantom. O-04/O-05/O-12/B3
 retain their prior scope and evidence status. No new blocker or experiment result is invented.
 Current continuation: CONTINUATION_2026-09-09.md; checks: promotion_2026-09-09/VALIDATION.json.
 This integration window stops before P1 development.
+
+
+## Final live-navigation correction — 2026-09-09
+GitHub shows PR #10 closed without merge; its P1 successor is open draft PR #15 at
+9a68a6a4a97321a2decced55767ee0b318948913. The draft preserves broader renderer-response
+evidence and separates exact B3/Leslie identity as a narrower probe. This navigation repair
+does not reopen general adherence evidence, accept draft results as canon, or run an experiment.
+PRs #14/#16 are separate browser drafts; #12 is a tooling draft. None is merged by this run.
+This supersedes the earlier PR #10-next instructions. REMOTE_STATE.json records live evidence.

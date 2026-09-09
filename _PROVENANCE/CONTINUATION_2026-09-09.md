@@ -74,7 +74,10 @@ are tracked separately from historical sources in the impact record.
 - O-04: provenance/session attribution only.
 - O-05: forensic replay required; not performed in this integration window.
 - O-12: original Run It To Me visual-asset preservation; unaffected by Poster 2 Deux media.
-- B3/Leslie: PR #10 remains a candidate, not an accepted audible result.
+- P1 evidence: PR #10 is closed/unmerged; PR #15 is the current open draft successor
+  (`9a68a6a4a97321a2decced55767ee0b318948913` at final live check). It preserves broader
+  renderer-response evidence; exact B3/Leslie identity remains a separate semantic probe.
+  This promotion does not merge or elevate that draft's empirical findings into canon.
 - Seedance: musical-fit experiment still required.
 - Other separately scoped obligations are not silently closed by this packet.
 
@@ -89,10 +92,16 @@ evaluation was performed and no media was copied to the public repository.
 
 ## Next lawful action — separate development window
 
-Resume the existing PR #10 B3/Leslie evidence-recovery step when development resumes.
-Check preserved B3-specific audio, render IDs and listening evidence before requiring
-fresh controlled comparisons. Do not restart completed promotion/P0 or promote an
-unscored candidate. O-05 follows in its recorded scope; O-12/Seedance remain P2.
+Resume from PR #15's preserved P1 evidence when development resumes; PR #10 is closed
+and superseded. Its updated scope separates general renderer-instruction uptake from
+exact B3/Leslie identity, and treats fixed/follow/strict exports as analysis views rather
+than independent generations. Check the actual candidate artifacts before selecting any
+remaining comparison; do not recreate already-preserved evidence or demote broader findings
+because exact instrument identity remains open. No empirical finding is promoted here.
+Browser work is separately staged in draft PRs #14/#16, with #16 connecting the browser to
+the existing runtime; neither is merged by this promotion. PR #12 is a separate tooling draft.
+Do not restart completed promotion/P0. O-05 and P2 retain their separately recorded scopes.
+Live PR metadata is preserved in promotion_2026-09-09/REMOTE_STATE.json.
 
 Reproduce this promotion from repository root:
 

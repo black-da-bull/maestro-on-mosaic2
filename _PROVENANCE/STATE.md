@@ -17,8 +17,9 @@ Local verification: 37 promotion checks; two identical source compiles; two iden
 44-file rebuilds; bundle/workforce validators and existing golden fixture PASS. Proof is
 bounded to deterministic code paths, not autonomous model execution or rendered musical quality.
 
-Prior promotion and P0 are already merged. P1/B3 remains a candidate without an accepted
-audible result. O-04 provenance, O-05 replay, O-12 original assets and Seedance experiment
+Prior promotion and P0 are already merged. PR #10 is closed/unmerged; P1 evidence continues
+in draft PR #15. Broader renderer-response findings are preserved there; exact B3 identity
+is a separate unresolved probe. Draft empirical findings are not promoted by this run. O-04 provenance, O-05 replay, O-12 original assets and Seedance experiment
 retain their recorded scopes. No new development or whole-corpus audit ran here.
 
 This entry supersedes current navigation and the incorrect Technical MAP-removal interpretation
