@@ -105,14 +105,14 @@
       "path": "maestro-current/10_TEST_PLAN.md",
       "layer": "generated_or_packaged_member",
       "before_sha256": "b356388406e70d2780546093eb695d9d5dd0dc6044455cf74543882a89feb46f",
-      "after_sha256": "72b8313086311fb870cec4c9a8ba365486c60b0617ed5ba78e47780c2f1bb6c8",
+      "after_sha256": "1ac7367f5058f2f4200a4b582bf3a6d65ae43c7b185ebae8c280811cf1dd5bfd",
       "disposition": "regenerated"
     },
     {
       "path": "maestro-current/MANIFEST.yaml",
       "layer": "generated_or_packaged_member",
       "before_sha256": "2c0b5f353009e1bcfe84b59c3da7afa3af0b7f28672eeff094f243ce4290bc22",
-      "after_sha256": "6bd28fea647d759468bd9e4acb528503641873b22c8be44a544820872d20cebc",
+      "after_sha256": "85b3f1623398250d5922fcd3523aaeb36e7b40e0bbec242b05e7232163aba213",
       "disposition": "regenerated"
     },
     {
@@ -133,7 +133,7 @@
       "path": "maestro-current/build/build_maestro_current.py",
       "layer": "authoritative_source",
       "before_sha256": "148cacd4ac7128123d391684d5875d44efda60b14caabbe63f23e5168cf56a88",
-      "after_sha256": "5d285b75713f2a3a40e82c35bccb341d15544691ea198c62f1d2ae42b60ded43",
+      "after_sha256": "82ab11074212ea178e0614dcb73b518ff3aaa785b4ae425c63a3c8098806f88a",
       "disposition": "source_repaired_or_added"
     },
     {
@@ -161,14 +161,14 @@
       "path": "maestro-current/build/manifest_meta.yaml",
       "layer": "authoritative_source",
       "before_sha256": "cd8912b5823b22073ade8e7af3e1b6bc63a48c29a1f6755eb8d1b3a8a6abd8d4",
-      "after_sha256": "c35cf43d297c3fa46fbe4bfdefe641fad2ecc4f5afbbd5708a334692f6961d02",
+      "after_sha256": "b77b3db83909030d892afd0ff363905afb660e71afc2a05378d265706418b1f1",
       "disposition": "source_repaired_or_added"
     },
     {
       "path": "maestro-current/build/report_templates/BUILD_REGENERATION_REPORT.yaml",
       "layer": "authoritative_source",
       "before_sha256": null,
-      "after_sha256": "2326e25f4869ae783c1024ae90d7e1062660825ce9c5cadb20167f134371b3bc",
+      "after_sha256": "bbf0e1504aacf5547ce67b637da33988b763f2b95d57a2eeff340013c18a16d7",
       "disposition": "source_repaired_or_added"
     },
     {
@@ -259,7 +259,7 @@
       "path": "maestro-current/build/templates/10_TEST_PLAN.md",
       "layer": "authoritative_source",
       "before_sha256": "b356388406e70d2780546093eb695d9d5dd0dc6044455cf74543882a89feb46f",
-      "after_sha256": "72b8313086311fb870cec4c9a8ba365486c60b0617ed5ba78e47780c2f1bb6c8",
+      "after_sha256": "1ac7367f5058f2f4200a4b582bf3a6d65ae43c7b185ebae8c280811cf1dd5bfd",
       "disposition": "source_repaired_or_added"
     },
     {
@@ -294,7 +294,7 @@
       "path": "maestro-current/compiled/BUILD_REGENERATION_REPORT.yaml",
       "layer": "generated_or_packaged_member",
       "before_sha256": "7253ae65cacaa20a606c974620dd16e54be101cdf4683f3d90779b0755b0f7e2",
-      "after_sha256": "2326e25f4869ae783c1024ae90d7e1062660825ce9c5cadb20167f134371b3bc",
+      "after_sha256": "bbf0e1504aacf5547ce67b637da33988b763f2b95d57a2eeff340013c18a16d7",
       "disposition": "regenerated"
     },
     {
@@ -400,5 +400,9 @@
     "maestro-current/compiled/OMISSION_AUDIT.yaml",
     "maestro-current/compiled/TECHNICAL_UST_ADDRESS_MIGRATION.yaml",
     "maestro-current/compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md"
+  ],
+  "review_repairs": [
+    "complete builder compiles hash-pinned source before output creation",
+    "fixed allowlisted in-process validation scripts; no new runner subprocess construction"
   ]
 }

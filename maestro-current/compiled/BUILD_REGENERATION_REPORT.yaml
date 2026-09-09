@@ -5,7 +5,9 @@ A9b_derivation: >-
   and emits topology, identity migration and coverage artifacts deterministically.
 A9a_packaging: >-
   build_maestro_current.py regenerates numbered/current documents from authoritative
-  templates, packages build/compiled/fixture members and derives the manifest hashes.
+  templates, recompiles topology from the hash-pinned source, regenerates report templates,
+  packages build/fixture members and derives the manifest hashes. Missing or changed
+  Technical source fails before output creation.
 verification: >-
   Run both commands twice into clean directories and compare all bytes. Test outcomes
   are recorded in _PROVENANCE/promotion_2026-09-09/VALIDATION.json; no stored timestamp

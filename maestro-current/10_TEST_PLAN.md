@@ -32,3 +32,8 @@ Integration parity: compare compiled axes/key/subkey identities with the embedde
 and every explicitly bound runtime overlay address. Reject MAP-to-PER renaming and Creative
 Road-Map leakage even if manifest hashes are recomputed. Run the existing P0 golden fixture;
 this promotion repairs compiler alignment, not worker behavior.
+
+The complete builder recompiles the hash-pinned Technical source itself; it never treats stored
+topology as proof of freshness. Missing/modified source fails before emitting a bundle.
+For a standalone source bundle, pass the explicit Technical source as the third argument after
+OUTDIR and SRCDIR. The standalone bundle validator remains usable without historical source files.

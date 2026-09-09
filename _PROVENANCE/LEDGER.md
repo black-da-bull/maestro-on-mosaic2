@@ -330,7 +330,7 @@ Applied: authoritative compiler/templates/report inputs/metadata, downstream gen
 validator/regressions, CI trigger/integration check, STATE/OPEN/current continuation.
 Rung: repaired source + generated artifacts + executable local validation; persistence evidenced
 by containing commit and checkpoint refs. Existing P0 runtime verified unchanged; no LLM or
-renderer-quality enforcement claim. 37 promotion checks; 28 integration checks; two source
+renderer-quality enforcement claim. 37 promotion checks; 31 integration checks; two source
 compiles and two clean 44-file rebuilds byte-identical; existing golden fixture PASS.
 Evidence: promotion_2026-09-09/BASELINE_AND_SOURCE_REVIEW.json, IMPACT.json, VALIDATION.json.
 Boundary: no P1/P2 development. DEC-PROMO-01–13 retained and checked; historical bytes preserved.

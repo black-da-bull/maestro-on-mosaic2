@@ -46,6 +46,6 @@ source_imports:
       as the nulls are replaced. The earlier competing-stratum/O-18 framing is withdrawn; the
       recovered target set is closed per DEC-PROMO-14/15; chronological overlays remain distinct.
 builders:
-  A9a_packager: build/build_maestro_current.py (v2 — regenerates the FULL member set + this manifest)
+  A9a_packager: build/build_maestro_current.py (source-compiling packager; regenerates FULL member set + manifest)
   A9b_source_delta_compiler: build/compile_current.py (hash-verified input; fails closed on unmapped address)
   validator: build/validate_bundle.py (v3 — scoped SEM configuration/policy oracle + recursive parse + actual hashes)

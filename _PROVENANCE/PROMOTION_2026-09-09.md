@@ -94,7 +94,7 @@ and enforcement outcomes separately. P1/B3/O-05 and P2/O-12/Seedance remain down
 ## Application outcome — append-only close
 DEC-PROMO-16 and the remaining DEC-PROMO-14/15 source propagation are applied. All 44 bundle
 members are regenerated or verified without change. VALIDATION.json records 37 promotion
-regressions, 28 integration checks, 40 explicitly bound runtime addresses, two identical source
+regressions, 31 integration checks, 40 explicitly bound runtime addresses, two identical source
 compiles and two identical clean full rebuilds. Existing workforce/golden validators pass.
 Runtime source and historical transcript/artifact/code/source trees have empty diffs.
 Persistence is established by this record's containing commit and the checkpoint refs;
@@ -109,3 +109,14 @@ scope preserves broad renderer-instruction response evidence and separates exact
 The current handoff is corrected accordingly, without promoting that draft or beginning P1.
 PR #17 CI passed at repair commit 21f864e7030b3707a09c5b81f9f1c05bcfd19fa0; later
 navigation-only changes leave all validated bundle and runtime bytes unchanged.
+
+
+## Review repair — source freshness enforced by the builder
+PR #17 review identified that packaging alone could copy stale compiled topology if the
+separate integration check were skipped. The builder now invokes the hash-pinned compiler
+itself before creating its output; missing/changed source fails closed. Added three regression
+checks for those failure paths, bringing integration checks to 31. Re-executed both source
+compiles, both full rebuilds and all runtime/regression checks after this repair: PASS.
+The new validation runner executes only its fixed allowlisted repository scripts in-process,
+removing its two dynamic subprocess sites flagged by the automated review. Existing runtime
+code is unchanged. Report inputs/templates and manifest regenerated after this source change.

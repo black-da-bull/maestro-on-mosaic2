@@ -35,7 +35,7 @@ The older Technical MAP-to-PER interpretation is superseded, not erased from his
 
 ## Executed and generated
 
-Repaired compiler, authoritative templates, report sources, manifest metadata, validator,
+Repaired compiler, source-compiling bundle builder, authoritative templates, report sources, manifest metadata, validator,
 regression tests and CI integration path. Regenerated all current bundle members from
 those sources; generated status reports now have explicit `build/report_templates` inputs.
 Current ownership is the already-merged P0 overlay. Inherited role/seat tables are marked
@@ -47,13 +47,14 @@ Validation passed:
   Creative Roadmap leakage independently of manifest hashes.
 - Two independent source compilations: identical outputs and zero address omissions
   relative to the pinned source. A changed predecessor fails before emitting outputs.
+  The bundle builder also rejects missing/changed source before creating a bundle.
 - Two clean complete rebuilds: all 44 bundle files byte-identical to one another and
   the checked-in candidate, including the regenerated manifest.
 - Bundle validator and existing integrated 13-worker validator pass.
 - Existing P0 golden fixture passes: dispatch, dependency reopening, lawful peer blocking,
   locked lyrics and MAP.K3 reference propagation.
 - All 40 explicitly bound runtime addresses checked against compiled canon; every hard
-  dependency endpoint resolves. Integration script reports 28 passing checks.
+  dependency endpoint resolves. Integration script reports 31 passing checks.
 
 ## Runtime-enforced scope
 
