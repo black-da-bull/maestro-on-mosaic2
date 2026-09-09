@@ -4,13 +4,16 @@ on:
   pull_request:
     paths:
       - 'runtime/maestro-workforce/**'
+      - 'apps/maestro-browser-mvp/**'
       - '.github/workflows/p0-golden-structural-interpretation.yml'
   push:
     branches:
       - main
       - p0-3-golden-structural-interpretation-2026-09-07
+      - integration/browser-runtime-feedback-2026-09-08
     paths:
       - 'runtime/maestro-workforce/**'
+      - 'apps/maestro-browser-mvp/**'
       - '.github/workflows/p0-golden-structural-interpretation.yml'
 
 jobs:
@@ -29,3 +32,7 @@ jobs:
         run: python runtime/maestro-workforce/golden_structural_interpretation_fixture.py | tee /tmp/p0-golden.json
       - name: Assert fixture PASS
         run: python -c "import json; d=json.load(open('/tmp/p0-golden.json')); assert d['passed'] is True"
+      - name: Run creator-facing MVP contract fixture
+        run: python runtime/maestro-workforce/mvp_contract_fixture.py | tee /tmp/mvp-contract.json
+      - name: Assert MVP contract PASS
+        run: python -c "import json; d=json.load(open('/tmp/mvp-contract.json')); assert d['passed'] is True"
