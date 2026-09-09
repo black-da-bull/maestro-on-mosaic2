@@ -151,3 +151,14 @@ DEC-PROMO-14/15 retain authority: O16E closed for recovered target set; O-19/O-2
 PR #10 remains an open B3/Leslie calibration draft, not a result. Its protocol calls for checking existing specific render/listening evidence before fresh comparisons. This is an experiment-evidence gap, not an inherited promotion blocker. No new blocker ID or audit requirement is created.
 
 Current next-work pointer and bounded validation receipts: CONTINUATION_2026-09-08.md and resume_2026-09-08/EVIDENCE.json. All earlier issue history is retained.
+
+
+## Integration/promotion close — 2026-09-09
+DEC-PROMO-16 corrects the Technical/Creative Roadmap layer mismatch: Technical MAP retained;
+Creative Road-Map omitted. Compiler, source/templates, derived bundle and validator repaired;
+existing P0 runtime verified unchanged. This is a repaired propagation defect, not a new open item.
+DEC-PROMO-14/15 is propagated into current sources; O16E closed for recovered target set;
+O-19/O-20 inactive. O-03/O-13 remain closed; Q1–Q16 phantom. O-04/O-05/O-12/B3/Seedance
+retain their prior scope and evidence status. No new blocker or experiment result is invented.
+Current continuation: CONTINUATION_2026-09-09.md; checks: promotion_2026-09-09/VALIDATION.json.
+This integration window stops before P1 development.

@@ -1,26 +1,28 @@
 # Deterministic MANIFEST metadata — consumed by build_maestro_current.py (v2)
 # Every field here is emitted verbatim into MANIFEST.yaml ahead of the computed files map.
 product: maestro-current
-version: v0.6-promotion-2026-09-06
-work_item: PROMOTION.2026-09-06 (DEC-PROMO-01–13; scoped threshold repair)
-date: '2026-09-06'
+version: v0.7-promotion-2026-09-09
+work_item: PROMOTION.2026-09-09 (DEC-PROMO-14/15 propagation; DEC-PROMO-16 Technical MAP)
+date: '2026-09-09'
 class: >-
-  CONTROLLED CORRECTION CANDIDATE; operator-accepted DEC-PROMO-01–13 applied.
-  Promotion validation recorded separately; broader O16E and production runtime not claimed complete.
+  CONTROLLED INTEGRATION; accepted DEC-PROMO-01–16 applied at their respective layers.
+  Recovery target set closed; P0 merged; validation and persistence recorded separately.
+  No autonomous model or renderer-quality claim.
 self_contained: >-
-  every member required to interpret/validate current behavior is listed in the files map;
-  inventory completeness is machine-checked (validator A11)
+  every packaged member required for local bundle validation is listed in the files map;
+  inventory completeness is machine-checked (validator A11). Source recompilation and
+  runtime parity require repository dependencies declared in DEPENDENCY_CLOSURE_REPORT.yaml
 inventory_classes:
   runtime_docs: 00-10 numbered docs + STRATA_MIGRATION_MAP.md + SCOPE_CORRECTION_v0_4.md (13; regenerated from build/templates, byte-identical)
-  build_tools: build/*.py + build/manifest_meta.yaml + build/templates/* (packaged verbatim)
-  compiled: compiled/* (A9b topology derivations + validation reports; BUILD_REGENERATION_REPORT records A9 runs)
+  build_tools: build/*.py + build/manifest_meta.yaml + build/templates/* + build/report_templates/* (packaged verbatim)
+  compiled: compiled/* (A9b topology derivations; other reports regenerated from build/report_templates)
   fixture: fixture/dryrun_project.md
 source_imports:
   technical_topology:
     source: artifacts/D-Maestro/Maestro/technical.ust.template.txt
     md5: eaf18e1101c7a5814850fe0c62743b3a
     result: >-
-      33 keys / 165 subkeys / 7 axes, 24 MAP->PER migrations, 0 omissions RELATIVE TO THIS
+      33 keys / 165 subkeys / 8 axes, 198 identity addresses, 0 omissions RELATIVE TO THIS
       SOURCE (scope per SCOPE_CORRECTION_v0_4)
   creative_shell:
     source: artifacts/HYDRA/creative_ust_canonical_shell.md
@@ -42,7 +44,7 @@ source_imports:
       DEC-27 (ROOT): the v5b Technical UST canon and its governance addendum are ONE UNIT — the
       Technical UST plus the record of how quality/governance tie directly into decision-making
       as the nulls are replaced. The earlier competing-stratum/O-18 framing is withdrawn; the
-      residual cross-era chronology question (Chimera-era template <-> v5b unit) rides O16E.
+      recovered target set is closed per DEC-PROMO-14/15; chronological overlays remain distinct.
 builders:
   A9a_packager: build/build_maestro_current.py (v2 — regenerates the FULL member set + this manifest)
   A9b_source_delta_compiler: build/compile_current.py (hash-verified input; fails closed on unmapped address)

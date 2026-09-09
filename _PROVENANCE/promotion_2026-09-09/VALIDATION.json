@@ -1,0 +1,202 @@
+{
+  "scope": "source-to-bundle identity and existing deterministic runtime; no audible or LLM execution claim",
+  "checks": [
+    {
+      "name": "compiled axes match existing runtime axes",
+      "passed": true
+    },
+    {
+      "name": "every explicitly bound runtime address exists in compiled canon",
+      "passed": true
+    },
+    {
+      "name": "dependency endpoint exists: THY",
+      "passed": true
+    },
+    {
+      "name": "dependency endpoint exists: MAP.K3",
+      "passed": true
+    },
+    {
+      "name": "dependency endpoint exists: VOC",
+      "passed": true
+    },
+    {
+      "name": "dependency endpoint exists: MAP.K3",
+      "passed": true
+    },
+    {
+      "name": "dependency endpoint exists: TIM",
+      "passed": true
+    },
+    {
+      "name": "dependency endpoint exists: MAP.K3",
+      "passed": true
+    },
+    {
+      "name": "dependency endpoint exists: PER",
+      "passed": true
+    },
+    {
+      "name": "dependency endpoint exists: MAP.K3",
+      "passed": true
+    },
+    {
+      "name": "dependency endpoint exists: POST",
+      "passed": true
+    },
+    {
+      "name": "dependency endpoint exists: MAP.K3",
+      "passed": true
+    },
+    {
+      "name": "source compiler run 1",
+      "passed": true
+    },
+    {
+      "name": "source-derived topology run 1 equals checked-in output",
+      "passed": true
+    },
+    {
+      "name": "source compiler run 2",
+      "passed": true
+    },
+    {
+      "name": "source-derived topology run 2 equals checked-in output",
+      "passed": true
+    },
+    {
+      "name": "independent source compiles byte-identical",
+      "passed": true
+    },
+    {
+      "name": "changed predecessor fails hash gate",
+      "passed": true
+    },
+    {
+      "name": "failed source emits no artifacts",
+      "passed": true
+    },
+    {
+      "name": "full clean rebuild 1",
+      "passed": true
+    },
+    {
+      "name": "full clean rebuild 1 equals checked-in bundle",
+      "passed": true
+    },
+    {
+      "name": "full clean rebuild 2",
+      "passed": true
+    },
+    {
+      "name": "full clean rebuild 2 equals checked-in bundle",
+      "passed": true
+    },
+    {
+      "name": "independent complete bundles byte-identical",
+      "passed": true
+    },
+    {
+      "name": "command passed: maestro-current/build/validate_bundle.py",
+      "passed": true
+    },
+    {
+      "name": "command passed: maestro-current/build/test_promotion.py",
+      "passed": true
+    },
+    {
+      "name": "command passed: runtime/maestro-workforce/validate_workforce.py",
+      "passed": true
+    },
+    {
+      "name": "command passed: runtime/maestro-workforce/golden_structural_interpretation_fixture.py",
+      "passed": true
+    }
+  ],
+  "bundle_files": 44,
+  "commands": [
+    {
+      "argv": [
+        "maestro-current/build/validate_bundle.py",
+        "maestro-current"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "maestro-current/build/test_promotion.py",
+        "maestro-current"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 37 promotion checks\n  PASS run-local 76.8 does not meet its explicit target\n  PASS numeric success is not an overall SEG release\n  PASS explicit alternate fixture boundary\n  PASS reject missing threshold\n  PASS reject missing scope\n  PASS reject missing context_ref\n  PASS reject missing authority_ref\n  PASS reject invalid scope'global'\n  PASS reject invalid scope'universal'\n  PASS reject invalid thresholdnan\n  PASS reject invalid thresholdinf\n  PASS reject invalid thresholdTrue\n  PASS reject invalid threshold101\n  PASS reject invalid authority_ref''\n  PASS reject invalid context_ref' '\n  PASS reject bad score nan\n  PASS reject bad score inf\n  PASS reject bad score -1\n  PASS reject bad score 6\n  PASS reject bad score True\n  PASS reject unscored criterion\n  PASS policy required\n  PASS bundle passes\n  PASS actual hash tamper rejected\n  PASS global floor regression rejected semantically\n  PASS lyric spacing\n  PASS lyric edit\n  PASS lyric reorder\n  PASS lyric delete duplicate\n  PASS Creative is derived from locked Technical\n  PASS lock precedes reverse compilation\n  PASS 13 audio workers and separate visual module\n  PASS phantom not requirement\n  PASS Technical MAP and Creative omission are consistent\n  PASS Creative Roadmap leak rejected without relying on hashes\n  PASS Technical address renaming rejected without relying on hashes\n  PASS Technical MAP registry omission rejected\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "runtime/maestro-workforce/validate_workforce.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 13 bounded audio workers + ownership/dependency integration + P0.3 golden fixture clean\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "runtime/maestro-workforce/golden_structural_interpretation_fixture.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"event_log\": [\n    {\n      \"address\": \"THY.K3.S2\",\n      \"after\": 78,\n      \"before\": 72,\n      \"event\": \"change_applied\",\n      \"impacts\": [\n        {\n          \"from\": \"THY\",\n          \"kind\": \"hard_schema\",\n          \"relation\": \"section_reference_map\",\n          \"target\": \"MAP.K3\"\n        },\n        {\n          \"from\": \"THY.K3.S2\",\n          \"kind\": \"map_k3_reference\",\n          \"references\": [\n            \"THY.K3.S2\"\n          ],\n          \"relation\": \"referenced_upstream_address_changed\",\n          \"target\": \"MAP.K3.S1@Chorus\"\n        },\n        {\n          \"effect\": null,\n          \"from\": \"THY.K3\",\n          \"kind\": \"labor_review\",\n          \"owner_to\": null,\n          \"relation\": \"rhythmic_grid_to_word_subdivision_viability\",\n          \"reviewer_to\": \"MAESTRO.AUDIO.07.SAGE\",\n          \"reviewers_to\": [],\n          \"target\": \"LYR.K4\"\n        }\n      ],\n      \"worker_id\": \"MAESTRO.AUDIO.09.DAVE\"\n    },\n    {\n      \"address\": \"LYR.K4.S1\",\n      \"event\": \"lyric_mutation_blocked\",\n      \"reason\": \"lyrics_locked\",\n      \"worker_id\": \"MAESTRO.AUDIO.07.SAGE\"\n    },\n    {\n      \"address\": \"PER.K2\",\n      \"after\": \"more aggressive forward-push execution\",\n      \"before\": \"straight pocket with restrained drag\",\n      \"event\": \"change_applied\",\n      \"impacts\": [\n        {\n          \"from\": \"PER\",\n          \"kind\": \"hard_schema\",\n          \"relation\": \"section_reference_map\",\n          \"target\": \"MAP.K3\"\n        },\n        {\n          \"effect\": \"pocket changes require cadence_line_fit_review_and_never_authorize_lyric_mutation\",\n          \"from\": \"PER\",\n          \"kind\": \"labor_review\",\n          \"owner_to\": \"MAESTRO.AUDIO.07.SAGE\",\n          \"relation\": \"pocket_to_cadence_viability\",\n          \"reviewer_to\": null,\n          \"reviewers_to\": [],\n          \"target\": \"LYR\"\n        }\n      ],\n      \"worker_id\": \"MAESTRO.AUDIO.10.VANESSA\"\n    },\n    {\n      \"address\": \"PER.K2\",\n      \"blocking\": true,\n      \"event\": \"peer_objection_raised\",\n      \"reason\": \"the push destroys the intended pocket and cadence usability\",\n      \"worker_id\": \"MAESTRO.AUDIO.09.DAVE\"\n    },\n    {\n      \"address\": \"PER.K2\",\n      \"blockers\": [\n        \"MAESTRO.AUDIO.09.DAVE\"\n      ],\n      \"event\": \"finalize_blocked\"\n    }\n  ],\n  \"fixture\": \"P0.3.golden_structural_interpretation\",\n  \"passed\": true,\n  \"proofs\": {\n    \"dependency_propagation\": {\n      \"changed\": \"THY.K3.S2\",\n      \"pass\": true,\n      \"reopened\": [\n        \"LYR.K4\"\n      ]\n    },\n    \"dispatch\": {\n      \"address\": \"THY.K3.S2\",\n      \"pass\": true,\n      \"required_reviewers\": [\n        \"MAESTRO.AUDIO.05.METRO\",\n        \"MAESTRO.AUDIO.13.ELDRIK\"\n      ],\n      \"worker_id\": \"MAESTRO.AUDIO.09.DAVE\"\n    },\n    \"lyric_lock\": {\n      \"address\": \"LYR.K4.S1\",\n      \"operator_authorization\": false,\n      \"pass\": true,\n      \"unchanged\": true\n    },\n    \"map_k3_reference_propagation\": {\n      \"changed\": \"THY.K3.S2\",\n      \"pass\": true,\n      \"reference\": \"MAP.K3.S1@Chorus\",\n      \"references\": [\n        \"THY.K3.S2\"\n      ]\n    },\n    \"peer_authority_blocking\": {\n      \"address\": \"PER.K2\",\n      \"blocking_peer\": \"MAESTRO.AUDIO.09.DAVE\",\n      \"final_status\": \"changed_pending_review\",\n      \"pass\": true,\n      \"primary_owner\": \"MAESTRO.AUDIO.10.VANESSA\"\n    }\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "runtime_bound_addresses_checked": 40,
+  "bundle_sha256": {
+    "00_ROOT_SPEC.md": "4ffb8c65ecd4f502bd7d77b55e9305da349f36a19566581a131167297639c535",
+    "01_TECHNICAL_UST_CANON.md": "77ac58de9171a51b0d4deb06116a9079644de107baea76e35863c3e79e7d3ee8",
+    "02_CREATIVE_UST_TEMPLATE.md": "8ddcc25ec11a3bbc925afd4d70c3204d70558a12dd6607cd1f4105f18021aed5",
+    "03_PHASE_CHAIN.md": "2be39d7736734668d21f9c8f5511d33972c04fdae2f080dd893fedb0ab8d28a8",
+    "04_COUNCIL_TOPOLOGY.md": "13c844478898fa2e7ca5aa3dd37aaa72a3fddbc7052c676e963cdbcad8a899cf",
+    "05_GOVERNANCE_SEG.md": "fd3ee10bd52d557fd563a031efbd922f7455e2868316e4b6fe10487000aec5c1",
+    "06_RUNTIME_RULES.md": "8565aeca97dfa043992df47304968e48a666f0f4bad9f7f11aa4da7cb8acd46d",
+    "07_ADDRESS_REGISTRY.md": "26a28728c3917a819d2bd81da12ae73f105d6cf463186f5af33871903cb067a9",
+    "08_PORTABILITY_ATP.md": "058669ec4c820002ef3cfc89a09537998ffd371a6e2f0aa502ee56815d459729",
+    "09_LOGS_AND_CONTINUATION.md": "d50831cd58e220785f9c0e44f5f080a571e0a05ac0b15f07012d560ef16b29d0",
+    "10_TEST_PLAN.md": "72b8313086311fb870cec4c9a8ba365486c60b0617ed5ba78e47780c2f1bb6c8",
+    "MANIFEST.yaml": "6bd28fea647d759468bd9e4acb528503641873b22c8be44a544820872d20cebc",
+    "SCOPE_CORRECTION_v0_4.md": "f8cc72127998727292ef11b1d0547042246142105fc0681b6774041875f852b1",
+    "STRATA_MIGRATION_MAP.md": "4c1902a4143010ea78931d404dbdd288a96be0cb89e09ea6bcd3fe1522e97dc4",
+    "build/build_maestro_current.py": "5d285b75713f2a3a40e82c35bccb341d15544691ea198c62f1d2ae42b60ded43",
+    "build/cap_validator.py": "348721418293958e280df39948a4a1ab21f9446926a6abdc0b4116cb5b661758",
+    "build/compile_current.py": "0c72a26756bbbfae9c327ca8e521690365d382bf21d02c4974682dae3eaa7ee2",
+    "build/lyric_lock_check.py": "f54f98e549b9f924ec09dfb68ca0ad9ac798ae7c55a5e495204f8bf682a09c52",
+    "build/manifest_meta.yaml": "c35cf43d297c3fa46fbe4bfdefe641fad2ecc4f5afbbd5708a334692f6961d02",
+    "build/report_templates/BUILD_REGENERATION_REPORT.yaml": "2326e25f4869ae783c1024ae90d7e1062660825ce9c5cadb20167f134371b3bc",
+    "build/report_templates/DEPENDENCY_CLOSURE_REPORT.yaml": "ebb12cd1130cf21c5b73332d9b64b1cc9a072800a0964f65d85a3c85ac8c0f90",
+    "build/report_templates/OMISSION_AUDIT.yaml": "b4114c77d7928fa30d91390f526a52f51bef095fdc48339706d8da5d233d7deb",
+    "build/templates/00_ROOT_SPEC.md": "4ffb8c65ecd4f502bd7d77b55e9305da349f36a19566581a131167297639c535",
+    "build/templates/01_TECHNICAL_UST_CANON.md": "77ac58de9171a51b0d4deb06116a9079644de107baea76e35863c3e79e7d3ee8",
+    "build/templates/02_CREATIVE_UST_TEMPLATE.md": "8ddcc25ec11a3bbc925afd4d70c3204d70558a12dd6607cd1f4105f18021aed5",
+    "build/templates/03_PHASE_CHAIN.md": "2be39d7736734668d21f9c8f5511d33972c04fdae2f080dd893fedb0ab8d28a8",
+    "build/templates/04_COUNCIL_TOPOLOGY.md": "13c844478898fa2e7ca5aa3dd37aaa72a3fddbc7052c676e963cdbcad8a899cf",
+    "build/templates/05_GOVERNANCE_SEG.md": "fd3ee10bd52d557fd563a031efbd922f7455e2868316e4b6fe10487000aec5c1",
+    "build/templates/06_RUNTIME_RULES.md": "8565aeca97dfa043992df47304968e48a666f0f4bad9f7f11aa4da7cb8acd46d",
+    "build/templates/07_ADDRESS_REGISTRY.md": "26a28728c3917a819d2bd81da12ae73f105d6cf463186f5af33871903cb067a9",
+    "build/templates/08_PORTABILITY_ATP.md": "058669ec4c820002ef3cfc89a09537998ffd371a6e2f0aa502ee56815d459729",
+    "build/templates/09_LOGS_AND_CONTINUATION.md": "d50831cd58e220785f9c0e44f5f080a571e0a05ac0b15f07012d560ef16b29d0",
+    "build/templates/10_TEST_PLAN.md": "72b8313086311fb870cec4c9a8ba365486c60b0617ed5ba78e47780c2f1bb6c8",
+    "build/templates/SCOPE_CORRECTION_v0_4.md": "f8cc72127998727292ef11b1d0547042246142105fc0681b6774041875f852b1",
+    "build/templates/STRATA_MIGRATION_MAP.md": "4c1902a4143010ea78931d404dbdd288a96be0cb89e09ea6bcd3fe1522e97dc4",
+    "build/test_promotion.py": "37b073e8ce10dfc20a9e4e1ce057969a28e3864e7d389dce8ae8b4c37e040d52",
+    "build/validate_bundle.py": "773e27e67a348d2cf97d3dfff935c5f3fb08ed4e868f8c89b46b22f9e5169876",
+    "compiled/BUILD_REGENERATION_REPORT.yaml": "2326e25f4869ae783c1024ae90d7e1062660825ce9c5cadb20167f134371b3bc",
+    "compiled/DEPENDENCY_CLOSURE_REPORT.yaml": "ebb12cd1130cf21c5b73332d9b64b1cc9a072800a0964f65d85a3c85ac8c0f90",
+    "compiled/FULL_CANON_COVERAGE_MATRIX.yaml": "3c2f7250257f781ed04e078ea37c79d23c13a93849f5639e33fb36f5b2da48fb",
+    "compiled/OMISSION_AUDIT.yaml": "b4114c77d7928fa30d91390f526a52f51bef095fdc48339706d8da5d233d7deb",
+    "compiled/TECHNICAL_UST_ADDRESS_MIGRATION.yaml": "98942bd850f29ae68f73df87216ab9429259a86f9d87e23e0d0743a5549ab57b",
+    "compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md": "6d7a2a2323b1a6a8bd3543be4d1224e8ea8ef7a4b4d0dabceaeb73a9d84e795c",
+    "fixture/dryrun_project.md": "16bb8506f63f1e85713a464a710eb46aede1a5902018b263073375dfd80d3dbe"
+  },
+  "passed": true
+}

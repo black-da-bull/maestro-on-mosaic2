@@ -1,0 +1,358 @@
+{
+  "decisions": {
+    "DEC-PROMO-01\u201313": "retained; applicable existing regressions pass",
+    "DEC-PROMO-14/15": "source-template propagation repaired",
+    "DEC-PROMO-16": "Technical MAP restored; Creative omission retained"
+  },
+  "dependency_edges": [
+    [
+      "operator corrections",
+      "compiler and authoritative templates"
+    ],
+    [
+      "pinned Technical source + compiler",
+      "compiled topology/migration/coverage"
+    ],
+    [
+      "templates + report_templates + manifest_meta",
+      "current documents/reports/MANIFEST"
+    ],
+    [
+      "compiled addresses",
+      "existing runtime bindings + MAP.K3 golden fixture"
+    ],
+    [
+      "source/runtime paths",
+      "CI trigger + integration validation"
+    ],
+    [
+      "validation outcomes",
+      "STATE/OPEN/LEDGER/continuation/checkpoints"
+    ]
+  ],
+  "bundle_members": [
+    {
+      "path": "maestro-current/00_ROOT_SPEC.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "0811484b1730ada2e868b2d535f43b1dc088d81a7036bea25de4b77059939321",
+      "after_sha256": "4ffb8c65ecd4f502bd7d77b55e9305da349f36a19566581a131167297639c535",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/01_TECHNICAL_UST_CANON.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "d2c9ca6a414f8c9268f3400767459722e592db45193af95576820bff31314ca5",
+      "after_sha256": "77ac58de9171a51b0d4deb06116a9079644de107baea76e35863c3e79e7d3ee8",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/02_CREATIVE_UST_TEMPLATE.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "0481c7129516d5ae86da8b0d7b2160a9e69932dbb9e91283b48da7a1a4abcf5c",
+      "after_sha256": "8ddcc25ec11a3bbc925afd4d70c3204d70558a12dd6607cd1f4105f18021aed5",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/03_PHASE_CHAIN.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "2be39d7736734668d21f9c8f5511d33972c04fdae2f080dd893fedb0ab8d28a8",
+      "after_sha256": "2be39d7736734668d21f9c8f5511d33972c04fdae2f080dd893fedb0ab8d28a8",
+      "disposition": "verified_no_change"
+    },
+    {
+      "path": "maestro-current/04_COUNCIL_TOPOLOGY.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "5d081a9388454184a5b30effcede00b2f63b898570060740bdae1110405dd204",
+      "after_sha256": "13c844478898fa2e7ca5aa3dd37aaa72a3fddbc7052c676e963cdbcad8a899cf",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/05_GOVERNANCE_SEG.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "fd3ee10bd52d557fd563a031efbd922f7455e2868316e4b6fe10487000aec5c1",
+      "after_sha256": "fd3ee10bd52d557fd563a031efbd922f7455e2868316e4b6fe10487000aec5c1",
+      "disposition": "verified_no_change"
+    },
+    {
+      "path": "maestro-current/06_RUNTIME_RULES.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "8565aeca97dfa043992df47304968e48a666f0f4bad9f7f11aa4da7cb8acd46d",
+      "after_sha256": "8565aeca97dfa043992df47304968e48a666f0f4bad9f7f11aa4da7cb8acd46d",
+      "disposition": "verified_no_change"
+    },
+    {
+      "path": "maestro-current/07_ADDRESS_REGISTRY.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "bbf4765ebc9fd8fd2964db172c8be3d866bb754d06c3455b6892148454c17ef2",
+      "after_sha256": "26a28728c3917a819d2bd81da12ae73f105d6cf463186f5af33871903cb067a9",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/08_PORTABILITY_ATP.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "058669ec4c820002ef3cfc89a09537998ffd371a6e2f0aa502ee56815d459729",
+      "after_sha256": "058669ec4c820002ef3cfc89a09537998ffd371a6e2f0aa502ee56815d459729",
+      "disposition": "verified_no_change"
+    },
+    {
+      "path": "maestro-current/09_LOGS_AND_CONTINUATION.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "d50831cd58e220785f9c0e44f5f080a571e0a05ac0b15f07012d560ef16b29d0",
+      "after_sha256": "d50831cd58e220785f9c0e44f5f080a571e0a05ac0b15f07012d560ef16b29d0",
+      "disposition": "verified_no_change"
+    },
+    {
+      "path": "maestro-current/10_TEST_PLAN.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "b356388406e70d2780546093eb695d9d5dd0dc6044455cf74543882a89feb46f",
+      "after_sha256": "72b8313086311fb870cec4c9a8ba365486c60b0617ed5ba78e47780c2f1bb6c8",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/MANIFEST.yaml",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "2c0b5f353009e1bcfe84b59c3da7afa3af0b7f28672eeff094f243ce4290bc22",
+      "after_sha256": "6bd28fea647d759468bd9e4acb528503641873b22c8be44a544820872d20cebc",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/SCOPE_CORRECTION_v0_4.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "c008c1cef200160c98bb967fb398256bf7d8e301bf3c2e8de5c7851884e232d1",
+      "after_sha256": "f8cc72127998727292ef11b1d0547042246142105fc0681b6774041875f852b1",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/STRATA_MIGRATION_MAP.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "a41535d60291141696f4d38ededa429355308ea130500ec0362a83ba7247cad1",
+      "after_sha256": "4c1902a4143010ea78931d404dbdd288a96be0cb89e09ea6bcd3fe1522e97dc4",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/build/build_maestro_current.py",
+      "layer": "authoritative_source",
+      "before_sha256": "148cacd4ac7128123d391684d5875d44efda60b14caabbe63f23e5168cf56a88",
+      "after_sha256": "5d285b75713f2a3a40e82c35bccb341d15544691ea198c62f1d2ae42b60ded43",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/cap_validator.py",
+      "layer": "authoritative_source",
+      "before_sha256": "348721418293958e280df39948a4a1ab21f9446926a6abdc0b4116cb5b661758",
+      "after_sha256": "348721418293958e280df39948a4a1ab21f9446926a6abdc0b4116cb5b661758",
+      "disposition": "verified_no_change"
+    },
+    {
+      "path": "maestro-current/build/compile_current.py",
+      "layer": "authoritative_source",
+      "before_sha256": "4b16f2392757dcbb6aafef54651f90a1fa9f0c91da57d3ea9a8d2f8908670182",
+      "after_sha256": "0c72a26756bbbfae9c327ca8e521690365d382bf21d02c4974682dae3eaa7ee2",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/lyric_lock_check.py",
+      "layer": "authoritative_source",
+      "before_sha256": "f54f98e549b9f924ec09dfb68ca0ad9ac798ae7c55a5e495204f8bf682a09c52",
+      "after_sha256": "f54f98e549b9f924ec09dfb68ca0ad9ac798ae7c55a5e495204f8bf682a09c52",
+      "disposition": "verified_no_change"
+    },
+    {
+      "path": "maestro-current/build/manifest_meta.yaml",
+      "layer": "authoritative_source",
+      "before_sha256": "cd8912b5823b22073ade8e7af3e1b6bc63a48c29a1f6755eb8d1b3a8a6abd8d4",
+      "after_sha256": "c35cf43d297c3fa46fbe4bfdefe641fad2ecc4f5afbbd5708a334692f6961d02",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/report_templates/BUILD_REGENERATION_REPORT.yaml",
+      "layer": "authoritative_source",
+      "before_sha256": null,
+      "after_sha256": "2326e25f4869ae783c1024ae90d7e1062660825ce9c5cadb20167f134371b3bc",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/report_templates/DEPENDENCY_CLOSURE_REPORT.yaml",
+      "layer": "authoritative_source",
+      "before_sha256": null,
+      "after_sha256": "ebb12cd1130cf21c5b73332d9b64b1cc9a072800a0964f65d85a3c85ac8c0f90",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/report_templates/OMISSION_AUDIT.yaml",
+      "layer": "authoritative_source",
+      "before_sha256": null,
+      "after_sha256": "b4114c77d7928fa30d91390f526a52f51bef095fdc48339706d8da5d233d7deb",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/templates/00_ROOT_SPEC.md",
+      "layer": "authoritative_source",
+      "before_sha256": "0811484b1730ada2e868b2d535f43b1dc088d81a7036bea25de4b77059939321",
+      "after_sha256": "4ffb8c65ecd4f502bd7d77b55e9305da349f36a19566581a131167297639c535",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/templates/01_TECHNICAL_UST_CANON.md",
+      "layer": "authoritative_source",
+      "before_sha256": "d2c9ca6a414f8c9268f3400767459722e592db45193af95576820bff31314ca5",
+      "after_sha256": "77ac58de9171a51b0d4deb06116a9079644de107baea76e35863c3e79e7d3ee8",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/templates/02_CREATIVE_UST_TEMPLATE.md",
+      "layer": "authoritative_source",
+      "before_sha256": "0481c7129516d5ae86da8b0d7b2160a9e69932dbb9e91283b48da7a1a4abcf5c",
+      "after_sha256": "8ddcc25ec11a3bbc925afd4d70c3204d70558a12dd6607cd1f4105f18021aed5",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/templates/03_PHASE_CHAIN.md",
+      "layer": "authoritative_source",
+      "before_sha256": "2be39d7736734668d21f9c8f5511d33972c04fdae2f080dd893fedb0ab8d28a8",
+      "after_sha256": "2be39d7736734668d21f9c8f5511d33972c04fdae2f080dd893fedb0ab8d28a8",
+      "disposition": "verified_no_change"
+    },
+    {
+      "path": "maestro-current/build/templates/04_COUNCIL_TOPOLOGY.md",
+      "layer": "authoritative_source",
+      "before_sha256": "5d081a9388454184a5b30effcede00b2f63b898570060740bdae1110405dd204",
+      "after_sha256": "13c844478898fa2e7ca5aa3dd37aaa72a3fddbc7052c676e963cdbcad8a899cf",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/templates/05_GOVERNANCE_SEG.md",
+      "layer": "authoritative_source",
+      "before_sha256": "fd3ee10bd52d557fd563a031efbd922f7455e2868316e4b6fe10487000aec5c1",
+      "after_sha256": "fd3ee10bd52d557fd563a031efbd922f7455e2868316e4b6fe10487000aec5c1",
+      "disposition": "verified_no_change"
+    },
+    {
+      "path": "maestro-current/build/templates/06_RUNTIME_RULES.md",
+      "layer": "authoritative_source",
+      "before_sha256": "8565aeca97dfa043992df47304968e48a666f0f4bad9f7f11aa4da7cb8acd46d",
+      "after_sha256": "8565aeca97dfa043992df47304968e48a666f0f4bad9f7f11aa4da7cb8acd46d",
+      "disposition": "verified_no_change"
+    },
+    {
+      "path": "maestro-current/build/templates/07_ADDRESS_REGISTRY.md",
+      "layer": "authoritative_source",
+      "before_sha256": "bbf4765ebc9fd8fd2964db172c8be3d866bb754d06c3455b6892148454c17ef2",
+      "after_sha256": "26a28728c3917a819d2bd81da12ae73f105d6cf463186f5af33871903cb067a9",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/templates/08_PORTABILITY_ATP.md",
+      "layer": "authoritative_source",
+      "before_sha256": "058669ec4c820002ef3cfc89a09537998ffd371a6e2f0aa502ee56815d459729",
+      "after_sha256": "058669ec4c820002ef3cfc89a09537998ffd371a6e2f0aa502ee56815d459729",
+      "disposition": "verified_no_change"
+    },
+    {
+      "path": "maestro-current/build/templates/09_LOGS_AND_CONTINUATION.md",
+      "layer": "authoritative_source",
+      "before_sha256": "d50831cd58e220785f9c0e44f5f080a571e0a05ac0b15f07012d560ef16b29d0",
+      "after_sha256": "d50831cd58e220785f9c0e44f5f080a571e0a05ac0b15f07012d560ef16b29d0",
+      "disposition": "verified_no_change"
+    },
+    {
+      "path": "maestro-current/build/templates/10_TEST_PLAN.md",
+      "layer": "authoritative_source",
+      "before_sha256": "b356388406e70d2780546093eb695d9d5dd0dc6044455cf74543882a89feb46f",
+      "after_sha256": "72b8313086311fb870cec4c9a8ba365486c60b0617ed5ba78e47780c2f1bb6c8",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/templates/SCOPE_CORRECTION_v0_4.md",
+      "layer": "authoritative_source",
+      "before_sha256": "c008c1cef200160c98bb967fb398256bf7d8e301bf3c2e8de5c7851884e232d1",
+      "after_sha256": "f8cc72127998727292ef11b1d0547042246142105fc0681b6774041875f852b1",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/templates/STRATA_MIGRATION_MAP.md",
+      "layer": "authoritative_source",
+      "before_sha256": "a41535d60291141696f4d38ededa429355308ea130500ec0362a83ba7247cad1",
+      "after_sha256": "4c1902a4143010ea78931d404dbdd288a96be0cb89e09ea6bcd3fe1522e97dc4",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/test_promotion.py",
+      "layer": "authoritative_source",
+      "before_sha256": "91d7bb7dfd799aede542e5521570026b807cbaa41a6fd59b0a1279e2280fc3b8",
+      "after_sha256": "37b073e8ce10dfc20a9e4e1ce057969a28e3864e7d389dce8ae8b4c37e040d52",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/build/validate_bundle.py",
+      "layer": "authoritative_source",
+      "before_sha256": "d4e79657063206ebf70d5a0c6228aaee381ab9a60ce0014d55e6aa965857a96d",
+      "after_sha256": "773e27e67a348d2cf97d3dfff935c5f3fb08ed4e868f8c89b46b22f9e5169876",
+      "disposition": "source_repaired_or_added"
+    },
+    {
+      "path": "maestro-current/compiled/BUILD_REGENERATION_REPORT.yaml",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "7253ae65cacaa20a606c974620dd16e54be101cdf4683f3d90779b0755b0f7e2",
+      "after_sha256": "2326e25f4869ae783c1024ae90d7e1062660825ce9c5cadb20167f134371b3bc",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/compiled/DEPENDENCY_CLOSURE_REPORT.yaml",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "06b3f5ee193034171dc80805164465c92139ed25dc75730881fe4ffb784ae5d5",
+      "after_sha256": "ebb12cd1130cf21c5b73332d9b64b1cc9a072800a0964f65d85a3c85ac8c0f90",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/compiled/FULL_CANON_COVERAGE_MATRIX.yaml",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "dae303831773695a0e50a75a06c72a54027f3da72744d7d09d0d231ae4be4db6",
+      "after_sha256": "3c2f7250257f781ed04e078ea37c79d23c13a93849f5639e33fb36f5b2da48fb",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/compiled/OMISSION_AUDIT.yaml",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "965dd931972b999a894f002961d0cfcfc11683127b5fddf24f9ec78f013f5929",
+      "after_sha256": "b4114c77d7928fa30d91390f526a52f51bef095fdc48339706d8da5d233d7deb",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/compiled/TECHNICAL_UST_ADDRESS_MIGRATION.yaml",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "36779fc30c6f5ed7b76ec58c2374a482a2fe9d0cba0fe932180a08cfb2330988",
+      "after_sha256": "98942bd850f29ae68f73df87216ab9429259a86f9d87e23e0d0743a5549ab57b",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "65627c96da0f3c8b154453f92f9763648b3a630c863ad76db8ef8b825cd42854",
+      "after_sha256": "6d7a2a2323b1a6a8bd3543be4d1224e8ea8ef7a4b4d0dabceaeb73a9d84e795c",
+      "disposition": "regenerated"
+    },
+    {
+      "path": "maestro-current/fixture/dryrun_project.md",
+      "layer": "generated_or_packaged_member",
+      "before_sha256": "16bb8506f63f1e85713a464a710eb46aede1a5902018b263073375dfd80d3dbe",
+      "after_sha256": "16bb8506f63f1e85713a464a710eb46aede1a5902018b263073375dfd80d3dbe",
+      "disposition": "verified_no_change"
+    }
+  ],
+  "runtime": "all 23 files unchanged; tested as dependent",
+  "historical_tracked_sources": "unchanged; git diff empty for sessions/artifacts/code/system/reconstruction",
+  "source_review": "55 recursively inventoried session/primary-source records; targeted chronological passage review; no full semantic replay claim",
+  "provenance_dependents": [
+    "README.md",
+    "_PROVENANCE/STATE.md",
+    "_PROVENANCE/OPEN.md",
+    "_PROVENANCE/LEDGER.md",
+    "_PROVENANCE/PROMOTION_2026-09-09.md",
+    "_PROVENANCE/CONTINUATION_2026-09-09.md",
+    "_PROVENANCE/promotion_2026-09-09/BASELINE_AND_SOURCE_REVIEW.json",
+    "_PROVENANCE/promotion_2026-09-09/VALIDATION.json",
+    "_PROVENANCE/promotion_2026-09-09/validate_integration.py",
+    ".github/workflows/p0-golden-structural-interpretation.yml"
+  ]
+}

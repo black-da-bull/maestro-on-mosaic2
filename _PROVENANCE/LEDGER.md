@@ -316,3 +316,21 @@ Finding: the requested promotion had already merged, followed by all three P0 st
 Rungs: accepted decisions retained; merged implementations recognized; this record's persistence is its containing commit. Existing executable workforce/golden behavior was exercised on pinned main, as was bundle validation; both passed. No model/provider execution, audible experiment result or baseline acceptance is claimed. PR #10 remains draft, with evidence recovery before fresh render comparison. No repeat corpus audit, memory operation or next-phase execution occurred.
 
 Session effect: link completed integration to the correct current entry points, explain the stale resume failure, propagate status to dependent registers, and leave a reproducible continuation. No new method gate or product requirement is introduced.
+
+
+## PROMOTION-2026-09-09 — Technical MAP layer repair and accepted overlay propagation
+Operator: Morris / Mo. Doctrine: Your Vision. Our Mission.
+Authority: current integration execution request; existing direct operator Roadmap correction
+recorded as DEC-PROMO-16 in PROMOTION_2026-09-09.md; persisted DEC-PROMO-14/15.
+Acceptance: operator-accepted semantic correction; no new creative decision.
+Supersedes: M13/DEC-19's overextension of Creative Roadmap omission into Technical axis removal,
+plus active source-template O16E/fold-and-laminate requirements superseded by DEC-PROMO-14/15.
+Prior entries remain intact. Technical MAP is retained; Creative surface stays without Road-Map.
+Applied: authoritative compiler/templates/report inputs/metadata, downstream generated files,
+validator/regressions, CI trigger/integration check, STATE/OPEN/current continuation.
+Rung: repaired source + generated artifacts + executable local validation; persistence evidenced
+by containing commit and checkpoint refs. Existing P0 runtime verified unchanged; no LLM or
+renderer-quality enforcement claim. 37 promotion checks; 28 integration checks; two source
+compiles and two clean 44-file rebuilds byte-identical; existing golden fixture PASS.
+Evidence: promotion_2026-09-09/BASELINE_AND_SOURCE_REVIEW.json, IMPACT.json, VALIDATION.json.
+Boundary: no P1/P2 development. DEC-PROMO-01–13 retained and checked; historical bytes preserved.

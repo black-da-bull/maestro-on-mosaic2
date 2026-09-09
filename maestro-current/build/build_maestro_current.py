@@ -3,7 +3,8 @@
 REPAIR.O16D.VV.R1 — the v1 builder regenerated only the 11 O16B-era docs and stamped v0.2
 (BLOCK-02 of REVIEW.O16D.VV.R1). v2 regenerates EVERY bundle member:
   runtime_docs  <- build/templates/ (byte-identical copies; 13 docs)
-  build_tools, compiled, fixture <- packaged verbatim from the source bundle tree
+  build_tools, compiled topology, fixture <- packaged from the source bundle tree
+  compiled status reports <- build/report_templates (authoritative report sources)
   MANIFEST.yaml <- build/manifest_meta.yaml (verbatim metadata) + computed md5 map (sorted)
 Byte-identical output on every run from the same source tree; stdlib only.
 Usage: build_maestro_current.py OUTDIR [SRCDIR]   (SRCDIR defaults to this script's bundle)
@@ -34,6 +35,10 @@ def main(outdir, srcdir=None):
         dst = os.path.join(outdir, t)
         if os.path.exists(dst): shutil.rmtree(dst)
         shutil.copytree(os.path.join(src, t), dst)
+    # Status/interpretation reports have explicit sources; do not hand-patch compiled copies.
+    for name in ("OMISSION_AUDIT.yaml", "BUILD_REGENERATION_REPORT.yaml", "DEPENDENCY_CLOSURE_REPORT.yaml"):
+        shutil.copyfile(os.path.join(src, "build", "report_templates", name),
+                        os.path.join(outdir, "compiled", name))
     # deterministic manifest: meta verbatim (comments stripped) + sorted md5 map of every member
     meta = open(os.path.join(src, "build", "manifest_meta.yaml"), encoding="utf-8").read()
     body = [l for l in meta.splitlines() if not l.lstrip().startswith("#")]

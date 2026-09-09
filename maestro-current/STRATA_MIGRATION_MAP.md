@@ -25,8 +25,9 @@ a later stratum consumed it. Folded into: 04 (named seat map), 05 (governance ad
 02 (MAP parity patch era record), 06 (Suno parsing discipline + triad caps).
 
 ## Address-level dispositions at the top stratum
-SUPERSEDED: MAP axis → timing to LYR section headers + structure-reservation to
-Performance.execution (M13) · Road-Map block in Creative shell → retired ([End] = terminal marker,
+SUPERSEDED: the erroneous Technical MAP-to-PER migration (DEC-PROMO-16). Technical MAP
+remains internal. Creative timing derives into LYR section headers and execution into
+Performance; the Creative Road-Map block is retired ([End] = terminal marker,
 not an axis) · 4-letter Performance code → PER · fixed syllable bands 6-10/6-11 → style-conditioned
 breath-pattern rule (DEC-25) ·
 literature/poetry lyric display in Creative UST → vocal performance spacing (DEC-26).
@@ -34,11 +35,11 @@ CARRIED FORWARD (chronology, not restated): full Technical UST key/subkey topolo
 from the Chimera-era master template (01/07, source md5 `eaf18e11…`); the v5b-era canon monolith
 (TECHNICAL_UST_CANON.md: 8 era-axes, 28 keys / ~128 subkeys, different granularity + LYR.K0
 governance keys + THY.K5 tension–release) and its governance addendum are ONE UNIT (DEC-27); O-18 rivalry framing is withdrawn.
-Residual cross-era granularity/chronology remains O16E; no silent merge ·
+O16E recovery is closed for the recovered target set (DEC-PROMO-14/15); source differences
+remain chronological overlays, with no new reconstruction assignment ·
 v4.5.5 container rules, budgets, VIRAL-5/HPA, Sacred Imperfection, Session Ledger schema
 (persisted floor) · owner/reviewer/tie-break matrix rows (**IMPORTED — 04,
-PIN.V5B.COUNCIL.MATRIX.V1**, migrated under re-expanded names; MAP-row re-homes to
-Performance.execution) · both rosters (overlay chronology) · SEM 12-criteria weights + explicit applicable scoped evaluation policy
+PIN.V5B.COUNCIL.MATRIX.V1**, shared aliases normalized; MAP-row retained as Technical MAP) · both rosters (overlay chronology) · SEM 12-criteria weights + explicit applicable scoped evaluation policy
 (no universal numeric floor; DEC-PROMO-01/02/03) · QAF/PD rule cards · v5b work-item mechanics (WI.V5B.SCHEMA.V1), evidence contract
 (one-sentence constraint fills, source binding, downstream sensitivity, challenge cycles,
 mandatory logs — PIN.V5B.EVIDENCE.CONTRACT.V1), phased executable chain (P0 dual-scaffold →
@@ -46,7 +47,7 @@ P5 delivery) — the executable ancestry of the 03 phase chain.
 RENAMED/ALIASED: SEG = Song Excellence Governance (current); Feasibility gate / Structural
 Excellence Gate / **Structural & Engineering Gate (v5b coldstart)** = era aliases (DEC-14 family)
 · Voices/Style canonical names re-expanded (axis identity).
-PENDING-CONSOLIDATION (CONS queue — cannot migrate what is not in the repo): 03 END-era shell
+HISTORICAL July CONS queue (not a current recovery gate; DEC-PROMO-14/15): 03 END-era shell
 original · Y-3 worklog · V55 harvest · fold-session v0.1 pair. REMOVED from this queue by O16D
 (located in-repo all along — the migration-bundle correction proven): the pinned matrix + the
 v5b topology/governance monoliths (`legacy/maestro_v5b_coldstart/`). Absence from the reached

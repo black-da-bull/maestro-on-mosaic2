@@ -1,3 +1,31 @@
+# CURRENT ENTRY POINT — 2026-09-09
+Doctrine: **Your Vision. Our Mission.**
+
+**Integration/promotion repairs executed and validated; stop before the next development phase.**
+Current continuation: [CONTINUATION_2026-09-09.md](CONTINUATION_2026-09-09.md).
+Decision/authority record: [PROMOTION_2026-09-09.md](PROMOTION_2026-09-09.md).
+Pre-checkpoint: `checkpoint/pre-promotion-2026-09-09` at `f2f3da6e35ff37ed6777afecdd0228421ef70251`.
+Post-checkpoint: `checkpoint/post-promotion-2026-09-09`; its ref/containing commit establishes persistence.
+
+DEC-PROMO-16: Technical UST retains MAP; Creative UST omits its Road-Map container.
+Compiler, source templates, derived topology, validator and manifest now agree with the
+existing P0 runtime. Eight Technical axes / 198 unchanged addresses / seven Creative containers.
+DEC-PROMO-14/15 overlay corrections now propagate to active source/templates; O16E remains
+closed for the recovered target set and O-19/O-20 remain inactive.
+
+Local verification: 37 promotion checks; two identical source compiles; two identical full
+44-file rebuilds; bundle/workforce validators and existing golden fixture PASS. Proof is
+bounded to deterministic code paths, not autonomous model execution or rendered musical quality.
+
+Prior promotion and P0 are already merged. P1/B3 remains a candidate without an accepted
+audible result. O-04 provenance, O-05 replay, O-12 original assets and Seedance experiment
+retain their recorded scopes. No new development or whole-corpus audit ran here.
+
+This entry supersedes current navigation and the incorrect Technical MAP-removal interpretation
+in the older snapshots below. Historical text is preserved verbatim.
+
+---
+
 # CURRENT ENTRY POINT — 2026-09-08
 Doctrine: **Your Vision. Our Mission.**
 
