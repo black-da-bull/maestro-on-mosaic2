@@ -1,0 +1,11 @@
+# Optional read-only roles. No repository-configured MCP servers or model overrides.
+# Tool connections, sandbox policy and feature enablement remain user/session choices.
+[agents.explorer]
+description = "Read-only repository evidence gathering."
+config_file = "agents/explorer.toml"
+[agents.reviewer]
+description = "Correctness, authority and regression review."
+config_file = "agents/reviewer.toml"
+[agents.docs_researcher]
+description = "Primary-source API verification."
+config_file = "agents/docs-researcher.toml"
