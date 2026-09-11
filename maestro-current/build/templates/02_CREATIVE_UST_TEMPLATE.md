@@ -8,6 +8,10 @@ does NOT carry the system's global explanatory burden.**
 Creative UST ≤5000 chars (CAP band 4960–4999) · Show Summary ≤1000 · A&R Style ≤150, Profile ≤2000.
 Character savings are fuel for nuance, not the goal. No genericization for convenience.
 
+## Layer boundary (DEC-PROMO-16)
+Technical UST retains its internal MAP axis. Creative UST has no Road-Map container.
+Omission on this derived surface does not retire or rename Technical MAP addresses.
+
 ## Structure (END-era shell; Y-3 freeze + M13)
 Consolidated metacontainers first — Theory · VocalPersona · AestheticIntent · Timbre · Performance —
 then the Lyrics block. NO Road-Map block (forbidden legacy construct): section order lives in

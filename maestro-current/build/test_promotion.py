@@ -4,7 +4,7 @@ These exercise workspace validators, not a deployed Maestro song runtime.
 """
 import sys, pathlib, tempfile, shutil, contextlib, io, copy
 sys.dont_write_bytecode=True
-from validate_bundle import sem_config, evaluate_sem, validate_policy, main as bundle_check
+from validate_bundle import sem_config, evaluate_sem, validate_policy, topology_errors, main as bundle_check
 from lyric_lock_check import main as lyric_check
 
 def run(bundle):
@@ -51,6 +51,14 @@ def run(bundle):
     check('lock precedes reverse compilation',phase.index('Definitive technical.ust LOCK')<phase.index('Reverse promotion'))
     check('13 audio workers and separate visual module','13 audio workers' in workers and 'with the VIS/VIG/SEL module set, not the audio runtime' in workers)
     check('phantom not requirement','Q1–Q16 = PHANTOM (never fabricate)' in (b/'05_GOVERNANCE_SEG.md').read_text())
+    docs={f.name:f.read_text() for f in b.glob('*.md')}
+    check('Technical MAP and Creative omission are consistent',not topology_errors(str(b),docs))
+    leaked=dict(docs);leaked['02_CREATIVE_UST_TEMPLATE.md']='[Road-Map]\n'+creative
+    check('Creative Roadmap leak rejected without relying on hashes',any('Creative Road-Map' in e for e in topology_errors(str(b),leaked)))
+    retired=dict(docs);retired['01_TECHNICAL_UST_CANON.md']=retired['01_TECHNICAL_UST_CANON.md'].replace('MAP.K3','PER.K7')
+    check('Technical address renaming rejected without relying on hashes',any('differ' in e for e in topology_errors(str(b),retired)))
+    missing=dict(docs);missing['01_TECHNICAL_UST_CANON.md']='\n'.join(line for line in missing['01_TECHNICAL_UST_CANON.md'].splitlines() if not line.startswith('| MAP |'))
+    check('Technical MAP registry omission rejected',any('MAP axis row required' in e for e in topology_errors(str(b),missing)))
     print('PASS: '+str(len(checks))+' promotion checks')
     for name in checks:print('  PASS '+name)
 

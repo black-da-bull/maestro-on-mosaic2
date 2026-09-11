@@ -1,0 +1,92 @@
+{
+  "scope": "GitHub PR metadata at final 2026-09-09 navigation check; candidate claims are not promoted as canon",
+  "prs": [
+    {
+      "number": 17,
+      "title": "Promote Technical UST MAP repair and accepted overlay corrections",
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/17",
+      "state": "open",
+      "draft": false,
+      "head": "21f864e7030b3707a09c5b81f9f1c05bcfd19fa0",
+      "base": "f2f3da6e35ff37ed6777afecdd0228421ef70251",
+      "merged_at": null
+    },
+    {
+      "number": 16,
+      "title": "MVP: connect browser to current Maestro runtime",
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/16",
+      "state": "open",
+      "draft": true,
+      "head": "fa7097d36e403c66abeab9845f4cac024df4cbdb",
+      "base": "f2f3da6e35ff37ed6777afecdd0228421ef70251",
+      "merged_at": null
+    },
+    {
+      "number": 15,
+      "title": "P1: reconcile B3 empirical calibration onto current main",
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/15",
+      "state": "open",
+      "draft": true,
+      "head": "9a68a6a4a97321a2decced55767ee0b318948913",
+      "base": "f2f3da6e35ff37ed6777afecdd0228421ef70251",
+      "merged_at": null,
+      "body": "Clean replacement review surface for the current P1 renderer-calibration work, rebuilt from current `main` without importing stale branch ancestry.\n\n## Current empirical state\n\nThe primary P1 question is now the operator-corrected one: **does Suno respond to Maestro renderer-facing Creative UST and external Style instructions in detectable musical/render behavior?**\n\nCross-corpus calibration using **Run It To Me** and **Poster Two Deux** now supports:\n- Creative UST / Lyrics-surface execution grammar is present in real Suno render lineage;\n- measurable musical/render behavior corresponds to classes of Creative UST instruction;\n- low-end intent is strongly replicated across both corpora;\n- approximate / half-double tempo behavior is more reliable than exact integer tempo lock;\n- responsive ensemble/vocal-space behavior is supported at signal-proxy level;\n- the external Style surface materially participates in output variation under substantially controlled Creative UST conditions;\n- exact Style phrase -> exact audible consequence remains open;\n- deterministic exact repeatability is not claimed.\n\n## B3/Leslie scope correction\n\nHammond B3 / Leslie identity is now treated as a **separate semantic-fidelity probe**, not the gate for the broader renderer-instruction-uptake result. Prompt text, separator labels, and signal proxies alone may not be promoted into an exact B3 identity PASS.\n\nThis preserves the narrower B3 question without allowing it to falsely reopen the general empirical premise.\n\n## Evidence preservation / false-PASS controls\n\n- Run It To Me cover + fresh A/B/C/D remain the preserved five-output comparison family.\n- B/C/D remain the cleanest Style-prompt subset because their Creative UST serialization is byte-identical.\n- Poster Two Deux is persisted as independent replication evidence.\n- Fixed/follow/strict tempo/timing exports are classified as export/analysis views, not independent generations; they are not counted as replication renders.\n- No replacement generation is required merely to recreate evidence already preserved and analyzed.\n- Exact external Style-box text for the Poster Two Deux style-change comparison remains a provenance gap that limits phrase-level causation only.\n- No P0 work is reopened.\n- No empirical finding is promoted into Maestro canon or runtime law by this PR.\n\n## Included artifacts\n\n- Run It To Me evidence-recovery package and manifests\n- B3/Leslie criterion rubric and historical fixture prompts\n- Run It To Me triad renderer calibration\n- Poster Two Deux independent renderer-instruction replication\n- O-05 suppressed-output forensic replay\n- corrected continuation state\n- dependency-ordered P1 execution tree and blocker register\n\n## Blocker disposition\n\n**Cleared / technically discharged:**\n- missing-binary blocker as a general P1 blocker;\n- general renderer-adherence prerequisite;\n- B3 identity as the general empirical gate;\n- four-fresh-render recreation requirement;\n- duplicate export-count inflation;\n- O-05 forensic replay work requirement — replay performed; no present-architecture mutation proven.\n\n**Open but non-blocking for general instruction uptake:**\n- exact Poster Two Deux external Style-box text;\n- exact B3/Leslie manufacturer-specific semantic fidelity;\n- deterministic exact repeatability.\n\n**Authority-gated:**\n- formal O-05 close under the OPEN register's explicit operator-close rule;\n- promotion of any empirical result into Maestro canon/runtime law.\n\n**External/later:**\n- O-12 original design-project asset preservation;\n- Seedance fit experiment.\n\n## Next lawful implementation work\n\nThe current P1 evidence lane is technically sufficient for its scoped question. The next product-facing target is to **integrate a versioned renderer-adherence matrix and feedback loop into the application/runtime lane without widening current worker/controller authority**.\n\nThat integration should keep exact numeric, relational, presence, interaction, semantic-timbre, structural, vocal/identity, and Style-sensitivity controls separate; bind every observation to source provenance and confounds; patch only the smallest failing renderer-facing surface; and keep empirical observation distinct from operator promotion.\n\nOriginal PR #10 remains forensic history and is superseded by this review surface."
+    },
+    {
+      "number": 14,
+      "title": "Reconcile Maestro Browser MVP onto current main",
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/14",
+      "state": "open",
+      "draft": true,
+      "head": "6eff817e0cbb6157796c4c8c784a0d512540f442",
+      "base": "f2f3da6e35ff37ed6777afecdd0228421ef70251",
+      "merged_at": null
+    },
+    {
+      "number": 13,
+      "title": "Sync current main into P1 calibration branch",
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/13",
+      "state": "closed",
+      "draft": false,
+      "head": "f2f3da6e35ff37ed6777afecdd0228421ef70251",
+      "base": "660c993604a4d901fdb9f0af1b46c0a26a353060",
+      "merged_at": null
+    },
+    {
+      "number": 12,
+      "title": "feat: add maestro-on-mosaic2 ECC bundle",
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/12",
+      "state": "open",
+      "draft": true,
+      "head": "11dfff47936f310c576da0b3ceef74cb35ee4f2b",
+      "base": "f2f3da6e35ff37ed6777afecdd0228421ef70251",
+      "merged_at": null
+    },
+    {
+      "number": 11,
+      "title": "Reconcile resume state with completed promotion and P0",
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/11",
+      "state": "closed",
+      "draft": false,
+      "head": "3088226cb2c3c4b4f7de718e9cf081f94e5f8603",
+      "base": "d2ab1c6c7b9c6738e616564d4575cdf4660b4717",
+      "merged_at": "2026-09-08T04:26:43Z"
+    },
+    {
+      "number": 10,
+      "title": "P1: B3 empirical Suno calibration package",
+      "url": "https://github.com/black-da-bull/maestro-on-mosaic2/pull/10",
+      "state": "closed",
+      "draft": true,
+      "head": "660c993604a4d901fdb9f0af1b46c0a26a353060",
+      "base": "d2ab1c6c7b9c6738e616564d4575cdf4660b4717",
+      "merged_at": null
+    }
+  ],
+  "validated_repair_commit": "21f864e7030b3707a09c5b81f9f1c05bcfd19fa0",
+  "ci": {
+    "id": 34409795903,
+    "conclusion": "success",
+    "url": "https://github.com/black-da-bull/maestro-on-mosaic2/actions/runs/34409795903"
+  }
+}

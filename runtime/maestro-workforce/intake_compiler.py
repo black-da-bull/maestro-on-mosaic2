@@ -12,6 +12,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import math
 import urllib.error
 import urllib.request
 from typing import Any, Callable, Dict, List, Optional
@@ -202,6 +203,8 @@ def compile_technical_ust(payload: Dict[str, Any], model_caller: Optional[Callab
     descriptors = _address_descriptors()
     allowed = {item["address"]: item for item in descriptors}
     raw = (model_caller or call_gateway)(_prompt(intake, descriptors))
+    if not isinstance(raw, dict):
+        raise ModelResponseInvalid("specialist result must be a JSON object")
     proposals = raw.get("proposals") or []
     if not isinstance(proposals, list):
         raise ModelResponseInvalid("proposals must be a list")
@@ -225,9 +228,17 @@ def compile_technical_ust(payload: Dict[str, Any], model_caller: Optional[Callab
         if status not in {"proposed", "justified_null"}:
             rejected.append({"address": address, "reason": "invalid_status"})
             continue
+        rationale = str(proposal.get("rationale") or "").strip()
+        if not rationale:
+            rejected.append({"address": address, "reason": "missing_rationale"})
+            continue
+        if address in accepted:
+            rejected.append({"address": address, "reason": "duplicate_address"})
+            continue
         confidence = proposal.get("confidence")
         try:
-            confidence = max(0.0, min(1.0, float(confidence)))
+            confidence = float(confidence)
+            confidence = max(0.0, min(1.0, confidence)) if math.isfinite(confidence) else 0.0
         except (TypeError, ValueError):
             confidence = 0.0
         value = proposal.get("value") if status == "proposed" else None

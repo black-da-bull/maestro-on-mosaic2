@@ -23,3 +23,22 @@ The browser therefore treats its eight visible axis cards as working-note/naviga
 - `POST /api/evidence/validate` — validates an empirical observation while explicitly returning `technical_ust_mutation: false` and `canon_promotion: false`.
 
 This application remains isolated from the historical corpus. It uses current repository/runtime state as evidence and does not promote recovered or empirical material into canon by itself.
+
+## Intake drafting
+
+`POST /api/compile` accepts project_name, song_title, vision, lyrics and instrumental.
+The browser's Draft Technical UST action submits the current intake, displays per-address
+proposals, owner/reviewer bindings and explicit nulls, and persists the draft locally
+alongside the unchanged lyric source. Editing intake invalidates its draft. A response
+for an older intake is discarded. Missing Gateway configuration returns 503 without
+changing project state. Model responses are proposals, never a canon promotion or lock.
+
+The server uses AI_GATEWAY_API_KEY (or VERCEL_OIDC_TOKEN) and the configured
+MAESTRO_INTERPRETATION_MODEL. Credentials remain server-side. This MVP is a single-model
+specialist simulation with ownership checks, not autonomous workers or completed musical
+quality evaluation. The local lock is a browser snapshot, not Technical UST acceptance.
+
+Repository-root app.py delegates to runtime/maestro-workforce/app.py. Both entry points
+serve the same maintained browser. Run `python runtime/maestro-workforce/build_browser.py`
+after browser edits to regenerate the standalone deployment's inline public/index.html;
+CI checks parity. Run the MVP fixture and test_intake_contract.py for API checks.

@@ -14,9 +14,12 @@ from urllib.parse import parse_qs
 
 import technical_ust_runtime as technical_ust
 import workforce_runtime as workforce
+import intake_compiler
 
 ROOT = Path(__file__).resolve().parent
-APP_ROOT = ROOT / "public"
+APP_ROOT = ROOT.parent.parent / "apps" / "maestro-browser-mvp"
+if not APP_ROOT.exists():
+    APP_ROOT = ROOT / "public"
 
 ADAPTER_VERSION = "suno-adherence-v1"
 ADHERENCE_MATRIX = {
@@ -105,7 +108,7 @@ def _runtime_addresses():
 
 def _static_file(path: str):
     rel = "index.html" if path == "/" else path.lstrip("/")
-    if rel not in {"index.html"}:
+    if rel not in {"index.html", "app.js", "styles.css"}:
         return None
     target = APP_ROOT / rel
     if not target.exists():
@@ -137,6 +140,11 @@ def app(environ, start_response):
             if not address:
                 return _json(start_response, "400 Bad Request", {"error": "address is required"})
             return _json(start_response, "200 OK", _binding_view(address))
+
+        if method == "POST" and path == "/api/compile":
+            data = _read_json(environ)
+            result = intake_compiler.compile_technical_ust(data)
+            return _json(start_response, "200 OK", result)
 
         if method == "POST" and path == "/api/dispatch":
             data = _read_json(environ)
@@ -192,6 +200,10 @@ def app(environ, start_response):
 
         return _json(start_response, "404 Not Found", {"error": "not found"})
 
+    except intake_compiler.ModelExecutionUnavailable:
+        return _json(start_response, "503 Service Unavailable", {"error": "AI drafting is unavailable. Check server Gateway configuration and retry; your intake is preserved."})
+    except intake_compiler.ModelResponseInvalid:
+        return _json(start_response, "502 Bad Gateway", {"error": "AI drafting returned an invalid proposal. Your intake is preserved; retry drafting."})
     except technical_ust.RuntimeAuthorityError as exc:
         return _json(start_response, "403 Forbidden", {"error": str(exc), "type": "authority"})
     except technical_ust.RuntimeBlockError as exc:

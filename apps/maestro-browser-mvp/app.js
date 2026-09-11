@@ -8,7 +8,7 @@ const AXES = [
   ["performance", "Performance", "Phrasing, dynamics, articulation, gestures, section execution, and staging."],
   ["postProduction", "Post-production", "Mix priorities, space, effects, imaging, editing, and mastering intent."],
   ["lyricsBlock", "Lyrics block", "Locked lyric text, section boundaries, assignments, ad-libs, SFX, and delivery cues."],
-  ["end", "End", "Exit behavior, final cadence, fade or stop logic, and emotional closure."]
+  ["end", "Arrangement / Map", "Section architecture, references, transitions, and end behavior."]
 ];
 
 const AXIS_PREFIX = {
@@ -35,6 +35,7 @@ const emptyProject = () => ({
   selectedAxis: null,
   selectedAddress: null,
   technicalValues: {},
+  proposal: null,
   evidence: [],
   axes: Object.fromEntries(AXES.map(([id]) => [id, { value: "", blocked: false, rationale: "" }]))
 });
@@ -44,6 +45,8 @@ let saveTimer;
 let runtimeAddresses = [];
 let runtimeHealth = null;
 let adherenceMatrix = null;
+let compiling = false;
+let compileEpoch = 0;
 
 const byId = (id) => document.getElementById(id);
 const fields = {
@@ -294,6 +297,7 @@ function importProject(file) {
     try {
       const imported = JSON.parse(reader.result);
       if (!imported.axes) throw new Error("Missing axes");
+      compileEpoch++;
       state = { ...emptyProject(), ...imported, axes: { ...emptyProject().axes, ...imported.axes }, technicalValues: imported.technicalValues || {}, evidence: imported.evidence || [] };
       scheduleSave();
       render();
@@ -307,6 +311,7 @@ function importProject(file) {
 
 function resetProject() {
   if (!confirm("Reset the browser-local Maestro project?")) return;
+  compileEpoch++;
   state = emptyProject();
   localStorage.removeItem(STORAGE_KEY);
   render();
@@ -327,6 +332,8 @@ function render() {
     node.disabled = state.status === "locked";
   });
   byId("start-project").disabled = state.status === "locked";
+  byId("compile-project").disabled = compiling || state.status === "locked" || !runtimeHealth?.ok;
+  renderProposal();
   renderAxes();
   renderQueue(state.selectedAxis);
   renderSummary();
@@ -353,7 +360,8 @@ async function bootstrapRuntime() {
   render();
 }
 
-Object.values(fields).forEach((node) => node.addEventListener("input", () => { syncFields(); state.validation = null; scheduleSave(); renderSummary(); }));
+Object.values(fields).forEach((node) => node.addEventListener("input", () => { compileEpoch++; state.proposal = null; syncFields(); state.validation = null; scheduleSave(); renderSummary(); }));
+byId("compile-project").addEventListener("click", compileProject);
 byId("start-project").addEventListener("click", startProject);
 byId("validate-button").addEventListener("click", validate);
 byId("lock-button").addEventListener("click", lockProject);
@@ -368,3 +376,43 @@ byId("import-file").addEventListener("change", (event) => event.target.files[0] 
 byId("reset-button").addEventListener("click", resetProject);
 
 bootstrapRuntime();
+
+
+async function compileProject() {
+  if (compiling || state.status === "locked") return;
+  syncFields();
+  const epoch = ++compileEpoch;
+  compiling = true;
+  byId("compile-status").textContent = "Drafting proposed Technical UST…";
+  render();
+  try {
+    const proposal = await api("/api/compile", {method: "POST", body: JSON.stringify({
+      project_name: state.projectName, song_title: state.songTitle,
+      vision: state.creativeIntent, lyrics: state.lyrics, instrumental: state.instrumental
+    })});
+    if (epoch !== compileEpoch) {
+      byId("compile-status").textContent = "Intake changed during drafting. Draft again for the current intake.";
+      return;
+    }
+    state.proposal = proposal;
+    state.validation = null;
+    scheduleSave();
+    byId("compile-status").textContent = "Draft ready for review. No canon promotion or automatic lock.";
+  } catch (error) {
+    byId("compile-status").textContent = error.message;
+  } finally {
+    compiling = false;
+    render();
+  }
+}
+
+function renderProposal() {
+  const proposal = state.proposal;
+  byId("proposal-summary").textContent = proposal
+    ? `${proposal.project_interpretation || "Draft ready"} — Proposed, not locked. ${proposal.open_question_list?.length || 0} explicit nulls require review.`
+    : "No draft yet.";
+  byId("proposal-list").innerHTML = proposal ? Object.entries(proposal.technical_ust || {}).map(([axis, group]) =>
+    `<details><summary>${escapeHtml(axis)} · ${group.proposed} proposed · ${group.justified_null} nulls</summary>${(group.addresses || []).map(item =>
+      `<article><strong>${escapeHtml(item.address)} · ${escapeHtml(item.owner?.name)} · ${escapeHtml(item.status)}</strong><pre>${escapeHtml(JSON.stringify(item.value, null, 2))}</pre><p>${escapeHtml(item.rationale)}</p><small>Reviewers: ${escapeHtml((item.required_reviewers || []).map(r => r.name).join(", "))}</small></article>`
+    ).join("")}</details>`).join("") : "";
+}

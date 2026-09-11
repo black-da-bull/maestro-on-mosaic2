@@ -13,14 +13,22 @@ Analog Confessor (aesthetic world — grounds the gospel/G-Funk/Southern-rap sou
 Visual roster (Visual Director · Identity Keeper · Motion Editor · Distribution Strategist) ships
 with the VIS/VIG/SEL module set, not the audio runtime (P-2).
 
-## Worker schema (9 elements, all rosters)
+## Current executable ownership (P0 merged; DEC-PROMO-16)
+`runtime/maestro-workforce/technical_ust_ownership_dependency_overlay.yaml` owns current
+address-level worker binding; `canonical_13_employee_instances.yaml` and `instances/` own
+worker definitions. Eight Technical axes include MAP. Alan owns MAP.K1–K4; the existing
+MAP.K3 references and golden propagation fixture are retained. The inherited tables below
+record their source-era roles and seats, not replacements for the finer P0 ownership overlay.
+Documentation of a role never proves model execution.
+
+## Inherited worker schema (9 elements; source stratum)
 persona_name · mission · decision_lens · do_rules · dont_rules · synergy_hooks · bounded_domain ·
 bounded_non_domain · conflict_boundaries. Role principles: SMEs own domain judgment; bounded
 authority; right to contradict; round-robin pressure; dialogue is work; transcript is asset.
-## EXECUTABLE ROUTING LAYER (O16C — imported: STAFF.UST.CANON.V1)
+## Inherited routing schema (O16C — imported: STAFF.UST.CANON.V1)
 Source (hash-verified): `system/D-Maestro/drafts/Maestro Personas aka the subagents.md`
-(md5 `8b073bef24f207c4d9bbe2d488f8b3cd`). Per-axis ownership + permissions, migrated to the 7-axis state
-(MAP SME's ownership → PER.execution keys PER.K5–K8):
+(md5 `8b073bef24f207c4d9bbe2d488f8b3cd`). Source-era axis roles and permissions, with
+Technical MAP retained. Roles are not additional employee instances:
 
 | role_id | owns | permissions |
 |---|---|---|
@@ -28,7 +36,8 @@ Source (hash-verified): `system/D-Maestro/drafts/Maestro Personas aka the subage
 | STAFF.ROLE.VOC_SME | VOC | same core set |
 | STAFF.ROLE.STY_SME | STY | same core set |
 | STAFF.ROLE.TIM_SME | TIM | same core set |
-| STAFF.ROLE.PER_SME | PER (incl. PER.K5–K8 ex-MAP) | same core set (absorbs arrangement/roadmap ownership per M13) |
+| STAFF.ROLE.PER_SME | PER | same core set |
+| STAFF.ROLE.MAP_SME | MAP | same core set; internal arrangement/roadmap domain |
 | STAFF.ROLE.POST_SME | POST | core set + set_hard_gates |
 | STAFF.ROLE.LYR_SME | LYR | core set + manage_lyric_lock |
 | STAFF.ROLE.GOVERNANCE | (none) | enforce_format_policy · enforce_lcr · block_pass · approve_exceptions |
@@ -46,25 +55,24 @@ call = owning SME; policy = GOVERNANCE (block_pass/approve_exceptions); iteratio
 Source (hash-verified): `code/D-Maestro/maestro-ai-music-system-main/legacy/maestro_v5b_coldstart/docs/COUNCIL_MATRIX.md`
 (sha256 `e7097f6ad02a43bcace2a27ebaf21d36350611cc0ea37e26bff134ce099a1765` — matches the package's
 own MANIFEST.json; md5 `0853e6d4f1ebe40c0fbf8488a8c35c73`; package `v5-b.coldstart.1`, generated
-2026-01-23). Era: v5-b coldstart stratum. Migrated to the 7-axis top per M13/DEC-26: the source's
-four-letter Performance code reads as PER; the source's MAP (Road Map) row re-homes to
-PER.execution ownership. Nothing invented; source rows carried verbatim below the migration line.
+2026-01-23). Era: v5-b coldstart stratum. The source's four-letter Performance code reads
+as PER; MAP remains its own Technical axis (DEC-PROMO-16). This inherited named matrix
+is historical ownership evidence; current P0 bindings above govern present runtime dispatch.
 
-| Axis (current) | Primary Owner (SME) | Adjacent Reviewers (min) | Default Tie-Break |
+| Axis (source-era seat) | Primary Owner (SME) | Adjacent Reviewers (min) | Default Tie-Break |
 |---|---|---|---|
 | THY | Alan (Arranger/Music Director) | Melony (Melody), Eldrik (Engineering) | Alan (musical coherence) unless market conflict ⇒ Anva |
 | VOC | Vanessa (Vocal Coach) | Sage (Lyrics), Anva (A&R) | Vanessa (human execution realism) |
 | STY | Anva (A&R Ear) | Alan (form/lineage), Sage (lyric intent) | Anva (strategic value / identity) |
 | TIM | Eldrik (Engineer/Sound Designer) | Dave (Groove), Anva (aesthetic fit) | Eldrik (spectral feasibility) |
 | PER ¹ | Dave (Drum Captain/Groove) | Vanessa (Delivery), Eldrik (Translation) | Dave (pocket + energy) unless vocal-realism conflict ⇒ Vanessa |
-| PER.execution (ex-MAP row) ² | Alan (Arranger/Music Director) | Dave (groove transitions), Sage (lyric section logic) | Alan (structure) |
+| MAP ² | Alan (Arranger/Music Director) | Dave (groove transitions), Sage (lyric section logic) | Alan (structure) |
 | POST | Eldrik (Engineer/Mix) | Vanessa (vocal priority), Anva (platform translation) | Eldrik (mix physics) |
 | LYR | Sage (Songwriter) | Vanessa (performability), Anva (memorability) | Sage (text integrity) unless lock-violation risk ⇒ Orchestrator stops the line |
 
 ¹ Source row is written in the era's four-letter Performance code (retired — STRATA map).
-² Source row is the MAP (Road Map) axis; M13 re-homes structure ownership into
-Performance.execution (PER.K5–K8). Alan therefore holds a scoped second seat inside PER
-(structure keys) alongside Dave's groove ownership — both rows preserved, scope-split, not merged.
+² MAP remains the Technical Road Map axis. Creative Performance.execution is a derived
+presentation home, not a Technical address migration or a transfer of worker ownership.
 
 Council design rules (source): one primary owner per axis · ≥2 adjacent-reviewer challenges per
 fill · tie-break authority + rationale recorded on splits · **physics override** — SEG feasibility
@@ -81,8 +89,8 @@ operator (O-18 family). "Melony (Melody)" is the v5b-era seat name; the rebirth 
 Roster/matrix authority follows the stratum chain: era councils (02 spec) → v4.5.5 production
 roster (PROVEN) → 13-worker lattice (rebirth) → v5b coldstart pinned matrix (above) → this
 stratum. The pinned axis matrix (owner + two adjacent reviewers + tie-break per axis) is the
-EXECUTABLE ROUTING LAYER of its stratum and migrates to the 7-axis top: MAP-row assignments
-re-home to Performance.execution; all other rows carry forward under the re-expanded axis names.
+EXECUTABLE ROUTING LAYER of its stratum. Technical MAP-row addresses remain MAP;
+shared axis aliases use the re-expanded names. The later P0 overlay refines current ownership.
 Both executable layers are now IMPORTED above (STAFF.UST.CANON.V1 roles/permissions +
 PIN.V5B.COUNCIL.MATRIX.V1 named seats/tie-breaks); they compose — roles carry permissions the
 matrix lacks, the matrix carries named seats and tie-break law the roles lack.

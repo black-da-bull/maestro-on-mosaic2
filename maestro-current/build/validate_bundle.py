@@ -4,6 +4,7 @@ Build-time validation only; does not assert deployed song-runtime enforcement.
 Usage: validate_bundle.py BUNDLEDIR
 """
 import sys, os, re, json, yaml, hashlib, math
+from compile_current import AXES, topology
 
 POLICY_FIELDS = ('threshold', 'scope', 'context_ref', 'authority_ref')
 SCOPES = ('run', 'policy', 'version', 'context')
@@ -57,6 +58,39 @@ def evaluate_sem(scores, config, policy):
             'scope': policy['scope'], 'context_ref': policy['context_ref'],
             'authority_ref': policy['authority_ref'], 'overall_seg_verdict': 'not_evaluated'}
 
+def topology_errors(d, allt):
+    """Validate layer identity independently of a restamped manifest (DEC-PROMO-16)."""
+    errors = []
+    try:
+        technical = allt['01_TECHNICAL_UST_CANON.md']
+        compiled = open(os.path.join(d, 'compiled/TECHNICAL_UST_TOPOLOGY_MATERIALIZED.md'), encoding='utf-8').read()
+        axes, keys, subs = topology(compiled)
+        if axes != AXES or len(keys) != 33 or len(subs) != 165 or len(set(keys + subs)) != 198:
+            errors.append('A3 Technical topology must retain 8 source axes and 198 distinct addresses')
+        if topology(technical) != (axes, keys, subs):
+            errors.append('A3 embedded and compiled Technical topology differ')
+        marker = '# TECHNICAL.UST'
+        if marker not in technical or marker not in compiled or technical[technical.index(marker):] != compiled[compiled.index(marker):]:
+            errors.append('A3 embedded and compiled skeleton bytes differ')
+        if not re.search(r'\|\s*MAP\s*\|', technical):
+            errors.append('A3 Technical MAP axis row required')
+        if any(re.match(r'PER\.K[5-8](?:\.|$)', a) for a in keys + subs):
+            errors.append('A3 Technical MAP-to-PER migration forbidden')
+        creative = allt['02_CREATIVE_UST_TEMPLATE.md'].split('## Era layer')[0]
+        if re.search(r'^\s*\[road[- _]?map\b', creative, re.I | re.M):
+            errors.append('A3 Creative Road-Map container forbidden')
+        migration = yaml.safe_load(open(os.path.join(d, 'compiled/TECHNICAL_UST_ADDRESS_MIGRATION.yaml'), encoding='utf-8'))
+        expected_map = sorted(a for a in keys + subs if a.startswith('MAP.'))
+        if migration.get('migrated') != {} or migration.get('identity_addresses') != 198 or migration.get('preserved_map_addresses') != expected_map or len(expected_map) != 24:
+            errors.append('A3 Technical MAP identity report inconsistent')
+        coverage = yaml.safe_load(open(os.path.join(d, 'compiled/FULL_CANON_COVERAGE_MATRIX.yaml'), encoding='utf-8'))
+        if coverage.get('source_axes') != AXES or coverage.get('current_axes') != AXES or coverage.get('migrated_addresses') != 0 or coverage.get('unexplained_omissions') != 0:
+            errors.append('A3 Technical axis coverage inconsistent')
+    except (OSError, KeyError, ValueError, TypeError, AttributeError, yaml.YAMLError) as exc:
+        errors.append('A3 topology validation failed: ' + str(exc))
+    return errors
+
+
 def main(d):
     errs = []; allt = {}
     for f in sorted(os.listdir(d)):
@@ -76,7 +110,7 @@ def main(d):
         # Reject the exact historical-to-current promotion defect, including inherited templates.
         if re.search(r'composite\s*≥\s*97\.5|release floor\s*\*\*97\.5|locked operator values \(97\.5\)|floor 97\.5 terminal|97\.5 floor present',t):
             errs.append(f'A5 {f}: superseded global threshold semantics')
-    if re.search(r'\|\s*MAP\s*\|',allt['01_TECHNICAL_UST_CANON.md']): errs.append('A3 MAP axis row')
+    errs.extend(topology_errors(d, allt))
     try: sem_config(allt['05_GOVERNANCE_SEG.md'])
     except (ValueError, yaml.YAMLError) as e: errs.append('A5 '+str(e))
     if 'composite = Σ((score/5)×weight)' not in allt['05_GOVERNANCE_SEG.md']: errs.append('A5 formula missing')

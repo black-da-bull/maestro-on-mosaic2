@@ -1,3 +1,6 @@
+Current Maestro v5-c entry: [_PROVENANCE/CONTINUATION_2026-09-09.md](_PROVENANCE/CONTINUATION_2026-09-09.md).
+The consolidation record below is historical; current acceptance and state are tracked in `_PROVENANCE/`.
+
 # maestro-on-mosaic — consolidated single source of truth
 
 **Built:** 2026-06-18 • **Method:** content-verified (md5) consolidation across all known Maestro locations.

@@ -1,10 +1,8 @@
-# MAESTRO — Current Root Specification (bundle v0.6-promotion-2026-09-06)
-**Derived 2026-07-19 by MAESTRO.O16.DERIVE-CURRENT-ARTIFACTS.R1 · compiled FORWARD from the
-replay-backed Session-13 snapshot + operator deltas M12–M17 / DEC-09..27 / P-1..P-4. PROPOSAL-class;
-the snapshot itself is never edited. Promotion path (M17): version-based force-close is SUSPENDED —
-a version label is packaging, never authority. This bundle promotes only through
-MAESTRO.O16E.HISTORY-GROUNDED-DERIVATION (verification of every statement against the project's
-entire history) followed by operator acceptance.**
+# MAESTRO — Current Root Specification (bundle v0.7-promotion-2026-09-09)
+**Current projection of the preserved Session-13 and later accepted overlays, including
+DEC-PROMO-01–16. Version labels are packaging, never authority. Recovery of version history,
+SEG, FOIL and SEM is complete for the recovered target set (DEC-PROMO-14/15); O16E is not
+an active re-audit gate. Operator acceptance remains distinct from persistence and runtime proof.**
 
 ## Identity
 Maestro is a compiler: creative seed (source) → Technical UST (intermediate representation) → Suno
@@ -29,8 +27,8 @@ No distribution without linkage (the v5 loss is the canonical counterexample).
 No silent fill · no truncation · no revert · nulls fill-or-defend (null = reserved address, not
 absence) · lyric lock (quoted lyrics immutable after intake) · every decision traceable ·
 contradiction is a feature (registered, never harmonized) · ROOT (human) outranks PROPOSAL (AI);
-only explicit operator acceptance promotes to canon — reached via the O16E history-grounded
-derivation gate, not via version force-close (M17 supersession of the earlier force-close wording)
+only explicit operator acceptance promotes to canon; later accepted corrections supersede
+earlier interpretations with lineage (DEC-PROMO-14/15; version force-close remains suspended)
 · era-bound authority (M15) · interactive gates, never passive stops (M12) · derivation basis =
 the entire project history, never a version (M17) · bundle ≠ system; absence ≠ nonexistence;
 claims name their lane (M16).
@@ -41,10 +39,11 @@ specification and test oracle for the later executable application.
 
 ## Authority model (DEC-22: chronology of materials)
 Canon authority is established by the CHRONOLOGY of the materials. Each version is an OVERLAY upon
-the system at its time (fold-and-laminate; no implicit deprecation). maestro-current is the newest
-stratum and governs where it speaks; earlier pinned artifacts remain canon wherever not explicitly
-superseded — the full Technical UST key/subkey topology carries forward by chronology; only the
-MAP axis (→ M13 homes), the retired 4-letter code, and the Road-Map block are superseded.
+the system at its time (DEC-PROMO-15; no implicit deprecation). Current authority follows
+operator decisions and their accepted corrections, not merely the newest filename. Earlier
+pinned artifacts remain valid wherever not explicitly superseded. Technical MAP and its
+key/subkey addresses carry forward. Only the Creative Road-Map block and retired four-letter
+Performance alias are omitted from their respective current surfaces (DEC-PROMO-16).
 See STRATA_MIGRATION_MAP.md for the stratum chain and address-level dispositions.
 
 ## Proven / specified / historical
@@ -53,8 +52,8 @@ Historical Session-13 snapshot: reconstruction/replay-backed/session13/R_LIST_v0
 
 ## Controlled correction window — 2026-09-06
 DEC-PROMO-01–13 are operator-accepted corrections to this current specification. This window
-repairs their dependents; it does not assert that the broader O16E reconstruction or D1–D4
-song runtime is complete. Current evaluation semantics are in 05_GOVERNANCE_SEG.md. Any
+repairs their dependents. Later DEC-PROMO-14/15 closes recovery for the identified target set;
+this does not claim completion of all D1–D4 song-runtime behavior. Current evaluation semantics are in 05_GOVERNANCE_SEG.md. Any
 inherited universal numeric floor is explicitly superseded, including CR-009-derived claims
 in migrated source documents; their history is preserved.
 
