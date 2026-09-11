@@ -266,5 +266,12 @@
       "agentsGuidePath": ".codex/AGENTS.md",
       "skillPath": ".agents/skills/maestro-on-mosaic2/SKILL.md"
     }
+  },
+  "review": {
+    "date": "2026-09-11",
+    "status": "corrected_against_current_authority",
+    "automatic_mcp_setup": false,
+    "generated_instincts": "retired",
+    "note": "Original analyzer readiness scores are historical tool output, not Maestro acceptance gates."
   }
 }

@@ -1,177 +1,48 @@
 ---
-name: maestro-on-mosaic2-conventions
-description: Development conventions and patterns for maestro-on-mosaic2. TypeScript project with freeform commits.
+name: maestro-on-mosaic2
+description: Work on the current Maestro Python runtime, source-derived bundle, browser integration, and provenance without mistaking historical corpus files for active authority.
 ---
 
-# Maestro On Mosaic2 Conventions
+# Maestro repository work
 
-> Generated from [black-da-bull/maestro-on-mosaic2](https://github.com/black-da-bull/maestro-on-mosaic2) on 2026-09-08
+Read repository-root README.md and `_PROVENANCE/STATE.md` for current navigation,
+then follow the linked continuation and accepted decision records. Historical snapshots
+remain evidence, not instructions to repeat completed work.
 
-## Overview
+The current runtime is Python in `runtime/maestro-workforce/`. The generated current
+bundle is `maestro-current/`; its compiler, templates and build metadata live under
+`maestro-current/build/`. `artifacts/D-Maestro/Maestro/technical.ust.template.txt` is a
+source input. Much of `code/`, `artifacts/`, and `sessions/` is historical material;
+confirm a caller before treating any old React/TypeScript implementation as current.
+Browser candidates use `apps/maestro-browser-mvp/`; verify their integration on the
+checked-out branch. Do not infer deployed behavior from a file's presence.
 
-This skill teaches Claude the development patterns and conventions used in maestro-on-mosaic2.
+## Authority boundaries
 
-## Tech Stack
+- Technical UST retains MAP/Roadmap; Creative UST omits the Road-Map container
+  (DEC-PROMO-16 in `_PROVENANCE/PROMOTION_2026-09-09.md`).
+- Address ownership, reviewers, lyric locks and dependency impact belong to the
+  accepted Python runtime and its ownership/dependency overlay. Browser notes and
+  model proposals do not widen that authority.
+- Empirical renderer evidence is separate from canon/runtime promotion. Preserve
+  observation provenance, confounds, explicit nulls and operator acceptance gates.
+- `_PROVENANCE/OPEN.md` requires explicit operator closure citing the item ID.
+  Completed technical work does not imply that closure.
+- Repair authoritative inputs before regenerating derived outputs; do not patch a
+  generated output alone. Preserve historical evidence and mark superseded state.
 
-- **Primary Language**: TypeScript
-- **Architecture**: hybrid module organization
-- **Test Location**: separate
+## Validation routing
 
-## When to Use This Skill
+For current-source or runtime changes, run from the repository root:
+`python _PROVENANCE/promotion_2026-09-09/validate_integration.py`.
+It checks source/build identity, deterministic regeneration, 37 promotion checks,
+workforce validation and the golden structural fixture. Inspect its actual result.
+For browser/API changes, also run the available MVP contract fixture and exercise
+the browser against the same application entry point that will be deployed.
+Distinguish deterministic fixture results from live model and renderer execution.
+For historical frontend dependencies, use that directory's package scripts.
 
-Activate this skill when:
-- Making changes to this repository
-- Adding new features following established patterns
-- Writing tests that match project conventions
-- Creating commits with proper message format
-
-## Commit Conventions
-
-Follow these commit message conventions based on 9 analyzed commits.
-
-### Commit Style: Free-form Messages
-
-### Prefixes Used
-
-- `p1`
-
-### Message Guidelines
-
-- Average message length: ~45 characters
-- Keep first line concise and descriptive
-- Use imperative mood ("Add feature" not "Added feature")
-
-
-*Commit message example*
-
-```text
-P1: add B3 Suno empirical calibration protocol
-```
-
-*Commit message example*
-
-```text
-P1: add B3 calibration show summary
-```
-
-*Commit message example*
-
-```text
-P1: add B3 calibration A&R profile
-```
-
-*Commit message example*
-
-```text
-P1: add B3 calibration Creative UST
-```
-
-*Commit message example*
-
-```text
-P1: package B3 calibration Suno style prompt
-```
-
-*Commit message example*
-
-```text
-P1: package B3 calibration Suno lyrics prompt
-```
-
-*Commit message example*
-
-```text
-P1: add B3 renderer evaluation rubric
-```
-
-*Commit message example*
-
-```text
-P1: distinguish established render adherence from B3-specific calibration
-```
-
-## Architecture
-
-### Project Structure: Single Package
-
-This project uses **hybrid** module organization.
-
-### Guidelines
-
-- This project uses a hybrid organization
-- Follow existing patterns when adding new code
-
-## Code Style
-
-### Language: TypeScript
-
-### Naming Conventions
-
-| Element | Convention |
-|---------|------------|
-| Files | snake_case |
-| Functions | camelCase |
-| Classes | PascalCase |
-| Constants | SCREAMING_SNAKE_CASE |
-
-### Import Style: Relative Imports
-
-### Export Style: Named Exports
-
-
-*Preferred import style*
-
-```typescript
-// Use relative imports
-import { Button } from '../components/Button'
-import { useAuth } from './hooks/useAuth'
-```
-
-*Preferred export style*
-
-```typescript
-// Use named exports
-export function calculateTotal() { ... }
-export const TAX_RATE = 0.1
-export interface Order { ... }
-```
-
-## Common Workflows
-
-These workflows were detected from analyzing commit patterns.
-
-### Feature Development
-
-Standard feature implementation workflow
-
-**Frequency**: ~17 times per month
-
-**Steps**:
-1. Add feature implementation
-2. Add tests for feature
-3. Update documentation
-
-**Example commit sequence**:
-```
-P1: add B3 Suno empirical calibration protocol
-P1: add B3 calibration show summary
-P1: add B3 calibration A&R profile
-```
-
-
-## Best Practices
-
-Based on analysis of the codebase, follow these practices:
-
-### Do
-
-- Use snake_case for file names
-- Prefer named exports
-
-### Don't
-
-- Don't deviate from established patterns without discussion
-
----
-
-*This skill was auto-generated by [ECC Tools](https://ecc.tools). Review and customize as needed for your team.*
+Follow the conventions of the actual files being changed; this is not a single
+TypeScript package. No automatic MCP installation or memory import is part of this
+skill. Use tools already authorized in the session. Optional role files do not
+require delegation, select a model, or authorize external actions.

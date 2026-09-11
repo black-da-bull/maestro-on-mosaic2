@@ -1,26 +1,13 @@
-# ECC for Codex CLI
+# Maestro developer tooling
 
-This supplements the root `AGENTS.md` with a repo-local ECC baseline.
+Current repository guidance: `.agents/skills/maestro-on-mosaic2/SKILL.md`;
+Claude companion: `.claude/skills/maestro-on-mosaic2/SKILL.md`.
+Start with root README.md and `_PROVENANCE/STATE.md` to locate current authority.
 
-## Repo Skill
+`.codex/config.toml` only declares optional read-only role files. It does not configure
+MCP servers, select a model, change approval/sandbox policy, or enable delegation.
+Use already-authorized tools; any additional reviewed MCP connections belong in the
+user's configuration. Credentials must not be committed.
 
-- Repo-generated Codex skill: `.agents/skills/maestro-on-mosaic2/SKILL.md`
-- Claude-facing companion skill: `.claude/skills/maestro-on-mosaic2/SKILL.md`
-- Keep user-specific credentials and private MCPs in `~/.codex/config.toml`, not in this repo.
-
-## MCP Baseline
-
-Treat `.codex/config.toml` as the default ECC-safe baseline for work in this repository.
-The generated baseline enables GitHub, Context7, Exa, Memory, Playwright, and Sequential Thinking.
-
-## Multi-Agent Support
-
-- Explorer: read-only evidence gathering
-- Reviewer: correctness, security, and regression review
-- Docs researcher: API and release-note verification
-
-## Workflow Files
-
-- `.claude/commands/feature-development.md`
-
-Use these workflow files as reusable task scaffolds when the detected repository workflows recur.
+`.claude/commands/feature-development.md` is an optional workflow scaffold.
+The generated instincts file is retired; do not import its unsupported inferred rules.
