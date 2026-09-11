@@ -10,6 +10,15 @@ Pending operator search of other PCs/OneDrive accounts (`SKILL_FILES_SEARCH_CHEC
 ## O-04 · Session ID mapping (DEC-04)
 b9f69085, b161088a unverified — confirm from content during P1.
 ## O-05 · Suppressed-output audit (M4)
+**Current execution fold — 2026-09-11:** `forensic_replay_performed`; no present-architecture
+mutation proven; non-blocking for current audio/product progression. **OPEN — awaiting
+explicit operator close citing O-05** under the unchanged register rule above.
+Evidence: [O05_SUPPRESSED_OUTPUT_REPLAY_2026-09-08.md](O05_SUPPRESSED_OUTPUT_REPLAY_2026-09-08.md),
+merged in PR #15. Repeat replay only on new evidence satisfying all six §6 conditions.
+This supersedes all older O-05 replay-required/not-performed execution classifications
+in this register; no empirical finding is promoted into canon/runtime law.
+
+Historical entry (superseded execution state):
 Replay must check whether any prior session misread the precedence rule as an action limiter and withheld intended outputs. Not yet performed.
 ## O-06 · Runtime staleness map — PARTIALLY CONFIRMED (V1, 2026-07-16)
 `canon/Maestro_v5c_*` register CONFIRMED stale relative to session 13 (no v4.5.5 reference; Config B FIRM canon absent from all persisted artifacts). Remaining registers still presumptive pending full P1.

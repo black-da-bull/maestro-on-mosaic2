@@ -26,7 +26,7 @@ outputs:
     vocal_stem_asset_url: https://suno.com/song/ab7028a3-7453-456a-8f43-24dec7a94f95
     creative_ust_full_sha256: ad59202386c78ab6d3d42bc8b7ab71d0e8304b446b40114b86229797ba8084f2
     creative_ust_sorted_nonblank_lines_sha256: a087c1fe511255048b4e49d04a7f26ea1009559bcc41cde278b33d451a48c73c
-    creative_ust_block_order: [Theory, Voice, LYRICS NARRATIVE, Style, Timbre, Performance]
+    creative_ust_block_order: [Theory, Voices, LYRICS NARRATIVE, Style, Timbre, Performance]
     parent_render_url: https://suno.com/song/ea27cad7-632d-43bc-8e68-2b618643f642
     cover_of_source_url: https://suno.com/song/92dc625a-e4fb-489a-94e0-686946ba38fb
   - stage: fresh_a
@@ -43,7 +43,7 @@ outputs:
     vocal_stem_asset_url: https://suno.com/song/cb273061-31c9-4113-83dd-1348ffa2e600
     creative_ust_full_sha256: ad59202386c78ab6d3d42bc8b7ab71d0e8304b446b40114b86229797ba8084f2
     creative_ust_sorted_nonblank_lines_sha256: a087c1fe511255048b4e49d04a7f26ea1009559bcc41cde278b33d451a48c73c
-    creative_ust_block_order: [Theory, Voice, LYRICS NARRATIVE, Style, Timbre, Performance]
+    creative_ust_block_order: [Theory, Voices, LYRICS NARRATIVE, Style, Timbre, Performance]
   - stage: style_b
     label: fresh_generation_style_b
     generation_mode: fresh
@@ -58,7 +58,7 @@ outputs:
     vocal_stem_asset_url: https://suno.com/song/2eb85a56-9871-46c0-925f-a48df85decf2
     creative_ust_full_sha256: 8798eb896787fb50179195383290b2747072f16dd5caf1a6a27feddb9d11fde6
     creative_ust_sorted_nonblank_lines_sha256: a087c1fe511255048b4e49d04a7f26ea1009559bcc41cde278b33d451a48c73c
-    creative_ust_block_order: [Theory, Voice, Style, Timbre, Performance, LYRICS NARRATIVE]
+    creative_ust_block_order: [Theory, Voices, Style, Timbre, Performance, LYRICS NARRATIVE]
   - stage: style_c
     label: fresh_generation_style_c
     generation_mode: fresh
@@ -73,7 +73,7 @@ outputs:
     vocal_stem_asset_url: https://suno.com/song/b41a28e2-df15-4292-9e1f-879151790412
     creative_ust_full_sha256: 8798eb896787fb50179195383290b2747072f16dd5caf1a6a27feddb9d11fde6
     creative_ust_sorted_nonblank_lines_sha256: a087c1fe511255048b4e49d04a7f26ea1009559bcc41cde278b33d451a48c73c
-    creative_ust_block_order: [Theory, Voice, Style, Timbre, Performance, LYRICS NARRATIVE]
+    creative_ust_block_order: [Theory, Voices, Style, Timbre, Performance, LYRICS NARRATIVE]
   - stage: style_d
     label: fresh_generation_style_d
     generation_mode: fresh
@@ -88,14 +88,14 @@ outputs:
     vocal_stem_asset_url: https://suno.com/song/26d64ca7-98d4-4403-babe-f72a20dc942e
     creative_ust_full_sha256: 8798eb896787fb50179195383290b2747072f16dd5caf1a6a27feddb9d11fde6
     creative_ust_sorted_nonblank_lines_sha256: a087c1fe511255048b4e49d04a7f26ea1009559bcc41cde278b33d451a48c73c
-    creative_ust_block_order: [Theory, Voice, Style, Timbre, Performance, LYRICS NARRATIVE]
+    creative_ust_block_order: [Theory, Voices, Style, Timbre, Performance, LYRICS NARRATIVE]
 cross_output_findings:
   all_five_ust_line_content_identical_ignoring_order: true
   shared_sorted_nonblank_lines_sha256: a087c1fe511255048b4e49d04a7f26ea1009559bcc41cde278b33d451a48c73c
   serialization_regime_1: [cover, fresh_a]
-  serialization_regime_1_block_order: [Theory, Voice, LYRICS NARRATIVE, Style, Timbre, Performance]
+  serialization_regime_1_block_order: [Theory, Voices, LYRICS NARRATIVE, Style, Timbre, Performance]
   serialization_regime_2: [style_b, style_c, style_d]
-  serialization_regime_2_block_order: [Theory, Voice, Style, Timbre, Performance, LYRICS NARRATIVE]
+  serialization_regime_2_block_order: [Theory, Voices, Style, Timbre, Performance, LYRICS NARRATIVE]
   cleanest_style_prompt_comparison_subset: [style_b, style_c, style_d]
   reason: B/C/D carry byte-identical Creative UST serialization while the operator states their style prompts differ. Fresh A versus B/C/D is confounded by the Creative UST serialization-order change in addition to style-prompt variation.
   duration_range_seconds: {min: 252.840, max: 336.936}

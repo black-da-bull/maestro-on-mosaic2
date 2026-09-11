@@ -343,3 +343,24 @@ current STATE/OPEN/continuation to preserve that distinction and point to existi
 PRs #12/#14/#16 remain separate drafts. No draft changes or findings are promoted here.
 Source: promotion_2026-09-09/REMOTE_STATE.json. This is a persistence/navigation correction,
 not a new empirical or creative acceptance decision.
+
+
+## REPAIR-2026-09-11 — PR #15 provenance and O-05 execution-state propagation
+Inspected main: `1befdbeaa44a4432aaeaa56455ef44a01cd9e58c`; PR #15 merged September 10
+at `ecc28d730e5f6be37193fb8c5e408566b4ef4552`. Both review findings persisted after merge.
+Authority: operator request to prepare the smallest authority-correct repair; existing
+OPEN explicit item-ID closure rule and September 9 source/build promotion retained.
+
+Corrected five Creative UST block-order entries, two serialization-regime summaries,
+and related provenance prose from Voice to Voices to match the persisted `[Voices]`
+prompt container. Prompt bytes, hashes, measured results and serialization order retained.
+
+O-05: `forensic_replay_performed`; no present-architecture mutation proven; non-blocking
+for current audio/product progression; OPEN pending explicit operator close citing O-05.
+Evidence: O05_SUPPRESSED_OUTPUT_REPLAY_2026-09-08.md, especially §§4–6. Supersedes older
+replay-required execution claims in this ledger; repeat only with all six new-evidence
+conditions. Current OPEN/STATE and continuation navigation now expose the merged result.
+
+Rung: evidence/provenance consistency repair only; persistence established by containing
+commit. No new empirical acceptance, formal O-05 closure, canon/runtime promotion, source
+regeneration, or next-phase implementation. Historical records remain preserved.

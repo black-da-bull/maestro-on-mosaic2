@@ -1,3 +1,24 @@
+# CURRENT ENTRY POINT — 2026-09-11
+Doctrine: **Your Vision. Our Mission.**
+
+PR #15 merged on September 10 at `ecc28d730e5f6be37193fb8c5e408566b4ef4552`.
+Inspected main: `1befdbeaa44a4432aaeaa56455ef44a01cd9e58c`.
+Current continuation: [CONTINUATION_2026-09-09_P1_EVIDENCE_MERGE.md](CONTINUATION_2026-09-09_P1_EVIDENCE_MERGE.md).
+Current source/build authority remains [PROMOTION_2026-09-09.md](PROMOTION_2026-09-09.md), including DEC-PROMO-16.
+
+O-05: `forensic_replay_performed`; no present-architecture mutation proven; non-blocking
+for current audio/product progression; **OPEN — awaiting explicit operator close citing O-05**.
+Evidence: [O05_SUPPRESSED_OUTPUT_REPLAY_2026-09-08.md](O05_SUPPRESSED_OUTPUT_REPLAY_2026-09-08.md).
+Repeat replay only when new evidence meets all six conditions in that artifact's §6.
+
+This fold supersedes older replay-required/not-performed, PR #15 draft, and next-replay
+execution instructions below. It records completed work, not an operator closure or an
+empirical canon/runtime promotion. The existing continuation identifies renderer-adherence
+matrix/feedback integration as subsequent work; this repair does not execute that phase.
+Earlier snapshots and their bounded validation receipts remain historical records.
+
+---
+
 # CURRENT ENTRY POINT — 2026-09-09
 Doctrine: **Your Vision. Our Mission.**
 

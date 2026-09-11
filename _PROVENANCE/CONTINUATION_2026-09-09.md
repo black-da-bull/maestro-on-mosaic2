@@ -1,3 +1,12 @@
+Current continuation: [P1 evidence merge continuation](CONTINUATION_2026-09-09_P1_EVIDENCE_MERGE.md).
+Post-merge execution correction, 2026-09-11: O-05 is `forensic_replay_performed`,
+with no present-architecture mutation proven, non-blocking, and still OPEN pending
+explicit operator close citing O-05. The linked replay's six-part new-evidence trigger
+controls any repeat replay. Older next-replay/draft instructions below are historical
+and superseded. Empirical evidence is not promoted into canon/runtime law.
+
+---
+
 # Maestro v5-c — promotion continuation, 2026-09-09
 
 **Your Vision. Our Mission.** Operator: Morris / Mo.
