@@ -78,11 +78,11 @@ The full Creative UST serialization is not identical across all five.
 
 **Cover + fresh A** use:
 
-`Theory → Voice → LYRICS NARRATIVE → Style → Timbre → Performance`
+`Theory → Voices → LYRICS NARRATIVE → Style → Timbre → Performance`
 
 **Style B + Style C + Style D** use:
 
-`Theory → Voice → Style → Timbre → Performance → LYRICS NARRATIVE`
+`Theory → Voices → Style → Timbre → Performance → LYRICS NARRATIVE`
 
 Within each regime the full embedded Creative UST is byte-identical:
 

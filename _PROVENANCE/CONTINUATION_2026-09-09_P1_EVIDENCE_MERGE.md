@@ -50,7 +50,7 @@ Current O-05 state is:
 - formal closure: **not performed**;
 - closure authority: **operator-only under the OPEN register rule**.
 
-This delta does not erase the older OPEN/STATE text and does not silently close O-05. It resolves the stale execution-state contradiction by explicit supersession while preserving the operator close gate.
+The September 11 repair propagates this execution-state delta into OPEN, STATE, LEDGER and continuation navigation. Older snapshots remain historical; O-05 remains OPEN pending explicit operator close citing O-05. Repeat replay only when new evidence satisfies all six conditions in the replay artifact’s §6. No operator closure or canon/runtime promotion is performed.
 
 ### Open but non-blocking
 
@@ -95,7 +95,7 @@ Do not restart completed promotion or P0 work. Do not regenerate already-preserv
 - **Active constraints:** controller/worker authority unchanged; locked lyrics protected; no false-pass promotion; preserve provenance/confounds.
 - **Material evidence:** PR #15 merged evidence package; September 9 promotion receipts; O-05 replay artifact.
 - **Recent hindsight revision:** O-05 replay state changed from required to performed/non-blocking; formal close remains operator-gated.
-- **Active contradictions:** older OPEN/STATE O-05 wording is retained historical text and superseded by this delta for execution state.
+- **Active contradictions:** O-05 execution-state drift is repaired in the current OPEN/STATE folds and continuation navigation; older wording is explicitly historical.
 - **Unresolved:** exact Style phrase causation; optional B3/Leslie fidelity; deterministic repeatability; O-12; Seedance.
 - **Highest-value next operation:** product/runtime renderer-adherence matrix + feedback loop integration.
 - **Recommended hindsight depth:** H2 only for objects touched by that integration; no whole-corpus restart.
