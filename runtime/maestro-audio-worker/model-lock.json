@@ -5,41 +5,70 @@
     "repository_revision_is_not_checkpoint_identity": true,
     "checkpoint_hash_required_for_production_execution": true,
     "license_review_required_before_distribution": true,
-    "model_output_is_evidence_not_authority": true
+    "model_output_is_evidence_not_authority": true,
+    "incompatible_model_stacks_must_be_isolated": true
   },
   "models": {
     "beat_this": {
       "repository": "CPJKU/beat_this",
       "revision": "b95c8ab0c58c2d9fcfd40508ae8dffbc05ac4f5c",
       "package_version_observed": "1.1.0",
+      "runtime_profile": "python-3.12-worker-profile",
       "published_code_and_weights_license": "MIT",
       "license_note": "Upstream warns that some training files are copyrighted or under limited Creative Commons licenses and leaves downstream use assessment to the user.",
-      "checkpoint": "unresolved_until_worker_provisioning"
+      "checkpoint_execution_verified": "small0_cpu_ci",
+      "bitter_thank_you_execution_verified": false,
+      "checkpoint": "hash_pin_required_for_production"
     },
     "songformer": {
       "repository": "ASLP-lab/SongFormer",
       "revision": "139b2aa3b14bd1c6d961d0994e9fc975f1ef7fd5",
-      "checkpoint": "unresolved_until_worker_provisioning"
+      "runtime_profile": "python-3.10-isolated",
+      "upstream_torch": "2.4.0",
+      "upstream_transformers": "4.51.1",
+      "expected_input_sample_rate_hz": 24000,
+      "checkpoint": "preprovision_and_hash_pin_required",
+      "model_output_authority": "inferred_structure_only"
     },
     "chordmini": {
       "repository": "ptnghia-j/ChordMini",
       "revision": "aa6e3a8d7b017f082fd2aaff9329d5c26af49c03",
-      "checkpoint": "unresolved_until_worker_provisioning"
+      "runtime_profile": "python-3.11-isolated",
+      "upstream_torch": "2.9.1",
+      "available_model_types": ["ChordNet", "BTC"],
+      "checkpoint": "preprovision_and_hash_pin_required",
+      "model_output_authority": "inferred_harmony_only"
     },
     "basic_pitch": {
       "repository": "spotify/basic-pitch",
       "revision": "fa5997af0a8210982619003269994a1be25eddf3",
-      "checkpoint": "package_managed_model_to_hash_at_provisioning"
+      "package_version": "0.4.0",
+      "runtime_profile": "python-3.11-isolated",
+      "upstream_documented_python": "3.7-3.11",
+      "published_license": "Apache-2.0",
+      "checkpoint": "package_managed_model_identity_to_hash_at_provisioning",
+      "model_output_authority": "inferred_transcription_only"
     },
     "advanced_amt": {
       "repository": "anime-song/tsumugi",
       "revision": "f7411471a4de0ad3d430191de11b8623d67e5b38",
-      "checkpoint": "unresolved_until_worker_provisioning"
+      "runtime_profile": "python-3.12-uv-locked-isolated",
+      "upstream_python": ">=3.10,<3.15",
+      "upstream_torch": "2.13.0",
+      "upstream_torchaudio": "2.11.0",
+      "published_license": "MIT",
+      "checkpoint": "preprovision_or_upstream_default_then_hash_pin",
+      "model_output_authority": "inferred_transcription_only"
     },
     "clap": {
       "repository": "LAION-AI/CLAP",
       "revision": "1fd4c37df5ffbfcfbad5415c170bc66cf94c9994",
-      "checkpoint": "unresolved_until_worker_provisioning"
+      "package_version": "1.1.7",
+      "runtime_profile": "python-3.10-isolated",
+      "checkpoint": "preprovision_and_hash_pin_required",
+      "preferred_maestro_scope": "music_capable_checkpoint",
+      "model_output_authority": "embedding_evidence_only",
+      "universal_quality_score": false
     }
   }
 }
