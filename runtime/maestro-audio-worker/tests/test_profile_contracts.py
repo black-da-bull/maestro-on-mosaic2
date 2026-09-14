@@ -14,7 +14,7 @@ PROFILES = {
 
 PROVENANCE_MARKERS = {
     'basic-pitch': 'model_artifact_sha256',
-    'songformer': 'model_dir_sha256',
+    'songformer': 'checkpoint_sha256',
     'chordmini': 'checkpoint_sha256',
     'tsumugi': 'checkpoint_sha256',
     'clap': 'checkpoint_sha256',
@@ -42,12 +42,16 @@ def main() -> None:
         checks += 6
 
     songformer = (ROOT / 'profiles' / 'songformer' / 'bridge.py').read_text(encoding='utf-8')
-    assert 'local_files_only=True' in songformer
+    assert 'songformer_cuda_required_by_upstream_inference_path' in songformer
+    assert "HF_HUB_OFFLINE'" in songformer or 'HF_HUB_OFFLINE' in songformer
+    assert 'muq_cache_sha256' in songformer
+    assert 'musicfm_checkpoint_sha256' in songformer
+
     tsumugi = (ROOT / 'profiles' / 'tsumugi' / 'bridge.py').read_text(encoding='utf-8')
     assert 'TSUMUGI_CHECKPOINT_must_reference_preprovisioned_local_file' in tsumugi
     clap = (ROOT / 'profiles' / 'clap' / 'bridge.py').read_text(encoding='utf-8')
     assert 'CLAP_CHECKPOINT_must_reference_preprovisioned_local_file' in clap
-    checks += 3
+    checks += 6
 
     print({'passed': True, 'checks': checks, 'profiles': sorted(PROFILES)})
 
