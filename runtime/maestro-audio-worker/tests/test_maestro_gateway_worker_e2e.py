@@ -5,8 +5,10 @@ import os
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 import wave
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 import numpy as np
@@ -18,6 +20,26 @@ sys.path.insert(0, str(WORKFORCE_ROOT))
 
 from worker_core import ArtifactStore, sha256_file  # noqa: E402
 import audio_analysis_gateway as gateway  # noqa: E402
+
+
+class ArtifactHandler(BaseHTTPRequestHandler):
+    token = 'artifact-fetch-secret'
+    route = ''
+    payload = b''
+
+    def do_GET(self):
+        if self.headers.get('Authorization') != f'Bearer {self.token}':
+            self.send_response(401); self.end_headers(); return
+        if self.path != self.route:
+            self.send_response(404); self.end_headers(); return
+        self.send_response(200)
+        self.send_header('Content-Type', 'application/octet-stream')
+        self.send_header('Content-Length', str(len(self.payload)))
+        self.end_headers()
+        self.wfile.write(self.payload)
+
+    def log_message(self, *args):
+        return
 
 
 def make_wav(path: Path) -> None:
@@ -36,10 +58,17 @@ def main() -> None:
         root = Path(td)
         source = root / 'source.wav'
         make_wav(source)
+        source_bytes = source.read_bytes()
         sha = sha256_file(source)
-        artifact_root = root / 'artifacts'
+        artifact_root = root / 'worker-artifacts'
         state_root = root / 'state'
-        ArtifactStore(artifact_root).import_file(source, sha)
+
+        artifact_server = ThreadingHTTPServer(('127.0.0.1', 0), ArtifactHandler)
+        ArtifactHandler.route = f'/objects/{sha[:2]}/{sha}'
+        ArtifactHandler.payload = source_bytes
+        artifact_thread = threading.Thread(target=artifact_server.serve_forever, daemon=True)
+        artifact_thread.start()
+        artifact_base = f'http://127.0.0.1:{artifact_server.server_port}'
 
         token = 'maestro-gateway-worker-integration-secret'
         port = '8101'
@@ -50,6 +79,8 @@ def main() -> None:
             'MAESTRO_AUDIO_WORKER_STATE': str(state_root),
             'MAESTRO_AUDIO_WORKER_TOKEN': token,
             'MAESTRO_AUDIO_WORKER_CONCURRENCY': '1',
+            'MAESTRO_ARTIFACT_FETCH_BASE_URL': artifact_base,
+            'MAESTRO_ARTIFACT_FETCH_TOKEN': ArtifactHandler.token,
         })
         proc = subprocess.Popen(
             [sys.executable, '-m', 'uvicorn', 'service:app', '--host', '127.0.0.1', '--port', port],
@@ -109,12 +140,16 @@ def main() -> None:
             assert adapter['provenance']['source_sha256'] == sha
             assert adapter['provenance']['evidence_class'] == 'derived_measurement'
             assert result['canon_promotion'] is False
+            fetched = ArtifactStore(artifact_root).retrieve(sha)
+            assert sha256_file(fetched) == sha
+            assert oct(fetched.stat().st_mode & 0o777) == '0o444'
             print(json.dumps({
                 'passed': True,
-                'checks': 10,
+                'checks': 12,
                 'gateway_schema': gateway.SCHEMA_VERSION,
                 'job_id': submitted['job_id'],
                 'source_sha256': sha,
+                'artifact_fetch': 'trusted_sha_derived_and_verified',
             }, indent=2))
         finally:
             if old_url is None:
@@ -131,6 +166,9 @@ def main() -> None:
             except subprocess.TimeoutExpired:
                 proc.kill()
                 proc.wait(timeout=5)
+            artifact_server.shutdown()
+            artifact_server.server_close()
+            artifact_thread.join(timeout=5)
 
 
 if __name__ == '__main__':
