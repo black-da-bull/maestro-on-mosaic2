@@ -1,2 +1,3 @@
--r requirements-core.txt
-laion-clap>=1.1,<2
+# CLAP is intentionally isolated from the Python 3.12 worker core.
+# The researched upstream environment documents Python 3.10.
+# Build runtime/maestro-audio-worker/profiles/clap/Dockerfile instead.

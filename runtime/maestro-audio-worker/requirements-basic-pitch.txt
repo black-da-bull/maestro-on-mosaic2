@@ -1,2 +1,3 @@
--r requirements-core.txt
-basic-pitch>=0.4,<1
+# Basic Pitch 0.4.0 is intentionally isolated from the Python 3.12 worker core.
+# Upstream documents Python 3.7-3.11 compatibility.
+# Build runtime/maestro-audio-worker/profiles/basic-pitch/Dockerfile instead.

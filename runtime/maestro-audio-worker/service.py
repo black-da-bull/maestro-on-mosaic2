@@ -7,6 +7,7 @@ from pathlib import Path
 
 from fastapi import FastAPI, Header, HTTPException, Request
 
+from artifact_sync import ArtifactFetchUnavailable, DEFAULT_MAX_BYTES, sync_artifact
 from worker_core import (
     AUTHORITY,
     ArtifactStore,
@@ -17,6 +18,7 @@ from worker_core import (
     execute_job,
     probe_capabilities,
     public_job,
+    validate_job_request,
 )
 
 ARTIFACT_ROOT = Path(os.getenv("MAESTRO_ARTIFACT_ROOT", "/data/artifacts"))
@@ -29,6 +31,15 @@ jobs = JobStore(STATE_ROOT)
 executor = ThreadPoolExecutor(max_workers=MAX_WORKERS, thread_name_prefix="maestro-audio")
 app = FastAPI(title="Maestro Audio Analysis Worker", version="0.6")
 
+BRIDGE_ENV = {
+    'songformer': 'MAESTRO_SONGFORMER_COMMAND_JSON',
+    'chordmini': 'MAESTRO_CHORDMINI_COMMAND_JSON',
+    'basic_pitch': 'MAESTRO_BASIC_PITCH_COMMAND_JSON',
+    'advanced_amt': 'MAESTRO_ADVANCED_AMT_COMMAND_JSON',
+    'clap': 'MAESTRO_CLAP_COMMAND_JSON',
+    'audio_language': 'MAESTRO_AUDIO_LANGUAGE_COMMAND_JSON',
+}
+
 
 def require_auth(authorization: str | None) -> None:
     if not TOKEN:
@@ -40,6 +51,46 @@ def require_auth(authorization: str | None) -> None:
 
 def schedule(job_id: str) -> None:
     executor.submit(execute_job, job_id, artifacts, jobs)
+
+
+def ensure_artifact(request_payload: dict) -> None:
+    sha256 = request_payload['source_sha256']
+    try:
+        artifacts.retrieve(sha256)
+        return
+    except ArtifactUnavailable:
+        pass
+
+    base_url = os.getenv('MAESTRO_ARTIFACT_FETCH_BASE_URL', '').strip()
+    if not base_url:
+        raise ArtifactUnavailable(f'artifact_not_present:{sha256}')
+    token = os.getenv('MAESTRO_ARTIFACT_FETCH_TOKEN')
+    max_bytes = int(os.getenv('MAESTRO_ARTIFACT_FETCH_MAX_BYTES', str(DEFAULT_MAX_BYTES)))
+    sync_artifact(
+        sha256,
+        artifacts,
+        base_url=base_url,
+        token=token,
+        max_bytes=max_bytes,
+        timeout_s=int(os.getenv('MAESTRO_ARTIFACT_FETCH_TIMEOUT_S', '120')),
+    )
+
+
+def effective_capabilities() -> dict:
+    caps = probe_capabilities()
+    for adapter_id, env_name in BRIDGE_ENV.items():
+        if os.getenv(env_name, '').strip():
+            entry = caps['adapters'].setdefault(adapter_id, {})
+            entry['configured'] = True
+            entry['execution'] = 'isolated_json_command_bridge'
+            entry['bridge_env'] = env_name
+    caps['artifact_fetch'] = {
+        'configured': bool(os.getenv('MAESTRO_ARTIFACT_FETCH_BASE_URL', '').strip()),
+        'source_identity': 'sha256_derived_object_path_only',
+        'arbitrary_source_urls_allowed': False,
+        'redirects_allowed': False,
+    }
+    return caps
 
 
 @app.on_event("startup")
@@ -56,7 +107,7 @@ def health() -> dict:
 @app.get("/v1/capabilities")
 def capabilities(authorization: str | None = Header(default=None)) -> dict:
     require_auth(authorization)
-    return probe_capabilities()
+    return effective_capabilities()
 
 
 @app.post("/v1/jobs", status_code=202)
@@ -64,9 +115,13 @@ async def submit(request: Request, authorization: str | None = Header(default=No
     require_auth(authorization)
     try:
         payload = await request.json()
-        record = create_job(payload, artifacts, jobs)
+        normalized = validate_job_request(payload)
+        ensure_artifact(normalized)
+        record = create_job(normalized, artifacts, jobs)
     except ArtifactUnavailable as exc:
         raise HTTPException(status_code=409, detail=str(exc)) from exc
+    except ArtifactFetchUnavailable as exc:
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
     except WorkerValidationError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
     schedule(record["job_id"])

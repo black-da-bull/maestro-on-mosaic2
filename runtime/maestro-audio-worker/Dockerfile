@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg libsndfi
 COPY requirements-core.txt requirements-beat-this.txt requirements-basic-pitch.txt requirements-clap.txt ./
 ARG EXTRA_REQUIREMENTS=requirements-core.txt
 RUN pip install --no-cache-dir -r ${EXTRA_REQUIREMENTS}
-COPY worker_core.py service.py ingest.py probe.py ./
+COPY worker_core.py service.py artifact_sync.py ingest.py probe.py ./
 RUN useradd -r -u 10001 maestro && mkdir -p /data/artifacts /data/state && chown -R maestro:maestro /data
 USER maestro
 EXPOSE 8080
