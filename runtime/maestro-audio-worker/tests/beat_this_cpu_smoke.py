@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import statistics
 import tempfile
@@ -9,6 +10,14 @@ from pathlib import Path
 import numpy as np
 
 TARGET_BPM = 100.0
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open('rb') as f:
+        for chunk in iter(lambda: f.read(4 * 1024 * 1024), b''):
+            h.update(chunk)
+    return h.hexdigest()
 
 
 def make_clicks(path: Path, bpm: float = TARGET_BPM, seconds: float = 24.0, sr: int = 22050) -> None:
@@ -25,11 +34,17 @@ def make_clicks(path: Path, bpm: float = TARGET_BPM, seconds: float = 24.0, sr: 
 
 
 def main() -> None:
+    import torch
     from beat_this.inference import File2Beats
+
     with tempfile.TemporaryDirectory() as td:
         wav = Path(td) / 'clicks.wav'
         make_clicks(wav)
         tracker = File2Beats(checkpoint_path='small0', device='cpu', dbn=False)
+        checkpoint_path = Path(torch.hub.get_dir()) / 'checkpoints' / 'beat_this-small0.ckpt'
+        assert checkpoint_path.is_file(), checkpoint_path
+        checkpoint_sha256 = sha256_file(checkpoint_path)
+
         beats, downbeats = tracker(str(wav))
         beats = [float(x) for x in beats]
         assert len(beats) >= 8, beats
@@ -41,7 +56,10 @@ def main() -> None:
             'passed': True,
             'device': 'cpu',
             'checkpoint': 'small0',
+            'checkpoint_path': str(checkpoint_path),
+            'checkpoint_sha256': checkpoint_sha256,
             'beat_count': len(beats),
+            'downbeat_count': len([float(x) for x in downbeats]),
             'raw_median_ibi_bpm': bpm,
             'target_bpm': TARGET_BPM,
             'half_double_relational_error_bpm': relational_error,
@@ -49,4 +67,5 @@ def main() -> None:
         }, indent=2))
 
 
-if __name__ == '__main__': main()
+if __name__ == '__main__':
+    main()
