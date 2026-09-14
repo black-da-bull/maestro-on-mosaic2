@@ -6,12 +6,17 @@ import json
 import os
 import tempfile
 from pathlib import Path
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
 from worker_core import ArtifactStore, SHA_RE, WorkerValidationError
 
 DEFAULT_MAX_BYTES = 4 * 1024 * 1024 * 1024
+
+
+class ArtifactFetchUnavailable(RuntimeError):
+    pass
 
 
 def validate_base_url(value: str) -> str:
@@ -64,10 +69,17 @@ def sync_artifact(
     digest = hashlib.sha256()
     total = 0
     try:
-        with urlopen(request, timeout=timeout_s) as response, temp_path.open('wb') as out:
+        try:
+            response = urlopen(request, timeout=timeout_s)
+        except (HTTPError, URLError, TimeoutError) as exc:
+            raise ArtifactFetchUnavailable(f'artifact_fetch_failed:{exc.__class__.__name__}') from exc
+        with response, temp_path.open('wb') as out:
             content_length = response.headers.get('Content-Length')
             if content_length:
-                declared = int(content_length)
+                try:
+                    declared = int(content_length)
+                except ValueError as exc:
+                    raise WorkerValidationError('artifact_fetch_invalid_content_length') from exc
                 if declared < 0 or declared > max_bytes:
                     raise WorkerValidationError('artifact_fetch_declared_size_exceeds_limit')
             while True:
