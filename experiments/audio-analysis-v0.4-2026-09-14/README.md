@@ -3,9 +3,9 @@
 **Date:** 2026-09-14  
 **Doctrine:** Your Vision. Our Mission.  
 **Scope:** experimental evidence/integration checkpoint only  
-**Parent main:** `e7a6e3671987bd53c2d64ce0155bc8afcee60777`
+**Original parent main:** `e7a6e3671987bd53c2d64ce0155bc8afcee60777`
 
-This checkpoint persists the current session's approved audio-analysis direction without promoting experimental model outputs into Technical UST canon or changing the accepted workforce/runtime authority.
+This checkpoint persists the session's approved audio-analysis direction without promoting experimental model outputs into Technical UST canon or changing the accepted workforce/runtime authority.
 
 ## Approved authority boundary
 
@@ -40,11 +40,11 @@ Heavy model environments/checkpoints are intentionally isolated from `runtime/ma
 
 ## Validation
 
-Current package test result: **64 passed, 2 third-party Python 3.13 deprecation warnings**.
+Session package test result: **64 passed, 2 third-party Python 3.13 deprecation warnings**.
 
 Validated gates include malformed-adapter rejection, source/snapshot immutability, fast true-peak `not_assessed`, public adapter aliases, statistical embedding shape/provenance, embedding calibration non-promotion, API compatibility routes, deterministic-analysis prerequisite, and a controlled successful experimental bridge job.
 
-The current Bitter Thank You strict suite executed the built-in statistical descriptor successfully while reporting Beat This, SongFormer, ChordMini, Basic Pitch, advanced AMT, CLAP, and audio-language bridges as `not_configured` on this host. The known silent Contrast artifact failed closed during reconciled calibration. No heavyweight model execution is claimed.
+The Bitter Thank You strict suite executed the built-in statistical descriptor successfully while reporting Beat This, SongFormer, ChordMini, Basic Pitch, advanced AMT, CLAP, and audio-language bridges as `not_configured` on that host. The known silent Contrast artifact failed closed during reconciled calibration. No heavyweight model execution is claimed.
 
 ## Session artifact
 
@@ -52,13 +52,15 @@ Reconciled package: `Maestro_Develop_v0_4_RECONCILED.zip`
 SHA-256: `b24b1aeb76e2cc711ecd017ee9624be7df798ec7ddf5aa664c38f94872e62a27`  
 Package manifest contains 231 files and preserves the user-supplied parallel v0.4 branch under `source_baseline/user_v0_4_parallel/`.
 
-The package itself is a session artifact and is not committed by this checkpoint. This branch records the promotion boundary and continuation state so a later integration cannot silently treat local experimental code as already authoritative runtime code.
+The package itself is a session artifact and is not committed by this checkpoint. This repository record captures the promotion boundary so later integration cannot silently treat local experimental code as already authoritative runtime code.
 
-## Deployment boundary
+## Deployment boundary — reconciled after PR #16 promotion
 
-The currently linked Vercel `maestro-workforce` production deployment of `main` still fails before runtime startup because the repository has no recognized Python entrypoint. Existing draft PR #16 contains a broader browser/runtime entrypoint solution and remains a separate promotion stream. This audio-analysis checkpoint does not merge, duplicate, or bypass PR #16.
+PR #16 was promoted to `main` on 2026-09-14 as merge commit `0ac963d784eb68c7e2e70b090e0aeb98d91d51e0`. The linked Vercel `maestro-workforce` production deployment for that commit reached **READY**, uses a Python runtime, and `GET /api/health` returned HTTP 200 with `technical_ust_ownership_dependency_overlay` as authority.
 
-Heavy MIR/GPU inference must run as durable/background jobs on dedicated model workers or services, not inline in the Vercel request path. OpenAI evidence reasoning remains server-side and credential-bound.
+That resolves the repository-root Python-entrypoint/browser-runtime deployment blocker. It does **not** mean this v0.4 experimental audio package is deployed or promoted into the accepted runtime.
+
+Heavy MIR/GPU inference remains a durable/background-worker concern, not an inline Vercel request path. OpenAI evidence reasoning remains server-side and credential-bound.
 
 ## Next execution order
 
@@ -70,4 +72,4 @@ Heavy MIR/GPU inference must run as durable/background jobs on dedicated model w
 6. Use the resulting instrumentation for controlled Suno v6 prompt/renderer experiments.
 7. Promote only replicated renderer behavior through `OBSERVATION -> CANDIDATE_HEURISTIC -> VALIDATED_HEURISTIC -> RENDERER_POLICY`.
 
-**No canon/runtime promotion is requested by this checkpoint.**
+**No Technical UST canon/runtime promotion is asserted by this checkpoint.**

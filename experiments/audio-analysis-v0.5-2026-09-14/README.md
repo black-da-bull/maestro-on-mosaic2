@@ -2,8 +2,8 @@
 
 **Date:** 2026-09-14  
 **Doctrine:** Your Vision. Our Mission.  
-**Status:** approved for controlled calibration/renderer-learning execution; **not** canon/runtime promotion  
-**Parent experimental checkpoint:** v0.4 on this branch
+**Status:** approved for controlled calibration/renderer-learning execution; **not** Technical UST canon/runtime promotion  
+**Parent experimental checkpoint:** v0.4
 
 ## Objective
 
@@ -60,13 +60,15 @@ This proves orchestration/calibration state transitions on a real project artifa
 
 ## Current model execution boundary
 
-Beat This, SongFormer, ChordMini, Basic Pitch, advanced AMT, CLAP, and direct audio-language bridges remain explicit model-dependent adapters. On the current host they are `not_configured`; no heavyweight inference result is fabricated.
+Beat This, SongFormer, ChordMini, Basic Pitch, advanced AMT, CLAP, and direct audio-language bridges remain explicit model-dependent adapters. On the session host they were `not_configured`; no heavyweight inference result is fabricated.
 
 The existing librosa fallback produced a useful-but-cautious tempo estimate around 103.36 BPM for the original fixture. It remains labeled `librosa_fallback`, not Beat This and not canonical project tempo.
 
-## Deployment boundary
+## Deployment boundary — reconciled after PR #16 promotion
 
-This checkpoint does not duplicate or bypass draft PR #16. Vercel browser/API deployment and the repository-root Python entrypoint remain that promotion stream.
+PR #16 is no longer a blocker or parallel draft stream. It was merged into `main` as `0ac963d784eb68c7e2e70b090e0aeb98d91d51e0`, and the linked Vercel production deployment is **READY**. The deployed `/api/health` endpoint returned HTTP 200 and reports the accepted Technical UST ownership/dependency overlay as authority.
+
+The remaining separation is intentional: the v0.5 audio-analysis implementation exists as a validated session package and evidence checkpoint but has **not** yet been mapped into `runtime/maestro-workforce/`. Heavy MIR/GPU adapters should remain isolated/background workers rather than inline Vercel request handlers.
 
 Recommended deployment topology:
 
@@ -75,15 +77,27 @@ Recommended deployment topology:
 - OpenAI: structured evidence reasoning over measured facts, server-side;
 - operator: listening/creative authority.
 
+## Worktree reconciliation
+
+- PR #2 (original browser-local MVP) — closed as superseded by the integrated runtime path.
+- PR #14 (browser reconciliation) — closed as superseded by PR #16.
+- PR #18 (dependency bumps in historical `code/D-Maestro/.../frontend` trees) — closed as out-of-scope for the active runtime/browser surfaces; update those dependencies if those historical frontends are ever reactivated.
+- PR #16 — promoted and production-deployed.
+- PR #20 — carries only the experimental audio-analysis evidence/checkpoint; it does not claim the session ZIP is already runtime-integrated.
+
+Formal numbered `_PROVENANCE/OPEN.md` items retain their explicit operator-close rule. Technical work may make an item non-blocking, but this checkpoint does not silently close an `O-*` item without an operator statement citing the ID.
+
 ## Next execution
 
-1. Provision Beat This in an isolated worker and calibrate it on Bitter Thank You against known project/Studio tempo evidence.
-2. Provision SongFormer and compare detected structure with declared lyric/Technical Road-Map evidence.
-3. Run Basic Pitch + advanced AMT against Suno MIDI while retaining both as inferred hypotheses.
-4. Run CLAP/embedding calibration only after collecting operator-labeled pairs/groups.
-5. Run audio-language reasoning only after deterministic/MIR evidence exists.
-6. Execute the first controlled Suno v6 repeated-take experiment with renderer settings captured.
-7. Promote no renderer heuristic automatically.
+1. Map the v0.5 implementation into a repository integration branch based on current `main`, keeping heavyweight adapters isolated.
+2. Run the repository promotion validator plus the audio-analysis 74-test suite against that integrated tree.
+3. Provision Beat This in an isolated worker and calibrate it on Bitter Thank You against known project/Studio tempo evidence.
+4. Provision SongFormer and compare detected structure with declared lyric/Technical Road-Map evidence.
+5. Run Basic Pitch + advanced AMT against Suno MIDI while retaining both as inferred hypotheses.
+6. Run CLAP/embedding calibration only after collecting operator-labeled pairs/groups.
+7. Run audio-language reasoning only after deterministic/MIR evidence exists.
+8. Execute the first controlled Suno v6 repeated-take experiment with renderer settings captured.
+9. Promote no renderer heuristic automatically.
 
 ## Session package
 
