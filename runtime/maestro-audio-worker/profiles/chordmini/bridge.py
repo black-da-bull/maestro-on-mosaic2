@@ -18,6 +18,14 @@ def sha256_file(path: Path) -> str:
     return h.hexdigest()
 
 
+def detected_device(torch) -> str:
+    if torch.cuda.is_available():
+        return 'cuda'
+    if hasattr(torch.backends, 'mps') and torch.backends.mps.is_available():
+        return 'mps'
+    return 'cpu'
+
+
 def parse_lab(path: Path) -> list[dict]:
     segments = []
     for line_number, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
@@ -41,6 +49,8 @@ def main() -> None:
     p.add_argument('--context', required=True)
     args = p.parse_args()
 
+    import torch
+
     context = json.loads(Path(args.context).read_text(encoding='utf-8'))
     if not isinstance(context, dict):
         raise ValueError('context_must_be_object')
@@ -56,13 +66,18 @@ def main() -> None:
     model_type = str(context.get('chordmini_model_type') or os.getenv('CHORDMINI_MODEL_TYPE') or 'ChordNet')
     if model_type not in {'ChordNet', 'BTC'}:
         raise RuntimeError('invalid_chordmini_model_type')
+    device = detected_device(torch)
+
+    input_path = Path(args.input).resolve()
+    if not input_path.is_file():
+        raise RuntimeError('chordmini_input_audio_missing')
 
     with tempfile.TemporaryDirectory(prefix='maestro-chordmini-') as td:
         save_dir = Path(td) / 'labs'
         command = [
             sys.executable,
             str(root / 'src' / 'evaluation' / 'test.py'),
-            '--audio_dir', str(Path(args.input).resolve()),
+            '--audio_dir', str(input_path),
             '--save_dir', str(save_dir),
             '--checkpoint', str(checkpoint),
             '--model_type', model_type,
@@ -80,6 +95,8 @@ def main() -> None:
         'implementation_version': str(os.getenv('CHORDMINI_REVISION') or 'aa6e3a8d7b017f082fd2aaff9329d5c26af49c03'),
         'model_family': 'ptnghia-j/ChordMini',
         'model_type': model_type,
+        'device': device,
+        'device_selection': 'upstream_auto_cuda_then_mps_then_cpu',
         'checkpoint_name': checkpoint.name,
         'checkpoint_sha256': checkpoint_sha,
         'segments': segments,
