@@ -10,6 +10,7 @@ on:
   push:
     branches:
       - development/audio-analysis-worker-v0.6-2026-09-14
+      - development/audio-model-profiles-v0.6-2026-09-14
       - main
     paths:
       - 'runtime/maestro-audio-worker/**'
@@ -27,7 +28,7 @@ jobs:
           python-version: '3.12'
       - name: Install worker core
         run: python -m pip install -r runtime/maestro-audio-worker/requirements-core.txt
-      - name: Compile worker
+      - name: Compile worker and profile bridges
         run: python -m compileall -q runtime/maestro-audio-worker
       - name: Run worker core contract
         working-directory: runtime/maestro-audio-worker
@@ -35,9 +36,12 @@ jobs:
       - name: Run deterministic calibration contract
         working-directory: runtime/maestro-audio-worker
         run: PYTHONPATH=. python tests/test_calibration.py
-      - name: Run authenticated gateway-worker protocol E2E
+      - name: Run authenticated worker HTTP protocol E2E
         working-directory: runtime/maestro-audio-worker
         run: PYTHONPATH=. python tests/test_gateway_e2e.py
+      - name: Run real Maestro workforce gateway to worker E2E
+        working-directory: runtime/maestro-audio-worker
+        run: PYTHONPATH=. python tests/test_maestro_gateway_worker_e2e.py
       - name: Build core container
         run: docker build -t maestro-audio-worker:ci runtime/maestro-audio-worker
 
