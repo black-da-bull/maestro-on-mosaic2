@@ -57,12 +57,14 @@ def call_wsgi(method, path, payload=None, query=""):
 
 
 def main():
+    checks = 0
     caps = a.capabilities()
     assert caps["auto_promotion"] is False
     assert caps["authority"]["technical_ust_mutation"] is False
     assert {x["id"] for x in caps["adapters"]} >= {
         "beat_this", "songformer", "chordmini", "basic_pitch", "advanced_amt", "clap", "audio_language"
     }
+    checks += 3
 
     valid = {
         "project_id": "p1",
@@ -77,11 +79,18 @@ def main():
     expect_error(lambda: a.validate_job_request({**valid, "source_sha256": "bad"}), "lowercase_sha256")
     expect_error(lambda: a.validate_job_request({**valid, "adapters": ["imaginary"]}), "unknown_adapter")
     expect_error(lambda: a.validate_job_request({**valid, "surprise": 1}), "unknown_fields")
+    expect_error(lambda: a.validate_job_request({**valid, "source_ref": "https://attacker.invalid/x"}), "logical_artifact_reference")
+    checks += 5
 
     with env(MAESTRO_AUDIO_WORKER_URL=None):
         expect_error(lambda: a.submit_job(valid), "not_configured")
         status, payload = call_wsgi("POST", "/api/audio-analysis/jobs", valid)
         assert status.startswith("503") and payload["type"] == "worker_unavailable"
+    checks += 2
+
+    with env(MAESTRO_AUDIO_WORKER_URL="http://worker.invalid"):
+        expect_error(lambda: a.submit_job(valid, transport=lambda *args: {}), "must_use_https")
+    checks += 1
 
     def ok_transport(method, url, payload, token):
         assert method == "POST" and url.endswith("/v1/jobs")
@@ -92,6 +101,44 @@ def main():
         submitted = a.submit_job(valid, transport=ok_transport)
         assert submitted["status"] == "queued"
         assert submitted["authority"]["renderer_policy_promotion"] is False
+    checks += 2
+
+    completed_response = {
+        "job_id": "job-123",
+        "status": "completed",
+        "source_sha256": SHA,
+        "adapters": ["beat_this"],
+        "results": [{
+            "adapter_id": "beat_this",
+            "status": "completed",
+            "schema": "maestro.audio.beat_this.v0.5",
+            "output": {"bpm": 103.0, "beats": [0.0, 0.58]},
+            "provenance": {
+                "source_sha256": SHA,
+                "implementation": "beat_this_bridge",
+                "implementation_version": "1",
+                "evidence_class": "model_inference",
+            },
+            "warnings": [],
+        }],
+    }
+
+    def completed_transport(method, url, payload, token):
+        assert method == "GET"
+        return completed_response
+
+    with env(MAESTRO_AUDIO_WORKER_URL="https://worker.invalid"):
+        got = a.get_job("job-123", transport=completed_transport)
+        assert got["results"][0]["adapter_id"] == "beat_this"
+        bad = json.loads(json.dumps(completed_response))
+        bad["results"][0]["provenance"]["source_sha256"] = "b" * 64
+        expect_error(lambda: a.get_job("job-123", transport=lambda *args: bad), "source_identity_mismatch")
+        bad_unknown = {**completed_response, "surprise": True}
+        expect_error(lambda: a.get_job("job-123", transport=lambda *args: bad_unknown), "unknown_fields")
+        bad_missing = json.loads(json.dumps(completed_response))
+        bad_missing["results"] = []
+        expect_error(lambda: a.get_job("job-123", transport=lambda *args: bad_missing), "do_not_cover_adapters")
+    checks += 4
 
     experiment = {
         "objective": "Compare controlled renders",
@@ -105,6 +152,7 @@ def main():
         lambda: a.validate_renderer_record("renderer_experiment", {**experiment, "causal_claim_authorized": True}),
         "must_be_false",
     )
+    checks += 2
 
     observation = {
         "statement": "Low Variety was associated with smaller style drift in this run",
@@ -125,6 +173,7 @@ def main():
         ),
         "must_be_reversible",
     )
+    checks += 4
 
     status, payload = call_wsgi("GET", "/api/audio-analysis/capabilities")
     assert status.startswith("200") and payload["schema"] == a.SCHEMA_VERSION
@@ -134,9 +183,9 @@ def main():
         {"kind": "renderer_experiment", "record": experiment},
     )
     assert status.startswith("200") and payload["authority"]["technical_ust_mutation"] is False
+    checks += 2
 
-    result = {"passed": True, "checks": 16, "schema": a.SCHEMA_VERSION}
-    print(json.dumps(result, indent=2))
+    print(json.dumps({"passed": True, "checks": checks, "schema": a.SCHEMA_VERSION}, indent=2))
 
 
 if __name__ == "__main__":
