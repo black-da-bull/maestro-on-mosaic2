@@ -1,0 +1,62 @@
+{
+  "schema": "maestro.audio-language.advisory.v0.6",
+  "project": "Bitter Thank You",
+  "implementation": "conversation_evidence_synthesis_not_production_audio_language_adapter",
+  "advisory_only": true,
+  "claims": [
+    {
+      "id": "claim-tempo-surface-dependent",
+      "statement": "A single scalar BPM is insufficient to represent the current project evidence: the original mix fallback estimate, drums-stem fallback estimate, Studio header and exported MIDI tempo map do not collapse to one identical value.",
+      "evidence_refs": [
+        "worker-evidence:tempo_evidence.studio_project_header_observation_bpm",
+        "worker-evidence:tempo_evidence.librosa_fallback_original_bpm",
+        "worker-evidence:tempo_evidence.librosa_fallback_drums_stem_bpm",
+        "worker-evidence:tempo_evidence.suno_midi"
+      ],
+      "confidence": "high",
+      "policy_effect": "none"
+    },
+    {
+      "id": "claim-near-neighbor-preference",
+      "statement": "The preservation A and preferred working B artifacts are extremely close waveforms while B carries the operator preference label; renderer learning therefore needs controlled listening labels and should not infer preference from gross similarity alone.",
+      "evidence_refs": [
+        "embedding-corpus:known_pair.waveform_correlation",
+        "embedding-corpus:known_pair.operator_preference"
+      ],
+      "confidence": "high",
+      "policy_effect": "none"
+    },
+    {
+      "id": "claim-silent-artifact-exclusion",
+      "statement": "The all-zero Contrast Audition artifact is invalid for semantic or preference calibration and must be excluded rather than treated as a negative musical example.",
+      "evidence_refs": [
+        "embedding-corpus:artifacts.contrast_silent_invalid"
+      ],
+      "confidence": "high",
+      "policy_effect": "none"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "tempo-header-vs-midi-range",
+      "a": "Studio project header observed at 103 BPM",
+      "b": "Exported MIDI tempo events observed from 94.87666034155598 to 102.51153254741159 BPM with median 100.65425264217413 BPM",
+      "resolution": "preserve_both",
+      "reason": "A project header scalar and an exported tempo-event map represent different surfaces; neither is silently rewritten into the other."
+    },
+    {
+      "id": "mix-vs-drums-fallback",
+      "a": "Original mix librosa fallback 103.359375 BPM",
+      "b": "Drums stem librosa fallback 99.38401442307692 BPM",
+      "resolution": "preserve_both",
+      "reason": "Different signals can produce different beat-tracker interpretations; Beat This must be run separately before any model calibration conclusion."
+    }
+  ],
+  "cross_check": {
+    "unsupported_claims_promoted": false,
+    "contradictions_preserved": true,
+    "beat_this_result_fabricated": false,
+    "renderer_policy_promoted": false,
+    "technical_ust_mutated": false
+  }
+}
