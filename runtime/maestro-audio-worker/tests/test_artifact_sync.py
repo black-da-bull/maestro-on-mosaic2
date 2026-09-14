@@ -7,19 +7,30 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 from artifact_sync import object_url, sync_artifact, validate_base_url
-from worker_core import ArtifactStore, WorkerValidationError, sha256_file
+from worker_core import ArtifactStore, sha256_file
 
 
 class Handler(BaseHTTPRequestHandler):
     token = 'sync-secret'
     blobs: dict[str, bytes] = {}
+    redirects: dict[str, str] = {}
 
     def do_GET(self):
         if self.headers.get('Authorization') != f'Bearer {self.token}':
-            self.send_response(401); self.end_headers(); return
+            self.send_response(401)
+            self.end_headers()
+            return
+        redirect = self.redirects.get(self.path)
+        if redirect is not None:
+            self.send_response(302)
+            self.send_header('Location', redirect)
+            self.end_headers()
+            return
         data = self.blobs.get(self.path)
         if data is None:
-            self.send_response(404); self.end_headers(); return
+            self.send_response(404)
+            self.end_headers()
+            return
         self.send_response(200)
         self.send_header('Content-Type', 'application/octet-stream')
         self.send_header('Content-Length', str(len(data)))
@@ -41,12 +52,13 @@ def expect_error(fn, text):
 
 def main():
     with tempfile.TemporaryDirectory() as td:
-        payload = (b'Maestro immutable artifact\n' * 2048)
+        payload = b'Maestro immutable artifact\n' * 2048
         sha = hashlib.sha256(payload).hexdigest()
         server = ThreadingHTTPServer(('127.0.0.1', 0), Handler)
         base = f'http://127.0.0.1:{server.server_port}'
         path = f'/objects/{sha[:2]}/{sha}'
         Handler.blobs = {path: payload}
+        Handler.redirects = {}
         thread = threading.Thread(target=server.serve_forever, daemon=True)
         thread.start()
         try:
@@ -63,11 +75,21 @@ def main():
             Handler.blobs = {path: b'wrong bytes'}
             expect_error(lambda: sync_artifact(sha, mismatch_store, base_url=base, token=Handler.token), 'sha256_mismatch')
 
+            redirect_store = ArtifactStore(Path(td) / 'redirect')
+            Handler.blobs = {}
+            Handler.redirects = {path: f'{base}/elsewhere'}
+            expect_error(lambda: sync_artifact(sha, redirect_store, base_url=base, token=Handler.token), 'redirect_refused')
+
             expect_error(lambda: validate_base_url('http://example.com'), 'requires_https_or_localhost')
+            expect_error(lambda: validate_base_url('https://user:secret@example.com'), 'must_not_contain_credentials')
+            expect_error(lambda: validate_base_url('https://example.com/object?token=secret'), 'must_not_contain_credentials')
             expect_error(lambda: object_url(base, 'bad'), 'invalid_sha256')
-            print({'passed': True, 'checks': 8, 'sha256': sha})
+            expect_error(lambda: sync_artifact(sha, ArtifactStore(Path(td) / 'zero'), base_url=base, token=Handler.token, max_bytes=0), 'max_bytes_must_be_positive')
+            print({'passed': True, 'checks': 13, 'sha256': sha})
         finally:
-            server.shutdown(); server.server_close(); thread.join(timeout=5)
+            server.shutdown()
+            server.server_close()
+            thread.join(timeout=5)
 
 
 if __name__ == '__main__':
