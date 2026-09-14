@@ -36,6 +36,9 @@ jobs:
       - name: Run deterministic calibration contract
         working-directory: runtime/maestro-audio-worker
         run: PYTHONPATH=. python tests/test_calibration.py
+      - name: Run trusted immutable artifact synchronization contract
+        working-directory: runtime/maestro-audio-worker
+        run: PYTHONPATH=. python tests/test_artifact_sync.py
       - name: Run authenticated worker HTTP protocol E2E
         working-directory: runtime/maestro-audio-worker
         run: PYTHONPATH=. python tests/test_gateway_e2e.py
