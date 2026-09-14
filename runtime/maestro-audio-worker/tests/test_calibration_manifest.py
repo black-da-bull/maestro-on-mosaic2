@@ -1,10 +1,13 @@
 from __future__ import annotations
 
 from copy import deepcopy
+import json
+from pathlib import Path
 
 from calibration_manifest import CalibrationManifestError, SCHEMA, validate_calibration_manifest
 
 SHA = 'b' * 64
+REPO_ROOT = Path(__file__).resolve().parents[3]
 
 
 def base_manifest():
@@ -76,6 +79,13 @@ def main():
     validated = validate_calibration_manifest(manifest)
     assert validated['promotion']['level'] == 'observation'
 
+    staged_path = REPO_ROOT / '_PROVENANCE' / 'experiments' / '2026-09-14' / 'bitter-thank-you-calibration-run-v0.7.json'
+    staged = json.loads(staged_path.read_text(encoding='utf-8'))
+    validated_staged = validate_calibration_manifest(staged)
+    assert validated_staged['source']['sha256'] == 'bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e'
+    assert validated_staged['promotion']['level'] == 'observation'
+    assert all(run['status'] != 'completed' for run in validated_staged['model_runs'])
+
     wrong_source = deepcopy(manifest)
     wrong_source['model_runs'][0]['source_sha256'] = 'a' * 64
     expect_error(wrong_source, 'source_identity_mismatch')
@@ -107,7 +117,7 @@ def main():
     validated_policy = validate_calibration_manifest(policy)
     assert validated_policy['promotion']['level'] == 'policy'
 
-    print({'passed': True, 'checks': 8, 'schema': SCHEMA})
+    print({'passed': True, 'checks': 11, 'schema': SCHEMA, 'staged_manifest': staged_path.name})
 
 
 if __name__ == '__main__':
