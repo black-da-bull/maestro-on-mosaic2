@@ -5,11 +5,11 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends git ffmpeg libsndfile1 curl && rm -rf /var/lib/apt/lists/*
 RUN pip install --no-cache-dir uv
 COPY requirements-core.txt /app/requirements-core.txt
+RUN pip install --no-cache-dir -r /app/requirements-core.txt
 RUN git clone https://github.com/anime-song/tsumugi.git /opt/tsumugi \
     && cd /opt/tsumugi \
     && git checkout ${TSUMUGI_REVISION}
-RUN cd /opt/tsumugi && uv sync --locked \
-    && uv pip install --python /opt/tsumugi/.venv/bin/python -r /app/requirements-core.txt
+RUN cd /opt/tsumugi && uv sync --locked
 COPY worker_core.py service.py artifact_sync.py ingest.py probe.py /app/
 COPY profiles/tsumugi/bridge.py /profile/bridge.py
 ENV TSUMUGI_ROOT=/opt/tsumugi \
@@ -20,6 +20,5 @@ RUN useradd -r -u 10001 maestro \
     && mkdir -p /data/artifacts /data/state /models/tsumugi \
     && chown -R maestro:maestro /data /models
 USER maestro
-WORKDIR /app
 EXPOSE 8080
-CMD ["/opt/tsumugi/.venv/bin/python", "-m", "uvicorn", "service:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "service:app", "--host", "0.0.0.0", "--port", "8080"]
