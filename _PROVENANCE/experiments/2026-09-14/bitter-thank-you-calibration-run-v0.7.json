@@ -1,0 +1,157 @@
+{
+  "schema": "maestro.audio.calibration-run.v0.7",
+  "run_id": "CAL-BITTER-THANK-YOU-2026-09-14-001",
+  "project_id": "project:bitter-thank-you",
+  "source": {
+    "artifact_ref": "artifact:bitter-thank-you:original",
+    "artifact_label": "0 Bitter Thank You.wav",
+    "sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
+    "artifact_role": "original_reference",
+    "content_verified": true,
+    "size_bytes": 112305572,
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "duration_seconds": 292.46172916666666,
+    "container_subtype": "FLOAT"
+  },
+  "evidence_surfaces": [
+    {
+      "id": "source-file-identity",
+      "class": "artifact_identity",
+      "authority": "verified_artifact_content",
+      "ref": "bitter-thank-you-worker-v0.6-evidence.json:source"
+    },
+    {
+      "id": "studio-header-tempo",
+      "class": "provider_project_state",
+      "authority": "observed_project_evidence",
+      "bpm": 103.0
+    },
+    {
+      "id": "suno-midi-tempo-map",
+      "class": "artifact_measurement",
+      "authority": "derived_measurement",
+      "files": 10,
+      "tempo_events_per_file": 472,
+      "bpm_min": 94.87666034155598,
+      "bpm_max": 102.51153254741159,
+      "bpm_median": 100.65425264217413
+    },
+    {
+      "id": "librosa-original-fallback",
+      "class": "deterministic_fallback_measurement",
+      "authority": "derived_measurement_not_beat_this",
+      "bpm": 103.359375
+    },
+    {
+      "id": "librosa-drums-fallback",
+      "class": "deterministic_fallback_measurement",
+      "authority": "derived_measurement_not_beat_this",
+      "bpm": 99.38401442307692
+    },
+    {
+      "id": "operator-ab-preference",
+      "class": "operator_listening_judgment",
+      "authority": "operator_preference_not_release_approval",
+      "statement": "Preferred working B over preservation A in the prior contrast audition context."
+    }
+  ],
+  "model_runs": [
+    {
+      "adapter_id": "beat_this",
+      "status": "blocked",
+      "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
+      "blocking_reason": "Beat This package/checkpoint execution is proven on the public CI fixture, but no currently provisioned model worker can access this private source artifact. Do not substitute librosa as Beat This.",
+      "evidence_refs": ["source-file-identity", "studio-header-tempo", "suno-midi-tempo-map", "librosa-original-fallback", "librosa-drums-fallback"]
+    },
+    {
+      "adapter_id": "songformer",
+      "status": "blocked",
+      "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
+      "blocking_reason": "Requires a CUDA worker plus pre-provisioned SongFormer, MusicFM and MuQ assets and trusted access to the source artifact.",
+      "evidence_refs": ["source-file-identity"]
+    },
+    {
+      "adapter_id": "chordmini",
+      "status": "blocked",
+      "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
+      "blocking_reason": "Requires an isolated ChordMini worker with selected checkpoint and trusted source-artifact access.",
+      "evidence_refs": ["source-file-identity", "suno-midi-tempo-map"]
+    },
+    {
+      "adapter_id": "basic_pitch",
+      "status": "blocked",
+      "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
+      "blocking_reason": "Requires the isolated Basic Pitch worker; preferred calibration will include per-stem runs because the upstream model is most reliable on simpler single-instrument material.",
+      "evidence_refs": ["source-file-identity", "suno-midi-tempo-map"]
+    },
+    {
+      "adapter_id": "advanced_amt",
+      "status": "blocked",
+      "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
+      "blocking_reason": "Requires the isolated tsumugi worker with a pre-provisioned checkpoint and trusted source/stem artifact access.",
+      "evidence_refs": ["source-file-identity", "suno-midi-tempo-map"]
+    },
+    {
+      "adapter_id": "clap",
+      "status": "blocked",
+      "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
+      "blocking_reason": "Requires the isolated CLAP worker with a selected music-capable checkpoint and trusted source-artifact access. One A/B preference pair is insufficient for threshold calibration.",
+      "evidence_refs": ["source-file-identity", "operator-ab-preference"]
+    },
+    {
+      "adapter_id": "audio_language",
+      "status": "blocked",
+      "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
+      "blocking_reason": "A conversation-level evidence synthesis exists, but the production evidence-grounded audio-language adapter has not executed. Advisory synthesis must follow validated DSP/MIR/model evidence rather than replace it.",
+      "evidence_refs": ["studio-header-tempo", "suno-midi-tempo-map", "librosa-original-fallback", "librosa-drums-fallback", "operator-ab-preference"]
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "tempo-header-vs-midi-map",
+      "a": "Studio project header observed at 103 BPM.",
+      "b": "Exported Suno MIDI tempo events span 94.87666034155598 to 102.51153254741159 BPM with median 100.65425264217413 BPM.",
+      "resolution": "preserve_both",
+      "evidence_refs": ["studio-header-tempo", "suno-midi-tempo-map"]
+    },
+    {
+      "id": "mix-vs-drums-fallback-tempo",
+      "a": "Original-mix librosa fallback is 103.359375 BPM.",
+      "b": "Drums-stem librosa fallback is 99.38401442307692 BPM.",
+      "resolution": "preserve_both",
+      "evidence_refs": ["librosa-original-fallback", "librosa-drums-fallback"]
+    }
+  ],
+  "operator_judgment": {
+    "status": "pending",
+    "note": "Prior B-over-A preference remains valid evidence for that comparison but is not substituted for listening judgment on future model analyses or Suno v6 repeated takes."
+  },
+  "replication": {
+    "required_runs": 3,
+    "completed_runs": 0,
+    "scope": "renderer heuristic promotion requires repeated controlled Suno v6 takes and replicated analysis; model calibration also requires repeated/labeled examples where applicable."
+  },
+  "promotion": {
+    "level": "observation",
+    "operator_approved": false,
+    "universal_quality_score": false,
+    "auto_promotion": false,
+    "eligible_for_candidate": false
+  },
+  "blocking_items": [
+    "Provision a trusted content-addressed endpoint containing the private source/stem artifacts, or co-locate those artifacts with the model worker.",
+    "Provision model/checkpoint assets with hashes for each selected profile.",
+    "Use CUDA for the pinned upstream SongFormer inference path.",
+    "Execute Beat This, SongFormer, harmony/AMT and CLAP on the actual artifact set and persist their result envelopes.",
+    "Complete the staged controlled Suno v6 repeated-take experiment with operator listening before renderer-learning promotion."
+  ],
+  "next_gate": "model_worker_provisioning_and_private_artifact_delivery",
+  "authority": {
+    "technical_ust_mutation": false,
+    "creative_ust_mutation": false,
+    "canon_promotion": false,
+    "renderer_policy_promotion": false,
+    "keeper_or_release_approval": false
+  }
+}
