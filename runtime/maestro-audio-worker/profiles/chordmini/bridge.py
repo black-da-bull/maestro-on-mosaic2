@@ -1,12 +1,21 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open('rb') as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b''):
+            h.update(chunk)
+    return h.hexdigest()
 
 
 def parse_lab(path: Path) -> list[dict]:
@@ -43,6 +52,7 @@ def main() -> None:
     checkpoint = checkpoint.resolve()
     if not checkpoint.is_file():
         raise RuntimeError('CHORDMINI_CHECKPOINT_must_reference_preprovisioned_file')
+    checkpoint_sha = sha256_file(checkpoint)
     model_type = str(context.get('chordmini_model_type') or os.getenv('CHORDMINI_MODEL_TYPE') or 'ChordNet')
     if model_type not in {'ChordNet', 'BTC'}:
         raise RuntimeError('invalid_chordmini_model_type')
@@ -71,6 +81,7 @@ def main() -> None:
         'model_family': 'ptnghia-j/ChordMini',
         'model_type': model_type,
         'checkpoint_name': checkpoint.name,
+        'checkpoint_sha256': checkpoint_sha,
         'segments': segments,
         'segment_count': len(segments),
         'canonical_harmony_promoted': False,
