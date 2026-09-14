@@ -31,6 +31,15 @@ jobs = JobStore(STATE_ROOT)
 executor = ThreadPoolExecutor(max_workers=MAX_WORKERS, thread_name_prefix="maestro-audio")
 app = FastAPI(title="Maestro Audio Analysis Worker", version="0.6")
 
+BRIDGE_ENV = {
+    'songformer': 'MAESTRO_SONGFORMER_COMMAND_JSON',
+    'chordmini': 'MAESTRO_CHORDMINI_COMMAND_JSON',
+    'basic_pitch': 'MAESTRO_BASIC_PITCH_COMMAND_JSON',
+    'advanced_amt': 'MAESTRO_ADVANCED_AMT_COMMAND_JSON',
+    'clap': 'MAESTRO_CLAP_COMMAND_JSON',
+    'audio_language': 'MAESTRO_AUDIO_LANGUAGE_COMMAND_JSON',
+}
+
 
 def require_auth(authorization: str | None) -> None:
     if not TOKEN:
@@ -67,6 +76,22 @@ def ensure_artifact(request_payload: dict) -> None:
     )
 
 
+def effective_capabilities() -> dict:
+    caps = probe_capabilities()
+    for adapter_id, env_name in BRIDGE_ENV.items():
+        if os.getenv(env_name, '').strip():
+            entry = caps['adapters'].setdefault(adapter_id, {})
+            entry['configured'] = True
+            entry['execution'] = 'isolated_json_command_bridge'
+            entry['bridge_env'] = env_name
+    caps['artifact_fetch'] = {
+        'configured': bool(os.getenv('MAESTRO_ARTIFACT_FETCH_BASE_URL', '').strip()),
+        'source_identity': 'sha256_derived_object_path_only',
+        'arbitrary_source_urls_allowed': False,
+    }
+    return caps
+
+
 @app.on_event("startup")
 def recover_jobs() -> None:
     for record in jobs.recoverable():
@@ -81,13 +106,7 @@ def health() -> dict:
 @app.get("/v1/capabilities")
 def capabilities(authorization: str | None = Header(default=None)) -> dict:
     require_auth(authorization)
-    caps = probe_capabilities()
-    caps['artifact_fetch'] = {
-        'configured': bool(os.getenv('MAESTRO_ARTIFACT_FETCH_BASE_URL', '').strip()),
-        'source_identity': 'sha256_derived_object_path_only',
-        'arbitrary_source_urls_allowed': False,
-    }
-    return caps
+    return effective_capabilities()
 
 
 @app.post("/v1/jobs", status_code=202)
