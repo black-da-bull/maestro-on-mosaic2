@@ -4,6 +4,9 @@ on:
   pull_request:
     paths:
       - 'runtime/maestro-workforce/**'
+      - 'apps/maestro-browser-mvp/**'
+      - 'app.py'
+      - 'requirements.txt'
       - 'maestro-current/**'
       - 'artifacts/D-Maestro/Maestro/technical.ust.template.txt'
       - '_PROVENANCE/promotion_2026-09-09/validate_integration.py'
@@ -12,8 +15,12 @@ on:
     branches:
       - main
       - p0-3-golden-structural-interpretation-2026-09-07
+      - integration/browser-runtime-feedback-2026-09-08
     paths:
       - 'runtime/maestro-workforce/**'
+      - 'apps/maestro-browser-mvp/**'
+      - 'app.py'
+      - 'requirements.txt'
       - 'maestro-current/**'
       - 'artifacts/D-Maestro/Maestro/technical.ust.template.txt'
       - '_PROVENANCE/promotion_2026-09-09/validate_integration.py'
@@ -37,6 +44,14 @@ jobs:
         run: python runtime/maestro-workforce/golden_structural_interpretation_fixture.py | tee /tmp/p0-golden.json
       - name: Assert fixture PASS
         run: python -c "import json; d=json.load(open('/tmp/p0-golden.json')); assert d['passed'] is True"
+      - name: Run creator-facing MVP contract fixture
+        run: python runtime/maestro-workforce/mvp_contract_fixture.py | tee /tmp/mvp-contract.json
+      - name: Assert MVP contract PASS
+        run: python -c "import json; d=json.load(open('/tmp/mvp-contract.json')); assert d['passed'] is True"
 
       - name: Verify current compiler, bundle and runtime parity
         run: python _PROVENANCE/promotion_2026-09-09/validate_integration.py
+      - name: Check standalone browser parity
+        run: python runtime/maestro-workforce/build_browser.py --check
+      - name: Check intake proposal contract
+        run: python runtime/maestro-workforce/test_intake_contract.py
