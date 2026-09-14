@@ -12,6 +12,8 @@
       "repository": "CPJKU/beat_this",
       "revision": "b95c8ab0c58c2d9fcfd40508ae8dffbc05ac4f5c",
       "package_version_observed": "1.1.0",
+      "published_code_and_weights_license": "MIT",
+      "license_note": "Upstream warns that some training files are copyrighted or under limited Creative Commons licenses and leaves downstream use assessment to the user.",
       "checkpoint": "unresolved_until_worker_provisioning"
     },
     "songformer": {
