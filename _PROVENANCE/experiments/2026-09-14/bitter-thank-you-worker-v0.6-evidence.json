@@ -1,0 +1,68 @@
+{
+  "schema": "maestro.audio.worker-evidence.v0.6",
+  "project": "Bitter Thank You",
+  "captured_at": "2026-09-14",
+  "source": {
+    "artifact_label": "0 Bitter Thank You.wav",
+    "sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
+    "size_bytes": 112305572,
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "duration_seconds": 292.46172916666666,
+    "container_subtype": "FLOAT",
+    "immutable_worker_import_verified": true
+  },
+  "worker_probe": {
+    "environment": "current development host",
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu",
+    "cuda_available": false,
+    "cuda_device_count": 0,
+    "statistical_embedding": "completed",
+    "beat_this": "not_configured",
+    "songformer": "not_configured",
+    "chordmini": "not_configured",
+    "basic_pitch": "not_configured",
+    "advanced_amt": "not_configured",
+    "clap": "not_configured",
+    "audio_language": "not_configured"
+  },
+  "deterministic_worker_measurement": {
+    "adapter": "statistical_embedding",
+    "schema": "maestro.adapter.statistical_embedding.v0.6",
+    "descriptor": "streaming_block_statistics_v0.6",
+    "dimensions": 24,
+    "blocks": 215,
+    "semantic": false,
+    "evidence_class": "derived_measurement"
+  },
+  "tempo_evidence": {
+    "studio_project_header_observation_bpm": 103.0,
+    "librosa_fallback_original_bpm": 103.359375,
+    "librosa_fallback_drums_stem_bpm": 99.38401442307692,
+    "suno_midi": {
+      "files": 10,
+      "tempo_events_per_file": 472,
+      "total_observed_tempo_events": 4720,
+      "min_bpm": 94.87666034155598,
+      "max_bpm": 102.51153254741159,
+      "median_bpm": 100.65425264217413,
+      "opaque_invalid_key_signature_events_per_file": 1,
+      "source_modified": false,
+      "key_inferred": false
+    }
+  },
+  "interpretation": {
+    "tempo_is_not_reduced_to_one_canonical_scalar": true,
+    "librosa_is_not_beat_this": true,
+    "beat_this_bitter_thank_you_inference_completed": false,
+    "observation": "The original-mix fallback estimate is close to the current 103 BPM Studio header while the drums-stem estimate is closer to the MIDI tempo-map median. This is evidence that analysis surface and tempo representation matter; it is not a renderer-policy conclusion."
+  },
+  "authority": {
+    "technical_ust_mutation": false,
+    "canon_promotion": false,
+    "renderer_policy_promotion": false,
+    "keeper_or_release_approval": false,
+    "auto_promotion": false
+  }
+}

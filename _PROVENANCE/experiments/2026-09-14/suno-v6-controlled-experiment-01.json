@@ -1,0 +1,89 @@
+{
+  "schema": "maestro.renderer.experiment.v0.6",
+  "experiment_id": "SUNO-V6-BITTER-THANK-YOU-001",
+  "status": "staged_operator_assisted_execution_required",
+  "objective": "Test whether exact numeric tempo language versus source-relative tempo language produces more stable tempo behavior in Suno v6 while holding the song intent, lyrics, style and references constant.",
+  "renderer": {
+    "provider": "Suno",
+    "required_model": "v6",
+    "surface": "generation_or_studio_generation_surface_as_available",
+    "model_verification_required_on_each_returned_artifact": true,
+    "remote_automation_verified": false
+  },
+  "starting_state": {
+    "project": "Bitter Thank You",
+    "source_reference_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
+    "lyrics": "hold_exactly_constant_from_current_approved_source",
+    "style_prompt": "hold_exactly_constant_except_tempo_clause",
+    "voice_or_persona": "hold_constant_if_used",
+    "other_generation_controls": "capture_exact_values_and_hold_constant",
+    "provider_starting_state_snapshot_required": true
+  },
+  "conditions": [
+    {
+      "id": "A_exact_numeric",
+      "controlled_variable": "tempo_instruction_clause",
+      "tempo_clause": "103 BPM",
+      "repeats": 3
+    },
+    {
+      "id": "B_source_relative",
+      "controlled_variable": "tempo_instruction_clause",
+      "tempo_clause": "preserve the source rhythmic pace and pocket; do not intentionally speed up or slow down",
+      "repeats": 3
+    }
+  ],
+  "held_constants": [
+    "lyrics_prompt_except_no_tempo_clause",
+    "style_prompt_except_tempo_clause",
+    "source_reference",
+    "voice_or_persona_if_used",
+    "model_v6",
+    "all_exposed_generation_controls",
+    "operator_starting_state"
+  ],
+  "capture_per_take": [
+    "provider_artifact_id",
+    "model_identity",
+    "exact_lyrics_prompt",
+    "exact_style_prompt",
+    "exact_studio_instruction_if_any",
+    "all_exposed_generation_settings",
+    "source_reference_ids",
+    "returned_audio_sha256",
+    "deterministic_audio_analysis_id",
+    "beat_this_analysis_id_when_available",
+    "operator_assessment_id"
+  ],
+  "measurements": {
+    "primary": [
+      "beat_this_median_ibi_bpm",
+      "beat_interval_cv",
+      "coverage"
+    ],
+    "fallback_until_beat_this_available": [
+      "librosa_tempo_labeled_fallback_only"
+    ],
+    "reference_evidence": {
+      "studio_header_bpm": 103.0,
+      "midi_tempo_min_bpm": 94.87666034155598,
+      "midi_tempo_max_bpm": 102.51153254741159,
+      "midi_tempo_median_bpm": 100.65425264217413
+    }
+  },
+  "operator_listening_protocol": {
+    "blind_condition_labels_where_practical": true,
+    "loudness_match_before_preference_comparison_where_practical": true,
+    "decisions": ["keep", "reject", "redirect", "neutral"],
+    "release_approval_implied": false
+  },
+  "analysis_rule": {
+    "minimum_repeats_per_condition": 3,
+    "report_within_condition_variance": true,
+    "causal_claim": false,
+    "first_completed_run_maximum_status": "observation",
+    "renderer_policy_requires_replication_and_operator_confirmation": true,
+    "auto_promotion": false
+  },
+  "blocking_condition": "Suno v6 execution remains operator-assisted because no verified external Studio/generation control API is available to this runtime. Do not fabricate returned takes."
+}
