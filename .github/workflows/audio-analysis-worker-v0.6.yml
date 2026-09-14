@@ -32,6 +32,9 @@ jobs:
       - name: Run worker core contract
         working-directory: runtime/maestro-audio-worker
         run: PYTHONPATH=. python tests/test_worker_core.py
+      - name: Run deterministic calibration contract
+        working-directory: runtime/maestro-audio-worker
+        run: PYTHONPATH=. python tests/test_calibration.py
       - name: Run authenticated gateway-worker protocol E2E
         working-directory: runtime/maestro-audio-worker
         run: PYTHONPATH=. python tests/test_gateway_e2e.py
