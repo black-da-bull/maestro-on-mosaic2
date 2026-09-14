@@ -1,0 +1,60 @@
+{
+  "schema": "maestro.embedding.calibration-corpus.v0.6",
+  "project": "Bitter Thank You",
+  "purpose": "Seed a project-specific CLAP/statistical embedding calibration corpus without creating a universal quality score.",
+  "artifacts": [
+    {
+      "id": "original_reference",
+      "label": "0 Bitter Thank You.wav",
+      "sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
+      "role": "original_reference",
+      "valid_for_embedding": true
+    },
+    {
+      "id": "preservation_A",
+      "label": "14 A — Preservation Baseline.wav",
+      "sha256": "c04f32a216de5e6b3cdfeb94be209921494c3a2a29b418ee06bd53e62281015c",
+      "role": "preservation_audition",
+      "valid_for_embedding": true
+    },
+    {
+      "id": "preferred_B",
+      "label": "15 B — Preferred Working-Mix Candidate (Unapproved).wav",
+      "sha256": "6d8bbb4ce630d8c9b1122d62474049e8b81c32fc141386e301d66456b8b9d0f1",
+      "role": "preferred_working_mix_candidate",
+      "valid_for_embedding": true,
+      "operator_label": "preferred_over_A",
+      "approval_scope": "listening_preference_only_not_release_approval"
+    },
+    {
+      "id": "full_mix_B_v1",
+      "label": "16 B — Full Mix v1 (Review Candidate).wav",
+      "sha256": "850b1cafbfb6239b1296e198f4e1a6c691e27b5fafc4ff25c429e46301fcd099",
+      "role": "reconstructed_full_mix_candidate",
+      "valid_for_embedding": true,
+      "approval_scope": "unapproved_candidate"
+    },
+    {
+      "id": "contrast_silent_invalid",
+      "label": "1 B — Contrast Audition.wav",
+      "sha256": "53971d01ef215448edacb9b359703b4817d8b39adbb3680642bea4a2eec95977",
+      "role": "invalid_silent_artifact",
+      "valid_for_embedding": false,
+      "exclusion_reason": "all-zero audio"
+    }
+  ],
+  "known_pair": {
+    "a": "preservation_A",
+    "b": "preferred_B",
+    "waveform_correlation": 0.9994384566250305,
+    "operator_preference": "b",
+    "meaning": "Useful near-neighbor preference label; insufficient by itself to infer an embedding threshold or causal renderer rule."
+  },
+  "calibration_gate": {
+    "threshold_status": "not_established",
+    "reason": "Corpus is too small and too project-specific for a stable threshold.",
+    "minimum_requirement": "Collect replicated, operator-labeled positive/negative or ranked examples before threshold calibration.",
+    "universal_quality_score": false,
+    "auto_promotion": false
+  }
+}
