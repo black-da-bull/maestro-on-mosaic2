@@ -43,15 +43,24 @@ def main() -> None:
 
     songformer = (ROOT / 'profiles' / 'songformer' / 'bridge.py').read_text(encoding='utf-8')
     assert 'songformer_cuda_required_by_upstream_inference_path' in songformer
-    assert "HF_HUB_OFFLINE'" in songformer or 'HF_HUB_OFFLINE' in songformer
+    assert 'HF_HUB_OFFLINE' in songformer
     assert 'muq_cache_sha256' in songformer
     assert 'musicfm_checkpoint_sha256' in songformer
+    assert "'device': 'cuda'" in songformer
+
+    chordmini = (ROOT / 'profiles' / 'chordmini' / 'bridge.py').read_text(encoding='utf-8')
+    assert "'device': device" in chordmini
+    assert 'upstream_auto_cuda_then_mps_then_cpu' in chordmini
 
     tsumugi = (ROOT / 'profiles' / 'tsumugi' / 'bridge.py').read_text(encoding='utf-8')
     assert 'TSUMUGI_CHECKPOINT_must_reference_preprovisioned_local_file' in tsumugi
+    assert "'device': device" in tsumugi
+
     clap = (ROOT / 'profiles' / 'clap' / 'bridge.py').read_text(encoding='utf-8')
     assert 'CLAP_CHECKPOINT_must_reference_preprovisioned_local_file' in clap
-    checks += 6
+    assert 'clap_cuda_requested_but_unavailable' in clap
+    assert "'device': device_name" in clap
+    checks += 11
 
     print({'passed': True, 'checks': checks, 'profiles': sorted(PROFILES)})
 
