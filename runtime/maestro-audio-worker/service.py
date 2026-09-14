@@ -88,6 +88,7 @@ def effective_capabilities() -> dict:
         'configured': bool(os.getenv('MAESTRO_ARTIFACT_FETCH_BASE_URL', '').strip()),
         'source_identity': 'sha256_derived_object_path_only',
         'arbitrary_source_urls_allowed': False,
+        'redirects_allowed': False,
     }
     return caps
 
