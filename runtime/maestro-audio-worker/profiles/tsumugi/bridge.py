@@ -78,7 +78,10 @@ def main() -> None:
     requested_device = str(context.get('advanced_amt_device') or os.getenv('TSUMUGI_DEVICE') or 'auto')
     device = resolve_device(requested_device)
     model_type = str(context.get('advanced_amt_model_type') or os.getenv('TSUMUGI_MODEL_TYPE') or 'default')
-    checkpoint = str(context.get('advanced_amt_checkpoint') or os.getenv('TSUMUGI_CHECKPOINT') or '').strip()
+    checkpoint = Path(str(context.get('advanced_amt_checkpoint') or os.getenv('TSUMUGI_CHECKPOINT') or '')).expanduser().resolve()
+    if not checkpoint.is_file():
+        raise RuntimeError('TSUMUGI_CHECKPOINT_must_reference_preprovisioned_local_file')
+    checkpoint_sha = sha256_file(checkpoint)
 
     with tempfile.TemporaryDirectory(prefix='maestro-tsumugi-') as td:
         midi_path = Path(td) / 'transcription.mid'
@@ -89,9 +92,8 @@ def main() -> None:
             '--output-midi', str(midi_path),
             '--device', device,
             '--type', model_type,
+            '--checkpoint', str(checkpoint),
         ]
-        if checkpoint:
-            command += ['--checkpoint', checkpoint]
         proc = subprocess.run(command, capture_output=True, text=True, timeout=int(os.getenv('TSUMUGI_TIMEOUT_S', '7200')))
         if proc.returncode != 0:
             raise RuntimeError(f'tsumugi_inference_failed:{proc.returncode}:{(proc.stderr or proc.stdout)[-2000:]}')
@@ -106,7 +108,8 @@ def main() -> None:
         'model_family': 'anime-song/tsumugi',
         'model_type': model_type,
         'device': device,
-        'checkpoint': checkpoint or 'upstream_default_auto_download',
+        'checkpoint_name': checkpoint.name,
+        'checkpoint_sha256': checkpoint_sha,
         'midi_sha256': midi_sha,
         'midi_size_bytes': midi_size,
         'midi_artifact_persisted': False,
