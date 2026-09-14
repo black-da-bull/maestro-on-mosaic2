@@ -8,8 +8,10 @@ from pathlib import Path
 
 import numpy as np
 
+TARGET_BPM = 100.0
 
-def make_clicks(path: Path, bpm: float = 100.0, seconds: float = 24.0, sr: int = 22050) -> None:
+
+def make_clicks(path: Path, bpm: float = TARGET_BPM, seconds: float = 24.0, sr: int = 22050) -> None:
     samples = np.zeros(int(seconds * sr), dtype=np.float32)
     step = int(sr * 60.0 / bpm)
     pulse = max(64, int(0.012 * sr))
@@ -33,8 +35,18 @@ def main() -> None:
         assert len(beats) >= 8, beats
         ibis = [b-a for a,b in zip(beats, beats[1:]) if b > a]
         bpm = 60.0 / statistics.median(ibis)
-        assert 80.0 <= bpm <= 120.0, bpm
-        print(json.dumps({'passed': True, 'device': 'cpu', 'checkpoint': 'small0', 'beat_count': len(beats), 'median_ibi_bpm': bpm}, indent=2))
+        relational_error = min(abs(bpm-TARGET_BPM), abs(bpm/2.0-TARGET_BPM), abs(bpm*2.0-TARGET_BPM))
+        assert relational_error <= 5.0, (bpm, relational_error)
+        print(json.dumps({
+            'passed': True,
+            'device': 'cpu',
+            'checkpoint': 'small0',
+            'beat_count': len(beats),
+            'raw_median_ibi_bpm': bpm,
+            'target_bpm': TARGET_BPM,
+            'half_double_relational_error_bpm': relational_error,
+            'exact_integer_lock_asserted': False
+        }, indent=2))
 
 
 if __name__ == '__main__': main()
