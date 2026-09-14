@@ -8,7 +8,7 @@ import tempfile
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
-from urllib.request import Request, urlopen
+from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 from worker_core import ArtifactStore, SHA_RE, WorkerValidationError
 
@@ -19,10 +19,19 @@ class ArtifactFetchUnavailable(RuntimeError):
     pass
 
 
+class _NoRedirect(HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):  # noqa: ANN001
+        return None
+
+
 def validate_base_url(value: str) -> str:
     base = value.strip().rstrip('/')
     parsed = urlparse(base)
-    if parsed.scheme == 'https' and parsed.netloc:
+    if parsed.username or parsed.password or parsed.query or parsed.fragment or parsed.params:
+        raise WorkerValidationError('artifact_fetch_base_url_must_not_contain_credentials_query_or_fragment')
+    if not parsed.hostname:
+        raise WorkerValidationError('artifact_fetch_base_url_requires_host')
+    if parsed.scheme == 'https':
         return base
     if parsed.scheme == 'http' and parsed.hostname in {'127.0.0.1', 'localhost', '::1'}:
         return base
@@ -45,6 +54,8 @@ def sync_artifact(
     max_bytes: int = DEFAULT_MAX_BYTES,
     timeout_s: int = 120,
 ) -> dict:
+    if max_bytes <= 0:
+        raise WorkerValidationError('artifact_fetch_max_bytes_must_be_positive')
     try:
         existing = store.retrieve(sha256)
         return {
@@ -62,6 +73,7 @@ def sync_artifact(
     if token:
         headers['Authorization'] = f'Bearer {token}'
     request = Request(url, headers=headers, method='GET')
+    opener = build_opener(_NoRedirect())
 
     fd, temp_name = tempfile.mkstemp(prefix='maestro-artifact-fetch-')
     os.close(fd)
@@ -70,9 +82,16 @@ def sync_artifact(
     total = 0
     try:
         try:
-            response = urlopen(request, timeout=timeout_s)
-        except (HTTPError, URLError, TimeoutError) as exc:
+            response = opener.open(request, timeout=timeout_s)
+        except HTTPError as exc:
+            # Redirects are intentionally refused so configured trust cannot be
+            # delegated by a remote 3xx response to an arbitrary host.
+            if 300 <= exc.code < 400:
+                raise ArtifactFetchUnavailable('artifact_fetch_redirect_refused') from exc
+            raise ArtifactFetchUnavailable(f'artifact_fetch_http_error:{exc.code}') from exc
+        except (URLError, TimeoutError) as exc:
             raise ArtifactFetchUnavailable(f'artifact_fetch_failed:{exc.__class__.__name__}') from exc
+
         with response, temp_path.open('wb') as out:
             content_length = response.headers.get('Content-Length')
             if content_length:
@@ -91,6 +110,7 @@ def sync_artifact(
                     raise WorkerValidationError('artifact_fetch_stream_exceeds_limit')
                 digest.update(chunk)
                 out.write(chunk)
+
         actual = digest.hexdigest()
         if actual != sha256:
             raise WorkerValidationError('artifact_fetch_sha256_mismatch')
