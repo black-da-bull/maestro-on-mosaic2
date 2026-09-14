@@ -8,7 +8,15 @@ RUN git clone https://github.com/anime-song/tsumugi.git /opt/tsumugi \
     && cd /opt/tsumugi \
     && git checkout ${TSUMUGI_REVISION}
 RUN cd /opt/tsumugi && uv sync --locked
-COPY bridge.py /profile/bridge.py
-ENV TSUMUGI_ROOT=/opt/tsumugi
-WORKDIR /opt/tsumugi
-ENTRYPOINT ["uv", "run", "python", "/profile/bridge.py"]
+WORKDIR /app
+COPY requirements-core.txt ./
+RUN pip install --no-cache-dir -r requirements-core.txt
+COPY worker_core.py service.py artifact_sync.py ingest.py probe.py ./
+COPY profiles/tsumugi/bridge.py /profile/bridge.py
+ENV TSUMUGI_ROOT=/opt/tsumugi \
+    TSUMUGI_REVISION=${TSUMUGI_REVISION} \
+    MAESTRO_ADVANCED_AMT_COMMAND_JSON='["/opt/tsumugi/.venv/bin/python","/profile/bridge.py","--input","{input}","--output","{output}","--context","{context}"]'
+RUN useradd -r -u 10001 maestro && mkdir -p /data/artifacts /data/state /models && chown -R maestro:maestro /data /models
+USER maestro
+EXPOSE 8080
+CMD ["uvicorn", "service:app", "--host", "0.0.0.0", "--port", "8080"]
