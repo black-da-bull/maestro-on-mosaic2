@@ -1,0 +1,43 @@
+{
+  "schema": "maestro.audio.model-lock.v0.6",
+  "captured_at": "2026-09-14",
+  "policy": {
+    "repository_revision_is_not_checkpoint_identity": true,
+    "checkpoint_hash_required_for_production_execution": true,
+    "license_review_required_before_distribution": true,
+    "model_output_is_evidence_not_authority": true
+  },
+  "models": {
+    "beat_this": {
+      "repository": "CPJKU/beat_this",
+      "revision": "b95c8ab0c58c2d9fcfd40508ae8dffbc05ac4f5c",
+      "package_version_observed": "1.1.0",
+      "checkpoint": "unresolved_until_worker_provisioning"
+    },
+    "songformer": {
+      "repository": "ASLP-lab/SongFormer",
+      "revision": "139b2aa3b14bd1c6d961d0994e9fc975f1ef7fd5",
+      "checkpoint": "unresolved_until_worker_provisioning"
+    },
+    "chordmini": {
+      "repository": "ptnghia-j/ChordMini",
+      "revision": "aa6e3a8d7b017f082fd2aaff9329d5c26af49c03",
+      "checkpoint": "unresolved_until_worker_provisioning"
+    },
+    "basic_pitch": {
+      "repository": "spotify/basic-pitch",
+      "revision": "fa5997af0a8210982619003269994a1be25eddf3",
+      "checkpoint": "package_managed_model_to_hash_at_provisioning"
+    },
+    "advanced_amt": {
+      "repository": "anime-song/tsumugi",
+      "revision": "f7411471a4de0ad3d430191de11b8623d67e5b38",
+      "checkpoint": "unresolved_until_worker_provisioning"
+    },
+    "clap": {
+      "repository": "LAION-AI/CLAP",
+      "revision": "1fd4c37df5ffbfcfbad5415c170bc66cf94c9994",
+      "checkpoint": "unresolved_until_worker_provisioning"
+    }
+  }
+}
