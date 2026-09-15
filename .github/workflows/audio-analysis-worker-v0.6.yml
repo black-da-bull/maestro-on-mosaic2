@@ -133,7 +133,7 @@ jobs:
       - name: Install Basic Pitch ONNX runtime without TensorFlow
         run: |
           python -m pip install --no-deps 'basic-pitch==0.4.0'
-          python -m pip install onnxruntime 'resampy>=0.2.2,<0.4.3' pretty_midi librosa mir_eval scikit-learn scipy soundfile
+          python -m pip install 'setuptools<81' onnxruntime 'resampy>=0.2.2,<0.4.3' pretty_midi librosa mir_eval scikit-learn scipy soundfile
       - name: Smoke Basic Pitch ONNX model
         shell: bash
         run: |
@@ -194,7 +194,7 @@ jobs:
               root = Path(spec.origin).resolve().parent
               shutil.copytree(root, out / root.name, dirs_exist_ok=True)
 
-          for name in ['basic_pitch', 'onnxruntime', 'resampy', 'flatbuffers']:
+          for name in ['basic_pitch', 'onnxruntime', 'resampy', 'flatbuffers', 'pkg_resources']:
               copy_package(name)
 
           model_path = build_icassp_2022_model_path(FilenameSuffix.onnx)
@@ -206,6 +206,7 @@ jobs:
               'runtime': 'onnxruntime',
               'onnxruntime_version': importlib.metadata.version('onnxruntime'),
               'resampy_version': importlib.metadata.version('resampy'),
+              'setuptools_version': importlib.metadata.version('setuptools'),
               'model_relative_path': str(model_path.relative_to(Path(basic_pitch.__file__).resolve().parent)),
               'model_sha256': model_sha,
               'python': sys.version.split()[0],
