@@ -50,6 +50,22 @@
       "bpm": 99.38401442307692
     },
     {
+      "id": "beat-this-original-mix",
+      "class": "model_inference",
+      "authority": "derived_model_evidence_not_canonical_tempo",
+      "ref": "bitter-thank-you-beat-this-v0.7.json",
+      "result_sha256": "dab563c5c596665b59490c28093f9dba16b154ab29985ceb2d8cd18eed741ab0",
+      "beat_count": 477,
+      "downbeat_count": 124,
+      "median_ibi_bpm": 103.44827586206895,
+      "beat_interval_cv": 0.18922735312729067,
+      "first_beat_s": 0.2,
+      "last_beat_s": 288.9,
+      "studio_header_delta_bpm": 0.44827586206895376,
+      "midi_median_delta_bpm": 2.794023219894825,
+      "within_midi_observed_range": false
+    },
+    {
       "id": "operator-ab-preference",
       "class": "operator_listening_judgment",
       "authority": "operator_preference_not_release_approval",
@@ -59,10 +75,19 @@
   "model_runs": [
     {
       "adapter_id": "beat_this",
-      "status": "blocked",
+      "status": "completed",
       "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
-      "blocking_reason": "Beat This package/checkpoint execution is proven on the public CI fixture, but no currently provisioned model worker can access this private source artifact. Do not substitute librosa as Beat This.",
-      "evidence_refs": ["source-file-identity", "studio-header-tempo", "suno-midi-tempo-map", "librosa-original-fallback", "librosa-drums-fallback"]
+      "model_identity": {
+        "implementation": "CPJKU/beat_this",
+        "version": "1.1.0",
+        "asset_sha256": "6074be2c4d490c5f6101fcc374a1ec72ae93456e23bb6019783b849f5dc7d47b",
+        "checkpoint": "beat_this-small0.ckpt",
+        "device": "cpu",
+        "torch_runtime": "2.10.0+cpu"
+      },
+      "result_ref": "bitter-thank-you-beat-this-v0.7.json",
+      "result_sha256": "dab563c5c596665b59490c28093f9dba16b154ab29985ceb2d8cd18eed741ab0",
+      "evidence_refs": ["source-file-identity", "studio-header-tempo", "suno-midi-tempo-map", "librosa-original-fallback", "librosa-drums-fallback", "beat-this-original-mix"]
     },
     {
       "adapter_id": "songformer",
@@ -104,7 +129,7 @@
       "status": "blocked",
       "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
       "blocking_reason": "A conversation-level evidence synthesis exists, but the production evidence-grounded audio-language adapter has not executed. Advisory synthesis must follow validated DSP/MIR/model evidence rather than replace it.",
-      "evidence_refs": ["studio-header-tempo", "suno-midi-tempo-map", "librosa-original-fallback", "librosa-drums-fallback", "operator-ab-preference"]
+      "evidence_refs": ["studio-header-tempo", "suno-midi-tempo-map", "librosa-original-fallback", "librosa-drums-fallback", "beat-this-original-mix", "operator-ab-preference"]
     }
   ],
   "contradictions": [
@@ -121,6 +146,13 @@
       "b": "Drums-stem librosa fallback is 99.38401442307692 BPM.",
       "resolution": "preserve_both",
       "evidence_refs": ["librosa-original-fallback", "librosa-drums-fallback"]
+    },
+    {
+      "id": "beat-this-vs-midi-map",
+      "a": "Beat This small0 on the original stereo mix reports a median inter-beat tempo of 103.44827586206895 BPM.",
+      "b": "Exported Suno MIDI tempo events have a median of 100.65425264217413 BPM and observed maximum of 102.51153254741159 BPM.",
+      "resolution": "preserve_both",
+      "evidence_refs": ["beat-this-original-mix", "suno-midi-tempo-map"]
     }
   ],
   "operator_judgment": {
@@ -140,13 +172,14 @@
     "eligible_for_candidate": false
   },
   "blocking_items": [
-    "Provision a trusted content-addressed endpoint containing the private source/stem artifacts, or co-locate those artifacts with the model worker.",
-    "Provision model/checkpoint assets with hashes for each selected profile.",
+    "Provision trusted source/stem access for SongFormer, ChordMini, Basic Pitch, advanced AMT and CLAP workers; Beat This access for the original mix has been resolved for this run.",
+    "Provision model/checkpoint assets with hashes for SongFormer, ChordMini, Basic Pitch, advanced AMT and CLAP.",
     "Use CUDA for the pinned upstream SongFormer inference path.",
-    "Execute Beat This, SongFormer, harmony/AMT and CLAP on the actual artifact set and persist their result envelopes.",
+    "Execute SongFormer, harmony/AMT and CLAP on the actual artifact set and persist their result envelopes.",
+    "Execute the production evidence-grounded audio-language adapter after additional validated DSP/MIR/model evidence is available.",
     "Complete the staged controlled Suno v6 repeated-take experiment with operator listening before renderer-learning promotion."
   ],
-  "next_gate": "model_worker_provisioning_and_private_artifact_delivery",
+  "next_gate": "songformer_harmony_amt_clap_provisioning_and_private_artifact_delivery",
   "authority": {
     "technical_ust_mutation": false,
     "creative_ust_mutation": false,
