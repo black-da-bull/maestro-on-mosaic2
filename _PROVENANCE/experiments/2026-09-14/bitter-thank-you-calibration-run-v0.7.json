@@ -53,8 +53,8 @@
       "id": "beat-this-original-mix",
       "class": "model_inference",
       "authority": "derived_model_evidence_not_canonical_tempo",
-      "ref": "bitter-thank-you-beat-this-v0.7.json",
-      "result_sha256": "dab563c5c596665b59490c28093f9dba16b154ab29985ceb2d8cd18eed741ab0",
+      "ref": "bitter-thank-you-beat-this-v0.7-envelope.json",
+      "result_sha256": "78e26281d6a6ad57cb52bea249ed2394cb8c04c22a77d945ec3b2c09dbc8488a",
       "beat_count": 477,
       "downbeat_count": 124,
       "median_ibi_bpm": 103.44827586206895,
@@ -85,51 +85,79 @@
         "device": "cpu",
         "torch_runtime": "2.10.0+cpu"
       },
-      "result_ref": "bitter-thank-you-beat-this-v0.7.json",
-      "result_sha256": "dab563c5c596665b59490c28093f9dba16b154ab29985ceb2d8cd18eed741ab0",
-      "evidence_refs": ["source-file-identity", "studio-header-tempo", "suno-midi-tempo-map", "librosa-original-fallback", "librosa-drums-fallback", "beat-this-original-mix"]
+      "result_ref": "bitter-thank-you-beat-this-v0.7-envelope.json",
+      "result_sha256": "78e26281d6a6ad57cb52bea249ed2394cb8c04c22a77d945ec3b2c09dbc8488a",
+      "evidence_refs": [
+        "source-file-identity",
+        "studio-header-tempo",
+        "suno-midi-tempo-map",
+        "librosa-original-fallback",
+        "librosa-drums-fallback",
+        "beat-this-original-mix"
+      ]
     },
     {
       "adapter_id": "songformer",
       "status": "blocked",
       "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
       "blocking_reason": "Requires a CUDA worker plus pre-provisioned SongFormer, MusicFM and MuQ assets and trusted access to the source artifact.",
-      "evidence_refs": ["source-file-identity"]
+      "evidence_refs": [
+        "source-file-identity"
+      ]
     },
     {
       "adapter_id": "chordmini",
       "status": "blocked",
       "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
       "blocking_reason": "Requires an isolated ChordMini worker with selected checkpoint and trusted source-artifact access.",
-      "evidence_refs": ["source-file-identity", "suno-midi-tempo-map"]
+      "evidence_refs": [
+        "source-file-identity",
+        "suno-midi-tempo-map"
+      ]
     },
     {
       "adapter_id": "basic_pitch",
       "status": "blocked",
       "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
       "blocking_reason": "Requires the isolated Basic Pitch worker; preferred calibration will include per-stem runs because the upstream model is most reliable on simpler single-instrument material.",
-      "evidence_refs": ["source-file-identity", "suno-midi-tempo-map"]
+      "evidence_refs": [
+        "source-file-identity",
+        "suno-midi-tempo-map"
+      ]
     },
     {
       "adapter_id": "advanced_amt",
       "status": "blocked",
       "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
       "blocking_reason": "Requires the isolated tsumugi worker with a pre-provisioned checkpoint and trusted source/stem artifact access.",
-      "evidence_refs": ["source-file-identity", "suno-midi-tempo-map"]
+      "evidence_refs": [
+        "source-file-identity",
+        "suno-midi-tempo-map"
+      ]
     },
     {
       "adapter_id": "clap",
       "status": "blocked",
       "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
       "blocking_reason": "Requires the isolated CLAP worker with a selected music-capable checkpoint and trusted source-artifact access. One A/B preference pair is insufficient for threshold calibration.",
-      "evidence_refs": ["source-file-identity", "operator-ab-preference"]
+      "evidence_refs": [
+        "source-file-identity",
+        "operator-ab-preference"
+      ]
     },
     {
       "adapter_id": "audio_language",
       "status": "blocked",
       "source_sha256": "bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e",
       "blocking_reason": "A conversation-level evidence synthesis exists, but the production evidence-grounded audio-language adapter has not executed. Advisory synthesis must follow validated DSP/MIR/model evidence rather than replace it.",
-      "evidence_refs": ["studio-header-tempo", "suno-midi-tempo-map", "librosa-original-fallback", "librosa-drums-fallback", "beat-this-original-mix", "operator-ab-preference"]
+      "evidence_refs": [
+        "studio-header-tempo",
+        "suno-midi-tempo-map",
+        "librosa-original-fallback",
+        "librosa-drums-fallback",
+        "beat-this-original-mix",
+        "operator-ab-preference"
+      ]
     }
   ],
   "contradictions": [
@@ -138,21 +166,30 @@
       "a": "Studio project header observed at 103 BPM.",
       "b": "Exported Suno MIDI tempo events span 94.87666034155598 to 102.51153254741159 BPM with median 100.65425264217413 BPM.",
       "resolution": "preserve_both",
-      "evidence_refs": ["studio-header-tempo", "suno-midi-tempo-map"]
+      "evidence_refs": [
+        "studio-header-tempo",
+        "suno-midi-tempo-map"
+      ]
     },
     {
       "id": "mix-vs-drums-fallback-tempo",
       "a": "Original-mix librosa fallback is 103.359375 BPM.",
       "b": "Drums-stem librosa fallback is 99.38401442307692 BPM.",
       "resolution": "preserve_both",
-      "evidence_refs": ["librosa-original-fallback", "librosa-drums-fallback"]
+      "evidence_refs": [
+        "librosa-original-fallback",
+        "librosa-drums-fallback"
+      ]
     },
     {
       "id": "beat-this-vs-midi-map",
       "a": "Beat This small0 on the original stereo mix reports a median inter-beat tempo of 103.44827586206895 BPM.",
       "b": "Exported Suno MIDI tempo events have a median of 100.65425264217413 BPM and observed maximum of 102.51153254741159 BPM.",
       "resolution": "preserve_both",
-      "evidence_refs": ["beat-this-original-mix", "suno-midi-tempo-map"]
+      "evidence_refs": [
+        "beat-this-original-mix",
+        "suno-midi-tempo-map"
+      ]
     }
   ],
   "operator_judgment": {
@@ -162,7 +199,8 @@
   "replication": {
     "required_runs": 3,
     "completed_runs": 0,
-    "scope": "renderer heuristic promotion requires repeated controlled Suno v6 takes and replicated analysis; model calibration also requires repeated/labeled examples where applicable."
+    "scope": "renderer heuristic promotion requires repeated controlled Suno v6 takes and replicated analysis; model calibration also requires repeated/labeled examples where applicable.",
+    "evidence_refs": []
   },
   "promotion": {
     "level": "observation",
@@ -182,9 +220,11 @@
   "next_gate": "songformer_harmony_amt_clap_provisioning_and_private_artifact_delivery",
   "authority": {
     "technical_ust_mutation": false,
-    "creative_ust_mutation": false,
     "canon_promotion": false,
     "renderer_policy_promotion": false,
-    "keeper_or_release_approval": false
+    "keeper_or_release_approval": false,
+    "operator_decision_required": true,
+    "creative_ust_mutation": false,
+    "auto_promotion": false
   }
 }
