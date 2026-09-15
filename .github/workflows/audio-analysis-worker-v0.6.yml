@@ -82,12 +82,15 @@ jobs:
           import shutil
           import sys
           import beat_this
+          import rotary_embedding_torch
           import torch
 
           out = Path('/tmp/maestro-beat-this-bundle')
           out.mkdir(parents=True, exist_ok=True)
           package_root = Path(beat_this.__file__).resolve().parent
+          rotary_root = Path(rotary_embedding_torch.__file__).resolve().parent
           shutil.copytree(package_root, out / 'beat_this', dirs_exist_ok=True)
+          shutil.copytree(rotary_root, out / 'rotary_embedding_torch', dirs_exist_ok=True)
 
           checkpoint = Path(torch.hub.get_dir()) / 'checkpoints' / 'beat_this-small0.ckpt'
           if not checkpoint.is_file():
@@ -100,6 +103,8 @@ jobs:
               'model_family': 'CPJKU/beat_this',
               'package': 'beat-this',
               'package_version': importlib.metadata.version('beat-this'),
+              'portable_dependency': 'rotary-embedding-torch',
+              'portable_dependency_version': importlib.metadata.version('rotary-embedding-torch'),
               'checkpoint_name': checkpoint.name,
               'checkpoint_sha256': digest,
               'python': sys.version.split()[0],
