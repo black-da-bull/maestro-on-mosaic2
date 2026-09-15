@@ -84,7 +84,15 @@ def main():
     validated_staged = validate_calibration_manifest(staged)
     assert validated_staged['source']['sha256'] == 'bb0e6ed54ca37c636bd6d4d91888e02a4a8f59652e2c2e7dcbb9e30af0cab66e'
     assert validated_staged['promotion']['level'] == 'observation'
-    assert all(run['status'] != 'completed' for run in validated_staged['model_runs'])
+    completed = {run['adapter_id'] for run in validated_staged['model_runs'] if run['status'] == 'completed'}
+    blocked = {run['adapter_id'] for run in validated_staged['model_runs'] if run['status'] == 'blocked'}
+    assert completed == {'beat_this'}, completed
+    assert {'songformer', 'chordmini', 'basic_pitch', 'advanced_amt', 'clap', 'audio_language'} <= blocked
+    assert validated_staged['promotion']['operator_approved'] is False
+    assert validated_staged['promotion']['auto_promotion'] is False
+    assert validated_staged['promotion']['universal_quality_score'] is False
+    beat = next(run for run in validated_staged['model_runs'] if run['adapter_id'] == 'beat_this')
+    assert beat['model_identity']['asset_sha256'] == '6074be2c4d490c5f6101fcc374a1ec72ae93456e23bb6019783b849f5dc7d47b'
 
     wrong_source = deepcopy(manifest)
     wrong_source['model_runs'][0]['source_sha256'] = 'a' * 64
@@ -117,7 +125,7 @@ def main():
     validated_policy = validate_calibration_manifest(policy)
     assert validated_policy['promotion']['level'] == 'policy'
 
-    print({'passed': True, 'checks': 11, 'schema': SCHEMA, 'staged_manifest': staged_path.name})
+    print({'passed': True, 'checks': 17, 'schema': SCHEMA, 'staged_manifest': staged_path.name, 'completed_adapters': sorted(completed)})
 
 
 if __name__ == '__main__':
