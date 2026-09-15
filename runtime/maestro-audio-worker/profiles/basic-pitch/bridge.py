@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import importlib.metadata
 import json
+import sys
 import tempfile
 from pathlib import Path
 
@@ -34,6 +35,19 @@ def sha256_path(path: Path) -> str:
     return h.hexdigest()
 
 
+def model_backend(path: Path) -> str:
+    name = path.name.lower()
+    if name.endswith('.onnx'):
+        return 'onnxruntime'
+    if name.endswith('.tflite'):
+        return 'tflite'
+    if name.endswith('.mlpackage'):
+        return 'coreml'
+    if path.is_dir():
+        return 'tensorflow_saved_model'
+    return 'unknown'
+
+
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument('--input', required=True)
@@ -50,6 +64,7 @@ def main() -> None:
 
     model_path = Path(ICASSP_2022_MODEL_PATH).resolve()
     model_sha = sha256_path(model_path)
+    backend = model_backend(model_path)
     _, midi_data, _ = predict(args.input)
     notes = [note for instrument in midi_data.instruments for note in instrument.notes]
     pitches = [int(note.pitch) for note in notes]
@@ -60,7 +75,8 @@ def main() -> None:
         result = {
             'implementation_version': importlib.metadata.version('basic-pitch'),
             'model_family': 'spotify/basic-pitch',
-            'runtime': 'isolated-python-3.11-profile',
+            'runtime': f'python-{sys.version_info.major}.{sys.version_info.minor}',
+            'model_backend': backend,
             'model_artifact_name': model_path.name,
             'model_artifact_sha256': model_sha,
             'midi_sha256': sha256_file(midi_path),
