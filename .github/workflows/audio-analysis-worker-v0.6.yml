@@ -57,7 +57,7 @@ jobs:
 
   beat-this-cpu-smoke:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -70,3 +70,49 @@ jobs:
       - name: Probe CPU/checkpoint execution and identity
         working-directory: runtime/maestro-audio-worker
         run: PYTHONPATH=. python tests/beat_this_cpu_smoke.py
+      - name: Stage portable Beat This bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          import importlib.metadata
+          import json
+          import shutil
+          import sys
+          import beat_this
+          import torch
+
+          out = Path('/tmp/maestro-beat-this-bundle')
+          out.mkdir(parents=True, exist_ok=True)
+          package_root = Path(beat_this.__file__).resolve().parent
+          shutil.copytree(package_root, out / 'beat_this', dirs_exist_ok=True)
+
+          checkpoint = Path(torch.hub.get_dir()) / 'checkpoints' / 'beat_this-small0.ckpt'
+          if not checkpoint.is_file():
+              raise SystemExit(f'expected checkpoint missing: {checkpoint}')
+          shutil.copy2(checkpoint, out / checkpoint.name)
+          digest = hashlib.sha256(checkpoint.read_bytes()).hexdigest()
+
+          metadata = {
+              'schema': 'maestro.model-portable-bundle.v0.7',
+              'model_family': 'CPJKU/beat_this',
+              'package': 'beat-this',
+              'package_version': importlib.metadata.version('beat-this'),
+              'checkpoint_name': checkpoint.name,
+              'checkpoint_sha256': digest,
+              'python': sys.version.split()[0],
+              'torch': torch.__version__,
+              'purpose': 'operator-private-artifact calibration; not redistribution authority',
+          }
+          (out / 'bundle.json').write_text(json.dumps(metadata, indent=2), encoding='utf-8')
+          PY
+          python -m pip freeze > /tmp/maestro-beat-this-bundle/pip-freeze.txt
+      - name: Upload portable Beat This bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: maestro-beat-this-small0-cpu-bundle
+          path: /tmp/maestro-beat-this-bundle
+          if-no-files-found: error
+          retention-days: 3
