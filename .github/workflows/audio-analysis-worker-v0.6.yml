@@ -121,3 +121,102 @@ jobs:
           path: /tmp/maestro-beat-this-bundle
           if-no-files-found: error
           retention-days: 3
+
+  basic-pitch-onnx-portable-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install Basic Pitch ONNX runtime without TensorFlow
+        run: |
+          python -m pip install --no-deps 'basic-pitch==0.4.0'
+          python -m pip install onnxruntime resampy pretty_midi librosa mir_eval scikit-learn scipy soundfile
+      - name: Smoke Basic Pitch ONNX model
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          import json
+          import tempfile
+          import wave
+          import numpy as np
+          from basic_pitch import FilenameSuffix, build_icassp_2022_model_path
+          from basic_pitch.inference import predict
+
+          with tempfile.TemporaryDirectory() as td:
+              wav = Path(td) / 'tone.wav'
+              sr = 22050
+              t = np.arange(sr * 2, dtype=np.float32) / sr
+              audio = (0.2 * np.sin(2 * np.pi * 440.0 * t) * 32767).astype('<i2')
+              with wave.open(str(wav), 'wb') as f:
+                  f.setnchannels(1); f.setsampwidth(2); f.setframerate(sr); f.writeframes(audio.tobytes())
+              model_path = build_icassp_2022_model_path(FilenameSuffix.onnx)
+              if not model_path.is_file():
+                  raise SystemExit(f'ONNX model missing: {model_path}')
+              model_output, midi_data, note_events = predict(wav, model_path)
+              print(json.dumps({
+                  'passed': True,
+                  'runtime': 'onnxruntime',
+                  'model_path': model_path.name,
+                  'model_sha256': hashlib.sha256(model_path.read_bytes()).hexdigest(),
+                  'note_events': len(note_events),
+                  'midi_instruments': len(midi_data.instruments),
+                  'model_outputs': sorted(model_output.keys()),
+              }, indent=2))
+          PY
+      - name: Stage portable Basic Pitch ONNX bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          import importlib.metadata
+          import importlib.util
+          import json
+          import shutil
+          import sys
+          import basic_pitch
+          from basic_pitch import FilenameSuffix, build_icassp_2022_model_path
+
+          out = Path('/tmp/maestro-basic-pitch-bundle')
+          out.mkdir(parents=True, exist_ok=True)
+
+          def copy_package(name: str) -> None:
+              spec = importlib.util.find_spec(name)
+              if spec is None or spec.origin is None:
+                  raise SystemExit(f'package not found: {name}')
+              root = Path(spec.origin).resolve().parent
+              shutil.copytree(root, out / root.name, dirs_exist_ok=True)
+
+          for name in ['basic_pitch', 'onnxruntime', 'resampy', 'coloredlogs', 'humanfriendly', 'flatbuffers']:
+              copy_package(name)
+
+          model_path = build_icassp_2022_model_path(FilenameSuffix.onnx)
+          model_sha = hashlib.sha256(model_path.read_bytes()).hexdigest()
+          metadata = {
+              'schema': 'maestro.model-portable-bundle.v0.7',
+              'model_family': 'spotify/basic-pitch',
+              'package_version': importlib.metadata.version('basic-pitch'),
+              'runtime': 'onnxruntime',
+              'onnxruntime_version': importlib.metadata.version('onnxruntime'),
+              'model_relative_path': str(model_path.relative_to(Path(basic_pitch.__file__).resolve().parent)),
+              'model_sha256': model_sha,
+              'python': sys.version.split()[0],
+              'purpose': 'operator-private-artifact calibration; generated MIDI is inferred evidence only',
+          }
+          (out / 'bundle.json').write_text(json.dumps(metadata, indent=2), encoding='utf-8')
+          PY
+          python -m pip freeze > /tmp/maestro-basic-pitch-bundle/pip-freeze.txt
+      - name: Upload portable Basic Pitch ONNX bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: maestro-basic-pitch-onnx-py313-bundle
+          path: /tmp/maestro-basic-pitch-bundle
+          if-no-files-found: error
+          retention-days: 3
